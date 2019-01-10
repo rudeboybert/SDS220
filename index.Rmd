@@ -38,6 +38,7 @@ library(patchwork)
 # Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
 set.seed(76)
 ```
+
 <style>
 h1{font-weight: 400;}
 </style>

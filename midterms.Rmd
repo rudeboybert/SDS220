@@ -8,6 +8,14 @@ output:
       collapsed: no
 ---
 
+```{r, include=FALSE}
+knitr::opts_chunk$set(echo=TRUE, message=FALSE, warning=FALSE, eval=FALSE, 
+                      cache=TRUE, fig.width=16/2, fig.height=9/2)
+# Set seed value of random number generator to get "replicable" random numbers.
+# Why 76? Because of https://www.youtube.com/watch?v=xjJ7FheCkCU
+set.seed(76)
+```
+
 <style>
 h1{font-weight: 400;}
 </style>
@@ -164,7 +172,7 @@ Psychologist Abraham Maslow asserted that Kinsey did not consider "volunteer bia
 * Left plot: the white grid lines on the x-axis denote **additive** differences of $+10000$ 
 * Right plot: the white grid lines on the x-axis denote **multiplicative** differences of $\times 10$
 
-```{r, echo = FALSE, fig.height = 7/2, eval = TRUE, cache = TRUE}
+```{r, echo = FALSE, fig.height = 7/2, eval = TRUE}
 gapminder2007 <- gapminder %>% 
   filter(year == 2007)
 
@@ -189,7 +197,7 @@ p1 + p2
 
 **Note about Question 5.f)** Counterexample. Both these datasets have 11 values and the same quartiles as Nashville (32K, 60K, and 100K), but have different proportions greater than 80K:
 
-```{r, echo = FALSE, eval = FALSE, cache = TRUE}
+```{r, echo = FALSE, eval = FALSE}
 data_frame(
   data1 = c(16, 17, 32, 33, 54, 60, 61, 62, NA, NA, 100, 110, 115),
   data2 = c(16, 17, 32, 33, 54, 60, NA, NA, 98, 99, 100, 110, 115)
