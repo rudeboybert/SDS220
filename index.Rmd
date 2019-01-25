@@ -65,15 +65,23 @@ h1{font-weight: 400;}
 
 ## Annoucements
 
-* Please ensure you have followed all the "start here" instructions posted on [Moodle](https://moodle.smith.edu/course/view.php?id=33093){target="_blank"}. 
-
-
-## Today's Topics/Activities
-
+* Please ensure you have followed all the "start here" instructions posted on [Moodle](https://moodle.smith.edu/course/view.php?id=33093){target="_blank"}. Please remember that **just because you can access the moodle page does not guarantee you are registered for the course**. I will post a "priority list" of waitlisted students on Moodle by tomorrow.
+* What is the difference between SDS/MTH 220 vs SDS 201?
 * Who is rudeboybert?
-* Webpage features
+* Website features
 * Slack demo
-* 
+* Final project discussion
+* Food for thought on coding:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">New blog post!<br><br>👩🏻
+💻👨🏿
+💻👩🏾
+💻👨🏽
+💻👩🏼
+💻👩🏿
+💻👨🏻
+💻<br><br>Why women in psychology can&#39;t program<br><br>&quot;About two months ago my brother, who works in a data science on social psychology data, asked me why his colleagues, who are women and have PhDs in psychology, cannot code&quot;<a href="https://t.co/5ZYx28sWr1">https://t.co/5ZYx28sWr1</a></p>&mdash; Olivia Guest | Ολίβια Γκεστ (@o_guest) <a href="https://twitter.com/o_guest/status/1067079340507217920?ref_src=twsrc%5Etfw">November 26, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ***

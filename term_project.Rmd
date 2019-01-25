@@ -33,9 +33,12 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 ***
 
-<!--
-# 1. Groups - Fri 9/21 5pm {#groups}
 
+# 1. Groups due: Fri 2/8{#groups}
+
+Form groups of 2-3 students **where all members can attend the same lab section on three dates**. You will be working during three labs on your projects and you must all be present (see schedule). You do not need to all be *registered* for the same lab section, merely able to *attend* the same lab for those three dates. 
+
+<!--
 **To do:**
 
 1. Form groups of 2-3 students and pick a group name.
@@ -51,11 +54,18 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 * If you need a group to join please Slack me.
 * All groups members are expected to contribute and a system will be put in
 place to hold all group members accountable for their work.
+-->
 
 
 
-# 2. Proposal - Fri 10/19 5pm {#proposal}
+***
 
+
+
+# 2. Project data due: Fri 2/22{#proposal}
+
+
+<!--
 **To do:**
 
 1. Background reading on data: Read ModernDive Chapters 4.1 - 4.3
@@ -138,16 +148,20 @@ Once your proposal is ready, the group leader will:
 
 -->
 
-<!--
+
+
 ***
 
 
 
-# 3. Initial submission - Fri 11/9 9pm
+# 3. Project proposal due: Fri 3/22 5pm
 
+
+
+<!--
 **To do**:
 
-1. **Changed on 11/2** Due time changed from 5pm to 6pm. 
+1. **Changed on 11/2** Due time changed fromto 6pm. 
 1. Download the <a href="static/term_project/Term_Project.Rmd"
 download>`Term_Project.Rmd`</a> R Markdown template file. Recall the [past examples](#past_examples) you saw previously.
 1. Read the evaluation criteria [below](#evaluationcriteria) and then complete the following sections:
@@ -268,9 +282,15 @@ What to include
 -->
 
 
-<!--
-# 4. Resubmission - Fri 12/21 5pm {#resubmission}
 
+*** 
+
+
+
+# 4. Project submission due: Fri 4/5{#resubmission}
+
+
+<!--
 1. Revise your work based on delivered feedback. 
 1. Complete remaining sections.
 1. Complete "Inference for multiple regression" and "Conclusion" sections.
@@ -330,3 +350,13 @@ You will be evaluated on the following criteria, which not only emphasizes the d
 
 
 -->
+
+
+
+***
+
+
+
+# 5. Project resubmission due: Thu 5/2{#resubmission}
+
+Last day of class.

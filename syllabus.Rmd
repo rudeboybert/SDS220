@@ -25,46 +25,65 @@ h1{font-weight: 400;}
 * **Course title:** SDS/MTH 220: Introduction to Probability and Statistics
 * **Instructor:** [Albert Y. Kim](https://rudeboybert.rbind.io/) - Assistant Professor of Statistical & Data Sciences
 * **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop app](https://slack.com/downloads/){target="_blank"}.
-    + I will respond to Slack messages within 24h, but not during weekends.
-    + If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person.
 * **Meeting locations/times:** 
     + **Lectures**: MWF 11:00-12:10 - Sabin-Reed 301
     + **Labs**: Held by Dr. Jenny Smetzer (Note lab end times are incorrectly listed on Course Search)
         + Sec 01: Tu 1:00-2:20 - Sabin-Reed 301
         + Sec 02: Tu 3:00-4:20 - Sabin-Reed 301
 * **Outside help**:
+    + Spinelli Center for Quantitative Learning [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - Location TBD. 
     + Albert's office hours: TBD - McConnell Hall 215
     + Jenny's office hours: Tu 11:00-12:20 and Wednesday 10:00-12:20 and 1:00-2:00. Book your appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"} - Bass 403
-    + Spinelli Center for Quantitative Learning [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
-        
-        <!--
-        1. [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.
+
+<!--
+[Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.
 -->
 
-## Expectations
+## Instructor work-life balance
 
-* **Slack**:
-    + You are expected to stay on top of announcements and
-direct messages in Slack. For strategies that suit you and your work style (ex: turning on email notifications), please don't hesistate to ask me for suggestions!
-    + I will respond to Slack messages within 24h, but will respond to weekend messages (Friday afternoon to Monday morning) at my discretion.
-    + If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person. 
-* **Lectures**:
-    + You do not need to inform me of *occasional* absenses.
-However, you are responsible for asking your peers for what you missed. For
-example, makeup lectures will not be held during office hours.
-    + You are expected to bring your fully charged laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.
+* I will respond to Slack messages sent during the week within 24h. I will respond to Slack messages sent during the weekend at my own discretion.
+* If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person as it takes me less energy to understand where you are at.
+* I will do my best to return all grading as promptly as possible.
+* I will rarely be on campus on Thursdays as this is my self-care day.
+
 
 
 ***
 
 
-    
+
+# How can I succeed in this class?
+
+Ask yourself:
+
+* **When I have questions or don't understand something:**
+    + *"Am I asking questions in class?"*
+    + *"Am I asking questions on Slack in `#questions`?"* Even better: *"Am I answering my peers' questions on Slack?"*
+    + *"Having I been going to the Spinelli tutoring center?"*
+    + *"Have I been coming to Albert or Jenny's office hours?"*
+* **Lectures, labs, and readings:**
+    + *"Am I staying on top Slack notifications sent between lectures?"* If you need help developing a notification strategy that best suits your lifestyle, please speak to me. 
+    + *"Am I attending lectures consistently?"*
+    + *"Am I actually running the code and studying the outputs in R during in-class exercises, or am I just skimming the text?"*
+    + *"Am I completing all the ModernDive readings/in-class activites for a given lecture before the start of the next lecture?"*
+    + *"During in-class exercises and lab time, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
+* **Problem sets, DataCamp, and coding:**
+    + *"Am I actually doing the problem sets?"*
+    + *"Have I been attempting a good faith balance between to push myself during DataCamp exercises while not banging my head on the wall, or am I just taking the hints/solutions without any effort?"*
+    + *"When learning to code, much like learning a language, have I been really pushing myself to practice, practice, practice?"*
+
+
+
+***
+
+
+
 # Course Description & Objectives
 
 * **Official course description**: On [Smith College
 Course Search](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Fall+2018&dept=Statistical+and+Data+Sciences&instr=Albert+Y.+Kim&credits=&course_numb=220&course_keywd=&op=Submit&form_build_id=form-aR3I9kjnzv-y9YC5iG9EZdxZg_0shLeVcJPIoLE9ABM&form_id=campus_course_search_basic_search_form){target="_blank"}.
-* **Objectives** (<a target="_blank" class="page-link" href="static/syllabus_slides.html">slides</a>): This semester you will
-    1. Learn statistical inference through data science, not mathematics/probability theory.
+* **Objectives**: This semester you will
+    1. Learn statistical inference via data science, not mathematics/probability theory.
     1. Engage in the data/science research pipeline in as faithful a manner as possible while maintaining a level suitable for novices.
     1. Develop your statistical literacy, a necessary ability for effective citizenship.
 
@@ -76,27 +95,26 @@ Course Search](https://www.smith.edu/academics/academic-program/curriculum/cours
 
 # Topic Schedule and Readings {#topicschedule}
 
-A rough topic schedule and corresponding readings are posted below and on the [main](index.html) page. We will draw from the following sources:
+<center>
+![](static/images/wide_format.png){ width=700px }
+</center>
 
-1. ["ModernDive: An Introduction to Statistical and Data Sciences via R (MD)"](https://moderndive.netlify.com/){target="_blank"} by Ismay and Kim (click link in menubar above).
-1. ["OpenIntro: Introductory Statistics with Randomization and Simulation (OI)"](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
+</br>
+
+A rough topic schedule and corresponding readings are posted below on the [main page](index.html) of this course webpage. We will draw from the following sources:
+
+1. [Statistical Inference via Data Science: A moderndive into R and the tidyverse](https://moderndive.netlify.com/){target="_blank"}. We'll be using the development version; click link in menubar above. Follow the book on Twitter [\@ModernDive](https://twitter.com/ModernDive){target="_blank"}.
+1. [OpenIntro: Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
     + Free [PDF](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}
     + Hardcopy. Available for $8.49 on [Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&pd_rd_i=1500576697&pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&pd_rd_w=SqIFV&pd_rd_wg=mb7dk&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=83CCQTHW3KV5NTNHT22J&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=83CCQTHW3KV5NTNHT22J){target="_blank"}
 1. DataCamp: an online interactive environment for learning data science currently via R and Python. On top of the DataCamp courses we'll cover this semester, you have free access to [all their courses](https://www.datacamp.com/courses/all){target="_blank"} for 6 months. 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="300"></iframe>
+## Policies
 
-## Expectations
-
-* **Readings**:
-    + While many lectures will center around undirected time to cover readings, you are expected to finish all readings from any given lecture before the start of the next lecture.
-* **Attendance**:
-    + You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
-    + Attendance will not be explicitly taken and occasional absenses will be excused. However, extended absenses should be mentioned to me.
-    
-    
-    + You are not required to cover readings for any given lecture beforehand as you'll be given class time to do so in the presence of your peers. However, if you feel you would benefit from reading beforehand, please feel free!
-    + You are however responsible for finishing the readings before the start of the next lecture.
+* Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.   
+* You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
+* Attendance will not be explicitly taken and occasional absenses are excused. However, extended absenses should be mentioned to me.
+* However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
 
 
 
@@ -108,22 +126,24 @@ A rough topic schedule and corresponding readings are posted below and on the [m
 
 ## Weekly Problem Sets 10%
 
+* Total of 10 problem sets: assigned during Tuesday labs, due the following week.
+* Two lowest scores dropped. 
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
-* Assigned during labs.
-* Two lowest scores dropped. 
-
+**Each problem set is worth 1% of your final grade**.
 
 ## DataCamp Assignments 5% {#datacamp}
 
-* Assigned/due on Wednesdays.
-* Expectations:
-    1. DataCamp is meant to be low stakes-practice, so the only thing that matters for your grade is whether you complete the course. So while things like the number of hints/solutions taken don't factor into your grade, it is important to make a good faith effort to answer these questions the best you can.
-    1. Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
-    1. I *expect* most people to take no more than 4 hours per DataCamp assignment.
-    1. Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction.
-    1. You do not need to complete any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them. 
+* Assigned during Tuesday labs, due the following week.
+* DataCamp is meant to be low stakes-practice, so the only thing that matters for your grade is whether you complete the course. So while things like the number of hints/solutions taken don't factor into your grade, it is important to make a good faith effort to answer these questions the best you can.
+* While you may do them in advance if you are curious, it is most definitely not required. Note that the DataCamp schedule may change, with certain courses dropped/added.
+* Jenny will talk more about DataCamp during Lab 2.
 
+<!--
+* Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
+* I *expect* most people to take no more than 4 hours per DataCamp assignment.
+* Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction.
+-->
 
 ## Quizzes 5%
 
@@ -135,30 +155,22 @@ See [Term Project](term_project.html) page.
 
 ## Three Midterms: 45%
 
-* There will be three self-scheduled midterms, including one during finals week. See the [midterms](midterms.html) page.
+* There will be three self-scheduled midterms, including one during finals week. See the [Midterms](midterms.html) page.
 * Lowest score weighted 10%, middle score weighted 15%, and highest score weighted 20%.
 
 ## Engagement 5% {#engagement}
 
-<!--
-It is difficult to explicit codify what constitutes "an engaged student," so 
+It is difficult to explicit codify what constitutes "an engaged student," so
 instead I present the following rough principle I will follow: *you'll only get
-out of this class as much as you put in*. Some examples of behavior counter to
-this principle:
--->
+out of this class as much as you put in*. That being said, here are multiple
+pathways for you to stay engaged in this class:
 
-There are many avenues to be engaged in this class:
-
-* Asking answering question in class.
+* Asking and answering question in class.
 * Coming to office hours.
 * Posting questions on Slack. Even better, responding to questions on Slack.
 * Getting good peer evaluations for your term project.
 
-
-
-## Expectations {#evaluation-expectations}
-
-## R components of problem sets
+## Policies
 
 1. **Collaboration**: While I encourage you to work with your peers for problem
 sets and labs, you must submit your own answers and not simple rewordings of
@@ -167,34 +179,26 @@ in your submissions.
 1. **Honor Code**: All your work must follow the [Smith College Academic Honor
 Code Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
 in particular all external sources must be cited in your submissions.
-
-## Written components of problem sets
-
-On top of the above notes on **collaboration** and the **honor code**:
-
-1. All problem sets must be handed in at the start of lecture; no extensions will be granted without a dean's note. 
-1. No emailed submissions will be accepted. If you can't make it to class, then ask a classmate to turn it in for you.
-1. All submissions must be stapled with the fringe/perf from any spiral notebook paper removed. 
-1. You must show all your work and explain your reasoning in your solutions. 
+1. **Problem sets**:
+    + No extensions will be granted without a dean's note.
+    + To receive full credit, you must show your work and explain your reasoning in your solutions. 
+    + All written problem sets must be handed in at the start of lecture. No emailed submissions will be accepted; if you can't make it to class ask a classmate to turn it in for you. They must be stapled with the fringe/perf from any spiral notebook paper removed. 
+1. **Midterms/quizzes**:
+    + No make-up quizzes or midterms will be allowed without a dean's note. 
+    + Timestamps for all midterms will be strictly enforced.
+1. **Grading**: I reserve the right to not discuss any grading issues in class and instead direct you to office hours. 
 
 
 
 ***
-
 
 
 # Accommodations {#accommodations}
  
 Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
 
-## Expectations
-
-If you require accommodations, please provide me with documentation and advance notice for when you think you will need them.
-
-
 
 ***
-
 
 
 # Code of Conduct {#codeofconduct}
@@ -214,12 +218,12 @@ who do not follow the Code of Conduct may be reprimanded for such behavior.
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported by contacting the instructor.
 
+**All students, the instructor, the lab instructor, and all assistants are
+expected to adhere to this Code of Conduct in all settings for this course:
+lectures, labs, office hours, tutoring hours, and over Slack.**
+
 This Code of Conduct is adapted from the [Contributor
 Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
 available [here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
 
-## Expectations
 
-All students, the instructor, and all assistants are expected to adhere to this
-Code of Conduct in all settings: lectures, office hours, during tutoring hours,
-and over Slack.
