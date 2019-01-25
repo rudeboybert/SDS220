@@ -23,6 +23,16 @@ h1{font-weight: 400;}
 
 ***
 
+
+
+# Problem set 1 {#PS01}
+
+*Assigned Tue 1/29, due Tue 2/5 at XXXpm Eastern Time*
+
+
+<!--
+
+
 # Problem set 12 {#PS12}
 
 *Final problem set of the year! Assigned Wednesday 12/5, due Wednesday 12/12 at 1pm Eastern Time. Quiz at the end of lecture on Wednesday 12/12.*
@@ -295,9 +305,7 @@ None.
 * Written component: 2 + 1 + 2 + 1 = 6 pts
 
 
-
 ***
-
 
 
 # Problem set 5 {#PS05}
@@ -350,9 +358,7 @@ Total 11 pts.
 * Something extra or exceptional: 1pt
 
 
-
 ***
-
 
 
 # Problem set 4 {#PS04}
@@ -400,9 +406,7 @@ Total 10 pts.
 * Something extra or exceptional: 1pt
 
 
-
 ***
-
 
 
 # Problem set 3 {#PS03}
@@ -450,9 +454,7 @@ Download <a href="static/PS/PS03_solutions.R" download>`PS03_solutions.R`</a>.
 * 10/10: If all 5 plots work something "extra" or "exceptional". For example, in Q2.c), someone did a comparison of the "story" that boxplots vs facetted histograms tell. 
 
 
-
 ***
-
 
 
 # Problem set 2 {#PS02}
@@ -501,9 +503,7 @@ Download <a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>.
 * Each point is roughly worth 0.23% of final grade (this is not accounting for fact that lowest two problem set grades are dropped).
 
 
-
 ***
-
 
 
 # Problem set 1 {#PS01}
@@ -525,4 +525,7 @@ Download <a href="static/PS/PS02_solutions.R" download>`PS02_solutions.R`</a>.
         1. You are a member of the `#moderndive_typoes`, `#r_questions`, and `random` channels.
     * DataCamp: Your full name is listed in your [profile](https://www.datacamp.com/profile/account_settings){target="_blank"}; the rest is optional.
 
+
+
+-->
 

@@ -33,71 +33,8 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 ***
 
-
-
-# 4. Resubmission - Fri 12/21 5pm {#resubmission}
-
-1. Revise your work based on delivered feedback. 
-1. Complete remaining sections.
-1. Complete "Inference for multiple regression" and "Conclusion" sections.
-    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
-    + Perform a residual analysis.
-    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
-    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
-1. Group leader: Once the resubmission is complete
-    + Knit `Term_Project.Rmd` one final time.
-    + Republish to Rpubs.com
-    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
-1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
-
-
-## Evaluation criteria {#evaluationcriteria}
-
-You will be evaluated on the following criteria, which not only emphasizes the data, statistics, and modeling, but also the **communication**, an often neglected criteria:
-
-1. The honor code
-    + Your project must adhere to the Smith College Academic Honor Code
-    Statement. In particular all external sources must be cited in your
-    submissions.
-1. The report
-    + Is the grammar correct and are there no misspellings? (Click the ABC
-    spell-check button to the left of the "Knit" button)
-    + Is the writing crisp and concise or is it unnecessarily verbose and wordy? Is the writing clear or is it sloppy?
-    + Did you make use of Markdown formatting tools to format the document (bold, italics, url links, etc)?  
-    See RStudio Menu Bar -> Help -> Markdown Quick Reference for all formatting options.
-    + Is the final project document clean and easy to read?
-1. The science and the data
-    + Is the data's context/source clearly discussed/given? Recall: *Numbers are numbers, but data
-    has context.*
-    + Are all limitations and issues with the data addressed?
-    + Is the research question of interest clearly stated?   
-    + Are the plots/tables polished? Titles, axes labels, legends?
-    + Are the plots/tables truly informative or are they included merely for their own sake?
-1. The statistics and the analysis
-    + Are all statistical/modeling and analyses interpretations valid?
-    + Are limitations of the analysis (if any) clearly stated?
-    + Are the non-statistical interpretations accessible to an audience not well-versed in statistics?
-1. The code
-    + Is your code legible and understandable to someone not in your group? Could someone else look at the code in your `.Rmd` file, understand it, and use it for themselves? In other words, is the research easily [reproducible](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970){target="_blank"}?
-    + Is your code cleanly formatted? Are you using indentations, spaces, and line breaks effectively?
-    + Some examples of good coding style can be found [here](http://style.tidyverse.org/){target="_blank"}
-1. The rest
-    + Did you demonstrate effort and engagement during the semester long process?
-
-
-
-## Example past projects {#past_examples}
-
-* [Sweet Home Alabama: Voter Support for Trump and Moore Across Racially-Divided Counties](http://rpubs.com/mbhandari20/374964){target="_blank"}
-* [The World of Dark Chocolate](http://rpubs.com/amemily/383723){target="_blank"}
-* [The Average Yards of an Above-Average Quarterback: Examining Tom Brady’s average yards and scoring](http://rpubs.com/cmacgillivray19/TB12draft1){target="_blank"}
-* [Instagram Followers](http://rpubs.com/dahanjosh/InitialSubmission){target="_blank"}
-
-
-***
-
-
-# DONE: 1. Groups - Fri 9/21 5pm {#groups}
+<!--
+# 1. Groups - Fri 9/21 5pm {#groups}
 
 **To do:**
 
@@ -115,7 +52,9 @@ You will be evaluated on the following criteria, which not only emphasizes the d
 * All groups members are expected to contribute and a system will be put in
 place to hold all group members accountable for their work.
 
-# DONE: 2. Proposal - Fri 10/19 5pm {#proposal}
+
+
+# 2. Proposal - Fri 10/19 5pm {#proposal}
 
 **To do:**
 
@@ -169,7 +108,7 @@ ggplot(house_prices, aes(x = log10_size, y = log10_price, col = condition)) +
   geom_smooth(method = "lm", se = FALSE)
 ```
 
-
+-->
 
 
 <!-- 
@@ -199,13 +138,12 @@ Once your proposal is ready, the group leader will:
 
 -->
 
-
+<!--
 ***
 
 
 
-
-# DONE: 3. Initial submission - Fri 11/9 9pm
+# 3. Initial submission - Fri 11/9 9pm
 
 **To do**:
 
@@ -289,6 +227,10 @@ Become an R Ninja!
 ![](static/project_tips/data_ninja1.png){ width=200px }
 </center>
 
+
+-->
+
+
 <!--
 TODO: Some of the groups don’t know whether or not to include interaction
 Come up with consistent approach for how to do this
@@ -326,4 +268,65 @@ What to include
 -->
 
 
+<!--
+# 4. Resubmission - Fri 12/21 5pm {#resubmission}
 
+1. Revise your work based on delivered feedback. 
+1. Complete remaining sections.
+1. Complete "Inference for multiple regression" and "Conclusion" sections.
+    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
+    + Perform a residual analysis.
+    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
+    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
+1. Group leader: Once the resubmission is complete
+    + Knit `Term_Project.Rmd` one final time.
+    + Republish to Rpubs.com
+    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
+1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
+
+
+
+## Evaluation criteria {#evaluationcriteria}
+
+You will be evaluated on the following criteria, which not only emphasizes the data, statistics, and modeling, but also the **communication**, an often neglected criteria:
+
+1. The honor code
+    + Your project must adhere to the Smith College Academic Honor Code
+    Statement. In particular all external sources must be cited in your
+    submissions.
+1. The report
+    + Is the grammar correct and are there no misspellings? (Click the ABC
+    spell-check button to the left of the "Knit" button)
+    + Is the writing crisp and concise or is it unnecessarily verbose and wordy? Is the writing clear or is it sloppy?
+    + Did you make use of Markdown formatting tools to format the document (bold, italics, url links, etc)?  
+    See RStudio Menu Bar -> Help -> Markdown Quick Reference for all formatting options.
+    + Is the final project document clean and easy to read?
+1. The science and the data
+    + Is the data's context/source clearly discussed/given? Recall: *Numbers are numbers, but data
+    has context.*
+    + Are all limitations and issues with the data addressed?
+    + Is the research question of interest clearly stated?   
+    + Are the plots/tables polished? Titles, axes labels, legends?
+    + Are the plots/tables truly informative or are they included merely for their own sake?
+1. The statistics and the analysis
+    + Are all statistical/modeling and analyses interpretations valid?
+    + Are limitations of the analysis (if any) clearly stated?
+    + Are the non-statistical interpretations accessible to an audience not well-versed in statistics?
+1. The code
+    + Is your code legible and understandable to someone not in your group? Could someone else look at the code in your `.Rmd` file, understand it, and use it for themselves? In other words, is the research easily [reproducible](https://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970){target="_blank"}?
+    + Is your code cleanly formatted? Are you using indentations, spaces, and line breaks effectively?
+    + Some examples of good coding style can be found [here](http://style.tidyverse.org/){target="_blank"}
+1. The rest
+    + Did you demonstrate effort and engagement during the semester long process?
+
+
+
+## Example past projects {#past_examples}
+
+* [Sweet Home Alabama: Voter Support for Trump and Moore Across Racially-Divided Counties](http://rpubs.com/mbhandari20/374964){target="_blank"}
+* [The World of Dark Chocolate](http://rpubs.com/amemily/383723){target="_blank"}
+* [The Average Yards of an Above-Average Quarterback: Examining Tom Brady’s average yards and scoring](http://rpubs.com/cmacgillivray19/TB12draft1){target="_blank"}
+* [Instagram Followers](http://rpubs.com/dahanjosh/InitialSubmission){target="_blank"}
+
+
+-->

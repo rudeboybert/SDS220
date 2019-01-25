@@ -28,16 +28,18 @@ h1{font-weight: 400;}
     + I will respond to Slack messages within 24h, but not during weekends.
     + If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person.
 * **Meeting locations/times:** 
-    + **Lectures**: Sec 03: MWF 1:10-2:30 - Sabin-Reed 301
+    + **Lectures**: MWF 11:00-12:10 - Sabin-Reed 301
     + **Labs**: Held by Dr. Jenny Smetzer
-        + Sec 05: Tu 9:00-10:20 - Sabin-Reed 301
-        + Sec 06: Th 9:00-10:20 - Sabin-Reed 301
+        + Sec 01: Tu 1:00-2:50 - Sabin-Reed 301
+        + Sec 01: Tu 1:00-2:50 - Sabin-Reed 301
 * **Outside help**:
-    + Albert's office hours: M & Tu 3-6pm or by appointment - McConnell Hall 215
-    + Jenny's office hours: [Book here](https://jennysmetzer.youcanbook.me/){target="_blank"} - Bass 403
-    + [Spinelli Center for Quantitative Learning](https://www.smith.edu/qlc/){target="_blank"}
-        1. [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
+    + Albert's office hours: TBD - McConnell Hall 215
+    + Jenny's office hours: Tu 11:00-12:20 and Wednesday 10:00-12:20 and 1:00-2:00. Book your appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"} - Bass 403
+    + Spinelli Center for Quantitative Learning [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm - McConnell Hall 301.
+        
+        <!--
         1. [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.
+-->
 
 ## Expectations
 
@@ -86,13 +88,15 @@ A rough topic schedule and corresponding readings are posted below and on the [m
 
 ## Expectations
 
-* **Topics**: Note the topic schedule may shift depending on class progress. That being said, I will try to keep the schedule up-to-date for at least the upcoming two lectures.
 * **Readings**:
+    + While many lectures will center around undirected time to cover readings, you are expected to finish all readings from any given lecture before the start of the next lecture.
+* **Attendance**:
+    + You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
+    + Attendance will not be explicitly taken and occasional absenses will be excused. However, extended absenses should be mentioned to me.
+    
+    
     + You are not required to cover readings for any given lecture beforehand as you'll be given class time to do so in the presence of your peers. However, if you feel you would benefit from reading beforehand, please feel free!
     + You are however responsible for finishing the readings before the start of the next lecture.
-* **Reference**: These are optional reference readings if you would like a second perspective on the readings. For example, say you would like a second persepective on "histograms" on top of what we covered in ModernDive, I suggest reading any sections related to "histograms" in Open Inro Chapter 3 as needed, not the entire chapter.
-* **DataCamp**: See [DataCamp Assignments](#datacamp) below.
-* **Important Events**: Please be sure to frequently check the far-right column for important deadlines and events.
 
 
 
@@ -106,11 +110,11 @@ A rough topic schedule and corresponding readings are posted below and on the [m
 
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
-* Assigned/due on Wednesdays.
+* Assigned during labs.
 * Two lowest scores dropped. 
 
 
-## DataCamp Assignments 10% {#datacamp}
+## DataCamp Assignments 5% {#datacamp}
 
 * Assigned/due on Wednesdays.
 * Expectations:
@@ -131,24 +135,25 @@ See [Term Project](term_project.html) page.
 
 ## Three Midterms: 45%
 
-* There will be three self-scheduled midterms in the library. They are closed-book:
-    1. Open on Friday 9/28 at 5pm, ends on Sunday 9/30 11:55pm
-    2. Open on Friday 11/2 at 5pm, ends on Sunday 11/4 11:55pm
-    3. Open on Friday 11/30 at 5pm, ends on Sunday 12/2 11:55pm
+* There will be three self-scheduled midterms, including one during finals week. See the [midterms](midterms.html) page.
+* Lowest score weighted 10%, middle score weighted 15%, and highest score weighted 20%.
 
 ## Engagement 5% {#engagement}
 
+<!--
 It is difficult to explicit codify what constitutes "an engaged student," so 
 instead I present the following rough principle I will follow: *you'll only get
 out of this class as much as you put in*. Some examples of behavior counter to
 this principle:
+-->
 
-* Not participating in class.
-* Engaging so little with me, either in class or during office hours, that I
-don't know what your voice sounds like.
-* Shirking group work.
-* [Ghosting](https://www.urbandictionary.com/define.php?term=Ghosting&utm_source=search-action){target="_blank"}.
-* Doing the bare minimum to get by. 
+There are many avenues to be engaged in this class:
+
+* Asking answering question in class.
+* Coming to office hours.
+* Posting questions on Slack. Even better, responding to questions on Slack.
+* Getting good peer evaluations for your term project.
+
 
 
 ## Expectations {#evaluation-expectations}
@@ -184,8 +189,7 @@ Smith is committed to providing support services and reasonable accommodations t
 
 ## Expectations
 
-If you require accommodations, please provide me with documentation
-and advance notice for when you think you will need them.
+If you require accommodations, please provide me with documentation and advance notice for when you think you will need them.
 
 
 

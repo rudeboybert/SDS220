@@ -51,15 +51,7 @@ h1{font-weight: 400;}
 
 # Schedule 
 
-* **Topics**:
-    1. Getting started (orange): R, RStudio, R packages
-    1. Data science (pink): Data visualization via `ggplot2` and data wrangling via `dplyr`
-    1. Data modeling (blue): Correlation, basic regression, and multiple regression
-    1. Statistical background (green): Random assignment for causal inference, random sampling for statistical inference, sampling distributions, and standard errors. 
-    1. Statistical inference (yellow): confidence intervals, hypothesis testing, inference for regression, other inference methods
-* **Readings + Reference**: MD is ModernDive, OI is [OpenIntro](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}.
-
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&single=true&amp;widget=true&amp;headers=false" width="100%" height="830"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1753108531&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1010"></iframe>
 
 
 <!--
@@ -67,8 +59,32 @@ h1{font-weight: 400;}
 -->
 
 
+***
+
+# Lec 1: Fri 1/24
+
+## Annoucements
+
+* Please ensure you have followed all the "start here" instructions posted on [Moodle](https://moodle.smith.edu/course/view.php?id=33093){target="_blank"}. 
+
+
+## Today's Topics/Activities
+
+* Who is rudeboybert?
+* Webpage features
+* Slack demo
+* 
+
 
 ***
+
+
+
+
+
+
+
+<!--
 
 # Lec 36: Mon 12/10 {#Lec36}
 
@@ -83,7 +99,6 @@ h1{font-weight: 400;}
         + Fri 12/21 11am-1pm
 * Added two notes on 12/10 about term project [resubmission](term_project.html#resubmission) instructions.
 * Quiz during lecture on Wednesday as well as time for project work.
-
 
 
 ***
@@ -107,10 +122,7 @@ h1{font-weight: 400;}
 ### 2. In-class exercise
 
 
-
-
 ***
-
 
 
 # Lec 34: Wed 12/5 {#Lec34}
@@ -137,9 +149,7 @@ Based on this code:
 <script src="https://gist.github.com/rudeboybert/b5dde565a50df08571dabb6ec53ab58e.js"></script>
 
 
-
 ***
-
 
 
 # Lec 33: Mon 12/3 {#Lec33}
@@ -168,10 +178,7 @@ Statistical inference as a `%>%` chain of verbs! Click the tweet to see a GIF:
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
-
 
 
 # Lec 32: Fri 11/30 {#Lec32}
@@ -199,9 +206,7 @@ Based on the following code; copy this into a scratchpad. Make sure you have the
 Read ModernDive 9.2-9.4
 
 
-
 ***
-
 
 
 # Lec 31: Wed 11/28 {#Lec31}
@@ -227,10 +232,7 @@ Read ModernDive 9.2-9.4
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
-
 ***
-
 
 
 # Lec 30: Mon 11/19 {#Lec30}
@@ -256,7 +258,6 @@ Now swithing from tactile to virtual resampling using `infer` package!
 <center>
 ![](static/images/infer_oregon.png){ width=200px }
 </center>
-
 
 
 ***
@@ -311,9 +312,7 @@ From this past Monday Nov 12:
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
 
 
 # Lec 28: Wed 11/14 {#Lec28}
@@ -338,9 +337,7 @@ Bootstrap tactile resampling simulation based on slips of paper with your
 name/height written on them. Recall we took a sample of size $n=10$ students.
 
 
-
 ***
-
 
 
 # Lec 27: Mon 11/12 {#Lec27}
@@ -362,9 +359,7 @@ name/height written on them. Recall we took a sample of size $n=10$ students.
 Read ModernDive 8.3 on "Virtual sampling simulation" and 8.4 with an example on polls.
 
 
-
 ***
-
 
 
 # Lec 26: Fri 11/9 {#Lec26}
@@ -403,9 +398,7 @@ Question: Does living near a Whole Foods **cause** increases in the likelihood o
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
 
 
 # Lec 25: Wed 11/7 {#Lec25}
@@ -416,9 +409,7 @@ Question: Does living near a Whole Foods **cause** increases in the likelihood o
 * Class time to work on projects
 
 
-
 ***
-
 
 
 # Lec 24: Mon 11/5 {#Lec24}
@@ -432,9 +423,7 @@ Question: Does living near a Whole Foods **cause** increases in the likelihood o
 </center>
 
 
-
 ***
-
 
 
 # Lec 23: Fri 11/2 {#Lec23}
@@ -468,9 +457,7 @@ ggplot(africa_results, aes(x = priming_number, y = how_many_countries)) +
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
 
 
 # Lec 22: `r emo::ji("halloween")`Wed 10/31`r emo::ji("halloween")` {#Lec22}
@@ -508,9 +495,7 @@ We're going to install the development AKA [beta-version](https://en.wiktionary.
 </center>
 
 
-
 ***
-
 
 
 # Lec 21: Mon 10/29 {#Lec21}
@@ -537,9 +522,7 @@ We're going to install the development AKA [beta-version](https://en.wiktionary.
 Read ModernDive Chapter 7.2.3 - 7.2.5. 
 
 
-
 ***
-
 
 
 # Lec 20: Fri 10/26 {#Lec20}
@@ -587,9 +570,7 @@ When I run this code it won't load the data since the `my_data.csv` file will no
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
 
 
 # Lec 19: Wed 10/24 {#Lec19}
@@ -623,12 +604,7 @@ Piggy-backing off of last lecture's ModernDive 7.1.1 "Exploratory Data Analysis"
 * ModernDive 7.1.3 & 7.1.4: Fitted/observed values and residuals. Very short. The idea is identical as for basic regression!
 
 
-
-
 ***
-
-
-
 
 
 # Lec 18: Mon 10/22 {#Lec18}
@@ -692,8 +668,6 @@ Ok folks, we're doing **posters** for the your final presentation
 ***
 
 
-
-
 # Lab: Thu 10/18 + Tue 10/23 {#lab1}
 
 Materials for Jenny's lab on Data Wrangling are here:
@@ -703,9 +677,7 @@ Materials for Jenny's lab on Data Wrangling are here:
 * Solutions: <a href="static/data_wrangling_lab/dplyr_wrangling_review_solutions.Rmd" download>`dplyr_wrangling_review_solutions.Rmd`</a>
 
 
-
 ***
-
 
 
 # Lec 17: Wed 10/17 {#Lec17}
@@ -721,9 +693,7 @@ Materials for Jenny's lab on Data Wrangling are here:
 * In-class time to work on projects.
 
 
-
 ***
-
 
 
 # Lec 16: Mon 10/15 {#Lec16}
@@ -744,11 +714,7 @@ Materials for Jenny's lab on Data Wrangling are here:
 * MD 6.2. From the beginning of 6.2 up to and including the end of 6.2.2.
 
 
-
-
-
 ***
-
 
 
 # Lec 15: Fri 10/12 {#Lec15}
@@ -791,9 +757,7 @@ Materials for Jenny's lab on Data Wrangling are here:
 Read ModernDive Chapter 6.1.4 and 6.3.3.
 
 
-
 ***
-
 
 
 # Lec 14: Wed 10/10 {#Lec14}
@@ -821,9 +785,7 @@ Read ModernDive Chapter 6.1.4 and 6.3.3.
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
 
 
 # Lec 13: Fri 10/5 {#Lec13}
@@ -863,9 +825,7 @@ Boston University is going to build a new 17-floor "Data Sciences Center" on Com
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
 ***
-
 
 
 # Lec 12: Wed 10/3
@@ -925,7 +885,6 @@ On writing "pseudocode": a rough outline that is "sort of" like code that outlin
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Students writing out <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a> pseudocode to compute &quot;Available Seat Miles&quot; (✈️ measure of capacity) using <a href="https://twitter.com/hashtag/nycflights13?src=hash&amp;ref_src=twsrc%5Etfw">#nycflights13</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package. Not only was most pseudocode good, but many were able to code it up on day 3 of data wrangling! 😮😮😮 <a href="https://t.co/BHozXZWjU0">https://t.co/BHozXZWjU0</a> <a href="https://twitter.com/hashtag/chalktalk?src=hash&amp;ref_src=twsrc%5Etfw">#chalktalk</a> <a href="https://t.co/0mzTYalGXa">pic.twitter.com/0mzTYalGXa</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/964181298691629056?ref_src=twsrc%5Etfw">February 15, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 
 ***
@@ -1016,9 +975,7 @@ example_data_frame
 ```
 
 
-
 ***
-
 
 
 # Lec 10
@@ -1032,12 +989,6 @@ example_data_frame
 ## Today's Topics/Activities  
 
 ### 1. Chalk Talk
-
-<!--
-![](static/images/group_summary.png){ width=600px }
-![](static/images/mutate.png){ width=600px }
-![](static/images/select.png){ width=600px }
--->
 
 * From last time: Grouping then summarizing: First `group_by()` to group rows together (the grey, blue, green color assignment) then `summarize()` to get group-by-group summaries (a summary statistic for each color).
 * Create new variables using `mutate()`
@@ -1060,9 +1011,7 @@ For more advanced data visualization and data wrangling, take [SDS 192: Intro to
 As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.1
 
 
-
 ***
-
 
 
 # Lec 9
@@ -1098,8 +1047,6 @@ As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.
 As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5
 
 
-
-
 ***
 
 
@@ -1117,8 +1064,7 @@ As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5
     + However you allocate your time, Jenny and I ask you stay until the end of lab period as getting up and leaving is very disruptive. For example, we suggest you do exercises in [DataCamp Practice Mode](https://www.datacamp.com/community/blog/introducing-daily-practice-mode){target="_blank"} to reinforce what you've already learned!
 
 
-
-## Toay's Topics/Activities  
+## Today's Topics/Activities  
 
 ### 1. Chalk Talk
 
@@ -1143,10 +1089,7 @@ While networking may come naturally to some, it doesn't to most. It takes work, 
 ***
 
 
-
 # Lec 7
-
-
 
 ## Announcements
 
@@ -1156,8 +1099,6 @@ While networking may come naturally to some, it doesn't to most. It takes work, 
 * Lecture on Monday will start at 1:20pm (10 minutes later) to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06) to class.
 * Next step of Term Project: [Project proposal](term_project.html#proposal) due Friday 10/19
 * **Videoconferencing**: In Slack, in a Direct Message, type `/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF`
-
-
 
 ## Todays Topics/Activities  
 
@@ -1178,10 +1119,7 @@ ModernDive co-author Chester Ismay [\@old_man_chester](https://twitter.com/old_m
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> to learn about our new Tidyverse Fundamentals with R Skill Track! In this track, you’ll learn the skills needed to get you up and running with data science in R using the <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a>. <a href="https://t.co/4fqAdJgoTX">https://t.co/4fqAdJgoTX</a> <a href="https://t.co/RsYxe4Hpm5">pic.twitter.com/RsYxe4Hpm5</a></p>&mdash; DataCamp (@DataCamp) <a href="https://twitter.com/DataCamp/status/1042851042139025409?ref_src=twsrc%5Etfw">September 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
-
 ***
-
 
 
 # Lec 6 {#Lec06}
@@ -1205,8 +1143,6 @@ So after Friday you'll be responsible for installing R Packages as described in 
 
 1. You'll need to install it once.
 1. *Load/open* it using `library()` command. Ex: `library(nycflights13)`
-
-
 
 ## Todays Topics/Activities       
 
@@ -1286,7 +1222,6 @@ plot1 + plot2
 ```
 
 
-
 ### 3. In-class exercise: ModernDive
 
 As marked in the Schedule at the top of this page, read ModernDive 3.7.
@@ -1304,10 +1239,7 @@ Interesting results from my SDS 192 course earlier today:
 ![](static/images/imposter_syndrome.png){ width=500px }
 
 
-
-
 ***
-
 
 
 # Lec 5
@@ -1357,9 +1289,7 @@ Why does one line return an `Error` whereas the other doesn't?
 As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
 
 
-
 ***
-
 
 
 # Lec 4
@@ -1408,9 +1338,7 @@ As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (star
 * **Note**: In this class, of the "Five Named Graphs" described in ModernDive 3.2, we'll only cover scatterplots, histographs, and boxplots; we'll be skipping linegraphs and barplots. 
 
 
-
 ***
-
 
 
 # Lec 3
@@ -1426,15 +1354,13 @@ As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (star
     + Added "Expectations" to following sections: [Topic Schedule and Readings](syllabus.html#topicschedule), [Evaluation](syllabus.html#topicschedule), [Accommodations](syllabus.html#accommodations), [Code of Conduct](syllabus.html#codeofconduct)
 * **Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215**
 
-## Today's To
-pics/Activities       
+## Today's Topics/Activities       
         
 1. Go over ModernDive Chapter 2. Note:
     + You can skip all videos and linked DataCamp courses.
     + "Learning checks": These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!
 
-## Getting he
-lp
+## Getting help
 
 A big part of learning data science tools is learning how to get help effectively. For example, in this course:
 
@@ -1452,9 +1378,7 @@ A big part of learning data science tools is learning how to get help effectivel
 1. Visit the Spinelli Center for tutoring Sunday-Thursday 7-9pm (see [syllabus](syllabus.html#basicinfo) for more info).
 
 
-
 ***
-
 
 
 # Lec 2
@@ -1471,9 +1395,7 @@ A big part of learning data science tools is learning how to get help effectivel
 1. **Lab Tuesday/Thursday** Start the DataCamp portion of Problem set 1. Jenny will help you get used to the DataCamp interface. 
 
 
-
 ***
-
 
 
 # Lec 1
@@ -1497,3 +1419,4 @@ A big part of learning data science tools is learning how to get help effectivel
     + You've completed the [Intro Survey](https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform){target="_blank"}
 * **Need help with any of the above?** ~~Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehdLkV7PPj2_ghaHROdqb4fRCdJDv0ksDLoMw95WpPnfxzqQ/viewform){target="_blank"}~~ Slack me!
 
+-->

@@ -31,74 +31,6 @@
 <script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
 
 
-<style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  { background-color: #f8f8f8; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-</style>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
 <style type="text/css">
@@ -336,7 +268,7 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="https://sds-mth-220-fall2018.slack.com/">
+  <a href="https://sds-mth-220-2019-01.slack.com/">
     <span class="fa fa-slack fa-lg"></span>
      
   </a>
@@ -375,7 +307,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim &amp; Jenny Smetzer</em></h4>
-<h4 class="date"><em>Last updated on 2019-01-10</em></h4>
+<h4 class="date"><em>Last updated on 2019-01-24</em></h4>
 
 </div>
 
@@ -389,1508 +321,1326 @@ h1{font-weight: 400;}
 <hr />
 <div id="schedule" class="section level1">
 <h1>Schedule</h1>
-<ul>
-<li><strong>Topics</strong>:
-<ol style="list-style-type: decimal">
-<li>Getting started (orange): R, RStudio, R packages</li>
-<li>Data science (pink): Data visualization via <code>ggplot2</code> and data wrangling via <code>dplyr</code></li>
-<li>Data modeling (blue): Correlation, basic regression, and multiple regression</li>
-<li>Statistical background (green): Random assignment for causal inference, random sampling for statistical inference, sampling distributions, and standard errors.</li>
-<li>Statistical inference (yellow): confidence intervals, hypothesis testing, inference for regression, other inference methods</li>
-</ol></li>
-<li><strong>Readings + Reference</strong>: MD is ModernDive, OI is <a href="https://www.openintro.org/download.php?file=isrs1_tablet&amp;referrer=/stat/textbook.php" target="_blank">OpenIntro</a>.</li>
-</ul>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1373353942&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="830">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1753108531&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1010">
 </iframe>
 <!--
 {target="_blank"}
 -->
 <hr />
 </div>
-<div id="Lec36" class="section level1">
-<h1>Lec 36: Mon 12/10</h1>
-<div id="announcements" class="section level2">
-<h2>Announcements</h2>
+<div id="lec-1-fri-124" class="section level1">
+<h1>Lec 1: Fri 1/24</h1>
+<div id="annoucements" class="section level2">
+<h2>Annoucements</h2>
 <ul>
-<li>Extra office hours reading/exam week:
-<ul>
-<li>Jenny: Drop-in on Tue 12/18 between 9:40am-11:40am and between 1:20pm-4:00pm. Please be organized! Don’t have two team members drop in to ask the same thing twice!</li>
-<li>Albert:
-<ul>
-<li>Mon 12/17 12pm-2:30pm</li>
-<li>Tue 12/18 1:30-3:30pm</li>
-<li><del>Wed 12/19 1pm-3pm</del></li>
-<li>Fri 12/21 11am-1pm</li>
-</ul></li>
-</ul></li>
-<li>Added two notes on 12/10 about term project <a href="term_project.html#resubmission">resubmission</a> instructions.</li>
-<li>Quiz during lecture on Wednesday as well as time for project work.</li>
+<li>Please ensure you have followed all the “start here” instructions posted on <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>.</li>
 </ul>
-<hr />
-</div>
-</div>
-<div id="Lec35" class="section level1">
-<h1>Lec 35: Fri 12/7</h1>
-<div id="announcements-1" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><strong>Favor to ask</strong>: Help out RStudio’s efforts to make data science accessible to more individuals and more demographic groups by filling out this 5 minute survey on how you learn R!</li>
-</ul>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Please take our 5 minute survey so we (<a href="https://twitter.com/rstudio?ref_src=twsrc%5Etfw"><span class="citation">@rstudio</span></a>) can learn more about how people learn <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>: <a href="https://t.co/KUH0NPnK3x">https://t.co/KUH0NPnK3x</a>. Findings will be presented at rstudio::conf 2019 (and online)
-</p>
-— Hadley Wickham (<span class="citation">@hadleywickham</span>) <a href="https://twitter.com/hadleywickham/status/1070726165764194304?ref_src=twsrc%5Etfw">December 6, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
 <div id="todays-topicsactivities" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk" class="section level3">
-<h3>1. Chalk Talk</h3>
-</div>
-<div id="in-class-exercise" class="section level3">
-<h3>2. In-class exercise</h3>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec34" class="section level1">
-<h1>Lec 34: Wed 12/5</h1>
-<div id="announcements-2" class="section level2">
-<h2>Announcements</h2>
-<p>None</p>
-</div>
-<div id="todays-topicsactivities-1" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
-<h3>1. Chalk Talk</h3>
 <ul>
-<li>Finishing confidence intervals</li>
-<li>Started hypothesis testing, in particular the idea of “permutations”</li>
+<li>Who is rudeboybert?</li>
+<li>Webpage features</li>
+<li>Slack demo</li>
+<li></li>
 </ul>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2pHhjx9hyM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
-<p><br></p>
-</div>
-<div id="in-class-exercise-1" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Based on this code:</p>
+<hr />
+<!--
+
+# Lec 36: Mon 12/10 {#Lec36}
+
+## Announcements
+
+* Extra office hours reading/exam week:
+    + Jenny: Drop-in on Tue 12/18 between 9:40am-11:40am and between 1:20pm-4:00pm. Please be organized! Don't have two team members drop in to ask the same thing twice!
+    + Albert:
+        + Mon 12/17 12pm-2:30pm
+        + Tue 12/18 1:30-3:30pm
+        + ~~Wed 12/19 1pm-3pm~~
+        + Fri 12/21 11am-1pm
+* Added two notes on 12/10 about term project [resubmission](term_project.html#resubmission) instructions.
+* Quiz during lecture on Wednesday as well as time for project work.
+
+
+***
+
+
+# Lec 35: Fri 12/7 {#Lec35}
+
+## Announcements
+
+* **Favor to ask**: Help out RStudio's efforts to make data science accessible to more individuals and more demographic groups by filling out this 5 minute survey on how you learn R!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Please take our 5 minute survey so we (<a href="https://twitter.com/rstudio?ref_src=twsrc%5Etfw">@rstudio</a>) can learn more about how people learn <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>: <a href="https://t.co/KUH0NPnK3x">https://t.co/KUH0NPnK3x</a>. Findings will be presented at rstudio::conf 2019 (and online)</p>&mdash; Hadley Wickham (@hadleywickham) <a href="https://twitter.com/hadleywickham/status/1070726165764194304?ref_src=twsrc%5Etfw">December 6, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>   
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+
+### 2. In-class exercise
+
+
+***
+
+
+# Lec 34: Wed 12/5 {#Lec34}
+
+## Announcements
+
+None
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Finishing confidence intervals
+* Started hypothesis testing, in particular the idea of "permutations"
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2pHhjx9hyM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br>
+
+### 2. In-class exercise
+
+Based on this code:
+
 <script src="https://gist.github.com/rudeboybert/b5dde565a50df08571dabb6ec53ab58e.js"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec33" class="section level1">
-<h1>Lec 33: Mon 12/3</h1>
-<div id="announcements-3" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Office hours: Today <del>3-6pm</del> 3-4:45pm, tomorrow: 3-6pm.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-2" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-2" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Confidence interval terminology</li>
-<li>Interpreting confidence intervals</li>
-</ul>
-</div>
-<div id="in-class-exercise-2" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive 9.5-9.6</p>
-</div>
-<div id="tweet-of-the-day" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>Statistical inference as a <code>%&gt;%</code> chain of verbs! Click the tweet to see a GIF:</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-ICYMI, dig this visual intro to the infer 📦 verbs…<br>🌲 “Statistical Inference: A Tidy Approach” by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw"><span class="citation">@old_man_chester</span></a> <a href="https://t.co/vEtDotrWcf">https://t.co/vEtDotrWcf</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> ht <a href="https://twitter.com/LVaudor?ref_src=twsrc%5Etfw"><span class="citation">@LVaudor</span></a> <a href="https://t.co/4JJHSclz2i">pic.twitter.com/4JJHSclz2i</a>
-</p>
-— Mara Averick (<span class="citation">@dataandme</span>) <a href="https://twitter.com/dataandme/status/1069290620274073600?ref_src=twsrc%5Etfw">December 2, 2018</a>
-</blockquote>
+
+
+***
+
+
+# Lec 33: Mon 12/3 {#Lec33}
+
+## Announcements
+
+* Office hours: Today ~~3-6pm~~ 3-4:45pm, tomorrow: 3-6pm.
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Confidence interval terminology
+* Interpreting confidence intervals
+
+### 2. In-class exercise
+
+Read ModernDive 9.5-9.6
+
+### 3. Tweet of the day
+
+Statistical inference as a `%>%` chain of verbs! Click the tweet to see a GIF:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">ICYMI, dig this visual intro to the infer 📦 verbs…<br>🌲 &quot;Statistical Inference: A Tidy Approach&quot; by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> <a href="https://t.co/vEtDotrWcf">https://t.co/vEtDotrWcf</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> ht <a href="https://twitter.com/LVaudor?ref_src=twsrc%5Etfw">@LVaudor</a> <a href="https://t.co/4JJHSclz2i">pic.twitter.com/4JJHSclz2i</a></p>&mdash; Mara Averick (@dataandme) <a href="https://twitter.com/dataandme/status/1069290620274073600?ref_src=twsrc%5Etfw">December 2, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec32" class="section level1">
-<h1>Lec 32: Fri 11/30</h1>
-<div id="announcements-4" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Midterm starts at 6pm</li>
-<li>What is the <a href="https://www.tidyverse.org/packages/" target="_blank"><code>tidyverse</code></a>?</li>
-</ul>
+
+
+***
+
+
+# Lec 32: Fri 11/30 {#Lec32}
+
+## Announcements
+
+* Midterm starts at 6pm
+* What is the [`tidyverse`](https://www.tidyverse.org/packages/){target="_blank"}?
+
 <center>
 <img src="static/images/tidyverse_diagram.png" alt="Drawing" style="width: 600px;" border="10"/>
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-3" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>Based on the following code; copy this into a scratchpad. Make sure you have the <code>tidyverse</code> package installed.</p>
+<br>
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Based on the following code; copy this into a scratchpad. Make sure you have the `tidyverse` package installed.
+
 <script src="https://gist.github.com/rudeboybert/4b3591ac7f4e81b73cd61b042cf1d37a.js"></script>
-</div>
-<div id="in-class-exercise-3" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive 9.2-9.4</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec31" class="section level1">
-<h1>Lec 31: Wed 11/28</h1>
-<div id="announcements-5" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Initial project submission feedback session: Book a session for next week on <a href="https://rudeboybert.youcanbook.me/service/jsps/cal.jsp?cal=4e3d341c-d9d3-480f-b0ca-2dbc2dc4ec56&amp;ini=1543416671567&amp;jumpDate=2018-12-03" target="_blank">youcanbookme</a> where if possible all group members can attend.</li>
-<li>Instructions for resubmission due Fri 12/21 5pm now posted on <a href="term_project.html">Term Project</a> page.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-4" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-4" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Go over practice Midterm III</li>
-<li>Introduced <code>infer</code> thinking.</li>
-</ul>
-</div>
-<div id="tweet-of-the-day-1" class="section level3">
-<h3>2. Tweet of the day</h3>
-<p><code>infer</code> package makes statistical inference tidy and transparent!</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-<a href="https://twitter.com/Reed_College_?ref_src=twsrc%5Etfw"><span class="citation">@Reed_College_</span></a>'s Andrew Bray on the {infer} <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package to make statistical inference tidy &amp; transparent <a href="https://t.co/bCfK7Wnn0M">https://t.co/bCfK7Wnn0M</a> <a href="https://twitter.com/hashtag/JSM2018?src=hash&amp;ref_src=twsrc%5Etfw">#JSM2018</a> <a href="https://t.co/VGOyeHaIVU">pic.twitter.com/VGOyeHaIVU</a>
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1024054836277342208?ref_src=twsrc%5Etfw">July 30, 2018</a>
-</blockquote>
+
+### 2. In-class exercise
+
+Read ModernDive 9.2-9.4
+
+
+***
+
+
+# Lec 31: Wed 11/28 {#Lec31}
+
+## Announcements
+
+* Initial project submission feedback session: Book a session for next week on [youcanbookme](https://rudeboybert.youcanbook.me/service/jsps/cal.jsp?cal=4e3d341c-d9d3-480f-b0ca-2dbc2dc4ec56&ini=1543416671567&jumpDate=2018-12-03){target="_blank"} where if possible all group members can attend.
+* Instructions for resubmission due Fri 12/21 5pm now posted on [Term Project](term_project.html) page.
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Go over practice Midterm III
+* Introduced `infer` thinking.
+
+### 2. Tweet of the day
+
+`infer` package makes statistical inference tidy and transparent!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/Reed_College_?ref_src=twsrc%5Etfw">@Reed_College_</a>&#39;s Andrew Bray on the {infer} <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package to make statistical inference tidy &amp; transparent <a href="https://t.co/bCfK7Wnn0M">https://t.co/bCfK7Wnn0M</a> <a href="https://twitter.com/hashtag/JSM2018?src=hash&amp;ref_src=twsrc%5Etfw">#JSM2018</a> <a href="https://t.co/VGOyeHaIVU">pic.twitter.com/VGOyeHaIVU</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1024054836277342208?ref_src=twsrc%5Etfw">July 30, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec30" class="section level1">
-<h1>Lec 30: Mon 11/19</h1>
-<div id="announcements-6" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Lecture today starts at 1:20pm</li>
-<li>Midterm III details posted; we’ll go over practice midterm on Wednesday after the break.</li>
-<li>Upcoming schedule.
-<ul>
-<li>Today and tomorrow: No office hours</li>
-<li>Mon 11/26: No lecture and no office hours</li>
-<li>Tue 11/27: Regular office hours 3-6pm</li>
-<li>I am out of town from this afternoon Mon 11/19 until the morning of Tue 11/27 and won’t be on Slack.</li>
-<li>Project feedback after break</li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-5" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-5" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>Now swithing from tactile to virtual resampling using <code>infer</code> package!</p>
+
+
+***
+
+
+# Lec 30: Mon 11/19 {#Lec30}
+
+## Announcements
+
+* Lecture today starts at 1:20pm
+* Midterm III details posted; we'll go over practice midterm on Wednesday after the break.
+* Upcoming schedule.
+    + Today and tomorrow: No office hours
+    + Mon 11/26: No lecture and no office hours
+    + Tue 11/27: Regular office hours 3-6pm
+    + I am out of town from this afternoon Mon 11/19 until the morning of Tue 11/27 and won't be on Slack.
+    + Project feedback after break
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Now swithing from tactile to virtual resampling using `infer` package!
+
 <center>
-<img src="static/images/infer_oregon.png" width="200" />
+![](static/images/infer_oregon.png){ width=200px }
 </center>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec29" class="section level1">
-<h1>Lec 29: Fri 11/16</h1>
-<div id="announcements-7" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Upcoming schedule:
-<ul>
-<li>Mon 11/19: Midterm III review.</li>
-<li>Mon 11/26 (after break): No lecture</li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-6" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-6" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Connecting sampling distributions and “Hang the DJ” episode</li>
-<li>Analyzing the tactile “resampling <strong>with</strong> replacement” simulation from Lec28 based on a <strong>single</strong> sample of size <span class="math inline">\(n=10\)</span></li>
-</ul>
+
+
+***
+
+
+# Lec 29: Fri 11/16 {#Lec29}
+
+## Announcements
+
+* Upcoming schedule:
+    + Mon 11/19: Midterm III review.
+    + Mon 11/26 (after break): No lecture
+    
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Connecting sampling distributions and "Hang the DJ" episode
+* Analyzing the tactile "resampling **with** replacement" simulation from Lec28 based on a **single** sample of size $n=10$
+
 <center>
-<img src="static/images/sample_n_10.png" width="200" />
+![](static/images/sample_n_10.png){ width=200px }
 </center>
-<p><br></p>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
-</div>
-<div id="in-class-exercise-4" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>ModernDive 9.1</li>
-<li>Install <code>infer</code> package</li>
-<li>Do PS10</li>
-</ul>
-</div>
-<div id="tweet-of-the-day-2" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>From this past Monday Nov 12:</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Huge congratulations to Professor Brad Efron, who wins the statistical equivalent of the Nobel Prize for creating the ‘bootstrap’ method, the ‘best statistical pain reliever ever produced’ <a href="https://t.co/tHAHS09Cqv">https://t.co/tHAHS09Cqv</a> <a href="https://t.co/Qei54av5sN">https://t.co/Qei54av5sN</a>
-</p>
-— Royal Statistical Society (<span class="citation">@RoyalStatSoc</span>) <a href="https://twitter.com/RoyalStatSoc/status/1061918061794676736?ref_src=twsrc%5Etfw">November 12, 2018</a>
-</blockquote>
+
+<br>
+
+<img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" />
+
+
+### 2. In-class exercise
+
+* ModernDive 9.1
+* Install `infer` package
+* Do PS10
+
+
+### 3. Tweet of the day
+
+From this past Monday Nov 12:
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Huge congratulations to Professor Brad Efron, who wins the statistical equivalent of the Nobel Prize for creating the &#39;bootstrap&#39; method, the &#39;best statistical pain reliever ever produced&#39; <a href="https://t.co/tHAHS09Cqv">https://t.co/tHAHS09Cqv</a> <a href="https://t.co/Qei54av5sN">https://t.co/Qei54av5sN</a></p>&mdash; Royal Statistical Society (@RoyalStatSoc) <a href="https://twitter.com/RoyalStatSoc/status/1061918061794676736?ref_src=twsrc%5Etfw">November 12, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec28" class="section level1">
-<h1>Lec 28: Wed 11/14</h1>
-<div id="announcements-8" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Quiz today</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-7" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-7" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>Handout: Recap of ModernDive Figure 8.14 below</p>
+
+
+***
+
+
+# Lec 28: Wed 11/14 {#Lec28}
+
+## Announcements
+
+* Quiz today
+    
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Handout: Recap of ModernDive Figure 8.14 below
+
 <center>
-<img src="static/images/sampling_distributions.png" width="800" />
+![](static/images/sampling_distributions.png){ width=800px }
 </center>
-</div>
-<div id="in-class-exercise-5" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Bootstrap tactile resampling simulation based on slips of paper with your name/height written on them. Recall we took a sample of size <span class="math inline">\(n=10\)</span> students.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec27" class="section level1">
-<h1>Lec 27: Mon 11/12</h1>
-<div id="announcements-9" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Term project: No more poster presentations at the end of semester.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-8" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-8" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>“Virtual sampling simulation” (by computer)</li>
-<li>In real-life sampling: polls</li>
-</ul>
-</div>
-<div id="in-class-exercise-6" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive 8.3 on “Virtual sampling simulation” and 8.4 with an example on polls.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec26" class="section level1">
-<h1>Lec 26: Fri 11/9</h1>
-<div id="announcements-10" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><strong>Are you?</strong>
-<ul>
-<li>Interested in how to use statistical methods to make causal conclusions about observational data? In other words, when you data was NOT collected through a randomized experiement like a clinical trial or an A/B-test? 💯<br />
-</li>
-<li>Interested in public health and/or HIV/AIDS?💯<br />
-</li>
-<li>Interested in finding out how you can use social networks to influence behavior?💯<br />
-</li>
-<li>Interested in ways to improve health of high risk populations such as people who inject drugs?💯<br />
-</li>
-</ul></li>
-<li><strong>Then come to this talk:</strong></li>
-</ul>
+
+### 2. In-class exercise
+
+Bootstrap tactile resampling simulation based on slips of paper with your
+name/height written on them. Recall we took a sample of size $n=10$ students.
+
+
+***
+
+
+# Lec 27: Mon 11/12 {#Lec27}
+
+## Announcements
+
+* Term project: No more poster presentations at the end of semester. 
+
+    
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* "Virtual sampling simulation" (by computer)
+* In real-life sampling: polls
+
+### 2. In-class exercise
+
+Read ModernDive 8.3 on "Virtual sampling simulation" and 8.4 with an example on polls.
+
+
+***
+
+
+# Lec 26: Fri 11/9 {#Lec26}
+
+## Announcements
+
+* **Are you?**
+    + Interested in how to use statistical methods to make causal conclusions about observational data? In other words, when you data was NOT collected through a randomized experiement like a clinical trial or an A/B-test? 💯  
+    + Interested in public health and/or HIV/AIDS?💯  
+    + Interested in finding out how you can use social networks to influence behavior?💯  
+    + Interested in ways to improve health of high risk populations such as people who inject drugs?💯  
+* **Then come to this talk:**
+
 <center>
-<img src="static/images/buchanan_talk.png" width="600" />
+![](static/images/buchanan_talk.png){ width=600px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-9" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-9" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Discuss tweet of the day</li>
-<li>Normal distribution theory</li>
-<li>“Tactile sampling simulation” (by hand)</li>
-</ul>
-</div>
-<div id="in-class-exercise-7" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive 8.1 &amp; 8.2 on sampling terminology and “Tactile sampling simulation”</p>
-</div>
-<div id="tweet-of-the-day-3" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>Question: Does living near a Whole Foods <strong>cause</strong> increases in the likelihood of voting Democrat?</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-So first, the basics. There are 470 WF across the U.S., and 233/435 CD's have at least 1 WF in them. WF districts did tend to prefer Clinton over Trump, as they had an average 2016 pres. margin of +13 Clinton, while non-WF districts preferred Donald Trump by +8 points. (2/9) <a href="https://t.co/Kv11asuuAc">pic.twitter.com/Kv11asuuAc</a>
-</p>
-— Grant Gregory (<span class="citation">@GrantrGregory</span>) <a href="https://twitter.com/GrantrGregory/status/1054044413104660485?ref_src=twsrc%5Etfw">October 21, 2018</a>
-</blockquote>
+<br>
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Discuss tweet of the day
+* Normal distribution theory
+* "Tactile sampling simulation" (by hand)
+
+### 2. In-class exercise
+
+Read ModernDive 8.1 & 8.2 on sampling terminology and "Tactile sampling simulation"
+
+### 3. Tweet of the day
+
+Question: Does living near a Whole Foods **cause** increases in the likelihood of voting Democrat?
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">So first, the basics. There are 470 WF across the U.S., and 233/435 CD&#39;s have at least 1 WF in them. WF districts did tend to prefer Clinton over Trump, as they had an average 2016 pres. margin of +13 Clinton, while non-WF districts preferred Donald Trump by +8 points. (2/9) <a href="https://t.co/Kv11asuuAc">pic.twitter.com/Kv11asuuAc</a></p>&mdash; Grant Gregory (@GrantrGregory) <a href="https://twitter.com/GrantrGregory/status/1054044413104660485?ref_src=twsrc%5Etfw">October 21, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec25" class="section level1">
-<h1>Lec 25: Wed 11/7</h1>
-<div id="todays-topicsactivities-10" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<ul>
-<li>Added <a href="term_project.html#initialtips">tips</a> to consider for initial submission</li>
-<li>Class time to work on projects</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="Lec24" class="section level1">
-<h1>Lec 24: Mon 11/5</h1>
-<div id="todays-topicsactivities-11" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="sampling-exercise" class="section level3">
-<h3>1. Sampling Exercise</h3>
+
+
+***
+
+
+# Lec 25: Wed 11/7 {#Lec25}
+
+## Today's Topics/Activities
+
+* Added [tips](term_project.html#initialtips) to consider for initial submission
+* Class time to work on projects
+
+
+***
+
+
+# Lec 24: Mon 11/5 {#Lec24}
+
+## Today's Topics/Activities
+
+### 1. Sampling Exercise
+
 <center>
-<img src="static/images/CLT.png" width="800" />
+![](static/images/CLT.png){ width=800px }
 </center>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec23" class="section level1">
-<h1>Lec 23: Fri 11/2</h1>
-<div id="announcements-11" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Updated Midterm II instructions:
-<ul>
-<li>Bring a calculator! Scientific calculators ok, mobile phones not.</li>
-<li>Cover page posted.</li>
-</ul></li>
-<li>Project proposal feedback delivered. Many groups had a very right-skewed explanatory and/or outcome variable. In those cases, do a <code>log10()</code>-transformation as seen in the “Modeling with data in the tidyverse” course where we <code>mutate()</code> new <code>log10_price</code> and <code>log10_size</code> variables.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-12" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-10" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>Observational studies vs randomized experiments. In particular recall from PS04:</p>
+
+
+***
+
+
+# Lec 23: Fri 11/2 {#Lec23}
+
+## Announcements
+
+* Updated Midterm II instructions:
+    + Bring a calculator! Scientific calculators ok, mobile phones not. 
+    + Cover page posted.
+* Project proposal feedback delivered. Many groups had a very right-skewed explanatory and/or outcome variable. In those cases, do a `log10()`-transformation as seen in the "Modeling with data in the tidyverse" course where we `mutate()` new `log10_price` and `log10_size` variables.
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Observational studies vs randomized experiments. In particular recall from PS04:
+
 <div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
+  <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["year"],"name":[1],"type":["int"],"align":["right"]},{"label":["height"],"name":[2],"type":["int"],"align":["right"]},{"label":["been_to_africa"],"name":[3],"type":["chr"],"align":["left"]},{"label":["priming_number"],"name":[4],"type":["chr"],"align":["left"]},{"label":["how_many_countries"],"name":[5],"type":["int"],"align":["right"]}],"data":[{"1":"2021","2":"70","3":"No","4":"Primed with 14 countries","5":"36"},{"1":"2020","2":"67","3":"No","4":"Primed with 94 countries","5":"120"},{"1":"2021","2":"69","3":"No","4":"Primed with 14 countries","5":"30"},{"1":"2021","2":"60","3":"Yes","4":"Primed with 14 countries","5":"64"},{"1":"2021","2":"66","3":"No","4":"Primed with 14 countries","5":"1"},{"1":"2021","2":"66","3":"No","4":"Primed with 14 countries","5":"22"},{"1":"2022","2":"65","3":"No","4":"Primed with 14 countries","5":"16"},{"1":"2021","2":"64","3":"No","4":"Primed with 94 countries","5":"100"},{"1":"2022","2":"68","3":"No","4":"Primed with 94 countries","5":"29"},{"1":"2021","2":"62","3":"No","4":"Primed with 94 countries","5":"110"},{"1":"2021","2":"67","3":"No","4":"Primed with 14 countries","5":"25"},{"1":"2019","2":"69","3":"No","4":"Primed with 14 countries","5":"30"},{"1":"2021","2":"62","3":"No","4":"Primed with 94 countries","5":"60"},{"1":"2021","2":"66","3":"No","4":"Primed with 94 countries","5":"38"},{"1":"2020","2":"66","3":"No","4":"Primed with 14 countries","5":"38"},{"1":"2020","2":"69","3":"No","4":"Primed with 14 countries","5":"38"},{"1":"2020","2":"64","3":"No","4":"Primed with 14 countries","5":"40"},{"1":"2021","2":"63","3":"No","4":"Primed with 94 countries","5":"38"},{"1":"2021","2":"71","3":"No","4":"Primed with 14 countries","5":"16"},{"1":"2021","2":"65","3":"No","4":"Primed with 14 countries","5":"28"},{"1":"2021","2":"67","3":"No","4":"Primed with 94 countries","5":"35"},{"1":"2021","2":"60","3":"No","4":"Primed with 14 countries","5":"35"},{"1":"2020","2":"64","3":"No","4":"Primed with 14 countries","5":"20"},{"1":"2022","2":"61","3":"No","4":"Primed with 14 countries","5":"30"},{"1":"2021","2":"66","3":"Yes","4":"Primed with 14 countries","5":"42"},{"1":"2020","2":"62","3":"No","4":"Primed with 14 countries","5":"20"},{"1":"2021","2":"67","3":"No","4":"Primed with 14 countries","5":"23"},{"1":"2020","2":"64","3":"No","4":"Primed with 14 countries","5":"23"},{"1":"2021","2":"60","3":"No","4":"Primed with 94 countries","5":"100"},{"1":"2021","2":"65","3":"No","4":"Primed with 14 countries","5":"16"},{"1":"2021","2":"62","3":"No","4":"Primed with 14 countries","5":"22"},{"1":"2021","2":"63","3":"No","4":"Primed with 14 countries","5":"73"},{"1":"2021","2":"58","3":"No","4":"Primed with 94 countries","5":"54"},{"1":"2020","2":"69","3":"No","4":"Primed with 14 countries","5":"32"},{"1":"2019","2":"64","3":"No","4":"Primed with 94 countries","5":"50"},{"1":"2021","2":"60","3":"No","4":"Primed with 14 countries","5":"15"},{"1":"2022","2":"62","3":"No","4":"Primed with 14 countries","5":"27"},{"1":"2019","2":"68","3":"No","4":"Primed with 94 countries","5":"75"},{"1":"2021","2":"68","3":"No","4":"Primed with 14 countries","5":"35"},{"1":"2021","2":"63","3":"No","4":"Primed with 94 countries","5":"30"},{"1":"2021","2":"63","3":"No","4":"Primed with 94 countries","5":"60"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
-</div>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
-</div>
-<div id="tweet-of-the-day-4" class="section level3">
-<h3>2. Tweet of the day</h3>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Excited about Berkeley’s new Division of Data Science and Information - with 1000 majors already! <a href="https://t.co/31WTxPD43l">https://t.co/31WTxPD43l</a>
-</p>
-— Deborah Nolan (<span class="citation">@DebAtStat</span>) <a href="https://twitter.com/DebAtStat/status/1058037503037452289?ref_src=twsrc%5Etfw">November 1, 2018</a>
-</blockquote>
+</div><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" />
+
+### 2. Tweet of the day
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Excited about Berkeley’s new Division of Data Science and Information - with 1000 majors already! <a href="https://t.co/31WTxPD43l">https://t.co/31WTxPD43l</a></p>&mdash; Deborah Nolan (@DebAtStat) <a href="https://twitter.com/DebAtStat/status/1058037503037452289?ref_src=twsrc%5Etfw">November 1, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec22" class="section level1">
-<h1>Lec 22: 🎃Wed 10/31🎃</h1>
-<div id="announcements-12" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>No lab Tuesday 11/20.</li>
-<li>Go over practice midterm questions</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-13" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-11" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>Causal Inference</p>
-</div>
-<div id="in-class-exercise-8" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Look at <a href="http://www.tylervigen.com/spurious-correlations" target="_blank">Spurious Correlations</a></li>
-<li>Read ModernDive 6.3.2</li>
-</ul>
-</div>
-<div id="install-development-version-of-moderndive-package" class="section level3">
-<h3>3. Install development version of moderndive package</h3>
-<p>We’re going to install the development AKA <a href="https://en.wiktionary.org/wiki/beta_version" target="_blank">beta-version</a> of the <code>moderndive</code> package, which as of this morning includes a new function <code>gg_parallel_slopes()</code> allowing you to create a ggplot of the <strong>parallel slopes model</strong>. Note, this function is an inelegant hack but it gets the job done (source code on <a href="https://github.com/moderndive/moderndive/blob/geom_parallel_slopes/R/ggplot_parallel_slopes.R" target="_blank">GitHub</a>).</p>
-<ol style="list-style-type: decimal">
-<li>Install the <code>devtools</code> package as you normally would install a package. Say yes to any prompts.</li>
-<li>Run the following line in your console to install the development version of the <code>moderndive</code> package off of GitHub.com, specifically the <code>geom_parallel_slopes</code> branch:<br />
-<code>devtools::install_github(&quot;moderndive/moderndive&quot;, ref = &quot;geom_parallel_slopes&quot;)</code></li>
-<li>Run <code>library(moderndive)</code> to reload the package.</li>
-<li>Run <code>?gg_parallel_slopes</code> and see if the help file pops up. If it does, your installation worked!</li>
-<li>Run example code at the bottom of the help file to see it in action! You should get the following plot:</li>
-</ol>
+
+
+***
+
+
+# Lec 22: 🎃Wed 10/31🎃 {#Lec22}
+
+## Announcements
+
+* No lab Tuesday 11/20.
+* Go over practice midterm questions
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Causal Inference
+
+### 2. In-class exercise
+
+* Look at [Spurious Correlations](http://www.tylervigen.com/spurious-correlations){target="_blank"}
+* Read ModernDive 6.3.2
+
+
+### 3. Install development version of moderndive package
+
+We're going to install the development AKA [beta-version](https://en.wiktionary.org/wiki/beta_version){target="_blank"} of the `moderndive` package, which as of this morning includes a new function `gg_parallel_slopes()` allowing you to create a ggplot of the **parallel slopes model**. Note, this function is an inelegant hack but it gets the job done (source code on [GitHub](https://github.com/moderndive/moderndive/blob/geom_parallel_slopes/R/ggplot_parallel_slopes.R){target="_blank"}).
+
+1. Install the `devtools` package as you normally would install a package. Say yes to any prompts.
+2. Run the following line in your console to install the development version of the `moderndive` package off of GitHub.com, specifically the `geom_parallel_slopes` branch:  
+`devtools::install_github("moderndive/moderndive", ref = "geom_parallel_slopes")`
+3. Run `library(moderndive)` to reload the package.
+3. Run `?gg_parallel_slopes` and see if the help file pops up. If it does, your installation worked!
+4. Run example code at the bottom of the help file to see it in action! You should get the following plot:
+
 <center>
-<img src="static/images/parallel_slopes.png" width="600" />
+![](static/images/parallel_slopes.png){ width=600px }
 </center>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec21" class="section level1">
-<h1>Lec 21: Mon 10/29</h1>
-<div id="announcements-13" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><strong>Joint SDS/Government faculty hiring</strong>: First candidate is coming to campus tomorrow (Tuesday 10/30)! They will be holding a “mock lecture” at 5pm in Sabin-Reed 301 where they will teach a lecture on an intermediate/advanced topic in an way that is accessible to undergrads.</li>
-<li>Office hours tomorrow: <del>3-6pm</del> 3-5pm.</li>
-<li>Midterm II <a href="midterms.html#midtermII">topics</a>.</li>
-<li>Project proposal feedback over Slack tomorrow!</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-14" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-12" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li><strong>Recall</strong>: There are two possible models for regression with one categorical and one numerical <span class="math inline">\(x\)</span> explanatory variable:
-<ul>
-<li>Parallel slopes model: easy to interpret, hard to make a <code>ggplot</code> of.</li>
-<li>Interaction model: harder to interpret, easy to make a <code>ggplot</code> of.</li>
-</ul></li>
-<li><strong>Last Friday</strong>: Parallel slopes model</li>
-<li><strong>Today</strong>: Interaction model</li>
-</ul>
-</div>
-<div id="in-class-exercise-9" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive Chapter 7.2.3 - 7.2.5.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec20" class="section level1">
-<h1>Lec 20: Fri 10/26</h1>
-<div id="announcements-14" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>From <a href="https://www.facebook.com/SmithiesInSDS/" target="_blank">Smithies in SDS</a>. Entirely student-run data science day! Saturday, November 3rd 10am-2pm! <strong>RSVP through the Smith Social Network <a href="https://socialnetwork.smith.edu/event/2876976" target="_blank">here</a>!</strong></li>
-</ul>
+
+
+***
+
+
+# Lec 21: Mon 10/29 {#Lec21}
+
+## Announcements
+
+* **Joint SDS/Government faculty hiring**: First candidate is coming to campus tomorrow (Tuesday 10/30)! They will be holding a "mock lecture" at 5pm in Sabin-Reed 301 where they will teach a lecture on an intermediate/advanced topic in an way that is accessible to undergrads.
+* Office hours tomorrow: ~~3-6pm~~ 3-5pm.
+* Midterm II [topics](midterms.html#midtermII).
+* Project proposal feedback over Slack tomorrow!
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* **Recall**: There are two possible models for regression with one categorical and one numerical $x$ explanatory variable:
+    + Parallel slopes model: easy to interpret, hard to make a `ggplot` of.
+    + Interaction model: harder to interpret, easy to make a `ggplot` of.
+* **Last Friday**: Parallel slopes model
+* **Today**: Interaction model
+
+### 2. In-class exercise
+
+Read ModernDive Chapter 7.2.3 - 7.2.5. 
+
+
+***
+
+
+# Lec 20: Fri 10/26 {#Lec20}
+
+## Announcements
+
+* From [Smithies in SDS](https://www.facebook.com/SmithiesInSDS/){target="_blank"}. Entirely student-run data science day! Saturday, November 3rd 10am-2pm! **RSVP through the Smith Social Network [here](https://socialnetwork.smith.edu/event/2876976){target="_blank"}!**
+
 <center>
-<img src="static/images/DSD_SLIDE.png" width="600" />
+![](static/images/DSD_SLIDE.png){ width=600px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-15" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-13" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Last topic needed for term project initial submission.</li>
-<li>Two possible models for regression with one categorical and one numerical <span class="math inline">\(x\)</span> explanatory variable:
-<ul>
-<li>Parallel slopes model: easy to interpret, hard to make a <code>ggplot</code> of.</li>
-<li>Interaction model: harder to interpret, easy to make a <code>ggplot</code> of.</li>
-</ul></li>
-<li>Today: parallel slopes model!</li>
-</ul>
-</div>
-<div id="in-class-exercise-10" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive Chapter 7.2.1 &amp; 7.2.2.</p>
-</div>
-<div id="tweet-of-the-day-5" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>In order for me to be able to recreate/reproduce/replicate your work, I need:</p>
-<ol style="list-style-type: decimal">
-<li>Access to your data! If you only submitted a <code>project_proposal.R</code> file but not the <code>.csv</code>/<code>.xlsx</code> data file, I can’t recreate/reproduce/replicate your graphs!</li>
-<li>If the code that loads your <code>.csv</code>/<code>.xlsx</code> data file looks something like<br />
-<code>read_csv(&quot;~/Desktop/My Smith Work/2018-19/Term Project/my_data.csv&quot;)</code><br />
-When I run this code it won’t load the data since the <code>my_data.csv</code> file will not be in the same folder <strong>on my computer</strong>.</li>
-</ol>
-<p><strong>Suggested approach</strong>: Instead of submitting <code>.csv</code>/<code>.xlsx</code> data files on Moodle, publish your data to the web and load into R from there!</p>
-<ol style="list-style-type: decimal">
-<li>Click on tweet below to see all steps</li>
-<li>Publish your data to the web (only if it is non-sensitive nor non-private)</li>
-<li>Update your project proposal with the <code>read_csv(&quot;WEBLINK TO YOUR DATA&quot;)</code> code that loads the data and test all your code to ensure it all runs.</li>
-<li><strong>Group leader only</strong>: Resubmit your <code>project_proposal.R</code> file in a Slack group DM that has me and all your group members by Saturday 10/27 at 5pm.</li>
-</ol>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Hey data science ed types! If you don't want to deal w/ teaching relative vs absolute file paths when loading CSV's into <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> at first (I favor punting until later), have your students publish their (non-sensitive data) CSV's to Google Sheets!
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1055821833512071168?ref_src=twsrc%5Etfw">October 26, 2018</a>
-</blockquote>
+<br>
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Last topic needed for term project initial submission.
+* Two possible models for regression with one categorical and one numerical $x$ explanatory variable:
+    + Parallel slopes model: easy to interpret, hard to make a `ggplot` of.
+    + Interaction model: harder to interpret, easy to make a `ggplot` of.
+* Today: parallel slopes model!
+
+### 2. In-class exercise
+
+Read ModernDive Chapter 7.2.1 & 7.2.2. 
+
+### 3. Tweet of the day
+
+In order for me to be able to recreate/reproduce/replicate your work, I need:
+
+1. Access to your data! If you only submitted a `project_proposal.R` file but not the `.csv`/`.xlsx` data file, I can't recreate/reproduce/replicate your graphs! 
+1. If the code that loads your `.csv`/`.xlsx` data file looks something like  
+`read_csv("~/Desktop/My Smith Work/2018-19/Term Project/my_data.csv")`  
+When I run this code it won't load the data since the `my_data.csv` file will not be in the same folder **on my computer**.
+
+**Suggested approach**: Instead of submitting `.csv`/`.xlsx` data files on Moodle, publish your data to the web and load into R from there!
+
+1. Click on tweet below to see all steps
+1. Publish your data to the web (only if it is non-sensitive nor non-private)
+1. Update your project proposal with the `read_csv("WEBLINK TO YOUR DATA")` code that loads the data and test all your code to ensure it all runs.
+1. **Group leader only**: Resubmit your `project_proposal.R` file in a Slack group DM that has me and all your group members by Saturday 10/27 at 5pm. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hey data science ed types! If you don&#39;t want to deal w/ teaching relative vs absolute file paths when loading CSV&#39;s into <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> at first (I favor punting until later), have your students publish their (non-sensitive data) CSV&#39;s to Google Sheets!</p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1055821833512071168?ref_src=twsrc%5Etfw">October 26, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec19" class="section level1">
-<h1>Lec 19: Wed 10/24</h1>
-<div id="announcements-15" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>🔥<strong>SDS Major Flowchart</strong> 🔥: All courses highlighted in red in the flowchart below will be offered in Spring 2019, along with the following core 5 courses (left-most grey block in flowchart):
-<ol style="list-style-type: decimal">
-<li>SDS 201/220: Intro Stats</li>
-<li>SDS/MTH 291: Multiple Regression</li>
-<li>CSC 111: Intro Programming (in Python)</li>
-<li>SDS 192: Intro to Data Science</li>
-<li>MTH 211: Linear Algebra</li>
-</ol></li>
-<li><strong>Course descriptions</strong>: Check out Smith Course Search for <a href="https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&amp;dept=Statistical+and+Data+Sciences&amp;instr=&amp;credits=&amp;course_numb=&amp;course_keywd=&amp;op=Submit&amp;form_build_id=form-FjEA1i8POuiCUrY4KeFdU3um3UTFlX78jICWJ25ggGU&amp;form_id=campus_course_search_basic_search_form" target="_blank">SDS courses</a>, <a href="https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&amp;dept=Computer+Science&amp;instr=&amp;credits=&amp;course_numb=&amp;course_keywd=&amp;op=Submit&amp;form_build_id=form-wroGqwD8PoEpDGC6bbuWoTDEXmsGKhg_QI-YQHuT_Ug&amp;form_id=campus_course_search_basic_search_form" target="_blank">CSC courses</a>, and <a href="https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&amp;dept=Mathematics+%26+Statistics&amp;instr=&amp;credits=&amp;course_numb=&amp;course_keywd=&amp;op=Submit&amp;form_build_id=form-LetzAvSraLo4Xpnsuc0eCv32W_Y_V4Uadf0oauMwViU&amp;form_id=campus_course_search_basic_search_form" target="_blank">MTH courses</a>.</li>
-</ul>
+
+
+***
+
+
+# Lec 19: Wed 10/24 {#Lec19}
+
+## Announcements
+
+* 🔥**SDS Major Flowchart** 🔥: All courses highlighted in red in the flowchart below will be offered in Spring 2019, along with the following core 5 courses (left-most grey block in flowchart):
+    1. SDS 201/220: Intro Stats
+    1. SDS/MTH 291: Multiple Regression
+    1. CSC 111: Intro Programming (in Python)
+    1. SDS 192: Intro to Data Science
+    1. MTH 211: Linear Algebra
+* **Course descriptions**: Check out Smith Course Search for [SDS courses](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=Statistical+and+Data+Sciences&instr=&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-FjEA1i8POuiCUrY4KeFdU3um3UTFlX78jICWJ25ggGU&form_id=campus_course_search_basic_search_form){target="_blank"}, [CSC courses](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=Computer+Science&instr=&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-wroGqwD8PoEpDGC6bbuWoTDEXmsGKhg_QI-YQHuT_Ug&form_id=campus_course_search_basic_search_form){target="_blank"}, and [MTH courses](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=Mathematics+%26+Statistics&instr=&credits=&course_numb=&course_keywd=&op=Submit&form_build_id=form-LetzAvSraLo4Xpnsuc0eCv32W_Y_V4Uadf0oauMwViU&form_id=campus_course_search_basic_search_form){target="_blank"}.
+    
+
 <center>
-<img src="static/images/flowchart.png" width="600" />
+![](static/images/flowchart.png){ width=600px }
 </center>
-</div>
-<div id="todays-topicsactivities-16" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-14" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>Piggy-backing off of last lecture’s ModernDive 7.1.1 “Exploratory Data Analysis”, fitting and interpreting multiple regression models!</p>
-</div>
-<div id="in-class-exercise-11" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>ModernDive 7.1.2: Multiple regression</li>
-<li>ModernDive 7.1.3 &amp; 7.1.4: Fitted/observed values and residuals. Very short. The idea is identical as for basic regression!</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec18" class="section level1">
-<h1>Lec 18: Mon 10/22</h1>
-<div id="announcements-16" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Office hours this week:
-<ul>
-<li>Mon 10/22: 3-3:50pm and 5:10-6pm</li>
-<li>Tue 10/23: 3-4:30pm</li>
-</ul></li>
-<li>My time at the 2018 Women in Statistics and Data Science conference. See tweets below!</li>
-<li><strong>Today</strong>: For those of you with a chemistry/biochemistry slant to your studies, my good friend from Middlebury College, Prof. Lesley-Ann Giddings (Smith Class of ’05) will be giving a seminar today <a href="static/giddings_talk.pdf" target="_blank">“Engineering Novel N5-Hydroxylases to Access Bioactive”</a> from 4-5pm in Ford Hall 240.</li>
-<li><strong>Tomorrow</strong>: Interested in <a href="https://www.smith.edu/statistics/major.php" target="_blank">majoring in SDS</a>? Presentation of the major on Tue 10/23 from 12:15-1:05pm in Ford Hall Atrium.</li>
-</ul>
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+Piggy-backing off of last lecture's ModernDive 7.1.1 "Exploratory Data Analysis", fitting and interpreting multiple regression models!
+
+
+### 2. In-class exercise
+
+* ModernDive 7.1.2: Multiple regression
+* ModernDive 7.1.3 & 7.1.4: Fitted/observed values and residuals. Very short. The idea is identical as for basic regression!
+
+
+***
+
+
+# Lec 18: Mon 10/22 {#Lec18}
+
+## Announcements
+
+* Office hours this week:
+    + Mon 10/22: 3-3:50pm and 5:10-6pm
+    + Tue 10/23: 3-4:30pm
+* My time at the 2018 Women in Statistics and Data Science conference. See tweets below!
+* **Today**: For those of you with a chemistry/biochemistry slant to your studies, my good friend from Middlebury College, Prof. Lesley-Ann Giddings (Smith Class of '05) will be giving a seminar today ["Engineering Novel N5-Hydroxylases to Access Bioactive"](static/giddings_talk.pdf){target="_blank"} from 4-5pm in Ford Hall 240.
+* **Tomorrow**: Interested in [majoring in SDS](https://www.smith.edu/statistics/major.php){target="_blank"}? Presentation of the major on Tue 10/23 from 12:15-1:05pm in Ford Hall Atrium.
+
 <center>
-<img src="static/images/SDS_major.png" width="500" />
+![](static/images/SDS_major.png){ width=500px }
 </center>
-</div>
-<div id="todays-topicsactivities-17" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-15" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Finishing regression with one categorical explanatory/predictor variable</li>
-<li>Starting regression with <strong>two</strong> numerical explanatory/predictor variables</li>
-</ul>
-</div>
-<div id="in-class-exercise-12" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>MD 6.2.3 - 6.2.4: Finishing regression with one categorical explanatory/predictor variable</li>
-<li>MD 7.1.1: Exploratory data analysis of two numerical explanatory/predictor variable:
-<ul>
-<li><a href="https://beta.rstudioconnect.com/connect/#/apps/3214/" target="_blank">3D scatterplot</a></li>
-<li>Code to create above scatterplot <a href="https://gist.github.com/rudeboybert/9905f44013c18d6add279cf13ab8e398" target="_blank">here</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="tweets-of-the-day-posters" class="section level3">
-<h3>3. Tweets of the day: Posters!!!</h3>
-<p>Ok folks, we’re doing <strong>posters</strong> for the your final presentation</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Great <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> morning poster session in a posh setting: the <a href="https://twitter.com/netherlandplaza?ref_src=twsrc%5Etfw"><span class="citation">@netherlandplaza</span></a> Hall of Mirrors! <a href="https://t.co/PH7BdfzHKX">pic.twitter.com/PH7BdfzHKX</a>
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1053632304281804800?ref_src=twsrc%5Etfw">October 20, 2018</a>
-</blockquote>
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Finishing regression with one categorical explanatory/predictor variable
+* Starting regression with **two** numerical explanatory/predictor variables
+
+### 2. In-class exercise
+
+* MD 6.2.3 - 6.2.4: Finishing regression with one categorical explanatory/predictor variable
+* MD 7.1.1: Exploratory data analysis of two numerical explanatory/predictor variable:
+    + [3D scatterplot](https://beta.rstudioconnect.com/connect/#/apps/3214/){target="_blank"}
+    + Code to create above scatterplot [here](https://gist.github.com/rudeboybert/9905f44013c18d6add279cf13ab8e398){target="_blank"}
+
+
+### 3. Tweets of the day: Posters!!!
+
+Ok folks, we're doing **posters** for the your final presentation
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Great <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> morning poster session in a posh setting: the <a href="https://twitter.com/netherlandplaza?ref_src=twsrc%5Etfw">@netherlandplaza</a> Hall of Mirrors! <a href="https://t.co/PH7BdfzHKX">pic.twitter.com/PH7BdfzHKX</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1053632304281804800?ref_src=twsrc%5Etfw">October 20, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-<a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span class="citation">@SmithCollegeSDS</span></a> ugrad <a href="https://twitter.com/nat_laboss?ref_src=twsrc%5Etfw"><span class="citation">@nat_laboss</span></a> explaining the components of her structural equation model of mental health to an extra receptive audience <a href="https://t.co/AKxqtLFhmw">pic.twitter.com/AKxqtLFhmw</a>
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1053615346240966657?ref_src=twsrc%5Etfw">October 20, 2018</a>
-</blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a> ugrad <a href="https://twitter.com/nat_laboss?ref_src=twsrc%5Etfw">@nat_laboss</a> explaining the components of her structural equation model of mental health to an extra receptive audience <a href="https://t.co/AKxqtLFhmw">pic.twitter.com/AKxqtLFhmw</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1053615346240966657?ref_src=twsrc%5Etfw">October 20, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-This is what rocking a poster session looks like <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://twitter.com/hashtag/wsds2018?src=hash&amp;ref_src=twsrc%5Etfw">#wsds2018</a> <a href="https://t.co/A4QxJ8lwkM">pic.twitter.com/A4QxJ8lwkM</a>
-</p>
-— Smith College SDS (<span class="citation">@SmithCollegeSDS</span>) <a href="https://twitter.com/SmithCollegeSDS/status/1053076439577309184?ref_src=twsrc%5Etfw">October 19, 2018</a>
-</blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">This is what rocking a poster session looks like <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://twitter.com/hashtag/wsds2018?src=hash&amp;ref_src=twsrc%5Etfw">#wsds2018</a> <a href="https://t.co/A4QxJ8lwkM">pic.twitter.com/A4QxJ8lwkM</a></p>&mdash; Smith College SDS (@SmithCollegeSDS) <a href="https://twitter.com/SmithCollegeSDS/status/1053076439577309184?ref_src=twsrc%5Etfw">October 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Flashback Friday to yesterday when these three <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span class="citation">@SmithCollegeSDS</span></a> students presented their research that started as a project in Prof. <a href="https://twitter.com/bencapistrant?ref_src=twsrc%5Etfw"><span class="citation">@bencapistrant</span></a> ‘s Population Health SDS course last spring. <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/AEikQ6N3JT">pic.twitter.com/AEikQ6N3JT</a>
-</p>
-— Miles Ott 🏳️ 🌈 (<span class="citation">@Miles_Ott</span>) <a href="https://twitter.com/Miles_Ott/status/1053332331174522880?ref_src=twsrc%5Etfw">October 19, 2018</a>
-</blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Flashback Friday to yesterday when these three <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a>  students presented their research that started as a project in Prof. <a href="https://twitter.com/bencapistrant?ref_src=twsrc%5Etfw">@bencapistrant</a> ‘s Population Health SDS course last spring. <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/AEikQ6N3JT">pic.twitter.com/AEikQ6N3JT</a></p>&mdash; Miles Ott 🏳️
+🌈 (@Miles_Ott) <a href="https://twitter.com/Miles_Ott/status/1053332331174522880?ref_src=twsrc%5Etfw">October 19, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-<div id="more-tweets-more-smith-sds" class="section level3">
-<h3>4. More tweets!!! More Smith SDS!!!</h3>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Smith College SDS student Emily Daubenspeck presenting joint work with Smithies <a href="https://twitter.com/CrystalZangZZ?ref_src=twsrc%5Etfw"><span class="citation">@CrystalZangZZ</span></a> and Caterina Baffa on cognitive decline of veterans using BRFSS data <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw"><span class="citation">@SmithCollegeSDS</span></a> students are rocking <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/wc8umbmkdM">pic.twitter.com/wc8umbmkdM</a>
-</p>
-— Miles Ott 🏳️ 🌈 (<span class="citation">@Miles_Ott</span>) <a href="https://twitter.com/Miles_Ott/status/1053000378223091717?ref_src=twsrc%5Etfw">October 18, 2018</a>
-</blockquote>
+
+
+### 4. More tweets!!! More Smith SDS!!!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Smith College SDS student Emily Daubenspeck presenting joint work with Smithies  <a href="https://twitter.com/CrystalZangZZ?ref_src=twsrc%5Etfw">@CrystalZangZZ</a> and Caterina Baffa on cognitive decline of veterans using BRFSS data <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a> students are rocking <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://twitter.com/hashtag/smithieslead?src=hash&amp;ref_src=twsrc%5Etfw">#smithieslead</a> <a href="https://t.co/wc8umbmkdM">pic.twitter.com/wc8umbmkdM</a></p>&mdash; Miles Ott 🏳️
+🌈 (@Miles_Ott) <a href="https://twitter.com/Miles_Ott/status/1053000378223091717?ref_src=twsrc%5Etfw">October 18, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-<a href="https://twitter.com/smithcollege?ref_src=twsrc%5Etfw"><span class="citation">@smithcollege</span></a> is in the building! If you see us, say hi! <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://t.co/yvwsD5z0JQ">pic.twitter.com/yvwsD5z0JQ</a>
-</p>
-— Smith College SDS (<span class="citation">@SmithCollegeSDS</span>) <a href="https://twitter.com/SmithCollegeSDS/status/1052957495407329281?ref_src=twsrc%5Etfw">October 18, 2018</a>
-</blockquote>
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/smithcollege?ref_src=twsrc%5Etfw">@smithcollege</a> is in the building! If you see us, say hi! <a href="https://twitter.com/hashtag/WSDS2018?src=hash&amp;ref_src=twsrc%5Etfw">#WSDS2018</a> <a href="https://t.co/yvwsD5z0JQ">pic.twitter.com/yvwsD5z0JQ</a></p>&mdash; Smith College SDS (@SmithCollegeSDS) <a href="https://twitter.com/SmithCollegeSDS/status/1052957495407329281?ref_src=twsrc%5Etfw">October 18, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="lab1" class="section level1">
-<h1>Lab: Thu 10/18 + Tue 10/23</h1>
-<p>Materials for Jenny’s lab on Data Wrangling are here:</p>
-<ul>
-<li><a href="static/data_wrangling_lab/verbs_2.pdf" download>PDF slides</a></li>
-<li><a href="static/data_wrangling_lab/dplyr_review_firstname_lastname.Rmd" download><code>dplyr_review_firstname_lastname.Rmd</code></a></li>
-<li>Solutions: <a href="static/data_wrangling_lab/dplyr_wrangling_review_solutions.Rmd" download><code>dplyr_wrangling_review_solutions.Rmd</code></a></li>
-</ul>
-<hr />
-</div>
-<div id="Lec17" class="section level1">
-<h1>Lec 17: Wed 10/17</h1>
-<div id="announcements-17" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><strong>No lecture on Friday!</strong></li>
-<li>Follow what’s going on at the <a href="https://ww2.amstat.org/meetings/wsds/2018/" target="_blank">2018 Women in Statistics and Data Science Conference</a> on Twitter at:
-<ul>
-<li><a href="https://twitter.com/smithcollegesds" target="_blank">@smithcollegesds</a></li>
-<li><a href="https://twitter.com/rudeboybert" target="_blank">@rudeboybert</a></li>
-</ul></li>
-<li>PS06 posted.</li>
-<li>Lab materials for Thu 10/18 (tomorrow) and Tue 10/23 are posted above.</li>
-<li>In-class time to work on projects.</li>
-</ul>
-<hr />
-</div>
-</div>
-<div id="Lec16" class="section level1">
-<h1>Lec 16: Mon 10/15</h1>
-<div id="announcements-18" class="section level2">
-<h2>Announcements</h2>
-</div>
-<div id="todays-topicsactivities-18" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-16" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Least squares line</li>
-<li>Regression with a categorical explanatory variable</li>
-</ul>
-</div>
-<div id="in-class-exercise-13" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>MD 6.3.3</li>
-<li>MD 6.2. From the beginning of 6.2 up to and including the end of 6.2.2.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec15" class="section level1">
-<h1>Lec 15: Fri 10/12</h1>
-<div id="announcements-19" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Posted (imperfect) grading rubrics underneath each Problem Set on <a href="PS.html">Problem Sets</a> page:
-<ul>
-<li>I only have one grader in this course who is an undergrad. Giving detailed feedback is hard; so I ask you to compare your solutions to the posted solutions and do a “self-evaluation.” However, you will get lots of feedback at every stage of the project!</li>
-<li>I need a mechanism for rewarding students who do something “extra” or “exceptional.” However this will always be only a small portion of grade. Think of “extra” or “exceptional” this way:
-<ol style="list-style-type: decimal">
-<li>What is a checklist of criteria for a “great” calculus assignment?</li>
-<li>What is a checklist of criteria for a “great” essay?</li>
-<li>Guess what the term project for this course and hence also all the practice problem sets are more like? A calculus assignment or an essay?</li>
-</ol></li>
-<li>Going forward, however, I will post the (imperfect) grading rubric ahead of time.</li>
-<li>Keep in mind the problem sets are worth 10% of final grade, and two lowest ones are dropped.</li>
-</ul></li>
-<li>Added hints to PS05.</li>
-<li>Where is the final project, and hence the course, heading? Some past final project <a href="term_project.html#past_examples">examples</a>.</li>
-<li>Please only access ModernDive using the link on the course webpage. Because of webpage problems in the last few weeks, I’ve had to change where ModernDive was hosted (saved online).</li>
-<li>Upcoming schedule, so plan accordingly:
-<ul>
-<li>Tonite: Reminder of talk below.</li>
-<li>Wed 10/17: In-class time to work on projects. Right after lecture I leave for the <a href="https://ww2.amstat.org/meetings/wsds/2018/conferenceinfo.cfm/" target="_blank">2018 Women in Statistics and Data Science Conference</a> along with Prof. Miles Ott and a group of Smithies who will be presenting. <strong>I will be too busy to answer Slack questions until Sunday.</strong></li>
-<li>Thu 10/18 Lab Sec 05: Jenny will be conducting a <code>dplyr</code> review session.</li>
-<li>Fri 10/19: <strong>No lecture! Project proposal due at 5pm!</strong>.</li>
-<li>Tue 10/23 Lab Sec 06: Jenny will be conducting a <code>dplyr</code> review session.</li>
-</ul></li>
-</ul>
+
+
+***
+
+
+# Lab: Thu 10/18 + Tue 10/23 {#lab1}
+
+Materials for Jenny's lab on Data Wrangling are here:
+
+* <a href="static/data_wrangling_lab/verbs_2.pdf" download>PDF slides</a>
+* <a href="static/data_wrangling_lab/dplyr_review_firstname_lastname.Rmd" download>`dplyr_review_firstname_lastname.Rmd`</a>
+* Solutions: <a href="static/data_wrangling_lab/dplyr_wrangling_review_solutions.Rmd" download>`dplyr_wrangling_review_solutions.Rmd`</a>
+
+
+***
+
+
+# Lec 17: Wed 10/17 {#Lec17}
+
+## Announcements
+
+* **No lecture on Friday!**
+* Follow what's going on at the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/){target="_blank"} on Twitter at:
+    + [\@smithcollegesds](https://twitter.com/smithcollegesds){target="_blank"}
+    + [\@rudeboybert](https://twitter.com/rudeboybert){target="_blank"}
+* PS06 posted.
+* Lab materials for Thu 10/18 (tomorrow) and Tue 10/23 are posted above.
+* In-class time to work on projects.
+
+
+***
+
+
+# Lec 16: Mon 10/15 {#Lec16}
+
+## Announcements
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Least squares line
+* Regression with a categorical explanatory variable
+
+### 2. In-class exercise
+
+* MD 6.3.3
+* MD 6.2. From the beginning of 6.2 up to and including the end of 6.2.2.
+
+
+***
+
+
+# Lec 15: Fri 10/12 {#Lec15}
+
+## Announcements
+
+* Posted (imperfect) grading rubrics underneath each Problem Set on [Problem Sets](PS.html) page:
+    + I only have one grader in this course who is an undergrad. Giving detailed feedback is hard; so I ask you to compare your solutions to the posted solutions and do a "self-evaluation." However, you will get lots of feedback at every stage of the project!
+    + I need a mechanism for rewarding students who do something "extra" or "exceptional." However this will always be only a small portion of grade. Think of "extra" or "exceptional" this way:
+        1. What is a checklist of criteria for a "great" calculus assignment?
+        1. What is a checklist of criteria for a "great" essay?
+        1. Guess what the term project for this course and hence also all the practice problem sets are more like? A calculus assignment or an essay?
+    + Going forward, however, I will post the (imperfect) grading rubric ahead of time. 
+    + Keep in mind the problem sets are worth 10% of final grade, and two lowest ones are dropped.
+* Added hints to PS05. 
+* Where is the final project, and hence the course, heading? Some past final project [examples](term_project.html#past_examples). 
+* Please only access ModernDive using the link on the course webpage. Because of webpage problems in the last few weeks, I've had to change where ModernDive was hosted (saved online).
+* Upcoming schedule, so plan accordingly:
+    + Tonite: Reminder of talk below.
+    + Wed 10/17: In-class time to work on projects. Right after lecture I leave for the [2018 Women in Statistics and Data Science Conference](https://ww2.amstat.org/meetings/wsds/2018/conferenceinfo.cfm/){target="_blank"} along with Prof. Miles Ott and a group of Smithies who will be presenting. **I will be too busy to answer Slack questions until Sunday.**
+    + Thu 10/18 Lab Sec 05: Jenny will be conducting a `dplyr` review session.
+    + Fri 10/19: **No lecture! Project proposal due at 5pm!**.
+    + Tue 10/23 Lab Sec 06: Jenny will be conducting a `dplyr` review session.
+
 <center>
-<img src="static/images/Craigie_Poster_Wide.png" width="800" />
+![](static/images/Craigie_Poster_Wide.png){ width=800px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-19" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-17" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Refresher on <code>%&gt;%</code> and data wrangling verbs (look at cheatsheet).</li>
-<li>Residual analysis.</li>
-</ul>
-</div>
-<div id="in-class-exercise-14" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive Chapter 6.1.4 and 6.3.3.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec14" class="section level1">
-<h1>Lec 14: Wed 10/10</h1>
-<div id="announcements-20" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Extension on PS04 until <del>5pm</del> 9pm.</li>
-<li>Returned Midterm I</li>
-<li>Go over <code>PS05.Rmd</code></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-20" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-18" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p><del>Residual analysis.</del></p>
-</div>
-<div id="in-class-exercise-15" class="section level3">
-<h3>2. In-class exercise</h3>
-<p><del>Read ModernDive Chapter 6.1.4 and 6.3.3.</del></p>
-</div>
-<div id="tweet-of-the-day-6" class="section level3">
-<h3>3. Tweet of the day</h3>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Hey stats+data science educators! Do your students 😱 when seeing 😡 errors, 😡 warnings, 😡 messages in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? In the next update of <a href="https://t.co/LmQoQNNe9r">https://t.co/LmQoQNNe9r</a> in early 2019, they can get 😌 by reading <a href="https://twitter.com/ModernDive?ref_src=twsrc%5Etfw"><span class="citation">@ModernDive</span></a> 2.2.3, just contributed by <a href="https://twitter.com/andrewheiss?ref_src=twsrc%5Etfw"><span class="citation">@andrewheiss</span></a>! <a href="https://t.co/67YzZf7yXU">pic.twitter.com/67YzZf7yXU</a>
-</p>
-— ModernDive (<span class="citation">@ModernDive</span>) <a href="https://twitter.com/ModernDive/status/1049667413518811137?ref_src=twsrc%5Etfw">October 9, 2018</a>
-</blockquote>
+<br>
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+* Refresher on `%>%` and data wrangling verbs (look at cheatsheet).
+* Residual analysis.
+
+### 2. In-class exercise
+
+Read ModernDive Chapter 6.1.4 and 6.3.3.
+
+
+***
+
+
+# Lec 14: Wed 10/10 {#Lec14}
+
+## Announcements
+
+* Extension on PS04 until ~~5pm~~ 9pm.
+* Returned Midterm I
+* Go over `PS05.Rmd`
+
+
+## Today's Topics/Activities
+
+### 1. Chalk Talk
+
+~~Residual analysis.~~
+
+### 2. In-class exercise
+
+~~Read ModernDive Chapter 6.1.4 and 6.3.3.~~
+
+### 3. Tweet of the day
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Hey stats+data science educators! Do your students 😱 when seeing 😡 errors, 😡 warnings, 😡 messages in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>? In the next update of <a href="https://t.co/LmQoQNNe9r">https://t.co/LmQoQNNe9r</a> in early 2019, they can get 😌 by reading <a href="https://twitter.com/ModernDive?ref_src=twsrc%5Etfw">@ModernDive</a> 2.2.3, just contributed by <a href="https://twitter.com/andrewheiss?ref_src=twsrc%5Etfw">@andrewheiss</a>! <a href="https://t.co/67YzZf7yXU">pic.twitter.com/67YzZf7yXU</a></p>&mdash; ModernDive (@ModernDive) <a href="https://twitter.com/ModernDive/status/1049667413518811137?ref_src=twsrc%5Etfw">October 9, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec13" class="section level1">
-<h1>Lec 13: Fri 10/5</h1>
-<div id="announcements-21" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Two <code>#polls</code> today:
-<ul>
-<li>Webpage redesign?</li>
-<li>Look at tweet of the day below and vote, do you like the building?</li>
-</ul></li>
-<li>Labs next week: none Tuesday because of break, Thursday lab will take place given that Mountain Day was a Thursday.</li>
-<li>Interested in majoring in SDS? Check out our presentation of the major on Tuesday 10/23 from 12:15-1:05pm in Ford Hall.</li>
-</ul>
+
+
+***
+
+
+# Lec 13: Fri 10/5 {#Lec13}
+
+## Announcements
+
+* Two `#polls` today:
+    + Webpage redesign?
+    + Look at tweet of the day below and vote, do you like the building?
+* Labs next week: none Tuesday because of break, Thursday lab will take place given that Mountain Day was a Thursday.
+* Interested in majoring in SDS? Check out our presentation of the major on Tuesday 10/23 from 12:15-1:05pm in Ford Hall.
+
 <center>
-<img src="static/images/SDS_major.png" width="500" />
-</center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-21" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-19" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li><code>get_regression_table()</code> and <code>get_regression_points()</code> wrapper functions</li>
-<li>Looking at ModernDive Figure 6.8
-<ul>
-<li>Fitted values</li>
-<li>Residuals</li>
-</ul></li>
-</ul>
-</div>
-<div id="in-class-exercise-16" class="section level3">
-<h3>2. In-class exercise</h3>
-<p>Read ModernDive 6.1.3.</p>
-</div>
-<div id="tweet-of-the-day-7" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>Boston University is going to build a new 17-floor “Data Sciences Center” on Commonwealth Avenue, designed to look like a stack of books. 👍 or 👎?</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Boston University unveils plans for book-inspired data sciences center on Comm. Ave. <a href="https://t.co/XpnDGATpnE">https://t.co/XpnDGATpnE</a> <a href="https://t.co/A8LMpYoB7K">pic.twitter.com/A8LMpYoB7K</a>
-</p>
-— Boston.com (<span class="citation">@BostonDotCom</span>) <a href="https://twitter.com/BostonDotCom/status/1047534467257184256?ref_src=twsrc%5Etfw">October 3, 2018</a>
-</blockquote>
+![](static/images/SDS_major.png){ width=500px }
+</center>  
+<br>
+
+
+## Today's Topics/Activities       
+
+### 1. Chalk Talk
+
+* `get_regression_table()` and `get_regression_points()` wrapper functions
+* Looking at ModernDive Figure 6.8
+    + Fitted values
+    + Residuals
+
+### 2. In-class exercise
+
+Read ModernDive 6.1.3.
+
+### 3. Tweet of the day
+
+Boston University is going to build a new 17-floor "Data Sciences Center" on Commonwealth Avenue, designed to look like a stack of books. 👍 or 👎?
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Boston University unveils plans for book-inspired data sciences center on Comm. Ave. <a href="https://t.co/XpnDGATpnE">https://t.co/XpnDGATpnE</a> <a href="https://t.co/A8LMpYoB7K">pic.twitter.com/A8LMpYoB7K</a></p>&mdash; Boston.com (@BostonDotCom) <a href="https://twitter.com/BostonDotCom/status/1047534467257184256?ref_src=twsrc%5Etfw">October 3, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-12-wed-103" class="section level1">
-<h1>Lec 12: Wed 10/3</h1>
-<div id="announcements-22" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>ModernDive learning check solutions for Chapter 4 + 5 now posted in Appendix D.</li>
-<li>Talk on Friday 10/12 5:30pm in Seelye Hall 106.</li>
-</ul>
+
+
+***
+
+
+# Lec 12: Wed 10/3
+
+## Announcements
+
+* ModernDive learning check solutions for Chapter 4 + 5 now posted in Appendix D. 
+* Talk on Friday 10/12 5:30pm in Seelye Hall 106. 
+
 <center>
-<img src="static/images/Craigie_Poster_Wide.png" width="800" />
+![](static/images/Craigie_Poster_Wide.png){ width=800px }
 </center>
-<p><br></p>
-</div>
-<div id="todays-topicsactivities-22" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-20" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Correlation coefficient: ModernDive Fig. 6.18</li>
-<li>Fitted regression line: ModernDive Fig. 6.6</li>
-<li>Pseudocode (also see tweet of the day below)</li>
-</ul>
-</div>
-<div id="in-class-exercise-17" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Turn your computer’s volume up to the maximum and play <a href="http://guessthecorrelation.com/" target="_blank">Guess the Correlation</a></li>
-<li>Read ModernDive Chapters 6.3.1 and 6.1.2.</li>
-<li>Look at solutions below to “cleaning variable names” exercise from Lec11. What do I do if my data frame has horrible variable/column names? Copy and paste this code into your <code>scratchpad.R</code> and run all 4 steps individually. This will help for your projects.</li>
-</ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># Step 1: Manually create a data frame with ugly names</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">example_data_frame &lt;-<span class="st"> </span><span class="kw">data_frame</span>(</a>
-<a class="sourceLine" id="cb1-4" data-line-number="4">  <span class="st">`</span><span class="dt">WEIRD !@$^&amp;*() Variable.name</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="st">`</span><span class="dt">more  WEIRDNESS    %</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;pamplemousse&quot;</span>, <span class="st">&quot;cran-raspberry&quot;</span>, <span class="st">&quot;tangerine&quot;</span>)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">)</a>
-<a class="sourceLine" id="cb1-7" data-line-number="7"></a>
-<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co"># Look at these awful names!</span></a>
-<a class="sourceLine" id="cb1-9" data-line-number="9">example_data_frame</a>
-<a class="sourceLine" id="cb1-10" data-line-number="10"></a>
-<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="co"># Step 2: The janitor package to the rescue!</span></a>
-<a class="sourceLine" id="cb1-12" data-line-number="12"><span class="kw">library</span>(janitor)</a>
-<a class="sourceLine" id="cb1-13" data-line-number="13"></a>
-<a class="sourceLine" id="cb1-14" data-line-number="14"><span class="co"># Step 3: Use the clean_names() function in the janitor package to create a new</span></a>
-<a class="sourceLine" id="cb1-15" data-line-number="15"><span class="co"># data frame with cleaner names</span></a>
-<a class="sourceLine" id="cb1-16" data-line-number="16">data_frame_with_cleaner_names &lt;-<span class="st"> </span>example_data_frame <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-17" data-line-number="17"><span class="st">  </span><span class="kw">clean_names</span>()</a>
-<a class="sourceLine" id="cb1-18" data-line-number="18"></a>
-<a class="sourceLine" id="cb1-19" data-line-number="19"><span class="co"># Step 4: Compare these column names with the ones from above. Much cleaner!</span></a>
-<a class="sourceLine" id="cb1-20" data-line-number="20">data_frame_with_cleaner_names</a></code></pre></div>
-</div>
-<div id="tweet-of-the-day-8" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>On writing “pseudocode”: a rough outline that is “sort of” like code that outlines the steps of what your code will do. You can think of pseudocode as a “blueprint” of your “building”; before you build your building, you need a plan! Here are examples of “pseudocode” for the data wrangling exercise from Learning Check 5.19 in ModernDive on taking the data in <code>nycflights13</code> and computing <a href="https://en.wikipedia.org/wiki/Available_seat_miles" target="_blank">Available Seat Miles</a></p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Students writing out <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a> pseudocode to compute “Available Seat Miles” (✈️ measure of capacity) using <a href="https://twitter.com/hashtag/nycflights13?src=hash&amp;ref_src=twsrc%5Etfw">#nycflights13</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package. Not only was most pseudocode good, but many were able to code it up on day 3 of data wrangling! 😮😮😮 <a href="https://t.co/BHozXZWjU0">https://t.co/BHozXZWjU0</a> <a href="https://twitter.com/hashtag/chalktalk?src=hash&amp;ref_src=twsrc%5Etfw">#chalktalk</a> <a href="https://t.co/0mzTYalGXa">pic.twitter.com/0mzTYalGXa</a>
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/964181298691629056?ref_src=twsrc%5Etfw">February 15, 2018</a>
-</blockquote>
+
+<br>
+
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* Correlation coefficient: ModernDive Fig. 6.18
+* Fitted regression line: ModernDive Fig. 6.6
+* Pseudocode (also see tweet of the day below)
+
+### 2. In-class exercise
+
+* Turn your computer's volume up to the maximum and play [Guess the Correlation](http://guessthecorrelation.com/){target="_blank"}
+* Read ModernDive Chapters 6.3.1 and 6.1.2.
+* Look at solutions below to "cleaning variable names" exercise from Lec11. What do I do if my data frame has horrible variable/column names? Copy and paste this code into your `scratchpad.R` and run all 4 steps individually. This will help for your projects.
+
+
+```r
+# Step 1: Manually create a data frame with ugly names
+library(dplyr)
+example_data_frame <- data_frame(
+  `WEIRD !@$^&*() Variable.name` = c(1, 2, 3),
+  `more  WEIRDNESS    %` = c("pamplemousse", "cran-raspberry", "tangerine")
+)
+
+# Look at these awful names!
+example_data_frame
+
+# Step 2: The janitor package to the rescue!
+library(janitor)
+
+# Step 3: Use the clean_names() function in the janitor package to create a new
+# data frame with cleaner names
+data_frame_with_cleaner_names <- example_data_frame %>% 
+  clean_names()
+
+# Step 4: Compare these column names with the ones from above. Much cleaner!
+data_frame_with_cleaner_names
+```
+
+
+### 3. Tweet of the day
+
+On writing "pseudocode": a rough outline that is "sort of" like code that outlines the steps of what your code will do. You can think of pseudocode as a "blueprint" of your "building"; before you build your building, you need a plan! Here are examples of "pseudocode" for the data wrangling exercise from Learning Check 5.19 in ModernDive on taking the data in `nycflights13` and computing [Available Seat Miles](https://en.wikipedia.org/wiki/Available_seat_miles){target="_blank"}
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Students writing out <a href="https://twitter.com/hashtag/dplyr?src=hash&amp;ref_src=twsrc%5Etfw">#dplyr</a> pseudocode to compute &quot;Available Seat Miles&quot; (✈️ measure of capacity) using <a href="https://twitter.com/hashtag/nycflights13?src=hash&amp;ref_src=twsrc%5Etfw">#nycflights13</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> package. Not only was most pseudocode good, but many were able to code it up on day 3 of data wrangling! 😮😮😮 <a href="https://t.co/BHozXZWjU0">https://t.co/BHozXZWjU0</a> <a href="https://twitter.com/hashtag/chalktalk?src=hash&amp;ref_src=twsrc%5Etfw">#chalktalk</a> <a href="https://t.co/0mzTYalGXa">pic.twitter.com/0mzTYalGXa</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/964181298691629056?ref_src=twsrc%5Etfw">February 15, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-11-mon-101" class="section level1">
-<h1>Lec 11: Mon 10/1</h1>
-<div id="announcements-23" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Office hours this week. Please Slack me if this disrupts your plans.
-<ul>
-<li>Monday 10/1: <del>3-6pm</del> 2:30-4:30pm</li>
-<li>Tuesday 10/2: <del>3-6pm</del> 2-4:30pm</li>
-</ul></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-23" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-21" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>What is modeling?</li>
-<li>What is R Markdown?</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># Teaching evaluation score</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">?evals</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6"><span class="kw">ggplot</span>(evals, <span class="kw">aes</span>(<span class="dt">x =</span> score)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-7" data-line-number="7"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">0.25</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb2-8" data-line-number="8"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Teaching score&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Fig 1: Teaching evaluation scores at UT Austin&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># Seattle house prices (x-axis in original scale)</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2">?house_prices</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">ggplot</span>(house_prices, <span class="kw">aes</span>(<span class="dt">x =</span> price)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>() <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Price USD&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Fig 2.a): Seattle House Prices&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-4-2.png" width="768" /></p>
-</div>
-<div id="in-class-exercise-r-markdown" class="section level3">
-<h3>2. In-class exercise: R Markdown</h3>
-<p>At a couple of steps in this process, you may be asked to install packages. Say yes to all of them.</p>
-<ol style="list-style-type: decimal">
-<li><strong>Fiddle with RStudio settings</strong>:
-<ul>
-<li>Go to RStudio menu bar -&gt; Tools -&gt; Global Options… -&gt; R Markdown</li>
-<li>Uncheck box next to “Show output inline for all R Markdown Documents”</li>
-</ul></li>
-<li><strong>Create new R Markdown <code>.Rmd</code> file</strong>:
-<ul>
-<li>Go to RStudio menu bar -&gt; File -&gt; New File -&gt; R Markdown</li>
-<li>Set “Title” to “My first R Markdown report” and “Author” as your name.</li>
-</ul></li>
-<li><strong>“Knit” a report</strong>:
-<ul>
-<li>Click on the disk icon and save this file as <code>firstname_lastname</code> somewhere on your computer. This will create a file called <code>firstname_lastname.Rmd</code></li>
-<li>Click the arrow next to “Knit” -&gt; “Knit to HTML”. An HTML webpage should pop up.</li>
-</ul></li>
-<li><strong>Publish this report on web</strong>:
-<ul>
-<li>Click on blue “Publish” button on top right</li>
-<li>If you haven’t previously, create an account on Rpubs.com. If you have previously, login.</li>
-<li>Set “Title” to “My first R Markdown report” and “Slug” to “testing”</li>
-<li>You should end up with a webpage that looks like this <a href="http://rpubs.com/rudeboybert/testing" target="_blank">one</a>.</li>
-<li>Share the URL (webpage link) to your report to your project groupmates in a Slack DM.</li>
-</ul></li>
-<li><strong>Update your report on web</strong>:
-<ul>
-<li>Make some trivial change to your <code>testing.Rmd</code> file.</li>
-<li>“Re-knit” your report and make sure your trivial change is reflected.</li>
-<li>The blue “Publish” button should now read “Republish”</li>
-<li>Click “Update existing”</li>
-<li>Share the link to your updated report with your groupmates on Slack!</li>
-</ul></li>
-</ol>
-</div>
-<div id="in-class-exercise-moderndive" class="section level3">
-<h3>3. In-class exercise: ModernDive</h3>
-<ul>
-<li>Read ModernDive from the beginning of Chapter 6 up to and including 6.1.1. Note:
-<ul>
-<li>Make sure to install all the new packages listed in “Needed Packages”.</li>
-<li>You can skip the DataCamp course for now; this will be assigned later.</li>
-</ul></li>
-<li><strong>Learning how to learn</strong>: See if you can figure out how to use the <code>clean_names()</code> function referenced below. Ask your seatmates, me or the data assistant for help.</li>
-</ul>
-</div>
-<div id="tweet-of-the-day-9" class="section level3">
-<h3>4. Tweet of the day</h3>
-<p>How quickly clean variable names; this might be useful for your projects.</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-janitor::clean_names() is 💵💲💰! But wait, there's more! <a href="https://t.co/Rk1aZRZWq0">https://t.co/Rk1aZRZWq0</a> Thanks <a href="https://twitter.com/samfirke?ref_src=twsrc%5Etfw"><span class="citation">@samfirke</span></a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/H9Bvde8roy">pic.twitter.com/H9Bvde8roy</a>
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/963504925744488450?ref_src=twsrc%5Etfw">February 13, 2018</a>
-</blockquote>
+
+
+***
+
+
+# Lec 11: Mon 10/1
+
+## Announcements
+
+* Office hours this week. Please Slack me if this disrupts your plans.
+    + Monday 10/1: ~~3-6pm~~ 2:30-4:30pm
+    + Tuesday 10/2: ~~3-6pm~~ 2-4:30pm
+
+    
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* What is modeling?
+* What is R Markdown?
+
+
+```r
+library(ggplot2)
+library(moderndive)
+
+# Teaching evaluation score
+?evals
+ggplot(evals, aes(x = score)) +
+  geom_histogram(binwidth = 0.25) +
+  labs(x = "Teaching score", title = "Fig 1: Teaching evaluation scores at UT Austin")
+```
+
+<img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" />
+
+```r
+# Seattle house prices (x-axis in original scale)
+?house_prices
+ggplot(house_prices, aes(x = price)) +
+  geom_histogram() +
+  labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
+```
+
+<img src="index_files/figure-html/unnamed-chunk-4-2.png" width="768" />
+
+### 2. In-class exercise: R Markdown
+
+At a couple of steps in this process, you may be asked to install packages. Say yes to all of them. 
+
+1. **Fiddle with RStudio settings**:
+    + Go to RStudio menu bar -> Tools -> Global Options... -> R Markdown
+    + Uncheck box next to "Show output inline for all R Markdown Documents"
+1. **Create new R Markdown `.Rmd` file**:
+    + Go to RStudio menu bar -> File -> New File -> R Markdown 
+    + Set "Title" to "My first R Markdown report" and "Author" as your name.
+1. **"Knit" a report**:
+    + Click on the disk icon and save this file as `firstname_lastname` somewhere on your computer. This will create a file called `firstname_lastname.Rmd`
+    + Click the arrow next to "Knit" -> "Knit to HTML". An HTML webpage should pop up.
+1. **Publish this report on web**:
+    + Click on blue "Publish" button on top right
+    + If you haven't previously, create an account on Rpubs.com. If you have previously, login.
+    + Set "Title" to "My first R Markdown report" and "Slug" to "testing"
+    + You should end up with a webpage that looks like this [one](http://rpubs.com/rudeboybert/testing){target="_blank"}.
+    + Share the URL (webpage link) to your report to your project groupmates in a Slack DM.
+1. **Update your report on web**:
+    + Make some trivial change to your `testing.Rmd` file.
+    + "Re-knit" your report and make sure your trivial change is reflected.
+    + The blue "Publish" button should now read "Republish"
+    + Click "Update existing"
+    + Share the link to your updated report with your groupmates on Slack!
+
+### 3. In-class exercise: ModernDive
+
+* Read ModernDive from the beginning of Chapter 6 up to and including 6.1.1. Note:
+    + Make sure to install all the new packages listed in "Needed Packages".
+    + You can skip the DataCamp course for now; this will be assigned later.
+* **Learning how to learn**: See if you can figure out how to use the `clean_names()` function referenced below. Ask your seatmates, me or the data assistant for help.
+
+### 4. Tweet of the day
+
+How quickly clean variable names; this might be useful for your projects. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">janitor::clean_names() is 💵💲💰! But wait, there&#39;s more! <a href="https://t.co/Rk1aZRZWq0">https://t.co/Rk1aZRZWq0</a> Thanks <a href="https://twitter.com/samfirke?ref_src=twsrc%5Etfw">@samfirke</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/H9Bvde8roy">pic.twitter.com/H9Bvde8roy</a></p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/963504925744488450?ref_src=twsrc%5Etfw">February 13, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Test this function on <code>example_data_frame</code> below:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">example_data_frame &lt;-<span class="st"> </span><span class="kw">data_frame</span>(</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3">  <span class="st">`</span><span class="dt">WEIRD !@$^&amp;*() Variable.name</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>),</a>
-<a class="sourceLine" id="cb4-4" data-line-number="4">  <span class="st">`</span><span class="dt">more  WEIRDNESS    %</span><span class="st">`</span> =<span class="st"> </span><span class="kw">c</span>(<span class="st">&quot;pamplemousse&quot;</span>, <span class="st">&quot;cran-raspberry&quot;</span>, <span class="st">&quot;tangerine&quot;</span>)</a>
-<a class="sourceLine" id="cb4-5" data-line-number="5">)</a>
-<a class="sourceLine" id="cb4-6" data-line-number="6">example_data_frame</a></code></pre></div>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-10" class="section level1">
-<h1>Lec 10</h1>
-<div id="announcements-24" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Office hours today 3-4pm</li>
-<li>Read cover page for midterm on <a href="midterms.html#midtermI">midterms</a> page.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-24" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-22" class="section level3">
-<h3>1. Chalk Talk</h3>
-<!--
-![](static/images/group_summary.png){ width=600px }
-![](static/images/mutate.png){ width=600px }
-![](static/images/select.png){ width=600px }
+
+Test this function on `example_data_frame` below:
+
+
+```r
+library(dplyr)
+example_data_frame <- data_frame(
+  `WEIRD !@$^&*() Variable.name` = c(1, 2, 3),
+  `more  WEIRDNESS    %` = c("pamplemousse", "cran-raspberry", "tangerine")
+)
+example_data_frame
+```
+
+
+***
+
+
+# Lec 10
+
+## Announcements
+
+* Office hours today 3-4pm
+* Read cover page for midterm on [midterms](midterms.html#midtermI) page.
+
+    
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* From last time: Grouping then summarizing: First `group_by()` to group rows together (the grey, blue, green color assignment) then `summarize()` to get group-by-group summaries (a summary statistic for each color).
+* Create new variables using `mutate()`
+* Arrange rows using `arrange()` or `arrange(desc())`
+* Subset columns with `select()`
+
+### 2. ModernDive Roadmap Update
+
+We just completed "just enough data science" (data visualization and data wrangling) to do the rest of ModernDive. In particular
+
+* Data modeling with the `moderndive` package (top right blue box)
+* Statistical inference with the `infer` package (bottom right blue box)
+
+![](https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.004.png){ width=600px }
+
+For more advanced data visualization and data wrangling, take [SDS 192: Intro to Data Science](https://rudeboybert.github.io/SDS192/#today%E2%80%99s_topicsactivities){target="_blank"}. 
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.1
+
+
+***
+
+
+# Lec 9
+
+## Announcements
+
+* Albert extra office hours Thursday 2-4pm in McConnell 215.
+* Project proposal [submission format](term_project.html#submission_format) added. Just follow along and replace my example with your work!
+* Solutions to PS02 [posted](#PS02_R_solutions)
+    + Please download the `PS02_solutions.R` file to your computer and open them in RStudio for a brief in-class discussion.
+    + To guarantee the `PS02_solutions.R` file opens in the RStudio app (AKA a car's dashboard) and not the regular R app (AKA a car's engine), don't double-click the `PS02_solutions.R` file directly, but rather go to Files panel of RStudio and find/click/open the file from there.
+* Midterm I practice questions discussion. See [midterms](midterms.html#midtermIdiscussion) page.
+
+
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+**a) Summarizing**: Note "summarise" is the British English spelling of the American English "summarize". Both `summarise()` and `summarize()` work in R. 
+
+| Use any summary function | To `summarize()` data
+|:-------------------------|:-------------------------
+| ![](https://github.com/moderndive/moderndive_book/raw/master/images/summary.png){ width=400px } | ![](https://github.com/moderndive/moderndive_book/raw/master/images/summarize1.png){ width=400px }
+
+
+**b) Grouping then summarizing**: First `group_by()` to group rows together (the grey, blue, green color assignment) then `summarize()` to get group-by-group summaries (a summary statistic for each color).
+
+![](https://github.com/moderndive/moderndive_book/raw/master/images/group_summary.png){ width=600px }
+
+
+### 2. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5
+
+
+***
+
+
+# Lec 8
+
+## Announcements
+
+* Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06).
+* Visitor: [Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
+* Submission format for Term Project Proposal on Wednesday.
+* Discussion on Midterm I. See [Midterms](midterms.html#midtermI) page.
+* Lab tomorrow/Thursday
+    + Jenny will go over a [data viz recap lab](static/data_vis_lab/lab4_source_JS_SDS220b.html){target="_blank"} which will be helpful for Midterm I studying.
+    + After that you can work on Problem Sets.
+    + However you allocate your time, Jenny and I ask you stay until the end of lab period as getting up and leaving is very disruptive. For example, we suggest you do exercises in [DataCamp Practice Mode](https://www.datacamp.com/community/blog/introducing-daily-practice-mode){target="_blank"} to reinforce what you've already learned!
+
+
+## Today's Topics/Activities  
+
+### 1. Chalk Talk
+
+* Coding functions: arguments as inputs
+* `%>%` is the "pipe" operator, pronouned "then"
+* First data wrangling "verb": `filter()` to subset rows:
+
+![](https://github.com/moderndive/moderndive_book/raw/master/images/filter.png){ width=600px }
+
+### 2. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 5-5.3
+
+### 3. Tweet of the day
+
+While networking may come naturally to some, it doesn't to most. It takes work, courage, and practice! For example, start small & low risk! A simple tweet can be the beginning of a meaningful relationship!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">It was great finally meeting you IRL too after all this time of virtual acquaintance! It&#39;s nice knowing you are real person and not just a sequence of 0&#39;s and 1&#39;s 🤖🤖🤖</p>&mdash; Albert Y. Kim (@rudeboybert) <a href="https://twitter.com/rudeboybert/status/1044007729172545542?ref_src=twsrc%5Etfw">September 23, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+***
+
+
+# Lec 7
+
+## Announcements
+
+* Go over questions in `#random` Slack channel
+* Monday is Midterm I review
+* ModernDive Learning Check solutions are ~~directly under question statement~~ now all in [Appendix D](https://moderndive.netlify.com/d-appendixd){target="_blank"} at the back of the book.
+* Lecture on Monday will start at 1:20pm (10 minutes later) to give people time to comfortably get from Emily Dodwell's talk listed in [Lec06](#Lec06) to class.
+* Next step of Term Project: [Project proposal](term_project.html#proposal) due Friday 10/19
+* **Videoconferencing**: In Slack, in a Direct Message, type `/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF`
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* Finish data visualization. Table in ModernDive Chapter 3.9
+* Ink/information ratio
+* Secret to mastering packages
+
+### 2. Project Time
+
+Start your projects!
+
+### 3. Tweet of the day
+
+ModernDive co-author Chester Ismay [\@old_man_chester](https://twitter.com/old_man_chester){target="_blank"} is Senior Curriculum Lead at DataCamp. If you are curious for a "big picture" view of why we are using DataCamp, read the linked blogpost, in particular look at the image of the "data science pipeline". Remember, you have free access to **all** DataCamp courses for 6 months!
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> to learn about our new Tidyverse Fundamentals with R Skill Track! In this track, you’ll learn the skills needed to get you up and running with data science in R using the <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a>. <a href="https://t.co/4fqAdJgoTX">https://t.co/4fqAdJgoTX</a> <a href="https://t.co/RsYxe4Hpm5">pic.twitter.com/RsYxe4Hpm5</a></p>&mdash; DataCamp (@DataCamp) <a href="https://twitter.com/DataCamp/status/1042851042139025409?ref_src=twsrc%5Etfw">September 20, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+***
+
+
+# Lec 6 {#Lec06}
+
+## Announcements
+
+* Curious about a career in data science? Then come for Emily Dodwell (class of 2011)'s talk "The Nuts and Bolts of a Data Science Career" on Monday 9/24; stay for the 🍕 lunch! Click [here](static/dodwell_talk.pdf){target="_blank"} for flyer.
+* Problem set 2 posted [below](#PS02).
+* Upcoming "Important dates" in schedule above:
+    + [Project groups](term_project.html#groups) by this Friday 9/21
+    + Self-scheduled Midterm I weekend of Friday 9/28
+* Learning check solutions by Friday, I promise!
+* Slack poll on `scratchpad.R`
+
+
+## RStudio Desktop
+
+In this week's lab sections you’ll get help installing R + RStudio on your computers; the instructions are in ModernDive 2.1.1. **Starting on Friday I will assume you are all using the desktop version of RStudio.** If you're still curious about RStudio Server & RStudio Cloud, check out these [notes](notes.html#server_cloud).
+
+So after Friday you'll be responsible for installing R Packages as described in ModernDive 2.3. In other words, to use a package for the first time:
+
+1. You'll need to install it once.
+1. *Load/open* it using `library()` command. Ex: `library(nycflights13)`
+
+## Todays Topics/Activities       
+
+### 1. Chalk Talk: Histograms "binning" structure
+
+Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5
+
+
+```r
+library(ggplot2)
+library(nycflights13)
+# Code to generate Fig 3.10 with bar border color white
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(color = "white")
+# Code to generate Fig 3.11
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(bins = 60, color = "white")
+```
+<img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" />
+
+
+### 2. Chalk Talk: Boxplots
+
+
+
+Say we want to plot a boxplot of the following 12 values which are pre-sorted: 
+
+> 1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30
+
+They have the following *summary statistics*:
+
+
+Min. | 1t Qu. | Median  | 3rd Qu.  |  Max. 
+---- | ------- | ------  |  ------- | --- 
+1  |  5.5 |  8.5  |  13.5  | 30
+
+
+Let's copare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+
+<img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" />
+
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 3.7.
+
+### 4. Tweet of the day
+
+On *imposter syndrome* is a psychological pattern in which an individual doubts their accomplishments and has a persistent internalized fear of being exposed as a "fraud". Click below to read full thread.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Let&#39;s talk about imposter syndrome in tech -- specifically, ways we can combat it better, both individually and as a community (a thread) 👇</p>&mdash; Caitlin Hudon👩🏼
+💻 (@beeonaposy) <a href="https://twitter.com/beeonaposy/status/1042161720771395585?ref_src=twsrc%5Etfw">September 18, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+Interesting results from my SDS 192 course earlier today:
+
+![](static/images/imposter_syndrome.png){ width=500px }
+
+
+***
+
+
+# Lec 5
+
+## Experimenting with RStudio Cloud
+
+Experimenting with [RStudio Cloud](https://www.causeweb.org/cause/sites/default/files/eCOTS%202018%20-%20Frictionless%20onboarding%20to%20data%20science%20with%20RStudio%20Cloud.pdf){target="_blank"} (on RStudio's servers) instead of RStudio Server (on Smith College's Servers).
+
+* Click [here](https://rstudio.cloud/spaces/4441/join?access_code=KMu7j8TpEMdb1XCXB9Dbj%2B8%2F79dQaS1nchX2PCtO){target="_blank"} to join RStudio Cloud.
+* Create an account by clicking the "Login with Google" button and use your Smith email.
+* Give yourself whatever login name.
+* In the "2018-09 SDS 220" space you should see a "coursework" project. Click on "Copy".
+* Click where it says "coursework" and rename it "Firstname Lastname". For example in my case "Albert Kim".
+
+## Announceme
+nts
+
+* Lab section Tuesday/Thursday:
+    + Install R + RStudio on your computer
+    + Start Problem set 2
+* What my `scratchpad.R` looks like after Lec4. Yours shouldn't be *exactly* the same, but close.  
+Note because I saved my work, `scratchpad.R` is written in black. If I had unsaved work, this would be written in red.  
+![alt text](static/images/Lec4_scratchpad.png){ width=500px }
+
+## Today's To
+pics/Activities       
+
+### 1. Chalk Talk
+
+* Histograms visualize the *(empirical) distribution* of a numerical variable
+* Facets + Histograms: Allow you to visualize *the conditional distribution* of a numerical variable
+
+### 2. In-class exercise: Comment lines
+
+In the screen shot of my `scratchpad.R` above, any line that starts with a `#` are called *comment lines*. They are ignored by R when you run them in the console. Run both these lines in the console separately:
+
+
+```r
+this is a comment line that R ignores that helps readers (including you!) understand code
+
+# this is a comment line that R ignores that helps readers (including you!) understand code
+```
+
+Why does one line return an `Error` whereas the other doesn't?
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.
+
+
+***
+
+
+# Lec 4
+
+## Announcements
+
+* **Extra office hours today 3:30-5pm in McConnell 215**
+* For those of you with interests in Biology: Reed College's Prof Derek Applewhite ["The Spatial and Temporal Regulation of Non-muscle Myosin II Contractility"](https://twitter.com/rudeboybert/status/1040272556991959041){target="_blank"} talk on Monday afternoon.
+* Syllabus:
+    + Added expectations to [Basic Information](syllabus.html#basicinfo) section.
+    + Added note about when to do DataCamp courses to [syllabus](syllabus.html#datacamp): *You do not need to complete any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them.*
+* Solutions to previous lecture's learning checks will be posted directly underneith question. Ex: Look at [LC2.1 Solutions](https://moderndive.netlify.com/2-getting-started.html#exploredataframes){target="_blank"} I just posted.
+
+
+## Today's Topics/Activities       
+
+### 1. Chalk Talk
+
+The Grammar of Graphics: the theoretical underpinnings of statistical graphics.
+
+### 2. In-class exercise: R code scratchpads
+
+**Question**: Should I be copying/pasting/tweeking code directly in the console window?  
+**Answer**: You can, but it makes saving work difficult. Instead, create a "scratchpad":
+
+1. Create a new `.R` script: In RStudio Menu Bar -> File -> New File -> R Script. 
+1. Save this as `scratchpad.R`
+1. Copy/paste/tweak any code in your scratchpad, not in console window. For example, for this exercise write: `1+1`
+1. To "run" code in the console (in other words tell R to "do this"), you can do one of the following:
+    1. Copy it from scratchpad, then paste it in console, then hit enter.
+    1. Highlight the code you want to run, then click on "Run"
+    1. Highlight the code you want to run, then press control+enter on Windows/Unix/Chromebook or ⌘+enter on macOS.
+1. Save and close the file.
+1. In the Files panel, click on `scratchpad.R` to reopen your previously saved work.
+
+### 3. In-class exercise: ModernDive
+
+As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).
+
+* Do not ignore the "Needed Packages" section at the beginning. Recall:
+    + The phone vs app analogy described in ModernDive 2.3.
+    + If you are using RStudio Server in your browser, these packages come pre-installed.
+    + If you are using RStudio Desktop installed on your computer, you'll have to ensure these packages are installed.
+* Please skip the "Introduction to the Tidyverse" DataCamp course mentioned at the beginning of Chapter 3 for now.
+* "Learning checks": These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!
+* **Note**: In this class, of the "Five Named Graphs" described in ModernDive 3.2, we'll only cover scatterplots, histographs, and boxplots; we'll be skipping linegraphs and barplots. 
+
+
+***
+
+
+# Lec 3
+
+## Announcements
+
+* Go over previous Slack `#general_announcements`
+* If you haven't already, **please** complete the [Intro Survey](https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform){target="_blank"} from Lec 1.
+* Self-scheduled Midterm II has been moved from Fri 10/26 thru Sun 10/28 to Fri 11/2 thru Sun 11/4 because of family weekend. 
+* Syllabus:
+    + Added full topic schedule
+    + Added office hours
+    + Added "Expectations" to following sections: [Topic Schedule and Readings](syllabus.html#topicschedule), [Evaluation](syllabus.html#topicschedule), [Accommodations](syllabus.html#accommodations), [Code of Conduct](syllabus.html#codeofconduct)
+* **Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215**
+
+## Today's Topics/Activities       
+        
+1. Go over ModernDive Chapter 2. Note:
+    + You can skip all videos and linked DataCamp courses.
+    + "Learning checks": These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!
+
+## Getting help
+
+A big part of learning data science tools is learning how to get help effectively. For example, in this course:
+
+**In class**:
+
+1. Ask yourself "Is this something I can Google?" Learning to use Google effectively is an important tool in a data scientist's toolbox.
+1. Ask the people sitting next to you. 
+1. Raise your hand to ask the data assistant or myself.
+
+**Outside of class**:
+
+1. Ask yourself "Is this something I can Google?" Learning to use Google effectively is an important tool in a data scientist's toolbox.
+1. Ask yourself "Are there people I work with in class that I can Slack?"
+1. If you all don't know, post a question on Slack in the `#r_questions` channel.
+1. Visit the Spinelli Center for tutoring Sunday-Thursday 7-9pm (see [syllabus](syllabus.html#basicinfo) for more info).
+
+
+***
+
+
+# Lec 2
+
+1. **Slack**
+    + I've separated our class Slack team from the previous one. Please join the new one by clicking [here](https://join.slack.com/t/sds-mth-220-fall2018/shared_invite/enQtNDMxNjc2ODM2Njg4LWQ1ODY3NDNiYTYzYTU5NTA2YWRlODkwNThhZDE4MjQwMjk1NzZlYmYxYjU4ZjI4N2MxNWVhYjg3NjEzYzk4YjY){target="_blank"}.
+    + Practice sending [formated messages](https://get.slack.help/hc/en-us/articles/202288908-Format-your-messages){target="_blank"} to a classmate.
+1. **Getting started with data in R**
+    + Click "R" in the menu bar above to open RStudio Server to use R in your web-browser.
+    + Click on ModernDive above and read Chapter 2: Getting started with data.
+        + You don't need to watch the videos for now
+        + If you are using RStudio Server, you don't need to install packages. However, you will need to load them.
+        + Learning checks: These are practice problems to reinforce your learning. You do not need to submit today's learning checks.
+1. **Lab Tuesday/Thursday** Start the DataCamp portion of Problem set 1. Jenny will help you get used to the DataCamp interface. 
+
+
+***
+
+
+# Lec 1
+
+* What is inference demo.
+* From the ModernDive [Introduction for Students](https://moderndive.netlify.com/index.html#sec:intro-for-students){target="_blank"}: ![](https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.002.png){ width=600px }
+* It all builds up to the `infer` package for "tidy" statistical inference. Only if you're curious:
+  + [Package homepage](http://infer.netlify.com/){target="_blank"}
+  + [High-level talk of package](https://www.rstudio.com/resources/videos/infer-a-package-for-tidy-statistical-inference/){target="_blank"}. 
+
+
+## TODO's {#Lec1TODO}
+
+* **Make sure**:
+    + You can login to RStudio Server (click R icon in menubar above).
+    + You are part of the class Slack team (click hashtag icon in menubar above) and 
+        1. Have added a profile picture
+        1. Can see the ~`#220_intro_stats`~, `#moderndive_typoes`, `r_questions`, and `random` channels
+        1. Have turned on [email notifications](https://get.slack.help/hc/en-us/articles/201355156-Guide-to-Slack-notifications-#email-notifications){target="_blank"}
+    + You have received an invitation email to DataCamp and are a member of the [group](https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics){target="_blank"}. Do not create an account separately on datacamp.com, but rather use the link in the email you received.
+    + You've completed the [Intro Survey](https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform){target="_blank"}
+* **Need help with any of the above?** ~~Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSehdLkV7PPj2_ghaHROdqb4fRCdJDv0ksDLoMw95WpPnfxzqQ/viewform){target="_blank"}~~ Slack me!
+
 -->
-<ul>
-<li>From last time: Grouping then summarizing: First <code>group_by()</code> to group rows together (the grey, blue, green color assignment) then <code>summarize()</code> to get group-by-group summaries (a summary statistic for each color).</li>
-<li>Create new variables using <code>mutate()</code></li>
-<li>Arrange rows using <code>arrange()</code> or <code>arrange(desc())</code></li>
-<li>Subset columns with <code>select()</code></li>
-</ul>
-</div>
-<div id="moderndive-roadmap-update" class="section level3">
-<h3>2. ModernDive Roadmap Update</h3>
-<p>We just completed “just enough data science” (data visualization and data wrangling) to do the rest of ModernDive. In particular</p>
-<ul>
-<li>Data modeling with the <code>moderndive</code> package (top right blue box)</li>
-<li>Statistical inference with the <code>infer</code> package (bottom right blue box)</li>
-</ul>
-<p><img src="https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.004.png" width="600" /></p>
-<p>For more advanced data visualization and data wrangling, take <a href="https://rudeboybert.github.io/SDS192/#today%E2%80%99s_topicsactivities" target="_blank">SDS 192: Intro to Data Science</a>.</p>
-</div>
-<div id="in-class-exercise-moderndive-1" class="section level3">
-<h3>3. In-class exercise: ModernDive</h3>
-<p>As marked in the Schedule at the top of this page, read ModernDive 5.6-5.7, 5.9.1</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-9" class="section level1">
-<h1>Lec 9</h1>
-<div id="announcements-25" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Albert extra office hours Thursday 2-4pm in McConnell 215.</li>
-<li>Project proposal <a href="term_project.html#submission_format">submission format</a> added. Just follow along and replace my example with your work!</li>
-<li>Solutions to PS02 <a href="#PS02_R_solutions">posted</a>
-<ul>
-<li>Please download the <code>PS02_solutions.R</code> file to your computer and open them in RStudio for a brief in-class discussion.</li>
-<li>To guarantee the <code>PS02_solutions.R</code> file opens in the RStudio app (AKA a car’s dashboard) and not the regular R app (AKA a car’s engine), don’t double-click the <code>PS02_solutions.R</code> file directly, but rather go to Files panel of RStudio and find/click/open the file from there.</li>
-</ul></li>
-<li>Midterm I practice questions discussion. See <a href="midterms.html#midtermIdiscussion">midterms</a> page.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-25" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-23" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p><strong>a) Summarizing</strong>: Note “summarise” is the British English spelling of the American English “summarize”. Both <code>summarise()</code> and <code>summarize()</code> work in R.</p>
-<table>
-<thead>
-<tr class="header">
-<th align="left">Use any summary function</th>
-<th align="left">To <code>summarize()</code> data</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left"><img src="https://github.com/moderndive/moderndive_book/raw/master/images/summary.png" width="400" /></td>
-<td align="left"><img src="https://github.com/moderndive/moderndive_book/raw/master/images/summarize1.png" width="400" /></td>
-</tr>
-</tbody>
-</table>
-<p><strong>b) Grouping then summarizing</strong>: First <code>group_by()</code> to group rows together (the grey, blue, green color assignment) then <code>summarize()</code> to get group-by-group summaries (a summary statistic for each color).</p>
-<p><img src="https://github.com/moderndive/moderndive_book/raw/master/images/group_summary.png" width="600" /></p>
-</div>
-<div id="in-class-exercise-moderndive-2" class="section level3">
-<h3>2. In-class exercise: ModernDive</h3>
-<p>As marked in the Schedule at the top of this page, read ModernDive 5.4-5.5</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-8" class="section level1">
-<h1>Lec 8</h1>
-<div id="announcements-26" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Lecture on today will start at 1:20pm to give people time to comfortably get from Emily Dodwell’s talk listed in <a href="#Lec06">Lec06</a>.</li>
-<li>Visitor: <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Data Counselor Raul Zelada Aprili</a></li>
-<li>Submission format for Term Project Proposal on Wednesday.</li>
-<li>Discussion on Midterm I. See <a href="midterms.html#midtermI">Midterms</a> page.</li>
-<li>Lab tomorrow/Thursday
-<ul>
-<li>Jenny will go over a <a href="static/data_vis_lab/lab4_source_JS_SDS220b.html" target="_blank">data viz recap lab</a> which will be helpful for Midterm I studying.</li>
-<li>After that you can work on Problem Sets.</li>
-<li>However you allocate your time, Jenny and I ask you stay until the end of lab period as getting up and leaving is very disruptive. For example, we suggest you do exercises in <a href="https://www.datacamp.com/community/blog/introducing-daily-practice-mode" target="_blank">DataCamp Practice Mode</a> to reinforce what you’ve already learned!</li>
-</ul></li>
-</ul>
-</div>
-<div id="toays-topicsactivities" class="section level2">
-<h2>Toay’s Topics/Activities</h2>
-<div id="chalk-talk-24" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Coding functions: arguments as inputs</li>
-<li><code>%&gt;%</code> is the “pipe” operator, pronouned “then”</li>
-<li>First data wrangling “verb”: <code>filter()</code> to subset rows:</li>
-</ul>
-<p><img src="https://github.com/moderndive/moderndive_book/raw/master/images/filter.png" width="600" /></p>
-</div>
-<div id="in-class-exercise-moderndive-3" class="section level3">
-<h3>2. In-class exercise: ModernDive</h3>
-<p>As marked in the Schedule at the top of this page, read ModernDive 5-5.3</p>
-</div>
-<div id="tweet-of-the-day-10" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>While networking may come naturally to some, it doesn’t to most. It takes work, courage, and practice! For example, start small &amp; low risk! A simple tweet can be the beginning of a meaningful relationship!</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-It was great finally meeting you IRL too after all this time of virtual acquaintance! It's nice knowing you are real person and not just a sequence of 0's and 1's 🤖🤖🤖
-</p>
-— Albert Y. Kim (<span class="citation">@rudeboybert</span>) <a href="https://twitter.com/rudeboybert/status/1044007729172545542?ref_src=twsrc%5Etfw">September 23, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-7" class="section level1">
-<h1>Lec 7</h1>
-<div id="announcements-27" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Go over questions in <code>#random</code> Slack channel</li>
-<li>Monday is Midterm I review</li>
-<li>ModernDive Learning Check solutions are <del>directly under question statement</del> now all in <a href="https://moderndive.netlify.com/d-appendixd" target="_blank">Appendix D</a> at the back of the book.</li>
-<li>Lecture on Monday will start at 1:20pm (10 minutes later) to give people time to comfortably get from Emily Dodwell’s talk listed in <a href="#Lec06">Lec06</a> to class.</li>
-<li>Next step of Term Project: <a href="term_project.html#proposal">Project proposal</a> due Friday 10/19</li>
-<li><strong>Videoconferencing</strong>: In Slack, in a Direct Message, type <code>/appear SOME_UNIQUE_NAME_ONLY_YOU_WOULD_THINK_OF</code></li>
-</ul>
-</div>
-<div id="todays-topicsactivities-26" class="section level2">
-<h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-25" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Finish data visualization. Table in ModernDive Chapter 3.9</li>
-<li>Ink/information ratio</li>
-<li>Secret to mastering packages</li>
-</ul>
-</div>
-<div id="project-time" class="section level3">
-<h3>2. Project Time</h3>
-<p>Start your projects!</p>
-</div>
-<div id="tweet-of-the-day-11" class="section level3">
-<h3>3. Tweet of the day</h3>
-<p>ModernDive co-author Chester Ismay <a href="https://twitter.com/old_man_chester" target="_blank">@old_man_chester</a> is Senior Curriculum Lead at DataCamp. If you are curious for a “big picture” view of why we are using DataCamp, read the linked blogpost, in particular look at the image of the “data science pipeline”. Remember, you have free access to <strong>all</strong> DataCamp courses for 6 months!</p>
-<blockquote class="twitter-tweet">
-<p lang="en" dir="ltr">
-Read this blog post by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw"><span class="citation">@old_man_chester</span></a> to learn about our new Tidyverse Fundamentals with R Skill Track! In this track, you’ll learn the skills needed to get you up and running with data science in R using the <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a>. <a href="https://t.co/4fqAdJgoTX">https://t.co/4fqAdJgoTX</a> <a href="https://t.co/RsYxe4Hpm5">pic.twitter.com/RsYxe4Hpm5</a>
-</p>
-— DataCamp (<span class="citation">@DataCamp</span>) <a href="https://twitter.com/DataCamp/status/1042851042139025409?ref_src=twsrc%5Etfw">September 20, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<hr />
-</div>
-</div>
-</div>
-<div id="Lec06" class="section level1">
-<h1>Lec 6</h1>
-<div id="announcements-28" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Curious about a career in data science? Then come for Emily Dodwell (class of 2011)’s talk “The Nuts and Bolts of a Data Science Career” on Monday 9/24; stay for the 🍕 lunch! Click <a href="static/dodwell_talk.pdf" target="_blank">here</a> for flyer.</li>
-<li>Problem set 2 posted <a href="#PS02">below</a>.</li>
-<li>Upcoming “Important dates” in schedule above:
-<ul>
-<li><a href="term_project.html#groups">Project groups</a> by this Friday 9/21</li>
-<li>Self-scheduled Midterm I weekend of Friday 9/28</li>
-</ul></li>
-<li>Learning check solutions by Friday, I promise!</li>
-<li>Slack poll on <code>scratchpad.R</code></li>
-</ul>
-</div>
-<div id="rstudio-desktop" class="section level2">
-<h2>RStudio Desktop</h2>
-<p>In this week’s lab sections you’ll get help installing R + RStudio on your computers; the instructions are in ModernDive 2.1.1. <strong>Starting on Friday I will assume you are all using the desktop version of RStudio.</strong> If you’re still curious about RStudio Server &amp; RStudio Cloud, check out these <a href="notes.html#server_cloud">notes</a>.</p>
-<p>So after Friday you’ll be responsible for installing R Packages as described in ModernDive 2.3. In other words, to use a package for the first time:</p>
-<ol style="list-style-type: decimal">
-<li>You’ll need to install it once.</li>
-<li><em>Load/open</em> it using <code>library()</code> command. Ex: <code>library(nycflights13)</code></li>
-</ol>
-</div>
-<div id="todays-topicsactivities-27" class="section level2">
-<h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-histograms-binning-structure" class="section level3">
-<h3>1. Chalk Talk: Histograms “binning” structure</h3>
-<p>Comparing Figures 3.10 and 3.11 in the ModernDive readings from Lec 5</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">library</span>(nycflights13)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="co"># Code to generate Fig 3.10 with bar border color white</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6"><span class="co"># Code to generate Fig 3.11</span></a>
-<a class="sourceLine" id="cb5-7" data-line-number="7"><span class="kw">ggplot</span>(<span class="dt">data =</span> weather, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> temp)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-8" data-line-number="8"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">60</span>, <span class="dt">color =</span> <span class="st">&quot;white&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
-</div>
-<div id="chalk-talk-boxplots" class="section level3">
-<h3>2. Chalk Talk: Boxplots</h3>
-<p>Say we want to plot a boxplot of the following 12 values which are pre-sorted:</p>
-<blockquote>
-<p>1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30</p>
-</blockquote>
-<p>They have the following <em>summary statistics</em>:</p>
-<table>
-<thead>
-<tr class="header">
-<th>Min.</th>
-<th>1t Qu.</th>
-<th>Median</th>
-<th>3rd Qu.</th>
-<th>Max.</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1</td>
-<td>5.5</td>
-<td>8.5</td>
-<td>13.5</td>
-<td>30</td>
-</tr>
-</tbody>
-</table>
-<p>Let’s copare the points and the corresponding boxplot side-by-side with the values on the <span class="math inline">\(y\)</span>-axis matching:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
-</div>
-<div id="in-class-exercise-moderndive-4" class="section level3">
-<h3>3. In-class exercise: ModernDive</h3>
-<p>As marked in the Schedule at the top of this page, read ModernDive 3.7.</p>
-</div>
-<div id="tweet-of-the-day-12" class="section level3">
-<h3>4. Tweet of the day</h3>
-<p>On <em>imposter syndrome</em> is a psychological pattern in which an individual doubts their accomplishments and has a persistent internalized fear of being exposed as a “fraud”. Click below to read full thread.</p>
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Let's talk about imposter syndrome in tech – specifically, ways we can combat it better, both individually and as a community (a thread) 👇
-</p>
-— Caitlin Hudon👩🏼 💻 (<span class="citation">@beeonaposy</span>) <a href="https://twitter.com/beeonaposy/status/1042161720771395585?ref_src=twsrc%5Etfw">September 18, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-<p>Interesting results from my SDS 192 course earlier today:</p>
-<p><img src="static/images/imposter_syndrome.png" width="500" /></p>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-5" class="section level1">
-<h1>Lec 5</h1>
-<div id="experimenting-with-rstudio-cloud" class="section level2">
-<h2>Experimenting with RStudio Cloud</h2>
-<p>Experimenting with <a href="https://www.causeweb.org/cause/sites/default/files/eCOTS%202018%20-%20Frictionless%20onboarding%20to%20data%20science%20with%20RStudio%20Cloud.pdf" target="_blank">RStudio Cloud</a> (on RStudio’s servers) instead of RStudio Server (on Smith College’s Servers).</p>
-<ul>
-<li>Click <a href="https://rstudio.cloud/spaces/4441/join?access_code=KMu7j8TpEMdb1XCXB9Dbj%2B8%2F79dQaS1nchX2PCtO" target="_blank">here</a> to join RStudio Cloud.</li>
-<li>Create an account by clicking the “Login with Google” button and use your Smith email.</li>
-<li>Give yourself whatever login name.</li>
-<li>In the “2018-09 SDS 220” space you should see a “coursework” project. Click on “Copy”.</li>
-<li>Click where it says “coursework” and rename it “Firstname Lastname”. For example in my case “Albert Kim”.</li>
-</ul>
-</div>
-<div id="announceme" class="section level2">
-<h2>Announceme</h2>
-<p>nts</p>
-<ul>
-<li>Lab section Tuesday/Thursday:
-<ul>
-<li>Install R + RStudio on your computer</li>
-<li>Start Problem set 2</li>
-</ul></li>
-<li>What my <code>scratchpad.R</code> looks like after Lec4. Yours shouldn’t be <em>exactly</em> the same, but close.<br />
-Note because I saved my work, <code>scratchpad.R</code> is written in black. If I had unsaved work, this would be written in red.<br />
-<img src="static/images/Lec4_scratchpad.png" alt="alt text" width="500" /></li>
-</ul>
-</div>
-<div id="todays-to" class="section level2">
-<h2>Today’s To</h2>
-<p>pics/Activities</p>
-<div id="chalk-talk-26" class="section level3">
-<h3>1. Chalk Talk</h3>
-<ul>
-<li>Histograms visualize the <em>(empirical) distribution</em> of a numerical variable</li>
-<li>Facets + Histograms: Allow you to visualize <em>the conditional distribution</em> of a numerical variable</li>
-</ul>
-</div>
-<div id="in-class-exercise-comment-lines" class="section level3">
-<h3>2. In-class exercise: Comment lines</h3>
-<p>In the screen shot of my <code>scratchpad.R</code> above, any line that starts with a <code>#</code> are called <em>comment lines</em>. They are ignored by R when you run them in the console. Run both these lines in the console separately:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1">this is a comment line that R ignores that helps <span class="kw">readers</span> (including you<span class="op">!</span>) understand code</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"></a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="co"># this is a comment line that R ignores that helps readers (including you!) understand code</span></a></code></pre></div>
-<p>Why does one line return an <code>Error</code> whereas the other doesn’t?</p>
-</div>
-<div id="in-class-exercise-moderndive-5" class="section level3">
-<h3>3. In-class exercise: ModernDive</h3>
-<p>As marked in the Schedule at the top of this page, read ModernDive 3.5 and 3.6.</p>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-4" class="section level1">
-<h1>Lec 4</h1>
-<div id="announcements-29" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><strong>Extra office hours today 3:30-5pm in McConnell 215</strong></li>
-<li>For those of you with interests in Biology: Reed College’s Prof Derek Applewhite <a href="https://twitter.com/rudeboybert/status/1040272556991959041" target="_blank">“The Spatial and Temporal Regulation of Non-muscle Myosin II Contractility”</a> talk on Monday afternoon.</li>
-<li>Syllabus:
-<ul>
-<li>Added expectations to <a href="syllabus.html#basicinfo">Basic Information</a> section.</li>
-<li>Added note about when to do DataCamp courses to <a href="syllabus.html#datacamp">syllabus</a>: <em>You do not need to complete any DataCamp courses in preparation for future lectures; they will always be explicitly assigned and you will subsequently be given time during Tu/Th lab sections to do them.</em></li>
-</ul></li>
-<li>Solutions to previous lecture’s learning checks will be posted directly underneith question. Ex: Look at <a href="https://moderndive.netlify.com/2-getting-started.html#exploredataframes" target="_blank">LC2.1 Solutions</a> I just posted.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-28" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-27" class="section level3">
-<h3>1. Chalk Talk</h3>
-<p>The Grammar of Graphics: the theoretical underpinnings of statistical graphics.</p>
-</div>
-<div id="in-class-exercise-r-code-scratchpads" class="section level3">
-<h3>2. In-class exercise: R code scratchpads</h3>
-<p><strong>Question</strong>: Should I be copying/pasting/tweeking code directly in the console window?<br />
-<strong>Answer</strong>: You can, but it makes saving work difficult. Instead, create a “scratchpad”:</p>
-<ol style="list-style-type: decimal">
-<li>Create a new <code>.R</code> script: In RStudio Menu Bar -&gt; File -&gt; New File -&gt; R Script.</li>
-<li>Save this as <code>scratchpad.R</code></li>
-<li>Copy/paste/tweak any code in your scratchpad, not in console window. For example, for this exercise write: <code>1+1</code></li>
-<li>To “run” code in the console (in other words tell R to “do this”), you can do one of the following:
-<ol style="list-style-type: decimal">
-<li>Copy it from scratchpad, then paste it in console, then hit enter.</li>
-<li>Highlight the code you want to run, then click on “Run”</li>
-<li>Highlight the code you want to run, then press control+enter on Windows/Unix/Chromebook or ⌘+enter on macOS.</li>
-</ol></li>
-<li>Save and close the file.</li>
-<li>In the Files panel, click on <code>scratchpad.R</code> to reopen your previously saved work.</li>
-</ol>
-</div>
-<div id="in-class-exercise-moderndive-6" class="section level3">
-<h3>3. In-class exercise: ModernDive</h3>
-<p>As marked in the Schedule at the top of this page, read ModernDive 3-3.3.1 (start of Chapter 3 to the end of 3.3.1).</p>
-<ul>
-<li>Do not ignore the “Needed Packages” section at the beginning. Recall:
-<ul>
-<li>The phone vs app analogy described in ModernDive 2.3.</li>
-<li>If you are using RStudio Server in your browser, these packages come pre-installed.</li>
-<li>If you are using RStudio Desktop installed on your computer, you’ll have to ensure these packages are installed.</li>
-</ul></li>
-<li>Please skip the “Introduction to the Tidyverse” DataCamp course mentioned at the beginning of Chapter 3 for now.</li>
-<li>“Learning checks”: These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!</li>
-<li><strong>Note</strong>: In this class, of the “Five Named Graphs” described in ModernDive 3.2, we’ll only cover scatterplots, histographs, and boxplots; we’ll be skipping linegraphs and barplots.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-3" class="section level1">
-<h1>Lec 3</h1>
-<div id="announcements-30" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li>Go over previous Slack <code>#general_announcements</code></li>
-<li>If you haven’t already, <strong>please</strong> complete the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform" target="_blank">Intro Survey</a> from Lec 1.</li>
-<li>Self-scheduled Midterm II has been moved from Fri 10/26 thru Sun 10/28 to Fri 11/2 thru Sun 11/4 because of family weekend.</li>
-<li>Syllabus:
-<ul>
-<li>Added full topic schedule</li>
-<li>Added office hours</li>
-<li>Added “Expectations” to following sections: <a href="syllabus.html#topicschedule">Topic Schedule and Readings</a>, <a href="syllabus.html#topicschedule">Evaluation</a>, <a href="syllabus.html#accommodations">Accommodations</a>, <a href="syllabus.html#codeofconduct">Code of Conduct</a></li>
-</ul></li>
-<li><strong>Extra office hours: Friday 9/14, 3:30-5pm in McConnell 215</strong></li>
-</ul>
-</div>
-<div id="todays-to-1" class="section level2">
-<h2>Today’s To</h2>
-<p>pics/Activities</p>
-<ol style="list-style-type: decimal">
-<li>Go over ModernDive Chapter 2. Note:
-<ul>
-<li>You can skip all videos and linked DataCamp courses.</li>
-<li>“Learning checks”: These are practice problems that you do not need to submit. Should you write your answers down? If you feel like you would benefit, then yes! I will post solutions to the learning checks before the next lecture!</li>
-</ul></li>
-</ol>
-</div>
-<div id="getting-he" class="section level2">
-<h2>Getting he</h2>
-<p>lp</p>
-<p>A big part of learning data science tools is learning how to get help effectively. For example, in this course:</p>
-<p><strong>In class</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>Ask yourself “Is this something I can Google?” Learning to use Google effectively is an important tool in a data scientist’s toolbox.</li>
-<li>Ask the people sitting next to you.</li>
-<li>Raise your hand to ask the data assistant or myself.</li>
-</ol>
-<p><strong>Outside of class</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>Ask yourself “Is this something I can Google?” Learning to use Google effectively is an important tool in a data scientist’s toolbox.</li>
-<li>Ask yourself “Are there people I work with in class that I can Slack?”</li>
-<li>If you all don’t know, post a question on Slack in the <code>#r_questions</code> channel.</li>
-<li>Visit the Spinelli Center for tutoring Sunday-Thursday 7-9pm (see <a href="syllabus.html#basicinfo">syllabus</a> for more info).</li>
-</ol>
-<hr />
-</div>
-</div>
-<div id="lec-2" class="section level1">
-<h1>Lec 2</h1>
-<ol style="list-style-type: decimal">
-<li><strong>Slack</strong>
-<ul>
-<li>I’ve separated our class Slack team from the previous one. Please join the new one by clicking <a href="https://join.slack.com/t/sds-mth-220-fall2018/shared_invite/enQtNDMxNjc2ODM2Njg4LWQ1ODY3NDNiYTYzYTU5NTA2YWRlODkwNThhZDE4MjQwMjk1NzZlYmYxYjU4ZjI4N2MxNWVhYjg3NjEzYzk4YjY" target="_blank">here</a>.</li>
-<li>Practice sending <a href="https://get.slack.help/hc/en-us/articles/202288908-Format-your-messages" target="_blank">formated messages</a> to a classmate.</li>
-</ul></li>
-<li><strong>Getting started with data in R</strong>
-<ul>
-<li>Click “R” in the menu bar above to open RStudio Server to use R in your web-browser.</li>
-<li>Click on ModernDive above and read Chapter 2: Getting started with data.
-<ul>
-<li>You don’t need to watch the videos for now</li>
-<li>If you are using RStudio Server, you don’t need to install packages. However, you will need to load them.</li>
-<li>Learning checks: These are practice problems to reinforce your learning. You do not need to submit today’s learning checks.</li>
-</ul></li>
-</ul></li>
-<li><strong>Lab Tuesday/Thursday</strong> Start the DataCamp portion of Problem set 1. Jenny will help you get used to the DataCamp interface.</li>
-</ol>
-<hr />
-</div>
-<div id="lec-1" class="section level1">
-<h1>Lec 1</h1>
-<ul>
-<li>What is inference demo.</li>
-<li>From the ModernDive <a href="https://moderndive.netlify.com/index.html#sec:intro-for-students" target="_blank">Introduction for Students</a>: <img src="https://github.com/moderndive/moderndive_book/raw/master/images/flowcharts/flowchart/flowchart.002.png" width="600" /></li>
-<li>It all builds up to the <code>infer</code> package for “tidy” statistical inference. Only if you’re curious:
-<ul>
-<li><a href="http://infer.netlify.com/" target="_blank">Package homepage</a></li>
-<li><a href="https://www.rstudio.com/resources/videos/infer-a-package-for-tidy-statistical-inference/" target="_blank">High-level talk of package</a>.</li>
-</ul></li>
-</ul>
-<div id="Lec1TODO" class="section level2">
-<h2>TODO’s</h2>
-<ul>
-<li><strong>Make sure</strong>:
-<ul>
-<li>You can login to RStudio Server (click R icon in menubar above).</li>
-<li>You are part of the class Slack team (click hashtag icon in menubar above) and
-<ol style="list-style-type: decimal">
-<li>Have added a profile picture</li>
-<li>Can see the <sub><code>#220_intro_stats</code></sub>, <code>#moderndive_typoes</code>, <code>r_questions</code>, and <code>random</code> channels</li>
-<li>Have turned on <a href="https://get.slack.help/hc/en-us/articles/201355156-Guide-to-Slack-notifications-#email-notifications" target="_blank">email notifications</a></li>
-</ol></li>
-<li>You have received an invitation email to DataCamp and are a member of the <a href="https://www.datacamp.com/enterprise/2018-09-sds220-intro-to-probability-statistics" target="_blank">group</a>. Do not create an account separately on datacamp.com, but rather use the link in the email you received.</li>
-<li>You’ve completed the <a href="https://docs.google.com/forms/d/e/1FAIpQLSd7Ozr9tVcHG9Ho9ijEjQZjncLSLD5pYYfKjURbWIrIrvbDPg/viewform" target="_blank">Intro Survey</a></li>
-</ul></li>
-<li><strong>Need help with any of the above?</strong> <del>Fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSehdLkV7PPj2_ghaHROdqb4fRCdJDv0ksDLoMw95WpPnfxzqQ/viewform" target="_blank">Google Form</a></del> Slack me!</li>
-</ul>
 </div>
 </div>
 
