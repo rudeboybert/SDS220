@@ -29,9 +29,9 @@ h1{font-weight: 400;}
     + If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person.
 * **Meeting locations/times:** 
     + **Lectures**: MWF 11:00-12:10 - Sabin-Reed 301
-    + **Labs**: Held by Dr. Jenny Smetzer
-        + Sec 01: Tu 1:00-2:50 - Sabin-Reed 301
-        + Sec 01: Tu 1:00-2:50 - Sabin-Reed 301
+    + **Labs**: Held by Dr. Jenny Smetzer (Note lab end times are incorrectly listed on Course Search)
+        + Sec 01: Tu 1:00-2:20 - Sabin-Reed 301
+        + Sec 02: Tu 3:00-4:20 - Sabin-Reed 301
 * **Outside help**:
     + Albert's office hours: TBD - McConnell Hall 215
     + Jenny's office hours: Tu 11:00-12:20 and Wednesday 10:00-12:20 and 1:00-2:00. Book your appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"} - Bass 403
