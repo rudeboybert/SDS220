@@ -81,7 +81,7 @@ Ask yourself:
 # Course Description & Objectives
 
 * **Official course description**: On [Smith College
-Course Search](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Fall+2018&dept=Statistical+and+Data+Sciences&instr=Albert+Y.+Kim&credits=&course_numb=220&course_keywd=&op=Submit&form_build_id=form-aR3I9kjnzv-y9YC5iG9EZdxZg_0shLeVcJPIoLE9ABM&form_id=campus_course_search_basic_search_form){target="_blank"}.
+Course Search](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2019&dept=&instr=Albert+Y.+Kim&credits=&course_numb=220&course_keywd=&op=Submit&form_build_id=form-denY7g_Jg58ti6JEd7MQqOj4CvHwIw6awhXG9B0jLHs&form_id=campus_course_search_basic_search_form){target="_blank"}.
 * **Objectives**: This semester you will
     1. Learn statistical inference via data science, not mathematics/probability theory.
     1. Engage in the data/science research pipeline in as faithful a manner as possible while maintaining a level suitable for novices.
