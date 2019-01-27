@@ -27,10 +27,9 @@ library(nycflights13)
 library(gapminder)
 library(babynames)
 library(scales)
+library(moderndive)
 # devtools::install_github("hadley/emo")
 library(emo)
-library(moderndive)
-
 # devtools::install_github("thomasp85/patchwork")
 library(patchwork)
 
