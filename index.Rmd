@@ -38,10 +38,6 @@ library(patchwork)
 set.seed(76)
 ```
 
-<style>
-h1{font-weight: 400;}
-</style>
-
 
 
 ***
