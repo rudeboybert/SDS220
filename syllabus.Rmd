@@ -35,10 +35,11 @@ h1{font-weight: 400;}
     + Spinelli Center for Quantitative Learning [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. 
     + Albert's office hours in McConnell Hall 215: Mon & Wed 2:45-4:00 and by [apppointment](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}.
     + Jenny's office hours in Bass 403: By [apppointment](https://jennysmetzer.youcanbook.me/){target="_blank"} on Tu 11:00-12:20 and Wed 10:00-12:20 and 1:00-2:00.
+    + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By [appointment](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
 
-<!--
-[Data Counselor Raul Zelada Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}: By appointment - Spinelli Center.
--->
+
+## Expectations
+
 
 ## Instructor work-life balance
 
