@@ -79,14 +79,15 @@ set.seed(76)
 
 Why chalk talks? Read the [Field Notes](https://twitter.com/FieldNotesBrand){target="_blank"} slogan.
 
-
 ### 2. In-class exercise
 
 Why undirected in-class exercise time? People all learn at their own pace. What to do:
 
 1. Open RStudio (R in the menu bar above)
 1. Open ModernDive (ModernDive in menu bar above)
-1. As indicated in the above schedule, read ModernDive Chapter 2 while running all code in the *console*. You can skip all videos and the DataCamp links as we'll be talking about those in class.
+1. As indicated in the above schedule, read ModernDive Chapter 2 while running all code in the *console*.
+1. You can skip all videos and the DataCamp links as we'll be talking about those in class.
+1. You do not need to turn in Learning Checks, those are for your practice. The solutions are in Appendix D.
 1. If you have questions, ask a peer. If you're still stuck, ask me!
 
 Recall from the "How can I succeed in this class?" discussion in the [syllabus](syllabus.html):
@@ -101,6 +102,8 @@ Recall from the "How can I succeed in this class?" discussion in the [syllabus](
 
 
 ***
+
+
 
 # Lec 1: Fri 1/24
 

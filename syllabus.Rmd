@@ -165,7 +165,7 @@ instead I present the following rough principle I will follow: *you'll only get
 out of this class as much as you put in*. That being said, here are multiple
 pathways for you to stay engaged in this class:
 
-* Asking and answering question in class.
+* Asking and answering questions in class.
 * Coming to office hours.
 * Posting questions on Slack. Even better, responding to questions on Slack.
 * Getting good peer evaluations for your term project.
