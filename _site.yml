@@ -20,8 +20,8 @@ navbar:
   - text: ModernDive
     href: https://moderndive.netlify.com/
   right:
-  - text: Problem Sets
-    href: PS.html
+#  - text: Problem Sets
+#    href: PS.html
   - text: Midterms
     href: midterms.html
   - text: Term Project

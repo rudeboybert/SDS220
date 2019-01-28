@@ -71,7 +71,7 @@ set.seed(76)
 * Slack
     + Did you get a Slack notification in some form for my message on Saturday at 9AM: mobile/desktop or email notification? You are responsible for staying on top of in-between lecture notifications.
     + First student question posted on `#questions` Slack channel`r set.seed(79);emo::ji("hooray")` !!!  The `r set.seed(79);emo::ji("trophy")` for first student answer to a student question is still up for grabs!
-* First lab with Dr. Jenny Smetzer is tomorrow. Problem set 01 (PS01) will be posted on the [Problem Sets](PS.html) page.
+* First lab with Dr. Jenny Smetzer is tomorrow. Problem set 01 (PS01) will be posted on Moodle. ~~the Problem Sets page~~.
 
 ## Todays Topics/Activities       
 
