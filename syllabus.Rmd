@@ -38,8 +38,6 @@ h1{font-weight: 400;}
     + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By [appointment](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
 
 
-## Expectations
-
 
 ## Instructor work-life balance
 
@@ -54,7 +52,7 @@ h1{font-weight: 400;}
 
 
 
-# How can I succeed in this class?
+# How can I succeed in this class? {#succeed}
 
 Ask yourself:
 

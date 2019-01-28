@@ -54,6 +54,52 @@ set.seed(76)
 -->
 
 
+
+***
+
+
+# Lec 2: Mon 1/28
+
+## Annoucements 
+
+* On [Moodle](https://moodle.smith.edu/course/view.php?id=33093){target="_blank"}
+    + If you haven't already, please complete all the steps in "start here"
+    + If you are trying to register for this course, see the posted registration priority list.
+* Outside help:
+    + Spinelli Center for Quantitative Learning [tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"} hours (Sunday-Thursday 7-9pm in Sabin-Reed 301) start tonight.
+    + My office hours are now posted on [syllabus](syllabus.html).
+* Slack
+    + Did you get a Slack notification in some form for my message on Saturday at 9AM: mobile/desktop or email notification? You are responsible for staying on top of in-between lecture notifications.
+    + First student question posted on `#questions` Slack channel`r set.seed(79);emo::ji("hooray")` !!!  The `r set.seed(79);emo::ji("trophy")` for first student answer to a student question is still up for grabs!
+* First lab with Dr. Jenny Smetzer is tomorrow. Problem set 01 (PS01) will be posted on the [Problem Sets](PS.html) page.
+
+## Todays Topics/Activities       
+
+### 1. Chalk Talk
+
+Why chalk talks? Read the [Field Notes](https://twitter.com/FieldNotesBrand){target="_blank"} slogan.
+
+
+### 2. In-class exercise
+
+Why undirected in-class exercise time? People all learn at their own pace. What to do:
+
+1. Open RStudio (R in the menu bar above)
+1. Open ModernDive (ModernDive in menu bar above)
+1. As indicated in the above schedule, read ModernDive Chapter 2 while running all code in the *console*. You can skip all videos and the DataCamp links as we'll be talking about those in class.
+1. If you have questions, ask a peer. If you're still stuck, ask me!
+
+Recall from the "How can I succeed in this class?" discussion in the [syllabus](syllabus.html):
+
+> * **Lectures, labs, and readings:**
+>     + *"Am I actually running the code and studying the outputs in R during in-class exercises, or am I just skimming the text?"*
+>     + *"Am I completing all the ModernDive readings/in-class activites for a given lecture before the start of the next lecture?"*
+>     + *"During in-class exercises and lab time, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
+> * **Problem sets, DataCamp, and coding:**
+>     + *"When learning to code, much like learning a language, have I been really pushing myself to practice, practice, practice?"*
+
+
+
 ***
 
 # Lec 1: Fri 1/24

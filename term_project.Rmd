@@ -287,7 +287,7 @@ What to include
 
 
 
-# 4. Project submission due: Fri 4/5{#resubmission}
+# 4. Project submission due: Fri 4/5 {#submission}
 
 
 <!--
