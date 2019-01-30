@@ -54,6 +54,38 @@ set.seed(76)
 -->
 
 
+***
+
+
+# Lec 3: Wed 1/30
+
+## Annoucements 
+
+* Slack message and `#moderndive` typos
+* Updated [Term Project](term_project.html) page with:
+    + Information on first phase: Form groups
+    + Example of final "resubmission" due the last day of class. Note this example is subject to change throughout the semester.
+* Added all Term Project items to Moodle.
+
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec01: `nycflights13` package and `glimpse()`/`View()` functions.
+* What is a *function*? What are *arguments*?
+* Grammar of graphics
+* Scatterplots
+
+### 2. In-class exercise
+
+ModernDive readings for Lec03 in above schedule. Now that you've seen R Markdown in Lab 1:
+
+* Create a `.Rmd` file and save it as `class_notes.Rmd`. That way you can save all your code for re-use later, like a Word document.
+* Copy and paste any code from ModernDive into "code chunks" in `class_notes.Rmd`. That way you can easily tweak/modify code.
+* "Run" code in the console from the "code chunks" in `class_notes.Rmd` as you learned in Lab 1.
+* Again, you do not need to submit any answers for learnings checks, however **you are resposible for completing the readings, running all code, and doing all learning checks doing before the next lecture**.
+
 
 ***
 
@@ -102,7 +134,6 @@ Recall from the "How can I succeed in this class?" discussion in the [syllabus](
 
 
 ***
-
 
 
 # Lec 1: Fri 1/24

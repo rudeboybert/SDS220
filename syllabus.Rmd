@@ -35,7 +35,7 @@ h1{font-weight: 400;}
     + Spinelli Center for Quantitative Learning [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. 
     + Albert's office hours in McConnell Hall 215: Mon & Wed 2:45-4:00 and by apppointment (click [here](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} to book).
     + Jenny's office hours in Bass 403: By apppointment on Tu 11:00-12:20 and Wed 10:00-12:20 and 1:00-2:00 (click [here](https://jennysmetzer.youcanbook.me/){target="_blank"} to book).
-    + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By [appointment](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
+    + Spinelli Center Data Counselor Vahab Khademi in Seelye 207: By appointment (click [here](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} to book).
 
 
 
@@ -130,7 +130,7 @@ A rough topic schedule and corresponding readings are posted below on the [main 
 * Two lowest scores dropped. 
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
-**Each problem set is worth 1% of your final grade**.
+**Each problem set is worth ~1% of your final grade**.
 
 ## DataCamp Assignments 5% {#datacamp}
 
@@ -151,7 +151,7 @@ There will be 2-3 quizzes assigned during the course of the semester. They will 
 
 ## Term Project 25% {#termproject}
 
-See [Term Project](term_project.html) page.
+See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade (see [Engagement 5%](#engagement)).
 
 ## Three Midterms: 45%
 
@@ -168,6 +168,7 @@ pathways for you to stay engaged in this class:
 * Asking and answering questions in class.
 * Coming to office hours.
 * Posting questions on Slack. Even better, responding to questions on Slack.
+* Level of contributions for all the steps in the term project leading up to the final submission.
 * Getting good peer evaluations for your term project.
 
 ## Policies
