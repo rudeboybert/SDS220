@@ -46,11 +46,11 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 The group leader will then:
 
-1. Complete the following [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScbXQEq00avzSfBC2tCN5SFIEw_MZ2poC0dSpkjVjnr1oKJSw/viewform){target="_blank"}.
-1. Nothing to submit on Moodle this round.
 1. Create two Slack direct messages:
-    * One with all your group members + myself + Jenny: Ask questions to Jenny and myself here.
+    * One with all your group members + myself + Jenny: Ask questions to Jenny and myself here to that we're all on the same page.
     * One with only your group members: Send all private messages amongst yourselves here.
+1. Nothing to submit on Moodle this round.
+1. Complete the following [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScbXQEq00avzSfBC2tCN5SFIEw_MZ2poC0dSpkjVjnr1oKJSw/viewform){target="_blank"}.
 
 ## Notes
 
