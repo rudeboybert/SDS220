@@ -57,6 +57,28 @@ set.seed(76)
 ***
 
 
+# Lec 4: Fri 2/1
+
+## Annoucements 
+
+* Slack message and `#moderndive` typos
+
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec02.
+* Histograms to show *distribution* of a numerical variable.
+
+### 2. In-class exercise
+
+
+
+
+***
+
+
 # Lec 3: Wed 1/30
 
 ## Annoucements 
