@@ -73,7 +73,12 @@ set.seed(76)
 
 ### 2. In-class exercise
 
-
+* Live demo: Some tips on workflow for in-class exercises.
+    + "Typing/running code directly in console" vs "typing code in your `class_notes.Rmd` R Markdown file and *sending* it to the console to run."
+    + Quickly switching applications on your computer with "command + tab" (macOS) or "control + tab" (Windows)
+    + Making code human-friendly to read! Be empathetic to your collobators by writing nice code, in particular your most [important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}!
+    + For example: hard returns between code chunks.
+    + Please close your RStudio Server window when not working! It uses up Smith server resources if you don't!
 
 
 ***
