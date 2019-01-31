@@ -147,11 +147,11 @@ practice, instead of evaluative tools used by the instructor to assign grades.
 
 ## Quizzes 5%
 
-There will be 2-3 quizzes assigned during the course of the semester. They will always be announced the lecture before. 
+There will be 2-3 quizzes assigned during the course of the semester. They will always be announced beforehand. 
 
 ## Term Project 25% {#termproject}
 
-See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade (see [Engagement 5%](#engagement)).
+See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
 
 ## Three Midterms: 45%
 
@@ -165,11 +165,9 @@ instead I present the following rough principle I will follow: *you'll only get
 out of this class as much as you put in*. That being said, here are multiple
 pathways for you to stay engaged in this class:
 
-* Asking and answering questions in class.
-* Coming to office hours.
-* Posting questions on Slack. Even better, responding to questions on Slack.
-* Level of contributions for all the steps in the term project leading up to the final submission.
-* Getting good peer evaluations for your term project.
+* Engaging with this class in a fashion where you can say "yes" to all "How can I succeed in this class?" questions [above](#succeed).
+* Contributing for all the steps in the term project leading up to the final submission: data, proposal, and initial submission.
+* Getting reasonabable peer evaluations for your term project.
 
 ## Policies
 
