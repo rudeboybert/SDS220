@@ -149,7 +149,7 @@ practice, instead of evaluative tools used by the instructor to assign grades.
 
 There will be 2-3 quizzes assigned during the course of the semester. They will always be announced beforehand. 
 
-## Term Project 25% {#termproject}
+## Term Project 30% {#termproject}
 
 See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
 
@@ -181,7 +181,7 @@ in particular all external sources must be cited in your submissions.
 1. **Problem sets**:
     + No extensions will be granted without a dean's note.
     + To receive full credit, you must show your work and explain your reasoning in your solutions. 
-    + All written problem sets must be handed in at the start of lecture. No emailed submissions will be accepted; if you can't make it to class ask a classmate to turn it in for you. They must be stapled with the fringe/perf from any spiral notebook paper removed. 
+    + All written problem sets must be handed in at the start of lab. No emailed submissions will be accepted; if you can't make it to class ask a classmate to turn it in for you. They must be stapled with the fringe/perf from any spiral notebook paper removed. 
 1. **Midterms/quizzes**:
     + No make-up quizzes or midterms will be allowed without a dean's note. 
     + Timestamps for all midterms will be strictly enforced.
@@ -224,5 +224,35 @@ lectures, labs, office hours, tutoring hours, and over Slack.**
 This Code of Conduct is adapted from the [Contributor
 Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
 available [here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
+
+
+
+***
+
+
+<!--
+
+# Signature
+
+*I have read this syllabus in its entirety.*
+
+
+Signature:  
+
+***
+
+
+Printed name:  
+
+***
+
+
+Date:  
+
+
+***
+
+
+-->
 
 
