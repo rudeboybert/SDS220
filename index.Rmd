@@ -83,7 +83,11 @@ set.seed(76)
     + Making code human-friendly to read! Be empathetic to your collobators by writing nice code, in particular your most [important collaborator](https://rmhogervorst.nl/cleancode/blog/2016/05/26/content/post/2016-05-26-your-most-valuable-collaborator-future-you/){target="_blank"}!
     + For example: hard returns between code chunks.
     + Please close your RStudio Server window when not working! It uses up Smith server resources if you don't!
+    + See screencast of demo below!
 * ModernDive readings for Lec04 in above schedule.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OCBJxThDUno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ### 3. Tweet of the day
 
