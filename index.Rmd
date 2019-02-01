@@ -81,6 +81,14 @@ set.seed(76)
     + Please close your RStudio Server window when not working! It uses up Smith server resources if you don't!
 * ModernDive readings for Lec04 in above schedule.
 
+### 3. Tweet of the day
+
+The BBC uses `ggplot2` for data journalism!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">https://t.co/TMLI2kTMJn</a></p>&mdash; Kieran Healy (@kjhealy) <a href="https://twitter.com/kjhealy/status/1091304909528580097?ref_src=twsrc%5Etfw">February 1, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 ***
 
