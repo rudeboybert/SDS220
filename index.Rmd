@@ -54,6 +54,15 @@ set.seed(76)
 -->
 
 
+
+***
+
+
+# Lec 5: Mon 2/4
+
+* `View()` nor `?` doesn't work in RMarkdown
+
+
 ***
 
 
