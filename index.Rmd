@@ -72,7 +72,7 @@ set.seed(76)
 
 ### 1. Chalk talk
 
-* Recap of Lec02.
+* Recap of Lec03.
 * Histograms to show *distribution* of a numerical variable.
 
 ### 2. In-class exercise
@@ -112,7 +112,7 @@ The BBC uses `ggplot2` for data journalism!
 
 ### 1. Chalk talk
 
-* Recap of Lec01: `nycflights13` package and `glimpse()`/`View()` functions.
+* Recap of Lec02: `nycflights13` package and `glimpse()`/`View()` functions.
 * What is a *function*? What are *arguments*?
 * Grammar of graphics
 * Scatterplots
