@@ -62,7 +62,11 @@ set.seed(76)
 ## Annoucements 
 
 * Slack message and `#moderndive` typos
+* Remember the `Warning: Removed 5 rows containing missing values (geom_point).` warning message you got when creating a scatterplot of `alaska_flights` arrival and departure delays? Check out this talk by Prof. Brittney Bailey from Amherst College next Thursday 2/7 12:10pm in McConnell B15:
 
+<center>
+![](static/talks/bailey.png){ width=700px }
+</center>
 
 ## Todays Topics/Activities       
 
