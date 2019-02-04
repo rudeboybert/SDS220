@@ -60,7 +60,22 @@ set.seed(76)
 
 # Lec 5: Mon 2/4
 
+## Annoucements 
+
+* Added note to syllabus on office hours: *If you're having R or RStudio issues, please have your computer and RStudio loaded and ready to go.*
+
 * `View()` nor `?` doesn't work in RMarkdown
+* Recap: facets
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec03.
+* Histograms to show *distribution* of a numerical variable.
+
+### 2. In-class exercise
+
 
 
 ***
