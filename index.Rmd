@@ -58,12 +58,36 @@ set.seed(76)
 ***
 
 
+
 # Lec 5: Mon 2/4
 
-* `View()` nor `?` doesn't work in RMarkdown
+## Annoucements 
+
+* ModernDive Chapters 4 & 5 are now reordered and renamed:
+    + Chapter 4: ~~Tidy Data via `tidyr`~~ Data Wrangling
+    + Chapter 5: ~~Data Wrangling via `dplyr`~~ Data Importing and "Tidy" Data
+* Term project groups are due this Friday 5pm; see [Items to Submit](). If you need a group, Slack me.
+* Lab tomorrow: Jenny will talk about DataCamp
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec04: Facets
+* Boxplot to show the *distribution* of a numerical variable split by a categorical variable.
+* Compare faceted histogram [Figure 3.16](https://moderndive.netlify.com/3-viz.html#facets){target="_blank"} vs boxplot [Figure 3.23](https://moderndive.netlify.com/3-viz.html#geomboxplot){target="_blank"}
+
+### 2. In-class exercise
+
+* R Markdown:
+    + Don't be afraid of error messages! In particular the line number where the error occurs!
+    + Heads up! `View()` nor `?` will prevent your `.Rmd` files from knitting (i.e. the HTML report won't get created)!
+* moderndive readings in above schedule.
+
 
 
 ***
+
 
 
 # Lec 4: Fri 2/1
