@@ -31,13 +31,13 @@ h1{font-weight: 400;}
 ## Administrative notes
 
 * **Friday 3/1 5pm through Sunday 3/3 11:55pm**.
-* Self-scheduled exam [instructions](https://drive.google.com/file/d/1MXlZEf9UrQfFjUX6d9iglwDCZbn02cbj/view){target="_blank"}. In particular:
+* Self-scheduled exam [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 
 <!--
 
-Update with this: http://www.science.smith.edu/self-scheduled-exam-printing/
+Update with this: 
 
 
 
