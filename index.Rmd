@@ -108,15 +108,14 @@ plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
     axis.ticks.x = element_blank()
   )
 
-plot2 <- ggplot()
-# plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
-#   geom_boxplot() +
-#   labs(title = "Boxplot") +
-#   theme(
-#     axis.title.x = element_blank(),
-#     axis.text.x = element_blank(),
-#     axis.ticks.x = element_blank()
-#   )
+plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_boxplot() +
+  labs(title = "Boxplot") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
 plot1 + plot2
 ```
 
