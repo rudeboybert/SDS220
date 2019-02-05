@@ -67,6 +67,7 @@ set.seed(76)
 * Talk about IQR as measure of spread.
 * Solid line is median, not mean
 * Recap of 3 visualizations
+* Brittney Bailey talk + DataFest
 -->
 
 ## Todays Topics/Activities       
