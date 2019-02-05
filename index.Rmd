@@ -54,6 +54,7 @@ set.seed(76)
 
 
 
+
 ***
 
 
@@ -62,19 +63,23 @@ set.seed(76)
 
 ## Annoucements 
 
-<!--
-* Compare faceted histogram [Figure 3.16](https://moderndive.netlify.com/3-viz.html#facets){target="_blank"} vs boxplot [Figure 3.23](https://moderndive.netlify.com/3-viz.html#geomboxplot){target="_blank"}.
-* Talk about IQR as measure of spread.
-* Solid line is median, not mean
-* Recap of 3 visualizations
-* Brittney Bailey talk + DataFest
--->
+* Reminder that ["Multiple Imputation Methods in Cluster Randomzied Trials"](static/talks/bailey.png){target="_blank"} by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!
+* [DataFest](http://www.science.smith.edu/datafest/){target="_blank"} is a weekend-long "data science" hackathon for teams of up to 5 students and is at UMass the weekend of March 29-31! [Info session](static/images/datafest2019.pdf){target="_blank"} by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!
+
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
+* Recap of Lec05.
+* Say I want visualize the distribution of temperature split by month. Two options
+    + Faceted histogram [Figure 3.16](https://moderndive.netlify.com/3-viz.html#facets){target="_blank"}
+    + Boxplot [Figure 3.23](https://moderndive.netlify.com/3-viz.html#geomboxplot){target="_blank"}
+* Starting Data Wrangling: the pipe operator `%>%` and `filter()` rows of a data frame.
+
 ### 2. In-class exercise
+
+moderndive readings in above schedule.
 
 
 
