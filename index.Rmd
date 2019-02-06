@@ -64,7 +64,7 @@ set.seed(76)
 ## Annoucements 
 
 * Reminder that ["Multiple Imputation Methods in Cluster Randomzied Trials"](static/talks/bailey.png){target="_blank"} by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!
-* [DataFest](http://www.science.smith.edu/datafest/){target="_blank"} is a weekend-long "data science" hackathon for teams of up to 5 students and is at UMass the weekend of March 29-31! [Info session](static/images/datafest2019.pdf){target="_blank"} by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!
+* [DataFest](http://www.science.smith.edu/datafest/){target="_blank"} is a weekend-long "data science hackathon" for teams of up to 5 students and is at UMass the weekend of March 29-31! [Info session](static/images/datafest2019.pdf){target="_blank"} by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!
 
 
 ## Todays Topics/Activities       
