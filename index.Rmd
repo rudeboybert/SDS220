@@ -57,6 +57,68 @@ set.seed(76)
 
 ***
 
+<!--
+# Lec 8: Mon 2/11
+
+## Annoucements 
+
+* Discuss [Data due](term_project.html#data) phase of term-project.
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+
+
+***
+-->
+
+
+
+# Lec 7: Fri 2/8
+
+## Annoucements 
+
+* Term project groups are due today at 5pm. Make sure your group leader has completed all three steps, in particular the Google Form.
+* I will introduce next phase of term project on Monday: [Data due: Fri 2/22 5pm](term_project.html#data).
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec06
+* Computing summary statistics using `summarize()`
+* Adding `Groups` *meta-data* using `group_by()`. See example code below.
+* Computing summary statistics split by group using `group_by() %>% summarize()` 
+
+Example: compare the "meta-data" of the three data frame outputs by running the code below. All have `A tibble: 32 x 11` meta-data indicating the number of rows and columns, but only the second output has `Groups: cut [5]` grouping structure meta-data based on five levels of categorical variable `cut`: `"Fair"`, `"Good"`, `"Very Good"`, `"Premium"`, `"Ideal"`.
+
+```{r, eval=FALSE}
+library(ggplot2)
+library(dplyr)
+
+diamonds
+
+diamonds %>% 
+  group_by(cut)
+
+diamonds %>% 
+  group_by(cut) %>% 
+  ungroup()
+```
+
+
+
+### 2. In-class exercise
+
+moderndive readings in above schedule.
+
+
+
+***
+
 
 
 # Lec 6: Wed 2/6
