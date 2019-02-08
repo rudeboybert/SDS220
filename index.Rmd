@@ -93,23 +93,6 @@ set.seed(76)
 * Adding `Groups` *meta-data* using `group_by()`. See example code below.
 * Computing summary statistics split by group using `group_by() %>% summarize()` 
 
-Example: compare the "meta-data" of the three data frame outputs by running the code below. All have `A tibble: 32 x 11` meta-data indicating the number of rows and columns, but only the second output has `Groups: cut [5]` grouping structure meta-data based on five levels of categorical variable `cut`: `"Fair"`, `"Good"`, `"Very Good"`, `"Premium"`, `"Ideal"`.
-
-```{r, eval=FALSE}
-library(ggplot2)
-library(dplyr)
-
-diamonds
-
-diamonds %>% 
-  group_by(cut)
-
-diamonds %>% 
-  group_by(cut) %>% 
-  ungroup()
-```
-
-
 
 ### 2. In-class exercise
 
