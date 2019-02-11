@@ -73,22 +73,22 @@ Nothing this time.
 
 ## Action items
 
-* Read moderndive
+* Read moderndive for background tools/concepts
     + Chapter 2.4.4 (new) on identification vs measurement variables.
     + Chapter 5.1 on importing spreadsheet data into R.
     + Chapter 5.2 on "tidy" data format.
-* Read instructions:
+* Read the [example data proposal](static/term_project/data_proposal_example.html){target="_blank"} written by Jenny and Albert.
+* Start working on your data proposal
     + Only if you are not working in RStudio Server on the browser, in other words you are working on RStudio Desktop, ensure you have the `janitor` and `readr` packages installed; they are already installed on RStudio Server.
-    + Download and knit the following `data_proposal.Rmd` template R Markdown file.
-    + Read all instructions very carefully.
+    + Download the following <a href="static/term_project/data_proposal.Rmd" download>`data_proposal.Rmd`</a> template R Markdown file.
+    + Move it to your `introstatsR` folder where your work is saved.
+    + Knit it!
 * **This is likely the most time-consuming portion of the entire project, so start early:** Find a dataset that matches the requirements spelled out in the above `data_proposal.Rmd` template R Markdown file. Possible sources:
     1. Your own data from your own projects!
     1. Consult Spinelli Center Data Counselor Vahab Khademi (see syllabus for contact info).
     1. [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}
     1. [data.world](https://data.world/){target="_blank"}
     1. [Kaggle](https://www.kaggle.com/datasets){target="_blank"}
-* If you need help wrangling or "tidying" your data, go to the Spinelli Center Tutoring hours: Sun-Thurs 7-9pm in Sabin-Reed 301.
-* Edit the `data_proposal.Rmd` template R Markdown file to match your project data.
 
 
 ## Items to submit
@@ -105,6 +105,13 @@ Nothing this time.
 Nothing this time.
 
 
+## Notes
+
+* When you have questions:
+    + Please ask questions that you think the entire class would like to know the answer to in the `term_project` channel in Slack.
+    + Ask more individual questions in the group DM that includes all group members + Jenny + Albert.
+* Only minimal data wrangling using the `dplyr` package is expected at this time; you will be doing more for the "project proposal" phase after you're experienced. That being said, feel free to experiment!
+* Don't forget to use the tutoring hours: Sun-Thurs 7-9pm in the lecture room.
 
 
 

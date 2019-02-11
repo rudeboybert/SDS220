@@ -81,6 +81,7 @@ set.seed(76)
 ## Annoucements 
 
 * 
+Bop it! Pull it! Facet!
 
 ## Todays Topics/Activities       
 
@@ -94,15 +95,13 @@ set.seed(76)
 -->
 
 
+
 # Lec 8: Mon 2/11
 
 ## Annoucements 
 
+* Everybody join the `term_project` channel in Slack.
 * Discuss [Data due](term_project.html#data) phase of term-project.
-
-<!--
-Bop it! Pull it! Facet!
--->
 
 ## Todays Topics/Activities       
 
