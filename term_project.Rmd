@@ -127,6 +127,10 @@ Nothing this time.
 <!--
 **To do**:
 
+
+POST NINJA FILE
+
+
 1. **Changed on 11/2** Due time changed fromto 6pm. 
 1. Download the <a href="static/term_project/Term_Project.Rmd"
 download>`Term_Project.Rmd`</a> R Markdown template file. Recall the [past examples](#past_examples) you saw previously.
