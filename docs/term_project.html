@@ -330,7 +330,7 @@ h1{font-weight: 400;}
 <ol style="list-style-type: decimal">
 <li>Create two Slack direct messages (DM):
 <ul>
-<li>One with all your group members + myself + Jenny: Say 👋 to Jenny and me. Going forward please ask all project related questions here.</li>
+<li>One with all your group members + myself + Jenny: <!--Include your group name and--> Say 👋 to Jenny and me. Going forward please ask all project related questions here.</li>
 <li>One with only your group members: Send all private messages amongst yourselves here.</li>
 </ul></li>
 <li>Nothing to submit on Moodle this round.</li>
@@ -350,75 +350,45 @@ h1{font-weight: 400;}
 </div>
 <div id="data" class="section level1">
 <h1>2. Data due: Fri 2/22 5pm</h1>
-<!--
-**To do:**
-
-1. Background reading on data: Read ModernDive Chapters 4.1 - 4.3
-1. Find a dataset
-1. Submit your group proposal
-
-
-## Find a dataset
-
-1. Requirements:
-    + The data should be stored in a *single* Excel spreadsheet or CSV file. Read [ModernDive 4.3](https://moderndive.netlify.com/4-tidy.html#csv){target="_blank"} on how to import a spreadsheet into R.
-    + The data should be in "tidy" data format, which is defined in [ModernDive 4.1](https://moderndive.netlify.com/4-tidy.html#what-is-tidy-data){target="_blank"}. If you need help converting a dataset to tidy format, visit the Spinelli tutoring (Sunday-Thursday 7-9pm) center for help or ask me!
-    + Columns/Variables. You dataset should have the following variables that will be the focus of your analysis. Read ModernDive Chapter 6 to the end of Section 6.1 for what these terms mean.
-        1. One numerical variable to be used as your *outcome variable*. 
-        1. One categorical *explanatory/predictor* variable with no more than 5 levels.
-        1. One numerical *explanatory/predictor* variable.
-        1. Any *identification variables* (read [ModernDive 4.2.2](https://moderndive.netlify.com/4-tidy.html#identification-vs-measurement){target="_blank"} for a distinction of identification vs measurement variables)
-    + Rows/Observations: At least 50 observations.
-1. Possible data sources
-    1. Consult the Spinelli Quantitative Learning Center [Data Counselor Raul Zelada     Aprili](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}
-    1. [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}
-    1. [data.world](https://data.world/){target="_blank"}
-    1. [Kaggle](https://www.kaggle.com/datasets){target="_blank"}
-
-
-
-
-
-
-## Submission Format
-
-Follow the <a href="static/term_project/project_proposal.R" download>`project_proposal.R`</a> template file and submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"} by Friday 10/19 5pm. In this template file, I've included an example based on the **exploratory data analysis** of the Seattle House Prices data in ModernDive [Chapter 12.1.1](https://moderndive.netlify.com/12-thinking-with-data.html#seattle-house-prices){target="_blank"}.
-
-
-## Where is this heading?
-
-For the Phase 3 of the project "Initial Submission", due Friday 11/9, you'll be making a figure like Figure 12.6 in ModernDive Chapter 12
-
-<img src="term_project_files/figure-html/unnamed-chunk-2-1.png" width="672" />
-
--->
-<!-- 
-
-
-
-
-
-## Setup
-
-* Login to RStudio Server -> Top right -> Click on "Project" -> "Shared with me" -> Your group name. This should open a new [*RStudio Server Shared Project*](https://support.rstudio.com/hc/en-us/articles/211659737-Sharing-Projects-in-RStudio-Server-Pro) that all group members have joint access to where you can perform collaborative editing like Google Docs. Albert and your section's TA will have access as well.
-* Group leader: Create a new `scratchpad.R`
-* Setup colloborative editing: Click on the colored initials of your teammates on the top right of the screen and click "Follow cursor". Play around with this.
-* Group leader: Upload the <a href="static/term_project/Term_Project_Proposal.Rmd"
-download>`Term_Project_Proposal.Rmd`</a> R Markdown template file file to the Shared Project so that all group members have access. 
-* To return to your personal folder with your problem sets: RStudio Server -> Top right -> Click on "Project" -> "Close project"
-
-
-
-## Submit your group proposal
-
-Once your proposal is ready, the group leader will:
-
-1. Knit `Term_Project_Proposal.Rmd` one final time.
-1. Publish to Rpubs.com by clicking the blue "Publish" button on top right of the HTML document. Copy the URL of the resulting webpage.
-1. Complete this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf_MFKFv65DviSyk7EYuPfPAqq_ZI3nHrXw_LuUZLia8KJtgQ/viewform){target="_blank"}. No need to submit any files on DropBox, as the TA's and I can login into your Shared Projects and look at your work there.
-
--->
+<div id="action-items-1" class="section level2">
+<h2>Action items</h2>
+<ul>
+<li>Read moderndive
+<ul>
+<li>Chapter 2.4.4 (new) on identification vs measurement variables.</li>
+<li>Chapter 5.1 on importing spreadsheet data into R.</li>
+<li>Chapter 5.2 on “tidy” data format.</li>
+</ul></li>
+<li>Read instructions:
+<ul>
+<li>Only if you are not working in RStudio Server on the browser, in other words you are working on RStudio Desktop, ensure you have the <code>janitor</code> and <code>readr</code> packages installed; they are already installed on RStudio Server.</li>
+<li>Download and knit the following <code>data_proposal.Rmd</code> template R Markdown file.</li>
+<li>Read all instructions very carefully.</li>
+</ul></li>
+<li><strong>This is likely the most time-consuming portion of the entire project, so start early:</strong> Find a dataset that matches the requirements spelled out in the above <code>data_proposal.Rmd</code> template R Markdown file. Possible sources:
+<ol style="list-style-type: decimal">
+<li>Your own data from your own projects!</li>
+<li>Consult Spinelli Center Data Counselor Vahab Khademi (see syllabus for contact info).</li>
+<li><a href="https://toolbox.google.com/datasetsearch" target="_blank">Google Dataset Search</a></li>
+<li><a href="https://data.world/" target="_blank">data.world</a></li>
+<li><a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a></li>
+</ol></li>
+<li>If you need help wrangling or “tidying” your data, go to the Spinelli Center Tutoring hours: Sun-Thurs 7-9pm in Sabin-Reed 301.</li>
+<li>Edit the <code>data_proposal.Rmd</code> template R Markdown file to match your project data.</li>
+</ul>
+</div>
+<div id="items-to-submit-1" class="section level2">
+<h2>Items to submit</h2>
+<p><strong>Group leader only</strong>: On Moodle submit:</p>
+<ol style="list-style-type: decimal">
+<li>The <code>project_data.Rmd</code> R Markdown file</li>
+<li>The <code>project_data.html</code> HTML report file</li>
+<li>Only if you didn’t publish your data as a <code>.csv</code> on Google Sheets because it has confidential/private information, then include the <code>.csv</code> or <code>.xlsx</code> spreadsheet file.</li>
+</ol>
+<p><strong>Everybody individually</strong>:</p>
+<p>Nothing this time.</p>
 <hr />
+</div>
 </div>
 <div id="proposal" class="section level1">
 <h1>3. Proposal due: Fri 3/8 5pm</h1>
@@ -467,7 +437,7 @@ ggplot(house_prices, aes(x = log10_price)) +
   labs(x = "log10(House price)", title = "Seattle house prices") 
 ```
 
-<img src="term_project_files/figure-html/unnamed-chunk-4-1.png" width="672" />
+<img src="term_project_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 
 ### 2. Model selection

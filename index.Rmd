@@ -46,7 +46,7 @@ set.seed(76)
 
 # Schedule 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1753108531&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1010"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1753108531&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1015"></iframe>
 
 <!--
 {target="_blank"}
@@ -58,11 +58,29 @@ set.seed(76)
 ***
 
 <!--
-# Lec 8: Mon 2/11
+# Lec 10: Fri 2/15
 
 ## Annoucements 
 
-* Discuss [Data due](term_project.html#data) phase of term-project.
+* 
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+
+
+***
+
+
+
+# Lec 9: Wed 2/13
+
+## Annoucements 
+
+* 
 
 ## Todays Topics/Activities       
 
@@ -74,6 +92,37 @@ set.seed(76)
 
 ***
 -->
+
+
+# Lec 8: Mon 2/11
+
+## Annoucements 
+
+* Discuss [Data due](term_project.html#data) phase of term-project.
+
+<!--
+Bop it! Pull it! Facet!
+-->
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec07:
+    + What does `group_by()` by itself do?
+    + Difference between `filter()` and `group_by() %>% summarize()`
+* Last three verbs:
+    + `mutate()` existing variables to create new ones
+    + `arrange()` rows in ascending or `desc()`ending alphanumeric order of another variable
+    + `select()` or drop variables
+
+### 2. In-class exercise
+
+moderndive readings in above schedule.
+
+
+
+***
 
 
 
