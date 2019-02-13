@@ -73,6 +73,7 @@ set.seed(76)
 
 
 ***
+-->
 
 
 
@@ -80,19 +81,35 @@ set.seed(76)
 
 ## Annoucements 
 
-* 
-Bop it! Pull it! Facet!
+* Winner for best group name.
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
+* Recap of Lec08
+* Correlation coefficient
+
 ### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+### 3. Tweet of the day
+
+Why are Jenny and Albert always on your cases about running `glimpse()` and `View()` on your data frames? **Looking at your data** is so deceptively simple that many people forget or ignore this step, even analysts/engineers with PhD's at Google! Before performing any kind of analysis, you must getting a sense of:
+
+1. **What types of variables you have in your columns?** Numerical, categorical, text, dates?
+1. **What values you have in your cells?** Units of any measurements?
+1. **What is the quality of your data?** Do you have missing data? Are there crazy outliers?
+
+These are the most fundamental steps to take before any data analysis! That's why moderndive starts in Chapter 2 with "Data exploration" with `glimpse()` and `View()`.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Shout-out to people like me who like taking a look at even huge tables of raw data before summarizing or transforming, to get a sense of what&#39;s in there and spot potential data quality issues. Step 1 in data exploration! <a href="https://t.co/wVLHWcVNWA">pic.twitter.com/wVLHWcVNWA</a></p>&mdash; Data Science Renee (@BecomingDataSci) <a href="https://twitter.com/BecomingDataSci/status/1095421569428529153?ref_src=twsrc%5Etfw">February 12, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
 ***
--->
 
 
 
@@ -281,7 +298,6 @@ plot1 + plot2
 * ModernDive readings for Lec04 in above schedule.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OCBJxThDUno" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 
 ### 3. Tweet of the day
 
