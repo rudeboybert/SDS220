@@ -57,6 +57,37 @@ set.seed(76)
 
 ***
 
+# Lec 11: Mon 2/18
+
+## Annoucements 
+
+* Part of Lec12 on Wed 2/20 to work on project data phase.
+
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec10
+* Fitted values & residuals
+
+<!--
+* why "associated"? why "on average"? 
+* write out equation of blue line in Fig 6.6
+-->
+
+
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+
+
+
 
 # Lec 10: Fri 2/15
 
