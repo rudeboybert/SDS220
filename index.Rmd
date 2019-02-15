@@ -57,23 +57,30 @@ set.seed(76)
 
 ***
 
-<!--
+
 # Lec 10: Fri 2/15
 
 ## Annoucements 
 
-* 
+* [Project data](term_project.html#data) is due in a week!
+* We'll devote part of Lec12 on Wed 2/20 to work on project data phase.
+
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
+* Recap of Lec09
+* Regression table and interpreting the regression line
+
+
 ### 2. In-class exercise
+
+* moderndive readings in above schedule.
 
 
 
 ***
--->
 
 
 
