@@ -96,7 +96,7 @@ Nothing this time.
 **Group leader only**: On Moodle submit:
 
 1. The `data_proposal.Rmd` R Markdown file
-1. The `data_proposa.html` HTML report file
+1. The `data_proposal.html` HTML report file
 1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
 
 
