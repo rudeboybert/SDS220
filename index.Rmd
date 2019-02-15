@@ -62,7 +62,7 @@ set.seed(76)
 ## Annoucements 
 
 * Part of Lec12 on Wed 2/20 to work on project data phase.
-
+* Note in schedule that Lab06 and Lab07 topics have been updated, as originally it erroneously had you working in labs on your project proposals **after** it was due. 
 
 ## Todays Topics/Activities       
 
