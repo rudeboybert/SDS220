@@ -54,28 +54,20 @@ set.seed(76)
 
 
 
-
 ***
 
-# Lec 11: Mon 2/18
+
+<!--
+# Lec 12: Wed 2/20
 
 ## Annoucements 
 
-* Part of Lec12 on Wed 2/20 to work on project data phase.
-* Note in schedule that Lab06 and Lab07 topics have been updated, as originally it erroneously had you working in labs on your project proposals **after** it was due. 
+* Part of lecture today is working on project
+* 
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
-
-* Recap of Lec10
-* Fitted values & residuals
-
-<!--
-* why "associated"? why "on average"? 
-* write out equation of blue line in Fig 6.6
--->
-
 
 
 ### 2. In-class exercise
@@ -85,7 +77,34 @@ set.seed(76)
 
 
 ***
+-->
 
+
+
+# Lec 11: Mon 2/18
+
+## Annoucements 
+
+* Part of next lecture (Lec12 on Wed 2/20) will be devoted to work on project.
+* Note in the above schedule that the topics for Lab06 and Lab07 have switched places, as originally it erroneously had you working on your project proposals **after** it was due. 
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec10
+* What is a confounding variable?
+* Fitted values & residuals via `get_regression_points()`
+* What do we mean by "best" when we say that the regression line is the "best fitting" line?
+
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
 
 
 
@@ -102,7 +121,7 @@ set.seed(76)
 ### 1. Chalk talk
 
 * Recap of Lec09
-* Regression table and interpreting the regression line
+* Regression table via `get_regression_table()` and interpreting the regression line
 
 
 ### 2. In-class exercise
