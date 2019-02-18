@@ -63,7 +63,7 @@ set.seed(76)
 ## Annoucements 
 
 * Part of lecture today is working on project
-* 
+* Reminder that you are still responsible for covering in-class moderndive readings/exercises.
 
 ## Todays Topics/Activities       
 
