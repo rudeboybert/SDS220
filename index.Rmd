@@ -7,7 +7,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
-#    df_print: kable
+    df_print: kable
 ---
 
 <style>
@@ -57,27 +57,58 @@ set.seed(76)
 ***
 
 
-<!--
+
 # Lec 12: Wed 2/20
 
 ## Annoucements 
 
-* Part of lecture today is working on project
-* Reminder that you are still responsible for covering in-class moderndive readings/exercises.
+* 
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
+* Recap of Lec11: What do we mean by "best" fitting line? Note in the plot below there are 3 points marked with black dots along with:
+    + The "best" fitting regression line in blue
+    + An arbitrarily chosen line in dashed red
+    + Another arbitrarily chosen line in dashed green 
+```{r, eval=TRUE, echo=FALSE}
+example <- tibble(
+  x = c(0, 0.5, 1),
+  y = c(2, 1, 3)
+)
+ggplot(example, aes(x = x, y = y)) +
+  geom_smooth(method = "lm", se = FALSE, fullrange = TRUE) +
+  geom_hline(yintercept = 2.5, col = "red", linetype = "dashed", size = 1) +
+  geom_abline(intercept = 2, slope = -1, col = "forestgreen", linetype = "dashed", size = 1) +
+  geom_point(size = 4)
+# model_example <- lm(y ~ x, data = example)
+# get_regression_table(model_example)
+```
+* Regression using a categorical explanatory variable  
+```{r, eval = TRUE, echo = TRUE, results='asis'}
+library(dplyr)
+library(moderndive)
+
+# Example data for chalk talk
+example <- tibble(
+  name = c("Bert", "Bert", "Bert", "Jenny", "Jenny", "Jenny", "Miles", "Miles", "Miles"),
+  value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
+)
+
+# Get regression table
+model_example <- lm(value ~ name, data = example)
+get_regression_table(model_example)
+```
 
 ### 2. In-class exercise
 
+* Work on projects.
 * moderndive readings in above schedule.
 
 
 
 ***
--->
 
 
 
