@@ -57,12 +57,41 @@ set.seed(76)
 ***
 
 
+# Lec 13: Fri 2/22
+
+## Annoucements 
+
+* Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.
+* For those of you with an interest in biostatistics, check out [Dr. Emma Benn's](https://twitter.com/ektbenn?lang=en){target="_blank"} talk on Tuesday March 5, 5pm in Seelye Hall 106.
+
+<center>
+![](static/events/emma_benn.png){ width=500px }
+<center>  
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Boxplots for EDA when explanatory variable $x$ is categorical.
+* Indicator function
+* What are fitted values and residuals when $x$ is categorical?
+
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+
+
 
 # Lec 12: Wed 2/20
 
 ## Annoucements 
 
-* 
+* N/A
 
 ## Todays Topics/Activities       
 
@@ -261,8 +290,8 @@ moderndive readings in above schedule.
 
 ## Annoucements 
 
-* Reminder that ["Multiple Imputation Methods in Cluster Randomzied Trials"](static/talks/bailey.png){target="_blank"} by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!
-* [DataFest](http://www.science.smith.edu/datafest/){target="_blank"} is a weekend-long "data science hackathon" for teams of up to 5 students and is at UMass the weekend of March 29-31! [Info session](static/images/datafest2019.pdf){target="_blank"} by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!
+* Reminder that ["Multiple Imputation Methods in Cluster Randomzied Trials"](static/events/bailey.png){target="_blank"} by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!
+* [DataFest](http://www.science.smith.edu/datafest/){target="_blank"} is a weekend-long "data science hackathon" for teams of up to 5 students and is at UMass the weekend of March 29-31! [Info session](static/events/datafest2019.pdf){target="_blank"} by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!
 
 
 ## Todays Topics/Activities       
@@ -364,7 +393,7 @@ plot1 + plot2
 * Remember the `Warning: Removed 5 rows containing missing values (geom_point).` warning message you got when creating a scatterplot of `alaska_flights` arrival and departure delays? Check out this talk by Prof. Brittney Bailey from Amherst College next Thursday 2/7 12:10pm in McConnell B15:
 
 <center>
-![](static/talks/bailey.png){ width=700px }
+![](static/events/bailey.png){ width=700px }
 </center>
 
 ## Todays Topics/Activities       
