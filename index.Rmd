@@ -85,7 +85,7 @@ set.seed(76)
 
 ### 3. Tweet of the day
 
-Dr. Benn is excited to for her talk at Smith College SDS! **Are you?**
+Dr. Benn is excited for her talk at Smith College SDS! **Are you?**
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yessss!!! Definitely looking forward to speaking with and learning from the amazing <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a> faculty and students! 🤗💃🏾🤗💃🏾 <a href="https://t.co/te01giEvXv">https://t.co/te01giEvXv</a></p>&mdash; Emma Benn (@EKTBenn) <a href="https://twitter.com/EKTBenn/status/1098396480719572993?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
