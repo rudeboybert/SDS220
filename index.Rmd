@@ -63,11 +63,13 @@ set.seed(76)
 ## Annoucements 
 
 * Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.
-* For those of you with an interest in biostatistics, check out [Dr. Emma Benn's](https://twitter.com/ektbenn?lang=en){target="_blank"} talk on Tuesday March 5, 5pm in Seelye Hall 106.
+* For those of you with an interest in biostatistics, check out Dr. Emma Benn's talk on Tuesday March 5, 5pm in Seelye Hall 106.
 
 <center>
 ![](static/events/emma_benn.png){ width=500px }
 <center>  
+
+<br>
 
 ## Todays Topics/Activities       
 
@@ -77,10 +79,19 @@ set.seed(76)
 * Indicator function
 * What are fitted values and residuals when $x$ is categorical?
 
-
 ### 2. In-class exercise
 
 * moderndive readings in above schedule.
+
+### 3. Tweet of the day
+
+Dr. Benn is excited to for her talk at Smith College SDS! **Are you?**
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Yessss!!! Definitely looking forward to speaking with and learning from the amazing <a href="https://twitter.com/SmithCollegeSDS?ref_src=twsrc%5Etfw">@SmithCollegeSDS</a> faculty and students! 🤗💃🏾🤗💃🏾 <a href="https://t.co/te01giEvXv">https://t.co/te01giEvXv</a></p>&mdash; Emma Benn (@EKTBenn) <a href="https://twitter.com/EKTBenn/status/1098396480719572993?ref_src=twsrc%5Etfw">February 21, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
 
 
 
