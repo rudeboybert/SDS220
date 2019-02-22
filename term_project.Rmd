@@ -69,7 +69,7 @@ Nothing this time.
 
 
 
-# 2. Data due: Fri 2/22 5pm {#data} 
+# 2. Data proposal due: Fri 2/22 5pm {#data} 
 
 ## Action items
 
@@ -120,7 +120,7 @@ Nothing this time.
 
 
 
-# 3. Proposal due: Fri 3/8 5pm {#proposal}
+# 3. Project proposal due: Fri 3/8 5pm {#proposal}
 
 
 
