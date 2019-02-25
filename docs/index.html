@@ -416,6 +416,25 @@ h1{font-weight: 400;}
 <ul>
 <li>moderndive readings in above schedule.</li>
 </ul>
+</div>
+<div id="install-development-version-of-moderndive-package" class="section level3">
+<h3>3. Install development version of moderndive package</h3>
+<ul>
+<li><strong>If you are working with RStudio Desktop, please follow these steps before tomorrow’s lab. If you get stuck, please ask Jenny for help.</strong></li>
+<li><strong>If you are working on RStudio Server, you can ignore these steps.</strong></li>
+</ul>
+<p>We’re going to install the development AKA <a href="https://en.wiktionary.org/wiki/beta_version" target="_blank">beta-version</a> of the <code>moderndive</code> package, which includes a new function <code>gg_parallel_slopes()</code> allowing you to create a ggplot of the <strong>parallel slopes model</strong>.</p>
+<ol style="list-style-type: decimal">
+<li>Install the <code>devtools</code> package as you normally would install a package. Say yes to any prompts.</li>
+<li>Run the following line in your console to install the development version of the <code>moderndive</code> package off of GitHub.com:<br />
+<code>devtools::install_github(&quot;moderndive/moderndive&quot;, ref = &quot;geom_parallel_slopes&quot;)</code></li>
+<li>Run <code>library(moderndive)</code> to reload the package.</li>
+<li>Run <code>?gg_parallel_slopes</code> and see if the help file pops up. If it does, your installation worked!</li>
+<li>Run example code at the bottom of the help file to see it in action! You should get the following plot:</li>
+</ol>
+<center>
+<img src="static/images/parallel_slopes.png" width="600" />
+</center>
 <hr />
 </div>
 </div>

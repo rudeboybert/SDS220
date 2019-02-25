@@ -78,6 +78,24 @@ set.seed(76)
 * moderndive readings in above schedule.
 
 
+### 3. Install development version of moderndive package
+
+* **If you are working with RStudio Desktop, please follow these steps before tomorrow's lab. If you get stuck, please ask Jenny for help.**
+* **If you are working on RStudio Server, you can ignore these steps.**
+
+We're going to install the development AKA [beta-version](https://en.wiktionary.org/wiki/beta_version){target="_blank"} of the `moderndive` package, which includes a new function `gg_parallel_slopes()` allowing you to create a ggplot of the **parallel slopes model**.
+
+1. Install the `devtools` package as you normally would install a package. Say yes to any prompts.
+2. Run the following line in your console to install the development version of the `moderndive` package off of GitHub.com:  
+`devtools::install_github("moderndive/moderndive", ref = "geom_parallel_slopes")`
+3. Run `library(moderndive)` to reload the package.
+3. Run `?gg_parallel_slopes` and see if the help file pops up. If it does, your installation worked!
+4. Run example code at the bottom of the help file to see it in action! You should get the following plot:
+
+<center>
+![](static/images/parallel_slopes.png){ width=600px }
+</center>
+
 
 ***
 
