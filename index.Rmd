@@ -62,7 +62,10 @@ set.seed(76)
 
 ## Annoucements 
 
-* Midterm I details [posted](midterms.html#midtermI). 
+* Midterm I details [posted](midterms.html#midtermI).
+* Term project: I will
+    + Give feedback on your "data proposals" on Slack by later today.
+    + Post instructions for the next "Project proposal" phase by Wednesday; this phase is due Fri 3/8 5pm and involves data wrangling and exploratory data analysis. Here is a "work in progress" [preview](static/term_project/proposal_example.html){target="_blank"}; I will post a finalized version by Wednesday.
 
 ## Todays Topics/Activities       
 
