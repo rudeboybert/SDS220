@@ -57,6 +57,26 @@ set.seed(76)
 ***
 
 
+# Lec 15: Wed 2/27
+
+## Annoucements 
+
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Recap of Lec14: interaction and parallel slopes. Why one vs the other. "Is additional complexity warranted?" All other things being equal. Show how to use `gg_parallel_slopes()`
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+
+
 
 # Lec 14: Mon 2/25
 
@@ -76,7 +96,6 @@ set.seed(76)
 ### 2. In-class exercise
 
 * moderndive readings in above schedule.
-
 
 ### 3. Install development version of moderndive package
 
