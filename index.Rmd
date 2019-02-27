@@ -56,9 +56,8 @@ set.seed(76)
 
 ***
 
-
-
-# Lec 15: Wed 2/27
+<!--
+# Lec 16: Fri 3/1
 
 ## Annoucements 
 
@@ -69,14 +68,40 @@ set.seed(76)
 
 ### 1. Chalk talk
 
-<!--
 * Recap of Lec14: interaction and parallel slopes. Why one vs the other. "Is additional complexity warranted?" All other things being equal. Show how to use `gg_parallel_slopes()`
--->
 
 
 ### 2. In-class exercise
 
 * moderndive readings in above schedule.
+
+
+
+***
+-->
+
+
+
+
+# Lec 15: Wed 2/27
+
+## Annoucements 
+
+* Clarifications of upcoming deadlines.
+* Project proposal phase posted on [Term Projects](term_project.html#proposal) page.
+* Extra office hours on Friday 2:45-4pm.
+
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* 
+
+
+### 2. In-class exercise
+
+* 
 
 
 
