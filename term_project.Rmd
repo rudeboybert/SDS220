@@ -76,7 +76,6 @@ Nothing this time.
 * Read moderndive for background tools/concepts
     + Chapter 2.4.4 (new) on identification vs measurement variables.
     + Chapter 5.1 on importing spreadsheet data into R.
-<!--    + Chapter 5.2 on "tidy" data format.-->
 * Read the [example data proposal](static/term_project/data_proposal_example.html){target="_blank"} written by Jenny and Albert.
 * Start working on your data proposal
     + Only if you are not working in RStudio Server on the browser, in other words you are working on RStudio Desktop, ensure you have the `janitor` and `readr` packages installed; they are already installed on RStudio Server.
@@ -122,13 +121,49 @@ Nothing this time.
 
 # 3. Project proposal due: Fri 3/8 5pm {#proposal}
 
+## Action items
+
+* Read Jenny and Albert's example [project proposal](static/term_project/project_proposal_example.html){target="_blank"}. <!--You can also download the <a href="static/term_project/project_proposal.Rmd" download>`project_proposal_example.Rmd`</a> file that created Jenny and Albert's example.-->
+* Start working on your project proposal:
+    + Download the following <a href="static/term_project/project_proposal.Rmd" download>`project_proposal.Rmd`</a> template R Markdown file.
+    + Move it to your `introstatsR` folder where your project work is saved.
+    + Knit it!
+* Attend lab on Tuesday March 5th.
+    + Be sure to attend the lab section where all your groupmates will be present.
+    + The entire lab period is devoted to working on this phase.
+    + There will be no problem set assigned that week.
+* For data wrangling tips, check out Jenny and Albert's [Become an R Data Ninja](static/term_project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/term_project/project_proposal.Rmd" download>`project_tips.Rmd`</a> file.
+
+<center>
+![](static/images/data_ninja1.png){width=20%}
+</center>
+
+## Items to submit
+
+**Group leader only**: On Moodle submit:
+
+1. The `project_proposal.Rmd` R Markdown file
+1. The `project_proposal.html` HTML report file
+1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
+
+
+**Everybody individually**:
+
+Nothing this time.
+
+
+
+*** 
+
+
+
+# 4. Submission due: Fri 4/5 5pm {#submission}
 
 
 <!--
 **To do**:
 
 
-POST NINJA FILE
 
 
 1. **Changed on 11/2** Due time changed fromto 6pm. 
@@ -250,14 +285,6 @@ What to include
     + ~~Then of your $k$ fitted regression line equations, interpret just the slope coefficient for 2-3 of the resulting equations~~ **Clarifications**: Then of all the rows in your regression table, for 2-3 of them interpret the coefficient estimate and its inferential significance. Try to pick a slope or interaction effect coefficient, since these speak to the relationship between your outcome and explanatory variable. Use your judgement as to which to choose (most interesting, most relevant).
 
 -->
-
-
-
-*** 
-
-
-
-# 4. Submission due: Fri 4/5 5pm {#submission}
 
 
 <!--

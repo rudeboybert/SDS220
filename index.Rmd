@@ -62,15 +62,17 @@ set.seed(76)
 
 ## Annoucements 
 
-* Project proposal posted. 
-* Hand out solutions to practice midterm I
+* Project proposal phase posted on [Term Projects](term_project.html#proposal) page.
 
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
+<!--
 * Recap of Lec14: interaction and parallel slopes. Why one vs the other. "Is additional complexity warranted?" All other things being equal. Show how to use `gg_parallel_slopes()`
+-->
+
 
 ### 2. In-class exercise
 
@@ -89,7 +91,7 @@ set.seed(76)
 * Midterm I details [posted](midterms.html#midtermI).
 * Term project: I will
     + Give feedback on your "data proposals" on Slack by later today.
-    + Post instructions for the next "Project proposal" phase by Wednesday; this phase is due Fri 3/8 5pm and involves data wrangling and exploratory data analysis. Here is a "work in progress" [preview](static/term_project/proposal_example.html){target="_blank"}; I will post a finalized version by Wednesday.
+    + Post instructions for the next "Project proposal" phase by Wednesday; this phase is due Fri 3/8 5pm and involves data wrangling and exploratory data analysis. 
 
 ## Todays Topics/Activities       
 
