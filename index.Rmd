@@ -57,9 +57,13 @@ set.seed(76)
 ***
 
 
+
 # Lec 15: Wed 2/27
 
 ## Annoucements 
+
+* Project proposal posted. 
+* Hand out solutions to practice midterm I
 
 
 ## Todays Topics/Activities       
