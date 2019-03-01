@@ -102,7 +102,7 @@ Notice how there are 4 rows in the regression table reflecting the 4 elements of
 
 ## Conclusion
 
-The slopes of the lines in the plots of the interaction model and parallel slopes model are not that different. So the additional complexity of the interaction model **is not warranted**; go with the simpler parallel slopes model. 
+The slopes of the lines in the plots of the interaction model and parallel slopes model are not that different. So the additional complexity of the interaction model **is IMO not warranted**; go with the simpler parallel slopes model. 
 
 
 
@@ -170,4 +170,4 @@ Notice how there are 3 rows in the regression table reflecting the 3 elements of
 
 ## Conclusion
 
-The slopes of the lines in the plots of the interaction model and parallel slopes model are somewhat different. So the additional complexity of the interaction model **is warranted**; go with the more complex interaction model.
+The slopes of the lines in the plots of the interaction model and parallel slopes model are somewhat different. So the additional complexity of the interaction model **is IMO warranted**; go with the more complex interaction model.
