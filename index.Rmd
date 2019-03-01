@@ -81,6 +81,30 @@ set.seed(76)
 -->
 
 
+# Lec 16: Fri 3/1
+
+## Annoucements 
+
+* Extra office hours on Friday 2:45-4pm.
+
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Based off [Parallel Slopes vs Interaction Models](static/multiple_regression.html){target="_blank"}.
+
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+
+
+
 
 
 # Lec 15: Wed 2/27

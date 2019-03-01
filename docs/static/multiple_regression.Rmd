@@ -1,0 +1,173 @@
+---
+title: "Parallel Slopes vs Interaction Models"
+author: "Albert Y. Kim"
+date: "Last updated on `r Sys.Date()`"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    df_print: kable
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width = 16/2, fig.height = 9/2)
+
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(janitor)
+library(moderndive)
+
+# Set seed value of random number generator to get "replicable" random numbers.
+# The choice of seed value of 76 was an arbitrary one on my part.
+set.seed(76)
+```
+
+
+# Data set 1
+
+Let's use the same data as in Jenny and Albert's example [project proposal](https://rudeboybert.github.io/SDS220/static/term_project/project_proposal_example.html){target="_blank"}.
+
+```{r, warning=FALSE, message=FALSE, echo = FALSE}
+# This does all the data wrangling in a single pipe chain"
+
+ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyNqRVA950sdYa1QazAT-l0T7dl6pE5Ewvt7LkSm9LXmeVNbCbqEcrbygFmFyK4B6VQQGebuk9/pub?gid=1469057204&single=true&output=csv") %>% 
+  # Clean variable names:
+  clean_names() %>% 
+  # Convert total enrollment to a categorical variable school size:
+  mutate(
+    school_size = cut_number(total_enrollment, n = 3),
+    school_size = recode_factor(school_size, 
+                                     "[0,341]" = "small", 
+                                     "(341,541]" = "medium", 
+                                     "(541,4.26e+03]" = "large")
+    ) %>% 
+  # Drop schools with no 11th and 12th grade students:
+  filter(x11_enrollment > 0 & x12_enrollment > 0) %>% 
+  # Drop rows with missing values for math SAT:
+  filter(!is.na(average_sat_math)) %>% 
+  # Select only variables we need:
+  select(school_name, average_sat_math, percent_economically_disadvantaged, school_size) 
+
+ma_schools %>% 
+  sample_n(5)
+```
+
+
+## Interaction model
+
+An interaction model is flexible: it allows for different slopes and different intercepts.
+
+To plot an interaction model, we use `geom_smooth()` like we did in Chapter 6. Note that while the three lines at first glance seem parallel, they aren't quite. 
+
+```{r}
+ggplot(ma_schools, aes(x = percent_economically_disadvantaged, y = average_sat_math, color = school_size))+
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE ) +
+  labs(y = "Math SAT Score", x = "Percentage of Economically Disadvantaged Students")
+```
+
+So of all possible three lines with different slopes and different intercepts, these three are "best fitting" in that they have the smallest sum of squared residuals as we saw in moderndive Ch 6.3.3. 
+
+Let's get the regression table for the corresponding interaction model. Note the use of `*`.
+
+```{r}
+model_1_interaction <- lm(average_sat_math ~ percent_economically_disadvantaged * school_size, data = ma_schools)
+get_regression_table(model_1_interaction)
+```
+
+Notice how there are 6 rows in the regression table reflecting the 6 elements of the equation to obtained fitted values $\widehat{y}$. This is a measure of this model's complexity.
+
+## Parallel slopes model
+
+An parallel slopes model is less flexible: it allows for different intercepts but forces a common slope.
+
+To plot a parallel slopes model, we unfortunately need to use a function written by me as there isn't one included in the `ggplot2` package. This is what I had you install in Lec14. 
+
+```{r}
+gg_parallel_slopes(y = "average_sat_math", num_x = "percent_economically_disadvantaged", 
+                   cat_x = "school_size", data = ma_schools)
+```
+
+Let's get the regression table for the corresponding parallel slopes model. Note the use of `+`.
+
+```{r}
+model_1_parralel_slopes <- lm(average_sat_math ~ percent_economically_disadvantaged + school_size, data = ma_schools)
+get_regression_table(model_1_parralel_slopes)
+```
+
+Notice how there are 4 rows in the regression table reflecting the 4 elements of the equation to obtained fitted values $\widehat{y}$. This is a measure of this model's complexity. In other words, the parallel slopes model is **simpler** than the interaction model.  
+
+
+## Conclusion
+
+The slopes of the lines in the plots of the interaction model and parallel slopes model are not that different. So the additional complexity of the interaction model **is not warranted**; go with the simpler parallel slopes model. 
+
+
+
+***
+
+
+
+# Data set 2
+
+Let's use the same data as moderndive Chapter 7.2
+
+```{r, warning=FALSE, message=FALSE, echo = FALSE}
+evals_ch7 <- evals %>%
+  select(score, age, gender)
+
+evals_ch7 %>% 
+  sample_n(5)
+```
+
+
+## Interaction model
+
+An interaction model is flexible: it allows for different slopes and different intercepts.
+
+To plot an interaction model, we use `geom_smooth()` like we did in Chapter 6. Note that the two lines are nowhere near parallel.
+
+```{r}
+ggplot(evals_ch7, aes(x = age, y = score, color = gender)) +
+  geom_point() +
+  labs(x = "Age", y = "Teaching Score", color = "Gender") +
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+So of all possible two lines with different slopes and different intercepts, these two are "best fitting" in that they have the smallest sum of squared residuals as we saw in moderndive Ch 6.3.3. 
+
+Let's get the regression table for the corresponding interaction model. Note the use of `*`.
+
+```{r}
+model_2_interaction <- lm(score ~ age * gender, data = evals_ch7)
+get_regression_table(model_2_interaction)
+```
+
+Notice how there are 4 rows in the regression table reflecting the 6 elements of the equation to obtained fitted values $\widehat{y}$. This is a measure of this model's complexity.
+
+## Parallel slopes model
+
+An parallel slopes model is less flexible: it allows for different intercepts but forces a common slope.
+
+To plot a parallel slopes model, we unfortunately need to use a function written by me as there isn't one included in the `ggplot2` package. This is what I had you install in Lec14. 
+
+```{r}
+gg_parallel_slopes(y = "score", num_x = "age", cat_x = "gender",
+                    data = evals_ch7)
+```
+
+Let's get the regression table for the corresponding parallel slopes model. Note the use of `+`.
+
+```{r}
+model_2_parralel_slopes <- lm(score ~ age + gender, data = evals_ch7)
+get_regression_table(model_2_parralel_slopes)
+```
+
+Notice how there are 3 rows in the regression table reflecting the 3 elements of the equation to obtained fitted values $\widehat{y}$. This is a measure of this model's complexity. In other words, the parallel slopes model is **simpler** than the interaction model.  
+
+
+## Conclusion
+
+The slopes of the lines in the plots of the interaction model and parallel slopes model are somewhat different. So the additional complexity of the interaction model **is warranted**; go with the more complex interaction model.
