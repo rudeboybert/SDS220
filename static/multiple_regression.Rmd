@@ -70,7 +70,7 @@ ggplot(ma_schools, aes(x = percent_economically_disadvantaged, y = average_sat_m
 
 So of all possible three lines with different slopes and different intercepts, these three are "best fitting" in that they have the smallest sum of squared residuals as we saw in moderndive Ch 6.3.3. 
 
-Let's get the regression table for the corresponding interaction model. Note the use of `*`.
+Let's get the regression table for the corresponding interaction model. Note the use of `*`. Also, in this case although R's default behavior would make `large` the baseline group because it comes first alphabetically, we changed the "baseline" group so that it is the `small` schools.
 
 ```{r}
 model_1_interaction <- lm(average_sat_math ~ percent_economically_disadvantaged * school_size, data = ma_schools)
