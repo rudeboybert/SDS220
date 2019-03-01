@@ -92,7 +92,7 @@ set.seed(76)
 
 ### 1. Chalk talk
 
-* Based off [Parallel Slopes vs Interaction Models](static/multiple_regression.html){target="_blank"}.
+* Based off [Parallel Slopes vs Interaction Models](static/multiple_regression.html){target="_blank"}. You can download the <a href="static/multiple_regression.Rmd" download>`multiple_regression.Rmd`</a> R Markdown file as well if you are curious. 
 
 
 ### 2. In-class exercise
