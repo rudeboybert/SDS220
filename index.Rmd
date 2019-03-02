@@ -56,22 +56,26 @@ set.seed(76)
 
 ***
 
+
 <!--
-# Lec 16: Fri 3/1
+
+# Lec 18: Wed 3/6
 
 ## Annoucements 
 
-* Project proposal phase posted on [Term Projects](term_project.html#proposal) page.
+* Guest lecturer today at 11:45am: Prof Randi Garcia. 
+* Spinelli Center tutoring hours change tomorrow (Thursday 3/7) only: 4:30-6pm and not ~~7-9pm~~.
 
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
-* Recap of Lec14: interaction and parallel slopes. Why one vs the other. "Is additional complexity warranted?" All other things being equal. Show how to use `gg_parallel_slopes()`
+* 
 
 
 ### 2. In-class exercise
+
 
 * moderndive readings in above schedule.
 
@@ -81,19 +85,49 @@ set.seed(76)
 -->
 
 
+
+# Lec 17: Mon 3/4
+
+## Annoucements 
+
+* Guest lecturer on Wed 3/6 at 11:45am: Prof Randi Garcia. 
+* Reminder tomorrow is: 
+
+<center>
+![](static/events/emma_benn_2.png){ width=650px }
+<center>  
+
+<br>
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* Random assignment, causal inference, observational studies vs experiments.
+
+<!--
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+-->
+
+
+***
+
+
+
 # Lec 16: Fri 3/1
 
 ## Annoucements 
 
 * Extra office hours on Friday 2:45-4pm.
 
-
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
-* Based off [Parallel Slopes vs Interaction Models](static/multiple_regression.html){target="_blank"}. You can download the <a href="static/multiple_regression.Rmd" download>`multiple_regression.Rmd`</a> R Markdown file as well if you are curious. 
-
+* Question: How do we choose between interaction and parallel slopes models?
+* Answer: In [`multiple_regression.html`](static/multiple_regression.html){target="_blank"} report. You can download the <a href="static/multiple_regression.Rmd" download>`multiple_regression.Rmd`</a> R Markdown file as well if you are curious. 
 
 ### 2. In-class exercise
 
@@ -102,8 +136,6 @@ set.seed(76)
 
 
 ***
-
-
 
 
 
