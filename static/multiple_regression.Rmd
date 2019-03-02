@@ -24,14 +24,15 @@ library(moderndive)
 set.seed(76)
 ```
 
+Click here to download the source R Markdown file: <a href="multiple_regression.Rmd" download>`multiple_regression.Rmd`</a>. For this R Markdown file to "knit" you'll need to ensure you've installed the "development" version of the `moderndive` package by running `devtools::install_github("moderndive/moderndive", ref = "geom_parallel_slopes")`
+
 
 # Data set 1
 
 Let's use the same data as in Jenny and Albert's example [project proposal](https://rudeboybert.github.io/SDS220/static/term_project/project_proposal_example.html){target="_blank"}.
 
 ```{r, warning=FALSE, message=FALSE, echo = FALSE}
-# This does all the data wrangling in a single pipe chain"
-
+# This does all the data wrangling in a single pipe chain:
 ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyNqRVA950sdYa1QazAT-l0T7dl6pE5Ewvt7LkSm9LXmeVNbCbqEcrbygFmFyK4B6VQQGebuk9/pub?gid=1469057204&single=true&output=csv") %>% 
   # Clean variable names:
   clean_names() %>% 
