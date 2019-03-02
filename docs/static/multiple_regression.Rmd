@@ -24,8 +24,12 @@ library(moderndive)
 set.seed(76)
 ```
 
-Click here to download the source R Markdown file: <a href="multiple_regression.Rmd" download>`multiple_regression.Rmd`</a>. For this R Markdown file to "knit" you'll need to ensure you've installed the "development" version of the `moderndive` package by running `devtools::install_github("moderndive/moderndive", ref = "geom_parallel_slopes")`
+Click here to download the source R Markdown file: <a href="multiple_regression.Rmd" download>`multiple_regression.Rmd`</a>. For this R Markdown file to "knit" you'll need to ensure you've installed the "development" version of the `moderndive` package by running:
 
+```{r, eval = FALSE}
+library(devtools)
+install_github("moderndive/moderndive", ref = "geom_parallel_slopes")
+```
 
 # Data set 1
 
@@ -172,3 +176,57 @@ Notice how there are 3 rows in the regression table reflecting the 3 elements of
 ## Conclusion
 
 The slopes of the lines in the plots of the interaction model and parallel slopes model are somewhat different. So the additional complexity of the interaction model **is IMO warranted**; go with the more complex interaction model.
+
+
+
+***
+
+
+
+# Data set 1 revisited
+
+Recall in our Massachusetts high school math SAT example above. We stated that since the "more flexible" interaction model yielded three lines that had near identical slopes, the additional complexity of the interaction model may not be warranted, and thus we are inclined to favor the simpler parallel slopes model:
+
+```{r, echo = FALSE}
+gg_parallel_slopes(y = "average_sat_math", num_x = "percent_economically_disadvantaged", 
+                   cat_x = "school_size", data = ma_schools)
+```
+
+However, upon closer inspection of the parallel slopes model plot above, it appears furthermore that the three lines have near identical intercepts as well! In other words, the three lines are almost entirely identical! So taking our "all other things being equal, simpler models are to be preferred" logic one step further, it can be argued we shouldn't even have three separate lines, rather just one! 
+
+```{r}
+ggplot(ma_schools, aes(x = percent_economically_disadvantaged, y = average_sat_math))+
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE ) +
+  labs(y = "Math SAT Score", x = "Percentage of Economically Disadvantaged Students")
+```
+
+In other words, **perhaps we should not be even using a multiple regression** that includes both:
+
+* The numerical explantory variable `percent_economically_disadvantaged`
+* The categorical explantory variable `school_size`
+
+but rather **perhaps we should be using an even simpler basic linear regression model** using only:
+
+* The numerical explantory variable `percent_economically_disadvantaged`
+
+```{r}
+model_1_simple <- lm(average_sat_math ~ percent_economically_disadvantaged, data = ma_schools)
+get_regression_table(model_1_simple)
+```
+
+Compare this to the regression table for our parallel slopes model
+
+```{r}
+model_1_parralel_slopes <- lm(average_sat_math ~ percent_economically_disadvantaged + school_size, data = ma_schools)
+get_regression_table(model_1_parralel_slopes)
+```
+
+Expressed differently, there is no need to distinguish between small, medium, and large schools; the relationship between math SAT scores and the percent of the student body that is economically disadvantaged is the same. This relationship is a steeply negative one: as high schools have a higher proportion of their student bodies that are economically disadvantaged, so also there is an associated decrease in their average math SAT scores. Sad, but true. 
+
+
+
+
+
+
+
