@@ -103,6 +103,7 @@ set.seed(76)
 
 ### 1. Chalk talk
 
+* Recap of Lec11: model selection
 * Random assignment, causal inference, observational studies vs experiments.
 
 <!--
