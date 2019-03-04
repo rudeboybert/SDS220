@@ -111,6 +111,7 @@ set.seed(76)
 * Discussion questions:
     1. Why did I ask the question "Have you been to Africa before?
     1. Why did I have the people with even-numbered birthdays take the "Africa Quiz" and those with odd-numbered birthdays take "Africa Experiment"?
+    1. Comment on what you think the difference in the histogram for heights will be for those who took the  "Africa Quiz" vs "Africa Experiment".
 
 <!--
 ### 2. In-class exercise
