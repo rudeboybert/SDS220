@@ -105,6 +105,12 @@ set.seed(76)
 
 * Recap of Lec11: model selection
 * Random assignment, causal inference, observational studies vs experiments.
+* Example:
+    + [Africa Quiz](https://docs.google.com/forms/d/e/1FAIpQLSeSQ1cZY0jGTpEzNCCcYu_gm1tTgH0wa6PYxJlJ-jcLi5JSHQ/viewform){target="_blank"}
+    + [Africa Experiment](https://docs.google.com/forms/d/e/1FAIpQLSdW-D2PvqPrqyLwQ4En6mqMTeSK92f0y_wag84ipV9Fs0mjzQ/viewform){target="_blank"}
+* Discussion questions:
+    1. Why did I ask the question "Have you been to Africa before?
+    1. Why did I have the people with even-numbered birthdays take the "Africa Quiz" and those with odd-numbered birthdays take "Africa Experiment"?
 
 <!--
 ### 2. In-class exercise
