@@ -132,7 +132,7 @@ Nothing this time.
     + Be sure to attend the lab section where all your groupmates will be present.
     + The entire lab period is devoted to working on this phase.
     + There will be no problem set assigned that week.
-* For data wrangling tips, check out Jenny and Albert's [Become an R Data Ninja](static/term_project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/term_project/project_proposal.Rmd" download>`project_tips.Rmd`</a> file.
+* For data wrangling tips, check out Jenny and Albert's [Become an R Data Ninja](static/term_project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/term_project/project_tips.Rmd" download>`project_tips.Rmd`</a> file.
 
 <center>
 ![](static/images/data_ninja1.png){width=20%}
