@@ -57,32 +57,41 @@ set.seed(76)
 ***
 
 
-<!--
 
 # Lec 18: Wed 3/6
 
 ## Annoucements 
 
+* Slack announcement + poll
 * Guest lecturer today at 11:45am: Prof Randi Garcia. 
 * Spinelli Center tutoring hours change tomorrow (Thursday 3/7) only: 4:30-6pm and not ~~7-9pm~~.
+* Tweet of the day
+* From New York Times article ["For Big-Data Scientists, ‘Janitor Work’ Is Key Hurdle to Insights"](https://www.nytimes.com/2014/08/18/technology/for-big-data-scientists-hurdle-to-insights-is-janitor-work.html){target="_blank"}:
 
+> Yet far too much handcrafted work, what data scientists call "data wrangling," "data munging" and "data janitor work", is still required. Data scientists, according to interviews and expert estimates, **spend from 50 percent to 80 percent of their time** mired in this more mundane labor of collecting and preparing unruly digital data, before it can be explored for useful nuggets.
 
 ## Todays Topics/Activities       
 
 ### 1. Chalk talk
 
-* 
+* Recap of Lec17
+* More on designed experiments from OpenIntro Section 1.5 page 17 on Experiments; to access PDF of OpenIntro, click on "free online" link [here](https://www.openintro.org/stat/textbook.php?stat_book=isrs){target="_blank"}. **Blocking** in a randomized experiment:  
+![](static/images/blocking.png){ width=300px }
 
 
-### 2. In-class exercise
+### 2. Tweet of the day
 
 
-* moderndive readings in above schedule.
+<!--
+Help Chester and me make this book as good as it can be before it goes to press! If something you read doesn't make sense, let me know!
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?ref_src=twsrc%5Etfw">@CRCPress</a> for a print edition with our new title: “Statistical Inference via Data Science: A moderndive into R &amp; the tidyverse” by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> &amp; <a href="https://twitter.com/rudeboybert?ref_src=twsrc%5Etfw">@rudeboybert</a>! Coming Fall 2019! Until then check out a preview at <a href="https://t.co/X5zI0LvHGb">https://t.co/X5zI0LvHGb</a> <a href="https://t.co/Wa049JBeaJ">pic.twitter.com/Wa049JBeaJ</a></p>&mdash; ModernDive (@ModernDive) <a href="https://twitter.com/ModernDive/status/1102624954892406785?ref_src=twsrc%5Etfw">March 4, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+-->
 
 
 
 ***
--->
 
 
 
@@ -113,11 +122,7 @@ set.seed(76)
     1. Why did I have the people with even-numbered birthdays take the "Africa Quiz" and those with odd-numbered birthdays take "Africa Experiment"?
     1. Comment on what you think the **difference** between the two histogram for heights will be for those who took the  "Africa Quiz" vs "Africa Experiment".
 
-<!--
-### 2. In-class exercise
 
-* moderndive readings in above schedule.
--->
 
 
 ***
@@ -257,7 +262,7 @@ Dr. Benn is excited for her talk at Smith College SDS! **Are you?**
 
 ## Annoucements 
 
-* N/A
+* None
 
 ## Todays Topics/Activities       
 
