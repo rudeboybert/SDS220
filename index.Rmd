@@ -81,13 +81,10 @@ set.seed(76)
 
 ### 2. Tweet of the day
 
-
-<!--
 Help Chester and me make this book as good as it can be before it goes to press! If something you read doesn't make sense, let me know!
 
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?ref_src=twsrc%5Etfw">@CRCPress</a> for a print edition with our new title: “Statistical Inference via Data Science: A moderndive into R &amp; the tidyverse” by <a href="https://twitter.com/old_man_chester?ref_src=twsrc%5Etfw">@old_man_chester</a> &amp; <a href="https://twitter.com/rudeboybert?ref_src=twsrc%5Etfw">@rudeboybert</a>! Coming Fall 2019! Until then check out a preview at <a href="https://t.co/X5zI0LvHGb">https://t.co/X5zI0LvHGb</a> <a href="https://t.co/Wa049JBeaJ">pic.twitter.com/Wa049JBeaJ</a></p>&mdash; ModernDive (@ModernDive) <a href="https://twitter.com/ModernDive/status/1102624954892406785?ref_src=twsrc%5Etfw">March 4, 2019</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
--->
 
 
 
