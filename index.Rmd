@@ -57,7 +57,8 @@ set.seed(76)
 ***
 
 
-# Lec 19: Wed 3/8
+
+# Lec 19: Fri 3/8
 
 ## Announcements 
 
