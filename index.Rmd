@@ -57,10 +57,29 @@ set.seed(76)
 ***
 
 
+# Lec 19: Wed 3/8
+
+## Announcements 
+
+* 
+
+## Todays Topics/Activities       
+
+### 1. Chalk talk
+
+* 
+
+
+
+
+***
+
+
+
 
 # Lec 18: Wed 3/6
 
-## Annoucements 
+## Announcements 
 
 * Slack announcement + poll
 * Guest lecturer today at 11:45am: Prof Randi Garcia. 
@@ -94,7 +113,7 @@ Help Chester and me make this book as good as it can be before it goes to press!
 
 # Lec 17: Mon 3/4
 
-## Annoucements 
+## Announcements 
 
 * Guest lecturer on Wed 3/6 at 11:45am: Prof Randi Garcia. 
 * Reminder tomorrow is: 
@@ -128,7 +147,7 @@ Help Chester and me make this book as good as it can be before it goes to press!
 
 # Lec 16: Fri 3/1
 
-## Annoucements 
+## Announcements 
 
 * Extra office hours on Friday 2:45-4pm.
 
@@ -151,7 +170,7 @@ Help Chester and me make this book as good as it can be before it goes to press!
 
 # Lec 15: Wed 2/27
 
-## Annoucements 
+## Announcements 
 
 * Clarifications of upcoming deadlines.
 * Project proposal phase posted on [Term Projects](term_project.html#proposal) page.
@@ -177,7 +196,7 @@ Help Chester and me make this book as good as it can be before it goes to press!
 
 # Lec 14: Mon 2/25
 
-## Annoucements 
+## Announcements 
 
 * Midterm I details [posted](midterms.html#midtermI).
 * Term project: I will
@@ -219,7 +238,7 @@ We're going to install the development AKA [beta-version](https://en.wiktionary.
 
 # Lec 13: Fri 2/22
 
-## Annoucements 
+## Announcements 
 
 * Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.
 * For those of you with an interest in biostatistics, check out Dr. Emma Benn's talk on Tuesday March 5, 5pm in Seelye Hall 106.
@@ -257,7 +276,7 @@ Dr. Benn is excited for her talk at Smith College SDS! **Are you?**
 
 # Lec 12: Wed 2/20
 
-## Annoucements 
+## Announcements 
 
 * None
 
@@ -311,7 +330,7 @@ get_regression_table(model_example)
 
 # Lec 11: Mon 2/18
 
-## Annoucements 
+## Announcements 
 
 * Part of next lecture (Lec12 on Wed 2/20) will be devoted to work on project.
 * Note in the above schedule that the topics for Lab06 and Lab07 have switched places, as originally it erroneously had you working on your project proposals **after** it was due. 
@@ -338,7 +357,7 @@ get_regression_table(model_example)
 
 # Lec 10: Fri 2/15
 
-## Annoucements 
+## Announcements 
 
 * [Project data](term_project.html#data) is due in a week!
 * We'll devote part of Lec12 on Wed 2/20 to work on project data phase.
@@ -364,7 +383,7 @@ get_regression_table(model_example)
 
 # Lec 9: Wed 2/13
 
-## Annoucements 
+## Announcements 
 
 * Winner for best group name.
 
@@ -400,7 +419,7 @@ These are the most fundamental steps to take before any data analysis! That's wh
 
 # Lec 8: Mon 2/11
 
-## Annoucements 
+## Announcements 
 
 * Everybody join the `term_project` channel in Slack.
 * Discuss [Data due](term_project.html#data) phase of term-project.
@@ -429,7 +448,7 @@ moderndive readings in above schedule.
 
 # Lec 7: Fri 2/8
 
-## Annoucements 
+## Announcements 
 
 * Term project groups are due today at 5pm. Make sure your group leader has completed all three steps, in particular the Google Form.
 * I will introduce next phase of term project on Monday: [Data due: Fri 2/22 5pm](term_project.html#data).
@@ -456,7 +475,7 @@ moderndive readings in above schedule.
 
 # Lec 6: Wed 2/6
 
-## Annoucements 
+## Announcements 
 
 * Reminder that ["Multiple Imputation Methods in Cluster Randomzied Trials"](static/events/bailey.png){target="_blank"} by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!
 * [DataFest](http://www.science.smith.edu/datafest/){target="_blank"} is a weekend-long "data science hackathon" for teams of up to 5 students and is at UMass the weekend of March 29-31! [Info session](static/events/datafest2019.pdf){target="_blank"} by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!
@@ -484,7 +503,7 @@ moderndive readings in above schedule.
 
 # Lec 5: Mon 2/4
 
-## Annoucements 
+## Announcements 
 
 * Added note to syllabus on office hours: *If you're having R or RStudio issues, please have your computer and RStudio loaded and ready to go.*
 * ModernDive Chapters 4 & 5 are now reordered and renamed:
@@ -555,7 +574,7 @@ plot1 + plot2
 
 # Lec 4: Fri 2/1
 
-## Annoucements 
+## Announcements 
 
 * Slack message and `#moderndive_typoes`
 * Remember the `Warning: Removed 5 rows containing missing values (geom_point).` warning message you got when creating a scatterplot of `alaska_flights` arrival and departure delays? Check out this talk by Prof. Brittney Bailey from Amherst College next Thursday 2/7 12:10pm in McConnell B15:
@@ -598,7 +617,7 @@ The BBC uses `ggplot2` for data journalism!
 
 # Lec 3: Wed 1/30
 
-## Annoucements 
+## Announcements 
 
 * Slack message and `#moderndive` typos
 * Updated [Term Project](term_project.html) page with:
@@ -631,7 +650,7 @@ ModernDive readings for Lec03 in above schedule. Now that you've seen R Markdown
 
 # Lec 2: Mon 1/28
 
-## Annoucements 
+## Announcements 
 
 * On [Moodle](https://moodle.smith.edu/course/view.php?id=33093){target="_blank"}
     + If you haven't already, please complete all the steps in "start here"
@@ -677,7 +696,7 @@ Recall from the "How can I succeed in this class?" discussion in the [syllabus](
 
 # Lec 1: Fri 1/24
 
-## Annoucements
+## Announcements
 
 * Please ensure you have followed all the "start here" instructions posted on [Moodle](https://moodle.smith.edu/course/view.php?id=33093){target="_blank"}. Please remember that **just because you can access the moodle page does not guarantee you are registered for the course**. I will post a "priority list" of waitlisted students on Moodle by tomorrow.
 * What is the difference between SDS/MTH 220 vs SDS 201?

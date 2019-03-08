@@ -109,13 +109,6 @@ data_frame(
 ![](static/exams/midterm_I_distribution.png){ width=600px } 
 
 
-## Midterm I Discussion
-
-```{r}
-
-```
-
-
 
 ***
 
