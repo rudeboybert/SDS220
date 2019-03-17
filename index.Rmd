@@ -58,17 +58,48 @@ set.seed(76)
 
 
 
+# Lec 20: Mon 3/18
+
+## Announcements
+
+* Two events coming up:
+    + Fri 3/22 12:15-1:00pm in McConnell 103: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
+    + Tue 3/26 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major
+
+<center>
+![](static/events/delcorazon.png){ width=650px }
+<center> 
+
+</br>
+
+<center>
+![](static/events/SDS_major_spring_2019.png){ width=650px }
+<center> 
+
+</br>
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* 
+
+### 2. In-class exercise
+
+* 
+
+
+
+***
+
+
+
 # Lec 19: Fri 3/8
 
 ## Announcements 
 
-* 
-
-## Todays Topics/Activities       
-
-### 1. Chalk talk
-
-* 
+* Went over Midterm I
 
 
 
@@ -242,13 +273,6 @@ We're going to install the development AKA [beta-version](https://en.wiktionary.
 ## Announcements 
 
 * Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.
-* For those of you with an interest in biostatistics, check out Dr. Emma Benn's talk on Tuesday March 5, 5pm in Seelye Hall 106.
-
-<center>
-![](static/events/emma_benn.png){ width=500px }
-<center>  
-
-<br>
 
 ## Todays Topics/Activities       
 

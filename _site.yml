@@ -23,9 +23,9 @@ navbar:
 #  - text: Problem Sets
 #    href: PS.html
   - text: Midterms
-    href: midterms.html#midtermI
+    href: midterms.html#midtermII
   - text: Term Project
-    href: term_project.html#proposal
+    href: term_project.html#submission
   - text: Syllabus
     href: syllabus.html
 

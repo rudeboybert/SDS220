@@ -24,16 +24,15 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
-<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
-<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css">
+<style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -46,13 +45,11 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
+  { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
   { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -93,7 +90,29 @@ code span.st { color: #4e9a06; } /* String */
 code span.va { color: #000000; } /* Variable */
 code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+
 </style>
+<script>
+// apply pandoc div.sourceCode style to pre.sourceCode instead
+(function() {
+  var sheets = document.styleSheets;
+  for (var i = 0; i < sheets.length; i++) {
+    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
+    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
+    for (var j = 0; j < rules.length; j++) {
+      var rule = rules[j];
+      // check if there is a div.sourceCode rule
+      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
+      var style = rule.style.cssText;
+      // check if color or background-color is set
+      if (rule.style.color === '' || rule.style.backgroundColor === '') continue;
+      // replace div.sourceCode by a pre.sourceCode rule
+      sheets[i].deleteRule(j);
+      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
+    }
+  }
+})();
+</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -156,6 +175,9 @@ img {
 button.code-folding-btn:focus {
   outline: none;
 }
+summary {
+  display: list-item;
+}
 </style>
 
 
@@ -170,7 +192,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -190,6 +211,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -211,18 +269,77 @@ $(document).ready(function () {
 });
 </script>
 
-
 <div class="container-fluid main-container">
 
 <!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
 <script>
 $(document).ready(function () {
   window.buildTabsets("TOC");
 });
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
 </script>
 
 <!-- code folding -->
-
 
 
 
@@ -353,10 +470,10 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="midterms.html#midtermI">Midterms</a>
+  <a href="midterms.html#midtermII">Midterms</a>
 </li>
 <li>
-  <a href="term_project.html#proposal">Term Project</a>
+  <a href="term_project.html#submission">Term Project</a>
 </li>
 <li>
   <a href="syllabus.html">Syllabus</a>
@@ -372,7 +489,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim &amp; Jenny Smetzer</em></h4>
-<h4 class="date"><em>Last updated on 2019-03-08</em></h4>
+<h4 class="date"><em>Last updated on 2019-03-17</em></h4>
 
 </div>
 
@@ -390,18 +507,36 @@ h1{font-weight: 400;}
 -->
 <hr />
 </div>
-<div id="lec-19-fri-38" class="section level1">
-<h1>Lec 19: Fri 3/8</h1>
+<div id="lec-20-mon-318" class="section level1">
+<h1>Lec 20: Mon 3/18</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li></li>
+<li>Two events coming up:
+<ul>
+<li>Fri 3/22 12:15-1:00pm in McConnell 103: Gina DelCorazon ’04, Director of Data &amp; Analytics at The National Math and Science Initiative</li>
+<li>Tue 3/26 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major</li>
+</ul></li>
 </ul>
+<center>
+<img src="static/events/delcorazon.png" width="650" />
+<center>
+<p></br></p>
+<center>
+<img src="static/events/SDS_major_spring_2019.png" width="650" />
+<center>
+<p></br></p>
 </div>
 <div id="todays-topicsactivities" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
-<h3>1. Chalk talk</h3>
+<h3>1. Chalk Talk</h3>
+<ul>
+<li></li>
+</ul>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
 <ul>
 <li></li>
 </ul>
@@ -409,9 +544,19 @@ h1{font-weight: 400;}
 </div>
 </div>
 </div>
+<div id="lec-19-fri-38" class="section level1">
+<h1>Lec 19: Fri 3/8</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Went over Midterm I</li>
+</ul>
+<hr />
+</div>
+</div>
 <div id="lec-18-wed-36" class="section level1">
 <h1>Lec 18: Wed 3/6</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack announcement + poll</li>
@@ -450,7 +595,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-17-mon-34" class="section level1">
 <h1>Lec 17: Mon 3/4</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Guest lecturer on Wed 3/6 at 11:45am: Prof Randi Garcia.</li>
@@ -486,7 +631,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-16-fri-31" class="section level1">
 <h1>Lec 16: Fri 3/1</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Extra office hours on Friday 2:45-4pm.</li>
@@ -501,7 +646,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>Answer: In <a href="static/multiple_regression.html" target="_blank"><code>multiple_regression.html</code></a> report. You can download the <a href="static/multiple_regression.Rmd" download><code>multiple_regression.Rmd</code></a> R Markdown file as well if you are curious.</li>
 </ul>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -512,7 +657,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-15-wed-227" class="section level1">
 <h1>Lec 15: Wed 2/27</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Clarifications of upcoming deadlines.</li>
@@ -528,7 +673,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li></li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li></li>
@@ -539,7 +684,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-14-mon-225" class="section level1">
 <h1>Lec 14: Mon 2/25</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Midterm I details <a href="midterms.html#midtermI">posted</a>.</li>
@@ -558,7 +703,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>Multiple regression</li>
 </ul>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -588,16 +733,11 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-13-fri-222" class="section level1">
 <h1>Lec 13: Fri 2/22</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.</li>
-<li>For those of you with an interest in biostatistics, check out Dr. Emma Benn’s talk on Tuesday March 5, 5pm in Seelye Hall 106.</li>
 </ul>
-<center>
-<img src="static/events/emma_benn.png" width="500" />
-<center>
-<p><br></p>
 </div>
 <div id="todays-topicsactivities-6" class="section level2">
 <h2>Todays Topics/Activities</h2>
@@ -609,7 +749,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>What are fitted values and residuals when <span class="math inline">\(x\)</span> is categorical?</li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -631,7 +771,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-12-wed-220" class="section level1">
 <h1>Lec 12: Wed 2/20</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>None</li>
@@ -707,7 +847,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </table>
 </div>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on projects.</li>
@@ -719,7 +859,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-11-mon-218" class="section level1">
 <h1>Lec 11: Mon 2/18</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Part of next lecture (Lec12 on Wed 2/20) will be devoted to work on project.</li>
@@ -737,7 +877,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <li>What do we mean by “best” when we say that the regression line is the “best fitting” line?</li>
 </ul>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -748,7 +888,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-10-fri-215" class="section level1">
 <h1>Lec 10: Fri 2/15</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="term_project.html#data">Project data</a> is due in a week!</li>
@@ -764,7 +904,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <li>Regression table via <code>get_regression_table()</code> and interpreting the regression line</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -775,7 +915,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-9-wed-213" class="section level1">
 <h1>Lec 9: Wed 2/13</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Winner for best group name.</li>
@@ -790,7 +930,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <li>Correlation coefficient</li>
 </ul>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -818,7 +958,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-8-mon-211" class="section level1">
 <h1>Lec 8: Mon 2/11</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Everybody join the <code>term_project</code> channel in Slack.</li>
@@ -843,7 +983,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -852,7 +992,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-7-fri-28" class="section level1">
 <h1>Lec 7: Fri 2/8</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Term project groups are due today at 5pm. Make sure your group leader has completed all three steps, in particular the Google Form.</li>
@@ -870,7 +1010,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Computing summary statistics split by group using <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -879,7 +1019,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-6-wed-26" class="section level1">
 <h1>Lec 6: Wed 2/6</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Reminder that <a href="static/events/bailey.png" target="_blank">“Multiple Imputation Methods in Cluster Randomzied Trials”</a> by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!</li>
@@ -900,7 +1040,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Starting Data Wrangling: the pipe operator <code>%&gt;%</code> and <code>filter()</code> rows of a data frame.</li>
 </ul>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -909,7 +1049,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-5-mon-24" class="section level1">
 <h1>Lec 5: Mon 2/4</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Added note to syllabus on office hours: <em>If you’re having R or RStudio issues, please have your computer and RStudio loaded and ready to go.</em></li>
@@ -957,7 +1097,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <!--Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:-->
 <p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>R Markdown:
@@ -973,7 +1113,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-4-fri-21" class="section level1">
 <h1>Lec 4: Fri 2/1</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message and <code>#moderndive_typoes</code></li>
@@ -992,7 +1132,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Histograms to show <em>distribution</em> of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Live demo: Some tips on workflow for in-class exercises.
@@ -1025,7 +1165,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-3-wed-130" class="section level1">
 <h1>Lec 3: Wed 1/30</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message and <code>#moderndive</code> typos</li>
@@ -1048,7 +1188,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>Scatterplots</li>
 </ul>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>ModernDive readings for Lec03 in above schedule. Now that you’ve seen R Markdown in Lab 1:</p>
 <ul>
@@ -1063,7 +1203,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-2-mon-128" class="section level1">
 <h1>Lec 2: Mon 1/28</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>On <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>
@@ -1090,7 +1230,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <h3>1. Chalk Talk</h3>
 <p>Why chalk talks? Read the <a href="https://twitter.com/FieldNotesBrand" target="_blank">Field Notes</a> slogan.</p>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Why undirected in-class exercise time? People all learn at their own pace. What to do:</p>
 <ol style="list-style-type: decimal">
@@ -1122,7 +1262,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-1-fri-124" class="section level1">
 <h1>Lec 1: Fri 1/24</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Please ensure you have followed all the “start here” instructions posted on <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>. Please remember that <strong>just because you can access the moodle page does not guarantee you are registered for the course</strong>. I will post a “priority list” of waitlisted students on Moodle by tomorrow.</li>
