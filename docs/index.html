@@ -32,7 +32,7 @@
 <style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -45,11 +45,13 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
 pre.numberSource a.sourceLine::before
   { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -489,7 +491,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim &amp; Jenny Smetzer</em></h4>
-<h4 class="date"><em>Last updated on 2019-03-17</em></h4>
+<h4 class="date"><em>Last updated on 2019-03-18</em></h4>
 
 </div>
 
@@ -506,12 +508,37 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 <hr />
+<!--
+# Lec 21: Wed 3/20
+
+## Announcements
+
+* 
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* Recap of Lec20: Simulation. Goal is to study the effect of sampling variation.
+* What about using different shovels?
+
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+-->
 </div>
 <div id="lec-20-mon-318" class="section level1">
 <h1>Lec 20: Mon 3/18</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ul>
+<li>Over spring break moderndive Chapters 6 &amp; 7 on basic and multiple regression went through a thorough renovation, so the presentation might be a little different. Please let me know if you have comments, questions, or feedback.</li>
 <li>Two events coming up:
 <ul>
 <li>Fri 3/22 12:15-1:00pm in McConnell B15: Gina DelCorazon ’04, Director of Data &amp; Analytics at The National Math and Science Initiative</li>
@@ -531,14 +558,23 @@ h1{font-weight: 400;}
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
+<p><strong>Sampling exercise</strong>:</p>
 <ul>
-<li></li>
+<li>Ask yourself “What proportion of this bowl’s balls are red?”</li>
+<li>Come up to the front of the class and take a photo of the sample. <strong>Do not delete this photo as you’ll be submitting it later</strong></li>
+<li>Compute the proportion of the 50 balls that are red.</li>
+<li>Post a post-it on the histogram on the blackboard where the bins are <em>left-inclusive</em>. In other words, if you obtain a proportion of 0.2, put a post-it in the 0.2-0.25 bin.</li>
+</ul>
+<p><strong>Why are we doing this?</strong></p>
+<ul>
+<li>To study the effects of <em>sampling variation</em></li>
+<li>Also, to update the contents of moderndive section 8.1.</li>
 </ul>
 </div>
 <div id="in-class-exercise" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
-<li></li>
+<li>moderndive readings in above schedule.</li>
 </ul>
 <hr />
 </div>

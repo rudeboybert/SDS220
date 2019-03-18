@@ -56,12 +56,37 @@ set.seed(76)
 
 ***
 
+<!--
+# Lec 21: Wed 3/20
+
+## Announcements
+
+* 
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* Recap of Lec20: Simulation. Goal is to study the effect of sampling variation.
+* What about using different shovels?
+
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+-->
 
 
 # Lec 20: Mon 3/18
 
 ## Announcements
 
+* Over spring break moderndive Chapters 6 & 7 on basic and multiple regression went through a thorough renovation, so the presentation might be a little different. Please let me know if you have comments, questions, or feedback.
 * Two events coming up:
     + Fri 3/22 12:15-1:00pm in McConnell B15: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
     + Tue 3/26 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major
@@ -83,11 +108,23 @@ set.seed(76)
 
 ### 1. Chalk Talk
 
-* 
+**Sampling exercise**:
+
+* Ask yourself "What proportion of this bowl's balls are red?"
+* Come up to the front of the class and take a photo of the sample. **Do not delete this photo as you'll be submitting it later**
+* Compute the proportion of the 50 balls that are red.
+* Post a post-it on the histogram on the blackboard where the bins are *left-inclusive*. In other words, if you obtain a proportion of 0.2, put a post-it in the 0.2-0.25 bin. 
+
+
+**Why are we doing this?**
+
+* To study the effects of *sampling variation*
+* Also, to update the contents of moderndive section 8.1.
+
 
 ### 2. In-class exercise
 
-* 
+* moderndive readings in above schedule.
 
 
 
