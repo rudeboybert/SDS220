@@ -70,6 +70,7 @@ set.seed(76)
 
 * Recap of Lec20: Simulation. Goal is to study the effect of sampling variation.
 * What about using different shovels?
+* Bring random number generator book
 
 
 ### 2. In-class exercise
