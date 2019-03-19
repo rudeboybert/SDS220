@@ -56,12 +56,13 @@ set.seed(76)
 
 ***
 
-<!--
+
+
 # Lec 21: Wed 3/20
 
 ## Announcements
 
-* 
+* No office hours today. I do however have appointments to book on Friday (see syllabus for link).
 
 
 ## Todays Topics/Activities  
@@ -69,9 +70,7 @@ set.seed(76)
 ### 1. Chalk Talk
 
 * Recap of Lec20: Simulation. Goal is to study the effect of sampling variation.
-* What about using different shovels?
-* Bring random number generator book
-* No office hours today
+
 
 
 ### 2. In-class exercise
@@ -81,7 +80,7 @@ set.seed(76)
 
 
 ***
--->
+
 
 
 # Lec 20: Mon 3/18
