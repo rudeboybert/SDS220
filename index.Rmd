@@ -58,12 +58,45 @@ set.seed(76)
 
 
 
+# Lec 22: Fri 3/22
+
+## Announcements
+
+* Discuss next phase of project: "Project (initial) submission" due Fri 4/5 5pm.
+* Lecture ends early today to accommodate talk: 12:15-1:00pm in McConnell B15: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
+
+<center>
+![](static/events/delcorazon.png){ width=650px }
+<center> 
+
+</br>
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+<!--
+summary table of regression models
+Handout of terminology & definitions
+-->
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+
+
+
 # Lec 21: Wed 3/20
 
 ## Announcements
 
 * No office hours today. I do however have appointments to book on Friday (see syllabus for link).
-* Project proposal feedback given today. On Friday I will post informationon about the next phase "Project (initial) submission" due Fri 4/5 5pm.
+* Project proposal feedback given today. On Friday I will post information about the next phase "Project (initial) submission" due Fri 4/5 5pm.
 
 
 ## Todays Topics/Activities  
@@ -102,10 +135,6 @@ Relating to the formating of your reports and in particular it's length. Do not 
 * Two events coming up:
     + Fri 3/22 12:15-1:00pm in McConnell B15: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
     + Tue 3/26 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major
-
-<center>
-![](static/events/delcorazon.png){ width=650px }
-<center> 
 
 </br>
 
