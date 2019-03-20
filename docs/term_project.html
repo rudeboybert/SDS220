@@ -537,24 +537,35 @@ h1{font-weight: 400;}
 </div>
 <div id="submission" class="section level1">
 <h1>4. Submission due: Fri 4/5 5pm</h1>
+<div id="action-items-3" class="section level2">
+<h2>Action items</h2>
+<ul>
+<li>Read Jenny and Albert’s example <a href="static/term_project/project_submission.html" target="_blank">project submission</a>.</li>
+<li>Start working on your project submission:
+<ul>
+<li>Download the following <a href="static/term_project/project_submission.Rmd" download><code>project_submissionl.Rmd</code></a> template R Markdown file.</li>
+<li>Move it to your <code>introstatsR</code> folder where your project work is saved.</li>
+<li>Knit it!</li>
+</ul></li>
+<li>Attend lab on Tuesday April 2nd.
+<ul>
+<li>Be sure to attend the lab section where all your groupmates will be present.</li>
+<li>The entire lab period is devoted to working on this phase.</li>
+<li>There will be no problem set assigned that week.</li>
+</ul></li>
+</ul>
+</div>
+<div id="items-to-submit-3" class="section level2">
+<h2>Items to submit</h2>
+<p><strong>Group leader only</strong>: On Moodle submit:</p>
+<ol style="list-style-type: decimal">
+<li>The <code>project_submission.Rmd</code> R Markdown file</li>
+<li>The <code>project_submission.html</code> HTML report file</li>
+<li>Only if you didn’t publish your data as a <code>.csv</code> on Google Sheets because it has confidential/private information, then include the <code>.csv</code> or <code>.xlsx</code> spreadsheet file.</li>
+</ol>
+<p><strong>Everybody individually</strong>:</p>
+<p>Nothing this time.</p>
 <!--
-**To do**:
-
-
-
-
-1. **Changed on 11/2** Due time changed fromto 6pm. 
-1. Download the <a href="static/term_project/Term_Project.Rmd"
-download>`Term_Project.Rmd`</a> R Markdown template file. Recall the [past examples](#past_examples) you saw previously.
-1. Read the evaluation criteria [below](#evaluationcriteria) and then complete the following sections:
-    1. Introduction
-    2. EDA
-    3. Multiple regression
-    6. Citations. Be sure to replace the Rpubs link with a link to a published Rpubs webpage of your term project.
-1. Group leader: Submit this on [Moodle](https://moodle.smith.edu/course/view.php?id=30498){target="_blank"}.
-
-
-## Tips {#initialtips}
 
 ### 1. log10 transformations
 
@@ -588,34 +599,7 @@ ggplot(house_prices, aes(x = log10_price)) +
 <img src="term_project_files/figure-html/unnamed-chunk-3-1.png" width="672" />
 
 
-### 2. Model selection
-
-Which model should I use? Parallel slopes or interaction model? 
-
-
-### 3. Useful tips for R projects
-
-Jenny wrote up a document of useful tips for R projects for another class. Give it a quick scan for lots of useful tips!
-
-* [HTML document](static/project_tips/project_tips.html){target="_blank"}
-* <a href="static/project_tips/project_tips.Rmd" download>`project_tips.Rmd`</a> R Markdown source code
-
-Become an R Ninja!
-
-<center>
-![](static/project_tips/data_ninja1.png){ width=200px }
-</center>
-
-
--->
-<!--
-TODO: Some of the groups don’t know whether or not to include interaction
-Come up with consistent approach for how to do this
-What to include
--->
-<!--
-## 3.a) Feedback from previous projects.
-
+### 2. Feedback from previous projects.
 
 1. Jarring hyperlink/code output:
     + In EDA, show a preview of first 6 rows of data using `head()`; this is better than using `glimpse()` as computer code output is jarring to read.
@@ -640,24 +624,8 @@ What to include
     + Instead of intrepreting all intercept/slope coefficients individually, write out fitted regression line equations for $\widehat{y}$ for all $k$ possible levels. Example: if using x = `gender` from evals, write out one equation for male and another for female.
     + ~~Then of your $k$ fitted regression line equations, interpret just the slope coefficient for 2-3 of the resulting equations~~ **Clarifications**: Then of all the rows in your regression table, for 2-3 of them interpret the coefficient estimate and its inferential significance. Try to pick a slope or interaction effect coefficient, since these speak to the relationship between your outcome and explanatory variable. Use your judgement as to which to choose (most interesting, most relevant).
 
--->
-<!--
-1. Revise your work based on delivered feedback. 
-1. Complete remaining sections.
-1. Complete "Inference for multiple regression" and "Conclusion" sections.
-    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
-    + Perform a residual analysis.
-    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
-    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
-1. Group leader: Once the resubmission is complete
-    + Knit `Term_Project.Rmd` one final time.
-    + Republish to Rpubs.com
-    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
-1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
 
-
-
-## Evaluation criteria {#evaluationcriteria}
+### 3. Evaluation criteria {#evaluationcriteria}
 
 You will be evaluated on the following criteria, which not only emphasizes the data, statistics, and modeling, but also the **communication**, an often neglected criteria:
 
@@ -691,17 +659,9 @@ You will be evaluated on the following criteria, which not only emphasizes the d
     + Did you demonstrate effort and engagement during the semester long process?
 
 
-
-## Example past projects {#past_examples}
-
-* [Sweet Home Alabama: Voter Support for Trump and Moore Across Racially-Divided Counties](http://rpubs.com/mbhandari20/374964){target="_blank"}
-* [The World of Dark Chocolate](http://rpubs.com/amemily/383723){target="_blank"}
-* [The Average Yards of an Above-Average Quarterback: Examining Tom Brady’s average yards and scoring](http://rpubs.com/cmacgillivray19/TB12draft1){target="_blank"}
-* [Instagram Followers](http://rpubs.com/dahanjosh/InitialSubmission){target="_blank"}
-
-
 -->
 <hr />
+</div>
 </div>
 <div id="resubmission" class="section level1">
 <h1>5. Resubmission due: Thu 5/2 5pm</h1>
@@ -712,6 +672,22 @@ You will be evaluated on the following criteria, which not only emphasizes the d
 <li><a href="static/term_project/resubmission_example.Rmd" download><code>resubmission_example.Rmd</code></a> “source code” to create html report output.</li>
 <li>Resulting <a href="static/term_project/resubmission_example.html" target="_blank">HTML report</a> output.</li>
 </ul>
+<!--
+
+1. Revise your work based on delivered feedback. 
+1. Complete remaining sections.
+1. Complete "Inference for multiple regression" and "Conclusion" sections.
+    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
+    + Perform a residual analysis.
+    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
+    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
+1. Group leader: Once the resubmission is complete
+    + Knit `Term_Project.Rmd` one final time.
+    + Republish to Rpubs.com
+    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
+1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
+
+-->
 </div>
 </div>
 

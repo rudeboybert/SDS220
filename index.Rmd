@@ -63,19 +63,30 @@ set.seed(76)
 ## Announcements
 
 * No office hours today. I do however have appointments to book on Friday (see syllabus for link).
+* Project proposal feedback given today. On Friday I will post informationon about the next phase "Project (initial) submission" due Fri 4/5 5pm.
 
 
 ## Todays Topics/Activities  
 
 ### 1. Chalk Talk
 
+* Overall comments about project proposal.
 * Recap of Lec20: Simulation. Goal is to study the effect of sampling variation.
+* Sampling terminology, notation, and statistical definitions. Mastering these will take practice, practice, practice.
 
 
 
 ### 2. In-class exercise
 
 * moderndive readings in above schedule.
+
+
+### 3. Tweet of the day
+
+Relating to the formating of your reports and in particular it's length. Do not include "superfluous" output as it only increases the "ink to information ratio." 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">And be mindful of the work you leave for others</p>&mdash; Judge John Hodgman is supported by #maxfundrive (@hodgman) <a href="https://twitter.com/hodgman/status/758857741532221443?ref_src=twsrc%5Etfw">July 29, 2016</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 
