@@ -161,21 +161,29 @@ Nothing this time.
 
 ## Action items
 
-* Read Jenny and Albert's example [project submission](static/term_project/project_submission.html){target="_blank"}.
-* Start working on your project submission:
-    + Download the following <a href="static/term_project/project_submission.Rmd" download>`project_submission.Rmd`</a> template R Markdown file.
+* Read Jenny and Albert's example [project submission](static/term_project/project_submission.html){target="_blank"} again using Massachusetts public high school data.
+* Download the corresponding source <a href="static/term_project/project_submission.Rmd" download>`project_submission.Rmd`</a> R Markdown file.
+* Modify the example `project_submission.Rmd` to match your project. Note your contents will be different based on the nature of your data and any results.
     + Move it to your `introstatsR` folder where your project work is saved.
     + Knit it!
+* **Complete the following sections**:
+    + Section 1: Introduction
+    + Section 2: Exploratory data analysis
+    + Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.
+* **Do not complete the following sections**: You'll be completing these for the final stage of this project due on the last day of class after we've covered inference for regression:
+    + Section 3 subsections 3.4, 3.5: Inference for multiple regression
+    + Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
 * Attend lab on Tuesday April 2nd.
     + Be sure to attend the lab section where all your groupmates will be present.
     + The entire lab period is devoted to working on this phase.
     + There will be no problem set assigned that week.
 
+
 ## Items to submit
 
 **Group leader only**: On Moodle submit:
 
-1. The `project_submission.Rmd` R Markdown file.
+1. The `project_submission.Rmd` R Markdown file with sections 1, 2, 3.1-3.3 completed
 1. The `project_submission.html` HTML report file.
 1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
 
