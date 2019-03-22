@@ -163,7 +163,7 @@ Nothing this time.
 
 * Read Jenny and Albert's example [project submission](static/term_project/project_submission.html){target="_blank"}.
 * Start working on your project submission:
-    + Download the following <a href="static/term_project/project_submission.Rmd" download>`project_submissionl.Rmd`</a> template R Markdown file.
+    + Download the following <a href="static/term_project/project_submission.Rmd" download>`project_submission.Rmd`</a> template R Markdown file.
     + Move it to your `introstatsR` folder where your project work is saved.
     + Knit it!
 * Attend lab on Tuesday April 2nd.
@@ -175,8 +175,8 @@ Nothing this time.
 
 **Group leader only**: On Moodle submit:
 
-1. The `project_submission.Rmd` R Markdown file
-1. The `project_submission.html` HTML report file
+1. The `project_submission.Rmd` R Markdown file.
+1. The `project_submission.html` HTML report file.
 1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
 
 

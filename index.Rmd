@@ -76,6 +76,8 @@ set.seed(76)
 
 ### 1. Chalk Talk
 
+* Discussion on [sampling distribution handout](static/sampling_distribution_handout.pdf){target="_blank"}.
+
 <!--
 summary table of regression models
 Handout of terminology & definitions
