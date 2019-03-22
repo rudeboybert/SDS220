@@ -63,7 +63,7 @@ set.seed(76)
 ## Announcements
 
 * Discuss next phase of project: "Project (initial) submission" due Fri 4/5 5pm.
-* Lecture ends early today to accommodate talk: 12:15-1:00pm in McConnell B15: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
+* Talk today from 12:15-1:00pm in McConnell B15: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
 
 <center>
 ![](static/events/delcorazon.png){ width=650px }
