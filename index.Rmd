@@ -54,7 +54,44 @@ set.seed(76)
 
 
 
+
+
 ***
+
+
+# Lec 23: Mon 3/24
+
+## Announcements
+
+* Tomorrow 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major  
+<center>
+![](static/events/SDS_major_spring_2019.png){ width=650px }
+<center> 
+</br>
+* What is the [`tidyverse`](https://www.tidyverse.org/packages/){target="_blank"} package?  
+<center>
+<img src="static/images/tidyverse_diagram.png" alt="Drawing" style="width: 600px;" border="10"/>
+</center>
+<br>
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+<!--
+summary table of regression models
+Handout of terminology & definitions
+-->
+
+### 2. In-class exercise
+
+* moderndive readings in above schedule.
+
+
+
+***
+
 
 
 
@@ -138,13 +175,6 @@ Relating to the formating of your reports and in particular it's length. Do not 
     + Fri 3/22 12:15-1:00pm in McConnell B15: Gina DelCorazon '04, Director of Data & Analytics at The National Math and Science Initiative
     + Tue 3/26 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major
 
-</br>
-
-<center>
-![](static/events/SDS_major_spring_2019.png){ width=650px }
-<center> 
-
-</br>
 
 
 ## Todays Topics/Activities  

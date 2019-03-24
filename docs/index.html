@@ -32,7 +32,7 @@
 <style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; position: absolute; }
+a.sourceLine:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -45,13 +45,11 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; }
-pre.numberSource a.sourceLine:empty
-  { position: absolute; }
+  { position: relative; left: -4em; }
 pre.numberSource a.sourceLine::before
   { content: attr(data-line-number);
-    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all;
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -491,7 +489,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author"><em>Albert Y. Kim &amp; Jenny Smetzer</em></h4>
-<h4 class="date"><em>Last updated on 2019-03-22</em></h4>
+<h4 class="date"><em>Last updated on 2019-03-24</em></h4>
 
 </div>
 
@@ -509,26 +507,29 @@ h1{font-weight: 400;}
 -->
 <hr />
 </div>
-<div id="lec-22-fri-322" class="section level1">
-<h1>Lec 22: Fri 3/22</h1>
+<div id="lec-23-mon-324" class="section level1">
+<h1>Lec 23: Mon 3/24</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Discuss next phase of project: “Project (initial) submission” due Fri 4/5 5pm.</li>
-<li>Talk today from 12:15-1:00pm in McConnell B15: Gina DelCorazon ’04, Director of Data &amp; Analytics at The National Math and Science Initiative</li>
+<li>Tomorrow 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major<br />
+
+<center>
+<img src="static/events/SDS_major_spring_2019.png" width="650" />
+<center>
+</br></li>
+<li>What is the <a href="https://www.tidyverse.org/packages/" target="_blank"><code>tidyverse</code></a> package?<br />
+
+<center>
+<img src="static/images/tidyverse_diagram.png" alt="Drawing" style="width: 600px;" border="10"/>
+</center>
+<br></li>
 </ul>
-<center>
-<img src="static/events/delcorazon.png" width="650" />
-<center>
-<p></br></p>
 </div>
 <div id="todays-topicsactivities" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
-<ul>
-<li>Discussion on <a href="static/sampling_distribution_handout.pdf" target="_blank">sampling distribution handout</a>.</li>
-</ul>
 <!--
 summary table of regression models
 Handout of terminology & definitions
@@ -543,18 +544,52 @@ Handout of terminology & definitions
 </div>
 </div>
 </div>
+<div id="lec-22-fri-322" class="section level1">
+<h1>Lec 22: Fri 3/22</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Discuss next phase of project: “Project (initial) submission” due Fri 4/5 5pm.</li>
+<li>Talk today from 12:15-1:00pm in McConnell B15: Gina DelCorazon ’04, Director of Data &amp; Analytics at The National Math and Science Initiative</li>
+</ul>
+<center>
+<img src="static/events/delcorazon.png" width="650" />
+<center>
+<p></br></p>
+</div>
+<div id="todays-topicsactivities-1" class="section level2">
+<h2>Todays Topics/Activities</h2>
+<div id="chalk-talk-1" class="section level3">
+<h3>1. Chalk Talk</h3>
+<ul>
+<li>Discussion on <a href="static/sampling_distribution_handout.pdf" target="_blank">sampling distribution handout</a>.</li>
+</ul>
+<!--
+summary table of regression models
+Handout of terminology & definitions
+-->
+</div>
+<div id="in-class-exercise-1" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>moderndive readings in above schedule.</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
 <div id="lec-21-wed-320" class="section level1">
 <h1>Lec 21: Wed 3/20</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No office hours today. I do however have appointments to book on Friday (see syllabus for link).</li>
 <li>Project proposal feedback given today. On Friday I will post information about the next phase “Project (initial) submission” due Fri 4/5 5pm.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk Talk</h3>
 <ul>
 <li>Overall comments about project proposal.</li>
@@ -562,7 +597,7 @@ Handout of terminology & definitions
 <li>Sampling terminology, notation, and statistical definitions. Mastering these will take practice, practice, practice.</li>
 </ul>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -584,7 +619,7 @@ And be mindful of the work you leave for others
 </div>
 <div id="lec-20-mon-318" class="section level1">
 <h1>Lec 20: Mon 3/18</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Over spring break moderndive Chapters 6 &amp; 7 on basic and multiple regression went through a thorough renovation, so the presentation might be a little different. Please let me know if you have comments, questions, or feedback.</li>
@@ -594,15 +629,10 @@ And be mindful of the work you leave for others
 <li>Tue 3/26 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major</li>
 </ul></li>
 </ul>
-<p></br></p>
-<center>
-<img src="static/events/SDS_major_spring_2019.png" width="650" />
-<center>
-<p></br></p>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk Talk</h3>
 <p><strong>Sampling exercise</strong>:</p>
 <ul>
@@ -617,7 +647,7 @@ And be mindful of the work you leave for others
 <li>Also, to update the contents of moderndive section 8.1.</li>
 </ul>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -628,7 +658,7 @@ And be mindful of the work you leave for others
 </div>
 <div id="lec-19-fri-38" class="section level1">
 <h1>Lec 19: Fri 3/8</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Went over Midterm I</li>
@@ -638,7 +668,7 @@ And be mindful of the work you leave for others
 </div>
 <div id="lec-18-wed-36" class="section level1">
 <h1>Lec 18: Wed 3/6</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack announcement + poll</li>
@@ -651,9 +681,9 @@ And be mindful of the work you leave for others
 <p>Yet far too much handcrafted work, what data scientists call “data wrangling,” “data munging” and “data janitor work”, is still required. Data scientists, according to interviews and expert estimates, <strong>spend from 50 percent to 80 percent of their time</strong> mired in this more mundane labor of collecting and preparing unruly digital data, before it can be explored for useful nuggets.</p>
 </blockquote>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec17</li>
@@ -677,7 +707,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-17-mon-34" class="section level1">
 <h1>Lec 17: Mon 3/4</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Guest lecturer on Wed 3/6 at 11:45am: Prof Randi Garcia.</li>
@@ -688,9 +718,9 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec11: model selection</li>
@@ -713,22 +743,22 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-16-fri-31" class="section level1">
 <h1>Lec 16: Fri 3/1</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Extra office hours on Friday 2:45-4pm.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Question: How do we choose between interaction and parallel slopes models?</li>
 <li>Answer: In <a href="static/multiple_regression.html" target="_blank"><code>multiple_regression.html</code></a> report. You can download the <a href="static/multiple_regression.Rmd" download><code>multiple_regression.Rmd</code></a> R Markdown file as well if you are curious.</li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -739,7 +769,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-15-wed-227" class="section level1">
 <h1>Lec 15: Wed 2/27</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Clarifications of upcoming deadlines.</li>
@@ -747,15 +777,15 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>Extra office hours on Friday 2:45-4pm.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li></li>
 </ul>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li></li>
@@ -766,7 +796,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-14-mon-225" class="section level1">
 <h1>Lec 14: Mon 2/25</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Midterm I details <a href="midterms.html#midtermI">posted</a>.</li>
@@ -777,15 +807,15 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Multiple regression</li>
 </ul>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -815,15 +845,15 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-13-fri-222" class="section level1">
 <h1>Lec 13: Fri 2/22</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Boxplots for EDA when explanatory variable <span class="math inline">\(x\)</span> is categorical.</li>
@@ -831,7 +861,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>What are fitted values and residuals when <span class="math inline">\(x\)</span> is categorical?</li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -853,15 +883,15 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-12-wed-220" class="section level1">
 <h1>Lec 12: Wed 2/20</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>None</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-9" class="section level3">
+<div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec11: What do we mean by “best” fitting line? Note in the plot below there are 3 points marked with black dots along with:
@@ -929,7 +959,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </table>
 </div>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on projects.</li>
@@ -941,40 +971,11 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-11-mon-218" class="section level1">
 <h1>Lec 11: Mon 2/18</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Part of next lecture (Lec12 on Wed 2/20) will be devoted to work on project.</li>
 <li>Note in the above schedule that the topics for Lab06 and Lab07 have switched places, as originally it erroneously had you working on your project proposals <strong>after</strong> it was due.</li>
-</ul>
-</div>
-<div id="todays-topicsactivities-10" class="section level2">
-<h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-10" class="section level3">
-<h3>1. Chalk talk</h3>
-<ul>
-<li>Recap of Lec10</li>
-<li>What is a confounding variable?</li>
-<li>Fitted values &amp; residuals via <code>get_regression_points()</code></li>
-<li>What do we mean by “best” when we say that the regression line is the “best fitting” line?</li>
-</ul>
-</div>
-<div id="in-class-exercise-8" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>moderndive readings in above schedule.</li>
-</ul>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-10-fri-215" class="section level1">
-<h1>Lec 10: Fri 2/15</h1>
-<div id="announcements-12" class="section level2">
-<h2>Announcements</h2>
-<ul>
-<li><a href="term_project.html#data">Project data</a> is due in a week!</li>
-<li>We’ll devote part of Lec12 on Wed 2/20 to work on project data phase.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-11" class="section level2">
@@ -982,8 +983,10 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
-<li>Recap of Lec09</li>
-<li>Regression table via <code>get_regression_table()</code> and interpreting the regression line</li>
+<li>Recap of Lec10</li>
+<li>What is a confounding variable?</li>
+<li>Fitted values &amp; residuals via <code>get_regression_points()</code></li>
+<li>What do we mean by “best” when we say that the regression line is the “best fitting” line?</li>
 </ul>
 </div>
 <div id="in-class-exercise-9" class="section level3">
@@ -995,12 +998,13 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 </div>
 </div>
-<div id="lec-9-wed-213" class="section level1">
-<h1>Lec 9: Wed 2/13</h1>
+<div id="lec-10-fri-215" class="section level1">
+<h1>Lec 10: Fri 2/15</h1>
 <div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li>Winner for best group name.</li>
+<li><a href="term_project.html#data">Project data</a> is due in a week!</li>
+<li>We’ll devote part of Lec12 on Wed 2/20 to work on project data phase.</li>
 </ul>
 </div>
 <div id="todays-topicsactivities-12" class="section level2">
@@ -1008,11 +1012,37 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
+<li>Recap of Lec09</li>
+<li>Regression table via <code>get_regression_table()</code> and interpreting the regression line</li>
+</ul>
+</div>
+<div id="in-class-exercise-10" class="section level3">
+<h3>2. In-class exercise</h3>
+<ul>
+<li>moderndive readings in above schedule.</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="lec-9-wed-213" class="section level1">
+<h1>Lec 9: Wed 2/13</h1>
+<div id="announcements-14" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Winner for best group name.</li>
+</ul>
+</div>
+<div id="todays-topicsactivities-13" class="section level2">
+<h2>Todays Topics/Activities</h2>
+<div id="chalk-talk-13" class="section level3">
+<h3>1. Chalk talk</h3>
+<ul>
 <li>Recap of Lec08</li>
 <li>Correlation coefficient</li>
 </ul>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1040,16 +1070,16 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-8-mon-211" class="section level1">
 <h1>Lec 8: Mon 2/11</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Everybody join the <code>term_project</code> channel in Slack.</li>
 <li>Discuss <a href="term_project.html#data">Data due</a> phase of term-project.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-13" class="section level3">
+<div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec07:
@@ -1065,7 +1095,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -1074,16 +1104,16 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-7-fri-28" class="section level1">
 <h1>Lec 7: Fri 2/8</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Term project groups are due today at 5pm. Make sure your group leader has completed all three steps, in particular the Google Form.</li>
 <li>I will introduce next phase of term project on Monday: <a href="term_project.html#data">Data due: Fri 2/22 5pm</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-14" class="section level3">
+<div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec06</li>
@@ -1092,7 +1122,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Computing summary statistics split by group using <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -1101,16 +1131,16 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-6-wed-26" class="section level1">
 <h1>Lec 6: Wed 2/6</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Reminder that <a href="static/events/bailey.png" target="_blank">“Multiple Imputation Methods in Cluster Randomzied Trials”</a> by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!</li>
 <li><a href="http://www.science.smith.edu/datafest/" target="_blank">DataFest</a> is a weekend-long “data science hackathon” for teams of up to 5 students and is at UMass the weekend of March 29-31! <a href="static/events/datafest2019.pdf" target="_blank">Info session</a> by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-15" class="section level3">
+<div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec05.</li>
@@ -1122,7 +1152,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Starting Data Wrangling: the pipe operator <code>%&gt;%</code> and <code>filter()</code> rows of a data frame.</li>
 </ul>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -1131,7 +1161,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-5-mon-24" class="section level1">
 <h1>Lec 5: Mon 2/4</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Added note to syllabus on office hours: <em>If you’re having R or RStudio issues, please have your computer and RStudio loaded and ready to go.</em></li>
@@ -1144,9 +1174,9 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Lab tomorrow: Jenny will talk about DataCamp &amp; cover data visualization.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-16" class="section level3">
+<div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec04: Histogram binning structure &amp; facets</li>
@@ -1179,7 +1209,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <!--Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:-->
 <p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>R Markdown:
@@ -1195,7 +1225,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-4-fri-21" class="section level1">
 <h1>Lec 4: Fri 2/1</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message and <code>#moderndive_typoes</code></li>
@@ -1205,16 +1235,16 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <img src="static/events/bailey.png" width="700" />
 </center>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-17" class="section level3">
+<div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec03.</li>
 <li>Histograms to show <em>distribution</em> of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Live demo: Some tips on workflow for in-class exercises.
@@ -1247,7 +1277,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-3-wed-130" class="section level1">
 <h1>Lec 3: Wed 1/30</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message and <code>#moderndive</code> typos</li>
@@ -1259,9 +1289,9 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>Added all Term Project items to Moodle.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-18" class="section level3">
+<div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Recap of Lec02: <code>nycflights13</code> package and <code>glimpse()</code>/<code>View()</code> functions.</li>
@@ -1270,7 +1300,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>Scatterplots</li>
 </ul>
 </div>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>ModernDive readings for Lec03 in above schedule. Now that you’ve seen R Markdown in Lab 1:</p>
 <ul>
@@ -1285,7 +1315,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-2-mon-128" class="section level1">
 <h1>Lec 2: Mon 1/28</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>On <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>
@@ -1306,13 +1336,13 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>First lab with Dr. Jenny Smetzer is tomorrow. Problem set 01 (PS01) will be posted on Moodle. <del>the Problem Sets page</del>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Todays Topics/Activities</h2>
-<div id="chalk-talk-19" class="section level3">
+<div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk Talk</h3>
 <p>Why chalk talks? Read the <a href="https://twitter.com/FieldNotesBrand" target="_blank">Field Notes</a> slogan.</p>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Why undirected in-class exercise time? People all learn at their own pace. What to do:</p>
 <ol style="list-style-type: decimal">
@@ -1344,7 +1374,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-1-fri-124" class="section level1">
 <h1>Lec 1: Fri 1/24</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Please ensure you have followed all the “start here” instructions posted on <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>. Please remember that <strong>just because you can access the moodle page does not guarantee you are registered for the course</strong>. I will post a “priority list” of waitlisted students on Moodle by tomorrow.</li>
