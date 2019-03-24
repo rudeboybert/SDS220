@@ -59,7 +59,7 @@ set.seed(76)
 ***
 
 
-# Lec 23: Mon 3/24
+# Lec 23: Mon 3/25
 
 ## Announcements
 
