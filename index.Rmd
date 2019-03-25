@@ -28,6 +28,7 @@ library(gapminder)
 library(babynames)
 library(scales)
 library(moderndive)
+library(here)
 # devtools::install_github("hadley/emo")
 library(emo)
 # devtools::install_github("thomasp85/patchwork")
@@ -84,12 +85,39 @@ summary table of regression models
 Handout of terminology & definitions
 -->
 
+* Recap of Chapter 8: Sampling. In particular two goals:
+    + Study the effect of sampling variation on our estimates.
+    + Study the effect of sample size on sampling variation.
+* In real-life, when we have a single sample of size $n$ (and not 1000 like in our simulations), what do we do? Bootstrap **re**-sampling from the original sample!
 
 
 ### 2. In-class exercise
 
-* Resampling tactile exercise. Open this [Google Sheet](https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing){target="_blank"}
-* moderndive readings in above schedule.
+```{r, echo = FALSE}
+if(!file.exists(here("static", "resample_data.RData"))){
+  library(tidyverse)
+  library(googledrive)
+  library(googlesheets)
+  drive_find(n_max = 25)
+  
+  resamples <- "1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0" %>%
+    gs_key() %>%
+    gs_read(ws = 1)  %>%
+    select(-`Resampled penny #`) %>%
+    apply(2, mean) %>%
+    tibble(x = .)
+  save(resamples, file = here("static", "resample_data.RData"))
+}
+```
+
+Resampling tactile exercise. Open this [Google Sheet](https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing){target="_blank"}. Resulting 35 sample means based on a resample of size 50 are here:
+
+```{r, eval=TRUE, echo=FALSE}
+load(here("static", "resample_data.RData"))
+ggplot(resamples, aes(x)) +
+  geom_histogram(binwidth = 2.5) +
+  labs(x = "sample mean year", title = "Bootstrap resampling distribution")
+```
 
 
 

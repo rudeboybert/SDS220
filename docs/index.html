@@ -536,13 +536,19 @@ h1{font-weight: 400;}
 summary table of regression models
 Handout of terminology & definitions
 -->
+<ul>
+<li>Recap of Chapter 8: Sampling. In particular two goals:
+<ul>
+<li>Study the effect of sampling variation on our estimates.</li>
+<li>Study the effect of sample size on sampling variation.</li>
+</ul></li>
+<li>In real-life, when we have a single sample of size <span class="math inline">\(n\)</span> (and not 1000 like in our simulations), what do we do? Bootstrap <strong>re</strong>-sampling from the original sample!</li>
+</ul>
 </div>
 <div id="in-class-exercise" class="section level3">
 <h3>2. In-class exercise</h3>
-<ul>
-<li>Resampling tactile exercise. Open this <a href="https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing" target="_blank">Google Sheet</a></li>
-<li>moderndive readings in above schedule.</li>
-</ul>
+<p>Resampling tactile exercise. Open this <a href="https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing" target="_blank">Google Sheet</a>. Resulting 35 sample means based on a resample of size 50 are here:</p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
 <hr />
 </div>
 </div>
@@ -901,7 +907,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <ul>
 <li>The “best” fitting regression line in blue</li>
 <li>An arbitrarily chosen line in dashed red</li>
-<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></li>
+<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></li>
 </ul></li>
 <li>Regression using a categorical explanatory variable</li>
 </ul>
@@ -1210,7 +1216,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </tbody>
 </table>
 <!--Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:-->
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -1596,7 +1602,7 @@ Now swithing from tactile to virtual resampling using `infer` package!
 
 <br>
 
-<img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" />
 
 
 ### 2. In-class exercise
@@ -1790,7 +1796,7 @@ Observational studies vs randomized experiments. In particular recall from PS04:
  2021       63  No               Primed with 94 countries                    30
  2021       63  No               Primed with 94 countries                    60
 
-</div><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" />
+</div><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" />
 
 ### 2. Tweet of the day
 
@@ -2260,7 +2266,7 @@ ggplot(evals, aes(x = score)) +
   labs(x = "Teaching score", title = "Fig 1: Teaching evaluation scores at UT Austin")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" />
 
 ```r
 # Seattle house prices (x-axis in original scale)
@@ -2270,7 +2276,7 @@ ggplot(house_prices, aes(x = price)) +
   labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-8-2.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-10-2.png" width="768" />
 
 ### 2. In-class exercise: R Markdown
 
@@ -2511,7 +2517,7 @@ ggplot(data = weather, mapping = aes(x = temp)) +
 ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(bins = 60, color = "white")
 ```
-<img src="index_files/figure-html/unnamed-chunk-11-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-13-1.png" width="768" />
 
 
 ### 2. Chalk Talk: Boxplots
@@ -2532,7 +2538,7 @@ Min. | 1t Qu. | Median  | 3rd Qu.  |  Max.
 
 Let's copare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-<img src="index_files/figure-html/unnamed-chunk-13-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" />
 
 
 ### 3. In-class exercise: ModernDive
