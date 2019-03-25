@@ -84,8 +84,11 @@ summary table of regression models
 Handout of terminology & definitions
 -->
 
+
+
 ### 2. In-class exercise
 
+* Resampling tactile exercise. Open this [Google Sheet](https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing){target="_blank"}
 * moderndive readings in above schedule.
 
 
