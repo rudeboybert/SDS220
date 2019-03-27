@@ -55,8 +55,6 @@ set.seed(76)
 
 
 
-
-
 ***
 
 # Lec 24: Wed 3/27
@@ -70,8 +68,21 @@ set.seed(76)
 
 ### 1. Chalk Talk
 
-* Recap of Lec25. 
+* Recap of Lec25:
+    + Recall your "tactile" resampling results in this [Google Sheet](https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing){target="_blank"}
+    + Let's load each of your resampled sample means and plot a histogram.
+* Today:
+    + **New inference scenario** Number 2 in moderndive [Table 8.6](https://moderndive.netlify.com/8-sampling.html#sampling-conclusion-table){target="_blank"}. Unknown value is no longer population proportion $p$ but population mean $\mu$
+    + Just like in Ch8 with sampling, we are going from "tactile resampling" by hand to "virtual resampling" using a computer!
 
+
+```{r, message=FALSE, eval = TRUE}
+library(tidyverse)
+resampled_mean_years <- read_csv("https://rudeboybert.github.io/SDS220/static/resample_means.csv")
+ggplot(resampled_mean_years , aes(x = sample_mean)) +
+  geom_histogram(binwidth = 2.5) +
+  labs(x = "sample mean year", title = "Bootstrap resampling distribution")
+```
 
 ### 2. In-class exercise
 
