@@ -59,6 +59,36 @@ set.seed(76)
 
 ***
 
+# Lec 24: Wed 3/27
+
+## Announcements
+
+* Please open Slack. 
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* Recap of Lec25. 
+
+
+### 2. In-class exercise
+
+Read the following in moderndive:
+
+* Intro to Ch9
+* 9.1
+    + Read 9.1.1
+    + Skip 9.1.2 and 9.1.3. These sections will be re-written before book launch
+    + Read 9.1.4
+* 9.2
+
+
+***
+
+
+
 
 # Lec 23: Mon 3/25
 
@@ -103,18 +133,26 @@ if(!file.exists(here("static", "resample_data.RData"))){
   resamples <- "1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0" %>%
     gs_key() %>%
     gs_read(ws = 1)  %>%
-    select(-`Resampled penny #`) %>%
+    select(-`Resampled penny #`) 
+  
+  # Get names
+  student_names <- names(resamples)
+  
+  # Write tibble
+  resamples <- resamples %>%
     apply(2, mean) %>%
-    tibble(x = .)
-  save(resamples, file = here("static", "resample_data.RData"))
+    tibble(name = student_names, sample_mean = .)
+  
+  # Save
+  write_csv(resamples, here("static", "resample_means.csv"))
 }
 ```
 
 Resampling tactile exercise. Open this [Google Sheet](https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing){target="_blank"}. Resulting 35 sample means based on a resample of size 50 are here:
 
 ```{r, eval=TRUE, echo=FALSE}
-load(here("static", "resample_data.RData"))
-ggplot(resamples, aes(x)) +
+resamples <- read_csv(here("static", "resample_means.csv"))
+ggplot(resamples, aes(x = sample_mean)) +
   geom_histogram(binwidth = 2.5) +
   labs(x = "sample mean year", title = "Bootstrap resampling distribution")
 ```
