@@ -57,6 +57,50 @@ set.seed(76)
 
 ***
 
+# Lec 25: Fri 3/29
+
+## Announcements
+
+* 
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* Recap of Lec24
+* Normal distribution/bell curve theory
+* moderndive 9.3: What is a confidence interval?
+* moderndive 9.4: The resampling framework
+
+
+```{r, message=FALSE, eval = TRUE}
+library(tidyverse)
+bootstrap_distn <- read_csv("https://rudeboybert.github.io/SDS220/static/resample_means.csv")
+
+# New: Compute 2.5th and 97.5th percentiles
+conf_int <- quantile(bootstrap_distn$sample_mean, probs = c(0.025, 0.975), na.rm = TRUE)
+conf_int
+
+ggplot(bootstrap_distn , aes(x = sample_mean)) +
+  geom_histogram(binwidth = 2.5) +
+  labs(x = "sample mean year", 
+       title = "Bootstrap resampling distribution + 95% confidence interval") +
+  geom_vline(xintercept = conf_int, col = "red", size = 1)
+```
+
+### 2. In-class exercise
+
+Read the following in moderndive:
+
+* Appendix A.2 on the Normal distribution
+* moderndive 9.3-9.4
+
+
+
+***
+
+
+
 # Lec 24: Wed 3/27
 
 ## Announcements
@@ -68,18 +112,17 @@ set.seed(76)
 
 ### 1. Chalk Talk
 
-* Recap of Lec25:
+* Recap of Lec23:
     + Recall your "tactile" resampling results in this [Google Sheet](https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing){target="_blank"}
     + Let's load each of your resampled sample means and plot a histogram.
 * Today:
     + **New inference scenario** Number 2 in moderndive [Table 8.6](https://moderndive.netlify.com/8-sampling.html#sampling-conclusion-table){target="_blank"}. Unknown value is no longer population proportion $p$ but population mean $\mu$
     + Just like in Ch8 with sampling, we are going from "tactile resampling" by hand to "virtual resampling" using a computer!
 
-
 ```{r, message=FALSE, eval = TRUE}
 library(tidyverse)
-resampled_mean_years <- read_csv("https://rudeboybert.github.io/SDS220/static/resample_means.csv")
-ggplot(resampled_mean_years , aes(x = sample_mean)) +
+bootstrap_distn <- read_csv("https://rudeboybert.github.io/SDS220/static/resample_means.csv")
+ggplot(bootstrap_distn , aes(x = sample_mean)) +
   geom_histogram(binwidth = 2.5) +
   labs(x = "sample mean year", title = "Bootstrap resampling distribution")
 ```
