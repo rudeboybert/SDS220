@@ -96,13 +96,13 @@ Read the following in moderndive:
 
 ### 1. Chalk Talk
 
-* the `infer` bootstrapping framework (see handout below). Both the left-hand side which uses `dplyr` verbs and the right hand side that uses `infer` verbs do the same thing. However we'll see that the `infer` code on the right can be used in more situations.
+* the `infer` bootstrapping framework (see handout below). Both the left-hand side which uses `dplyr` verbs and the right hand side that uses `infer` verbs do the same thing. However we'll see that the `infer` code on the right can be used in more situations.  
+![](static/images/infer.png){ width=500px }
 * Intepreting confidence intervals
 * What determines the width of net?
     1. The confidence level: A 95% CI will be wider than an 80% CI
     1. The original sample size n. As n goes up, the CI gets narrow i.e. you have more precise results.
 
-![](static/images/infer.png){ width=500px }
 
 
 ### 2. In-class exercise
