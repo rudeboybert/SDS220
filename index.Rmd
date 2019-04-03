@@ -59,7 +59,33 @@ set.seed(76)
 
 
 
-# Lec 27: Mon 4/3
+# Lec 28: Fri 4/5
+
+## Announcements
+
+* 
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* The "frequentist" intepretation of confidence intervals
+
+
+### 2. In-class exercise
+
+Read the following in moderndive:
+
+* 
+
+
+
+***
+
+
+
+
+# Lec 27: Wed 4/3
 
 ## Announcements
 
