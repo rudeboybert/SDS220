@@ -57,6 +57,49 @@ set.seed(76)
 
 ***
 
+
+
+# Lec 27: Mon 4/3
+
+## Announcements
+
+* 
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+* the `infer` bootstrapping framework
+* Intepreting confidence intervals
+* What determines the width of net?
+
+
+### 2. In-class exercise
+
+Read the following in moderndive:
+
+* Re-read moderndive 9.4 in light of today's discussion
+* moderndive 9.5-9.6
+
+
+
+***
+
+
+
+# Lec 26: Mon 4/1
+
+## Announcements
+
+* No lecture today
+
+
+
+***
+
+
+
+
 # Lec 25: Fri 3/29
 
 ## Announcements
