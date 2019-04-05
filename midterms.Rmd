@@ -120,6 +120,13 @@ data_frame(
 
 * **Friday 4/12 5pm through Sunday 4/14 11:55pm**. 
 
+
+## Topics
+    
+* Topics:
+    + Lectures 9-24. In other words everything up to and including the resampling activity, but not confidence intervals.
+    + ModernDive Chapters 6, 7, 8, and 9 up to and including 9.2.
+
 <!--
 Grace N. takes it Monday-Tuesday after.
 -->
