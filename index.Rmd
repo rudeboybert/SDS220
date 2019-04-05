@@ -63,21 +63,21 @@ set.seed(76)
 
 ## Announcements
 
-* 
+* Project submission due at 5pm today!
+* Midterm II next week. Review on Monday
 
 ## Todays Topics/Activities  
 
 ### 1. Chalk Talk
 
-* From moderndive 9.5: Added `tactile_shovel_1` data frame to `moderndive` package.
-* The "frequentist" intepretation of confidence intervals
-
+* Recap of Lec 27: The "frequentist" intepretation of confidence intervals
+* Two ways to compute SE.
 
 ### 2. In-class exercise
 
-Read the following in moderndive:
+* Note: As seen in moderndive 9.5, I still need to add `tactile_shovel_1` data frame to `moderndive` package.
+* moderndive readings in above schedule.
 
-* 
 
 
 
