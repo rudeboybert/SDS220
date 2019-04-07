@@ -58,6 +58,32 @@ set.seed(76)
 ***
 
 
+# Lec 29: Mon 4/8
+
+## Announcements
+
+* Midterm II review. In particular practice midterm posted on [Midterms](midterms.html#midtermII) page.
+* Project feedback: Sign up for a feedback session next week where we'll record a screencast in my office. **Please be mindful of how much coordination it takes for me to schedule 17 feedback sessions and read these instructions carefully**:
+    1. *Everyone:* Jump to the week of April 14-20 (next week) on my [Google Appointments Calendar](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}.
+    1. *As a group:* Figure out a "220 Project Feedback Only" 15 minute time slot **when all group members can attend**. 
+    1. *Group leader only:* On behalf of your group, book the time slot when all group members can attend and under "Description" include both 1) your group name and 2) the names of all group members.
+    1. *Group leader only:* If none of the listed times work for you all, contact me in the Slack Direct Message that includes me and Jenny and all group members.
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+*
+
+### 2. In-class exercise
+
+* 
+
+
+
+***
+
+
 
 # Lec 28: Fri 4/5
 
@@ -80,9 +106,7 @@ set.seed(76)
 
 
 
-
 ***
-
 
 
 
@@ -102,8 +126,6 @@ set.seed(76)
 * What determines the width of net?
     1. The confidence level: A 95% CI will be wider than an 80% CI
     1. The original sample size n. As n goes up, the CI gets narrow i.e. you have more precise results.
-
-
 
 ### 2. In-class exercise
 

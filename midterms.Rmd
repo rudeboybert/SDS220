@@ -119,13 +119,32 @@ data_frame(
 ## Administrative notes
 
 * **Friday 4/12 5pm through Sunday 4/14 11:55pm**. 
-
+* Self-scheduled exam [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
+    + Only print from macOS computers.
+    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
+* Exam length:
+    + You will be given 140 mins to complete it (including transit time to writing area), however it is timed with the goal that most students will complete it much sooner.
+    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
+    + All Office of Disability Services forms must be submitted before the midterm start time.
+* Other details:
+    + Closed-book, no internet, and individually completed.
+    + Bring colored pencils.
 
 ## Topics
     
 * Topics:
     + Lectures 9-24. In other words everything up to and including the resampling activity, but not confidence intervals.
     + ModernDive Chapters 6, 7, 8, and 9 up to and including 9.2.
+* No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).
+* What to study:
+    + Practice midterm questions [PDF](static/exams/Midterm-II_practice.pdf){target="_blank"}.
+        + This practice midterm is longer than you can expect on your midterm.
+        + Some of the questions were previously seen in the practice Midterm I.
+        + Solutions will be distributed before Wednesday.
+    + Your hand-written course notes first: they are the "executive summaries" of topics.
+    + The material on the course webpage chronologically, in particular the ModernDive readings.
+    + Problem sets corresponding to labs.
+
 
 <!--
 Grace N. takes it Monday-Tuesday after.
