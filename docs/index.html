@@ -32,7 +32,7 @@
 <style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -45,11 +45,13 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
 pre.numberSource a.sourceLine::before
   { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -495,7 +497,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Albert Y. Kim &amp; Jenny Smetzer</h4>
-<h4 class="date">Last updated on 2019-04-07</h4>
+<h4 class="date">Last updated on 2019-04-08</h4>
 
 </div>
 
@@ -512,12 +514,37 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 <hr />
+<!--
+# Lec 30: Fri 4/12
+
+## Announcements
+
+* Talk on Thursday April 18th 6pm in Seelye 106
+<center>
+![](static/events/StephanieHicks.png){ width=650px }
+</center>
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+*
+
+### 2. In-class exercise
+
+* 
+
+
+
+***
+-->
 </div>
 <div id="lec-29-mon-48" class="section level1">
 <h1>Lec 29: Mon 4/8</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ul>
+<li>No lecture on Wednesday, extra office hours on Friday 1-3pm.</li>
 <li>Midterm II review. In particular practice midterm posted on <a href="midterms.html#midtermII">Midterms</a> page.</li>
 <li>Project feedback: Sign up for a feedback session next week where all group members and myself will record a screencast in my office. <strong>Please be mindful of how much coordination it takes for me to schedule 17 feedback sessions and read all these instructions carefully first</strong>:
 <ol style="list-style-type: decimal">

@@ -57,17 +57,45 @@ set.seed(76)
 
 ***
 
+<!--
+# Lec 30: Fri 4/12
+
+## Announcements
+
+* Talk on Thursday April 18th 6pm in Seelye 106
+<center>
+![](static/events/StephanieHicks.png){ width=650px }
+</center>
+
+## Todays Topics/Activities  
+
+### 1. Chalk Talk
+
+*
+
+### 2. In-class exercise
+
+* 
+
+
+
+***
+-->
+
+
 
 # Lec 29: Mon 4/8
 
 ## Announcements
 
+* No lecture on Wednesday, extra office hours on Friday 1-3pm.
 * Midterm II review. In particular practice midterm posted on [Midterms](midterms.html#midtermII) page.
 * Project feedback: Sign up for a feedback session next week where all group members and myself will record a screencast in my office. **Please be mindful of how much coordination it takes for me to schedule 17 feedback sessions and read all these instructions carefully first**:
     1. Jump to the week of April 14-20 (next week) on my [Google Appointments Calendar](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"} and identify which "220 Project Feedback Only" 15 minute time slots work for you.
     1. Then as a group, coordinate on a "220 Project Feedback Only" 15 minute time slot **when all group members can attend.** 
     1. Then only the group leader will book the 15 minute appointment. Under "Description" include both 1) your group name and 2) the names of all group members.
     1. If none of the listed times work for you all, contact me in the Slack Direct Message that includes me and Jenny and all group members.
+
 
 ## Todays Topics/Activities  
 

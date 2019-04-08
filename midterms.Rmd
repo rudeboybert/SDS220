@@ -136,11 +136,12 @@ data_frame(
     + Lectures 9-24. In other words everything up to and including the resampling activity, but not confidence intervals.
     + ModernDive Chapters 6, 7, 8, and 9 up to and including 9.2.
 * No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).
+* No direct DataCamp questions, but note that it covers the same material as we covered in class so it is good practice.
 * What to study:
     + Practice midterm questions [PDF](static/exams/Midterm-II_practice.pdf){target="_blank"}.
         + This practice midterm is longer than you can expect on your midterm.
-        + Some of the questions were previously seen in the practice Midterm I.
-        + Solutions will be distributed before Wednesday.
+        + The question on "1. Seattle House Prices" is much harder than you can expect.
+        + You can skip "4. Sampling Distribution" part a)/
     + Your hand-written course notes first: they are the "executive summaries" of topics.
     + The material on the course webpage chronologically, in particular the ModernDive readings.
     + Problem sets corresponding to labs.
