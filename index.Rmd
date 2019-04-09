@@ -71,7 +71,7 @@ set.seed(76)
 
 ### 1. Chalk Talk
 
-*
+* Standard error method.
 
 ### 2. In-class exercise
 
