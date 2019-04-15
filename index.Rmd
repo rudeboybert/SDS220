@@ -77,8 +77,9 @@ set.seed(76)
 
 * **RStudio Desktop users only**: reinstall/update the `moderndive` package
 * Form groups of two students
-* Watch slideshow
-* Run the following code  
+* Watch [slideshow](static/Lec32.pdf){target="_blank"}
+* Imagine... a hypothetical world with no gender discrimination in hiring. 
+* In this hypothetical world, we can switch i.e. **shuffle** i.e. **permute** the (binary) `gender` variable in . Do this using this code to create a new variable `hypothetical`
 ```{r, eval = FALSE}
 library(moderndive)
 library(tidyverse)
@@ -86,7 +87,9 @@ promotions <- promotions %>%
   mutate(hypothetical = sample(gender, replace = FALSE))
 View(promotions)
 ```
-* Fill in worksheet that I'll distribute
+* Fill in [worksheet](worksheet/Lec32.pdf){target="_blank"}
+* **Results**:  
+![](static/promotions.jpg){ width=100% }
 
 
 ***
@@ -122,7 +125,7 @@ View(promotions)
 
 ### 1. Chalk Talk
 
-*
+* 
 
 ### 2. In-class exercise
 
