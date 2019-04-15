@@ -497,7 +497,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Albert Y. Kim &amp; Jenny Smetzer</h4>
-<h4 class="date">Last updated on 2019-04-08</h4>
+<h4 class="date">Last updated on 2019-04-15</h4>
 
 </div>
 
@@ -514,34 +514,56 @@ h1{font-weight: 400;}
 {target="_blank"}
 -->
 <hr />
-<!--
-# Lec 30: Fri 4/12
-
-## Announcements
-
-* Talk on Thursday April 18th 6pm in Seelye 106
+</div>
+<div id="lec-32-mon-415" class="section level1">
+<h1>Lec 32: Mon 4/15</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Lab tomorrow (Tue 4/16) is optional office hours; Jenny will be in Sabin-Reed 301.</li>
+<li>No problem set this week!</li>
+<li>Don’t forget your project feedback appointments this week.</li>
+<li>Talk on Thursday April 18th 6pm in Seelye 106
 <center>
-![](static/events/StephanieHicks.png){ width=650px }
-</center>
-
-## Todays Topics/Activities  
-
-### 1. Chalk Talk
-
-*
-
-### 2. In-class exercise
-
-* 
-
-
-
-***
--->
+<img src="static/events/StephanieHicks.png" width="650" />
+</center></li>
+</ul>
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Todays Topics/Activities</h2>
+<div id="tactile-simulation" class="section level3">
+<h3>1. Tactile simulation</h3>
+<ul>
+<li><strong>RStudio Desktop users only</strong>: reinstall/update the <code>moderndive</code> package</li>
+<li>Form groups of two students</li>
+<li>Watch slideshow</li>
+<li>Run the following code</li>
+</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(moderndive)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb1-3" data-line-number="3">promotions &lt;-<span class="st"> </span>promotions <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">hypothetical =</span> <span class="kw">sample</span>(gender, <span class="dt">replace =</span> <span class="ot">FALSE</span>))</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">View</span>(promotions)</a></code></pre></div>
+<ul>
+<li>Fill in worksheet that I’ll distribute</li>
+</ul>
+<hr />
+</div>
+</div>
+</div>
+<div id="lec-31-fri-412" class="section level1">
+<h1>Lec 31: Fri 4/12</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
+<ul>
+<li>Go over practice midterm II.</li>
+</ul>
+<hr />
+</div>
 </div>
 <div id="lec-29-mon-48" class="section level1">
 <h1>Lec 29: Mon 4/8</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No lecture on Wednesday, extra office hours on Friday 1-3pm.</li>
@@ -555,7 +577,7 @@ h1{font-weight: 400;}
 </ol></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -574,14 +596,14 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-28-fri-45" class="section level1">
 <h1>Lec 28: Fri 4/5</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Project submission due at 5pm today!</li>
 <li>Midterm II next week. Review on Monday</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -602,13 +624,13 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-27-wed-43" class="section level1">
 <h1>Lec 27: Wed 4/3</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -636,7 +658,7 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-26-mon-41" class="section level1">
 <h1>Lec 26: Mon 4/1</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No lecture today</li>
@@ -646,13 +668,13 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-25-fri-329" class="section level1">
 <h1>Lec 25: Fri 3/29</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -662,20 +684,20 @@ h1{font-weight: 400;}
 <li>moderndive 9.3: What is a confidence interval?</li>
 <li>moderndive 9.4: The resampling framework</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># New: Compute 2.5th and 97.5th percentiles</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5">conf_int &lt;-<span class="st"> </span><span class="kw">quantile</span>(bootstrap_distn<span class="op">$</span>sample_mean, <span class="dt">probs =</span> <span class="kw">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>), <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</a>
-<a class="sourceLine" id="cb1-6" data-line-number="6">conf_int</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># New: Compute 2.5th and 97.5th percentiles</span></a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">conf_int &lt;-<span class="st"> </span><span class="kw">quantile</span>(bootstrap_distn<span class="op">$</span>sample_mean, <span class="dt">probs =</span> <span class="kw">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>), <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">conf_int</a></code></pre></div>
 <pre><code>##     2.5%    97.5% 
 ## 1990.956 1998.699</code></pre>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, </a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution + 95% confidence interval&quot;</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> conf_int, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, </a>
+<a class="sourceLine" id="cb4-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution + 95% confidence interval&quot;</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> conf_int, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -690,13 +712,13 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-24-wed-327" class="section level1">
 <h1>Lec 24: Wed 3/27</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Please open Slack.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -712,12 +734,12 @@ h1{font-weight: 400;}
 <li>Just like in Ch8 with sampling, we are going from “tactile resampling” by hand to “virtual resampling” using a computer!</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb4-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -738,7 +760,7 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-23-mon-325" class="section level1">
 <h1>Lec 23: Mon 3/25</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Tomorrow 12:15-1:05pm in Ford Hall Atrium: Presentation of SDS major<br />
@@ -755,7 +777,7 @@ h1{font-weight: 400;}
 <br></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -775,14 +797,14 @@ Handout of terminology & definitions
 <div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Resampling tactile exercise. Open this <a href="https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing" target="_blank">Google Sheet</a>. Resulting 35 sample means based on a resample of size 50 are here:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
 <hr />
 </div>
 </div>
 </div>
 <div id="lec-22-fri-322" class="section level1">
 <h1>Lec 22: Fri 3/22</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Discuss next phase of project: “Project (initial) submission” due Fri 4/5 5pm.</li>
@@ -793,7 +815,7 @@ Handout of terminology & definitions
 <center>
 <p></br></p>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -816,14 +838,14 @@ Handout of terminology & definitions
 </div>
 <div id="lec-21-wed-320" class="section level1">
 <h1>Lec 21: Wed 3/20</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>No office hours today. I do however have appointments to book on Friday (see syllabus for link).</li>
 <li>Project proposal feedback given today. On Friday I will post information about the next phase “Project (initial) submission” due Fri 4/5 5pm.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -855,7 +877,7 @@ And be mindful of the work you leave for others
 </div>
 <div id="lec-20-mon-318" class="section level1">
 <h1>Lec 20: Mon 3/18</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Over spring break moderndive Chapters 6 &amp; 7 on basic and multiple regression went through a thorough renovation, so the presentation might be a little different. Please let me know if you have comments, questions, or feedback.</li>
@@ -866,7 +888,7 @@ And be mindful of the work you leave for others
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -894,7 +916,7 @@ And be mindful of the work you leave for others
 </div>
 <div id="lec-19-fri-38" class="section level1">
 <h1>Lec 19: Fri 3/8</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Went over Midterm I</li>
@@ -904,7 +926,7 @@ And be mindful of the work you leave for others
 </div>
 <div id="lec-18-wed-36" class="section level1">
 <h1>Lec 18: Wed 3/6</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack announcement + poll</li>
@@ -917,7 +939,7 @@ And be mindful of the work you leave for others
 <p>Yet far too much handcrafted work, what data scientists call “data wrangling,” “data munging” and “data janitor work”, is still required. Data scientists, according to interviews and expert estimates, <strong>spend from 50 percent to 80 percent of their time</strong> mired in this more mundane labor of collecting and preparing unruly digital data, before it can be explored for useful nuggets.</p>
 </blockquote>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -943,7 +965,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-17-mon-34" class="section level1">
 <h1>Lec 17: Mon 3/4</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Guest lecturer on Wed 3/6 at 11:45am: Prof Randi Garcia.</li>
@@ -954,7 +976,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <center>
 <p><br></p>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -979,13 +1001,13 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-16-fri-31" class="section level1">
 <h1>Lec 16: Fri 3/1</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Extra office hours on Friday 2:45-4pm.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1005,7 +1027,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-15-wed-227" class="section level1">
 <h1>Lec 15: Wed 2/27</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Clarifications of upcoming deadlines.</li>
@@ -1013,7 +1035,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>Extra office hours on Friday 2:45-4pm.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-12" class="section level2">
+<div id="todays-topicsactivities-13" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1032,7 +1054,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-14-mon-225" class="section level1">
 <h1>Lec 14: Mon 2/25</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Midterm I details <a href="midterms.html#midtermI">posted</a>.</li>
@@ -1043,7 +1065,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </ul></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1081,13 +1103,13 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 </div>
 <div id="lec-13-fri-222" class="section level1">
 <h1>Lec 13: Fri 2/22</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Seelye self-scheduled Midterm I next Fri 3/1 thru Sun 3/3; Midterm I review on Monday.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1119,13 +1141,13 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-12-wed-220" class="section level1">
 <h1>Lec 12: Wed 2/20</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>None</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1134,22 +1156,22 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <ul>
 <li>The “best” fitting regression line in blue</li>
 <li>An arbitrarily chosen line in dashed red</li>
-<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" /></li>
+<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></li>
 </ul></li>
 <li>Regression using a categorical explanatory variable</li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co"># Example data for chalk talk</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb5-6" data-line-number="6">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>),</a>
-<a class="sourceLine" id="cb5-7" data-line-number="7">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb5-8" data-line-number="8">)</a>
-<a class="sourceLine" id="cb5-9" data-line-number="9"></a>
-<a class="sourceLine" id="cb5-10" data-line-number="10"><span class="co"># Get regression table</span></a>
-<a class="sourceLine" id="cb5-11" data-line-number="11">model_example &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> example)</a>
-<a class="sourceLine" id="cb5-12" data-line-number="12"><span class="kw">get_regression_table</span>(model_example)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co"># Example data for chalk talk</span></a>
+<a class="sourceLine" id="cb6-5" data-line-number="5">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
+<a class="sourceLine" id="cb6-6" data-line-number="6">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>),</a>
+<a class="sourceLine" id="cb6-7" data-line-number="7">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb6-8" data-line-number="8">)</a>
+<a class="sourceLine" id="cb6-9" data-line-number="9"></a>
+<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="co"># Get regression table</span></a>
+<a class="sourceLine" id="cb6-11" data-line-number="11">model_example &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> example)</a>
+<a class="sourceLine" id="cb6-12" data-line-number="12"><span class="kw">get_regression_table</span>(model_example)</a></code></pre></div>
 <div class="kable-table">
 <table>
 <thead>
@@ -1207,14 +1229,14 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-11-mon-218" class="section level1">
 <h1>Lec 11: Mon 2/18</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Part of next lecture (Lec12 on Wed 2/20) will be devoted to work on project.</li>
 <li>Note in the above schedule that the topics for Lab06 and Lab07 have switched places, as originally it erroneously had you working on your project proposals <strong>after</strong> it was due.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1236,14 +1258,14 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-10-fri-215" class="section level1">
 <h1>Lec 10: Fri 2/15</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><a href="term_project.html#data">Project data</a> is due in a week!</li>
 <li>We’ll devote part of Lec12 on Wed 2/20 to work on project data phase.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1263,13 +1285,13 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 </div>
 <div id="lec-9-wed-213" class="section level1">
 <h1>Lec 9: Wed 2/13</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Winner for best group name.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1306,14 +1328,14 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-8-mon-211" class="section level1">
 <h1>Lec 8: Mon 2/11</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Everybody join the <code>term_project</code> channel in Slack.</li>
 <li>Discuss <a href="term_project.html#data">Data due</a> phase of term-project.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1340,14 +1362,14 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-7-fri-28" class="section level1">
 <h1>Lec 7: Fri 2/8</h1>
-<div id="announcements-22" class="section level2">
+<div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Term project groups are due today at 5pm. Make sure your group leader has completed all three steps, in particular the Google Form.</li>
 <li>I will introduce next phase of term project on Monday: <a href="term_project.html#data">Data due: Fri 2/22 5pm</a>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-20" class="section level2">
+<div id="todays-topicsactivities-21" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1367,14 +1389,14 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-6-wed-26" class="section level1">
 <h1>Lec 6: Wed 2/6</h1>
-<div id="announcements-23" class="section level2">
+<div id="announcements-25" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Reminder that <a href="static/events/bailey.png" target="_blank">“Multiple Imputation Methods in Cluster Randomzied Trials”</a> by Prof. Brittney Bailey from Amherst College is tomorrow 12:10pm in McConnell B15!</li>
 <li><a href="http://www.science.smith.edu/datafest/" target="_blank">DataFest</a> is a weekend-long “data science hackathon” for teams of up to 5 students and is at UMass the weekend of March 29-31! <a href="static/events/datafest2019.pdf" target="_blank">Info session</a> by Prof. Randi Garcia today 7-8pm in Sabin-Reed 301 (here)!</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-21" class="section level2">
+<div id="todays-topicsactivities-22" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-21" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1397,7 +1419,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-5-mon-24" class="section level1">
 <h1>Lec 5: Mon 2/4</h1>
-<div id="announcements-24" class="section level2">
+<div id="announcements-26" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Added note to syllabus on office hours: <em>If you’re having R or RStudio issues, please have your computer and RStudio loaded and ready to go.</em></li>
@@ -1410,7 +1432,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Lab tomorrow: Jenny will talk about DataCamp &amp; cover data visualization.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-22" class="section level2">
+<div id="todays-topicsactivities-23" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1443,7 +1465,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </tbody>
 </table>
 <!--Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:-->
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -1461,7 +1483,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </div>
 <div id="lec-4-fri-21" class="section level1">
 <h1>Lec 4: Fri 2/1</h1>
-<div id="announcements-25" class="section level2">
+<div id="announcements-27" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message and <code>#moderndive_typoes</code></li>
@@ -1471,7 +1493,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <img src="static/events/bailey.png" width="700" />
 </center>
 </div>
-<div id="todays-topicsactivities-23" class="section level2">
+<div id="todays-topicsactivities-24" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-23" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1513,7 +1535,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-3-wed-130" class="section level1">
 <h1>Lec 3: Wed 1/30</h1>
-<div id="announcements-26" class="section level2">
+<div id="announcements-28" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Slack message and <code>#moderndive</code> typos</li>
@@ -1525,7 +1547,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>Added all Term Project items to Moodle.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-24" class="section level2">
+<div id="todays-topicsactivities-25" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-24" class="section level3">
 <h3>1. Chalk talk</h3>
@@ -1551,7 +1573,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-2-mon-128" class="section level1">
 <h1>Lec 2: Mon 1/28</h1>
-<div id="announcements-27" class="section level2">
+<div id="announcements-29" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>On <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>
@@ -1572,7 +1594,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>First lab with Dr. Jenny Smetzer is tomorrow. Problem set 01 (PS01) will be posted on Moodle. <del>the Problem Sets page</del>.</li>
 </ul>
 </div>
-<div id="todays-topicsactivities-25" class="section level2">
+<div id="todays-topicsactivities-26" class="section level2">
 <h2>Todays Topics/Activities</h2>
 <div id="chalk-talk-25" class="section level3">
 <h3>1. Chalk Talk</h3>
@@ -1610,7 +1632,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 </div>
 <div id="lec-1-fri-124" class="section level1">
 <h1>Lec 1: Fri 1/24</h1>
-<div id="announcements-28" class="section level2">
+<div id="announcements-30" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Please ensure you have followed all the “start here” instructions posted on <a href="https://moodle.smith.edu/course/view.php?id=33093" target="_blank">Moodle</a>. Please remember that <strong>just because you can access the moodle page does not guarantee you are registered for the course</strong>. I will post a “priority list” of waitlisted students on Moodle by tomorrow.</li>
@@ -1829,7 +1851,7 @@ Now swithing from tactile to virtual resampling using `infer` package!
 
 <br>
 
-<img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" />
 
 
 ### 2. In-class exercise
@@ -2023,7 +2045,7 @@ Observational studies vs randomized experiments. In particular recall from PS04:
  2021       63  No               Primed with 94 countries                    30
  2021       63  No               Primed with 94 countries                    60
 
-</div><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" />
+</div><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="768" />
 
 ### 2. Tweet of the day
 
@@ -2493,7 +2515,7 @@ ggplot(evals, aes(x = score)) +
   labs(x = "Teaching score", title = "Fig 1: Teaching evaluation scores at UT Austin")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-12-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-13-1.png" width="768" />
 
 ```r
 # Seattle house prices (x-axis in original scale)
@@ -2503,7 +2525,7 @@ ggplot(house_prices, aes(x = price)) +
   labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-12-2.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-13-2.png" width="768" />
 
 ### 2. In-class exercise: R Markdown
 
@@ -2744,7 +2766,7 @@ ggplot(data = weather, mapping = aes(x = temp)) +
 ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(bins = 60, color = "white")
 ```
-<img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-16-1.png" width="768" />
 
 
 ### 2. Chalk Talk: Boxplots
@@ -2765,7 +2787,7 @@ Min. | 1t Qu. | Median  | 3rd Qu.  |  Max.
 
 Let's copare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-18-1.png" width="768" />
 
 
 ### 3. In-class exercise: ModernDive

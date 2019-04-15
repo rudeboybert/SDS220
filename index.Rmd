@@ -57,11 +57,15 @@ set.seed(76)
 
 ***
 
-<!--
-# Lec 30: Fri 4/12
+
+
+# Lec 32: Mon 4/15
 
 ## Announcements
 
+* Lab tomorrow (Tue 4/16) is optional office hours; Jenny will be in Sabin-Reed 301. 
+* No problem set this week!
+* Don't forget your project feedback appointments this week.
 * Talk on Thursday April 18th 6pm in Seelye 106
 <center>
 ![](static/events/StephanieHicks.png){ width=650px }
@@ -69,18 +73,35 @@ set.seed(76)
 
 ## Todays Topics/Activities  
 
-### 1. Chalk Talk
+### 1. Tactile simulation
 
-* Standard error method.
+* **RStudio Desktop users only**: reinstall/update the `moderndive` package
+* Form groups of two students
+* Watch slideshow
+* Run the following code  
+```{r, eval = FALSE}
+library(moderndive)
+library(tidyverse)
+promotions <- promotions %>% 
+  mutate(hypothetical = sample(gender, replace = FALSE))
+View(promotions)
+```
+* Fill in worksheet that I'll distribute
 
-### 2. In-class exercise
 
-* 
+***
+
+
+
+# Lec 31: Fri 4/12
+
+## Announcements
+
+* Go over practice midterm II.
 
 
 
 ***
--->
 
 
 
