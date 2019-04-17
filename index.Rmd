@@ -59,6 +59,33 @@ set.seed(76)
 
 
 
+# Lec 33: Wed 4/17
+
+## Announcements
+
+* Discussion on census bureau [checkboxes for "race"](https://www.kpbs.org/news/2013/jan/09/census-asks-latino-ethnicity-or-race/){target="_blank"} and the [politics](https://www.amacad.org/publication/racial-classification-america){target="_blank"} behind their determination. 
+* Discussion on tweet of the day.
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+* The intuition behind hypothesis testing.
+* (Time permitting) The statistical definitions/terminlogy behind hypothesis testing; in particular how hypothesis testing relates to sampling.
+
+### 2. Tweet of the Day
+
+If you care to share feedback relating to the use of this example, please fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSf0apU3UZ3RH0BhWYMB9io9XbcYXb-awxWpYY204JlHXvPK1g/viewform){target="_blank"}. You have the option to remain anonymous and all responses will remain confidential. 
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw">@AmstatNews</a> for recognizing the importance of the gender spectrum, especially wrt the statistics classroom and study design.  I&#39;m really proud of this article with Jack Miller.  Also thanks to <a href="https://twitter.com/Miles_Ott?ref_src=twsrc%5Etfw">@Miles_Ott</a> !!<br> <a href="https://t.co/jlxMoVqWir">https://t.co/jlxMoVqWir</a></p>&mdash; Jo Hardin (@jo_hardin47) <a href="https://twitter.com/jo_hardin47/status/1101613988868055041?ref_src=twsrc%5Etfw">March 1, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+***
+
+
+
 # Lec 32: Mon 4/15
 
 ## Announcements
