@@ -74,13 +74,13 @@ Project:
 ### 1. Chalk talk
 
 * The `r emo::ji("confused")``r emo::ji("face_with_head_bandage")``r emo::ji("dizzy_face")``r emo::ji("exploding_head")``r emo::ji("scream")` statistical definitions, terminology, and notation for hypothesis testing.
-* Remember that at the root of all hypothesis testing, just like with confidence intervals, is  **sampling**!
-
+* Remember that at the root of all hypothesis testing, just like with confidence intervals, is  **sampling**!  
 <center>
-![](static/images/bowl.jpg){ width=400px }
+![](static/images/bowl.jpg){ width=350px }
 </center>
-
-</br>
+* The question is: in real-life where we take only one sample, how can we study the effects of sampling variation? Using resampling!
+    + Confidence intervals: bootstrap resampling **with** replacement
+    + Two-group hypothesis testing: permutation resampling **without** replacement. i.e. shuffle it!
 
 ### 2. In-class exercise
 
