@@ -73,7 +73,14 @@ Project:
 
 ### 1. Chalk talk
 
-The `r emo::ji("confused")``r emo::ji("face_with_head_bandage")``r emo::ji("dizzy_face")``r emo::ji("exploding_head")` statistical definitions/terminlogy behind hypothesis testing; in particular how hypothesis testing relates to **sampling**.
+* The `r emo::ji("confused")``r emo::ji("face_with_head_bandage")``r emo::ji("dizzy_face")``r emo::ji("exploding_head")``r emo::ji("scream")` statistical definitions, terminology, and notation for hypothesis testing.
+* Remember that at the root of all hypothesis testing, just like with confidence intervals, is  **sampling**!
+
+<center>
+![](static/images/bowl.jpg){ width=400px }
+</center>
+
+</br>
 
 ### 2. In-class exercise
 
