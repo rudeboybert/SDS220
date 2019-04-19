@@ -58,6 +58,39 @@ set.seed(76)
 ***
 
 
+# Lec 34: Fri 4/19
+
+## Announcements
+
+Project:
+
+* All feedback sessions have held.
+* Final instructions/template will be posted on Monday.
+* During final lab on Tue 4/30 you'll be working on project.
+* Note for those of you who did a log10-transformation of your outcome variable.
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+The `r emo::ji("confused")``r emo::ji("face_with_head_bandage")``r emo::ji("dizzy_face")``r emo::ji("exploding_head")` statistical definitions/terminlogy behind hypothesis testing; in particular how hypothesis testing relates to **sampling**.
+
+### 2. In-class exercise
+
+moderndive readings in schedule above. 
+
+### 3. Tweet of the Day
+
+For those of you who are Game of Thrones fans and are potentially interested in Machine Learning.
+
+<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">from the <a href="https://twitter.com/rstatsmemes?ref_src=twsrc%5Etfw">@rstatsmemes</a> facebook page, which is worth being on FB for: <a href="https://t.co/y1zBUYCe5h">pic.twitter.com/y1zBUYCe5h</a></p>&mdash; Jesse Mostipak (@kierisi) <a href="https://twitter.com/kierisi/status/1118144762173886466?ref_src=twsrc%5Etfw">April 16, 2019</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+
+***
+
+
 
 # Lec 33: Wed 4/17
 
@@ -71,7 +104,7 @@ set.seed(76)
 ### 1. Chalk talk
 
 * The intuition behind hypothesis testing.
-* (Time permitting) The statistical definitions/terminlogy behind hypothesis testing; in particular how hypothesis testing relates to sampling.
+* ~~(Time permitting) The statistical definitions/terminlogy behind hypothesis testing; in particular how hypothesis testing relates to sampling.~~
 
 ### 2. Tweet of the Day
 
