@@ -62,7 +62,7 @@ set.seed(76)
 ## Announcements
 
 * No office hours on Wednesday 4/24
-
+* Term project resubmission instructions posted under [Term Project](term_project.html#resubmission).
 
 
 ## Todays Topics/Activities  
