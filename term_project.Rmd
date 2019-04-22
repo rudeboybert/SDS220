@@ -217,6 +217,7 @@ Nothing this time.
     + There will be no problem set assigned that week.
 
 
+
 ## Items to submit
 
 **In order to receive full credit, all the following elements must be completed.** For example, many of you didn't submit your `.Rmd` files for the previous submission phase.
@@ -226,10 +227,15 @@ Nothing this time.
     1. The `project_resubmission.html` HTML report file.
     1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
 * All group members individually must:
-    1. Complete the "Group member peer assessment and SDS/MTH 220 exit survey" that will be posted here shortly.
+    1. Complete the "SDS/MTH 220 Exit Survey" Google Form that will be posted here shortly by the due date.
 
 
+## Rubric
 
+You term project is worth 30% of your final grade. The 30% is distributed as follows:
+
+1. 2.5%: Are all necessary files submitted and did you complete the "SDS/MTH 220 Exit Survey" Google Form?
+1. 27.5%: Based on this [guideline criteria](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&single=true){target="_blank"}. 
 
 
 
