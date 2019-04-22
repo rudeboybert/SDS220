@@ -193,7 +193,68 @@ Nothing this time.
 Nothing this time.
 
 
+
+***
+
+
+
+# 5. Resubmission due: Thu 5/2 5pm {#resubmission}
+
+## Action items
+
+* Read Jenny and Albert's example [project resubmission](static/term_project/resubmission_example.html){target="_blank"} again using Massachusetts public high school data. Note that it is identical to the "project submission" example from above but now with the following sections now completed: Sections 3.4 and 3.5 on inference for multiple regression and section 4 on conclusions, limitations, and future work.
+* Download the corresponding source <a href="static/term_project/resubmission_example.Rmd" download>`project_resubmission.Rmd`</a> R Markdown file.
+* Modify the example `project_submission.Rmd` to match your project. Note your contents will be different based on the nature of your data and any results.
+    + Move it to your `introstatsR` folder where your project work is saved.
+    + Knit it!
+* **Do the following**:
+    + Incorporate any feedback given to you during your screencast session.
+    + Complete Sections 3.4 and 3.5: Inference for multiple regression
+    + Complete Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
+* Attend lab on Tuesday April 30th.
+    + Be sure to attend the lab section where all your groupmates will be present.
+    + You will cover the template/example <a href="static/term_project/resubmission_example.Rmd" download>`project_resubmission.Rmd`</a> R Markdown file during the lab first, then the rest of lab period is devoted to working on this phase.
+    + There will be no problem set assigned that week.
+
+
+## Items to submit
+
+**In order to receive full credit, all the following elements must be completed.** For example, many of you didn't submit your `.Rmd` files for the previous submission phase.
+
+* Group leader only: On Moodle submit:
+    1. The `project_resubmission.Rmd` R Markdown file with sections 1, 2, 3.1-3.3 completed
+    1. The `project_resubmission.html` HTML report file.
+    1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
+* All group members individually must:
+    1. Complete the "Group member peer assessment and SDS/MTH 220 exit survey" that will be posted here shortly.
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
+
+1. Revise your work based on delivered feedback. 
+1. Complete remaining sections.
+1. Complete "Inference for multiple regression" and "Conclusion" sections.
+    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
+    + Perform a residual analysis.
+    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
+    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
+1. Group leader: Once the resubmission is complete
+    + Knit `Term_Project.Rmd` one final time.
+    + Republish to Rpubs.com
+    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
+1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
+
 
 ### 1. log10 transformations
 
@@ -303,39 +364,5 @@ You will be evaluated on the following criteria, which not only emphasizes the d
 1. The rest
     + Did you demonstrate effort and engagement during the semester long process?
 
-
--->
-
-
-
-***
-
-
-
-# 5. Resubmission due: Thu 5/2 5pm {#resubmission}
-
-## Example
-
-Here is an example resubmission that is subject to a few more cosmetic changes; I will post a final version after the "project submission" round is completed on Fri 4/5.
-
-* <a href="static/term_project/resubmission_example.Rmd" download>`resubmission_example.Rmd`</a> "source code" to create html report output. 
-* Resulting [HTML report](static/term_project/resubmission_example.html){target="_blank"} output.
-
-
-
-<!--
-
-1. Revise your work based on delivered feedback. 
-1. Complete remaining sections.
-1. Complete "Inference for multiple regression" and "Conclusion" sections.
-    + While you only need to present the results of one model in this term project, in this section make a brief mention why you chose one model over another.
-    + Perform a residual analysis.
-    + **Added on 12/10**: You do not need to perform any simulations of sampling/bootstrap/null distributions. You only need interpret the p-value and confidence interval columns of your regression table. 
-    + **Added on 12/10**: Use R Markdown footnotes for citations. For example, adding `^[Here is an example footnote.]` will add an automatically numbered footnote as seen here^[Here is an example footnote] and here^[Here is another example footnote]. Please use [MLA citation format](https://owl.purdue.edu/owl/research_and_citation/mla_style/mla_style_introduction.html){target="_blank"}.
-1. Group leader: Once the resubmission is complete
-    + Knit `Term_Project.Rmd` one final time.
-    + Republish to Rpubs.com
-    + **Added on 12/13** Post `Term_Project.Rmd` and all other necessary files on Moddle.
-1. **After your group has resubmitted the project** complete this Google Forms [survey](https://docs.google.com/forms/d/e/1FAIpQLSeEmiXTB6qIszAC5r3gLGmDuLQEYvrgRW-bRMezx6te7_7jpQ/viewform){target="_blank"}. 5% of your term project grade is based on completion of this survey. 
 
 -->

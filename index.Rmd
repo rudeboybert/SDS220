@@ -57,6 +57,30 @@ set.seed(76)
 
 ***
 
+# Lec 35: Mon 4/22
+
+## Announcements
+
+* No office hours on Wednesday 4/24
+
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+* 
+
+### 2. In-class exercise
+
+moderndive readings in schedule above. 
+
+
+
+
+***
+
+
 
 # Lec 34: Fri 4/19
 

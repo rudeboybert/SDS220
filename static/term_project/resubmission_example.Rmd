@@ -1,7 +1,7 @@
 
 ---
 title: "Predictive Factors of Math SAT Score in Massachusetts Public and Charter High Schools"
-author: "Albert and Jenny"
+author: "Jenny Smetzer & Albert Y. Kim"
 date: "Last updated on `r Sys.Date()`"
 output:
   html_document:
@@ -16,101 +16,51 @@ output:
 
 ```{r, include=FALSE}
 # Do not edit this code block/chunk
-knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE, fig.width = 16/2, fig.height = 9/2)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE, fig.width = 16/2.5, fig.height = 9/2.5)
 ```
 
 
-![](https://i2.wp.com/www.markstivers.com/cartoons/Stivers%2011-9-02%20SAT%20waiter.gif?zoom=2_
-https://i2.wp.com/www.markstivers.com/cartoons/Stivers%2011-9-02%20SAT%20waiter.gif?zoom=2_
-)
-
 ```{r}
+# Load all necessary packages here:
 library(ggplot2)
 library(dplyr)
 library(janitor)
 library(moderndive)
 library(readr)
-library(tidyr)
 library(knitr)
 ```
 
 ```{r}
-# Read in data. Follow these steps: 
-# https://twitter.com/rudeboybert/status/1055821833512071168
-ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyNqRVA950sdYa1QazAT-l0T7dl6pE5Ewvt7LkSm9LXmeVNbCbqEcrbygFmFyK4B6VQQGebuk9/pub?gid=1469057204&single=true&output=csv")
-
+# Copy over all your data wrangling code here:
+ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyNqRVA950sdYa1QazAT-l0T7dl6pE5Ewvt7LkSm9LXmeVNbCbqEcrbygFmFyK4B6VQQGebuk9/pub?gid=1469057204&single=true&output=csv") %>% 
+  # clean variable names
+  clean_names() %>% 
+  # This converts the numerical variable total_enrollment into a categorical one
+  # school_size by cutting it into three chunks:
+  mutate(school_size = cut_number(total_enrollment, n = 3)) %>% 
+  # For aesthetic purposes we changed the levels of the school_size variable to be
+  # small, medium, and large
+  mutate(school_size = recode_factor(school_size, 
+                                     "[0,341]" = "small", 
+                                     "(341,541]" = "medium", 
+                                     "(541,4.26e+03]" = "large")) %>% 
+  # Next we filtered to only include schools that had 11th and 12th grade
+  # students. We do this because students in the 11th and 12th grade take the math
+  # SAT.
+  filter(x11_enrollment > 0 & x12_enrollment > 0) %>% 
+  # select only the variables we need. Note the order in which we select:
+  select(school_name, average_sat_math, percent_economically_disadvantaged, school_size) %>% 
+  # Remove the 5 rows corresponding to schools that had missing data for average_sat_math
+  filter(!is.na(average_sat_math))
 ```
 
-```{r, eval = FALSE}
-# Preview your data using glimpse(). Note:
-# * The output of this code chunk does not show since eval = FALSE, meaning
-# "do not evaluate i.e. run this code chunk"
-# * View() will cause R Markdown to not knit
-glimpse(ma_schools)
-```
-
-```{r}
-# Data wrangling
-
-# This selects fewer variables for now, to make the "wrangling" easier
-ma_schools_categ <- ma_schools %>%
-  select("School Name",
-         "11_Enrollment",
-         "12_Enrollment",
-         "TOTAL_Enrollment",
-         "Economically Disadvantaged",
-         "% Economically Disadvantaged",
-         contains("SAT"))
-
-# This cleans up the names of the variables using the janitor package's 
-# clean_names() function. See: 
-# https://twitter.com/rudeboybert/status/963504925744488450
-ma_schools_categ<- ma_schools_categ %>% 
-  clean_names() 
-
-# This converts the numerical variable total_enrollment into categorical by 
-# "cutting" into three chunks. Then for aesthetic purposes change the school 
-# size category names to: Small, Medium, and Large
-ma_schools_categ <- ma_schools_categ %>% 
-  mutate(school_size = cut_number(total_enrollment, n=3)) %>%
-  mutate(size = recode_factor(school_size, 
-                              "[0,341]" = "Small",
-                              "(341,541]" = "Medium",
-                              .default = "Large"))
-
-# Next we filter the rows to only include schools that had 11th and 12th grade students
-ma_schools_categ <- ma_schools_categ %>%
-  filter(x11_enrollment > 0 & x12_enrollment > 0)
-
-# Here we select our identification, outcome, and explanatory variables
-high_schools_data <- ma_schools_categ %>%
-  select("school_name", contains("sat"), "percent_economically_disadvantaged", "size")
-
-# Here we convert our "wide" data set into a "tidy" AKA tall one using the 
-# gather() function from the tidyr pacakge. See moderndive chapter 4 for more 
-# details. We gathered the three SAT test columns into rows, under the column 
-# name "sat_type" and "score"
-high_schools_data_sat <-gather(high_schools_data, "sat_type", "score", 3:5)%>%
-  filter(sat_type == "average_sat_math")
-
-# Here is the final, cleaned, tidy data set with the ID variable, 
-# outcome variable, numeric x, categorical x
-high_schools_data_sat <- high_schools_data_sat %>% 
-  select(school_name, score, percent_economically_disadvantaged, size)
-```
-
-Here is a snapshot of the first 5 rows of the data we'll use:
-
-```{r}
-# Output a preview in RMarkdown of only the first 5 rows using dplyr's slice()
-# function
-high_schools_data_sat %>% 
-  slice(1:5)
-```
 
 
 ***
 
+
+
+![](https://i2.wp.com/www.markstivers.com/cartoons/Stivers%2011-9-02%20SAT%20waiter.gif?zoom=2_){ width=400px }
 
 # 1. Introduction 
 
@@ -120,18 +70,29 @@ To address this question, we used a data set from Kaggle that compiled informati
 
 Unfortunately, the data does not contain overall SAT scores, only averaged Math and Verbal and Writing SAT scores for each school. After doing an exploratory data analysis, we saw that these three sub-types demonstrated similar trends. Therefore, we decided to focus solely on the Math SAT score (out of 800 points) as our outcome variable in order to make this report more concise. We included two explanatory variables in this analysis: the percent of students in a school that are considered economically disadvantaged, and school size, with three levels, "small" (< 342 students), "medium" (342-541 students), and "large" (> 541 students). 
 
+Here is a snapshot of 5 randomly chosen rows of the data set we'll use:
+
+```{r}
+ma_schools %>% 
+  sample_n(5)
+```
+
+
 
 ***
 
 
+
 # 2. Exploratory data analysis
 
-We had a sample size of 390 high schools; however, since 58 of these had missing SAT scores, our total sample size was `r 390-58` (Table 1). The mean of the average SAT scores was greatest for large schools ($n = 238$, $\bar{x} = 517.5$, $sd = 56.2$), intermediate for medium schools ($n = 74$, $\bar{x} = 483.3$, $sd = 58.7$), and lowest for small schools ($n = 78$, $\bar{x} = 478.0$, $sd = 77.4$). In MA in 2017, the average percentage of economically disadvantaged students in schools was 31 % ($SD = 21.74), 
+We had an original sample size of 390 high schools. However since 58 of these had missing SAT scores, we dropped these from consideration. Unfortuanately, no information was provided as to why some schools had missing values and most didn't, so we cannot comment on the impact dropping these missing cases has on our results. 
 
-The percentage of students that were considered economically disadvantaged ranged from 3.1% to a shockingly high 93.9% ($\bar{x} = 31.6$, $sd = 21.7$). 
+Our total sample size was 332 (Table 1). The mean of the average SAT scores was greatest for large schools (n = 238, $\bar{x}$ = 517.5, sd = 56.2), intermediate for medium schools (n = 74, $\bar{x}$ = 483.3, sd = 58.7), and lowest for small schools (n = 78, $\bar{x}$ = 478.0, sd = 77.4). In MA in 2017, the average percentage of economically disadvantaged students in schools was 31 % (sd = 21.74), 
 
-```{r}
-high_schools_data_sat %>% 
+The percentage of students that were considered economically disadvantaged ranged from 3.1% to a shockingly high 93.9% ($\bar{x}$ = 31.6, sd = 21.7). 
+
+```{r include = F}
+ma_schools %>% 
   summarize(min = min(percent_economically_disadvantaged), 
             max = max(percent_economically_disadvantaged), 
             mean = mean(percent_economically_disadvantaged), 
@@ -144,58 +105,53 @@ high_schools_data_sat %>%
 
 Table 1. Summary statistics of average Math SAT scores for small, medium and large high schools in the State of Massachusetts in 2017.
 
-```{r }
-high_schools_data_sat %>% 
-  group_by(size) %>% 
+```{r}
+ma_schools %>% 
+  group_by(school_size) %>% 
   summarize(n = n(), 
-            xbar = mean(score, na.rm = T), 
-            Mdn = median(score, na.rm = T), 
-            sd = sd(score, na.rm = T), 
-            min = min(score, na.rm = T), 
-            max = max(score, na.rm = T)) %>% 
-  kable(digits = 2)
+            mean = mean(average_sat_math, na.rm = T), 
+            median = median(average_sat_math, na.rm = T), 
+            sd = sd(average_sat_math, na.rm = T), 
+            min = min(average_sat_math, na.rm = T), 
+            max = max(average_sat_math, na.rm = T))
 ```
 
 ***
 
-
-Since the data were not skewed, and looked normally distributed we did not do any transformations (Fig. 1). We did notice a potential outlier around a score of 750, which is something to consider throughout our analysis.
+Looking at the distribution of Average Math SAT score in Figure 1, it does not appear to be skewed and thus we did not apply any transformations. We did notice a potential outlier around a score of 750, which is something to consider throughout our analysis.
 
 ```{r, fig.cap = "Figure 1. Distribution of average Math SAT scores in the State of Massachusetts in 2017", fig.align = "center"}
-ggplot(high_schools_data_sat, aes(x = score)) +
+ggplot(ma_schools, aes(x = average_sat_math)) +
   geom_histogram(binwidth = 30, color = "white", fill = "steelblue") +
   labs(x = "Average Math SAT Score", y = "Frequency") 
 ```
 
-We generated a scatterplot to see the relationship between our numerical explanatory variable, percentage of economically disadvantaged students, and our numerical outcome variable, Math SAT score (Fig. 2). As the percentage of economically disadvantaged students increased, there was an associated decrease in Math SAT score. Reflecting this we calculated a correlation coefficient of -0.83. 
+In Figure 2, we generated a scatterplot to see the overall relationship between our numerical outcome variable Math SAT score and our numerical explanatory variable percentage of economically disadvantaged students. As the percentage of economically disadvantaged students increased, there was an associated decrease in Math SAT score. Consistent with this relationship is this is negative correlation coefficient of -0.83. 
 
-```{r}
-high_schools_data_sat %>%  
-  filter(!is.na(score)) %>%
-  summarize(cor(score, percent_economically_disadvantaged))
+```{r include = F}
+ma_schools %>%  
+  summarize(cor(average_sat_math, percent_economically_disadvantaged))
 ```
 
-```{r, fig.cap = "Figure 2. Scatterplot illustrating the relationship between Percentage of Economically Disadvantaged Students and Math SAT Score in MA Schools in 2017", fig.align = "center"}
-
-#Scatterplot of %Disadvantaged vs. Score
-ggplot(high_schools_data_sat, aes(x = percent_economically_disadvantaged, y = score))+
+```{r, fig.cap = "Figure 2. Scatterplot of relationship between Math SAT score and percentage of study body that is economically disadvantaged in MA Schools in 2017.", fig.align = "center"}
+ggplot(ma_schools, aes(x = percent_economically_disadvantaged, y = average_sat_math))+
   geom_point() +
   geom_smooth(method = "lm", se = FALSE ) +
   labs(y = "Math SAT Score", x = "Percentage of Economically Disadvantaged Students")
 ```
 
-The Math SAT scores look to be the greatest at larger schools, and the lowest at smaller schools, though the difference does not seem to be extreme (Fig. 3). There appear to be some potential outliers.  In particular, there is one small school with a very high average SAT score. Small schools also have the largest interquartile range (Fig. 3).
+Looking at Figure 3, which displays the relationship between our numerical outcome variable Math SAT score and our categorical explanatory variable school size, the Math SAT scores look to be the greatest at larger schools, and the lowest at smaller schools, though the difference does not seem to be extreme. Furthemore, there appear to be some potential outliers. In particular, there is one small school with a very high average SAT score. Small schools also have the largest variation in Math SAT scores as evidenced by the largest interquartile range.
 
-```{r, fig.cap = "Figure 3. Boxplot showing Math SAT score for each school size category", fig.align = "center"}
-ggplot(high_schools_data_sat, aes(x = size, y = score)) +
+```{r, fig.cap = "Figure 3. Boxplot of relationship between Math SAT score and school size category  in MA Schools in 2017", fig.align = "center"}
+ggplot(ma_schools, aes(x = school_size, y = average_sat_math)) +
   geom_boxplot(fill = c("sienna", "darkgreen", "steelblue")) +
   labs(y = "Math SAT Score", x = "School Size")
 ```
 
-Finally, we generated a scatterplot of SAT score against percent of economically disadvantaged students split by school size (Fig. 4).  The slopes of the lines of each size school appear to be fairly similar, and parallel. There does not appear to be a need to include an interaction effect in our model. 
+Finally, we generated a colored scatterplot displaying the relationship between all three variables at once in Figure 4.  While this plot corresponds to an interaction model where we allow for each regression line corresponding to each school size to have a different slope, we observe that the slopes appear to be fairly similar, and thus the regression lines are roughly parallel. The additional complexity of the interaction model model thus appears to not be warranted, and thus we will favor the simpler "parallel slopes" model in our regression analysis. 
 
-```{r, fig.cap = "Figure 4. Scatterplot illustrating the relationship between Percentage of Economically Disadvantaged Students and Math SAT Score in MA Schools of different sizes in 2017", fig.align = "center"}
-ggplot(high_schools_data_sat, aes(x = percent_economically_disadvantaged, y = score, color = size))+
+```{r, fig.cap = "Figure 4. Colored scatterplot of relationship between Math SAT score and both percentage of study body that is economically disadvantaged and school size in MA Schools in 2017.", fig.align = "center"}
+ggplot(ma_schools, aes(x = percent_economically_disadvantaged, y = average_sat_math, color = school_size))+
   geom_point() +
   geom_smooth(method = "lm", se = FALSE ) +
   labs(y = "Math SAT Score", x = "Percentage of Economically Disadvantaged Students")
@@ -213,29 +169,21 @@ ggplot(high_schools_data_sat, aes(x = percent_economically_disadvantaged, y = sc
 
 The components of our multiple linear regression model are the following:
 
-* Outcome variable = Math SAT score
-* Explanatory numerical variable = Percentage of students who are economically disadvantaged
-* Explanatory categorical variable = School size
+* Outcome variable $y$ = Average Math SAT score
+* Numerical explanatory variable $x_1$ = Percentage of students who are economically disadvantaged
+* Categorical explanatory variable $x_2$ = School size
 
-We will use multiple linear regression to test two different null hypotheses. The first null hypothesis is that there is no relationship between the percentage of economically disadvantaged students and Math SAT score at the population level (the population slope is zero).
-
-$$\begin{aligned} H_0:&\beta_{prct} = 0 \\\ \mbox{vs }H_A:& \beta_{prct} \neq 0 \end{aligned}$$
-
-The second null hypothesis that we are testing is that there is no relationship between school size and Math SAT score at the population level. 
-
-$$\begin{aligned} H_0:&\mu_{small} = \mu_{med} = \mu_{large} \\\ \mbox{vs }H_A:& \mu_{small} \neq \mu_{med} \neq \mu_{large}  \end{aligned}$$
-
-We did not include an interaction effect because the slopes appear to be reasonably parallel (Fig. 4).
+where the unit of analysis is high school, given that each row in our dataset corresponds to a unique high school. As discussed earlier, we did not include an interaction effect because the slopes appear to be reasonably parallel in Figure 4. 
 
 
 ## 3.2 Model Results
 
 ***
 
-Table 2. Parallel slopes model relating Math SAT score to school size, and percentage of economically disadvantaged students.
+Table 2. Regresstion table of parallel slopes model of average Math SAT as a function of percentage of economically disadvantaged student and school size.
  
 ```{r}
-math_model <- lm(score ~ percent_economically_disadvantaged + size, data = high_schools_data_sat)
+math_model <- lm(average_sat_math ~ percent_economically_disadvantaged + school_size, data = ma_schools)
 get_regression_table(math_model)
 ```
 
@@ -243,32 +191,76 @@ get_regression_table(math_model)
 
 ## 3.3 Interpreting the regression table
 
-The intercept ($\beta_0 = 88.19$) represents the Math SAT score when zero percent of the students are said to be economically disadvantaged and the school size is small (Table 2). The estimate for the percent_economically_disadvantaged ($\beta_ {prct} = -2.77$) is the associated change in score depending on the percentage of economically disadvantaged students. Based on this estimate, for every 1% increase in the percent of economically disadvantaged students in a school, MATH SAT scores went down on average by 2.78 points. The estimate for sizeMedium ($\beta_ {med} = -11.91$) and sizeLarge ($\beta_ {large} = -6.36$) are the offsets in intercept relative to the baseline group's, sizeSmall, intercept (Table 2). 
-
 The regression equation for Math SAT score is the following:
 
-$$ \begin{aligned}\widehat {score} = & \beta_ {0} + \beta_ {prct} \times percent\_economically\_ disadvantaged + \beta_ {med} \times 1_{is\ med} + \beta_ {large} \times 1_ {is\ large} \\\ \widehat {score}=& 588.19 - 2.78 \times percent\_ economically\_ disadvantaged - 11.91 \times 1_{is\ med} - 6.36 \times 1_ {is\ large} \end{aligned} $$
+$$
+\begin{aligned}\widehat {score} =& b_{0} + b_{prct} \cdot prct + b_{med} \cdot 1_{is\ med}(x_2) + b_{large} \cdot 1_{is\ large}(x_2) \\
+ =& 588.190 - 2.777 \cdot prct - 11.913 \cdot 1_{is\ med}(x_2) - 6.362 \cdot 1_{is\ large}(x_2)
+\end{aligned} 
+$$
+
+* The intercept ($b_0$ = 588.190) represents the Math SAT score when zero percent of the students are said to be economically disadvantaged and the school size is small (Table 2).
+* The estimate for the slope for percent economically disadvantaged ($b_{prct}$ = -2.777) is the associated change in average Math SAT score depending on the percentage of economically disadvantaged students. Based on this estimate, for every one percentage point increase in the percent of economically disadvantaged students in a school, there was an associted decrease in Math SAT scores of on average 2.777 points.
+* The estimate for sizeMedium ($b_{med}$ = -11.913) and sizeLarge ($b_{large}$ = -6.36) are the offsets in intercept relative to the baseline group's, sizeSmall, intercept (Table 2). In other words, on average medium schools score 11.913 points lower than small schools while large schools scored on average 6.362 lower.
+
+Thus the three regression lines have equations:
+
+$$
+\begin{aligned}
+\text{Small schools (in red)}: \widehat {score} =& 588.190 - 2.777 \cdot prct\\
+\text{Medium schools (in green)}: \widehat {score} =& 576.277 - 2.777 \cdot prct\\
+\text{Large schools (in blue)}: \widehat {score} =& 581.828 - 2.777 \cdot prct
+\end{aligned} 
+$$
 
 
 ## 3.4 Inference for multiple regression
 
-There was a significant negative relationship between the percent of economically disadvantaged students and mean SAT score for schools ($\beta_{prct} = -2.77$, $p < 0.001)$, Table 2). Reflecting this, the 
-95% confidence interval for $\beta_{prct}$  (-2.99, -2.57) did not include zero. At an $\alpha = 0.05$ we can reject the null hypothesis that economic disadvantage has no effect on Math SAT score at the population level. 
+Using the output of our regression table we'll test two different null hypotheses.  The first null hypothesis is that there is no relationship between the percentage of economically disadvantaged students and Math SAT score at the population level (the population slope is zero).
 
-SAT scores were lower in medium schools compared to small schools; however, this difference was not statistically significant ($\beta_{med} = -11.91$, $p = 0.12$, Table 2). Reflecting this, the 95% confidence interval for $\beta_{med}$ overlaps zero (-26.74, 2.91). SAT scores were also lower in large schools compared to small schools; however, this difference was not statistically significant ($\beta_{lg} = -6.36$, $p = 0.36$, Table 2). Reflecting this, the 95% confidence interval for $\beta_{large}$ overlaps zero (-19.98,	7.26, Table 2). Therefore, at an $\alpha = 0.05$ we we fail to reject the null hypothesis that school size has no effect on Math SAT score. 
+$$\begin{aligned} H_0:&\beta_{prct} = 0 \\\ \mbox{vs }H_A:& \beta_{prct} \neq 0 \end{aligned}$$
+
+There appears to be a negative relationship between the percent of economically disadvantaged students and mean SAT score for schools $b_{prct}$ = -2.77. Furthermore, this appears to be a meaningful relationship since in Table 2 we see 
+
+* the 95% confidence interval for the population slope $\beta_{prct}$ is (-2.986, -2.568), entirely on the negative side
+* the p-value $p < 0.001$ is rather small, so we reject the null hypothesis $H_0$ that $\beta_{prct} = 0$ in favor of the alternative $H_A$ that $\beta_{prct}$ is indeed not 0 and negative. 
+
+So taking into account potential sampling variation in results (for example if we collected similar data but for a different year or for a different nearby state for example) the relationship does appear to be negative. 
+
+The second set of null hypotheses that we are test are that all the differences in intercept for the non-baseline groups (medium and large schools) are zero. 
+
+$$
+\begin{aligned}
+H_0:& \beta_{med} = 0\\
+\mbox{vs }H_A:& \beta_{med} \neq 0
+\end{aligned}
+$$
+and
+$$
+\begin{aligned} 
+H_0:& \beta_{large} = 0\\
+\mbox{vs }H_A:& \beta_{large} \neq 0
+\end{aligned}
+$$
+
+In other words "is the intercept for the small schools equal to the intercepts for the medium schools or not?" As well as "is the intercept for the small schools equal to the intercepts for the large schools or not?" While both observed differences in intercept were negative ($b_{med}$ = -11.913 and $b_{large}$ = -6.362) we observe in Table 2 that 
+
+* the 95% confidence intervals for the population difference in intercept $\beta_{med}$ and $\beta_{large}$ both include 0: (-26.736, 2.909) and (-19.981, 7.258) respectively. So it is plausible that the difference of both intercepts are zero, hence it is plausible that all intercepts are the same.
+* The respective p-values are fairly large (0.115 and 0.359), so we fail to reject both null hypothesis that they are 0.
+
+So it appears the differences in intercept are not meaninfully different from 0, and hence all three intercepts are roughly equal. This consistent with our observations from the visualization of the three regression lines in Figure 4.
+
 
 ## 3.5 Residual Analysis
 
-We conducted a residual analysis to see if there was any systematic pattern of residuals for the statistical model we rand.  
+We conducted a residual analysis to see if there was any systematic pattern of residuals for the statistical model we ran. Because if there are systematic patterns, then we cannot fully trust our confidence intervals and p-values above. 
 
-```{r, fig.cap = "Figure 5. Distribution of residuals for statistical model", fig.align = "center"}
+```{r, fig.cap = "Figure 5. Histogram of residuals for statistical model", fig.align = "center"}
 regression_points <- get_regression_points(math_model)
 ggplot(regression_points, aes(x = residual)) +
   geom_histogram(binwidth = 20, color = "white", fill = "steelblue")+
   labs(x = "Residual")
 ```
-
-<br> 
 
 ```{r, fig.cap = "Figure 6. Scatterplots of residuals against the numeric explanatory variable.", fig.align = "center"}
 ggplot(regression_points, aes(x = percent_economically_disadvantaged, y = residual)) +
@@ -277,19 +269,16 @@ ggplot(regression_points, aes(x = percent_economically_disadvantaged, y = residu
   geom_hline(yintercept = 0, col = "blue", size = 1)
 ```
 
-<br> 
-
 ```{r, fig.cap = "Figure 7. Scatterplots of residuals against the fitted values.", fig.align = "center"}
-ggplot(regression_points, aes(x = score_hat, y = residual)) +
+ggplot(regression_points, aes(x = average_sat_math_hat, y = residual)) +
   geom_point() +
   labs(x = "Fitted Values", y = "Residual") +
   geom_hline(yintercept = 0, col = "blue", size = 1)
 ```
 
-<br> 
 
 ```{r, fig.cap = "Figure 8. Boxplot of residuals for each school size.", fig.align = "center"}
-ggplot(regression_points, aes(x = size, y = residual)) +
+ggplot(regression_points, aes(x = school_size, y = residual)) +
   geom_boxplot(fill = c("sienna", "darkgreen", "steelblue")) +
   labs(x = "School size", y = "Residual") +
   geom_hline(yintercept = 0, col = "blue", size = 1)
@@ -297,30 +286,13 @@ ggplot(regression_points, aes(x = size, y = residual)) +
 
 The model residuals were normally distributed, though there was one potential outlier (Fig. 5). There are not any systematic patterns to either of the scatterplots (Fig 6 & 7). There is, however, one clear outlier around 5% in Figure 6 and at a very high mean SAT score in Figure 7. The boxplots show a very even spread of residuals at each school size, and similar values across the different school sizes. However, there is again, one particularly extreme outlier in the small school group (Fig. 8). We conclude that the assumptions for inference in multiple linear regression are well met. However, it might be worthwhile to look at whether the outlier with the very high scoring small school (MA Academy for Math and Science School) had a very large influence on the conclusions. 
 
-We quickly re-ran the model with the very high scoring small school removed (Table 3). We would again reject the first null hypothesis, and not reject the second. The data again supports a significant negative relationship between the percent of economically disadvantaged students and Math SAT scores. Thus we assumed that this outlier did not have an extreme influence on our results. 
-
-
-***
-
-Table 3. Parallel slopes model relating Math SAT score to school size, and percentage of economically disadvantaged students, with the outlier of the MA Academy for Math and Science School removed. 
-
-```{r}
-data_subset <- high_schools_data_sat %>% 
-  filter(score != 741)
-
-math_model2 <- lm(score~ percent_economically_disadvantaged + size, data = data_subset)
-get_regression_table(math_model2)
-```
-
-***
-
 
 
 # 4. Discussion 
 
 ## 4.1 Conclusions
 
-We found that there was no significant difference in Math SAT scores at different sized schools, but that as the percentage of economically disadvantaged students increased, the scores decreased significantly. On average, Math SAT scores decreased by approximately 3 points for every 1% increase in percentage of economically disadvantaged students. This however does not necessarily mean that economic disadvantage *causes* lower test scores. We were surprised to find that school size did not have a significant influence on SAT scores. We expected to see higher SAT scores in small schools, assuming that students could get more one-on-one attention from teachers. 
+We found that there was no significant difference in Math SAT scores at different sized schools, but that as the percentage of economically disadvantaged students increased, the scores decreased significantly. On average, Math SAT scores decreased by on average 3 points for every one unit increase in the percentage of economically disadvantaged students. This however does not necessarily mean that economic disadvantage *causes* lower test scores, merely that they are associated. We were surprised to find that school size did not have a significant influence on SAT scores. We expected to see higher SAT scores in small schools, assuming that students could get more one-on-one attention from teachers. 
 
 Overall, these results suggest that the economic well being of families is a factor in academic success. Our findings are consistent with previous studies showing that found wealth is correlated to SAT scores in the US^[Goldfarb, Zacchary. _These four charts show how the SAT favors rich, educated families_. Washington Post. March 2014. https://www.washingtonpost.com/news/wonk/wp/2014/03/05/these-four-charts-show-how-the-sat-favors-the-rich-educated-families/?noredirect=on&utm_term=.aac2fb6c0f32].  In order to mitigate this, we believe that there should be more support systems in schools with higher percentages of economically disadvantaged students. These could include free SAT prep courses or college readiness programs. Furthermore, programs that help remove barriers to education (transportation, hunger, etc.) may benefit overall student learning, and outcomes. The trends found in this analysis are important because SAT scores are a factor for college acceptances, which in our current society is a often a prerequisite for higher paying jobs.
 
