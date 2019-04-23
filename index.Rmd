@@ -29,6 +29,7 @@ library(babynames)
 library(scales)
 library(moderndive)
 library(here)
+library(kableExtra)
 # devtools::install_github("hadley/emo")
 library(emo)
 # devtools::install_github("thomasp85/patchwork")
@@ -57,6 +58,96 @@ set.seed(76)
 
 ***
 
+
+
+# Lec 37: Fri 4/26
+
+## Announcements
+
+* 
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+Inference for regression. In other words sampling scenarios 5 & 6 from **moderndive Table 8.6**:
+
+```{r, echo=FALSE, message=FALSE, eval=TRUE}
+"https://docs.google.com/spreadsheets/d/e/2PACX-1vRd6bBgNwM3z-AJ7o4gZOiPAdPfbTp_V15HVHRmOH5Fc9w62yaG-fEKtjNUD2wOSa5IJkrDMaEBjRnA/pub?gid=0&single=true&output=csv" %>% 
+  read_csv(na = "") %>% 
+  kable(
+    booktabs = TRUE,
+    escape = FALSE
+  ) %>% 
+  kable_styling(font_size = ifelse(knitr:::is_latex_output(), 10, 16),
+                latex_options = c("HOLD_position")) %>%
+  column_spec(1, width = "0.5in") %>% 
+  column_spec(2, width = "0.7in") %>%
+  column_spec(3, width = "1in") %>%
+  column_spec(4, width = "1.1in") %>% 
+  column_spec(5, width = "1in")
+```
+
+Recall from Chapter 6 our study of relationship between the following two variables for instructors of $n$ = 463 courses at the UT Austin:
+
+* $y$: instructor teaching score as given by students
+* $x$: instructor "beauty" score as "rated" by a panel of 6 students
+
+Recall our exploratory data visualization of the relationship in **moderndive Figure 6.4**:
+
+```{r, warning=FALSE, echo=FALSE, eval=TRUE}
+evals_ch6 <- evals %>%
+  select(ID, score, bty_avg, age)
+ggplot(evals_ch6, aes(x = bty_avg, y = score)) +
+  geom_point() +
+  labs(x = "Beauty Score", y = "Teaching Score", title = "Relationship between teaching and beauty scores") +  
+  geom_smooth(method = "lm", se = FALSE)
+```
+
+and the corresponding regression table in **moderndive Table 6.2**:
+
+```{r, echo=FALSE, eval=TRUE}
+score_model <- lm(score ~ bty_avg, data = evals_ch6)
+get_regression_table(score_model) %>%
+  knitr::kable(
+    digits = 3,
+    booktabs = TRUE
+  ) %>%
+  kable_styling(font_size = ifelse(knitr:::is_latex_output(), 10, 16),
+                latex_options = c("HOLD_position"))
+```
+
+
+
+
+***
+
+
+
+# Lec 36: Wed 4/24
+
+## Announcements
+
+* I will be absent on Friday. Guest lecturer: [Prof. Ben Capistrant](https://ssw.smith.edu/academics/faculty_detail/benjamin-capistrant){target="_blank"} from the Smith School of Social Work and current SDS/MTH 291 Multiple Regression instructor. 
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+* Interpreting hypothesis testing outcomes
+
+### 2. In-class exercise
+
+* moderndive readings in schedule above. 
+
+
+
+***
+
+
+
 # Lec 35: Mon 4/22
 
 ## Announcements
@@ -69,7 +160,7 @@ set.seed(76)
 
 ### 1. Chalk talk
 
-* 
+None
 
 ### 2. In-class exercise
 
