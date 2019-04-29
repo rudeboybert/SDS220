@@ -60,6 +60,75 @@ set.seed(76)
 
 
 
+# Lec 40: Thu 5/2
+
+## Announcements
+
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+* More practice problems for Midterm III
+
+### 2. In-class exercise
+
+* Wrap up term projects or work on practice midterm III
+
+
+
+***
+
+
+
+# Lec 39: Wed 5/1
+
+## Announcements
+
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+* Midterm III review
+* Practicing statistical inference (confidence tests & hypothesis tests) using mathematical formulas instead of computer simulation.
+
+### 2. In-class exercise
+
+* Wrap up term projects or work on practice midterm III
+
+
+
+***
+
+
+
+# Lec 38: Mon 4/29
+
+## Announcements
+
+* Office hours during reading/exam week by appointment. If someone has already booked a time you want to attend, please come anyways; the more the merrier! Book [here](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}
+* Practice Midterm III to be posted under [midterms](midterms.html#midtermIII) by Wednesday.
+
+
+## Todays Topics/Activities  
+
+### 1. Chalk talk
+
+* Conditions for inference for regression: last element needed for term project.
+
+### 2. In-class exercise
+
+moderndive readings in schedule above. 
+
+
+
+***
+
+
+
 # Lec 37: Fri 4/26
 
 ## Announcements
