@@ -71,6 +71,7 @@ set.seed(76)
 ### 1. Chalk talk
 
 * More practice problems for Midterm III
+* Interactive Normal and t-distribution calculator [Shiny App](https://gallery.shinyapps.io/dist_calc/){target="_blank"}
 
 ### 2. In-class exercise
 
@@ -93,7 +94,8 @@ set.seed(76)
 ### 1. Chalk talk
 
 * Midterm III review
-* Practicing statistical inference (confidence tests & hypothesis tests) using mathematical formulas instead of computer simulation.
+* Practicing statistical inference (confidence tests & hypothesis tests) via mathematical formulas using pen & paper instead of simulations using a computer.
+* Interactive Normal and t-distribution calculator [Shiny App](https://gallery.shinyapps.io/dist_calc/){target="_blank"}
 
 ### 2. In-class exercise
 
