@@ -118,6 +118,20 @@ set.seed(76)
 ### 1. Chalk talk
 
 * Conditions for inference for regression: last element needed for term project.
+* Simple regression example:
+
+```{r, eval=TRUE, echo=FALSE}
+example <- tibble(
+  x = c(0, 0.5, 1),
+  y = c(2, 1, 3)
+)
+ggplot(example, aes(x = x, y = y)) +
+  geom_smooth(method = "lm", se = FALSE, fullrange = TRUE) +
+  geom_point(size = 4)
+# model_example <- lm(y ~ x, data = example)
+# get_regression_table(model_example)
+```
+
 
 ### 2. In-class exercise
 
