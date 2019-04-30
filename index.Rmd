@@ -86,6 +86,16 @@ set.seed(76)
 
 ## Announcements
 
+* Exit survey [posted](term_project.html#to-submit). 2.5% of your final project grade is based on merely completing this exit survey.
+* In particular questions relating to use of Slack, as at the Symposium on Data Science and Statistics (SDSS) I'll be presenting ["Using Slack for Communication and Collaboration in the Classroom"](https://ww2.amstat.org/meetings/sdss/2019/onlineprogram/AbstractDetails.cfm?AbstractID=305068){target="_blank"}  
+</br>
+<center>
+<a href="https://ww2.amstat.org/meetings/sdss/2019/onlineprogram/Program.cfm?TrackID=28" target="_blank"><img border="1" src="static/events/SDSS.png" width="750px"></a>
+</center>
+</br>
+* FYI other SDS faculty will be presenting at SDSS as well:
+    + Prof. Katherine Kinnaird: ["Data Physicalizations: Where Art, Data, and Domain Applications Combine"](https://ww2.amstat.org/meetings/sdss/2019/onlineprogram/AbstractDetails.cfm?AbstractID=305072){target="_blank"}
+    + Prof. Miles Ott: ["Ethics in an Advanced Undergraduate Seminar: Statistical Analysis of Social Network Data"](https://ww2.amstat.org/meetings/sdss/2019/onlineprogram/AbstractDetails.cfm?AbstractID=305016){target="_blank"}
 
 
 ## Todays Topics/Activities  

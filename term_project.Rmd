@@ -218,7 +218,7 @@ Nothing this time.
 
 
 
-## Items to submit
+## Items to submit {#to-submit}
 
 **In order to receive full credit, all the following elements must be completed.** For example, many of you didn't submit your `.Rmd` files for the previous submission phase.
 
@@ -227,7 +227,13 @@ Nothing this time.
     1. The `project_resubmission.html` HTML report file.
     1. Only if you didn't publish your data as a `.csv` on Google Sheets because it has confidential/private information, then include the `.csv` or `.xlsx` spreadsheet file. 
 * All group members individually must:
-    1. Complete the "SDS/MTH 220 Exit Survey" Google Form that will be posted here shortly by the due date.
+    * Complete the "SDS/MTH 220 Exit Survey" Google Form. There are four sections:
+        1. Questions about you.
+        1. Peer evaluations for term project.
+        1. Questions about the use of Slack.
+        1. General questions about the course.
+    * You can find the exit survey [here](https://docs.google.com/forms/d/e/1FAIpQLSfgQk0Fq-Ft5id9XEqXKFlRd8Yf_1OazoaMjyCrw2oLA8ZkmA/viewform){target="_blank"}.    
+    
 
 
 ## Rubric
