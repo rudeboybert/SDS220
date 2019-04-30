@@ -33,7 +33,7 @@
 <style type="text/css" data-origin="pandoc">
 a.sourceLine { display: inline-block; line-height: 1.25; }
 a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+a.sourceLine:empty { height: 1.2em; position: absolute; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -46,11 +46,13 @@ code.sourceCode { white-space: pre-wrap; }
 a.sourceLine { text-indent: -1em; padding-left: 1em; }
 }
 pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
+  { position: relative; }
+pre.numberSource a.sourceLine:empty
+  { position: absolute; }
 pre.numberSource a.sourceLine::before
   { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    position: absolute; left: -5em; text-align: right; vertical-align: baseline;
+    border: none; pointer-events: all;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -525,6 +527,7 @@ h1{font-weight: 400;}
 <h3>1. Chalk talk</h3>
 <ul>
 <li>More practice problems for Midterm III</li>
+<li>Interactive Normal and t-distribution calculator <a href="https://gallery.shinyapps.io/dist_calc/" target="_blank">Shiny App</a></li>
 </ul>
 </div>
 <div id="in-class-exercise" class="section level3">
@@ -547,7 +550,8 @@ h1{font-weight: 400;}
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Midterm III review</li>
-<li>Practicing statistical inference (confidence tests &amp; hypothesis tests) using mathematical formulas instead of computer simulation.</li>
+<li>Practicing statistical inference (confidence tests &amp; hypothesis tests) via mathematical formulas using pen &amp; paper instead of simulations using a computer.</li>
+<li>Interactive Normal and t-distribution calculator <a href="https://gallery.shinyapps.io/dist_calc/" target="_blank">Shiny App</a></li>
 </ul>
 </div>
 <div id="in-class-exercise-1" class="section level3">
@@ -574,7 +578,9 @@ h1{font-weight: 400;}
 <h3>1. Chalk talk</h3>
 <ul>
 <li>Conditions for inference for regression: last element needed for term project.</li>
+<li>Simple regression example:</li>
 </ul>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -727,7 +733,7 @@ Fitted regression intercept
 <li><span class="math inline">\(x\)</span>: instructor “beauty” score as “rated” by a panel of 6 students</li>
 </ul>
 <p>Recall our exploratory data visualization of the relationship in <strong>moderndive Figure 6.4</strong>:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 <p>and the corresponding regression table in <strong>moderndive Table 6.2</strong>:</p>
 <table class="table" style="font-size: 16px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -1113,7 +1119,7 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, </a>
 <a class="sourceLine" id="cb4-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution + 95% confidence interval&quot;</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> conf_int, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -1155,7 +1161,7 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
 <a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -1213,7 +1219,7 @@ Handout of terminology & definitions
 <div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Resampling tactile exercise. Open this <a href="https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing" target="_blank">Google Sheet</a>. Resulting 35 sample means based on a resample of size 50 are here:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
 <hr />
 </div>
 </div>
@@ -1572,7 +1578,7 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <ul>
 <li>The “best” fitting regression line in blue</li>
 <li>An arbitrarily chosen line in dashed red</li>
-<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></li>
+<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></li>
 </ul></li>
 <li>Regression using a categorical explanatory variable</li>
 </ul>
@@ -1938,7 +1944,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </tbody>
 </table>
 <!--Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:-->
-<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="768" /></p>
 </div>
 <div id="in-class-exercise-26" class="section level3">
 <h3>2. In-class exercise</h3>
@@ -2324,7 +2330,7 @@ Now swithing from tactile to virtual resampling using `infer` package!
 
 <br>
 
-<img src="index_files/figure-html/unnamed-chunk-13-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-14-1.png" width="768" />
 
 
 ### 2. In-class exercise
@@ -2775,7 +2781,7 @@ Observational studies vs randomized experiments. In particular recall from PS04:
 </tbody>
 </table>
 
-</div><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="768" />
+</div><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" />
 
 ### 2. Tweet of the day
 
@@ -3245,7 +3251,7 @@ ggplot(evals, aes(x = score)) +
   labs(x = "Teaching score", title = "Fig 1: Teaching evaluation scores at UT Austin")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-16-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="768" />
 
 ```r
 # Seattle house prices (x-axis in original scale)
@@ -3255,7 +3261,7 @@ ggplot(house_prices, aes(x = price)) +
   labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-16-2.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-17-2.png" width="768" />
 
 ### 2. In-class exercise: R Markdown
 
@@ -3496,7 +3502,7 @@ ggplot(data = weather, mapping = aes(x = temp)) +
 ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(bins = 60, color = "white")
 ```
-<img src="index_files/figure-html/unnamed-chunk-19-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-20-1.png" width="768" />
 
 
 ### 2. Chalk Talk: Boxplots
@@ -3517,7 +3523,7 @@ Min. | 1t Qu. | Median  | 3rd Qu.  |  Max.
 
 Let's copare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-<img src="index_files/figure-html/unnamed-chunk-21-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-22-1.png" width="768" />
 
 
 ### 3. In-class exercise: ModernDive
