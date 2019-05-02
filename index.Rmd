@@ -71,11 +71,33 @@ set.seed(76)
 ### 1. Chalk talk
 
 * More practice problems for Midterm III
-* Interactive Normal and t-distribution calculator [Shiny App](https://gallery.shinyapps.io/dist_calc/){target="_blank"}
+* t-test example:
 
-### 2. In-class exercise
+```{r, eval = TRUE}
+library(tidyverse)
 
-* Wrap up term projects or work on practice midterm III
+# 1. Are these 10 values significantly different from 2?
+values <- data_frame(
+  x = c(3.192, 3.842, 5.423, 3.181, 4.317, 1.845, 3.079, 3.426, 2.561, 2.221)
+)
+
+# 2. Uhhh. Maybe? Let's visualize:
+ggplot(values, aes(x = x)) +
+  geom_histogram(bins = 4) +
+  geom_vline(xintercept = 2, col="red")
+
+# 3. What's the mean?
+values %>% 
+  summarize(mean_x = mean(x))
+
+# 4. Let's do this formally using the t-test!
+t.test(x = values$x, alternative = "two.sided", mu = 2)
+
+# 5. Let's plot the null distribution of the t-statistic!
+ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
+  stat_function(fun = dt, args = list(df = 9)) +
+  geom_vline(xintercept = 3.9756, col = "red")
+```
 
 
 
@@ -105,11 +127,7 @@ set.seed(76)
 
 * Midterm III review
 * Practicing statistical inference (confidence tests & hypothesis tests) via mathematical formulas using pen & paper instead of simulations using a computer.
-* Interactive Normal and t-distribution calculator [Shiny App](https://gallery.shinyapps.io/dist_calc/){target="_blank"}
 
-### 2. In-class exercise
-
-* Wrap up term projects or work on practice midterm III
 
 
 

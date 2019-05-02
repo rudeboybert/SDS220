@@ -498,7 +498,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Albert Y. Kim &amp; Jenny Smetzer</h4>
-<h4 class="date">Last updated on 2019-04-30</h4>
+<h4 class="date">Last updated on 2019-05-02</h4>
 
 </div>
 
@@ -527,14 +527,60 @@ h1{font-weight: 400;}
 <h3>1. Chalk talk</h3>
 <ul>
 <li>More practice problems for Midterm III</li>
-<li>Interactive Normal and t-distribution calculator <a href="https://gallery.shinyapps.io/dist_calc/" target="_blank">Shiny App</a></li>
+<li>t-test example:</li>
 </ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2"></a>
+<a class="sourceLine" id="cb1-3" data-line-number="3"><span class="co"># 1. Are these 10 values significantly different from 2?</span></a>
+<a class="sourceLine" id="cb1-4" data-line-number="4">values &lt;-<span class="st"> </span><span class="kw">data_frame</span>(</a>
+<a class="sourceLine" id="cb1-5" data-line-number="5">  <span class="dt">x =</span> <span class="kw">c</span>(<span class="fl">3.192</span>, <span class="fl">3.842</span>, <span class="fl">5.423</span>, <span class="fl">3.181</span>, <span class="fl">4.317</span>, <span class="fl">1.845</span>, <span class="fl">3.079</span>, <span class="fl">3.426</span>, <span class="fl">2.561</span>, <span class="fl">2.221</span>)</a>
+<a class="sourceLine" id="cb1-6" data-line-number="6">)</a>
+<a class="sourceLine" id="cb1-7" data-line-number="7"></a>
+<a class="sourceLine" id="cb1-8" data-line-number="8"><span class="co"># 2. Uhhh. Maybe? Let&#39;s visualize:</span></a>
+<a class="sourceLine" id="cb1-9" data-line-number="9"><span class="kw">ggplot</span>(values, <span class="kw">aes</span>(<span class="dt">x =</span> x)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-10" data-line-number="10"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">bins =</span> <span class="dv">4</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb1-11" data-line-number="11"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="dv">2</span>, <span class="dt">col=</span><span class="st">&quot;red&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># 3. What&#39;s the mean?</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">values <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">  </span><span class="kw">summarize</span>(<span class="dt">mean_x =</span> <span class="kw">mean</span>(x))</a></code></pre></div>
+<div class="kable-table">
+
+<table>
+<thead>
+<tr>
+<th style="text-align:right;">
+mean_x
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right;">
+3.3087
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div id="in-class-exercise" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Wrap up term projects or work on practice midterm III</li>
-</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># 4. Let&#39;s do this formally using the t-test!</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">t.test</span>(<span class="dt">x =</span> values<span class="op">$</span>x, <span class="dt">alternative =</span> <span class="st">&quot;two.sided&quot;</span>, <span class="dt">mu =</span> <span class="dv">2</span>)</a></code></pre></div>
+<pre><code>## 
+##  One Sample t-test
+## 
+## data:  values$x
+## t = 3.9756, df = 9, p-value = 0.003227
+## alternative hypothesis: true mean is not equal to 2
+## 95 percent confidence interval:
+##  2.564043 4.053357
+## sample estimates:
+## mean of x 
+##    3.3087</code></pre>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># 5. Let&#39;s plot the null distribution of the t-statistic!</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2"><span class="kw">ggplot</span>(<span class="kw">data.frame</span>(<span class="dt">x =</span> <span class="kw">c</span>(<span class="op">-</span><span class="dv">4</span>, <span class="dv">4</span>)), <span class="kw">aes</span>(<span class="dt">x =</span> x)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="st">  </span><span class="kw">stat_function</span>(<span class="dt">fun =</span> dt, <span class="dt">args =</span> <span class="kw">list</span>(<span class="dt">df =</span> <span class="dv">9</span>)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="fl">3.9756</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" width="768" /></p>
 <hr />
 </div>
 </div>
@@ -565,13 +611,6 @@ h1{font-weight: 400;}
 <ul>
 <li>Midterm III review</li>
 <li>Practicing statistical inference (confidence tests &amp; hypothesis tests) via mathematical formulas using pen &amp; paper instead of simulations using a computer.</li>
-<li>Interactive Normal and t-distribution calculator <a href="https://gallery.shinyapps.io/dist_calc/" target="_blank">Shiny App</a></li>
-</ul>
-</div>
-<div id="in-class-exercise-1" class="section level3">
-<h3>2. In-class exercise</h3>
-<ul>
-<li>Wrap up term projects or work on practice midterm III</li>
 </ul>
 <hr />
 </div>
@@ -594,9 +633,9 @@ h1{font-weight: 400;}
 <li>Conditions for inference for regression: last element needed for term project.</li>
 <li>Simple regression example:</li>
 </ul>
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in schedule above.</p>
 <hr />
@@ -747,7 +786,7 @@ Fitted regression intercept
 <li><span class="math inline">\(x\)</span>: instructor “beauty” score as “rated” by a panel of 6 students</li>
 </ul>
 <p>Recall our exploratory data visualization of the relationship in <strong>moderndive Figure 6.4</strong>:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" width="768" /></p>
 <p>and the corresponding regression table in <strong>moderndive Table 6.2</strong>:</p>
 <table class="table" style="font-size: 16px; margin-left: auto; margin-right: auto;">
 <thead>
@@ -844,7 +883,7 @@ bty_avg
 <li>Interpreting hypothesis testing outcomes</li>
 </ul>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in schedule above.</li>
@@ -868,7 +907,7 @@ bty_avg
 <h3>1. Chalk talk</h3>
 <p>None</p>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in schedule above.</p>
 <hr />
@@ -905,7 +944,7 @@ bty_avg
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in schedule above.</p>
 </div>
@@ -973,11 +1012,11 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <li>Imagine… a hypothetical world with no gender discrimination in hiring.</li>
 <li>In this hypothetical world, we can switch i.e. <strong>shuffle</strong> i.e. <strong>permute</strong> the (binary) <code>gender</code> variable in . Do this using this code to create a new variable <code>hypothetical</code></li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">library</span>(moderndive)</a>
-<a class="sourceLine" id="cb1-2" data-line-number="2"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3">promotions &lt;-<span class="st"> </span>promotions <span class="op">%&gt;%</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">hypothetical =</span> <span class="kw">sample</span>(gender, <span class="dt">replace =</span> <span class="ot">FALSE</span>))</a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">View</span>(promotions)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(moderndive)</a>
+<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb6-3" data-line-number="3">promotions &lt;-<span class="st"> </span>promotions <span class="op">%&gt;%</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">hypothetical =</span> <span class="kw">sample</span>(gender, <span class="dt">replace =</span> <span class="ot">FALSE</span>))</a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="kw">View</span>(promotions)</a></code></pre></div>
 <ul>
 <li>Fill in <a href="worksheet/Lec32.pdf" target="_blank">worksheet</a></li>
 <li><strong>Results</strong>:<br />
@@ -1021,7 +1060,7 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <li></li>
 </ul>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li></li>
@@ -1048,7 +1087,7 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <li>Two ways to compute SE.</li>
 </ul>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Note: As seen in moderndive 9.5, I still need to add <code>tactile_shovel_1</code> data frame to <code>moderndive</code> package.</li>
@@ -1081,7 +1120,7 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 </ol></li>
 </ul>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Read the following in moderndive:</p>
 <ul>
@@ -1120,22 +1159,22 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <li>moderndive 9.3: What is a confidence interval?</li>
 <li>moderndive 9.4: The resampling framework</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># New: Compute 2.5th and 97.5th percentiles</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5">conf_int &lt;-<span class="st"> </span><span class="kw">quantile</span>(bootstrap_distn<span class="op">$</span>sample_mean, <span class="dt">probs =</span> <span class="kw">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>), <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">conf_int</a></code></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb7-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb7-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb7-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb7-4" data-line-number="4"><span class="co"># New: Compute 2.5th and 97.5th percentiles</span></a>
+<a class="sourceLine" id="cb7-5" data-line-number="5">conf_int &lt;-<span class="st"> </span><span class="kw">quantile</span>(bootstrap_distn<span class="op">$</span>sample_mean, <span class="dt">probs =</span> <span class="kw">c</span>(<span class="fl">0.025</span>, <span class="fl">0.975</span>), <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</a>
+<a class="sourceLine" id="cb7-6" data-line-number="6">conf_int</a></code></pre></div>
 <pre><code>##     2.5%    97.5% 
 ## 1990.956 1998.699</code></pre>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, </a>
-<a class="sourceLine" id="cb4-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution + 95% confidence interval&quot;</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> conf_int, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb9-1" data-line-number="1"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-3" data-line-number="3"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, </a>
+<a class="sourceLine" id="cb9-4" data-line-number="4">       <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution + 95% confidence interval&quot;</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb9-5" data-line-number="5"><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> conf_int, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">1</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Read the following in moderndive:</p>
 <ul>
@@ -1170,14 +1209,14 @@ Thanks to <a href="https://twitter.com/AmstatNews?ref_src=twsrc%5Etfw"><span cla
 <li>Just like in Ch8 with sampling, we are going from “tactile resampling” by hand to “virtual resampling” using a computer!</li>
 </ul></li>
 </ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution&quot;</span>)</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb10-1" data-line-number="1"><span class="kw">library</span>(tidyverse)</a>
+<a class="sourceLine" id="cb10-2" data-line-number="2">bootstrap_distn &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/resample_means.csv&quot;</span>)</a>
+<a class="sourceLine" id="cb10-3" data-line-number="3"><span class="kw">ggplot</span>(bootstrap_distn , <span class="kw">aes</span>(<span class="dt">x =</span> sample_mean)) <span class="op">+</span></a>
+<a class="sourceLine" id="cb10-4" data-line-number="4"><span class="st">  </span><span class="kw">geom_histogram</span>(<span class="dt">binwidth =</span> <span class="fl">2.5</span>) <span class="op">+</span></a>
+<a class="sourceLine" id="cb10-5" data-line-number="5"><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;sample mean year&quot;</span>, <span class="dt">title =</span> <span class="st">&quot;Bootstrap resampling distribution&quot;</span>)</a></code></pre></div>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Read the following in moderndive:</p>
 <ul>
@@ -1230,10 +1269,10 @@ Handout of terminology & definitions
 <li>In real-life, when we have a single sample of size <span class="math inline">\(n\)</span> (and not 1000 like in our simulations), what do we do? Bootstrap <strong>re</strong>-sampling from the original sample!</li>
 </ul>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Resampling tactile exercise. Open this <a href="https://docs.google.com/spreadsheets/d/1y3kOsU_wDrDd5eiJbEtLeHT9L5SvpZb_TrzwFBsouk0/edit?usp=sharing" target="_blank">Google Sheet</a>. Resulting 35 sample means based on a resample of size 50 are here:</p>
-<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 <hr />
 </div>
 </div>
@@ -1263,7 +1302,7 @@ summary table of regression models
 Handout of terminology & definitions
 -->
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1291,7 +1330,7 @@ Handout of terminology & definitions
 <li>Sampling terminology, notation, and statistical definitions. Mastering these will take practice, practice, practice.</li>
 </ul>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1341,7 +1380,7 @@ And be mindful of the work you leave for others
 <li>Also, to update the contents of moderndive section 8.1.</li>
 </ul>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1452,7 +1491,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>Answer: In <a href="static/multiple_regression.html" target="_blank"><code>multiple_regression.html</code></a> report. You can download the <a href="static/multiple_regression.Rmd" download><code>multiple_regression.Rmd</code></a> R Markdown file as well if you are curious.</li>
 </ul>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1479,7 +1518,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li></li>
 </ul>
 </div>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li></li>
@@ -1509,7 +1548,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>Multiple regression</li>
 </ul>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1555,7 +1594,7 @@ Good news everyone! We’ve signed with <a href="https://twitter.com/CRCPress?re
 <li>What are fitted values and residuals when <span class="math inline">\(x\)</span> is categorical?</li>
 </ul>
 </div>
-<div id="in-class-exercise-18" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1592,22 +1631,22 @@ Yessss!!! Definitely looking forward to speaking with and learning from the amaz
 <ul>
 <li>The “best” fitting regression line in blue</li>
 <li>An arbitrarily chosen line in dashed red</li>
-<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></li>
+<li>Another arbitrarily chosen line in dashed green <img src="index_files/figure-html/unnamed-chunk-11-1.png" width="768" /></li>
 </ul></li>
 <li>Regression using a categorical explanatory variable</li>
 </ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb6-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
-<a class="sourceLine" id="cb6-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb6-4" data-line-number="4"><span class="co"># Example data for chalk talk</span></a>
-<a class="sourceLine" id="cb6-5" data-line-number="5">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb6-6" data-line-number="6">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>),</a>
-<a class="sourceLine" id="cb6-7" data-line-number="7">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb6-8" data-line-number="8">)</a>
-<a class="sourceLine" id="cb6-9" data-line-number="9"></a>
-<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="co"># Get regression table</span></a>
-<a class="sourceLine" id="cb6-11" data-line-number="11">model_example &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> example)</a>
-<a class="sourceLine" id="cb6-12" data-line-number="12"><span class="kw">get_regression_table</span>(model_example)</a></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb11-1" data-line-number="1"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb11-2" data-line-number="2"><span class="kw">library</span>(moderndive)</a>
+<a class="sourceLine" id="cb11-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb11-4" data-line-number="4"><span class="co"># Example data for chalk talk</span></a>
+<a class="sourceLine" id="cb11-5" data-line-number="5">example &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
+<a class="sourceLine" id="cb11-6" data-line-number="6">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Jenny&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>, <span class="st">&quot;Miles&quot;</span>),</a>
+<a class="sourceLine" id="cb11-7" data-line-number="7">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb11-8" data-line-number="8">)</a>
+<a class="sourceLine" id="cb11-9" data-line-number="9"></a>
+<a class="sourceLine" id="cb11-10" data-line-number="10"><span class="co"># Get regression table</span></a>
+<a class="sourceLine" id="cb11-11" data-line-number="11">model_example &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> example)</a>
+<a class="sourceLine" id="cb11-12" data-line-number="12"><span class="kw">get_regression_table</span>(model_example)</a></code></pre></div>
 <div class="kable-table">
 
 <table>
@@ -1710,7 +1749,7 @@ nameMiles
 </table>
 </div>
 </div>
-<div id="in-class-exercise-19" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Work on projects.</li>
@@ -1740,7 +1779,7 @@ nameMiles
 <li>What do we mean by “best” when we say that the regression line is the “best fitting” line?</li>
 </ul>
 </div>
-<div id="in-class-exercise-20" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1767,7 +1806,7 @@ nameMiles
 <li>Regression table via <code>get_regression_table()</code> and interpreting the regression line</li>
 </ul>
 </div>
-<div id="in-class-exercise-21" class="section level3">
+<div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1793,7 +1832,7 @@ nameMiles
 <li>Correlation coefficient</li>
 </ul>
 </div>
-<div id="in-class-exercise-22" class="section level3">
+<div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>moderndive readings in above schedule.</li>
@@ -1846,7 +1885,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </ul></li>
 </ul>
 </div>
-<div id="in-class-exercise-23" class="section level3">
+<div id="in-class-exercise-21" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -1873,7 +1912,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Computing summary statistics split by group using <code>group_by() %&gt;% summarize()</code></li>
 </ul>
 </div>
-<div id="in-class-exercise-24" class="section level3">
+<div id="in-class-exercise-22" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -1903,7 +1942,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Starting Data Wrangling: the pipe operator <code>%&gt;%</code> and <code>filter()</code> rows of a data frame.</li>
 </ul>
 </div>
-<div id="in-class-exercise-25" class="section level3">
+<div id="in-class-exercise-23" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>moderndive readings in above schedule.</p>
 <hr />
@@ -1958,9 +1997,9 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 </tbody>
 </table>
 <!--Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:-->
-<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-26" class="section level3">
+<div id="in-class-exercise-24" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>R Markdown:
@@ -1995,7 +2034,7 @@ Shout-out to people like me who like taking a look at even huge tables of raw da
 <li>Histograms to show <em>distribution</em> of a numerical variable.</li>
 </ul>
 </div>
-<div id="in-class-exercise-27" class="section level3">
+<div id="in-class-exercise-25" class="section level3">
 <h3>2. In-class exercise</h3>
 <ul>
 <li>Live demo: Some tips on workflow for in-class exercises.
@@ -2051,7 +2090,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <li>Scatterplots</li>
 </ul>
 </div>
-<div id="in-class-exercise-28" class="section level3">
+<div id="in-class-exercise-26" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>ModernDive readings for Lec03 in above schedule. Now that you’ve seen R Markdown in Lab 1:</p>
 <ul>
@@ -2093,7 +2132,7 @@ The BBC releases its ggplot toolkit, bbplot! <a href="https://t.co/TMLI2kTMJn">h
 <h3>1. Chalk Talk</h3>
 <p>Why chalk talks? Read the <a href="https://twitter.com/FieldNotesBrand" target="_blank">Field Notes</a> slogan.</p>
 </div>
-<div id="in-class-exercise-29" class="section level3">
+<div id="in-class-exercise-27" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>Why undirected in-class exercise time? People all learn at their own pace. What to do:</p>
 <ol style="list-style-type: decimal">
@@ -2344,7 +2383,7 @@ Now swithing from tactile to virtual resampling using `infer` package!
 
 <br>
 
-<img src="index_files/figure-html/unnamed-chunk-14-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" />
 
 
 ### 2. In-class exercise
@@ -2795,7 +2834,7 @@ Observational studies vs randomized experiments. In particular recall from PS04:
 </tbody>
 </table>
 
-</div><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" />
+</div><img src="index_files/figure-html/unnamed-chunk-16-1.png" width="768" />
 
 ### 2. Tweet of the day
 
@@ -3265,7 +3304,7 @@ ggplot(evals, aes(x = score)) +
   labs(x = "Teaching score", title = "Fig 1: Teaching evaluation scores at UT Austin")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-18-1.png" width="768" />
 
 ```r
 # Seattle house prices (x-axis in original scale)
@@ -3275,7 +3314,7 @@ ggplot(house_prices, aes(x = price)) +
   labs(x = "Price USD", title = "Fig 2.a): Seattle House Prices")
 ```
 
-<img src="index_files/figure-html/unnamed-chunk-17-2.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-18-2.png" width="768" />
 
 ### 2. In-class exercise: R Markdown
 
@@ -3516,7 +3555,7 @@ ggplot(data = weather, mapping = aes(x = temp)) +
 ggplot(data = weather, mapping = aes(x = temp)) +
   geom_histogram(bins = 60, color = "white")
 ```
-<img src="index_files/figure-html/unnamed-chunk-20-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-21-1.png" width="768" />
 
 
 ### 2. Chalk Talk: Boxplots
@@ -3537,7 +3576,7 @@ Min. | 1t Qu. | Median  | 3rd Qu.  |  Max.
 
 Let's copare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
 
-<img src="index_files/figure-html/unnamed-chunk-22-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-23-1.png" width="768" />
 
 
 ### 3. In-class exercise: ModernDive
