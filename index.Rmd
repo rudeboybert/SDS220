@@ -64,7 +64,8 @@ set.seed(76)
 
 ## Announcements
 
-
+* I will post solutions to Practice Midterm III by tomorrow.
+* I will be on Slack during reading week, so please post questions in `#questions` channel.
 
 ## Todays Topics/Activities  
 
