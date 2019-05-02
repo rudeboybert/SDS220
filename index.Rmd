@@ -64,7 +64,11 @@ set.seed(76)
 
 ## Announcements
 
-* I will post solutions to Practice Midterm III by tomorrow.
+* By tomorrow:
+    + I will post solutions to Practice Midterm III.
+    + Precise instructions for Midterm III.
+        1. For example: you will need a calculator.
+        1. Topics are Chapter 8-11.
 * I will be on Slack during reading week, so please post questions in `#questions` channel.
 
 ## Todays Topics/Activities  
