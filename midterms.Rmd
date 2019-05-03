@@ -156,22 +156,27 @@ data_frame(
 
 ## Administrative notes
 
-* **Between May 7-10, 2019**: See email titled "Self-Scheduled Final Exams May 7-10" sent on April 15th.
-* Self-scheduled exam [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
-    + Only print from macOS computers.
-    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
-* Exam length:
-    + You will be given 140 mins to complete it (including transit time to writing area), however it is timed with the goal that most students will complete it much sooner.
-    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
-    + All Office of Disability Services forms must be submitted before the midterm start time.
+* **Between Tuesday May 7th and Friday May 10th**: See email titled "Self-Scheduled Final Exams May 7-10" sent on April 15th.
 * Other details:
     + Closed-book, no internet, and individually completed.
     + Bring colored pencils.
     + Bring a calculator. Scientific calculators are acceptible, but smartphone calculators are not.
+* Office hours: Monday 5/6 from 1pm-5pm and Wednesday 5/8 from 10am-12pm and 1pm-3pm [**by appointment**](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If a particular slot is booked, please feel free to still come!
+* I will also be on Slack during reading week; please post questions in `#questions` channel.
 
 ## Topics
 
-* At least one question from Midterm II.
+* Lectures 20-40. 
+* ModernDive Chapters 8, 9, 10, and 11.
+* No DataCamp.
+* No coding questions.
+
+**Top priorities to study**:
+
+1. Midterm II solutions covered in Lecture 36: One question from Midterm III will be asked again
+1. Practice [Midterm III](static/exams/Midterm-III_practice.pdf){target="_blank"} solutions, in particular the ``Formatting is off'' question we covered in Lectures 39 and 40. This will give you the best sense of what types of questions you'll be asked: no coding questions, but rather conceptual and more pen/paper type questions. If there is anything you don't understand, refer back to class notes and the corresponding lab.
+1. ModernDive Section 8.5.2 Table 8.6 on the different sampling scenarios: Be able to generalize sampling and inference to all 6 scenarios.
+
 
 
 

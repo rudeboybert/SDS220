@@ -64,12 +64,7 @@ set.seed(76)
 
 ## Announcements
 
-* By tomorrow:
-    + I will post solutions to Practice Midterm III.
-    + Precise instructions for Midterm III.
-        1. For example: you will need a calculator.
-        1. Topics are Chapter 8-11.
-* I will be on Slack during reading week, so please post questions in `#questions` channel.
+* Information on Midterm III [posted](midterms.html#midtermIII)
 
 ## Todays Topics/Activities  
 
@@ -132,7 +127,6 @@ ggplot(data.frame(x = c(-4, 4)), aes(x = x)) +
 
 * Midterm III review
 * Practicing statistical inference (confidence tests & hypothesis tests) via mathematical formulas using pen & paper instead of simulations using a computer.
-
 
 
 
@@ -254,7 +248,7 @@ get_regression_table(score_model) %>%
 
 ### 1. Chalk talk
 
-* Interpreting hypothesis testing outcomes
+* Went over midterm II solutions.
 
 ### 2. In-class exercise
 
