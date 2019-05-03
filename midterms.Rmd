@@ -174,7 +174,7 @@ data_frame(
 **Top priorities to study**:
 
 1. Midterm II solutions covered in Lecture 36: One question from Midterm III will be asked again
-1. Practice [Midterm III](static/exams/Midterm-III_practice.pdf){target="_blank"} solutions, in particular the ``Formatting is off'' question we covered in Lectures 39 and 40. This will give you the best sense of what types of questions you'll be asked: no coding questions, but rather conceptual and more pen/paper type questions. If there is anything you don't understand, refer back to class notes and the corresponding lab.
+1. Practice [Midterm III](static/exams/Midterm-III_practice.pdf){target="_blank"} and corresponding [solutions](static/exams/Midterm-III_practice_solutions.pdf){target="_blank"}, in particular the ``Formatting is off'' question we covered in class in Lectures 39 and 40. This will give you the best sense of what types of questions you'll be asked: no coding questions, but rather conceptual and more pen/paper type questions. If there is anything you don't understand, refer back to class notes and the corresponding lab.
 1. ModernDive Section 8.5.2 Table 8.6 on the different sampling scenarios: Be able to generalize sampling and inference to all 6 scenarios.
 
 
