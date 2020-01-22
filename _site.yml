@@ -21,7 +21,7 @@ navbar:
 #  - text: Problem Sets
 #    href: PS.html
   - text: Moodle
-    href: https://moodle.smith.edu/
+    href: https://moodle.smith.edu/course/view.php?id=37125
   - text: Midterms
     href: midterms.html#midtermIII
   - text: Term Project
