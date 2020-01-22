@@ -1,6 +1,6 @@
 ---
 title: "SDS/MTH 220: Intro to Probability and Statistics"
-author: "Albert Y. Kim & Jenny Smetzer"
+author: "Albert Y. Kim, Katie Kinnaird, Dave Rockoff, & Will Hopper"
 date: "Last updated on `r Sys.Date()`"
 output:
   html_document:
@@ -48,7 +48,7 @@ set.seed(76)
 
 # Schedule 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1753108531&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1015"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=346882447&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1015"></iframe>
 
 <!--
 {target="_blank"}
@@ -77,7 +77,7 @@ set.seed(76)
 library(tidyverse)
 
 # 1. Are these 10 values significantly different from 2?
-values <- data_frame(
+values <- tibble(
   x = c(3.192, 3.842, 5.423, 3.181, 4.317, 1.845, 3.079, 3.426, 2.561, 2.221)
 )
 

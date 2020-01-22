@@ -14,14 +14,14 @@ navbar:
   title: SDS220
   left:
   - icon: fa-slack fa-lg
-    href: https://sds-mth-220-2019-01.slack.com/
-  - icon: fa-registered
-    href: https://rstudio.smith.edu/auth-sign-in
+    href: https://sds-mth-220-2020-01.slack.com/
   - text: ModernDive
     href: https://moderndive.netlify.com/
   right:
 #  - text: Problem Sets
 #    href: PS.html
+  - text: Moodle
+    href: https://moodle.smith.edu/
   - text: Midterms
     href: midterms.html#midtermIII
   - text: Term Project
