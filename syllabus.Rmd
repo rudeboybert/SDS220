@@ -133,24 +133,6 @@ A rough topic schedule and corresponding readings are posted below on the [main 
 practice, instead of evaluative tools used by the instructor to assign grades.
 **Each problem set is worth less than 2% of your final grade**.
 
-<!--## DataCamp Assignments 5% {#datacamp}
-
-* Assigned during Tuesday labs, due the following week.
-* DataCamp is meant to be low stakes-practice, so the only thing that matters for your grade is whether you complete the course. So while things like the number of hints/solutions taken don't factor into your grade, it is important to make a good faith effort to answer these questions the best you can.
-* While you may do them in advance if you are curious, it is most definitely not required. Note that the DataCamp schedule may change, with certain courses dropped/added.
-* Jenny will talk more about DataCamp during Lab 2.
-
-
-* Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
-* I *expect* most people to take no more than 4 hours per DataCamp assignment.
-* Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction.
-
-
-## Quizzes 5%
-
-There will be 2-3 quizzes assigned during the course of the semester. They will always be announced beforehand. 
--->
-
 ## Term Project 30% {#termproject}
 
 See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
@@ -201,10 +183,6 @@ this section of your grade, but not the only determining factor.
 sets and labs, you must submit your own answers and not simple rewordings of
 another's work. Furthermore, all collaborations must be explicitly acknowledged
 in your submissions.
-<!--1. **Honor Code**: All your work must follow the [Smith College Academic Honor
-Code Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
-in particular all external sources must be cited in your submissions.
--->
 1. **Problem sets**:
     + No extensions will be granted without a dean's note.
     + To receive full credit, you must show your work and explain your reasoning in your solutions. 
@@ -214,7 +192,11 @@ in particular all external sources must be cited in your submissions.
     + Timestamps for all midterms will be strictly enforced.
 1. **Grading**: We reserve the right to not discuss any grading issues in class and instead direct you to office hours or class. 
 
+
+
 ***
+
+
 
 # Academic Integrity
 
@@ -232,7 +214,6 @@ in 1944, and as stated in the Student Handbook, says:
 > scholarship, which depends on scrupulous and attentive acknowledgement 
 > of all sources of information, and honest and respectful use of college 
 > resources.
-
 
 This trust bestowed to students in the Honor Code is the same trust that 
 exists in and among researchers within a research community, the same trust 
@@ -260,7 +241,8 @@ This is an assumption that cannot be made at a school without an Honor code,
 and it is why it is a privilege to be both an instructor and a student at Smith 
 under the Honor Code. 
 
-##Honor Code Practicalities
+## Honor Code Practicalities
+
 The work you submit should be your own and created by you. We do encourage you 
 to ask for help from your peers or myself when you have questions; however, 
 copying is never allowed. The line between copying and helping is subtle. 
@@ -282,18 +264,26 @@ the suspected violation will be reported to the Academic Honor Board by the inst
 ***
 
 
+
 # Accommodations {#accommodations}
  
 Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
 
 
+
 ***
+
+
 
 # Course Acknowledgements
 
 Parts of this course - including slides, activities, and notes - will be from a variety of sources. Materials will be appropriately attributed and will be used in keeping with copyright and fair use laws. 
 
+
+
 ***
+
+
 
 # Code of Conduct {#codeofconduct}
 
