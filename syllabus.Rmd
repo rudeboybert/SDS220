@@ -124,68 +124,158 @@ A rough topic schedule and corresponding readings are posted below on the [main 
 
 # Evaluation
 
-## Weekly Problem Sets 10%
+## Weekly Problem Sets 15%
 
-* Total of 10 problem sets: assigned during Tuesday labs, due the following week.
-* Two lowest scores dropped. 
+* Total of 9 problem sets: assigned just after Monday's class at 11am, due the following week at 9am.
+* Each problem set is worth 100 pts for a total of 900 possible pts, however the final computation will be out of **700 pts**. 
+* This means that you can decide to not hand in 2 problem sets any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. *Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).* Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be "waved."
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
-**Each problem set is worth ~1% of your final grade**.
+**Each problem set is worth less than 2% of your final grade**.
 
-## DataCamp Assignments 5% {#datacamp}
+<!--## DataCamp Assignments 5% {#datacamp}
 
 * Assigned during Tuesday labs, due the following week.
 * DataCamp is meant to be low stakes-practice, so the only thing that matters for your grade is whether you complete the course. So while things like the number of hints/solutions taken don't factor into your grade, it is important to make a good faith effort to answer these questions the best you can.
 * While you may do them in advance if you are curious, it is most definitely not required. Note that the DataCamp schedule may change, with certain courses dropped/added.
 * Jenny will talk more about DataCamp during Lab 2.
 
-<!--
+
 * Taking notes based on what you cover is not required, but please do so if you feel you will benefit. 
 * I *expect* most people to take no more than 4 hours per DataCamp assignment.
 * Please note retention of the material will not be perfect the first time through. The only way to really retain the material is via lots of practice/doing. For now, think of this as a introduction.
--->
+
 
 ## Quizzes 5%
 
 There will be 2-3 quizzes assigned during the course of the semester. They will always be announced beforehand. 
+-->
 
 ## Term Project 30% {#termproject}
 
 See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
 
-## Three Midterms: 45%
+## Badge Challenges: 45%
 
-* There will be three self-scheduled midterms, including one during finals week. See the [Midterms](midterms.html) page.
-* Lowest score weighted 10%, middle score weighted 15%, and highest score weighted 20%.
+* There will be four self-scheduled badge challenges, including one during finals week, during which you can collect statistics badges. See the [Midterms](midterms.html) page.
+* There are 15 badges, each representing core skills for the course. During each badge challenge, you can attempt as many or as few badges as you would like. **Your goal, by the end of the semester, is to collect all 15 badges.**
+* The first badge challenge will have the first 5 badges available, the second will have the first 10, and the third and fourth badge challenge will have all 15 badges. As a reminder, you do *not need to (nor should you) attempt* all badges on each challenge, but you do need to collect all 15 badges by the end of the term. 
+* There are four levels for each badge: **G** – Gold, **S** – Silver, **B** – Bronze, and **X** – cannot be assessed. 
+* The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze. 
+* This system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the *only* the statistical skills that you are ready to demonstrate. 
 
-## Engagement 5% {#engagement}
+At the end of the semester, your collected badges and badge levels will be converted into points for your final grade:
+![Badge Table](/figs/BadgeTable.png)
 
-It is difficult to explicit codify what constitutes "an engaged student," so
-instead I present the following rough principle I will follow: *you'll only get
-out of this class as much as you put in*. That being said, here are multiple
-pathways for you to stay engaged in this class:
+## Engagement 10% {#engagement}
 
-* Engaging with this class in a fashion where you can say "yes" to all "How can I succeed in this class?" questions [above](#succeed).
-* Contributing for all the steps in the term project leading up to the final submission: data, proposal, and initial submission.
-* Getting reasonabable peer evaluations for your term project.
+Being part of a professional community has many parts; we generate and 
+consume knowledge, we review and critique work, and we present to and 
+learn from each other. The edge of what we know is constantly being pushed
+further and further as we discover new ideas, create new knowledge, and 
+ask new questions. At times, we are computers, writers, and contractors, 
+and then at other times, we serve as reviewers, mentors, and learners. The 
+constancy is our willingness to be present and active within our professional 
+community. With this in mind, in this course, your participation is expected, 
+especially *you'll only get out of this class as much as you put in*. That 
+being said, here are multiple pathways for you to stay engaged in this class:
+
+Participation can take many forms, including but not limited to: attending 
+class meetings, being active on our course slack, participating in discussion 
+in class, offering ideas and questions in class or on slack. Beyond attending 
+class, our class as a community will generate a list of what we believe are 
+ways to engage and participate in our course. Adding to this list one way 
+that you are called to participate in this course. If you find yourself unwilling 
+or resistant to adding to this list, examine this. *What is holding you back?* 
+*What would help propel you to action?*
+
+The engagement part of the course will be graded with student input. In the week 
+before spring break and during the last week of classes, you will be asked to 
+complete a self-evaluation of your class engagement in context of the class 
+engagement list. Your self-evaluations will be a critical part of determining 
+this section of your grade, but not the only determining factor. 
 
 ## Policies
 
-1. **Collaboration**: While I encourage you to work with your peers for problem
+1. **Collaboration**: While we encourage you to work with your peers for problem
 sets and labs, you must submit your own answers and not simple rewordings of
 another's work. Furthermore, all collaborations must be explicitly acknowledged
 in your submissions.
-1. **Honor Code**: All your work must follow the [Smith College Academic Honor
+<!--1. **Honor Code**: All your work must follow the [Smith College Academic Honor
 Code Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
 in particular all external sources must be cited in your submissions.
+-->
 1. **Problem sets**:
     + No extensions will be granted without a dean's note.
     + To receive full credit, you must show your work and explain your reasoning in your solutions. 
-    + All written problem sets must be handed in at the start of lab. No emailed submissions will be accepted; if you can't make it to class ask a classmate to turn it in for you. They must be stapled with the fringe/perf from any spiral notebook paper removed. 
-1. **Midterms/quizzes**:
-    + No make-up quizzes or midterms will be allowed without a dean's note. 
+    + All written problem sets must be handed in by 9am on Mondays on Gradescope. No emailed submissions will be accepted. 
+1. **Badgea Challenges**:
+    + No make-up badge challenges will be allowed without a dean's note. 
     + Timestamps for all midterms will be strictly enforced.
-1. **Grading**: I reserve the right to not discuss any grading issues in class and instead direct you to office hours. 
+1. **Grading**: We reserve the right to not discuss any grading issues in class and instead direct you to office hours or class. 
+
+***
+
+# Academic Integrity
+
+Being at a school with an Honor Code, like Smith, is a special privilege. 
+The Honor Code goes beyond inviting students to act with integrity, instead 
+it welcomes students as equal participants of the learning community, 
+imbuing students with the same level of trust that we extend to our 
+collaborators and colleagues. The Smith College Honor Code, established 
+in 1944, and as stated in the Student Handbook, says:
+
+> Smith College expects all students to be honest and committed to the 
+> principles of academic and intellectual integrity in their preparation 
+> and submission of course work and examinations. Students and faculty at 
+> Smith are part of an academic community defined by its commitment to 
+> scholarship, which depends on scrupulous and attentive acknowledgement 
+> of all sources of information, and honest and respectful use of college 
+> resources.
+
+
+This trust bestowed to students in the Honor Code is the same trust that 
+exists in and among researchers within a research community, the same trust 
+that exists between us and our collaborators. Simply put, at Smith, under 
+the Honor Code, I trust that you will each act with integrity, citing sources 
+when you celebrate others’ ideas and noting who you work with when collaborating. 
+
+This trust manifests in how assignments are created, in how work is completed, 
+and in how we resolve instances where the trust has been broken. At an Honor Code 
+school, assignments are created knowing that while there are resources online that 
+can offer complete solutions, you are trusted to not seek out such complete 
+resources and that if you do stumble on a solution guide, you will not use it. 
+Under an Honor Code, students are expected to keep careful notes about the resources 
+that they consult and the people that they collaborate with. We get to assume that 
+the work handed in by a student is the creation of that student. Lastly, when there 
+are violations of the Honor Code, the resolution is determined by a committee 
+established by the community and trusted to seek restoration of the whole community’s 
+trust through education and action. 
+
+We regard the Honor Code with deep and profound respect. Being educators at an 
+Honor Code school means we begin from a place of trust without any underlying 
+suspicion of our students. Simply put, we - instructors and students - work from 
+the assumption that all are acting in good faith and with the utmost integrity. 
+This is an assumption that cannot be made at a school without an Honor code, 
+and it is why it is a privilege to be both an instructor and a student at Smith 
+under the Honor Code. 
+
+##Honor Code Practicalities
+The work you submit should be your own and created by you. We do encourage you 
+to ask for help from your peers or myself when you have questions; however, 
+copying is never allowed. The line between copying and helping is subtle. 
+Below are a few guidelines:
+* Do not share nor give your work with other students; instead, offer to discuss the big ideas of the task at hand. 
+* Do not look at someone else’s work (including online solutions); instead, ask if you could talk with them about your ideas and share where you are getting stuck.
+* Acknowledge those you talk or work with at the top of each assignment. We will not dock points for getting acknowledged help from others. If you generate a solution or an argument with someone, in addition to acknowledging that person, recreate the solution or argument on your own in your own words. 
+
+If you think you may have crossed the line between helping and copying, please 
+talk to your instructor or your lab instructor about it. Do not let us discover 
+that the line was crossed. If a violation of the Honor Code is suspected, the 
+student will be informed and will be given the opportunity to meet with the 
+instructor. As recommended by the Academic Honor Board and in keeping with Smith 
+tradition, the student will be given time to self-report, and after such time, 
+the suspected violation will be reported to the Academic Honor Board by the instructor. 
 
 
 
@@ -199,6 +289,11 @@ Smith is committed to providing support services and reasonable accommodations t
 
 ***
 
+# Course Acknowledgements
+
+Parts of this course - including slides, activities, and notes - will be from a variety of sources. Materials will be appropriately attributed and will be used in keeping with copyright and fair use laws. 
+
+***
 
 # Code of Conduct {#codeofconduct}
 
