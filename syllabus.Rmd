@@ -201,9 +201,10 @@ this section of your grade, but not the only determining factor.
 sets and labs, you must submit your own answers and not simple rewordings of
 another's work. Furthermore, all collaborations must be explicitly acknowledged
 in your submissions.
-1. **Honor Code**: All your work must follow the [Smith College Academic Honor
+<!--1. **Honor Code**: All your work must follow the [Smith College Academic Honor
 Code Statement](https://www.smith.edu/sao/handbook/socialconduct/honorcode.php){target="_blank"};
 in particular all external sources must be cited in your submissions.
+-->
 1. **Problem sets**:
     + No extensions will be granted without a dean's note.
     + To receive full credit, you must show your work and explain your reasoning in your solutions. 
@@ -212,6 +213,69 @@ in particular all external sources must be cited in your submissions.
     + No make-up badge challenges will be allowed without a dean's note. 
     + Timestamps for all midterms will be strictly enforced.
 1. **Grading**: We reserve the right to not discuss any grading issues in class and instead direct you to office hours or class. 
+
+***
+
+# Academic Integrity
+
+Being at a school with an Honor Code, like Smith, is a special privilege. 
+The Honor Code goes beyond inviting students to act with integrity, instead 
+it welcomes students as equal participants of the learning community, 
+imbuing students with the same level of trust that we extend to our 
+collaborators and colleagues. The Smith College Honor Code, established 
+in 1944, and as stated in the Student Handbook, says:
+
+> Smith College expects all students to be honest and committed to the 
+> principles of academic and intellectual integrity in their preparation 
+> and submission of course work and examinations. Students and faculty at 
+> Smith are part of an academic community defined by its commitment to 
+> scholarship, which depends on scrupulous and attentive acknowledgement 
+> of all sources of information, and honest and respectful use of college 
+> resources.
+
+
+This trust bestowed to students in the Honor Code is the same trust that 
+exists in and among researchers within a research community, the same trust 
+that exists between us and our collaborators. Simply put, at Smith, under 
+the Honor Code, I trust that you will each act with integrity, citing sources 
+when you celebrate others’ ideas and noting who you work with when collaborating. 
+
+This trust manifests in how assignments are created, in how work is completed, 
+and in how we resolve instances where the trust has been broken. At an Honor Code 
+school, assignments are created knowing that while there are resources online that 
+can offer complete solutions, you are trusted to not seek out such complete 
+resources and that if you do stumble on a solution guide, you will not use it. 
+Under an Honor Code, students are expected to keep careful notes about the resources 
+that they consult and the people that they collaborate with. We get to assume that 
+the work handed in by a student is the creation of that student. Lastly, when there 
+are violations of the Honor Code, the resolution is determined by a committee 
+established by the community and trusted to seek restoration of the whole community’s 
+trust through education and action. 
+
+We regard the Honor Code with deep and profound respect. Being educators at an 
+Honor Code school means we begin from a place of trust without any underlying 
+suspicion of our students. Simply put, we - instructors and students - work from 
+the assumption that all are acting in good faith and with the utmost integrity. 
+This is an assumption that cannot be made at a school without an Honor code, 
+and it is why it is a privilege to be both an instructor and a student at Smith 
+under the Honor Code. 
+
+##Honor Code Practicalities
+The work you submit should be your own and created by you. We do encourage you 
+to ask for help from your peers or myself when you have questions; however, 
+copying is never allowed. The line between copying and helping is subtle. 
+Below are a few guidelines:
+* Do not share nor give your work with other students; instead, offer to discuss the big ideas of the task at hand. 
+* Do not look at someone else’s work (including online solutions); instead, ask if you could talk with them about your ideas and share where you are getting stuck.
+* Acknowledge those you talk or work with at the top of each assignment. We will not dock points for getting acknowledged help from others. If you generate a solution or an argument with someone, in addition to acknowledging that person, recreate the solution or argument on your own in your own words. 
+
+If you think you may have crossed the line between helping and copying, please 
+talk to your instructor or your lab instructor about it. Do not let us discover 
+that the line was crossed. If a violation of the Honor Code is suspected, the 
+student will be informed and will be given the opportunity to meet with the 
+instructor. As recommended by the Academic Honor Board and in keeping with Smith 
+tradition, the student will be given time to self-report, and after such time, 
+the suspected violation will be reported to the Academic Honor Board by the instructor. 
 
 
 
@@ -225,6 +289,11 @@ Smith is committed to providing support services and reasonable accommodations t
 
 ***
 
+# Course Acknowledgements
+
+Parts of this course - including slides, activities, and notes - will be from a variety of sources. Materials will be appropriately attributed and will be used in keeping with copyright and fair use laws. 
+
+***
 
 # Code of Conduct {#codeofconduct}
 
