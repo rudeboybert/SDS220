@@ -1,0 +1,156 @@
+---
+title: "Project"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: yes
+---
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+library(moderndive)
+library(patchwork)
+set.seed(76)
+```
+
+Everything in this course builds up to the group project, where there is
+only one learning goal: *Engage in the data/science research pipeline in as
+faithful a manner as possible while maintaining a level suitable for novices.*
+
+<center>
+![](static/images/pipeline.png){ width=600px }
+</center>
+
+
+
+***
+
+
+
+# 1. Project Data {#data} 
+
+## Form groups
+
+**All groups members are expected to contribute and you will all be held accountable for your contributions in peer evaluations.**
+
+1. Form groups of 2-3 students. If you need a group to join, please Slack your instructor.
+1. Designate a group leader who will do a little administrative work.
+1. Pick a group name. 
+1. The group leader will then create two Slack direct messages (DM):
+    * One with all your group members + your instructor + your lab instructor. You'll ask group-specific questions here.
+    * One with only your group members. Send all private messages amongst yourselves here.
+1. Complete the project groups Google Form posted on Moodle.
+
+## Find data
+
+**This is likely the most time-consuming portion of the entire project, so we recommend you start early.**
+
+1. Read moderndive for important background knowledge and tools for this project phase:
+    + Chapter 1.4.4 on identification vs measurement variables.
+    + Chapter 4.1 on importing spreadsheet data into R.
+1. Read the [example data proposal](static/project/project_data_example.html){target="_blank"}.
+1. Download the following <a href="static/project/project_data.Rmd" download>`project_data.Rmd`</a> template R Markdown file.
+1. Find a dataset that matches the requirements spelled out in the above `project_data.Rmd` template R Markdown file. Possible sources include data from your own projects, [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}, [data.world](https://data.world/){target="_blank"}, and  [Kaggle](https://www.kaggle.com/datasets){target="_blank"}. Consult the Spinelli Center Data Counselor for help (see syllabus for contact info). <!-- Cannot use data from 538? -->
+1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+    1. The `project_data.Rmd` R Markdown file
+    1. The `project_data.html` HTML report file
+    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
+
+Notes:
+
+* When you have questions:
+    + Please ask questions that you think the entire class would like to know the answer to in the `project` channel in Slack.
+    + Ask more individual questions in the group DM that includes all group members + your instructor + your lab instructor.
+* Only minimal data wrangling using the `dplyr` package is expected at this time; you will be doing more for the "project proposal" phase after you're experienced. That being said, feel free to experiment!
+* Don't forget to use the Spinelli 7-9pm tutoring hours (see syllabus for time/place).
+
+
+
+***
+
+
+
+# 2. Project Proposal {#proposal}
+
+* Read the example [project proposal](static/project/project_proposal_example.html){target="_blank"}. <!--You can also download the <a href="static/project/project_proposal.Rmd" download>`project_proposal_example.Rmd`</a> file that created Dr. Jenny Smetzer and Albert's example.-->
+* Download the following <a href="static/project/project_proposal.Rmd" download>`project_proposal.Rmd`</a> template R Markdown file.
+<!--
+TODO for Albert: Finish ModernDive 
+* For data wrangling tips, check out Dr. Jenny Smetzer and Albert's [Become an R Data Ninja](static/project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/project/project_tips.Rmd" download>`project_tips.Rmd`</a> file.
+-->
+1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+    1. The `project_proposal.Rmd` R Markdown file
+    1. The `project_proposal.html` HTML report file
+    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
+
+
+
+*** 
+
+
+
+# 3. Project Submission {#submission}
+
+## Action items
+
+1. Read the following sections of the example [project resubmission](static/project/project_resubmission.html){target="_blank"}:
+    + Section 1: Introduction
+    + Section 2: Exploratory data analysis
+    + Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.    
+1. Download the following <a href="static/project/project_submission.Rmd" download>`project_submission.Rmd`</a> R Markdown file
+    + Complete the following sections:
+        + Section 1: Introduction
+        + Section 2: Exploratory data analysis
+        + Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.
+    + Do not complete the following sections (you'll be doing this for at the resubmission phase):
+        + Section 3 subsections 3.4, 3.5: Inference for multiple regression
+        + Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
+1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+    1. The `project_submission.Rmd` R Markdown file with sections 1, 2, 3.1, 3.2, and 3.3 completed
+    1. The `project_submission.html` HTML report file.
+    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
+
+
+
+***
+
+
+
+# 4. Project Resubmission {#resubmission}
+
+1. Re-read the previous sections of the example [project resubmission](static/project/project_resubmission.html){target="_blank"} you read earlier. In addition, read the following sections you skipped previously:
+    + Section 3 subsections 3.4, 3.5: Inference for multiple regression
+    + Section 4: Discussion.
+1. Using the same `project_submission.Rmd` file you submitted for the project submission phase:
+    + Incorporate any feedback given to you from the project submission phase.
+    + Complete Sections 3.4 and 3.5: Inference for multiple regression
+    + Complete Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
+1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+    1. The updated `project_submission.Rmd` R Markdown file.
+    1. The updated `project_submission.html` HTML report file.
+    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.
+1. Everyone must complete the exit survey Google Form (to be posted at the end of semester). There are four sections:
+    1. Evaluating your peers' contributions for the project.
+    1. Questions about you.
+    1. General questions about the course.
+
+
+
+***
+
+
+
+# Grading Rubric
+
+* You are only graded on your project resubmission.
+* Your project is worth 30% of your final grade. The 30% is distributed as follows:
+    1. 2.5%: Are all necessary files submitted and did you complete the "SDS/MTH 220 Exit Survey" Google Form?
+    1. 27.5%: Based on this rough [guideline criteria](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&single=true){target="_blank"}. 
+

@@ -18,14 +18,12 @@ navbar:
   - text: ModernDive
     href: https://moderndive.netlify.com/
   right:
-#  - text: Problem Sets
-#    href: PS.html
   - text: Moodle
     href: https://moodle.smith.edu/course/view.php?id=37125
-  - text: Midterms
-    href: midterms.html#midtermIII
-  - text: Term Project
-    href: term_project.html#resubmission
+#  - text: Badge Challenges
+#    href: midterms.html#midtermIII
+  - text: Project
+    href: project.html
   - text: Syllabus
     href: syllabus.html
 
