@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Project</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">SDS220</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="https://sds-mth-220-2020-01.slack.com/">
+    <span class="fa fa-slack fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="https://moderndive.netlify.com/">ModernDive</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://moodle.smith.edu/course/view.php?id=37125">Moodle</a>
+</li>
+<li>
+  <a href="badge_challenges.html">Badge Challenges</a>
+</li>
+<li>
+  <a href="project.html">Project</a>
+</li>
+<li>
+  <a href="syllabus.html">Syllabus</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Project</h1>
+
+</div>
+
+
+<style>
+h1{font-weight: 400;}
+</style>
+<p>Everything in this course builds up to the group project, where there is only one learning goal: <em>Engage in the data/science research pipeline in as faithful a manner as possible while maintaining a level suitable for novices.</em></p>
+<center>
+<img src="static/images/pipeline.png" width="600" />
+</center>
+<hr />
+<div id="data" class="section level1">
+<h1>1. Project Data</h1>
+<div id="form-groups" class="section level2">
+<h2>Form groups</h2>
+<p><strong>All groups members are expected to contribute and you will all be held accountable for your contributions in peer evaluations.</strong></p>
+<ol style="list-style-type: decimal">
+<li>Form groups of 2-3 students. If you need a group to join, please Slack your instructor.</li>
+<li>Designate a group leader who will do a little administrative work.</li>
+<li>Pick a group name.</li>
+<li>The group leader will then create two Slack direct messages (DM):
+<ul>
+<li>One with all your group members + your instructor + your lab instructor. You’ll ask group-specific questions here.</li>
+<li>One with only your group members. Send all private messages amongst yourselves here.</li>
+</ul></li>
+<li>Complete the project groups Google Form posted on Moodle.</li>
+</ol>
+</div>
+<div id="find-data" class="section level2">
+<h2>Find data</h2>
+<p><strong>This is likely the most time-consuming portion of the entire project, so we recommend you start early.</strong></p>
+<ol style="list-style-type: decimal">
+<li>Read moderndive for important background knowledge and tools for this project phase:
+<ul>
+<li>Chapter 1.4.4 on identification vs measurement variables.</li>
+<li>Chapter 4.1 on importing spreadsheet data into R.</li>
+</ul></li>
+<li>Read the <a href="static/project/project_data_example.html" target="_blank">example data proposal</a>.</li>
+<li>Download the following <a href="static/project/project_data.Rmd" download><code>project_data.Rmd</code></a> template R Markdown file.</li>
+<li>Find a dataset that matches the requirements spelled out in the above <code>project_data.Rmd</code> template R Markdown file. Possible sources include data from your own projects, <a href="https://toolbox.google.com/datasetsearch" target="_blank">Google Dataset Search</a>, <a href="https://data.world/" target="_blank">data.world</a>, and <a href="https://www.kaggle.com/datasets" target="_blank">Kaggle</a>. Consult the Spinelli Center Data Counselor for help (see syllabus for contact info). <!-- Cannot use data from 538? --></li>
+<li>The group leader only will submit the following files on Moodle on behalf of the whole group:
+<ol style="list-style-type: decimal">
+<li>The <code>project_data.Rmd</code> R Markdown file</li>
+<li>The <code>project_data.html</code> HTML report file</li>
+<li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.</li>
+</ol></li>
+</ol>
+<p>Notes:</p>
+<ul>
+<li>When you have questions:
+<ul>
+<li>Please ask questions that you think the entire class would like to know the answer to in the <code>project</code> channel in Slack.</li>
+<li>Ask more individual questions in the group DM that includes all group members + your instructor + your lab instructor.</li>
+</ul></li>
+<li>Only minimal data wrangling using the <code>dplyr</code> package is expected at this time; you will be doing more for the “project proposal” phase after you’re experienced. That being said, feel free to experiment!</li>
+<li>Don’t forget to use the Spinelli 7-9pm tutoring hours (see syllabus for time/place).</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="proposal" class="section level1">
+<h1>2. Project Proposal</h1>
+<ul>
+<li>Read the example <a href="static/project/project_proposal_example.html" target="_blank">project proposal</a>. <!--You can also download the <a href="static/project/project_proposal.Rmd" download>`project_proposal_example.Rmd`</a> file that created Dr. Jenny Smetzer and Albert's example.--></li>
+<li>Download the following <a href="static/project/project_proposal.Rmd" download><code>project_proposal.Rmd</code></a> template R Markdown file. <!--
+TODO for Albert: Finish ModernDive 
+* For data wrangling tips, check out Dr. Jenny Smetzer and Albert's [Become an R Data Ninja](static/project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/project/project_tips.Rmd" download>`project_tips.Rmd`</a> file.
+--></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>The group leader only will submit the following files on Moodle on behalf of the whole group:
+<ol style="list-style-type: decimal">
+<li>The <code>project_proposal.Rmd</code> R Markdown file</li>
+<li>The <code>project_proposal.html</code> HTML report file</li>
+<li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.</li>
+</ol></li>
+</ol>
+<hr />
+</div>
+<div id="submission" class="section level1">
+<h1>3. Project Submission</h1>
+<div id="action-items" class="section level2">
+<h2>Action items</h2>
+<ol style="list-style-type: decimal">
+<li>Read the following sections of the example <a href="static/project/project_resubmission.html" target="_blank">project resubmission</a>:
+<ul>
+<li>Section 1: Introduction</li>
+<li>Section 2: Exploratory data analysis</li>
+<li>Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.<br />
+</li>
+</ul></li>
+<li>Download the following <a href="static/project/project_submission.Rmd" download><code>project_submission.Rmd</code></a> R Markdown file
+<ul>
+<li>Complete the following sections:
+<ul>
+<li>Section 1: Introduction</li>
+<li>Section 2: Exploratory data analysis</li>
+<li>Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.</li>
+</ul></li>
+<li>Do not complete the following sections (you’ll be doing this for at the resubmission phase):
+<ul>
+<li>Section 3 subsections 3.4, 3.5: Inference for multiple regression</li>
+<li>Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.</li>
+</ul></li>
+</ul></li>
+<li>The group leader only will submit the following files on Moodle on behalf of the whole group:
+<ol style="list-style-type: decimal">
+<li>The <code>project_submission.Rmd</code> R Markdown file with sections 1, 2, 3.1, 3.2, and 3.3 completed</li>
+<li>The <code>project_submission.html</code> HTML report file.</li>
+<li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.</li>
+</ol></li>
+</ol>
+<hr />
+</div>
+</div>
+<div id="resubmission" class="section level1">
+<h1>4. Project Resubmission</h1>
+<ol style="list-style-type: decimal">
+<li>Re-read the previous sections of the example <a href="static/project/project_resubmission.html" target="_blank">project resubmission</a> you read earlier. In addition, read the following sections you skipped previously:
+<ul>
+<li>Section 3 subsections 3.4, 3.5: Inference for multiple regression</li>
+<li>Section 4: Discussion.</li>
+</ul></li>
+<li>Using the same <code>project_submission.Rmd</code> file you submitted for the project submission phase:
+<ul>
+<li>Incorporate any feedback given to you from the project submission phase.</li>
+<li>Complete Sections 3.4 and 3.5: Inference for multiple regression</li>
+<li>Complete Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.</li>
+</ul></li>
+<li>The group leader only will submit the following files on Moodle on behalf of the whole group:
+<ol style="list-style-type: decimal">
+<li>The updated <code>project_submission.Rmd</code> R Markdown file.</li>
+<li>The updated <code>project_submission.html</code> HTML report file.</li>
+<li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.</li>
+</ol></li>
+<li>Everyone must complete the exit survey Google Form (to be posted at the end of semester). There are four sections:
+<ol style="list-style-type: decimal">
+<li>Evaluating your peers’ contributions for the project.</li>
+<li>Questions about you.</li>
+<li>General questions about the course.</li>
+</ol></li>
+</ol>
+<hr />
+</div>
+<div id="grading-rubric" class="section level1">
+<h1>Grading Rubric</h1>
+<ul>
+<li>You are only graded on your project resubmission.</li>
+<li>Your project is worth 30% of your final grade. The 30% is distributed as follows:
+<ol style="list-style-type: decimal">
+<li>2.5%: Are all necessary files submitted and did you complete the “SDS/MTH 220 Exit Survey” Google Form?</li>
+<li>27.5%: Based on this rough <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&amp;single=true" target="_blank">guideline criteria</a>.</li>
+</ol></li>
+</ul>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

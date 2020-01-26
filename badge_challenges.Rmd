@@ -1,0 +1,237 @@
+---
+title: "Midterms"
+output:
+  html_document:
+    toc: yes
+    toc_depth: 2
+    toc_float:
+      collapsed: no
+---
+
+<style>
+h1{font-weight: 400;}
+</style>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo=TRUE, 
+  message=FALSE, 
+  warning=FALSE, 
+  eval=FALSE, 
+  fig.width=16/2, 
+  fig.height=9/2
+)
+library(tidyverse)
+library(gapminder)
+library(patchwork)
+```
+
+
+
+***
+
+
+
+# Midterm I {#midtermI}
+
+## Administrative notes
+
+* **Friday 3/1 5pm through Sunday 3/3 11:55pm**.
+* Self-scheduled exam [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
+    + Only print from macOS computers.
+    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
+* Exam length:
+    + You will be given 140 mins to complete it (including transit time to writing area), however it is timed with the goal that most students will complete it much sooner.
+    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
+    + All Office of Disability Services forms must be submitted before the midterm start time.
+* Other details:
+    + Closed-book, no internet, and individually completed.
+    + Bring colored pencils
+
+
+## Topics
+    
+* Topics: Lectures 1-11 & Labs 1-3. In other words everything up to and including regression with one numerical predictor. 
+* No DataCamp questions. No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).
+* What to study:
+    + Practice midterm questions [PDF](static/exams/Midterm-I_practice.pdf){target="_blank"}. This practice midterm is much longer than you can expect on your midterm. Solutions will be distributed on Wednesday.
+    + Your hand-written course notes first: they are the "executive summaries" of topics.
+    + The material on the course webpage chronologically, in particular the ModernDive readings.
+    + Problem sets corresponding to labs.
+
+
+<!--
+
+## Practice questions discussion {#midtermIdiscussion}
+
+**Note about Question 4.b)** Both the following plots show the relationship between life expectancy and GDP per capita in 2007 in the `gapminder` data, but the right one has GDP per capita (USD) on the x-axis on a $\log10$-scale using `scale_x_log10()`. Thus:
+
+* Left plot: the white grid lines on the x-axis denote **additive** differences of $+10000$ 
+* Right plot: the white grid lines on the x-axis denote **multiplicative** differences of $\times 10$
+
+```{r, echo = FALSE, fig.height = 7/2, eval = TRUE}
+gapminder2007 <- gapminder %>% 
+  filter(year == 2007)
+
+# Simple plot -------------------------------------------------------------
+base <- ggplot(gapminder2007, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) + 
+  geom_point() + 
+  labs(
+    y = "Life expectancy (years)", 
+    color = "Continent", size = "Population"
+  ) +
+  theme(legend.position="none", panel.grid.minor = element_blank())
+  
+p1 <- base +
+  labs(x = "GDP per capita", title = "Regular scale x-axis") +
+  scale_x_continuous(labels = scales::dollar_format())
+p2 <- base +
+  labs(x = "GDP per capita (log10-scale)", title = "log10 scale x-axis") + 
+  scale_x_log10(breaks = c(100, 1000, 10000, 100000), limits = c(NA, 10^5), labels = scales::dollar_format())
+p1 + p2
+```
+
+
+**Note about Question 5.f)** Counterexample. Both these datasets have 11 values and the same quartiles as Nashville (32K, 60K, and 100K), but have different proportions greater than 80K:
+
+```{r, echo = FALSE, eval = FALSE}
+data_frame(
+  data1 = c(16, 17, 32, 33, 54, 60, 61, 62, NA, NA, 100, 110, 115),
+  data2 = c(16, 17, 32, 33, 54, 60, NA, NA, 98, 99, 100, 110, 115)
+) %>% 
+  t() %>% 
+  kable()
+```
+
+| Dataset    |   |   |  |   |   |   |   |   |   |   |  |    |    |
+|:-----|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|---:|---:|---:|
+|Data 1 | 16| 17| **32** | 33| 54| **60**| 61| 62| | | **100**| 110| 115|
+|Data 2 | 16| 17| **32** | 33| 54| **60**| | | 98| 99| **100**| 110| 115|
+-->
+
+
+## Midterm I Distribution
+
+![](static/exams/midterm_I_distribution.png){ width=600px } 
+
+
+
+***
+
+
+
+# Midterm II {#midtermII}
+
+## Administrative notes
+
+* **Friday 4/12 5pm through Sunday 4/14 11:55pm**. 
+* Self-scheduled exam [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
+    + Only print from macOS computers.
+    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
+* Exam length:
+    + You will be given 140 mins to complete it (including transit time to writing area), however it is timed with the goal that most students will complete it much sooner.
+    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.**
+    + All Office of Disability Services forms must be submitted before the midterm start time.
+* Other details:
+    + Closed-book, no internet, and individually completed.
+    + Bring colored pencils.
+
+## Topics
+    
+* Topics:
+    + Lectures 9-24. In other words everything up to and including the resampling activity, but not confidence intervals.
+    + ModernDive Chapters 6, 7, 8, and 9 up to and including 9.2.
+* No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).
+* No direct DataCamp questions, but note that it covers the same material as we covered in class so it is good practice.
+* What to study:
+    + Practice midterm questions [PDF](static/exams/Midterm-II_practice.pdf){target="_blank"}.
+        + This practice midterm is longer than you can expect on your midterm.
+        + The question on "1. Seattle House Prices" is much harder than you can expect.
+        + You can skip "4. Sampling Distribution" part a)/
+    + Your hand-written course notes first: they are the "executive summaries" of topics.
+    + The material on the course webpage chronologically, in particular the ModernDive readings.
+    + Problem sets corresponding to labs.
+
+
+
+***
+
+
+
+# Midterm III {#midtermIII}
+
+## Administrative notes
+
+* **Between Tuesday May 7th and Friday May 10th**: See email titled "Self-Scheduled Final Exams May 7-10" sent on April 15th.
+* Other details:
+    + Closed-book, no internet, and individually completed.
+    + Bring colored pencils.
+    + Bring a calculator. Scientific calculators are acceptible, but smartphone calculators are not.
+* Office hours: Monday 5/6 from 1pm-5pm and Wednesday 5/8 from 10am-12pm and 1pm-3pm [**by appointment**](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If a particular slot is booked, please feel free to still come!
+* I will also be on Slack during reading week; please post questions in `#questions` channel.
+
+## Topics
+
+* Lectures 20-40. 
+* ModernDive Chapters 8, 9, 10, and 11.
+* No DataCamp.
+* No coding questions.
+
+**Top priorities to study**:
+
+1. Midterm II solutions covered in Lecture 36: One question from Midterm III will be asked again
+1. Practice [Midterm III](static/exams/Midterm-III_practice.pdf){target="_blank"} and corresponding [solutions](static/exams/Midterm-III_practice_solutions.pdf){target="_blank"}, in particular the "Formatting is off" question we covered in class in Lectures 39 and 40. This will give you the best sense of what types of questions you'll be asked: no coding questions, but rather conceptual and more pen/paper type questions. If there is anything you don't understand, refer back to class notes and the corresponding lab.
+1. ModernDive Section 8.5.2 Table 8.6 on the different sampling scenarios: Be able to generalize sampling and inference to all 6 scenarios.
+
+
+
+
+
+
+<!--
+* Self-scheduled exam [instructions](https://drive.google.com/file/d/1MXlZEf9UrQfFjUX6d9iglwDCZbn02cbj/view){target="_blank"}. In particular:
+    + Only print from macOS computers.
+    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
+* Closed-book, no internet, and individually completed.
+
+* You must take it no more than 120 minutes (including transit time) to complete it and submit it by 11:55pm on Sunday. Timestamps will be verified and any exam with timestamps indicating more than 120 minutes will be docked 50%.
+* Please bring:
+    + Colored pens
+    + A calculator: TI-84 type calculators acceptable, mobile phone apps are not. 
+* Extra help:
+    + Jenny office hours. Book appointments [here](https://jennysmetzer.youcanbook.me/){target="_blank"}.
+    + Albert extra office hours TBD.
+* Read cover page (slightly different from last time):
+
+
+## Topics
+
+* Topics:
+    1. Lectures 1-28 but not the "tacticle resampling simulation". Yes it is cummulative in that topics build on top of each other, but focus is on Lec 19-28 on multiple regression and sampling.
+    1. The corresponding "chalk talk" notes and ModernDive readings in Chapter 1 through 8.
+* Types of questions:
+    + Before Wednesday, do the practice midterm questions [PDF](static/exams/Midterm-III_practice.pdf){target="_blank"}. I **do not** have a PDF of solutions, we'll cover these in class on Wednesday. Note this is a compilation of a few midterms, so its length is not reflective of what you can expect on the midterm. Do the following questions:
+        1. Question 1 - Obama polling: Parts a), b), c), d), e), 
+        1. Question 2 - Teaching evaluations: All parts. Note this question was also included in practice midterm II.
+        1. Question 2 - Sampling: Parts a), b), c), d), e), f), g), h)
+        1. Question 4 - Pennies: Parts a), c), e), f).
+    + Data Modeling: Go over [Modeling with Data in the Tidyverse](https://www.datacamp.com/teach/repositories/1575/branches/master){target="_blank"} Chapters 3 and 4.
+    + Go over all problem sets and solutions. Note PS10 solutions will be posted right after lecture on Wed 11/28.
+    
+
+## Midterm III Distribution
+
+![](static/exams/midterm_III_distribution.png){ width=600px } 
+
+Note about Question 3.b) from the Wikipedia page for the [Kinsey Reports](https://en.wikipedia.org/wiki/Kinsey_Reports){target="_blank"}:
+
+In 1948, the same year as the original publication, a committee of the American Statistical Association, including notable statisticians such as John Tukey, condemned the sampling procedure. Tukey was perhaps the most vocal critic, saying, 
+
+> "A random selection of three people would have been better than a group of 300 chosen by Mr. Kinsey."
+
+Psychologist Abraham Maslow asserted that Kinsey did not consider "volunteer bias".
+-->
+
+
+
+
