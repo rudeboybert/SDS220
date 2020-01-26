@@ -7,12 +7,11 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title>Midterms</title>
+<title>Badge Challenges</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,8 +25,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
@@ -60,7 +58,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -74,18 +74,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -101,6 +96,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -120,43 +116,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -178,65 +137,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +191,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +226,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -305,16 +242,6 @@ div.tocify {
 }
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -372,7 +299,7 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">Midterms</h1>
+<h1 class="title toc-ignore">Badge Challenges</h1>
 
 </div>
 
@@ -381,20 +308,21 @@ div.tocify {
 h1{font-weight: 400;}
 </style>
 <hr />
-<div id="midtermI" class="section level1">
-<h1>Midterm I</h1>
+<div id="challegeI" class="section level1">
+<h1>Badge Challenge I</h1>
 <div id="administrative-notes" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 3/1 5pm through Sunday 3/3 11:55pm</strong>.</li>
-<li>Self-scheduled exam <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
+<li><strong>Friday 2/28 5pm through Monday 3/2 11:55pm</strong>.</li>
+<li>Self-scheduled Badge Challenge <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
 <ul>
 <li>Only print from macOS computers.</li>
 <li>At some point you’ll need to wait 5-10 seconds for a “paper is held in queue” pop-up box to appear before you can print.</li>
 </ul></li>
 <li>Exam length:
 <ul>
-<li>You will be given 140 mins to complete it (including transit time to writing area), however it is timed with the goal that most students will complete it much sooner.</li>
+<li>You will be given 140 mins to complete it (including transit time to writing area).</li>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <strong>X</strong> (cannot be assessed.</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.</strong></li>
 <li>All Office of Disability Services forms must be submitted before the midterm start time.</li>
 </ul></li>
@@ -405,14 +333,12 @@ h1{font-weight: 400;}
 </ul></li>
 </ul>
 </div>
-<div id="topics" class="section level2">
-<h2>Topics</h2>
+<div id="badges-1-5" class="section level2">
+<h2>Badges 1-5</h2>
 <ul>
-<li>Topics: Lectures 1-11 &amp; Labs 1-3. In other words everything up to and including regression with one numerical predictor.</li>
-<li>No DataCamp questions. No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).</li>
+<li>Badges: Lectures 1-12 &amp; Labs 1-4. In other words everything up to and including regression with one numerical predictor.</li>
 <li>What to study:
 <ul>
-<li>Practice midterm questions <a href="static/exams/Midterm-I_practice.pdf" target="_blank">PDF</a>. This practice midterm is much longer than you can expect on your midterm. Solutions will be distributed on Wednesday.</li>
 <li>Your hand-written course notes first: they are the “executive summaries” of topics.</li>
 <li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
 <li>Problem sets corresponding to labs.</li>
@@ -439,93 +365,113 @@ h1{font-weight: 400;}
 |Data 1 | 16| 17| **32** | 33| 54| **60**| 61| 62| | | **100**| 110| 115|
 |Data 2 | 16| 17| **32** | 33| 54| **60**| | | 98| 99| **100**| 110| 115|
 -->
-</div>
-<div id="midterm-i-distribution" class="section level2">
-<h2>Midterm I Distribution</h2>
-<p><img src="static/exams/midterm_I_distribution.png" width="600" /></p>
+<!--
+## Midterm I Distribution
+
+![](static/exams/midterm_I_distribution.png){ width=600px } 
+
+-->
 <hr />
 </div>
 </div>
-<div id="midtermII" class="section level1">
-<h1>Midterm II</h1>
+<div id="challegeII" class="section level1">
+<h1>Badge Challenge II</h1>
 <div id="administrative-notes-1" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 4/12 5pm through Sunday 4/14 11:55pm</strong>.</li>
-<li>Self-scheduled exam <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
+<li><strong>Friday 4/3 5pm through Monday 4/6 11:55pm</strong>.</li>
+<li>Self-scheduled Badge Challenge <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
 <ul>
 <li>Only print from macOS computers.</li>
 <li>At some point you’ll need to wait 5-10 seconds for a “paper is held in queue” pop-up box to appear before you can print.</li>
 </ul></li>
 <li>Exam length:
 <ul>
-<li>You will be given 140 mins to complete it (including transit time to writing area), however it is timed with the goal that most students will complete it much sooner.</li>
+<li>You will be given 140 mins to complete it (including transit time to writing area).</li>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <strong>X</strong> (cannot be assessed).</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.</strong></li>
 <li>All Office of Disability Services forms must be submitted before the midterm start time.</li>
 </ul></li>
 <li>Other details:
 <ul>
 <li>Closed-book, no internet, and individually completed.</li>
-<li>Bring colored pencils.</li>
+<li>Bring colored pencils</li>
 </ul></li>
 </ul>
 </div>
-<div id="topics-1" class="section level2">
-<h2>Topics</h2>
+<div id="badges-1-10" class="section level2">
+<h2>Badges 1-10</h2>
 <ul>
-<li>Topics:
-<ul>
-<li>Lectures 9-24. In other words everything up to and including the resampling activity, but not confidence intervals.</li>
-<li>ModernDive Chapters 6, 7, 8, and 9 up to and including 9.2.</li>
-</ul></li>
-<li>No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).</li>
-<li>No direct DataCamp questions, but note that it covers the same material as we covered in class so it is good practice.</li>
+<li>Badges: Lectures 1-25 &amp; Labs 1-9. In other words everything up to and including the resampling activity, and confidence intervals.</li>
 <li>What to study:
 <ul>
-<li>Practice midterm questions <a href="static/exams/Midterm-II_practice.pdf" target="_blank">PDF</a>.
-<ul>
-<li>This practice midterm is longer than you can expect on your midterm.</li>
-<li>The question on “1. Seattle House Prices” is much harder than you can expect.</li>
-<li>You can skip “4. Sampling Distribution” part a)/</li>
-</ul></li>
-<li>Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>Badge Challenge 1! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
 <li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
 <li>Problem sets corresponding to labs.</li>
 </ul></li>
 </ul>
+<!--
+* Topics:
+    + Lectures 9-24. In other words everything up to and including the resampling activity, but not confidence intervals.
+    + ModernDive Chapters 6, 7, 8, and 9 up to and including 9.2.
+* No questions involving extensive coding from memory, but you may still be asked minor coding questions and asked to write pseudocode (see practice midterm).
+* No direct DataCamp questions, but note that it covers the same material as we covered in class so it is good practice.
+* What to study:
+    + Practice midterm questions [PDF](static/exams/Midterm-II_practice.pdf){target="_blank"}.
+        + This practice midterm is longer than you can expect on your midterm.
+        + The question on "1. Seattle House Prices" is much harder than you can expect.
+        + You can skip "4. Sampling Distribution" part a)/
+    + Your hand-written course notes first: they are the "executive summaries" of topics.
+    + The material on the course webpage chronologically, in particular the ModernDive readings.
+    + Problem sets corresponding to labs.
+
+-->
 <hr />
 </div>
 </div>
-<div id="midtermIII" class="section level1">
-<h1>Midterm III</h1>
+<div id="challegeIII" class="section level1">
+<h1>Badge Challenge III</h1>
 <div id="administrative-notes-2" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Between Tuesday May 7th and Friday May 10th</strong>: See email titled “Self-Scheduled Final Exams May 7-10” sent on April 15th.</li>
+<li><strong>Friday 4/24 5pm through Monday 4/27 11:55pm</strong>.</li>
+<li>Self-scheduled Badge Challenge <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
+<ul>
+<li>Only print from macOS computers.</li>
+<li>At some point you’ll need to wait 5-10 seconds for a “paper is held in queue” pop-up box to appear before you can print.</li>
+</ul></li>
+<li>Exam length:
+<ul>
+<li>You will be given 140 mins to complete it (including transit time to writing area).</li>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <strong>X</strong> (cannot be assessed).</li>
+<li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to a 50% penalty and an honor board case.</strong></li>
+<li>All Office of Disability Services forms must be submitted before the midterm start time.</li>
+</ul></li>
 <li>Other details:
 <ul>
 <li>Closed-book, no internet, and individually completed.</li>
-<li>Bring colored pencils.</li>
-<li>Bring a calculator. Scientific calculators are acceptible, but smartphone calculators are not.</li>
+<li>Bring colored pencils</li>
 </ul></li>
-<li>Office hours: Monday 5/6 from 1pm-5pm and Wednesday 5/8 from 10am-12pm and 1pm-3pm <a href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE" target="_blank"><strong>by appointment</strong></a>. If a particular slot is booked, please feel free to still come!</li>
-<li>I will also be on Slack during reading week; please post questions in <code>#questions</code> channel.</li>
 </ul>
 </div>
-<div id="topics-2" class="section level2">
-<h2>Topics</h2>
+<div id="badges-1-15" class="section level2">
+<h2>Badges 1-15</h2>
 <ul>
-<li>Lectures 20-40.</li>
-<li>ModernDive Chapters 8, 9, 10, and 11.</li>
-<li>No DataCamp.</li>
-<li>No coding questions.</li>
+<li>Badges: All Lectures 1-25 &amp; All Labs. In other words everything.</li>
+<li>What to study:
+<ul>
+<li>Badge Challenges 1 and 2! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
+<li>Problem sets corresponding to labs.</li>
+</ul></li>
 </ul>
-<p><strong>Top priorities to study</strong>:</p>
-<ol style="list-style-type: decimal">
-<li>Midterm II solutions covered in Lecture 36: One question from Midterm III will be asked again</li>
-<li>Practice <a href="static/exams/Midterm-III_practice.pdf" target="_blank">Midterm III</a> and corresponding <a href="static/exams/Midterm-III_practice_solutions.pdf" target="_blank">solutions</a>, in particular the “Formatting is off” question we covered in class in Lectures 39 and 40. This will give you the best sense of what types of questions you’ll be asked: no coding questions, but rather conceptual and more pen/paper type questions. If there is anything you don’t understand, refer back to class notes and the corresponding lab.</li>
-<li>ModernDive Section 8.5.2 Table 8.6 on the different sampling scenarios: Be able to generalize sampling and inference to all 6 scenarios.</li>
-</ol>
+<!--
+**Top priorities to study**:
+
+1. Midterm II solutions covered in Lecture 36: One question from Midterm III will be asked again
+1. Practice [Midterm III](static/exams/Midterm-III_practice.pdf){target="_blank"} and corresponding [solutions](static/exams/Midterm-III_practice_solutions.pdf){target="_blank"}, in particular the "Formatting is off" question we covered in class in Lectures 39 and 40. This will give you the best sense of what types of questions you'll be asked: no coding questions, but rather conceptual and more pen/paper type questions. If there is anything you don't understand, refer back to class notes and the corresponding lab.
+1. ModernDive Section 8.5.2 Table 8.6 on the different sampling scenarios: Be able to generalize sampling and inference to all 6 scenarios.
+-->
 <!--
 * Self-scheduled exam [instructions](https://drive.google.com/file/d/1MXlZEf9UrQfFjUX6d9iglwDCZbn02cbj/view){target="_blank"}. In particular:
     + Only print from macOS computers.
@@ -590,49 +536,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

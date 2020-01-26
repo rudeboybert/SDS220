@@ -9,10 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper" />
 
 
-<title>SDS/MTH 220: Intro to Probability and Statistics</title>
+<title></title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,8 +23,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
-<link rel="shortcut icon" href="220.png">
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 
 
 
@@ -293,71 +292,40 @@ div.tocify {
 
 
 
-<h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
-<h4 class="author"><em>Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</em></h4>
-<h4 class="date"><em>Last updated on 2020-01-26</em></h4>
 
 </div>
 
 
-<style>
-h1{font-weight: 400;}
-</style>
-<hr />
-<div id="schedule" class="section level1">
-<h1>Schedule</h1>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=346882447&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1015">
-</iframe>
-<!--
-{target="_blank"}
--->
-<hr />
-<!--
-# Lec 03: Fri 1/31
-
-
-
-***
-
-
-
-# Lec 02: Wed 1/29
-
-
-
-***
--->
-</div>
-<div id="lec-1-mon-127" class="section level1">
-<h1>Lec 1: Mon 1/27</h1>
-<div id="announcements" class="section level2">
-<h2>Announcements</h2>
+<div id="sdsmth-220" class="section level1">
+<h1>SDS/MTH 220</h1>
+<p>Homepage source code for 2020-01 Spring Smith College SDS/MATH 220: Intro to Probability and Statistics <a href="https://smithcollege-sds.github.io/SDS220/" class="uri">https://smithcollege-sds.github.io/SDS220/</a>. Most of the content is in either:</p>
 <ul>
-<li>Introductions</li>
-<li>If you’re having registration issues:
+<li><code>index.Rmd</code>: a single Moodle-style page that lists all announcements, lectures notes, and problem sets/homeworks in chronological order.</li>
+<li><code>syllabus.Rmd</code></li>
+</ul>
+<div id="how-to-build-this-webpage" class="section level2">
+<h2>How to build this webpage</h2>
+<p>This webpage is built/compiled using <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html">R Markdown websites</a>. To compile this webpage for yourself, do the following:</p>
+<ol style="list-style-type: decimal">
+<li>Get the contents of this directory/repository:
 <ul>
-<li>If you are not registered for this course, fill out the <a href="https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform" target="_blank">waitlist</a>. However, if you haven’t already filled out the form back in fall, your chances of getting in are almost zero.</li>
-<li>We will start signing green slips on Friday.</li>
+<li>If you are not familiar with GitHub, click the green “Clone or download” button on the top-right -&gt; Download ZIP -&gt; Unzip <code>SDS220-master.zip</code>.</li>
+<li>If you are familiar with GitHub, clone this repository.</li>
 </ul></li>
-<li>Syllabus
-<ul>
-<li>Honor code</li>
-<li>Reflection exercise</li>
-</ul></li>
-</ul>
+<li>Double-click the <code>SDS220.Rproj</code> to open RStudio.</li>
+<li>If you haven’t already, install the R Markdown package by typing <code>install.packages(&quot;rmarkdown&quot;)</code> in the console.</li>
+<li>Go to the “Build” pane of RStudio -&gt; More -&gt; Configure Build Tools… -&gt; Ensure that “Project build tools” is set to “Webpage”.</li>
+<li>Click “Build Website”. You may need to install some additional R pacakges listed at the top of <code>index.Rmd</code>.</li>
+<li>The website will display in the Viewer pane. The resulting <code>index.html</code> file and all other files for the webpage will be saved in the <code>docs/</code> folder.</li>
+</ol>
 </div>
-<div id="lecture" class="section level2">
-<h2>Lecture</h2>
-<p>Here is the typical lecture flow:</p>
-<ul>
-<li>Start with a 10-15 minute “chalk talk”. We do this to motivate the day’s topics and warn you about potential pitfalls in understanding</li>
-<li>Followed by in-class ModernDive readings listed in the above schedule. We do this so you can read at your own pace, talk to your peers, and ask us questions. While you do not need to submit your “Learning Check” answers, we <em>highly</em> recommend you write them down and verify your answers in Appendix D of ModernDive.</li>
-</ul>
-<p>Today’s topics:</p>
-<ul>
-<li>Introduction to Slack</li>
-<li>Introduction to R, RStudio, and R packages</li>
-</ul>
+<div id="how-to-publish-this-webpage" class="section level2">
+<h2>How to publish this webpage</h2>
+<p>To publish/deploy this webpage and make it viewable on the web, you need to either:</p>
+<ol style="list-style-type: decimal">
+<li>Copy the contents of the <code>docs/</code> folder to your personal webpage or whatever domain hosting service you use.</li>
+<li>Use <a href="https://pages.github.com/">GitHub pages</a> as I do. RStudio’s R Markdown Websites page gives <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html#publishing_websites">instructions</a> on how.</li>
+</ol>
 </div>
 </div>
 
