@@ -54,6 +54,7 @@ h1{font-weight: 400;}
 # How can I succeed in this class? {#succeed}
 
 Borrowing language from the 2019 Google J-term course here at Smith, when learning in a classroom setting, at any moment, we exist in one of three zones: *safe, stretch,* or *strain.*    
+
 * A student in the safe zone is completely comfortable, and the course material is completely within what the student already knows.    
 * The strain zone is the complete opposite of the safe zone.   
 * A student in the strain zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows. 
@@ -165,7 +166,7 @@ and then at other times, we serve as reviewers, mentors, and learners. The
 constancy is our willingness to be present and active within our professional 
 community. With this in mind, in this course, your participation is expected, 
 especially *you'll only get out of this class as much as you put in*. That 
-being said, here are multiple pathways for you to stay engaged in this class:
+being said, here are multiple pathways for you to stay engaged in this class: [Google Doc](https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit){target="_blank"}.
 
 Participation can take many forms, including but not limited to: attending 
 class meetings, being active on our course slack, participating in discussion 
@@ -181,6 +182,8 @@ before spring break and during the last week of classes, you will be asked to
 complete a self-evaluation of your class engagement in context of the class 
 engagement list. Your self-evaluations will be a critical part of determining 
 this section of your grade, but not the only determining factor. 
+
+
 
 ## Policies
 
