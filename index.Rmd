@@ -90,7 +90,7 @@ set.seed(76)
 
 * Introductions
 * If you're having registration issues:
-    + If you are not registered for this course, fill out the [waitlist](https://docs.google.com/forms/d/e/1FAIpQLSfGP2iBINnQi3tDz0m5ZYnDS0QaRB6ayTla-NGc0IOahjaPTg/viewform){target="_blank"}. However, if you haven't already filled out the form back in fall, your chances of getting in are almost zero.
+    + If you are not registered for this course, fill out the [waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"}. However, if you haven't already filled out the form back in fall, your chances of getting in are almost zero.
     + We will start signing green slips on Friday.
 * Syllabus 
     + Honor code

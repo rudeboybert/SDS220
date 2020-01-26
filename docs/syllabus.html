@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -26,8 +25,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
@@ -60,7 +58,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -74,18 +74,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -101,6 +96,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -120,43 +116,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -178,65 +137,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +191,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +226,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -305,16 +242,6 @@ div.tocify {
 }
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -429,7 +356,13 @@ h1{font-weight: 400;}
 </div>
 <div id="succeed" class="section level1">
 <h1>How can I succeed in this class?</h1>
-<p>Ask yourself:</p>
+<p>Borrowing language from the 2019 Google J-term course here at Smith, when learning in a classroom setting, at any moment, we exist in one of three zones: <em>safe, stretch,</em> or <em>strain.</em><br />
+* A student in the safe zone is completely comfortable, and the course material is completely within what the student already knows.<br />
+* The strain zone is the complete opposite of the safe zone.<br />
+* A student in the strain zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows.</p>
+<p>The material in this course challenges our understanding of statistics and probabilty. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the stretch zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be stretching, but not straining.</p>
+<p>At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to student hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on.</p>
+<p>The strain zone is never a fun place to be during a class. As you work to return to the stretch zone, you might consider the following questions:</p>
 <ul>
 <li><strong>When I have questions or don’t understand something:</strong>
 <ul>
@@ -441,7 +374,7 @@ h1{font-weight: 400;}
 <li><strong>Lectures, labs, and readings:</strong>
 <ul>
 <li><em>“Am I completing all the ModernDive readings/in-class activities for a given lecture before the start of the next lecture?”</em></li>
-<li><em>“Am I staying on top Slack notifications sent between lectures?”</em> If you need help developing a notification strategy that best suits your lifestyle, please speak to me.</li>
+<li><em>“Am I staying on top Slack notifications sent between lectures?”</em> If you need help developing a notification strategy that best suits your lifestyle, please speak to us.</li>
 <li><em>“Am I attending lectures consistently?”</em></li>
 <li><em>“Am I actually running the code and studying the outputs in R during in-class exercises, or am I just skimming the text?”</em></li>
 <li><em>“During in-class exercises and lab time, am I taking full advantage that I’m in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?”</em></li>
@@ -452,7 +385,11 @@ h1{font-weight: 400;}
 <li><em>“When learning to code, much like learning a language, have I been really pushing myself to practice, practice, practice?”</em></li>
 </ul></li>
 </ul>
+<div id="a-note-on-pre-requisities" class="section level2">
+<h2>A note on pre-requisities</h2>
+<p>The course does have a calculus pre-requisite. Having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts.</p>
 <hr />
+</div>
 </div>
 <div id="course-description-objectives" class="section level1">
 <h1>Course Description &amp; Objectives</h1>
@@ -496,8 +433,8 @@ h1{font-weight: 400;}
 <h2>Weekly Problem Sets 15%</h2>
 <ul>
 <li>Total of 9 problem sets: assigned just after Monday’s class at 11am, due the following week at 9am.</li>
-<li>Each problem set is worth 100 pts for a total of 900 possible pts, however the final computation will be out of <strong>700 pts</strong>.</li>
-<li>This means that you can decide to not hand in 2 problem sets any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. <em>Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).</em> Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be “waved.”</li>
+<li>Each full problem set is worth 100 pts and each lite problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of <strong>600 pts</strong>.</li>
+<li>This means that you can decide to not hand in at least one full problem set any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. <em>Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).</em> Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be “waved.”</li>
 <li>The problem sets in this class should be viewed as low-stakes opportunities to practice, instead of evaluative tools used by the instructor to assign grades. <strong>Each problem set is worth less than 2% of your final grade</strong>.</li>
 </ul>
 </div>
@@ -620,49 +557,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
