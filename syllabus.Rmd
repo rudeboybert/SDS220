@@ -8,21 +8,6 @@ output:
       collapsed: no
 ---
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(
-  echo=TRUE, 
-  message=FALSE, 
-  warning=FALSE, 
-  eval=FALSE, 
-  cache=TRUE, 
-  fig.width=16/2, 
-  fig.height=9/2
-)
-
-# Set seed value of random number generator to get "replicable" random numbers.
-set.seed(76)
-```
-
 <!--
 {target="_blank"}
 -->

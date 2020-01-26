@@ -23,7 +23,7 @@ navbar:
 #  - text: Badge Challenges
 #    href: midterms.html#midtermIII
   - text: Project
-    href: project.html#resubmission
+    href: project.html
   - text: Syllabus
     href: syllabus.html
 
