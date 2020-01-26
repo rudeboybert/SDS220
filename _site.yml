@@ -17,9 +17,9 @@ navbar:
     href: https://sds-mth-220-2020-01.slack.com/
   - text: ModernDive
     href: https://moderndive.netlify.com/
-  right:
   - text: Moodle
     href: https://moodle.smith.edu/course/view.php?id=37125
+  right:
   - text: Badge Challenges
     href: badge_challenges.html
   - text: Project
