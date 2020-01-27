@@ -69,6 +69,7 @@ set.seed(76)
 <!--
 # Lec 03: Fri 1/31
 
+## Annoucements
 
 
 ***
@@ -77,9 +78,14 @@ set.seed(76)
 
 # Lec 02: Wed 1/29
 
+## Annoucements
 
+Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color's experiences within SDS courses and the program more generally. If you identify as a student of color and you've taken at least one SDS course, please take a moment to complete Fatima's [SDSCC Preliminary Interest Survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"}. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.
+
+## Lecture
 
 ***
+
 -->
 
 
@@ -99,7 +105,7 @@ set.seed(76)
     
     
 ## Lecture
-    
+
 Here is the typical lecture flow:
 
 * Start with a 10-15 minute "chalk talk". We do this to motivate the day's topics and warn you about potential pitfalls in understanding
