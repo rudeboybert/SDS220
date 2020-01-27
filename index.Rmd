@@ -90,10 +90,11 @@ set.seed(76)
 
 * Introductions
 * If you're having registration issues:
-    + If you are not registered for this course, fill out the [waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"}. However, if you haven't already filled out the form back in fall, your chances of getting in are almost zero.
-    + We will start signing green slips on Friday.
+    + If you are not registered for this course, fill out the [waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"} before Thursday 5pm.
+    + We will start informing students and signing green slips on Friday afternoon.
+    + Please keep in mind that SDS201 is a course that also satisfies the intro stats pre-requisite for many majors, including PSY, GOV, BIO, NSC, ENV, and SDS. Please consider that option as it currently has lots of room.
 * Syllabus 
-    + Honor code
+    + Honor code discussions
     + Reflection exercise
     
     
@@ -106,5 +107,5 @@ Here is the typical lecture flow:
 
 Today's topics:
 
-* Introduction to Slack
-* Introduction to R, RStudio, and R packages
+* Introduction to Slack: A brief demo
+* Introduction to R, RStudio, and R packages: ModernDive readings
