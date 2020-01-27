@@ -255,6 +255,7 @@ The work you submit should be your own and created by you. We do encourage you
 to ask for help from your peers or myself when you have questions; however, 
 copying is never allowed. The line between copying and helping is subtle. 
 Below are a few guidelines:
+
 * Do not share nor give your work with other students; instead, offer to discuss the big ideas of the task at hand. 
 * Do not look at someone else’s work (including online solutions); instead, ask if you could talk with them about your ideas and share where you are getting stuck.
 * Acknowledge those you talk or work with at the top of each assignment. We will not dock points for getting acknowledged help from others. If you generate a solution or an argument with someone, in addition to acknowledging that person, recreate the solution or argument on your own in your own words. 
@@ -276,6 +277,8 @@ the suspected violation will be reported to the Academic Honor Board by the inst
 # Accommodations {#accommodations}
  
 Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
+
+Once you have received an accommodation letter, please provided your instructor with a printed copy.
 
 
 
@@ -317,35 +320,4 @@ lectures, labs, office hours, tutoring hours, and over Slack.**
 This Code of Conduct is adapted from the [Contributor
 Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
 available [here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
-
-
-
-***
-
-
-<!--
-
-# Signature
-
-*I have read this syllabus in its entirety.*
-
-
-Signature:  
-
-***
-
-
-Printed name:  
-
-***
-
-
-Date:  
-
-
-***
-
-
--->
-
 
