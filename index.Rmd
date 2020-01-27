@@ -96,9 +96,10 @@ Fatima Keita is interested in organizing a group for students of color within SD
 
 * Introductions
 * If you're having registration issues:
-    + If you are not registered for this course, fill out the [waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"} before Thursday 5pm.
-    + We will start informing students and signing green slips on Friday afternoon.
     + Please keep in mind that SDS201 is a course that also satisfies the intro stats pre-requisite for many majors, including PSY, GOV, BIO, NSC, ENV, and SDS. Please consider that option as it currently has lots of room.
+    + If you are not registered for this course, fill out the waitlist [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"} before Thursday 5pm.
+    + We will start informing students and signing green slips on Friday afternoon.
+    + If you have previously put your name on the above waitlist Google Form but no longer need a spot, we would very much appreciate a message letting us know. This will help us and your peers a lot.
 * Syllabus 
     + Honor code discussions
     + Reflection exercise
