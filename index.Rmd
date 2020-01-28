@@ -66,10 +66,19 @@ set.seed(76)
 
 
 
-<!--
 # Lec 03: Fri 1/31
 
 ## Annoucements
+
+
+## Chalk talk
+
+1. Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).
+1. Adjust the binning structure of the previous hand-drawn histogram two ways:
+    + Adjusting the binwidth
+    + Adjusting the number of bins
+1. Facets split one graphic by the values of another variable (that does not have too many unique values).
+
 
 
 ***
@@ -80,13 +89,24 @@ set.seed(76)
 
 ## Annoucements
 
-Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color's experiences within SDS courses and the program more generally. If you identify as a student of color and you've taken at least one SDS course, please take a moment to complete Fatima's [SDSCC Preliminary Interest Survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"}. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.
+1. Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color's experiences within SDS courses and the program more generally. If you identify as a student of color and you've taken at least one SDS course, please take a moment to complete Fatima's [SDSCC Preliminary Interest Survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"}. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.
+1. In-class demo of Gradescope.
+1. This week's problem set has three elements
+    + Submit PDF on Gradescope with questions tagged
+    + Fill out Intro Survey Google Form
+    + Submit on Moodle reflection piece which builds off in-class reflection exercise.
+    
+    
+## Chalk Talk
 
-## Lecture
+1. Draw scatterplot by hand
+1. Define of Grammar of Graphics
+1. Write example `ggplot()` code
+1. Explain what jittering does to graphic and what it does not do to original data
+
+
 
 ***
-
--->
 
 
 
