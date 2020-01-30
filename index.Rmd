@@ -66,8 +66,18 @@ set.seed(76)
 
 
 
-<!--
 # Lec 03: Fri 1/31
+
+## Annoucements
+
+
+## Chalk talk
+
+1. Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).
+1. Adjust the binning structure of the previous hand-drawn histogram two ways:
+    + Adjusting the binwidth
+    + Adjusting the number of bins
+1. Facets split one graphic by the values of another variable (that does not have too many unique values).
 
 
 
@@ -77,10 +87,27 @@ set.seed(76)
 
 # Lec 02: Wed 1/29
 
+## Annoucements
+
+1. Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color's experiences within SDS courses and the program more generally. If you identify as a student of color and you've taken at least one SDS course, please take a moment to complete Fatima's [SDSCC Preliminary Interest Survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"}. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.
+1. Show example `#questions` on Slack.
+1. In-class demo of Gradescope.
+1. This week's problem set has three elements
+    + Submit PDF on Gradescope with questions tagged
+    + Fill out Intro Survey Google Form
+    + Submit on Moodle reflection piece which builds off in-class reflection exercise.
+    
+    
+## Chalk Talk
+
+1. Draw scatterplot by hand
+1. Define of Grammar of Graphics
+1. Write example `ggplot()` code
+1. Explain what jittering does to graphic and what it does not do to original data
+
 
 
 ***
--->
 
 
 
@@ -90,15 +117,17 @@ set.seed(76)
 
 * Introductions
 * If you're having registration issues:
-    + If you are not registered for this course, fill out the [waitlist](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"}. However, if you haven't already filled out the form back in fall, your chances of getting in are almost zero.
-    + We will start signing green slips on Friday.
+    + Please keep in mind that SDS201 is a course that also satisfies the intro stats pre-requisite for many majors, including PSY, GOV, BIO, NSC, ENV, and SDS. Please consider that option as it currently has lots of room.
+    + If you are not registered for this course, fill out the waitlist [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdDfcVmrz8p2rmS2BXqT6tv3a-Syzn2gmIG88h4CYQzRvKltw/viewform){target="_blank"} before Thursday 5pm.
+    + We will start informing students and signing green slips on Friday afternoon.
+    + If you have previously put your name on the above waitlist Google Form but no longer need a spot, we would very much appreciate a message letting us know. This will help us and your peers a lot.
 * Syllabus 
-    + Honor code
+    + Honor code discussions
     + Reflection exercise
     
     
 ## Lecture
-    
+
 Here is the typical lecture flow:
 
 * Start with a 10-15 minute "chalk talk". We do this to motivate the day's topics and warn you about potential pitfalls in understanding
@@ -106,5 +135,5 @@ Here is the typical lecture flow:
 
 Today's topics:
 
-* Introduction to Slack
-* Introduction to R, RStudio, and R packages
+* Introduction to Slack: A brief demo
+* Introduction to R, RStudio, and R packages: ModernDive readings

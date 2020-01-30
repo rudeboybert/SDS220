@@ -54,6 +54,7 @@ h1{font-weight: 400;}
 # How can I succeed in this class? {#succeed}
 
 Borrowing language from the 2019 Google J-term course here at Smith, when learning in a classroom setting, at any moment, we exist in one of three zones: *safe, stretch,* or *strain.*    
+
 * A student in the safe zone is completely comfortable, and the course material is completely within what the student already knows.    
 * The strain zone is the complete opposite of the safe zone.   
 * A student in the strain zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows. 
@@ -108,7 +109,7 @@ Course Search](https://www.smith.edu/academics/academic-program/curriculum/cours
 
 A rough topic schedule and corresponding readings are posted below on the [main page](index.html) of this course webpage. We will draw from the following sources:
 
-1. [Statistical Inference via Data Science: A moderndive into R and the tidyverse](https://moderndive.netlify.com/){target="_blank"}. We'll be using the development version; click link in menubar above. Follow the book on Twitter [\@ModernDive](https://twitter.com/ModernDive){target="_blank"}.
+1. [Statistical Inference via Data Science: A moderndive into R and the tidyverse](https://moderndive-bert.netlify.com/){target="_blank"}. We'll be using the development version; click link in menubar above. Follow the book on Twitter [\@ModernDive](https://twitter.com/ModernDive){target="_blank"}.
 1. [OpenIntro: Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
     + Free [PDF](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}
     + Hardcopy. Available on [Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&pd_rd_i=1500576697&pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&pd_rd_w=SqIFV&pd_rd_wg=mb7dk&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=83CCQTHW3KV5NTNHT22J&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=83CCQTHW3KV5NTNHT22J){target="_blank"}
@@ -165,7 +166,7 @@ and then at other times, we serve as reviewers, mentors, and learners. The
 constancy is our willingness to be present and active within our professional 
 community. With this in mind, in this course, your participation is expected, 
 especially *you'll only get out of this class as much as you put in*. That 
-being said, here are multiple pathways for you to stay engaged in this class:
+being said, here are multiple pathways for you to stay engaged in this class: [Google Doc](https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit){target="_blank"}.
 
 Participation can take many forms, including but not limited to: attending 
 class meetings, being active on our course slack, participating in discussion 
@@ -181,6 +182,8 @@ before spring break and during the last week of classes, you will be asked to
 complete a self-evaluation of your class engagement in context of the class 
 engagement list. Your self-evaluations will be a critical part of determining 
 this section of your grade, but not the only determining factor. 
+
+
 
 ## Policies
 
@@ -252,6 +255,7 @@ The work you submit should be your own and created by you. We do encourage you
 to ask for help from your peers or myself when you have questions; however, 
 copying is never allowed. The line between copying and helping is subtle. 
 Below are a few guidelines:
+
 * Do not share nor give your work with other students; instead, offer to discuss the big ideas of the task at hand. 
 * Do not look at someone else’s work (including online solutions); instead, ask if you could talk with them about your ideas and share where you are getting stuck.
 * Acknowledge those you talk or work with at the top of each assignment. We will not dock points for getting acknowledged help from others. If you generate a solution or an argument with someone, in addition to acknowledging that person, recreate the solution or argument on your own in your own words. 
@@ -273,6 +277,8 @@ the suspected violation will be reported to the Academic Honor Board by the inst
 # Accommodations {#accommodations}
  
 Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.
+
+Once you have received an accommodation letter, please provided your instructor with a printed copy.
 
 
 
@@ -314,35 +320,4 @@ lectures, labs, office hours, tutoring hours, and over Slack.**
 This Code of Conduct is adapted from the [Contributor
 Covenant](http://contributor-covenant.org){target="_blank"}, version 1.0.0,
 available [here](http://contributor-covenant.org/version/1/0/0/){target="_blank"}.
-
-
-
-***
-
-
-<!--
-
-# Signature
-
-*I have read this syllabus in its entirety.*
-
-
-Signature:  
-
-***
-
-
-Printed name:  
-
-***
-
-
-Date:  
-
-
-***
-
-
--->
-
 

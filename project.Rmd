@@ -27,7 +27,30 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 <center>
 ![](static/images/pipeline.png){ width=600px }
 </center>
+</br>
 
+```{r, echo = FALSE}
+# Don't repeat yourself!
+hint_1 <- "This is the phase of the project that involves the most uncertainty. Thus, we recommend you start early and get instructor feedback early and often."
+hint_2 <- "This phase may require revisions to your original choice of data and visits to the Spinelli tutoring center for help with data wrangling. "
+```
+
+
+In order to break down the task and minimize end-of-semester stress, you'll be working on the project in four phases:
+
+1. Project data: Propose a data set for your project. `r hint_1`
+1. Project proposal: Ensure you can work with your data in R by performing an exploratory data analysis. `r hint_2`
+1. Project submission: Make an initial submission of your project. You will skip some of the sections for now and only complete them after we have covered inference for regression in class. After you submit your work, you will get instructor feedback.
+1. Project resubmission: Incorporate your instructor feedback from the project submission phase, complete the remaining sections, and resubmit your project. You will only be graded on your project resubmission.
+
+
+***
+
+
+# Important note!!!
+
+
+> We are posting all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. **Therefore we suggest that you do not start any particular phase of the project until you've been instructed to.**
 
 
 ***
@@ -50,7 +73,7 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 ## Find data
 
-**This is likely the most time-consuming portion of the entire project, so we recommend you start early.**
+**`r hint_1`**
 
 1. Read moderndive for important background knowledge and tools for this project phase:
     + Chapter 1.4.4 on identification vs measurement variables.
@@ -78,6 +101,8 @@ Notes:
 
 
 # 2. Project Proposal {#proposal}
+
+**`r hint_2`**
 
 * Read the example [project proposal](static/project/project_proposal_example.html){target="_blank"}. <!--You can also download the <a href="static/project/project_proposal.Rmd" download>`project_proposal_example.Rmd`</a> file that created Dr. Jenny Smetzer and Albert's example.-->
 * Download the following <a href="static/project/project_proposal.Rmd" download>`project_proposal.Rmd`</a> template R Markdown file.
