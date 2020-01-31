@@ -16,7 +16,7 @@ navbar:
   - icon: fa-slack fa-lg
     href: https://sds-mth-220-2020-01.slack.com/
   - text: ModernDive
-    href: https://moderndive.netlify.com/
+    href: https://moderndive-bert.netlify.com/
   - text: Moodle
     href: https://moodle.smith.edu/course/view.php?id=37125
   right:

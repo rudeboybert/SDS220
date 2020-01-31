@@ -109,7 +109,7 @@ Course Search](https://www.smith.edu/academics/academic-program/curriculum/cours
 
 A rough topic schedule and corresponding readings are posted below on the [main page](index.html) of this course webpage. We will draw from the following sources:
 
-1. [Statistical Inference via Data Science: A moderndive into R and the tidyverse](https://moderndive.netlify.com/){target="_blank"}. We'll be using the development version; click link in menubar above. Follow the book on Twitter [\@ModernDive](https://twitter.com/ModernDive){target="_blank"}.
+1. [Statistical Inference via Data Science: A moderndive into R and the tidyverse](https://moderndive-bert.netlify.com/){target="_blank"}. We'll be using the development version; click link in menubar above. Follow the book on Twitter [\@ModernDive](https://twitter.com/ModernDive){target="_blank"}.
 1. [OpenIntro: Introductory Statistics with Randomization and Simulation](https://www.openintro.org/stat/textbook.php?stat_book=isrs/){target="_blank"} by Diez, Barr, and Cetinkaya-Rundel
     + Free [PDF](https://www.openintro.org/download.php?file=isrs1_tablet&referrer=/stat/textbook.php){target="_blank"}
     + Hardcopy. Available on [Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&pd_rd_i=1500576697&pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&pd_rd_w=SqIFV&pd_rd_wg=mb7dk&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=83CCQTHW3KV5NTNHT22J&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=83CCQTHW3KV5NTNHT22J){target="_blank"}
