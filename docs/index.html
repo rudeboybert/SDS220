@@ -368,7 +368,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</h4>
-<h4 class="date">Last updated on 2020-01-28</h4>
+<h4 class="date">Last updated on 2020-01-31</h4>
 
 </div>
 
@@ -386,12 +386,67 @@ h1{font-weight: 400;}
 -->
 <hr />
 </div>
-<div id="lec-03-fri-131" class="section level1">
-<h1>Lec 03: Fri 1/31</h1>
+<div id="lec-04-mon-23" class="section level1">
+<h1>Lec 04: Mon 2/3</h1>
 <div id="annoucements" class="section level2">
 <h2>Annoucements</h2>
 </div>
 <div id="chalk-talk" class="section level2">
+<h2>Chalk talk</h2>
+<p>Boxplots! Powerful, but tricky!</p>
+<p>Say we want to study the distribution of the following 12 values which are pre-sorted:</p>
+<blockquote>
+<p>1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30</p>
+</blockquote>
+<p>They have the following <em>summary statistics</em>. A summary statistic is a single numerical value <em>summarizing</em> many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:</p>
+<ul>
+<li>Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data</li>
+<li>Minimum &amp; maximum</li>
+<li>Interquartile-range (IQR): the distance between the 3rd and 1st quartiles</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Min.</th>
+<th>1st Quartile</th>
+<th>Median = 2nd Quartile</th>
+<th>3rd Quartile</th>
+<th>Max.</th>
+<th>IQR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>5.5</td>
+<td>8.5</td>
+<td>13.5</td>
+<td>30</td>
+<td>8 = 13.5 - 5.5</td>
+</tr>
+</tbody>
+</table>
+<p>Steps to constructing a boxplot:</p>
+<ol style="list-style-type: decimal">
+<li>Draw box</li>
+<li>Throw out whiskers 1.5 x IQR from either end of box</li>
+<li>Mark outliers</li>
+<li>Pull in the ends of both whiskers towards the box until an observed value is hit.</li>
+</ol>
+<!--
+We'll reveal this and the output below on Lec5 on Wed:
+
+Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
+-->
+<hr />
+</div>
+</div>
+<div id="lec-03-fri-131" class="section level1">
+<h1>Lec 03: Fri 1/31</h1>
+<div id="annoucements-1" class="section level2">
+<h2>Annoucements</h2>
+</div>
+<div id="chalk-talk-1" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).</li>
@@ -407,7 +462,7 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-02-wed-129" class="section level1">
 <h1>Lec 02: Wed 1/29</h1>
-<div id="annoucements-1" class="section level2">
+<div id="annoucements-2" class="section level2">
 <h2>Annoucements</h2>
 <ol style="list-style-type: decimal">
 <li>Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color’s experiences within SDS courses and the program more generally. If you identify as a student of color and you’ve taken at least one SDS course, please take a moment to complete Fatima’s <a href="https://www.surveymonkey.com/r/2YZ785Y" target="_blank">SDSCC Preliminary Interest Survey</a>. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.</li>
@@ -421,7 +476,7 @@ h1{font-weight: 400;}
 </ul></li>
 </ol>
 </div>
-<div id="chalk-talk-1" class="section level2">
+<div id="chalk-talk-2" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>Draw scatterplot by hand</li>
