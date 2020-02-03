@@ -65,6 +65,25 @@ set.seed(76)
 ***
 
 
+
+# Lec 05: Wed 2/5
+
+## Annoucements
+
+* Recap: 
+    + points vs boxplots
+    + comparing boxplots to faceted histograms
+    + The idea of "saving something to a variable". You do this to access it again later. You view its contents by just typing variable name in console
+
+## Chalk talk
+
+* Define `fruit_basket`
+* pipe
+* `filter()`
+
+
+
+
 # Lec 04: Mon 2/3
 
 ## Annoucements
