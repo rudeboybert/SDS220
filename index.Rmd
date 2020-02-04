@@ -7,7 +7,7 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
-    df_print: kable
+    df_print: paged
     includes:
       in_header: "favicon.html"
 ---
@@ -26,20 +26,24 @@ knitr::opts_chunk$set(
   fig.height=9/2
 )
 library(tidyverse)
-library(stringr)
-library(knitr)
 library(lubridate)
+library(stringr)
 library(forcats)
+library(moderndive)
+
+# Formating packages:
+library(knitr)
+library(kableExtra)
+library(scales)
+
+# Data packages:
 library(fivethirtyeight)
 library(nycflights13)
 library(gapminder)
 library(babynames)
-library(scales)
-library(moderndive)
+
+# Etc
 library(here)
-library(kableExtra)
-# devtools::install_github("hadley/emo")
-library(emo)
 library(patchwork)
 
 # Set seed value of random number generator to get "replicable" random numbers.
@@ -87,8 +91,7 @@ fruit_basket <- tibble(
 Using same fruit basket example from chalk talk in Lec 05
 
 ```{r, echo=FALSE, eval=TRUE}
-fruit_basket %>% 
-  kable()
+fruit_basket
 ```
 
 <br/>
@@ -163,8 +166,7 @@ Third, the idea of "saving something in R" using the arrow `<-`. Ex: `x <- 5`. Y
 We now start data wrangling! For our chalk talks, we'll use the following "fruit basket" example:
 
 ```{r, echo=FALSE, eval=TRUE}
-fruit_basket %>% 
-  kable()
+fruit_basket
 ```
 
 <br/>

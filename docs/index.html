@@ -25,6 +25,8 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 <link rel="shortcut icon" href="220.png">
@@ -394,68 +396,11 @@ h1{font-weight: 400;}
 <div id="chalk-talk" class="section level2">
 <h2>Chalk talk</h2>
 <p>Using same fruit basket example from chalk talk in Lec 05</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-type
-</th>
-<th style="text-align:right;">
-price in $
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-mango
-</td>
-<td style="text-align:right;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-kiwi
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-mango
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-grape
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-grape
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-mango
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-</tbody>
-</table>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price in $"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 <p><br/> Topics:</p>
 <ul>
 <li>“Summary functions” are many-to-one functions to compute “summary statistics,” like <code>mean()</code> &amp; <code>median</code>.</li>
@@ -494,68 +439,11 @@ mango
 <div id="chalk-talk-1" class="section level2">
 <h2>Chalk talk</h2>
 <p>We now start data wrangling! For our chalk talks, we’ll use the following “fruit basket” example:</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left;">
-type
-</th>
-<th style="text-align:right;">
-price in $
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left;">
-mango
-</td>
-<td style="text-align:right;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-kiwi
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-mango
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-grape
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-grape
-</td>
-<td style="text-align:right;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-mango
-</td>
-<td style="text-align:right;">
-3
-</td>
-</tr>
-</tbody>
-</table>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price in $"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
 <p><br/> Topics:</p>
 <ul>
 <li>Define the “pipe operator” <code>%&gt;%</code>, pronounced <em>then</em></li>
