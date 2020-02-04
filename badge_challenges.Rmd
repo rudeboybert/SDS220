@@ -54,17 +54,17 @@ Note: The coloring of the badge challenges matches the coloring of the lecture s
 ***
 
 
-# Badge Challenge I {#challegeI}
+# Badge Challenge I {#challengeI}
 
 ## Administrative notes
 
-* **Friday 2/28 5pm through Monday 3/2 11:55pm**.
+* **Friday 2/28 5pm through Monday 3/2 11pm**.
 * Self-scheduled Badge Challenge [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Exam length:
-    + You will be given 140 mins to complete it (including transit time to writing area).
     + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above **X** (cannot be assessed). 
+    + You will be given 140 mins to complete it (including transit time to writing area).
     + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
     + All Office of Disability Services forms must be submitted before the midterm start time.
 * Other details:
@@ -86,17 +86,17 @@ Note: The coloring of the badge challenges matches the coloring of the lecture s
 
 
 
-# Badge Challenge II {#challegeII}
+# Badge Challenge II {#challengeII}
 
 ## Administrative notes
 
-* **Friday 4/3 5pm through Monday 4/6 11:55pm**.
+* **Friday 4/3 5pm through Monday 4/6 11pm**.
 * Self-scheduled Badge Challenge [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Exam length:
-    + You will be given 140 mins to complete it (including transit time to writing area).
     + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above **X** (cannot be assessed). 
+    + You will be given 140 mins to complete it (including transit time to writing area).
     + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
     + All Office of Disability Services forms must be submitted before the midterm start time.
 * Other details:
@@ -119,17 +119,17 @@ Note: The coloring of the badge challenges matches the coloring of the lecture s
 
 
 
-# Badge Challenge III {#challegeIII}
+# Badge Challenge III {#challengeIII}
 
 ## Administrative notes
 
-* **Friday 4/24 5pm through Monday 4/27 11:55pm**.
+* **Friday 4/24 5pm through Monday 4/27 11pm**.
 * Self-scheduled Badge Challenge [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Exam length:
-    + You will be given 140 mins to complete it (including transit time to writing area).
     + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above **X** (cannot be assessed). 
+    + You will be given 140 mins to complete it (including transit time to writing area).
     + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
     + All Office of Disability Services forms must be submitted before the midterm start time.
 * Other details:
@@ -152,7 +152,7 @@ Note: The coloring of the badge challenges matches the coloring of the lecture s
 
 
 
-# Badge Challenge IV {#challegeIV}
+# Badge Challenge IV {#challengeIV}
 
 ## Administrative notes
 
