@@ -145,15 +145,7 @@ See [Term Project](term_project.html) page. While your term project grade is onl
 
 ## Badge Challenges: 45%
 
-* There will be four self-scheduled badge challenges, including one during finals week, during which you can collect statistics badges. See the [Midterms](midterms.html) page.
-* There are 15 badges, each representing core skills for the course. During each badge challenge, you can attempt as many or as few badges as you would like. **Your goal, by the end of the semester, is to collect all 15 badges.**
-* The first badge challenge will have the first 5 badges available, the second will have the first 10, and the third and fourth badge challenge will have all 15 badges. As a reminder, you do *not need to (nor should you) attempt* all badges on each challenge, but you do need to collect all 15 badges by the end of the term. 
-* There are four levels for each badge: **G** – Gold, **S** – Silver, **B** – Bronze, and **X** – cannot be assessed. 
-* The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze. 
-* This system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the *only* the statistical skills that you are ready to demonstrate. 
-
-At the end of the semester, your collected badges and badge levels will be converted into points for your final grade:
-![Badge Table](figs/BadgeTable.png)
+See [Badge Challenges](badge_challenges.html) page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge during exam week optional 
 
 ## Engagement 10% {#engagement}
 
