@@ -44,6 +44,17 @@ library(patchwork)
 
 # Set seed value of random number generator to get "replicable" random numbers.
 set.seed(76)
+
+# Example points for boxplots
+example <- tibble(
+  values = c(1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30)
+)
+
+# fruit basket example for data wrangling
+fruit_basket <- tibble(
+  type = c("mango", "kiwi", "mango", "grape", "grape", "mango"),
+  `price in $` = c(2, 3, 1, 3, 1, 3)
+)
 ```
 
 
@@ -66,40 +77,114 @@ set.seed(76)
 
 
 
-# Lec 05: Wed 2/5
+# Lec 06: Fri 2/7
 
-## Annoucements
+## Announcements
 
-* Recap: 
-    + points vs boxplots
-    + comparing boxplots to faceted histograms
-    + The idea of "saving something to a variable". You do this to access it again later. You view its contents by just typing variable name in console
 
 ## Chalk talk
 
-* Define `fruit_basket`
-* pipe
-* `filter()`
+Using same fruit basket example from chalk talk in Lec 05
+
+```{r, echo=FALSE, eval=TRUE}
+fruit_basket %>% 
+  kable()
+```
+
+<br/>
+Topics:
+
+* "Summary functions" are many-to-one functions to compute "summary statistics," like `mean()` & `median`.
+* Using summary functions to then `summarize()` rows
+* Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows
+* One summary statistic of spread: standard deviation `sd()`, in particular when distribution of a numerical variable follows a normal AKA bell curve.
+
+
+
+
+***
+
+
+
+# Lec 05: Wed 2/5
+
+## Announcements
+
+* 
+
+## Recap 
+
+First, let's compare the boxplot you created in Lec04 with the original points. See how they align.
+
+```{r, echo=FALSE, eval=TRUE}
+plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_point() +
+  labs(title = "Points") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+
+plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
+  geom_boxplot() +
+  labs(title = "Boxplot") +
+  theme(
+    axis.title.x = element_blank(),
+    axis.text.x = element_blank(),
+    axis.ticks.x = element_blank()
+  )
+plot1 + plot2
+```
+
+Second, let's compare two visualizations of the distribution of the numerical variable temperature *split by* month:
+
+* Faceted histogram in ModernDive [Figure 2.13](https://moderndive-bert.netlify.com/2-viz.html#facets){target="_blank"}
+* Side-by-side boxplot in ModernDive [Figure 2.18](https://moderndive-bert.netlify.com/2-viz.html#boxplots){target="_blank"}
+
+```{r, echo=FALSE, eval=TRUE}
+ggplot(data = weather, mapping = aes(x = temp)) +
+  geom_histogram(binwidth = 5, color = "white") +
+  facet_wrap(~ month)
+ggplot(data = weather, mapping = aes(x = factor(month), y = temp)) +
+  geom_boxplot()
+```
+
+Which do you prefer?
+
+Third, the idea of "saving something in R" using the arrow `<-`. Ex: `x <- 5`. You do this so you can access it again later, either to
+
+1. View its contents: Type `x` in the console or RMarkdown.
+1. Modify it's contents: Type `x <- x + 1` or RMarkdown. What is now saved in `x`?
+
+
+## Chalk talk
+
+We now start data wrangling! For our chalk talks, we'll use the following "fruit basket" example:
+
+```{r, echo=FALSE, eval=TRUE}
+fruit_basket %>% 
+  kable()
+```
+
+<br/>
+Topics:
+
+* Define the "pipe operator" `%>%`, pronounced *then*
+* Logical AKA boolean operators in computer programming
+* `filter()` rows that match a criteria
 
 
 
 
 # Lec 04: Mon 2/3
 
-## Annoucements
+## Announcements
 
 
 ## Chalk talk
 
 Boxplots! Powerful, but tricky!
-
-```{r, eval=TRUE, echo=FALSE}
-library(ggplot2)
-library(dplyr)
-example <- tibble(
-  values = c(1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30)
-)
-```
 
 Say we want to study the distribution of the following `r nrow(example)` values which are pre-sorted: 
 
@@ -125,43 +210,13 @@ Steps to constructing a boxplot:
 
 
 
-
-<!--
-We'll reveal this and the output below on Lec5 on Wed:
-
-Let's compare the points and the corresponding boxplot side-by-side with the values on the $y$-axis matching:
--->
-```{r, echo=FALSE, eval=FALSE}
-plot1 <- ggplot(example, aes(x=factor(1), y=values)) +
-  geom_point() +
-  labs(title = "Points") +
-  theme(
-    axis.title.x = element_blank(),
-    axis.text.x = element_blank(),
-    axis.ticks.x = element_blank()
-  )
-
-plot2 <- ggplot(example, aes(x=factor(1), y=values)) +
-  geom_boxplot() +
-  labs(title = "Boxplot") +
-  theme(
-    axis.title.x = element_blank(),
-    axis.text.x = element_blank(),
-    axis.ticks.x = element_blank()
-  )
-plot1 + plot2
-```
-
-
-
-
 ***
 
 
 
 # Lec 03: Fri 1/31
 
-## Annoucements
+## Announcements
 
 
 ## Chalk talk
@@ -180,7 +235,7 @@ plot1 + plot2
 
 # Lec 02: Wed 1/29
 
-## Annoucements
+## Announcements
 
 1. Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color's experiences within SDS courses and the program more generally. If you identify as a student of color and you've taken at least one SDS course, please take a moment to complete Fatima's [SDSCC Preliminary Interest Survey](https://www.surveymonkey.com/r/2YZ785Y){target="_blank"}. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.
 1. Show example `#questions` on Slack.
