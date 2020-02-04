@@ -80,10 +80,9 @@ fruit_basket <- tibble(
 ***
 
 
-
+<!--
 # Lec 06: Fri 2/7
 
-<!--
 ## Announcements
 
 ## Chalk talk
@@ -101,11 +100,10 @@ Topics:
 * Using summary functions to then `summarize()` rows
 * Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows
 * One summary statistic of spread: standard deviation `sd()`, in particular when distribution of a numerical variable follows a normal AKA bell curve.
--->
-
 
 
 ***
+-->
 
 
 
@@ -114,6 +112,7 @@ Topics:
 ## Announcements
 
 * Posted single calendar of all instructor and lab instructor office hours on Moodle.
+* Posted [badge challenges](badge_challenges.html)
 * Managing Slack notifications:
     + We suggest but don't require installing Desktop App. 
     + If not, at the very least, keep email notifications on.
