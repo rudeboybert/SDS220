@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -26,8 +25,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
@@ -60,7 +58,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -74,18 +74,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -101,6 +96,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -120,43 +116,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -178,65 +137,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +191,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +226,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -305,16 +242,6 @@ div.tocify {
 }
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -380,13 +307,43 @@ div.tocify {
 <style>
 h1{font-weight: 400;}
 </style>
+<!--
+{target="_blank"}
+-->
 <hr />
-<div id="challegeI" class="section level1">
+<div id="badge-challenge-system" class="section level1">
+<h1>Badge Challenge System</h1>
+<p>There will be four “badge challenges,” three mid-semester and one during finals week, during which you can collect statistics “badges.” There are a total 15 badges, each representing a core skill for the course. Note: The coloring of the badge challenges matches the coloring of the lecture schedule.</p>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=67598343&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="550">
+</iframe>
+<p>As you can see, the first badge challenge will have the first 5 badges available, the second will have the first 10, and the third and fourth badge challenge will have all 15 badges. During each badge challenge, you can attempt as many or as few of the available badges as you would like. <strong>Your goal, by the end of the semester, is to collect all 15 badges.</strong></p>
+<p>There are four levels for each badge: <em>G</em> – Gold, <em>S</em> – Silver, <em>B</em> – Bronze, and <em>X</em> – cannot be assessed. The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze. <strong>Thus, you do not need to (nor should you) attempt all badges on each challenge,</strong> but you do need to collect all 15 badges by the end of the term.</p>
+<p>At the end of the semester, your collected badges and badge levels will be converted into points for the 45% of your final grade assigned to badge challenges (see <a href="syllabus.html#evaluation">syllabus</a>):</p>
+<div class="figure">
+<img src="figs/BadgeTable.png" alt="Badge Table" />
+<p class="caption">Badge Table</p>
+</div>
+<p><strong>Why are we doing this?</strong></p>
+<ol style="list-style-type: decimal">
+<li>To remove the pressure, stress, and performance anxiety associated with conventional exams. The “badge challenge” system <em>guarantees</em> more than one chance to <strong>master</strong> each badge.</li>
+<li>The “badge challenge” system system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the <em>only</em> the statistical skills that you are ready to demonstrate. For example, if you’ve already <strong>mastered</strong> a particular badge, you can focus your studying elsewhere in a targeted fashion.</li>
+<li>Since you are given the opportunity to <strong>master</strong> all 15 badges after the first three badge challenges, the fourth badge challenge during exam week becomes merely an opportunity to revise and improve your grade.</li>
+<li>The “badge challenge” system is aligned with the <strong>mastery</strong>-based learning pedagogical paradigm, which encourages a <a href="Mastery-based%20grading:%20from%20minimum%20mindset%20to%20a%20growth%20mindset" target="_blank">“growth mindset”</a> as opposed to a minimum/fixed mindset.</li>
+</ol>
+<!--
+Sell it informally as:
+
+* Chart your own journey
+* Pokemon: gotta catch them all
+-->
+<hr />
+</div>
+<div id="challengeI" class="section level1">
 <h1>Badge Challenge I</h1>
 <div id="administrative-notes" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 2/28 5pm through Monday 3/2 11:55pm</strong>.</li>
+<li><strong>Friday 2/28 5pm through Monday 3/2 11pm</strong>.</li>
 <li>Self-scheduled Badge Challenge <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
 <ul>
 <li>Only print from macOS computers.</li>
@@ -394,8 +351,8 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Exam length:
 <ul>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
 <li>You will be given 140 mins to complete it (including transit time to writing area).</li>
-<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <strong>X</strong> (cannot be assessed).</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.</strong></li>
 <li>All Office of Disability Services forms must be submitted before the midterm start time.</li>
 </ul></li>
@@ -409,7 +366,7 @@ h1{font-weight: 400;}
 <div id="badges-1-5" class="section level2">
 <h2>Badges 1-5</h2>
 <ul>
-<li>Badges: Lectures 1-12 &amp; Labs 1-8. In other words everything up to and including regression with one numerical predictor.</li>
+<li>Badges: Lectures 1-12 &amp; Labs 1-4. In other words everything up to and including regression with one numerical predictor.</li>
 <li>What to study:
 <ul>
 <li>Your hand-written course notes first: they are the “executive summaries” of topics.</li>
@@ -420,12 +377,12 @@ h1{font-weight: 400;}
 <hr />
 </div>
 </div>
-<div id="challegeII" class="section level1">
+<div id="challengeII" class="section level1">
 <h1>Badge Challenge II</h1>
 <div id="administrative-notes-1" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 4/3 5pm through Monday 4/6 11:55pm</strong>.</li>
+<li><strong>Friday 4/3 5pm through Monday 4/6 11pm</strong>.</li>
 <li>Self-scheduled Badge Challenge <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
 <ul>
 <li>Only print from macOS computers.</li>
@@ -433,8 +390,8 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Exam length:
 <ul>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
 <li>You will be given 140 mins to complete it (including transit time to writing area).</li>
-<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <strong>X</strong> (cannot be assessed).</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.</strong></li>
 <li>All Office of Disability Services forms must be submitted before the midterm start time.</li>
 </ul></li>
@@ -448,7 +405,7 @@ h1{font-weight: 400;}
 <div id="badges-1-10" class="section level2">
 <h2>Badges 1-10</h2>
 <ul>
-<li>Badges: Lectures 1-24 &amp; Labs 1-9. In other words everything up to and including the resampling activity, and confidence intervals.</li>
+<li>Badges: Lectures 1-24 &amp; Labs 1-8. In other words everything up to and including the resampling activity and confidence intervals.</li>
 <li>What to study:
 <ul>
 <li>Badge Challenge 1! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
@@ -459,12 +416,12 @@ h1{font-weight: 400;}
 <hr />
 </div>
 </div>
-<div id="challegeIII" class="section level1">
+<div id="challengeIII" class="section level1">
 <h1>Badge Challenge III</h1>
 <div id="administrative-notes-2" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li><strong>Friday 4/24 5pm through Monday 4/27 11:55pm</strong>.</li>
+<li><strong>Friday 4/24 5pm through Monday 4/27 11pm</strong>.</li>
 <li>Self-scheduled Badge Challenge <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a>. In particular:
 <ul>
 <li>Only print from macOS computers.</li>
@@ -472,8 +429,8 @@ h1{font-weight: 400;}
 </ul></li>
 <li>Exam length:
 <ul>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
 <li>You will be given 140 mins to complete it (including transit time to writing area).</li>
-<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <strong>X</strong> (cannot be assessed).</li>
 <li><strong>Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.</strong></li>
 <li>All Office of Disability Services forms must be submitted before the midterm start time.</li>
 </ul></li>
@@ -487,10 +444,33 @@ h1{font-weight: 400;}
 <div id="badges-1-15" class="section level2">
 <h2>Badges 1-15</h2>
 <ul>
+<li>Badges: All Lectures 1-37 &amp; all Labs. In other words everything.</li>
+<li>What to study:
+<ul>
+<li>Badge Challenges 1, and 2! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
+<li>Problem sets corresponding to labs.</li>
+</ul></li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="challengeIV" class="section level1">
+<h1>Badge Challenge IV</h1>
+<div id="administrative-notes-3" class="section level2">
+<h2>Administrative notes</h2>
+<ul>
+<li><strong>Exam week</strong>.</li>
+<li>More details to be posted later.</li>
+</ul>
+</div>
+<div id="badges-1-15-1" class="section level2">
+<h2>Badges 1-15</h2>
+<ul>
 <li>Badges: All Lectures 1-37 &amp; All Labs. In other words everything.</li>
 <li>What to study:
 <ul>
-<li>Badge Challenges 1 and 2! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>Badge Challenges 1, 2, and 3! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
 <li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
 <li>Problem sets corresponding to labs.</li>
 </ul></li>
@@ -516,49 +496,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

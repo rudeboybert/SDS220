@@ -7,7 +7,6 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -26,8 +25,7 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
 
 
@@ -60,7 +58,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -74,18 +74,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -101,6 +96,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -120,43 +116,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -178,65 +137,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +191,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +226,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -305,16 +242,6 @@ div.tocify {
 }
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -431,14 +358,12 @@ h1{font-weight: 400;}
 <h1>How can I succeed in this class?</h1>
 <p>Borrowing language from the 2019 Google J-term course here at Smith, when learning in a classroom setting, at any moment, we exist in one of three zones: <em>safe, stretch,</em> or <em>strain.</em></p>
 <ul>
-<li>A student in the safe zone is completely comfortable, and the course material is completely within what the student already knows.<br />
+<li>A student in the <em>safe</em> zone is completely comfortable, and the course material is completely within what the student already knows.<br />
 </li>
-<li>The strain zone is the complete opposite of the safe zone.<br />
-</li>
-<li>A student in the strain zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows.</li>
+<li>The <em>strain</em> zone is the complete opposite of the safe zone. A student in the <em>strain</em> zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows.</li>
 </ul>
-<p>The material in this course challenges our understanding of statistics and probabilty. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the stretch zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be stretching, but not straining.</p>
-<p>At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to student hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on.</p>
+<p>The material in this course challenges our understanding of statistics and probability. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the <em>stretch</em> zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be <em>stretching</em>, but not <em>straining</em>.</p>
+<p>At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to office hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on.</p>
 <p>The strain zone is never a fun place to be during a class. As you work to return to the stretch zone, you might consider the following questions:</p>
 <ul>
 <li><strong>When I have questions or don’t understand something:</strong>
@@ -462,9 +387,9 @@ h1{font-weight: 400;}
 <li><em>“When learning to code, much like learning a language, have I been really pushing myself to practice, practice, practice?”</em></li>
 </ul></li>
 </ul>
-<div id="a-note-on-pre-requisities" class="section level2">
-<h2>A note on pre-requisities</h2>
-<p>The course does have a calculus pre-requisite. Having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts.</p>
+<div id="a-note-on-pre-requisites" class="section level2">
+<h2>A note on pre-requisites</h2>
+<p>While the course does have a calculus pre-requisite, having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts.</p>
 <hr />
 </div>
 </div>
@@ -510,7 +435,7 @@ h1{font-weight: 400;}
 <h2>Weekly Problem Sets 15%</h2>
 <ul>
 <li>Total of 9 problem sets: assigned just after Monday’s class at 11am, due the following week at 9am.</li>
-<li>Each full problem set is worth 100 pts and each lite problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of <strong>600 pts</strong>.</li>
+<li>Each full problem set is worth 100 pts and each “lite” problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of <strong>600 pts</strong>. In other words, you have a 750 - 600 = 150 point cushion.</li>
 <li>This means that you can decide to not hand in at least one full problem set any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. <em>Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).</em> Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be “waved.”</li>
 <li>The problem sets in this class should be viewed as low-stakes opportunities to practice, instead of evaluative tools used by the instructor to assign grades. <strong>Each problem set is worth less than 2% of your final grade</strong>.</li>
 </ul>
@@ -521,19 +446,11 @@ h1{font-weight: 400;}
 </div>
 <div id="badge-challenges-45" class="section level2">
 <h2>Badge Challenges: 45%</h2>
-<ul>
-<li>There will be four self-scheduled badge challenges, including one during finals week, during which you can collect statistics badges. See the <a href="midterms.html">Midterms</a> page.</li>
-<li>There are 15 badges, each representing core skills for the course. During each badge challenge, you can attempt as many or as few badges as you would like. <strong>Your goal, by the end of the semester, is to collect all 15 badges.</strong></li>
-<li>The first badge challenge will have the first 5 badges available, the second will have the first 10, and the third and fourth badge challenge will have all 15 badges. As a reminder, you do <em>not need to (nor should you) attempt</em> all badges on each challenge, but you do need to collect all 15 badges by the end of the term.</li>
-<li>There are four levels for each badge: <strong>G</strong> – Gold, <strong>S</strong> – Silver, <strong>B</strong> – Bronze, and <strong>X</strong> – cannot be assessed.</li>
-<li>The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze.</li>
-<li>This system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the <em>only</em> the statistical skills that you are ready to demonstrate.</li>
-</ul>
-<p>At the end of the semester, your collected badges and badge levels will be converted into points for your final grade: <img src="figs/BadgeTable.png" alt="Badge Table" /></p>
+<p>See <a href="badge_challenges.html">Badge Challenges</a> page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge an opportunity to revise and improve your grade.</p>
 </div>
 <div id="engagement" class="section level2">
 <h2>Engagement 10%</h2>
-<p>Being part of a professional community has many parts; we generate and consume knowledge, we review and critique work, and we present to and learn from each other. The edge of what we know is constantly being pushed further and further as we discover new ideas, create new knowledge, and ask new questions. At times, we are computers, writers, and contractors, and then at other times, we serve as reviewers, mentors, and learners. The constancy is our willingness to be present and active within our professional community. With this in mind, in this course, your participation is expected, especially <em>you’ll only get out of this class as much as you put in</em>. That being said, here are multiple pathways for you to stay engaged in this class: <a href="https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit" target="_blank">Google Doc</a>.</p>
+<p>Being part of a professional community has many parts; we generate and consume knowledge, we review and critique work, and we present to and learn from each other. The edge of what we know is constantly being pushed further and further as we discover new ideas, create new knowledge, and ask new questions. At times, we are computers, writers, and contractors, and then at other times, we serve as reviewers, mentors, and learners. The constancy is our willingness to be present and active within our professional community. With this in mind, in this course, your participation is expected, especially <strong>you’ll only get out of this class as much as you put in</strong>. That being said, here are multiple pathways for you to stay engaged in this class: <a href="https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit" target="_blank">Google Doc</a>.</p>
 <p>Participation can take many forms, including but not limited to: attending class meetings, being active on our course slack, participating in discussion in class, offering ideas and questions in class or on slack. Beyond attending class, our class as a community will generate a list of what we believe are ways to engage and participate in our course. Adding to this list one way that you are called to participate in this course. If you find yourself unwilling or resistant to adding to this list, examine this. <em>What is holding you back?</em> <em>What would help propel you to action?</em></p>
 <p>The engagement part of the course will be graded with student input. In the week before spring break and during the last week of classes, you will be asked to complete a self-evaluation of your class engagement in context of the class engagement list. Your self-evaluations will be a critical part of determining this section of your grade, but not the only determining factor.</p>
 </div>
@@ -559,6 +476,8 @@ h1{font-weight: 400;}
 </div>
 <div id="academic-integrity" class="section level1">
 <h1>Academic Integrity</h1>
+<div id="honor-code-principles" class="section level2">
+<h2>Honor Code Principles</h2>
 <p>Being at a school with an Honor Code, like Smith, is a special privilege. The Honor Code goes beyond inviting students to act with integrity, instead it welcomes students as equal participants of the learning community, imbuing students with the same level of trust that we extend to our collaborators and colleagues. The Smith College Honor Code, established in 1944, and as stated in the Student Handbook, says:</p>
 <blockquote>
 <p>Smith College expects all students to be honest and committed to the principles of academic and intellectual integrity in their preparation and submission of course work and examinations. Students and faculty at Smith are part of an academic community defined by its commitment to scholarship, which depends on scrupulous and attentive acknowledgement of all sources of information, and honest and respectful use of college resources.</p>
@@ -566,6 +485,7 @@ h1{font-weight: 400;}
 <p>This trust bestowed to students in the Honor Code is the same trust that exists in and among researchers within a research community, the same trust that exists between us and our collaborators. Simply put, at Smith, under the Honor Code, I trust that you will each act with integrity, citing sources when you celebrate others’ ideas and noting who you work with when collaborating.</p>
 <p>This trust manifests in how assignments are created, in how work is completed, and in how we resolve instances where the trust has been broken. At an Honor Code school, assignments are created knowing that while there are resources online that can offer complete solutions, you are trusted to not seek out such complete resources and that if you do stumble on a solution guide, you will not use it. Under an Honor Code, students are expected to keep careful notes about the resources that they consult and the people that they collaborate with. We get to assume that the work handed in by a student is the creation of that student. Lastly, when there are violations of the Honor Code, the resolution is determined by a committee established by the community and trusted to seek restoration of the whole community’s trust through education and action.</p>
 <p>We regard the Honor Code with deep and profound respect. Being educators at an Honor Code school means we begin from a place of trust without any underlying suspicion of our students. Simply put, we - instructors and students - work from the assumption that all are acting in good faith and with the utmost integrity. This is an assumption that cannot be made at a school without an Honor code, and it is why it is a privilege to be both an instructor and a student at Smith under the Honor Code.</p>
+</div>
 <div id="honor-code-practicalities" class="section level2">
 <h2>Honor Code Practicalities</h2>
 <p>The work you submit should be your own and created by you. We do encourage you to ask for help from your peers or myself when you have questions; however, copying is never allowed. The line between copying and helping is subtle. Below are a few guidelines:</p>
@@ -615,49 +535,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
