@@ -155,7 +155,7 @@ ggplot(data = weather, mapping = aes(x = factor(month), y = temp)) +
 
 Which do you prefer?
 
-Third, the idea of "saving something in R" using the arrow `<-`. Ex: `x <- 5`. You do this so you can access it again later, either to
+Third, the idea of "assigning AKA saving something in R" using the arrow `<-`. Ex: `x <- 5`. You do this so you can access it again later, either to
 
 1. View its contents: Type `x` in the console or RMarkdown.
 1. Modify it's contents: Type `x <- x + 1` or RMarkdown. What is now saved in `x`?
