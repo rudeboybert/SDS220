@@ -120,6 +120,7 @@ Topics:
     
 <!--
 * Bert only: Emphasize problem set policy. "Turn in what you have."
+* Bert only: "not equals" and "bang equals"
 -->
 
 ## Recap 
