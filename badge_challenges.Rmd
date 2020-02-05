@@ -44,17 +44,22 @@ As you can see, the first badge challenge will have the first 5 badges available
 
 There are four levels for each badge: *G* – Gold, *S* – Silver, *B* – Bronze, and *X* – cannot be assessed. The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze. **Thus, you do not need to (nor should you) attempt all badges on each challenge,** but you do need to collect all 15 badges by the end of the term.
 
-At the end of the semester, your collected badges and badge levels will be converted into points for your final grade:
+At the end of the semester, your collected badges and badge levels will be converted into points for the 45% of your final grade assigned to badge challenges (see [syllabus](syllabus.html#evaluation)):
 ![Badge Table](figs/BadgeTable.png)
 
 **Why are we doing this?**
 
 1. To remove the pressure, stress, and performance anxiety associated with conventional exams. The "badge challenge" system *guarantees* more than one chance to **master** each badge.
-1. The "badge challenge" system system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the *only* the statistical skills that you are ready to demonstrate. For example, if you've already **mastered** a particular badge, you can focus your studying elsewhere.
+1. The "badge challenge" system system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the *only* the statistical skills that you are ready to demonstrate. For example, if you've already **mastered** a particular badge, you can focus your studying elsewhere in a targetted fashion.
 1. Since you are given the opportunity to **master** all 15 badges after the first three badge challenges, the fourth badge challenge during exam week becomes merely an opportunity to revise and improve your grade.
 1. The "badge challenge" system is aligned with the **mastery**-based learning pedagogical paradigm, which encourages a ["growth mindset"](Mastery-based grading: from minimum mindset to a growth mindset){target="_blank"} as opposed to a minimum/fixed mindset. 
 
+<!--
+Sell it informally as:
 
+* Chart your own journey
+* Pokemon: gotta catch them all
+-->
 
 
 ***
@@ -69,7 +74,7 @@ At the end of the semester, your collected badges and badge levels will be conve
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Exam length:
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above **X** (cannot be assessed). 
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
     + You will be given 140 mins to complete it (including transit time to writing area).
     + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
     + All Office of Disability Services forms must be submitted before the midterm start time.
@@ -101,7 +106,7 @@ At the end of the semester, your collected badges and badge levels will be conve
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Exam length:
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above **X** (cannot be assessed). 
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
     + You will be given 140 mins to complete it (including transit time to writing area).
     + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
     + All Office of Disability Services forms must be submitted before the midterm start time.
@@ -134,7 +139,7 @@ At the end of the semester, your collected badges and badge levels will be conve
     + Only print from macOS computers.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
 * Exam length:
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above **X** (cannot be assessed). 
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
     + You will be given 140 mins to complete it (including transit time to writing area).
     + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
     + All Office of Disability Services forms must be submitted before the midterm start time.
