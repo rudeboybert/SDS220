@@ -153,7 +153,7 @@ Sell it informally as:
     
 * Badges: All Lectures 1-37 & all Labs.  In other words everything.
 * What to study:
-    + Badge Challenges 1, 2, and 3!
+    + Badge Challenges 1, and 2!
     Your hand-written course notes first: they are the "executive summaries" of topics.
     + The material on the course webpage chronologically, in particular the ModernDive readings.
     + Problem sets corresponding to labs.
