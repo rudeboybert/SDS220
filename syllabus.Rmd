@@ -55,13 +55,12 @@ h1{font-weight: 400;}
 
 Borrowing language from the 2019 Google J-term course here at Smith, when learning in a classroom setting, at any moment, we exist in one of three zones: *safe, stretch,* or *strain.*    
 
-* A student in the safe zone is completely comfortable, and the course material is completely within what the student already knows.    
-* The strain zone is the complete opposite of the safe zone.   
-* A student in the strain zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows. 
+* A student in the *safe* zone is completely comfortable, and the course material is completely within what the student already knows.    
+* The *strain* zone is the complete opposite of the safe zone. A student in the *strain* zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows. 
 
-The material in this course challenges our understanding of statistics and probabilty. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the stretch zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be stretching, but not straining. 
+The material in this course challenges our understanding of statistics and probabilty. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the *stretch* zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be *stretching*, but not *straining*. 
 
-At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to student hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on. 
+At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to office hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on. 
 
 
 The strain zone is never a fun place to be during a class. As you work to return to the stretch zone, you might consider the following questions: 
@@ -84,7 +83,9 @@ The strain zone is never a fun place to be during a class. As you work to return
 
 ## A note on pre-requisities
 
-The course does have a calculus pre-requisite. Having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts. 
+While the course does have a calculus pre-requisite, having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts. 
+
+
 
 ***
 
@@ -128,12 +129,12 @@ A rough topic schedule and corresponding readings are posted below on the [main 
 
 
 
-# Evaluation
+# Evaluation {#evaluation}
 
 ## Weekly Problem Sets 15%
 
 * Total of 9 problem sets: assigned just after Monday's class at 11am, due the following week at 9am.
-* Each full problem set is worth 100 pts and each lite problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of **600 pts**. 
+* Each full problem set is worth 100 pts and each "lite" problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of **600 pts**. In other words, you have a 750 - 600 = 150 point cushion.
 * This means that you can decide to not hand in at least one full problem set any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. *Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).* Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be "waved."
 * The problem sets in this class should be viewed as low-stakes opportunities to
 practice, instead of evaluative tools used by the instructor to assign grades.
@@ -145,7 +146,7 @@ See [Term Project](term_project.html) page. While your term project grade is onl
 
 ## Badge Challenges: 45%
 
-See [Badge Challenges](badge_challenges.html) page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge during exam week optional 
+See [Badge Challenges](badge_challenges.html) page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge an opportunity to revise and improve your grade.
 
 ## Engagement 10% {#engagement}
 
@@ -157,7 +158,7 @@ ask new questions. At times, we are computers, writers, and contractors,
 and then at other times, we serve as reviewers, mentors, and learners. The 
 constancy is our willingness to be present and active within our professional 
 community. With this in mind, in this course, your participation is expected, 
-especially *you'll only get out of this class as much as you put in*. That 
+especially **you'll only get out of this class as much as you put in**. That 
 being said, here are multiple pathways for you to stay engaged in this class: [Google Doc](https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit){target="_blank"}.
 
 Participation can take many forms, including but not limited to: attending 
@@ -199,6 +200,8 @@ in your submissions.
 
 
 # Academic Integrity
+
+## Honor Code Principles
 
 Being at a school with an Honor Code, like Smith, is a special privilege. 
 The Honor Code goes beyond inviting students to act with integrity, instead 
