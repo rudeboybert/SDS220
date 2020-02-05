@@ -58,7 +58,7 @@ Borrowing language from the 2019 Google J-term course here at Smith, when learni
 * A student in the *safe* zone is completely comfortable, and the course material is completely within what the student already knows.    
 * The *strain* zone is the complete opposite of the safe zone. A student in the *strain* zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows. 
 
-The material in this course challenges our understanding of statistics and probabilty. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the *stretch* zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be *stretching*, but not *straining*. 
+The material in this course challenges our understanding of statistics and probability. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the *stretch* zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be *stretching*, but not *straining*. 
 
 At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to office hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on. 
 
@@ -81,7 +81,7 @@ The strain zone is never a fun place to be during a class. As you work to return
     + *"When learning to code, much like learning a language, have I been really pushing myself to practice, practice, practice?"*
 
 
-## A note on pre-requisities
+## A note on pre-requisites
 
 While the course does have a calculus pre-requisite, having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts. 
 
