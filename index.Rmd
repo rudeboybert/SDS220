@@ -86,6 +86,7 @@ fruit_basket <- tibble(
 
 <!--
 * Bert only: Emphasize problem set policy. "Turn in what you have."
+* Bert only: Google doc exercise: https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit
 -->
 
 ## Recap
