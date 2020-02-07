@@ -87,6 +87,10 @@ fruit_basket <- tibble(
 <!--
 * Bert only: Emphasize problem set policy. "Turn in what you have."
 * Bert only: Google doc exercise: https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit
+
+Write down 3 things you did for this class this week
+Turn to a neighbor, come up with a list of 5 things
+Then we did the google doc
 -->
 
 ## Recap
@@ -103,9 +107,9 @@ fruit_basket <- tibble(
 ```{r, echo=FALSE, eval=TRUE}
 fruit_basket
 ```
-    + "Summary functions" are many-to-one functions to compute "summary statistics," like `mean()` & `median()`
-    + Using summary functions to then `summarize()` rows
-    + Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows. In other words, `group_by()` by itself does not change the "data", rather only the "meta-data"
+    1. "Summary functions" are many-to-one functions to compute "summary statistics," like `mean()` & `median()`
+    1. Using summary functions to then `summarize()` rows
+    1. Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows. In other words, `group_by()` by itself does not change the "data", rather only the "meta-data"
 * Normal distribution: One summary statistic of spread, standard deviation `sd()`, has a particular interpretation when distribution of a numerical variable follows a normal AKA bell curve
 
 
