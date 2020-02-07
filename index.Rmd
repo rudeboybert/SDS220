@@ -80,30 +80,38 @@ fruit_basket <- tibble(
 ***
 
 
-<!--
 # Lec 06: Fri 2/7
 
 ## Announcements
 
+<!--
+* Bert only: Emphasize problem set policy. "Turn in what you have."
+* Bert only: Google doc exercise: https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit
+-->
+
+## Recap
+
+<!--
+* Bert only based on questions in his section: Distinguishing between
+    + English use of "or" and "and" versus
+    + Computer programming use of "or" and "and"
+-->
+
 ## Chalk talk
 
-Using same fruit basket example from chalk talk in Lec 05
-
+* Using same fruit basket example from chalk talk in Lec 05:  
 ```{r, echo=FALSE, eval=TRUE}
 fruit_basket
 ```
+    + "Summary functions" are many-to-one functions to compute "summary statistics," like `mean()` & `median()`
+    + Using summary functions to then `summarize()` rows
+    + Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows. In other words, `group_by()` by itself does not change the "data", rather only the "meta-data"
+* Normal distribution: One summary statistic of spread, standard deviation `sd()`, has a particular interpretation when distribution of a numerical variable follows a normal AKA bell curve
 
-<br/>
-Topics:
-
-* "Summary functions" are many-to-one functions to compute "summary statistics," like `mean()` & `median`.
-* Using summary functions to then `summarize()` rows
-* Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows
-* One summary statistic of spread: standard deviation `sd()`, in particular when distribution of a numerical variable follows a normal AKA bell curve.
 
 
 ***
--->
+
 
 
 
@@ -119,7 +127,6 @@ Topics:
 * How to approach in-class readings.
     
 <!--
-* Bert only: Emphasize problem set policy. "Turn in what you have."
 * Bert only: "not equals" and "bang equals"
 -->
 
@@ -180,9 +187,9 @@ fruit_basket
 <br/>
 Topics:
 
-* Define the "pipe operator" `%>%`, pronounced *then*
-* Logical AKA boolean operators in computer programming
-* `filter()` rows that match a criteria
+1. Define the "pipe operator" `%>%`, pronounced *then*
+1. Logical AKA boolean operators in computer programming
+1. `filter()` rows that match a criteria
 
 
 
