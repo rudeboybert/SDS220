@@ -80,6 +80,79 @@ fruit_basket <- tibble(
 ***
 
 
+
+# Lec 09: Fri 2/14
+
+## Announcements
+
+## Recap
+
+## Chalk talk
+
+<!--
+Write out table of points & regression line values for data in Fig 5.13
+-->
+
+* Connection between `estimate` in regression table and plot of regression.
+* Interpretation of:
+    + Fitted intercept $b_0$: mathematical versus practical interpretations.
+    + Fitted slope $b_1$: language matters!
+* Obtaining a regression table takes two steps:
+    + Create/fit the model using `lm()` and formula interface `y ~ x`
+    + Ask for the table using `get_regression_table()`
+
+
+
+***
+
+
+
+# Lec 08: Wed 2/12
+
+## Announcements
+
+* We move to new chapter in ModernDive: data modeling
+
+## Recap
+
+## Chalk talk
+
+1. 5.4.1: Guessing the correlation game
+1. Two types of variables: outcome/response $y$ and explanatory/predictor variables $x$
+1. Example models:
+    + Temp in F vs temp in C
+    + Coffee vs sleep
+1. Correlation coefficients: Quantify the strength of linear assocation. 
+
+
+
+***
+
+
+
+# Lec 07: Mon 2/10
+
+## Announcements
+
+* Today's lecture is last of pink topics in calendar (data science). We start blue topics (regression) on Wednesday.
+
+## Recap
+
+## Chalk talk
+
+* Using same fruit basket example from chalk talk in Lec 05:  
+```{r, echo=FALSE, eval=TRUE}
+fruit_basket
+```
+    1. `mutate()` new variables from existing variables: price in cents
+    1. Reorder i.e. `arrange()` rows of a data frame in alpha-numerical order of a variable: in order of price. Default is ascending order, need to specify `desc()`
+    1. `select()` variables/columns. Analogous to `filter()` rows.
+
+
+
+***
+
+
 # Lec 06: Fri 2/7
 
 ## Announcements
