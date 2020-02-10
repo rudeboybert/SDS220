@@ -141,6 +141,9 @@ rather averaged across all differences of unit in x
 
 * First phase of project unveiled: Project data (due Mon 2/24 at 11pm)
 * We move to Chapters 5 & 6 on data modeling with regressions
+* Keyboard shortcut for `%>%`:
+    + macOS: Command + Shift + M
+    + Windows: Contrl + Shift + M
 
 ## Recap
 
@@ -154,12 +157,14 @@ Our data wrangling toolbox, which you will use for your project and for the rest
 1. `mutate()` new variables/columns
 1. `arrange()` rows in ascending (default) or `desc()`ending order
 1. `select()` variables/columns
+1. For more verbs, see `dplyr` cheatsheet: Go to RStudio menu bar -> Help -> Cheatsheets -> Data Transformation with `dplyr`.
 
 <!--
 Students get tripped up with difference between filter() and summarize(). The
 former does not modify original rows, whereas the latter creates new ones that
 are based on summary statistics.
 -->
+
 
 
 ## Chalk talk
