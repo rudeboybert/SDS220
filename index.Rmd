@@ -59,6 +59,12 @@ fruit_basket <- tibble(
   type = c("mango", "kiwi", "mango", "grape", "grape", "mango"),
   `price in $` = c(2, 3, 1, 3, 1, 3)
 )
+
+# simple regression example
+simple_regression_ex <- tibble(
+  x = c(0, 0.5, 1),
+  y = c(2, 1, 3)
+)
 ```
 
 
@@ -89,17 +95,39 @@ fruit_basket <- tibble(
 
 ## Chalk talk
 
-<!--
-Write out table of points & regression line values for data in Fig 5.13
--->
+Consider the following 3 points saved in a data frame called `simple_regression_ex`. 
+```{r, echo=FALSE, eval=TRUE}
+simple_regression_ex
+```
 
-* Connection between `estimate` in regression table and plot of regression.
+Let's plot them along with the *regression line*.
+
+Now let's obtain the *regression table*. This is done in two steps:
+```{r, eval = TRUE}
+# Step 1: Fit regression model
+model_ex <- lm(y ~ x, data = simple_regression_ex)
+
+# Step 2: Get regression table
+get_regression_table(model_ex)
+```
+
+* Connection between regression line and values in `estimate` column of regression table.
 * Interpretation of:
     + Fitted intercept $b_0$: mathematical versus practical interpretations.
-    + Fitted slope $b_1$: language matters!
+    + Fitted slope $b_1$: precise language matters!
 * Obtaining a regression table takes two steps:
     + Create/fit the model using `lm()` and formula interface `y ~ x`
-    + Ask for the table using `get_regression_table()`
+    + Ask for the table using `get_regression_table()` function from `moderndive` package
+    
+<!--
+Notes on precise interpretation of fitted slope b1: For every increase of one
+unit in x, it is the associated average increase in y.
+
+* average b/c not all differences of one unit in x have exactly b1 increase in y,
+rather averaged across all differences of unit in x
+* associated b/c we don't want to assume a casual relationship
+-->
+
 
 
 
@@ -111,16 +139,35 @@ Write out table of points & regression line values for data in Fig 5.13
 
 ## Announcements
 
-* We move to new chapter in ModernDive: data modeling
+* First phase of project unveiled: Project data (due Mon 2/24 at 11pm)
+* We move to Chapters 5 & 6 on data modeling with regressions
 
 ## Recap
+
+![](static/images/toolbox.jpeg){ width=50% }
+
+Our data wrangling toolbox, which you will use for your project and for the rest of this course:
+
+1. `filter()` rows
+1. `summarize()` rows using a summary function
+1. `group_by()` to group rows by the values of another variable
+1. `mutate()` new variables/columns
+1. `arrange()` rows in ascending (default) or `desc()`ending order
+1. `select()` variables/columns
+
+<!--
+Students get tripped up with difference between filter() and summarize(). The
+former does not modify original rows, whereas the latter creates new ones that
+are based on summary statistics.
+-->
+
 
 ## Chalk talk
 
 1. 5.4.1: Guessing the correlation game
 1. Two types of variables: outcome/response $y$ and explanatory/predictor variables $x$
 1. Example models:
-    + Temp in F vs temp in C
+    + Temperature in fahrenheit vs temperature in celsius 
     + Coffee vs sleep
 1. Correlation coefficients: Quantify the strength of linear assocation. 
 
