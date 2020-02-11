@@ -179,7 +179,14 @@ are based on summary statistics.
     + Lung cancer and smoking
     + Coffee and sleep
 
+<!--
+Next time 220 is taught: At this point in semester (Lec08-09) since students have a little context, consider doing a review of coding/computing concepts needed for this course:
 
+- R console vs R Markdown are two different environments. i.e. when you create a variable/load a package in one, it doesn't necessarily exist in the other.
+- Tackling error messages. Perhaps have a problem set where the students read error message and write down what the message is saying.
+- Paired programming exercise: One student only writes, the other only asks questions.
+- When getting help, steer students away from saying "This doesn't work" but rather "I did X. I got result Y. I think Z." That way we get what they're thinking better: building up to the idea of a minimally reproducible example. 
+-->
 
 
 ***
