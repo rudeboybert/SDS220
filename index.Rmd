@@ -169,12 +169,16 @@ are based on summary statistics.
 
 ## Chalk talk
 
-1. 5.4.1: Guessing the correlation game
-1. Two types of variables: outcome/response $y$ and explanatory/predictor variables $x$
-1. Example models:
+1. Correlation coefficient:
+    + Definition: It is a summary statistic quantifying the strength of linear assocation. 
+    + Draw examples
+    + In ModernDive 5.4.1: Play "guessing the correlation game"
+1. Two types of variables: outcome/response $y$ and explanatory/predictor variables $x$. For the following pairs of variables, what would be $y$ and what would be $x$ in a model?
     + Temperature in fahrenheit vs temperature in celsius 
-    + Coffee vs sleep
-1. Correlation coefficients: Quantify the strength of linear assocation. 
+    + Job salary and number of years of education
+    + Lung cancer and smoking
+    + Coffee and sleep
+
 
 
 
