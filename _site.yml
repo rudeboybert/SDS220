@@ -23,7 +23,7 @@ navbar:
   - text: Badge Challenges
     href: badge_challenges.html
   - text: Project
-    href: project.html
+    href: project.html#data
   - text: Syllabus
     href: syllabus.html
 

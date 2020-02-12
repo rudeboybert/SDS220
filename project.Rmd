@@ -31,7 +31,7 @@ faithful a manner as possible while maintaining a level suitable for novices.*
 
 ```{r, echo = FALSE}
 # Don't repeat yourself!
-hint_1 <- "This is the phase of the project that involves the most uncertainty. Thus, we recommend you start early and get instructor feedback early and often."
+hint_1 <- "This is the phase of the project that is the least straightforward. Thus, we recommend you start early and get help during the various 220 office hours posted on Moodle early and often."
 hint_2 <- "This phase may require revisions to your original choice of data and visits to the Spinelli tutoring center for help with data wrangling. "
 ```
 
@@ -47,52 +47,90 @@ In order to break down the task and minimize end-of-semester stress, you'll be w
 ***
 
 
-# Important note!!!
+# 1. Project Data {#data} 
+
+## Form groups
+
+1. Form groups of 2-3 students.
+    + You **must** all be registered for the same lab section, because certain labs will be devoted to working on the project.
+    + All groups members are expected to contribute and you will all be held accountable for your contributions in peer evaluations.
+1. Choose a group name. 
+1. Assign a "team/group leader" role for each of the four phases of this project to everyone in your team at least once. The team/group leader will have extra administrative duties at each phase. Ex: making Moodle submissions, filling out Google Forms, etc.
+1. The team leader for this first "Project Data" phase will then:
+    + Create a Slack direct message (DM) that includes all 1) your group members, 2) your instructor, and 3) your lab instructor. Ask all questions relating to your specific project here. That way everyone is on the same page.
+    + Submit your group information using the "Project groups Google Form" on Moodle.
+1. If you are looking for a group to join, please fill out the "Project groups Google Form" on Moodle.
 
 
-> We are posting all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. **Therefore we suggest that you do not start any particular phase of the project until you've been instructed to.**
+
+## Find data
+
+**`r hint_1`**
+
+### Step 1
+
+Get a sense for the requirements of this project phase by reading the [example data proposal](static/project/project_data_example.html){target="_blank"}.
+
+### Step 2
+
+Find a data set that fits exactly these specifications:
+
+1. (If available) An [identification variable](https://moderndive-bert.netlify.com/1-getting-started.html#identification-vs-measurement-variables){target="_blank"} that uniquely identifies each observation in each row. 
+1. A numerical outcome variable $y$. Note: binary outcomes variables with 0/1 values are not technically numerical.
+1. Two explanatory variables:
+    + A numerical explanatory variable $x_1$. Note: this can be some notion of time.
+    + A categorical explanatory variable $x_2$ that has between 3-5 levels. Note: If your data has more than 5 levels, they can be collapsed into 5 using data wrangling later.
+1. At least 50 observations/rows.
+
+### Step 3
+
+Download the following <a href="static/project/project_data.Rmd" download>`project_data.Rmd`</a> template R Markdown file and fill it in, using the example data proposal from Step 1 as your guide.
+
+
+
+## What to submit when?
+
+**Due Mon 2/24 at 11pm.** Only the group leader for this phase will make a single submission on behalf of the whole group. They will:
+
+1. The `project_data.Rmd` R Markdown file
+1. The `project_data.html` HTML report file
+1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets following [these steps](https://twitter.com/rudeboybert/status/1055821833512071168){target="_blank"}. 
+
+
+## Possible sources for data
+
+* Best option: data from your own research or other courses. If you are interested in biology, check out Marney Pratt's [lab page](http://www.science.smith.edu/pratt/projects/){target="_blank"}.
+* Next best option: data for a topic you are interested in. For help on this, visit Spinelli Center Data Counselor [Osman Keshawarz](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
+* Next best option: Online data repositories such as (but not limited to):
+    + [data.world](https://data.world/){target="_blank"}
+    + [Tableau](https://public.tableau.com/en-us/s/resources){target="_blank"}
+    + [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}
+    + [StatLib Datasets Archive](http://lib.stat.cmu.edu/datasets/)
+* You may not use the following data:
+    + Any datasets used in this class, either in ModernDive or in any of the examples.
+    + Any data from the data journalism website FiveThirtyEight.com
+
+## Hints
+
+* **Where is this heading?**: For the next project phase (project proposal), you will be making a visualization like this [one](static/project/project_proposal_example.html#coloredscatterplot){target="_blank"}. *If you can make a visualization like this one, then your data is set for the rest of the project.* 
+* When you have questions:
+    + If possible, please ask questions that you think the entire class would like to know the answer to in the `project` channel in Slack.
+    + Ask more individual questions in the group DM that includes all group members + your instructor + your lab instructor.
+* Only minimal data wrangling using the `dplyr` package is expected at this time; you will be doing more for the "project proposal" phase coming up. That being said, feel free to experiment!
+* Don't forget to consult the office hours calendar posted on Moodle when you need help. Most of you will likely need it!
+
+
 
 
 ***
 
 
 
-# 1. Project Data {#data} 
 
-## Form groups
+# Important note!!!
 
-**All groups members are expected to contribute and you will all be held accountable for your contributions in peer evaluations.**
 
-1. Form groups of 2-3 students. If you need a group to join, please Slack your instructor.
-1. Designate a group leader who will do a little administrative work.
-1. Pick a group name. 
-1. The group leader will then create two Slack direct messages (DM):
-    * One with all your group members + your instructor + your lab instructor. You'll ask group-specific questions here.
-    * One with only your group members. Send all private messages amongst yourselves here.
-1. Complete the project groups Google Form posted on Moodle.
-
-## Find data
-
-**`r hint_1`**
-
-1. Read moderndive for important background knowledge and tools for this project phase:
-    + Chapter 1.4.4 on identification vs measurement variables.
-    + Chapter 4.1 on importing spreadsheet data into R.
-1. Read the [example data proposal](static/project/project_data_example.html){target="_blank"}.
-1. Download the following <a href="static/project/project_data.Rmd" download>`project_data.Rmd`</a> template R Markdown file.
-1. Find a dataset that matches the requirements spelled out in the above `project_data.Rmd` template R Markdown file. Possible sources include data from your own projects, [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}, [data.world](https://data.world/){target="_blank"}, and  [Kaggle](https://www.kaggle.com/datasets){target="_blank"}. Consult the Spinelli Center Data Counselor for help (see syllabus for contact info). <!-- Cannot use data from 538? -->
-1. The group leader only will submit the following files on Moodle on behalf of the whole group:
-    1. The `project_data.Rmd` R Markdown file
-    1. The `project_data.html` HTML report file
-    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
-
-Notes:
-
-* When you have questions:
-    + Please ask questions that you think the entire class would like to know the answer to in the `project` channel in Slack.
-    + Ask more individual questions in the group DM that includes all group members + your instructor + your lab instructor.
-* Only minimal data wrangling using the `dplyr` package is expected at this time; you will be doing more for the "project proposal" phase after you're experienced. That being said, feel free to experiment!
-* Don't forget to use the Spinelli 7-9pm tutoring hours (see syllabus for time/place).
+> We have posted all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. **Therefore we suggest that you do not start any upcoming phases of the project until you've been instructed to.**
 
 
 
@@ -110,7 +148,7 @@ Notes:
 TODO for Albert: Finish ModernDive 
 * For data wrangling tips, check out Dr. Jenny Smetzer and Albert's [Become an R Data Ninja](static/project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/project/project_tips.Rmd" download>`project_tips.Rmd`</a> file.
 -->
-1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+1. Only the group leader tasked for this project phase will submit the following files on Moodle on behalf of the whole group:
     1. The `project_proposal.Rmd` R Markdown file
     1. The `project_proposal.html` HTML report file
     1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
@@ -137,7 +175,7 @@ TODO for Albert: Finish ModernDive
     + Do not complete the following sections (you'll be doing this for at the resubmission phase):
         + Section 3 subsections 3.4, 3.5: Inference for multiple regression
         + Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
-1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+1. Only the group leader tasked for this project phase will submit the following files on Moodle on behalf of the whole group:
     1. The `project_submission.Rmd` R Markdown file with sections 1, 2, 3.1, 3.2, and 3.3 completed
     1. The `project_submission.html` HTML report file.
     1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
@@ -157,7 +195,7 @@ TODO for Albert: Finish ModernDive
     + Incorporate any feedback given to you from the project submission phase.
     + Complete Sections 3.4 and 3.5: Inference for multiple regression
     + Complete Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
-1. The group leader only will submit the following files on Moodle on behalf of the whole group:
+1. Only the group leader tasked for this project phase will submit the following files on Moodle on behalf of the whole group:
     1. The updated `project_submission.Rmd` R Markdown file.
     1. The updated `project_submission.html` HTML report file.
     1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -1429,6 +1428,7 @@ summary {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -1541,7 +1541,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220 Data Proposal Example</h1>
 <h4 class="author">Alexis Cohen, Andrianne Dao, Isabel Gomez, Jenny Smetzer, and Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2020-01-25</h4>
+<h4 class="date">Last updated on 2020-02-12</h4>
 
 </div>
 
@@ -1574,7 +1574,7 @@ set.seed(76)</code></pre>
 </div>
 <div id="load-data-into-r" class="section level2">
 <h2>Load data into R</h2>
-<p><em>Include the code to load your data here. If your data is not confidential nor is it private in nature, consider publishing it as a <code>.csv</code> file on Google Sheets as in the code chunk below; instructions on how to do this are in Steps 1-6 <a href="https://twitter.com/rudeboybert/status/1055821846539591680">here</a>. If the data shouldn’t be published online, then please submit the spreadsheet file on Moodle.</em></p>
+<p><em>Include the code to load your data here. If your data is not confidential nor is it private in nature, consider publishing it as a <code>.csv</code> file on Google Sheets as in the code chunk below; instructions on how to do this are in Steps 1-6 <a href="https://twitter.com/rudeboybert/status/1055821846539591680">here</a>. If the data shouldn’t be published online, then please submit the spreadsheet file on Moodle. For help on how to use the <code>read_csv()</code> function from the <code>readr</code> package, please read ModernDive Chapter 4.1 on importing data.</em></p>
 <pre class="r"><code>ma_schools &lt;- read_csv(&quot;https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyNqRVA950sdYa1QazAT-l0T7dl6pE5Ewvt7LkSm9LXmeVNbCbqEcrbygFmFyK4B6VQQGebuk9/pub?gid=1469057204&amp;single=true&amp;output=csv&quot;)</code></pre>
 </div>
 <div id="clean-variable-names" class="section level2">

@@ -199,7 +199,7 @@ ggplot(ma_schools, aes(x = school_size, y = average_sat_math, fill = school_size
 The Math SAT scores look to be the greatest at larger schools, and the lowest at smaller schools, though the differences do not seem to be extreme. There appear to be some potential outliers in SAT scores. Again, observe the outlier small school, which was the [MA Academy for Math and Science School](https://www.massacademy.org/).
 
 
-## Colored scatterplot
+## Colored scatterplot {#coloredscatterplot}
 
 _Visualize the relationship of the outcome variable and both explanatory variables using a colored scatterplot and comment._
 
