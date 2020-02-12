@@ -73,7 +73,7 @@ Get a sense for the requirements of this project phase by reading the [example d
 
 ### Step 2
 
-Find a data set that fits exactly these specifications:
+Find a data set that fits these specifications. Note your data may need a little wrangling from its original form.
 
 1. (If available) An [identification variable](https://moderndive-bert.netlify.com/1-getting-started.html#identification-vs-measurement-variables){target="_blank"} that uniquely identifies each observation in each row. 
 1. A numerical outcome variable $y$. Note: binary outcomes variables with 0/1 values are not technically numerical.
@@ -81,6 +81,10 @@ Find a data set that fits exactly these specifications:
     + A numerical explanatory variable $x_1$. Note: this can be some notion of time.
     + A categorical explanatory variable $x_2$ that has between 3-5 levels. Note: If your data has more than 5 levels, they can be collapsed into 5 using data wrangling later.
 1. At least 50 observations/rows.
+
+**Where is this heading?**: For the next project phase (project proposal), you will be making a visualization like this [one](static/project/project_proposal_example.html#coloredscatterplot){target="_blank"}. *If you can make a visualization like this one, then your data is set for the rest of the project.* 
+
+
 
 ### Step 3
 
@@ -112,7 +116,6 @@ Download the following <a href="static/project/project_data.Rmd" download>`proje
 
 ## Hints
 
-* **Where is this heading?**: For the next project phase (project proposal), you will be making a visualization like this [one](static/project/project_proposal_example.html#coloredscatterplot){target="_blank"}. *If you can make a visualization like this one, then your data is set for the rest of the project.* 
 * When you have questions:
     + If possible, please ask questions that you think the entire class would like to know the answer to in the `project` channel in Slack.
     + Ask more individual questions in the group DM that includes all group members + your instructor + your lab instructor.
