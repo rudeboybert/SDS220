@@ -106,6 +106,7 @@ Download the following <a href="static/project/project_data.Rmd" download>`proje
 * Best option: data from your own research or other courses. If you are interested in biology, check out Marney Pratt's [lab page](http://www.science.smith.edu/pratt/projects/){target="_blank"}.
 * Next best option: data for a topic you are interested in. For help on this, visit Spinelli Center Data Counselor [Osman Keshawarz](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
 * Next best option: Online data repositories such as (but not limited to):
+    + [IPUMS survey & census data](https://ipums.org/){target="_blank"}
     + [data.world](https://data.world/){target="_blank"}
     + [Tableau](https://public.tableau.com/en-us/s/resources){target="_blank"}
     + [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}
