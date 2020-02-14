@@ -139,7 +139,6 @@ rather averaged across all differences of unit in x
 
 
 
-
 ***
 
 
@@ -183,10 +182,10 @@ are based on summary statistics.
     + Draw examples
     + In ModernDive 5.4.1: Play "guessing the correlation game"
 1. Two types of variables: outcome/response $y$ and explanatory/predictor variables $x$. For the following pairs of variables, what would be $y$ and what would be $x$ in a model?
-    + Temperature in fahrenheit vs temperature in celsius 
-    + Job salary and number of years of education
-    + Lung cancer and smoking
-    + Coffee and sleep
+    1. Temperature in fahrenheit vs temperature in celsius 
+    1. Job salary and number of years of education
+    1. Lung cancer and smoking
+    1. Coffee and sleep
 
 <!--
 Next time 220 is taught: At this point in semester (Lec08-09) since students have a little context, consider doing a review of coding/computing concepts needed for this course:
@@ -429,7 +428,7 @@ Steps to constructing a boxplot:
 
 
 
-# Lec 1: Mon 1/27
+# Lec 01: Mon 1/27
 
 ## Announcements
 
