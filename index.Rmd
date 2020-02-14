@@ -91,7 +91,16 @@ simple_regression_ex <- tibble(
 
 ## Announcements
 
+* If you need a group for the project, please fill out the Google Form on Moodle ASAP! We're going to start making groups this weekend.
+
 ## Recap
+
+* `tidyverse` package is an umbrella package that loads `ggplot2`, `dplyr`, `readr`, and other useful packages for data science all at once. For more info, visit [tidyverse.org/](https://www.tidyverse.org/){target="_blank"}
+
+<!--
+Bert is going to another example of summarize, b/c students are confused about 
+the "collapsing rows" nature of the operation.
+-->
 
 ## Chalk talk
 
