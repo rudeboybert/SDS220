@@ -65,6 +65,11 @@ simple_regression_ex <- tibble(
   x = c(0, 0.5, 1),
   y = c(2, 1, 3)
 )
+
+categ_regression_ex <- tibble(
+  name = c("Bert", "Bert", "Bert", "Florence", "Florence", "Florence", "Katie", "Katie", "Katie"),
+  value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
+)
 ```
 
 
@@ -99,34 +104,38 @@ simple_regression_ex <- tibble(
 
 ## Chalk talk
 
-```{r}
-library(dplyr)
-library(ggplot2)
-library(moderndive)
 
-# Example data for chalk talk
-example <- tibble(
-  name = c("Bert", "Bert", "Bert", "Katie", "Katie", "Katie", "Florence", "Florence", "Florence"),
-  value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
-)
+Consider the following 9 points saved in a data frame called `categ_regression_ex`:
 
-ggplot(example, aes(x=name, y= value)) +
-  geom_point()
+```{r, echo=FALSE, eval=TRUE}
+categ_regression_ex
+```
 
-# Get regression table
-model_example <- lm(value ~ name, data = example)
-get_regression_table(model_example)
+Let's plot them by hand. 
+
+Now let's obtain the *regression table*. This is done in two steps:
+```{r, eval = TRUE}
+# Step 1: Fit regression model
+model_ex <- lm(value ~ name, data = categ_regression_ex)
+
+# Step 2: Get regression table
+get_regression_table(model_ex)
 ```
 
 
-* Add to ModernDive a jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline. Insert somewhere logical. Right before "Let’s generalize this idea a bit". 
-* Show regression table
-* Then make separate table of name on rows, and nameFlorence and nameKatie in columns, populate with 0 & 1
-* Do it first expressed in R code `value = intercept + nameFlorence + nameKatie`. Then do in math formula y = f(x) with indicator
-* Emphasize that
-    + fitted values are group means. Do it for Bert, but also for Jenny
-    + Compute a few residuals
 
+* How to bridge gap between output of regression table & wacked out indicator function notation in Chapter 
+    + Show regression table using Bert, Florence, Katie data
+    + Then make separate table of name on rows, and nameFlorence and nameKatie in columns, populate with 0's & 1's
+    + Write out equation of "line" in terms of regression table output `value = intercept + nameFlorence + nameKatie`.
+    + Then write out equation of line via math formula y = f(x) with indicator functions.
+* Emphasize that
+    + fitted values are group means. Do it for Bert, Florence, Katie, 
+    + Compute a few residuals
+* To ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean:
+    + a jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline.
+    + Insert in text right before "Let’s generalize this idea a bit".
+    + If Katie has bandwidth, add to [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
 
 
 
@@ -147,11 +156,8 @@ get_regression_table(model_example)
 ## Chalk talk
 
 * Boxplot recap
-* In-class exercise, build in groups a as-of-yet unseen jitterplot with categorical x. 
+* In-class exercise, build in groups a as-of-yet unseen jitterplot with categorical x. We will follow up on Wednesday with same plot, but with bells and whistles added (baseline mean marked, offsets marked)
 * 
-
-
-
 
 
 
