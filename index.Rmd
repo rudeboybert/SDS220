@@ -87,6 +87,60 @@ simple_regression_ex <- tibble(
 
 
 
+# Lec 12: Fri 2/21
+
+## Announcements
+
+* 
+
+## Recap
+
+* 
+
+## Chalk talk
+
+
+
+***
+
+
+
+# Lec 11: Wed 2/19
+
+## Announcements
+
+* 
+
+## Recap
+
+* 
+
+## Chalk talk
+
+
+
+***
+
+
+
+# Lec 10: Mon 2/17
+
+## Announcements
+
+* 
+
+## Recap
+
+* 
+
+## Chalk talk
+
+
+
+***
+
+
+
 # Lec 09: Fri 2/14
 
 ## Announcements
