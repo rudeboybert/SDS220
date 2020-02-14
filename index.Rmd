@@ -99,6 +99,35 @@ simple_regression_ex <- tibble(
 
 ## Chalk talk
 
+```{r}
+library(dplyr)
+library(ggplot2)
+library(moderndive)
+
+# Example data for chalk talk
+example <- tibble(
+  name = c("Bert", "Bert", "Bert", "Katie", "Katie", "Katie", "Florence", "Florence", "Florence"),
+  value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
+)
+
+ggplot(example, aes(x=name, y= value)) +
+  geom_point()
+
+# Get regression table
+model_example <- lm(value ~ name, data = example)
+get_regression_table(model_example)
+```
+
+
+* Add to ModernDive a jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline. Insert somewhere logical. Right before "Let’s generalize this idea a bit". 
+* Show regression table
+* Then make separate table of name on rows, and nameFlorence and nameKatie in columns, populate with 0 & 1
+* Do it first expressed in R code `value = intercept + nameFlorence + nameKatie`. Then do in math formula y = f(x) with indicator
+* Emphasize that
+    + fitted values are group means. Do it for Bert, but also for Jenny
+    + Compute a few residuals
+
+
 
 
 ***
@@ -117,6 +146,13 @@ simple_regression_ex <- tibble(
 
 ## Chalk talk
 
+* Boxplot recap
+* In-class exercise, build in groups a as-of-yet unseen jitterplot with categorical x. 
+* 
+
+
+
+
 
 
 ***
@@ -134,6 +170,17 @@ simple_regression_ex <- tibble(
 * 
 
 ## Chalk talk
+
+* Show Spurious correlations
+* Placehold for obvious (x, y, z) causal graph
+* x: Gender -> y: Admissions. z: Competitiveness of getting in to department. Link to Simpson's paradox.
+* Make a plot like 5.12 using `simple_regression_ex` and compute by hand all:
+    + fitted values using equation
+    + residauls
+* minimizing residuals
+    1. Compute for best-fitting line
+    1. Compute for green dashed 5.13. Show this is bigger
+
 
 
 
