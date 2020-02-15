@@ -61,6 +61,14 @@ In order to break down the task and minimize end-of-semester stress, you'll be w
     + Submit your group information using the "Project groups Google Form" on Moodle.
 1. If you are looking for a group to join, please fill out the "Project groups Google Form" on Moodle.
 
+<!--
+Note for future: instead of assigning groups at random to people who need them,
+use a blocked randomization scheme. For ex: by major or some interest (sports
+team, hometown, etc). That way there will be less potential for disagreement
+over what dataset to use, which Adriana B. pointed out happened in her 192
+mini-project 3.
+-->
+
 
 
 ## Find data
