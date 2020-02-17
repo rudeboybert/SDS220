@@ -65,6 +65,11 @@ simple_regression_ex <- tibble(
   x = c(0, 0.5, 1),
   y = c(2, 1, 3)
 )
+
+categ_regression_ex <- tibble(
+  name = c("Bert", "Bert", "Bert", "Florence", "Florence", "Florence", "Katie", "Katie", "Katie"),
+  value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
+)
 ```
 
 
@@ -87,6 +92,150 @@ simple_regression_ex <- tibble(
 
 
 
+# Lec 12: Fri 2/21
+
+## Announcements
+
+* 
+
+## Recap
+
+* 
+
+## Chalk talk
+
+
+Recall `categ_regression_ex` data frame from from Lec11. Note that the explanatory variable $x$ = name is now categorical with 3 levels: Bert, Florence, Katie.
+
+```{r, echo=FALSE, eval=TRUE}
+categ_regression_ex
+```
+
+Let's plot them by hand. 
+
+Now let's obtain the *regression table*. Recall this is done in two steps:
+```{r, eval = TRUE}
+# Step 1: Fit regression model
+model_ex <- lm(value ~ name, data = categ_regression_ex)
+
+# Step 2: Get regression table
+get_regression_table(model_ex)
+```
+
+What do the three "estimate" terms (`intercept` = 10, `nameFlorence` = 2, and `nameKatie` = -1) mean?
+
+
+<!--
+* How to bridge gap between output of regression table & wacked out indicator function notation in Chapter 
+    + Show regression table using Bert, Florence, Katie data
+    + Then make separate table of name on rows, and nameFlorence and nameKatie in columns, populate with 0's & 1's
+    + Write out equation of "line" in terms of regression table output `value = intercept + nameFlorence + nameKatie`.
+    + Then write out equation of line via math formula y = f(x) with indicator functions.
+* Emphasize that
+    + fitted values are group means. Do it for Bert, Florence, Katie, 
+    + Compute a few residuals
+* To ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean:
+    + a jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline.
+    + Insert in text right before "Let’s generalize this idea a bit".
+    + If Katie has bandwidth, add to [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
+-->
+
+
+
+***
+
+
+
+# Lec 11: Wed 2/19
+
+## Announcements
+
+* 
+
+## Recap
+
+* What are boxplots good for?
+<!--
+1. When you want to compare distribution of a numerical variable (y-axis) split by an x categorical variable
+1. Remember, solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
+
+Ex:
+Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might this not be appropriate?
+-->
+
+## Chalk talk
+
+Consider the following 9 points saved in a data frame called `categ_regression_ex`. Note that the explanatory variable $x$ = name is now categorical with 3 levels: Bert, Florence, Katie.
+
+```{r, echo=FALSE, eval=TRUE}
+categ_regression_ex
+```
+
+
+In-class exercise in groups: Plot a scatterplot with y = value (numerical) and x = name (categorical). Note this is slightly different that the scatterplots we've seen until now where the x variable was always numerical
+
+<!--
+Not sure if we should do this today, or next lecture?!?
+
+After students have done this, on scatterplot above mark:
+1. (baseline) mean for Bert with horizontal line.
+1. mean for Florence and Katie with horizontal line.
+1. both possible offsets.
+-->
+
+
+
+***
+
+
+
+# Lec 10: Mon 2/17
+
+## Announcements
+
+* First phase of [project](project.html) is due Mon 2/24 at 11pm. If you haven't already, **start now**. 
+
+## Recap
+
+<!--
+Bert is going to another example of summarize, b/c students are confused about 
+the "collapsing rows" nature of the operation.
+-->
+
+## Chalk talk
+
+1. Correlation is not necessarily causation:
+    a) [Spurious correlations](http://www.tylervigen.com/spurious-correlations){target="_blank"}
+    a) What are X = treatment, Y = response, and Z = confounding variables?
+    a) What are causal graphs? 
+    a) Simple example: Does "X = drinking gatorade/ginger ale" cause "Y = feel nauseous"? 
+    <!--Z = has the flu -->
+    a) Famous example: [UC Berkeley gender bias](https://en.wikipedia.org/wiki/Simpson%27s_paradox#UC_Berkeley_gender_bias){target="_blank"}. Does "X = (binary) gender" cause "Y = decreased chance of admission to UC Berkeley in 1973"?
+    <!--Z = competitiveness of admissions to department. Women tended to apply to departments with less resources and thus were more competitive, like humanities, while men tended to apply to departments with more resources and thus were easier to get into, like engineering.--> 
+1. Recall `simple_regression_ex` from Lec09.  
+```{r, echo=FALSE, eval=TRUE}
+simple_regression_ex
+```
+    a) Draw the 3 points and the "best-fitting" regression line in blue.
+    a) Draw the 3 *fitted values* $\widehat{y}$ using the equation for the regression line $\widehat{y} = b_0 + b_1\cdot x$
+    a) Draw the 3 *residuals* $y - \widehat{y}$
+    a) Compute the sum of squared residuals for this line.
+    a) Draw another arbitrarily chosen line with equation $\widehat{y} = 2 - 1\cdot x$ in green.
+    a) Compute the sum of squared residuals for this line and compare to previous
+
+```{r, echo=FALSE, eval=TRUE}
+ggplot(simple_regression_ex, aes(x = x, y = y)) +
+  geom_smooth(method = "lm", se = FALSE, size = 0.5) +
+  geom_abline(intercept = 2, slope = -1, col = "darkgreen", linetype = "dashed", size = 0.5) +
+  geom_point(size = 2)
+```
+
+
+
+***
+
+
+
 # Lec 09: Fri 2/14
 
 ## Announcements
@@ -96,11 +245,6 @@ simple_regression_ex <- tibble(
 ## Recap
 
 * `tidyverse` package is an umbrella package that loads `ggplot2`, `dplyr`, `readr`, and other useful packages for data science all at once. For more info, visit [tidyverse.org/](https://www.tidyverse.org/){target="_blank"}
-
-<!--
-Bert is going to another example of summarize, b/c students are confused about 
-the "collapsing rows" nature of the operation.
--->
 
 ## Chalk talk
 
