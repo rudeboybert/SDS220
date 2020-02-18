@@ -460,7 +460,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</h4>
-<h4 class="date">Last updated on 2020-02-17</h4>
+<h4 class="date">Last updated on 2020-02-18</h4>
 
 </div>
 
@@ -541,31 +541,49 @@ h1{font-weight: 400;}
 <div id="recap-1" class="section level2">
 <h2>Recap</h2>
 <ul>
-<li>What are boxplots good for? <!--
-1. When you want to compare distribution of a numerical variable (y-axis) split by an x categorical variable
-1. Remember, solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
-
-Ex:
-Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might this not be appropriate?
---></li>
+<li>What are boxplots good for?</li>
 </ul>
+<!--
+Then write on board:
+
+1. They allow you to compare the distribution of a numerical variable (on y-axis) split by a categorical variable (on x-axis)
+1. Remember: solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
+1. Example: Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might mean not be appropriate?
+-->
 </div>
-<div id="chalk-talk-1" class="section level2">
-<h2>Chalk talk</h2>
-<p>Consider the following 9 points saved in a data frame called <code>categ_regression_ex</code>. Note that the explanatory variable <span class="math inline">\(x\)</span> = name is now categorical with 3 levels: Bert, Florence, Katie.</p>
+<div id="in-class-exericse" class="section level2">
+<h2>In-class exericse</h2>
+<p>Consider the following 9 points saved in a data frame called <code>categ_regression_ex</code> where we have</p>
+<ol style="list-style-type: decimal">
+<li>A numerical outcome variable <span class="math inline">\(y\)</span> = <code>value</code></li>
+<li>An <em>categorical</em> explanatory variable <span class="math inline">\(x\)</span> = <code>name</code> with 3 levels: Bert, Florence, Katie.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
+<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
+<a class="sourceLine" id="cb2-3" data-line-number="3">categ_regression_ex &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
+<a class="sourceLine" id="cb2-4" data-line-number="4">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>),</a>
+<a class="sourceLine" id="cb2-5" data-line-number="5">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>)</a>
+<a class="sourceLine" id="cb2-6" data-line-number="6">)</a>
+<a class="sourceLine" id="cb2-7" data-line-number="7">categ_regression_ex</a></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bert","2":"9"},{"1":"Bert","2":"10"},{"1":"Bert","2":"11"},{"1":"Florence","2":"11"},{"1":"Florence","2":"12"},{"1":"Florence","2":"13"},{"1":"Katie","2":"8"},{"1":"Katie","2":"9"},{"1":"Katie","2":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<p>In-class exercise in groups: Plot a scatterplot with y = value (numerical) and x = name (categorical). Note this is slightly different that the scatterplots we’ve seen until now where the x variable was always numerical</p>
+<p>In groups: copy the above code and create a scatterplot with</p>
+<ol style="list-style-type: decimal">
+<li><code>value</code> (numerical) on the y-axis</li>
+<li><code>name</code> (categorical) on the x-axis</li>
+</ol>
+<p>Note this is slightly different that the scatterplots we’ve seen until now where the x variable was always numerical.</p>
 <!--
-Not sure if we should do this today, or next lecture?!?
+Then draw the above plot on board and mark:
 
-After students have done this, on scatterplot above mark:
-1. (baseline) mean for Bert with horizontal line.
-1. mean for Florence and Katie with horizontal line.
-1. both possible offsets.
+1. mean for Bert with horizontal line. call this the baseline mean
+1. mean for Florence and Katie with horizontal lines
+1. both possible offsets
+
+Why is Bert baseline? For no other reason than it's first alphanumerically.
 -->
 <hr />
 </div>
@@ -590,7 +608,7 @@ Bert is going to another example of summarize, b/c students are confused about
 the "collapsing rows" nature of the operation.
 -->
 </div>
-<div id="chalk-talk-2" class="section level2">
+<div id="chalk-talk-1" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Correlation is not necessarily causation:
@@ -617,7 +635,7 @@ the "collapsing rows" nature of the operation.
 <li>Compute the sum of squared residuals for this line and compare to previous</li>
 </ol></li>
 </ol>
-<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" width="768" /></p>
 <hr />
 </div>
 </div>
@@ -635,7 +653,7 @@ the "collapsing rows" nature of the operation.
 <li><code>tidyverse</code> package is an umbrella package that loads <code>ggplot2</code>, <code>dplyr</code>, <code>readr</code>, and other useful packages for data science all at once. For more info, visit <a href="https://www.tidyverse.org/" target="_blank">tidyverse.org/</a></li>
 </ul>
 </div>
-<div id="chalk-talk-3" class="section level2">
+<div id="chalk-talk-2" class="section level2">
 <h2>Chalk talk</h2>
 Consider the following 3 points saved in a data frame called <code>simple_regression_ex</code>.
 <div data-pagedtable="false">
@@ -645,11 +663,11 @@ Consider the following 3 points saved in a data frame called <code>simple_regres
 </div>
 <p>Let’s plot them along with the <em>regression line</em>.</p>
 <p>Now let’s obtain the <em>regression table</em>. This is done in two steps:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Step 1: Fit regression model</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb2-4" data-line-number="4"><span class="co"># Step 2: Get regression table</span></a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="kw">get_regression_table</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="co"># Step 1: Fit regression model</span></a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"></a>
+<a class="sourceLine" id="cb3-4" data-line-number="4"><span class="co"># Step 2: Get regression table</span></a>
+<a class="sourceLine" id="cb3-5" data-line-number="5"><span class="kw">get_regression_table</span>(model_ex)</a></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"1.5","3":"1.118","4":"1.342","5":"0.408","6":"-12.706","7":"15.706"},{"1":"x","2":"1.0","3":"1.732","4":"0.577","5":"0.667","6":"-21.008","7":"23.008"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -712,7 +730,7 @@ former does not modify original rows, whereas the latter creates new ones that
 are based on summary statistics.
 -->
 </div>
-<div id="chalk-talk-4" class="section level2">
+<div id="chalk-talk-3" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Correlation coefficient:
@@ -751,7 +769,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 <div id="recap-5" class="section level2">
 <h2>Recap</h2>
 </div>
-<div id="chalk-talk-5" class="section level2">
+<div id="chalk-talk-4" class="section level2">
 <h2>Chalk talk</h2>
 <ul>
 <li>Using same fruit basket example from chalk talk in Lec 05:<br />
@@ -791,7 +809,7 @@ Then we did the google doc
     + Computer programming use of "or" and "and"
 -->
 </div>
-<div id="chalk-talk-6" class="section level2">
+<div id="chalk-talk-5" class="section level2">
 <h2>Chalk talk</h2>
 <ul>
 <li>Using same fruit basket example from chalk talk in Lec 05:<br />
@@ -832,13 +850,13 @@ Then we did the google doc
 <div id="recap-7" class="section level2">
 <h2>Recap</h2>
 <p>First, let’s compare the boxplot you created in Lec04 with the original points. See how they align.</p>
-<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="768" /></p>
 <p>Second, let’s compare two visualizations of the distribution of the numerical variable temperature <em>split by</em> month:</p>
 <ul>
 <li>Faceted histogram in ModernDive <a href="https://moderndive-bert.netlify.com/2-viz.html#facets" target="_blank">Figure 2.13</a></li>
 <li>Side-by-side boxplot in ModernDive <a href="https://moderndive-bert.netlify.com/2-viz.html#boxplots" target="_blank">Figure 2.18</a></li>
 </ul>
-<p><img src="index_files/figure-html/unnamed-chunk-11-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-11-2.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-12-2.png" width="768" /></p>
 <p>Which do you prefer?</p>
 <p>Third, the idea of “assigning AKA saving something in R” using the arrow <code>&lt;-</code>. Ex: <code>x &lt;- 5</code>. You do this so you can access it again later, either to</p>
 <ol style="list-style-type: decimal">
@@ -846,7 +864,7 @@ Then we did the google doc
 <li>Modify it’s contents: Type <code>x &lt;- x + 1</code> or RMarkdown. What is now saved in <code>x</code>?</li>
 </ol>
 </div>
-<div id="chalk-talk-7" class="section level2">
+<div id="chalk-talk-6" class="section level2">
 <h2>Chalk talk</h2>
 <p>We now start data wrangling! For our chalk talks, we’ll use the following “fruit basket” example:</p>
 <div data-pagedtable="false">
@@ -871,7 +889,7 @@ Then we did the google doc
 <li></li>
 </ul>
 </div>
-<div id="chalk-talk-8" class="section level2">
+<div id="chalk-talk-7" class="section level2">
 <h2>Chalk talk</h2>
 <p>Boxplots! Powerful, but tricky!</p>
 <p>Say we want to study the distribution of the following 12 values which are pre-sorted:</p>
@@ -921,7 +939,7 @@ Then we did the google doc
 <div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 </div>
-<div id="chalk-talk-9" class="section level2">
+<div id="chalk-talk-8" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).</li>
@@ -951,7 +969,7 @@ Then we did the google doc
 </ul></li>
 </ol>
 </div>
-<div id="chalk-talk-10" class="section level2">
+<div id="chalk-talk-9" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>Draw scatterplot by hand</li>
