@@ -155,32 +155,54 @@ What do the three "estimate" terms (`intercept` = 10, `nameFlorence` = 2, and `n
 ## Recap
 
 * What are boxplots good for?
-<!--
-1. When you want to compare distribution of a numerical variable (y-axis) split by an x categorical variable
-1. Remember, solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
 
-Ex:
-Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might this not be appropriate?
+<!--
+Then write on board:
+
+1. They allow you to compare the distribution of a numerical variable (on y-axis) split by a categorical variable (on x-axis)
+1. Remember: solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
+1. Example: Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might mean not be appropriate?
 -->
 
-## Chalk talk
+## In-class exericse
 
-Consider the following 9 points saved in a data frame called `categ_regression_ex`. Note that the explanatory variable $x$ = name is now categorical with 3 levels: Bert, Florence, Katie.
+Consider the following 9 points saved in a data frame called `categ_regression_ex` where we have
 
-```{r, echo=FALSE, eval=TRUE}
+1. A numerical outcome variable $y$ = `value`
+1. An *categorical* explanatory variable $x$ with 3 levels: Bert, Florence, Katie.
+
+```{r, eval=TRUE}
+library(ggplot2)
+library(dplyr)
+categ_regression_ex <- tibble(
+  name = c("Bert","Bert","Bert","Florence","Florence","Florence","Katie","Katie","Katie"),
+  value = c(9,10,11,11,12,13,8,9,10)
+)
 categ_regression_ex
 ```
 
+In groups: copy the above code and create a scatterplot with
 
-In-class exercise in groups: Plot a scatterplot with y = value (numerical) and x = name (categorical). Note this is slightly different that the scatterplots we've seen until now where the x variable was always numerical
+1. `value` (numerical) on the y-axis
+1. `name` (categorical) on the x-axis
+
+Note this is slightly different that the scatterplots we've seen until now where the x variable was always numerical.
+
+```{r, echo=FALSE, eval=FALSE}
+# This code is hidden. Maybe a live coding demo?
+ggplot(categ_regression_ex, aes(x = name, y = value)) + 
+  geom_point()
+```
+
 
 <!--
-Not sure if we should do this today, or next lecture?!?
+Then draw the above plot on board and mark:
 
-After students have done this, on scatterplot above mark:
-1. (baseline) mean for Bert with horizontal line.
-1. mean for Florence and Katie with horizontal line.
-1. both possible offsets.
+1. mean for Bert with horizontal line. call this the baseline mean
+1. mean for Florence and Katie with horizontal lines
+1. both possible offsets
+
+Why is Bert baseline? For no other reason than it's first alphanumerically.
 -->
 
 
