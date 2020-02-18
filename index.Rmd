@@ -169,7 +169,7 @@ Then write on board:
 Consider the following 9 points saved in a data frame called `categ_regression_ex` where we have
 
 1. A numerical outcome variable $y$ = `value`
-1. An *categorical* explanatory variable $x$ with 3 levels: Bert, Florence, Katie.
+1. An *categorical* explanatory variable $x$ = `name` with 3 levels: Bert, Florence, Katie.
 
 ```{r, eval=TRUE}
 library(ggplot2)
