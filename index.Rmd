@@ -194,6 +194,13 @@ ggplot(categ_regression_ex, aes(x = name, y = value)) +
   geom_point()
 ```
 
+**Solution**:
+
+```{r, eval=TRUE, echo=FALSE}
+ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
+  geom_point()
+```
+
 
 <!--
 Then draw the above plot on board and mark:
