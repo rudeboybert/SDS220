@@ -91,6 +91,56 @@ categ_regression_ex <- tibble(
 ***
 
 
+# Lec 15: Fri 2/28
+
+## Announcements
+
+* `NA`
+
+## Recap
+
+
+## Chalk talk
+
+
+
+***
+
+
+
+# Lec 14: Wed 2/26
+
+## Announcements
+
+* `NA`
+
+## Recap
+
+
+## Chalk talk
+
+
+
+***
+
+
+
+# Lec 13: Mon 2/24
+
+## Announcements
+
+* `NA`
+
+## Recap
+
+
+## Chalk talk
+
+
+
+***
+
+
 
 # Lec 12: Fri 2/21
 
