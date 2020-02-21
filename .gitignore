@@ -6,3 +6,5 @@
 fluff/
 *_cache/
 .httr-oauth
+*.log
+BC1.tex
