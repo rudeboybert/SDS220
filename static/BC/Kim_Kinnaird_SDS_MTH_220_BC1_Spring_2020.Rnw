@@ -182,28 +182,36 @@ Consider the following model:
 
 \vspace{0.25in}
 
+\newpage
+
 \textbf{Question 2}\
 
 \vspace{.15in}
 
-The Guild of Terrible Statisticians (GTS) has decided to investigate the importance and relevance of the Olympics to college students studying in the United States. The GTS work with Brown University to select the study's sample, by asking each varsity coach for a team roster. From each team roster, the GTS randomly samples 3 student-athletes to participate in the study. Each day of the Olympics, the participants are sent a text message asking if they watched Olympic coverage in the last 24 hours. They are then sent a quote from a member of Team USA and are asked on a scale of 1 to 7 how much the Olympics inspire their training. The GTS then collate the responses and report the daily average scores.
+For this question consider the below box plot.
 
-\vspace{.1in}
+\vspace{-.15in}
+\begin{figure}[H]\centering
+ \includegraphics[width=4in]{boxplot.jpeg}
+\end{figure}
 
 \begin{enumerate}[(a)]
 
-	\item Identify the population that GTS is interested in. State whether this study produces a representative sample of the population and give two reasons supporting your statement.
+\item For each of the below statements, state whether it is true or false and briefly \textbf{\emph{\underline{explain}}} your answer.
+\begin{itemize}
+\item The range of extremes is [3,47].
+\vspace{.1in}
+\item According to the boxplot, the number of data points used to construct the box plot is 17.
+\vspace{.1in}
+\item The 50\% coverage interval is [7,30].
+\vspace{.1in}
+\item The data is skew-left.
+\vspace{.1in}
+\item According to the boxplot, the mean is 20.
+\end{itemize}
 
-	\vspace{.1 in}
+\item If you would like to know the above 5 summary statistics (i.e.~range of extremes, skewness, mean, coverage intervals, and number of data points), is a box plot the best visual representation for your data? If not, what visualization would be better? Justify your answer.
 
-	\item Explain how this study falls victim to response bias \textbf{and} non-response bias.
-	\vspace{.1in}
-
-	\item Do you expect the study's reported averages to be a good approximation for the population's opinion on the importance of the Olympics? Explain your answer.
-	\vspace{.1in}
-
-
-	\item The GTS claim that the results from their study could be replicated using class lists instead of varsity team rosters. Do you agree? Justify your answer.
 \end{enumerate}
 
 \newpage
@@ -245,75 +253,56 @@ Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 &10 \\
 \vspace{.2in}
 
 
-
-\textbf{Question 4}\
+\textbf{Alternative}\
 
 \vspace{.15in}
 
-Consider the models relating state's average Math SAT scores to state's average teacher salary and the state's fraction of students taking the exam, and their associated R$^2$ values:
-
-\begin{table}[H]
-\hspace{1in} \begin{tabular}{|l|c|}
-\hline
-\hspace{1.5cm}Model & R$^2$ value\\
-\hline
-\hline
-math $\sim$ frac &  0.7558 \\
-\hline
-math $\sim$ salary & 0.1611  \\
-\hline
-math $\sim$ frac + salary & 0.7852 \\
-\hline
-\end{tabular}
-\end{table}
+You have been asked to consult on a small study. Due to privacy concerns, all you have is a collection of values for one variable: Mystery $= \{8, 6, 12,  7,  6,  5, 12,  6, 10,  6, 12, 10, 7\}$. You do not know what the data is about.
 
 \begin{enumerate}[a)]
-	\item What is an R$^2$ value of a model? In your answer, be sure to explain how to compute it.
-	\item Compare the R$^2$ values of the first two models. Use your comparison to determine which of the explanatory variables is more effective at explaining the average math SAT scores.
-	\item Examining the R$^2$ values for all three models, what conclusion can you make about the efficacy of each explanatory variable on average math SAT scores? Justify your answer.
-	\item Which model do you think will have the highest R$^2_{adj}$ value? Justify your answer.
+	\item Compute the \emph{median} and the \emph{mode} of Mystery. Show all work.
+	\item The head researcher found that the mean and the standard deviation of Mystery are 8.2. and 2.6, respectively. He says that 68\% of the data falls between 5.6 and 10.8. Can he make such a claim about this data? Why or why not?
+	\item A postdoc on the study realizes that the data notebook for Mystery was incorrectly transcribed and that the true data is Mystery $= \{8, 6, 12,  7,  6,  5, 12,  6, 10,  0, 12, 10, 7\}$. In other words, the number recorded as a 6 is actually a 0. Does this discovery change the value of the standard deviation? Justify your answer \textbf{\emph{without}} computing the new standard deviation.
+	\item  Does the above discovery change the value of the 25$^{\textrm{th}}$ percentile? Again, justify your answer \textbf{\emph{without}} computing the new 25$^{\textrm{th}}$ percentile.
 \end{enumerate}
-
-\vspace{0.5in}
-
-
-
 
 
 \newpage
 
 
-\textbf{Question 5}\
+\textbf{Question 2}\
+
 
 \vspace{.15in}
+Australian researchers explored the association between depression and factors such as employment status, marital status, and satisfaction with their level of social interaction. You worked with a sociology researcher to build a model using the following variables:
+\begin{table}[h]
+\begin{tabular}{ll}
+\verb!BDI! & Beck depression index (high \verb!BDI! = high depression)\\
+\verb!employment! &  \verb!employed, govt assistance, other,! or  \verb!parental support!\\
+\verb!psisat! &  satisfaction with positive social interaction (high \verb!psisat! = high satisfaction) \\
+\end{tabular}
+\end{table}
 
-You are reading a blog post about the relationship between Aranyp\'{e}nz and Faipari. You are not an expert on these two variables or the domain where this data comes from. Relying on your statistical expertise, use the below plot to investigate these two variables.
+Unfortunately, the original code got deleted! The below is all you have:
 
-\vspace{-.15in}
-\begin{figure}[H]\centering
- \includegraphics[width=5in, height = 4in]{Question5.jpeg}
-\end{figure}
+{\small
+\begin{verbatim}
+                           Estimate Std. Error
+(Intercept)                 32.2064     4.7728
+employmentgovt assistance    4.4003     2.5579
+employmentother             -3.9285     2.4804
+employmentparental support  -2.0387     2.2902
+psisat                      -1.7314     0.3727
+\end{verbatim}
+}
 
-\vspace{.1in}
+\begin{enumerate}[a)]
+	\item Write out the model formula associated to the above output.
+		\item Interpret the intercept term in a contextually meaningful way.
+	\item What is the reference level for \texttt{employment}? Justify your answer.
 
-\begin{enumerate}[(a)]
-	\item Find an approximate value for the mean for the Aranyp\'{e}nz variable and an approximate for the mean of the Faipari variable. Justify your approximations. Compare these values.
-
-	\vspace{.1 in}
-
-
-	\item You would like to compare the spread and skew for the Aranyp\'{e}nz and Faipari variables. Is this an appropriate plot for quickly determining the spread and skew of each variable? If not, what kind of visualization(s) would you recommend. Justify your answers.
-	% \emph{Hint}: Draw grid lines to check the densities of points.
-	\vspace{.1in}
-
-
-	\item Bart Bivariate claims that there is an outlier in the dataset, while Uri Univariate says that neither variable has any outliers. Explain how they are both right. You may use images in your explanation.
-
-	\vspace{.1 in}
-
-	\item Given this above plot, what claims can you make about the relationship between these two variables? Be sure to support your claims.
+	\item Does this model assume that the relationship between \texttt{employment} and \texttt{BDI} depends on \texttt{psisat}? Justify your answer.
 \end{enumerate}
-\vspace{.2in}
 
 
 \end{document}
