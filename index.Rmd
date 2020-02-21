@@ -96,24 +96,37 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-* 
+* `NA`
 
 ## Recap
 
-* 
-
-## Chalk talk
-
-
-Recall `categ_regression_ex` data frame from from Lec11. Note that the explanatory variable $x$ = name is now categorical with 3 levels: Bert, Florence, Katie.
+Recall the `categ_regression_ex` data frame from from Lec11. Note that the explanatory variable $x$ = name is now categorical with 3 levels: Bert, Florence, Katie.
 
 ```{r, echo=FALSE, eval=TRUE}
 categ_regression_ex
 ```
 
-Let's plot them by hand. 
+You then plotted the points. Let's also add three lines:
 
-Now let's obtain the *regression table*. Recall this is done in two steps:
+1. A solid line for Bert's "baseline" mean ("Bert" is the baseline because it comes first alphanumerically)
+1. A dashed line for Florence's mean, which is *offset* from Bert's mean by 12 - 10 = +2
+1. A dotted line for Katie's mean, which is *offset* from Bert's mean by 9 - 10 = -1
+
+```{r, eval=TRUE, echo=FALSE}
+ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
+  geom_point() +
+  geom_hline(yintercept = 10) +
+  geom_hline(yintercept = 12, linetype = "longdash") +
+  geom_hline(yintercept = 9, linetype = "dotted")
+```
+
+Shout out to [Dr. Jenny Smetzer](https://www.scsparkscience.org/fellow/jennifer-smetzer/){target="_blank"} for this example.
+
+
+## Chalk talk
+
+Now let's obtain the *regression table* using the `get_regression_table()` function in the `moderndive` package. Recall this is done in two steps:
+
 ```{r, eval = TRUE}
 # Step 1: Fit regression model
 model_ex <- lm(value ~ name, data = categ_regression_ex)
@@ -122,22 +135,48 @@ model_ex <- lm(value ~ name, data = categ_regression_ex)
 get_regression_table(model_ex)
 ```
 
-What do the three "estimate" terms (`intercept` = 10, `nameFlorence` = 2, and `nameKatie` = -1) mean?
-
 
 <!--
-* How to bridge gap between output of regression table & wacked out indicator function notation in Chapter 
-    + Show regression table using Bert, Florence, Katie data
-    + Then make separate table of name on rows, and nameFlorence and nameKatie in columns, populate with 0's & 1's
-    + Write out equation of "line" in terms of regression table output `value = intercept + nameFlorence + nameKatie`.
-    + Then write out equation of line via math formula y = f(x) with indicator functions.
-* Emphasize that
-    + fitted values are group means. Do it for Bert, Florence, Katie, 
-    + Compute a few residuals
-* To ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean:
-    + a jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline.
-    + Insert in text right before "Let’s generalize this idea a bit".
-    + If Katie has bandwidth, add to [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
+Then write on board (in order to bridge the gap between output of regression
+table & wacked out indicator function notation they'll read in Chapter 5.2.2
+today):
+
+1. Make a separate table of name on rows, and nameFlorence and nameKatie in columns, populate with 0's & 1's
+1. Write out equation of "line" in terms of regression table output:
+    + `value = intercept + nameFlorence + nameKatie`.
+    + Do all three cases
+1. Write out equation of line via math and with indicator functions:
+    + Explain what indicator function is $1_{Florence}(x)$
+    + $\widehat{y} = b_0 + b_{Florence}\cdot 1_{Florence}(x) + b_{Katie}\cdot 1_{Katie}(x)$
+    + We need this notation in particular for multiple regression in Chapter 6
+--> 
+
+Let's now get the fitted values and residuals using the `get_regression_points()` function on `model_ex` (where our model is saved):
+
+```{r, eval = TRUE}
+# Step 2: Get regression table
+get_regression_points(model_ex)
+```
+
+<!--
+Then write on board:
+
+1. When x is categorical y-hat fitted values correspond to group means for each level:
+    + Bert: Just 10
+    + Florence: 10 + 2 = 12
+    + Katie: 10 - 1 = 9
+1. Compute a few residuals and show they correspond to deviations/errors from the group means
+-->
+
+
+
+    
+    
+<!--    
+If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean. Do this in  [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
+
+* A jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline.
+* Insert in text right before "Let’s generalize this idea a bit".
 -->
 
 
@@ -150,7 +189,7 @@ What do the three "estimate" terms (`intercept` = 10, `nameFlorence` = 2, and `n
 
 ## Announcements
 
-* 
+* `NA`
 
 ## Recap
 
@@ -169,7 +208,8 @@ Then write on board:
 Consider the following 9 points saved in a data frame called `categ_regression_ex` where we have
 
 1. A numerical outcome variable $y$ = `value`
-≈
+1. An *categorical* explanatory variable $x$ = `name` with 3 levels: Bert, Florence, Katie.
+
 ```{r, eval=TRUE}
 library(ggplot2)
 library(dplyr)
@@ -193,6 +233,12 @@ ggplot(categ_regression_ex, aes(x = name, y = value)) +
   geom_point()
 ```
 
+**Solution**:
+
+```{r, eval=TRUE, echo=TRUE}
+ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
+  geom_point()
+```
 
 <!--
 Then draw the above plot on board and mark:
@@ -396,6 +442,7 @@ fruit_basket
 
 ## Announcements
 
+* `NA`
 <!--
 * Bert only: Emphasize problem set policy. "Turn in what you have."
 * Bert only: Google doc exercise: https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit
@@ -517,7 +564,7 @@ Topics:
 
 ## Announcements
 
-* 
+* `NA`
 
 ## Chalk talk
 
