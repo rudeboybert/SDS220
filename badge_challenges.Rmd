@@ -93,6 +93,29 @@ Sell it informally as:
     + Problem sets corresponding to labs.
 
 
+## How to study
+
+Everything we have done so far in this class is mapped to one of 5 badges, just like the Grammar of Graphics where you map variables to aesthetics attributes, map everything we've done in class to one of 5 bages. By "everything" we mean:
+
+1. Lecture: Content on webpage tied in with class notes (which )
+1. Problem sets
+1. Readings (learning checks)
+
+After you've done this, create a priority of badges from most to least comfortable, and plan to do the questions in that order. That way you can demonstrate your strongest statistical knowledge first, lock those in, then with time permitting move on to attempted your areas for development.
+
+Our past experience has shown that those students who first attempted 4/5, went back and polished their answers, and then attempted the last questions, tended to catch small mistakes and thus were better able to demonstrate demonstrate proficiency. 
+
+> Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
+
+1. Walk me thru in steps, using the appropriate steps, recipe, 
+1. The code does not need to perfect, code without explanation provides a limited view into your understanding. It is important to demonstrate mastery of the "what" we are doing vs the "how" we are goign to do it (actual functioning)
+1. We will design this such that if you have prepared, the majority students should be able to finish 4/5 questions comfortably with revisions and even have time to potentially complete the 5th.
+1. 
+
+
+
+
+
 
 ***
 
