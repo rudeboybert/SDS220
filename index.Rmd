@@ -154,7 +154,7 @@ today):
 Let's now get the fitted values and residuals using the `get_regression_points()` function on `model_ex` (where our model is saved):
 
 ```{r, eval = TRUE}
-# Step 2: Get regression table
+# Step 2: Get regression points
 get_regression_points(model_ex)
 ```
 
