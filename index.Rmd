@@ -66,6 +66,8 @@ simple_regression_ex <- tibble(
   y = c(2, 1, 3)
 )
 
+# Note to future self: Changes y = value to something with context. Also saying
+# "the fitted value for value" is awkweird
 categ_regression_ex <- tibble(
   name = c("Bert", "Bert", "Bert", "Florence", "Florence", "Florence", "Katie", "Katie", "Katie"),
   value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
@@ -166,6 +168,12 @@ Then write on board:
     + Florence: 10 + 2 = 12
     + Katie: 10 - 1 = 9
 1. Compute a few residuals and show they correspond to deviations/errors from the group means
+
+Note for future self: Make sure to talk about interpretation of the values in estimate column of table in context of example.
+
+Note for future self:
+- x numerical: for every slide of 1 in x, the slope is the expected/on average change in y (not necessarialy causal)
+- x categorical: for a hop between categories starting from the baseline
 -->
 
 
