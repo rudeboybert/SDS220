@@ -1,6 +1,3 @@
-
-
-
 \documentclass[12pt]{article}
 \usepackage{float}
 
@@ -25,9 +22,11 @@
 \pagestyle{fancy}
 %\cfoot{(\thepage/\pageref{LastPage})}
 
+
+
 \begin{document}
 
-\lhead{SDS/MTH 220}
+\lhead{SDS/MTH 220: Introduction to Probability and Statistics}
 \rhead{Badge Challenge 1}
 \parindent=0in
 
@@ -89,7 +88,6 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 \vspace{.1in}
 \item This is the first of four opportunities to demonstrate your current understanding of the first five badges for the course. You may complete as many badges as you would like. Questions left unattempted will not receive a badge level.
 
-
 \end{itemize}
 
 \pagebreak
@@ -120,7 +118,7 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
  & & & & &  \\
 \hline
  & & & & &  \\
- \large{\textbf{3}}  & & & & &  \\
+\large{\textbf{3}}  & & & & &  \\
  & & & & &  \\
 \hline
  & & & & &  \\
@@ -135,8 +133,8 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 \hline
  & & & & &  \\
 \textbf{Recorded }  & & & & &  \\
- \textbf{Score by}  & & & & &  \\
- \textbf{Badge} & & & & &  \\
+\textbf{Score by}  & & & & &  \\
+\textbf{Badge} & & & & &  \\
   & & & & &  \\
 \hline
 \end{tabular}
@@ -149,42 +147,23 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 
 
 
-\pagebreak
 
-\textbf{Question 1}\
-
-\vspace{.15in}
-Consider the Galton data, which contains the following variables among others:
-
-\vspace{0.1in}
-~\hspace{1in} \texttt{heights} - The child's height as an adult (inches)
-
-\vspace{0.05in}
-~\hspace{1in} \texttt{mother} - The child's mother's height as an adult (inches)
-
-\vspace{0.05in}
-~\hspace{1in} \texttt{sex} - The sex of the child (M or F) \\
-
-Consider the following model:
-
-\vspace{0.1in}
-~\hspace{0.1in} \texttt{heights  =  43.15546 + 0.32655*mother + 1.96331*sexM + 0.05014*mother*sexM}
-
-\begin{enumerate}[(a)]
-\item What is the reference level for this model? Justify your answer.
-\vspace{.1in}
-\item Use the above model to construct a model formula between one's height and mother's height for females. Show or justify all work.
-\vspace{.1in}
-\item Interpret the final coefficient in a contextually meaningful manner.
-\vspace{.1in}
-\item Based on what you know about the above model, would you choose to keep the model as is or build a different trivariate model? Note that if you were to change the model, you must still use all of the three given variables and no others. Justify your choice.
-\end{enumerate}
-
-\vspace{0.25in}
-
+%-------------------------------------------------------------------------------
+%
+% Badge 1: Understand the grammar of graphics: construct graphics based on a dataset, deconstruct graphics into a data set
+%
+%-------------------------------------------------------------------------------
 \newpage
+\begin{LARGE}
+\begin{center}
+\textbf{Badge 1: Understand the grammar of graphics: construct graphics based on a dataset, deconstruct graphics into a data set}
+\end{center}
+\end{LARGE}
 
-\textbf{Question 2}\
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\
 
 \vspace{.15in}
 
@@ -214,10 +193,46 @@ For this question consider the below box plot.
 
 \end{enumerate}
 
+
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+%
+% Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis
+%
+%-------------------------------------------------------------------------------
 \newpage
+\begin{LARGE}
+\begin{center}
+\textbf{Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis}
+\end{center}
+\end{LARGE}
 
+
+
+
+
+%-------------------------------------------------------------------------------
+%
+% Badge 3: Compute and interpret summary statistics: measures of centrality and spread
+%
+%-------------------------------------------------------------------------------
+\newpage
+\begin{LARGE}
+\begin{center}
+\textbf{Badge 3: Compute and interpret summary statistics: measures of centrality and spread}
+\end{center}
+\end{LARGE}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
 \vspace{.05in}
-
 \textbf{Question 3}\
 
 \vspace{.15in}
@@ -252,7 +267,6 @@ Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 &10 \\
 \end{enumerate}
 \vspace{.2in}
 
-
 \textbf{Alternative}\
 
 \vspace{.15in}
@@ -267,11 +281,42 @@ You have been asked to consult on a small study. Due to privacy concerns, all yo
 \end{enumerate}
 
 
+
+
+%-------------------------------------------------------------------------------
+%
+% Badge 4: Fit and understand regression models with numerical explanatory
+% variables
+%
+%-------------------------------------------------------------------------------
 \newpage
+\begin{LARGE}
+\begin{center}
+\textbf{Badge 4: Fit and understand regression models with numerical explanatory variables}
+\end{center}
+\end{LARGE}
 
 
-\textbf{Question 2}\
 
+
+
+%-------------------------------------------------------------------------------
+%
+% Badge 5: Fit and understand regression models with categorical explanatory variables
+%
+%-------------------------------------------------------------------------------
+\newpage
+\begin{LARGE}
+\begin{center}
+\textbf{Badge 5: Fit and understand regression models with categorical explanatory variables}
+\end{center}
+\end{LARGE}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\
 
 \vspace{.15in}
 Australian researchers explored the association between depression and factors such as employment status, marital status, and satisfaction with their level of social interaction. You worked with a sociology researcher to build a model using the following variables:
@@ -298,11 +343,65 @@ psisat                      -1.7314     0.3727
 
 \begin{enumerate}[a)]
 	\item Write out the model formula associated to the above output.
-		\item Interpret the intercept term in a contextually meaningful way.
+	\item Interpret the intercept term in a contextually meaningful way.
 	\item What is the reference level for \texttt{employment}? Justify your answer.
-
 	\item Does this model assume that the relationship between \texttt{employment} and \texttt{BDI} depends on \texttt{psisat}? Justify your answer.
 \end{enumerate}
+
+
+
+%-------------------------------------------------------------------------------
+\pagebreak
+\textbf{Question X}\
+
+\vspace{.15in}
+Consider the Galton data, which contains the following variables among others:
+
+\vspace{0.1in}
+~\hspace{1in} \texttt{heights} - The child's height as an adult (inches)
+
+\vspace{0.05in}
+~\hspace{1in} \texttt{mother} - The child's mother's height as an adult (inches)
+
+\vspace{0.05in}
+~\hspace{1in} \texttt{sex} - The sex of the child (M or F) \\
+
+Consider the following model:
+
+\vspace{0.1in}
+~\hspace{0.1in} \texttt{heights  =  43.15546 + 0.32655*mother + 1.96331*sexM + 0.05014*mother*sexM}
+
+\begin{enumerate}[(a)]
+\item What is the reference level for this model? Justify your answer.
+\vspace{.1in}
+\item Use the above model to construct a model formula between one's height and mother's height for females. Show or justify all work.
+\vspace{.1in}
+\item Interpret the final coefficient in a contextually meaningful manner.
+\vspace{.1in}
+\item Based on what you know about the above model, would you choose to keep the model as is or build a different trivariate model? Note that if you were to change the model, you must still use all of the three given variables and no others. Justify your choice.
+\end{enumerate}
+
+\vspace{0.25in}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 \end{document}
