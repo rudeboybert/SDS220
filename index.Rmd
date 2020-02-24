@@ -114,6 +114,10 @@ categ_regression_ex <- tibble(
 
 * `NA`
 
+<!--
+Show example of timestamped cover page of exam
+-->
+
 ## Recap
 
 
@@ -129,12 +133,18 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-* `NA`
+1. [SDS talk this week](https://smithcollege-sds.github.io/sds-www/speaker_Hu.html#public_lecture:_generating_synthetic_family_income_for_the_consumer_expenditure_surveys){target="_blank"} on balancing between "having useful data" and "maintinaing sufficient privacy protection":
+    + What: "Generating Synthetic Family Income for the Consumer Expenditure Surveys"
+    + Who: Prof. Jingchen (Monika) Hu, Vassar College
+    + When: Thursday Feb 27, 5pm
+    + Where: McConnell Hall 103
 
-## Recap
+## Today
 
 
-## Chalk talk
+* Recap exercise on common R and RStudio coding issues (print-out given in class available [here](https://docs.google.com/document/d/1tvjDIZXlrQMaYKmv9omWkmIpi-2w3NPxGpNXlSktgNY/){target="_blank"})
+* Discussion on [Badge Challenge 1](badge_challenges.html#)
+* Class time for projects
 
 
 
