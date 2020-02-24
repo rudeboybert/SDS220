@@ -46,7 +46,7 @@ There are four levels for each badge: *G* – Gold, *S* – Silver, *B* – Bron
 
 At the end of the semester, your collected badges and badge levels will be converted into points for the 45% of your final grade assigned to badge challenges (see [syllabus](syllabus.html#evaluation)):
 
-![Badge Table](figs/BadgeTable.png)
+![](figs/BadgeTable.png)
 
 **Why are we doing this?**
 
@@ -70,27 +70,55 @@ Sell it informally as:
 
 ## Administrative notes
 
-* **Friday 2/28 5pm through Monday 3/2 11pm**.
-* Self-scheduled Badge Challenge [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
-    + Only print from macOS computers.
-    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
-* Exam length:
+* Time window: **Friday 2/28 5pm through Monday 3/2 11pm**. In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during this time window.
+* In preparation for badge challenge:
+    + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand
+    + Bring colored pencils/pens
+    + All Office of Disability Services forms must be submitted to instructor in print before the start of the time window
+* Printing the badge challenge: From a macOS computer in Seelye basement during the time window
+    + Access the link to print the badge challenge on Moodle
+    + Print badge challenge **in color**
+    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print
+* During badge challenge:
+    + Closed-book, no internet, and individually completed
     + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
-    + You will be given 140 mins to complete it (including transit time to writing area).
-    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
-    + All Office of Disability Services forms must be submitted before the midterm start time.
-* Other details:
-    + Closed-book, no internet, and individually completed.
-    + Bring colored pencils
+    + You will be given 140 mins to complete it (including transit time to writing area). **Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.**
+* After badge challenge:
+    + You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.
 
 
 ## Badges 1-5
-    
-* Badges: Lectures 1-12 & Labs 1-4. In other words everything up to and including regression with one numerical predictor. 
-* What to study:
-    + Your hand-written course notes first: they are the "executive summaries" of topics.
-    + The material on the course webpage chronologically, in particular the ModernDive readings.
-    + Problem sets corresponding to labs.
+
+### Topics
+
+Everything we have done so far in this class is mapped to Badges 1-5 in the above table of 15 badges. In other words, everything up to and including regresssion with a categorical explanatory variable. Just like with the Grammar of Graphics where you map variables to aesthetics attributes, map everything we've done in class so far to one of 5 badges. By "everything" we mean:
+
+1. Lectures 1-12: Content on course webpage for each lecture along with in-class notes
+1. All the ModernDive readings in the course schedule along with learning checks (solutions are in Appendix-D of ModernDive)
+1. Labs 1-4 and corresponding PS01-PS04
+
+### How to study and take badge challenge
+
+After you've done this, create a priority of badges from most to least comfortable, and plan to do the questions in that order during the badge challenge. That way you can demonstrate your strongest statistical knowledge first, lock those badges in, then with time permitting move on to attempt badges relating to your areas for development. Our past experience has shown that those students who:
+
+1. First attempted 4 out of 5 badges then
+1. Went back and polished their answers then
+1. Attempted the remaining fifth question
+
+often tended to catch small mistakes and thus were better able to demonstrate demonstrate badge proficiency. The badge challenge is timed such that if you have prepared adequately, we expect the majority students should be able to finish and revise 4 out of 5 questions comfortably and have sufficient time to potentially complete the remaining 5th badge.
+
+> Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
+
+### Badge 2: What is "pseudocode"?
+
+Badge challenge 2 is "Write pseudocode for basic data wrangling & exploratory data analysis." What is pseudocode? Think of pseudocode as a recipe, a blue print, or an algorithm outline that balances:
+
+1. Being specific enough that someone who reads it can walk through the steps unambiguously.
+1. Not being perfectly written code that necessarily works.
+
+Code without explanation provides a limited view into your understanding. Therefore it is important to demonstrate mastery of the "what" we are doing (the recipe, blue print, outline) versus the "how" we are goign to do it (actual functioning code).
+
+In-class example:
 
 
 
@@ -102,18 +130,22 @@ Sell it informally as:
 
 ## Administrative notes
 
-* **Friday 4/3 5pm through Monday 4/6 11pm**.
-* Self-scheduled Badge Challenge [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
-    + Only print from macOS computers.
+* Time window: **Friday 4/3 5pm through Monday 4/6 11pm**.
+* In preparation for badge challenge:
+    + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand.
+    + Bring colored pencils/pens.
+    + All Office of Disability Services forms must be submitted to instructor in print before the start of the time window.
+* Printing the badge challenge: From a macOS computer in Seelye basement during the time window
+    + Access the link to print badge challenge on Moodle.
+    + Print badge challenge **in color**.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
-* Exam length:
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
-    + You will be given 140 mins to complete it (including transit time to writing area).
-    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
-    + All Office of Disability Services forms must be submitted before the midterm start time.
-* Other details:
+* During badge challenge:
+    + In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during the badge challenge time window.
     + Closed-book, no internet, and individually completed.
-    + Bring colored pencils
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
+    + You will be given 140 mins to complete it (including transit time to writing area). **Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.**
+* After badge challenge:
+    + You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.
 
 
 ## Badges 1-10
@@ -135,18 +167,22 @@ Sell it informally as:
 
 ## Administrative notes
 
-* **Friday 4/24 5pm through Monday 4/27 11pm**.
-* Self-scheduled Badge Challenge [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}. In particular:
-    + Only print from macOS computers.
+* Time window: **Friday 4/24 5pm through Monday 4/27 11pm**.
+* In preparation for badge challenge:
+    + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand.
+    + Bring colored pencils/pens.
+    + All Office of Disability Services forms must be submitted to instructor in print before the start of the time window.
+* Printing the badge challenge: From a macOS computer in Seelye basement during the time window
+    + Access the link to print badge challenge on Moodle.
+    + Print badge challenge **in color**.
     + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
-* Exam length:
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
-    + You will be given 140 mins to complete it (including transit time to writing area).
-    + **Timestamps will be strictly enforced. Any timestamps indicating than more than 140 minutes are subject to an honor board case.**
-    + All Office of Disability Services forms must be submitted before the midterm start time.
-* Other details:
+* During badge challenge:
+    + In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during the badge challenge time window.
     + Closed-book, no internet, and individually completed.
-    + Bring colored pencils
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
+    + You will be given 140 mins to complete it (including transit time to writing area). **Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.**
+* After badge challenge:
+    + You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.
 
 
 ## Badges 1-15
@@ -168,7 +204,7 @@ Sell it informally as:
 
 ## Administrative notes
 
-* **Exam week**.
+* Time window: **Exam week**.
 * More details to be posted later.
 
 
