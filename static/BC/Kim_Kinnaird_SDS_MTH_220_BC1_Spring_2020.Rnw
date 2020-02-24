@@ -147,6 +147,11 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 
 <<include=FALSE>>=
 library(tidyverse)
+library(nycflights13)
+library(moderndive)
+library(gapminder)
+library(babynames)
+
 # Set default code chunk options
 opts_chunk$set(
   warning = FALSE, message = FALSE, echo = FALSE, fig.width = 16/2,
@@ -255,7 +260,6 @@ ggplot(data = example, mapping = aes(x = number)) +
 \item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
 
 <<>>=
-library(moderndive)
 DD_vs_SB <- DD_vs_SB %>%
   mutate(shops_per_1000 = 1000*shops/population)
 ggplot(DD_vs_SB, aes(x=median_income, y=shops_per_1000)) +
@@ -349,7 +353,6 @@ tibble(prices = prices) %>%
 \item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
 
 <<>>=
-library(gapminder)
 gapminder_subset <- gapminder %>%
   filter(year %in% c(1957, 2007))
 gapminder_subset
@@ -410,13 +413,6 @@ tibble(money = money) %>%
 
 \noindent \textbf{d)} Fill in the blanks: The median amount of money possessed is between \$ \line(1,0){50}\\
 and \$ \line(1,0){50}. Show work or briefly explain your reasoning.
-
-
-
-
-
-
-\item
 
 
 \end{enumerate}
@@ -486,6 +482,80 @@ For this question consider the below box plot.
 \begin{enumerate}[(a)]
 	\item
 	\vspace{.1in}
+\end{enumerate}
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\
+
+\vspace{.15in}
+
+\begin{enumerate}[(a)]
+\item Recall the {{\tt babynames}} dataset that contains all babynames used more than 5 times for any given year, split by sex, for the years 1880 through 2015. Here is a preview of the first 10 rows:\\
+
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8*1.1, fig.height=3.5*1.1>>=
+babynames %>%
+  slice(1:10) %>%
+  kable()
+@
+
+\hspace{0.5cm}\\
+
+\textbf{START WRITING YOUR RESPONSES WHERE INDICATED BELOW.}\\
+
+\noindent \textbf{a)} Write the pseudocode that is going to compute the total number of babies born between 1950 and 2000 that are named ``Riley.''\\
+
+\noindent \textbf{b)} You want to compare the degree to which the names ``Casey'' and ``Riley'' have been ``unisex'' names for all years between 1950 to 2000, in other words the focus is on the degree to which the names have been used by both sexes
+
+\begin{itemize}
+\item Write the pseudocode for the data wrangling.
+\item Specify all the elements of the grammar of graphics that is going to generate an appropriate visualization.
+\end{itemize}
+
+
+
+
+
+
+\item \textbf{a)} The {{\tt weather}} data set in the {{\tt nycflights13}} package contains hourly meterological data for the three NYC airports (EWR, JFK, and LGA) for every day in 2013.  We present a snapshot of the data below, but only for the first 6 rows in the data set. What variables are needed to uniquely identify each observation?
+
+\vspace{0.5cm}
+
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
+weather %>%
+  select(origin, year, month, day, hour, temp, humid, wind_speed, precip, pressure, visib) %>%
+  head() %>%
+  knitr::kable()
+@
+
+\vspace{5cm}
+
+\noindent \textbf{b)} Write down the arithmetic operation you would enter into a calculator to compute the number rows that the {{\tt weather}} data set has (not including the header row). An example of an arithmetic operation is $10 \times 7 + 6$.
+
+
+
+
+\item You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age. Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following three scenarios:
+
+\begin{itemize}
+\item[a)] by sex
+\item[b)] by sex and class and age
+\item[c)] to answer the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
+\end{itemize}
+
+Note: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. Here is what the {{\tt Titanic}} data looks like:\\
+
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
+data(Titanic)
+Titanic %>% tbl_df() %>% kable()
+@
+
+
 \end{enumerate}
 
 
@@ -661,6 +731,55 @@ Write down what the following two quantities would be if $x$ was not measured in
 
 
 
+
+\item Recall our teaching evaluation dataset seen in class. We're interested in fitting a model of teaching score (evaluated by students) as a function of instructor age.
+
+<<eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE, fig.height=4>>=
+ggplot(data = evals, mapping = aes(x = age, y = score)) +
+  geom_point() +
+  geom_smooth(method = "lm", se = FALSE) +
+  labs(x = "Instructor age", y = "Teaching score")
+@
+
+<<eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE, fig.height=4>>=
+model_score <- lm(score ~ age, data = evals)
+get_regression_table(model_score)
+@
+
+\noindent \textbf{a)} Interpret the {{\tt intercept}} term in the {{\tt estimate}} column of the regression table.
+
+\vspace{6cm}
+
+\noindent \textbf{b)} Give the precise interpretation of the slope for {{\tt age}} in the {{\tt estimate}} column of the regression table.
+
+\vspace{6.5cm}
+
+\noindent \textbf{c)} The regression line visualized in the above figure is considered the ``best fitting line'' through these points. By what criteria do we mean ``best''?
+
+\vspace{6.5cm}
+
+\noindent \textbf{d)} What is the correlation coefficient of {{\tt age}} and {{\tt score}}? Is it positive or negative?
+
+\vspace{4cm}
+
+\noindent \textbf{e)} Consider the first row of the following output. Write down the equation that computes the first value of {{\tt score\_hat}}: {{\tt 4.25}}.
+
+<<eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE, fig.height=4>>=
+model_points <- get_regression_points(model_score)
+model_points
+@
+
+\vspace{4cm}
+
+\noindent \textbf{f)} Write down the equation that computes the first value of {{\tt residual}}: {{\tt 0.452}}.
+
+\vspace{5cm}
+
+\noindent \textbf{g)} Write down the data wrangling pseudocode to apply to {{\tt model\_points}} to compute the value of the criteria described in part c).
+
+\hspace{1cm}
+
+
 \end{enumerate}
 
 
@@ -759,6 +878,65 @@ Consider the following model:
 \end{enumerate}
 
 \vspace{0.25in}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\
+<<echo=FALSE>>=
+gapminder2007 <- gapminder %>%
+  filter(year == 2007) %>%
+  select(country, continent, lifeExp)
+@
+\vspace{.15in}
+
+\begin{enumerate}[(a)]
+\item Note: for this question, you do not need to do the arithmetic (adding, subtracting, multiplying, dividing), but rather write down what you would enter into a calculator if you had one. Let's consider the {{\tt gapminder}} development data, but only for the year 2007. Let's look at a random sample of 5 out of the \Sexpr{nrow(gapminder2007)} rows of this dataset:\\
+
+<<echo=FALSE>>=
+set.seed(76)
+gapminder2007 %>%
+  sample_n(5) %>%
+  kable()
+@
+
+\noindent \\
+
+We are interested in modeling the relationship between the outcome variable $y = $ life expectancy in years and the categorical explanatory variable $x = $ continent. You fit a following regression and obtain the following regression table rounded to the nearest integer:\\
+
+<<echo=FALSE>>=
+lm(lifeExp ~ continent, data=gapminder2007) %>%
+  get_regression_table()
+@
+
+\noindent \\
+
+\noindent \textbf{a)} What is the fitted value $\widehat{y}$ of life expectancy in years for any given country in:
+
+\begin{enumerate}
+\item Africa
+\item Asia
+\item Europe
+\end{enumerate}
+
+\noindent \textbf{b)} What is the residual for the following three countries?
+
+\begin{enumerate}
+\item Nambia
+\item Iran
+\item Italy
+\end{enumerate}
+
+\noindent \textbf{c)} What is the mean life expectancy for countries in the following continents:
+
+\begin{enumerate}
+\item Africa
+\item Asia
+\item Europe
+\end{enumerate}
+
+\end{enumerate}
 
 
 
