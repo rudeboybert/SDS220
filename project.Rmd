@@ -62,6 +62,9 @@ mental bandwidth, use a blocked randomization scheme. For ex: by major or some
 interest (sports team, hometown, etc). That way there will be less potential for
 disagreement over what dataset to use, which Adriana B. pointed out happened in
 her 192 mini-project 3.
+- Ensure numerical variable has at least 10 unique values. For example, class
+year, while numerical, could also be treated as categorical since there are only 
+4 values.
 
 
 
