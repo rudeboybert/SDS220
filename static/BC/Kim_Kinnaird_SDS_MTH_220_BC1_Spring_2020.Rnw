@@ -6,6 +6,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphics}
+\usepackage{pdfpages}
 \usepackage{graphicx,subfigure}
 \usepackage{float,graphicx}
 \usepackage{fancyhdr}
@@ -144,6 +145,17 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 
 \vspace{1in}
 
+<<include=FALSE>>=
+library(tidyverse)
+# Set default code chunk options
+opts_chunk$set(
+  warning = FALSE, message = FALSE, echo = FALSE, fig.width = 16/2,
+  fig.height = 9/2
+)
+@
+
+
+
 
 
 
@@ -161,6 +173,258 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 \end{LARGE}
 
 
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\ Short Answer
+\begin{enumerate}[(a)]
+	\item In terms of the ``Grammar of Graphics'' what is a statistical graphic?
+	\vspace{.1in}
+	\item What is the chief difference between a barplot and a histogram?
+	\vspace{.1in}
+	\item What is \textbf{\emph{overplotting}}? Name the two ways seen in class to deal with it.
+	\vspace{.1in}
+\end{enumerate}
+
+
+
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\
+
+\vspace{.15in}
+
+\begin{enumerate}[(a)]
+
+\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
+
+\begin{itemize}
+\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
+\item Pair 2: ``Number of years at a job'' and ``Salary''
+\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
+\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
+\end{itemize}
+
+
+
+\item Recall Table 2.4 you saw in ModernDive summarizing the "Five Named Graphs". It
+is presented here with 10 text segments labeled ``A'' though ``J'' blanked out.
+
+\begin{center}
+\includegraphics[width=\textwidth]{images/FNG2.png}
+\end{center}
+
+Write down in bullet point form what these 10 missing text segments labeled ``A'' though ``J' should read.
+
+
+\item Say you have a data frame named {\tt example} that has 4 variables and 4 rows of data:\\
+
+<<>>=
+example <- tibble(
+  type = c("D", "B", "A", "C"),
+  fruit = c("apple", "apple", "orange", "orange"),
+  city = c("Toronto", "Montreal", "Toronto", "Montreal"),
+  number = c(3, 4, 2, 1)
+)
+example %>%
+  kable()
+@
+\vspace{0.25cm}
+
+Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
+
+<<>>=
+ggplot(data = example, mapping = aes(x = number)) +
+  geom_histogram(binwidth = 2, boundary = 1.5, color = "white", fill = "white") +
+  geom_vline(xintercept = c(-2.5, -0.5, 1.5, 3.5, 5.5), linetype = "dashed") +
+  theme_bw() +
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
+        axis.text.y = element_blank(), axis.title.y = element_blank()) +
+  scale_x_continuous(breaks = seq(from = -2.5, to = 5.5, by = 1)) +
+  scale_y_continuous(breaks = seq(from = 0, to = 2, by = 1)) +
+  geom_hline(yintercept = 0) +
+  labs(x = "Number")
+@
+
+
+
+
+\item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
+
+<<>>=
+library(moderndive)
+DD_vs_SB <- DD_vs_SB %>%
+  mutate(shops_per_1000 = 1000*shops/population)
+ggplot(DD_vs_SB, aes(x=median_income, y=shops_per_1000)) +
+  geom_point(aes(col=shop_type)) +
+  facet_wrap(~shop_type) +
+  geom_smooth(method="lm", se=FALSE) +
+  labs(x="Median Household Income", y="# of shops per 1000 people",
+       title="Coffee/Cafe Comparison in Eastern MA") +
+  scale_color_manual(values=c("orange", "forestgreen"))
+@
+
+\begin{enumerate}
+\item Write out the elements of the ``Grammar of Graphics'' that need to be
+specified to create this graphic. You do not need to specify the axes labels, the plot title, nor the regression lines
+\item Assuming there are no missing data, how many rows are in the data frame that we input into the {{\tt ggplot()}} function?
+\item Does the presented visualization support or contradict the researcher's suspicion? Why?
+\end{enumerate}
+
+
+
+
+\item The asking prices for a sample of 15 textbooks currently being sold are listed below. For convenience, the data have been ordered:
+
+\vspace{0.25cm}
+
+<<>>=
+prices <- c(-11, 12, 15, 20, 20,
+            30, 30, 30, 30, 40,
+            40, 40, 40, 41, 51)
+matrix(prices, nrow = 15) %>%
+  t() %>%
+  kable()
+@
+
+\vspace{0.25cm}
+
+\noindent Furthermore, the following three \textit{summary statistics} have been computed:
+
+\vspace{0.25cm}
+
+<<>>=
+tibble(prices = prices) %>%
+  summarize(
+    `1st quartile` = quantile(prices, probs=0.25, type = 2),
+    `Average` = mean(prices),
+    `3rd quartile` = quantile(prices, probs=0.75, type = 2)
+  ) %>%
+  kable()
+@
+
+\vspace{0.25cm}
+
+\noindent \textbf{a)} What is the interquartile range (IQR) for this data?\\
+
+\noindent \textbf{b)} Is the IQR a measure of center or a measure of spread of a numerical variable? Circle your response.\\
+
+\noindent \textbf{c)} Draw the boxplot for this dataset. Be sure to mark all relevant numerical values:\\
+
+<<>>=
+tibble(prices = prices) %>%
+  ggplot(aes(x = "", y = prices)) +
+  geom_boxplot() +
+  coord_flip(ylim = c(-20, 50)) +
+  labs(x = "", y = "price (in thousands of dollars)") +
+  theme(axis.ticks = element_blank(), axis.text.y = element_blank()) +
+  scale_y_continuous(breaks = seq(-10, 50, by=10))
+@
+
+
+
+
+
+\item NPR recently posted an article titled ``How Much (Or Little) The Middle Class Makes, In 30 U.S. Cities.''  It included the image on the following page.
+
+\begin{enumerate}[a)]
+\item This image most closely resembles what statistical visualization we've seen?
+\item Which city has the third highest mean family income?
+\item Which four cities have the highest income disparity in the US?
+\item Quantify this income disparity for only one of the four chosen cities in part c) using a summary statistic of your choice.
+\item What proportion of Nashville families had a family income of \$100K or more?
+\item What proportion of Nashville families had a family income of \$80K or more?
+\end{enumerate}
+
+\includepdf[pages={1}]{images/child.pdf}
+
+
+
+
+
+
+\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
+
+<<>>=
+library(gapminder)
+gapminder_subset <- gapminder %>%
+  filter(year %in% c(1957, 2007))
+gapminder_subset
+@
+
+Using this data, we can create the following plot:\\
+
+<<>>=
+ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
+  geom_point() +
+  labs(
+    x = "GDP per capita", y = "Life expectancy",
+    color = "Continent", size = "Population"
+  ) +
+  facet_wrap(~year)
+@
+
+Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
+
+\begin{itemize}
+\item You don't need to write code, you only need to specify all components of the graphic.
+\item There is no need to specify the x and y axes labels.
+\end{itemize}
+
+
+
+
+
+\item In a statistics class with 140 students, the professor records how much money (in dollars) each student has in their possession during the first class of the semester. The histogram shown below represents the data they collected: \\
+
+<<echo=FALSE, fig.height=4>>=
+money <- c(
+  rep(5, times = 60),
+  rep(15, times = 42),
+  rep(25, times = 20),
+  rep(35, times = 5),
+  rep(45, times = 2),
+  rep(55, times = 5),
+  rep(105, times = 6)
+)
+tibble(money = money) %>%
+  ggplot(aes(x = money)) +
+  geom_histogram(binwidth = 10, boundary = 0) +
+  labs(x = "?", y = "?")
+@
+
+\noindent \textbf{a)} What is the variable on the horizontal (x) axis?\\
+
+\vspace{2cm}
+
+\noindent \textbf{b)} What is the quantity on the vertical (y) axis?\\
+
+\vspace{2cm}
+
+\noindent \textbf{c)} The height of the second bar is 42. What does that tell us? Say precisely in \textbf{one sentence}.\\
+
+\vspace{4cm}
+
+\noindent \textbf{d)} Fill in the blanks: The median amount of money possessed is between \$ \line(1,0){50}\\
+and \$ \line(1,0){50}. Show work or briefly explain your reasoning.
+
+
+
+
+
+
+\item
+
+
+\end{enumerate}
+
+
+
+
+
 %-------------------------------------------------------------------------------
 \newpage
 \textbf{Question X}\
@@ -171,7 +435,7 @@ For this question consider the below box plot.
 
 \vspace{-.15in}
 \begin{figure}[H]\centering
- \includegraphics[width=4in]{boxplot.jpeg}
+ \includegraphics[width=4in]{images/boxplot.jpeg}
 \end{figure}
 
 \begin{enumerate}[(a)]
@@ -200,6 +464,8 @@ For this question consider the below box plot.
 
 
 
+
+
 %-------------------------------------------------------------------------------
 %
 % Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis
@@ -211,6 +477,16 @@ For this question consider the below box plot.
 \textbf{Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis}
 \end{center}
 \end{LARGE}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\ Short Answer
+\begin{enumerate}[(a)]
+	\item
+	\vspace{.1in}
+\end{enumerate}
 
 
 
@@ -232,8 +508,19 @@ For this question consider the below box plot.
 
 %-------------------------------------------------------------------------------
 \newpage
+\textbf{Question X}\ Short Answer
+\begin{enumerate}[(a)]
+	\item Say a class of 30 introductory statistics students took a test where the median score was 17 and the interquartile range was 0. What are the 25th and 75th percentiles of test scores? Hint: A picture may help.\\
+\vspace{4cm}
+	\vspace{.1in}
+\end{enumerate}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
 \vspace{.05in}
-\textbf{Question 3}\
+\textbf{Question X}\
 
 \vspace{.15in}
 
@@ -282,6 +569,38 @@ You have been asked to consult on a small study. Due to privacy concerns, all yo
 
 
 
+%-------------------------------------------------------------------------------
+\newpage
+\vspace{.05in}
+\textbf{Question X}\
+
+\vspace{.15in}
+
+\begin{enumerate}[(a)]
+	\item Below we have a standard Normal $Z$-curve along with 5 vertical dashed lines at $z$ = -1.96, -1, 0, 1, and 1.96 cutting the $x$-axis into 6 segments. In the plot below, write down the 6 proportion of values under the $Z$-curve in each of the 6 segments. Hint: Your 6 proportions should sum to 100\%.\\
+
+<<>>=
+
+ggplot(tibble(x = c(qnorm(0.0001), qnorm(1-0.0001))), aes(x)) +
+  stat_function(fun = dnorm, geom = "line") +
+  coord_cartesian(xlim = c(-3,3)) +
+  labs(x="z", y="") +
+  geom_vline(xintercept = c(-1.96, -1, 0, 1, 1.96), linetype = "dashed", alpha = 0.3) +
+  geom_hline(yintercept = 0) +
+  theme_bw() +
+  theme(
+    panel.grid.major = element_blank(),
+    panel.grid.minor = element_blank(),
+    axis.title.y = element_blank(),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank()
+  ) +
+  labs(title = "Standard normal curve")
+@
+\end{enumerate}
+
+
+
 
 %-------------------------------------------------------------------------------
 %
@@ -298,6 +617,54 @@ You have been asked to consult on a small study. Due to privacy concerns, all yo
 
 
 
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\ Short Answer
+\begin{enumerate}[(a)]
+	\item
+	\vspace{.1in}
+\end{enumerate}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\
+
+\vspace{.15in}
+
+\begin{enumerate}[(a)]
+\item An analysis of Middlebury faculty salaries shows that on average women get paid significantly less than men. However, an astute statistician observes that
+
+\begin{itemize}
+\item Younger faculty tend to get paid less than older faculty due to seniority.
+\item Amongst the younger faculty, there is better representation of women because of shifts in the labor pool and hiring practices.
+\end{itemize}
+
+In this example, age is an example of what?
+
+
+
+\item Consider the following hypothetical study. Say you collect two variables of information from a population of interest: $y = $ life expectancy and $x = $ annual income out of college measured in units of thousands of dollars. You find that
+
+\begin{enumerate}
+\item the correlation coefficient is 0.25
+\item the fitted regression line $\widehat{y} = 45 + 0.5 x$
+\end{enumerate}
+
+Write down what the following two quantities would be if $x$ was not measured in units of thousands of dollars, but measured in units of dollars:
+
+\begin{enumerate}
+\item the correlation coefficient
+\item the fitted slope $b_1$ of the regression line $\widehat{y} = b_0 + b_1 x$
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+
+
 
 
 %-------------------------------------------------------------------------------
@@ -311,6 +678,16 @@ You have been asked to consult on a small study. Due to privacy concerns, all yo
 \textbf{Badge 5: Fit and understand regression models with categorical explanatory variables}
 \end{center}
 \end{LARGE}
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question X}\ Short Answer
+\begin{enumerate}[(a)]
+	\item
+	\vspace{.1in}
+\end{enumerate}
 
 
 
