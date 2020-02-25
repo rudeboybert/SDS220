@@ -64,7 +64,7 @@ Name: \underline{\hspace{4in}}
 %\item Unless explicitly asked, you should not take the time to explain your answers to the True/False, multiple choice, or other short questions.  If you do, you will run out of time!
 
 \vspace{.1in}
-\item All questions will be graded under the badge level grading system. On badge challenges, formatting and presentation guidelines are suspended, but you must show \emph{\textbf{all}} work for computational answers and justify all claims for expository questions.
+\item All questions will be graded under the badge level grading system. On badge challenges, you must show \emph{\textbf{all}} work for computational answers and justify all claims for expository questions.
 
 \vspace{.1in}
 \item Keep your explanations contextually meaningful and concise!
@@ -81,9 +81,10 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 
 \vspace{.1in}
 \item Put your name on the top right corner of each page that you submit and do not write where the staple will go.
-%\vspace{.1in}
-%
-%\item Submit only 5 questions. If you submit more than 5, I will grade the first answer to Questions 2 and 3 that is completed and the first two answers to Questions 4-7.
+
+\vspace{.1in}
+
+\item The front page must have two timestamps on it. \textbf{Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.}
 
 
 \vspace{.1in}
@@ -170,26 +171,26 @@ opts_chunk$set(
 % Badge 1: Understand the grammar of graphics: construct graphics based on a dataset, deconstruct graphics into a data set
 %
 %-------------------------------------------------------------------------------
-\newpage
-\begin{LARGE}
-\begin{center}
-\textbf{Badge 1: Understand the grammar of graphics: construct graphics based on a dataset, deconstruct graphics into a data set}
-\end{center}
-\end{LARGE}
+%\newpage
+%\begin{LARGE}
+%\begin{center}
+%\textbf{Badge 1: Understand the grammar of graphics: construct graphics based on a dataset, deconstruct graphics into a data set}
+%\end{center}
+%\end{LARGE}
 
 
 
 %-------------------------------------------------------------------------------
-\newpage
-\textbf{Question X}\ Short Answer
-\begin{enumerate}[(a)]
-	\item In terms of the ``Grammar of Graphics'' what is a statistical graphic?
-	\vspace{.1in}
-	\item What is the chief difference between a barplot and a histogram?
-	\vspace{.1in}
-	\item What is \textbf{\emph{overplotting}}? Name the two ways seen in class to deal with it.
-	\vspace{.1in}
-\end{enumerate}
+%\newpage
+%\textbf{Question X}\ Short Answer
+%\begin{enumerate}[(a)]
+%	\item In terms of the ``Grammar of Graphics'' what is a statistical graphic?
+%	\vspace{.1in}
+%	\item What is the chief difference between a barplot and a histogram?
+%	\vspace{.1in}
+%	\item What is \textbf{\emph{overplotting}}? Name the two ways seen in class to deal with it.
+%	\vspace{.1in}
+%\end{enumerate}
 
 
 
@@ -202,29 +203,20 @@ opts_chunk$set(
 
 \vspace{.15in}
 
+
+
+
+
+%\item Recall Table 2.4 you saw in ModernDive summarizing the "Five Named Graphs". It
+%is presented here with 10 text segments labeled ``A'' though ``J'' blanked out.
+
+%\begin{center}
+%\includegraphics[width=\textwidth]{images/FNG2.png}
+%\end{center}
+
+%Write down in bullet point form what these 10 missing text segments labeled ``A'' though ``J' should read.
+
 \begin{enumerate}[(a)]
-
-\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
-
-\begin{itemize}
-\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
-\item Pair 2: ``Number of years at a job'' and ``Salary''
-\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
-\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
-\end{itemize}
-
-
-
-\item Recall Table 2.4 you saw in ModernDive summarizing the "Five Named Graphs". It
-is presented here with 10 text segments labeled ``A'' though ``J'' blanked out.
-
-\begin{center}
-\includegraphics[width=\textwidth]{images/FNG2.png}
-\end{center}
-
-Write down in bullet point form what these 10 missing text segments labeled ``A'' though ``J' should read.
-
-
 \item Say you have a data frame named {\tt example} that has 4 variables and 4 rows of data:\\
 
 <<>>=
@@ -239,7 +231,8 @@ example %>%
 @
 \vspace{0.25cm}
 
-Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
+\begin{itemize}
+\item Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
 
 <<>>=
 ggplot(data = example, mapping = aes(x = number)) +
@@ -254,8 +247,11 @@ ggplot(data = example, mapping = aes(x = number)) +
   labs(x = "Number")
 @
 
+\item List the elements of the ``Grammar of Graphics'' for a \textbf{generic} plot. In other words, what are the ingredients of \emph{any} visualization in \texttt{ggplot2}?
 
+\item Write out pseudocode to create the histogram you created in the first part of this question. Specify where you use each element of the ``Grammar of Graphics.''
 
+\end{itemize}
 
 \item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
 
@@ -281,9 +277,9 @@ specified to create this graphic. You do not need to specify the axes labels, th
 
 
 
-\item The asking prices for a sample of 15 textbooks currently being sold are listed below. For convenience, the data have been ordered:
+%\item The asking prices for a sample of 15 textbooks currently being sold are listed below. For convenience, the data have been ordered:
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
 <<>>=
 prices <- c(-11, 12, 15, 20, 20,
@@ -294,11 +290,11 @@ matrix(prices, nrow = 15) %>%
   kable()
 @
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\noindent Furthermore, the following three \textit{summary statistics} have been computed:
+%\noindent Furthermore, the following three \textit{summary statistics} have been computed:
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
 <<>>=
 tibble(prices = prices) %>%
@@ -310,13 +306,13 @@ tibble(prices = prices) %>%
   kable()
 @
 
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\noindent \textbf{a)} What is the interquartile range (IQR) for this data?\\
+%\noindent \textbf{a)} What is the interquartile range (IQR) for this data?\\
 
-\noindent \textbf{b)} Is the IQR a measure of center or a measure of spread of a numerical variable? Circle your response.\\
+%\noindent \textbf{b)} Is the IQR a measure of center or a measure of spread of a numerical variable? Circle your response.\\
 
-\noindent \textbf{c)} Draw the boxplot for this dataset. Be sure to mark all relevant numerical values:\\
+%\noindent \textbf{c)} Draw the boxplot for this dataset. Be sure to mark all relevant numerical values:\\
 
 <<>>=
 tibble(prices = prices) %>%
@@ -332,23 +328,37 @@ tibble(prices = prices) %>%
 
 
 
-\item NPR recently posted an article titled ``How Much (Or Little) The Middle Class Makes, In 30 U.S. Cities.''  It included the image on the following page.
+%\item NPR recently posted an article titled ``How Much (Or Little) The Middle Class Makes, In 30 U.S. Cities.''  It included the image on the following page.
 
-\begin{enumerate}[a)]
-\item This image most closely resembles what statistical visualization we've seen?
-\item Which city has the third highest mean family income?
-\item Which four cities have the highest income disparity in the US?
-\item Quantify this income disparity for only one of the four chosen cities in part c) using a summary statistic of your choice.
-\item What proportion of Nashville families had a family income of \$100K or more?
-\item What proportion of Nashville families had a family income of \$80K or more?
-\end{enumerate}
+%\begin{enumerate}[a)]
+%\item This image most closely resembles what statistical visualization we've seen?
+%\item Which city has the third highest mean family income?
+%\item Which four cities have the highest income disparity in the US?
+%\item Quantify this income disparity for only one of the four chosen cities in part c) using a summary statistic of your choice.
+%\item What proportion of Nashville families had a family income of \$100K or more?
+%\item What proportion of Nashville families had a family income of \$80K or more?
+%\end{enumerate}
 
-\includepdf[pages={1}]{images/child.pdf}
-
-
+%\includepdf[pages={1}]{images/child.pdf}
 
 
 
+
+
+
+
+
+\item
+
+\begin{itemize}
+\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
+
+\begin{itemize}
+\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
+\item Pair 2: ``Number of years at a job'' and ``Salary''
+\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
+\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
+\end{itemize}
 
 \item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
 
@@ -377,11 +387,12 @@ Write out \textbf{in bullet point form} all the elements of the ``Grammar of Gra
 \item There is no need to specify the x and y axes labels.
 \end{itemize}
 
+\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
 
 
+\end{itemize}
 
-
-\item In a statistics class with 140 students, the professor records how much money (in dollars) each student has in their possession during the first class of the semester. The histogram shown below represents the data they collected: \\
+%\item In a statistics class with 140 students, the professor records how much money (in dollars) each student has in their possession during the first class of the semester. The histogram shown below represents the data they collected: \\
 
 <<echo=FALSE, fig.height=4>>=
 money <- c(
@@ -399,20 +410,20 @@ tibble(money = money) %>%
   labs(x = "?", y = "?")
 @
 
-\noindent \textbf{a)} What is the variable on the horizontal (x) axis?\\
+%\noindent \textbf{a)} What is the variable on the horizontal (x) axis?\\
 
-\vspace{2cm}
+%\vspace{2cm}
 
-\noindent \textbf{b)} What is the quantity on the vertical (y) axis?\\
+%\noindent \textbf{b)} What is the quantity on the vertical (y) axis?\\
 
-\vspace{2cm}
+%\vspace{2cm}
 
-\noindent \textbf{c)} The height of the second bar is 42. What does that tell us? Say precisely in \textbf{one sentence}.\\
+%\noindent \textbf{c)} The height of the second bar is 42. What does that tell us? Say precisely in \textbf{one sentence}.\\
 
-\vspace{4cm}
+%\vspace{4cm}
 
-\noindent \textbf{d)} Fill in the blanks: The median amount of money possessed is between \$ \line(1,0){50}\\
-and \$ \line(1,0){50}. Show work or briefly explain your reasoning.
+%\noindent \textbf{d)} Fill in the blanks: The median amount of money possessed is between \$ \line(1,0){50}\\
+%and \$ \line(1,0){50}. Show work or briefly explain your reasoning.
 
 
 \end{enumerate}
@@ -451,6 +462,10 @@ For this question consider the below box plot.
 
 \item If you would like to know the above 5 summary statistics (i.e.~range of extremes, skewness, mean, coverage intervals, and number of data points), is a box plot the best visual representation for your data? If not, what visualization would be better? Justify your answer.
 
+\item List the elements of the ``Grammar of Graphics'' for a \textbf{generic} plot. In other words, what are the ingredients of \emph{any} visualization in \texttt{ggplot2}?
+
+\item Write out pseudocode to create this boxplot in \texttt{ggplot2}. Specify where you use each element of the ``Grammar of Graphics.''
+
 \end{enumerate}
 
 
@@ -467,22 +482,22 @@ For this question consider the below box plot.
 % Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis
 %
 %-------------------------------------------------------------------------------
-\newpage
-\begin{LARGE}
-\begin{center}
-\textbf{Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis}
-\end{center}
-\end{LARGE}
+%\newpage
+%\begin{LARGE}
+%\begin{center}
+%\textbf{Badge 2: Write pseudocode for basic data wrangling and exploratory data analysis}
+%\end{center}
+%\end{LARGE}
 
 
 
 %-------------------------------------------------------------------------------
-\newpage
-\textbf{Question X}\ Short Answer
-\begin{enumerate}[(a)]
-	\item
-	\vspace{.1in}
-\end{enumerate}
+%\newpage
+%\textbf{Question X}\ Short Answer
+%\begin{enumerate}[(a)]
+%	\item
+%	\vspace{.1in}
+%\end{enumerate}
 
 
 
@@ -506,7 +521,7 @@ babynames %>%
 
 \hspace{0.5cm}\\
 
-\textbf{START WRITING YOUR RESPONSES WHERE INDICATED BELOW.}\\
+%\textbf{START WRITING YOUR RESPONSES WHERE INDICATED BELOW.}\\
 
 \noindent \textbf{a)} Write the pseudocode that is going to compute the total number of babies born between 1950 and 2000 that are named ``Riley.''\\
 
@@ -522,9 +537,9 @@ babynames %>%
 
 
 
-\item \textbf{a)} The {{\tt weather}} data set in the {{\tt nycflights13}} package contains hourly meterological data for the three NYC airports (EWR, JFK, and LGA) for every day in 2013.  We present a snapshot of the data below, but only for the first 6 rows in the data set. What variables are needed to uniquely identify each observation?
+%\item \textbf{a)} The {{\tt weather}} data set in the {{\tt nycflights13}} package contains hourly meterological data for the three NYC airports (EWR, JFK, and LGA) for every day in 2013.  We present a snapshot of the data below, but only for the first 6 rows in the data set. What variables are needed to uniquely identify each observation?
 
-\vspace{0.5cm}
+%\vspace{0.5cm}
 
 <<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
 weather %>%
@@ -533,22 +548,24 @@ weather %>%
   knitr::kable()
 @
 
-\vspace{5cm}
+%\vspace{5cm}
 
-\noindent \textbf{b)} Write down the arithmetic operation you would enter into a calculator to compute the number rows that the {{\tt weather}} data set has (not including the header row). An example of an arithmetic operation is $10 \times 7 + 6$.
-
-
+%\noindent \textbf{b)} Write down the arithmetic operation you would enter into a calculator to compute the number rows that the {{\tt weather}} data set has (not including the header row). An example of an arithmetic operation is $10 \times 7 + 6$.
 
 
-\item You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age. Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following three scenarios:
+
+
+\item You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age. Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following three scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
 
 \begin{itemize}
 \item[a)] by sex
-\item[b)] by sex and class and age
-\item[c)] to answer the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
+\item[b)] by sex and age
+\item[c)] by sex and class
 \end{itemize}
+\item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
 
-Note: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. Here is what the {{\tt Titanic}} data looks like:\\
+
+\textbf{Note}: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. Here is what the {{\tt Titanic}} data looks like:\\
 
 <<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
 data(Titanic)
@@ -567,23 +584,23 @@ Titanic %>% tbl_df() %>% kable()
 % Badge 3: Compute and interpret summary statistics: measures of centrality and spread
 %
 %-------------------------------------------------------------------------------
-\newpage
-\begin{LARGE}
-\begin{center}
-\textbf{Badge 3: Compute and interpret summary statistics: measures of centrality and spread}
-\end{center}
-\end{LARGE}
+%\newpage
+%\begin{LARGE}
+%\begin{center}
+%\textbf{Badge 3: Compute and interpret summary statistics: measures of centrality and spread}
+%\end{center}
+%\end{LARGE}
 
 
 
 %-------------------------------------------------------------------------------
-\newpage
-\textbf{Question X}\ Short Answer
-\begin{enumerate}[(a)]
-	\item Say a class of 30 introductory statistics students took a test where the median score was 17 and the interquartile range was 0. What are the 25th and 75th percentiles of test scores? Hint: A picture may help.\\
-\vspace{4cm}
-	\vspace{.1in}
-\end{enumerate}
+%\newpage
+%\textbf{Question X}\ Short Answer
+%\begin{enumerate}[(a)]
+%	\item Say a class of 30 introductory statistics students took a test where the median score was 17 and the interquartile range was 0. What are the 25th and 75th percentiles of test scores? Hint: A picture may help.\\
+%\vspace{4cm}
+%	\vspace{.1in}
+%\end{enumerate}
 
 
 
@@ -624,30 +641,30 @@ Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 &10 \\
 \end{enumerate}
 \vspace{.2in}
 
-\textbf{Alternative}\
+%\textbf{Alternative}\
 
-\vspace{.15in}
+%\vspace{.15in}
 
-You have been asked to consult on a small study. Due to privacy concerns, all you have is a collection of values for one variable: Mystery $= \{8, 6, 12,  7,  6,  5, 12,  6, 10,  6, 12, 10, 7\}$. You do not know what the data is about.
+%You have been asked to consult on a small study. Due to privacy concerns, all you have is a collection of values for one variable: Mystery $= \{8, 6, 12,  7,  6,  5, 12,  6, 10,  6, 12, 10, 7\}$. You do not know what the data is about.
 
-\begin{enumerate}[a)]
-	\item Compute the \emph{median} and the \emph{mode} of Mystery. Show all work.
-	\item The head researcher found that the mean and the standard deviation of Mystery are 8.2. and 2.6, respectively. He says that 68\% of the data falls between 5.6 and 10.8. Can he make such a claim about this data? Why or why not?
-	\item A postdoc on the study realizes that the data notebook for Mystery was incorrectly transcribed and that the true data is Mystery $= \{8, 6, 12,  7,  6,  5, 12,  6, 10,  0, 12, 10, 7\}$. In other words, the number recorded as a 6 is actually a 0. Does this discovery change the value of the standard deviation? Justify your answer \textbf{\emph{without}} computing the new standard deviation.
-	\item  Does the above discovery change the value of the 25$^{\textrm{th}}$ percentile? Again, justify your answer \textbf{\emph{without}} computing the new 25$^{\textrm{th}}$ percentile.
-\end{enumerate}
+%\begin{enumerate}[a)]
+%	\item Compute the \emph{median} and the \emph{mode} of Mystery. Show all work.
+%	\item The head researcher found that the mean and the standard deviation of Mystery are 8.2. and 2.6, respectively. He says that 68\% of the data falls between 5.6 and 10.8. Can he make such a claim about this data? Why or why not?
+%	\item A postdoc on the study realizes that the data notebook for Mystery was incorrectly transcribed and that the true data is Mystery $= \{8, 6, 12,  7,  6,  5, 12,  6, 10,  0, 12, 10, 7\}$. In other words, the number recorded as a 6 is actually a 0. Does this discovery change the value of the standard deviation? Justify your answer \textbf{\emph{without}} computing the new standard deviation.
+%	\item  Does the above discovery change the value of the 25$^{\textrm{th}}$ percentile? Again, justify your answer \textbf{\emph{without}} computing the new 25$^{\textrm{th}}$ percentile.
+%\end{enumerate}
 
 
 
 %-------------------------------------------------------------------------------
-\newpage
-\vspace{.05in}
-\textbf{Question X}\
+%\newpage
+%\vspace{.05in}
+%\textbf{Question X}\
 
-\vspace{.15in}
+%\vspace{.15in}
 
-\begin{enumerate}[(a)]
-	\item Below we have a standard Normal $Z$-curve along with 5 vertical dashed lines at $z$ = -1.96, -1, 0, 1, and 1.96 cutting the $x$-axis into 6 segments. In the plot below, write down the 6 proportion of values under the $Z$-curve in each of the 6 segments. Hint: Your 6 proportions should sum to 100\%.\\
+%\begin{enumerate}[(a)]
+%	\item Below we have a standard Normal $Z$-curve along with 5 vertical dashed lines at $z$ = -1.96, -1, 0, 1, and 1.96 cutting the $x$-axis into 6 segments. In the plot below, write down the 6 proportion of values under the $Z$-curve in each of the 6 segments. Hint: Your 6 proportions should sum to 100\%.\\
 
 <<>>=
 
@@ -667,7 +684,7 @@ ggplot(tibble(x = c(qnorm(0.0001), qnorm(1-0.0001))), aes(x)) +
   ) +
   labs(title = "Standard normal curve")
 @
-\end{enumerate}
+%\end{enumerate}
 
 
 
@@ -678,40 +695,40 @@ ggplot(tibble(x = c(qnorm(0.0001), qnorm(1-0.0001))), aes(x)) +
 % variables
 %
 %-------------------------------------------------------------------------------
-\newpage
-\begin{LARGE}
-\begin{center}
-\textbf{Badge 4: Fit and understand regression models with numerical explanatory variables}
-\end{center}
-\end{LARGE}
+%\newpage
+%\begin{LARGE}
+%\begin{center}
+%\textbf{Badge 4: Fit and understand regression models with numerical explanatory variables}
+%\end{center}
+%\end{LARGE}
+
+
+
+%-------------------------------------------------------------------------------
+%\newpage
+%\textbf{Question X}\ Short Answer
+%\begin{enumerate}[(a)]
+%	\item
+%	\vspace{.1in}
+%\end{enumerate}
 
 
 
 %-------------------------------------------------------------------------------
 \newpage
-\textbf{Question X}\ Short Answer
-\begin{enumerate}[(a)]
-	\item
-	\vspace{.1in}
-\end{enumerate}
+%\textbf{Question X}\
 
-
-
-%-------------------------------------------------------------------------------
-\newpage
-\textbf{Question X}\
-
-\vspace{.15in}
+%\vspace{.15in}
 
 \begin{enumerate}[(a)]
-\item An analysis of Middlebury faculty salaries shows that on average women get paid significantly less than men. However, an astute statistician observes that
+%\item An analysis of Middlebury faculty salaries shows that on average women get paid significantly less than men. However, an astute statistician observes that
 
-\begin{itemize}
-\item Younger faculty tend to get paid less than older faculty due to seniority.
-\item Amongst the younger faculty, there is better representation of women because of shifts in the labor pool and hiring practices.
-\end{itemize}
+%\begin{itemize}
+%\item Younger faculty tend to get paid less than older faculty due to seniority.
+%\item Amongst the younger faculty, there is better representation of women because of shifts in the labor pool and hiring practices.
+%\end{itemize}
 
-In this example, age is an example of what?
+%In this example, age is an example of what?
 
 
 
@@ -729,9 +746,9 @@ Write down what the following two quantities would be if $x$ was not measured in
 \item the fitted slope $b_1$ of the regression line $\widehat{y} = b_0 + b_1 x$
 \end{enumerate}
 
+Interpret the coefficients $b_0$ and $b_1$ in contextually meaningful ways.
 
-
-
+% I like this question, but not the situation
 \item Recall our teaching evaluation dataset seen in class. We're interested in fitting a model of teaching score (evaluated by students) as a function of instructor age.
 
 <<eval=TRUE, echo=TRUE, warning=FALSE, message=FALSE, fig.height=4>>=
@@ -791,93 +808,93 @@ model_points
 % Badge 5: Fit and understand regression models with categorical explanatory variables
 %
 %-------------------------------------------------------------------------------
-\newpage
-\begin{LARGE}
-\begin{center}
-\textbf{Badge 5: Fit and understand regression models with categorical explanatory variables}
-\end{center}
-\end{LARGE}
+%\newpage
+%\begin{LARGE}
+%\begin{center}
+%\textbf{Badge 5: Fit and understand regression models with categorical explanatory variables}
+%\end{center}
+%\end{LARGE}
 
 
 
 %-------------------------------------------------------------------------------
-\newpage
-\textbf{Question X}\ Short Answer
-\begin{enumerate}[(a)]
-	\item
-	\vspace{.1in}
-\end{enumerate}
+%\newpage
+%\textbf{Question X}\ Short Answer
+%\begin{enumerate}[(a)]
+%	\item
+%	\vspace{.1in}
+%\end{enumerate}
 
 
 
 %-------------------------------------------------------------------------------
-\newpage
-\textbf{Question X}\
+%\newpage
+%\textbf{Question X}\
 
-\vspace{.15in}
-Australian researchers explored the association between depression and factors such as employment status, marital status, and satisfaction with their level of social interaction. You worked with a sociology researcher to build a model using the following variables:
-\begin{table}[h]
-\begin{tabular}{ll}
-\verb!BDI! & Beck depression index (high \verb!BDI! = high depression)\\
-\verb!employment! &  \verb!employed, govt assistance, other,! or  \verb!parental support!\\
-\verb!psisat! &  satisfaction with positive social interaction (high \verb!psisat! = high satisfaction) \\
-\end{tabular}
-\end{table}
+%\vspace{.15in}
+%Australian researchers explored the association between depression and factors such as employment status, marital status, and satisfaction with their level of social interaction. You worked with a sociology researcher to build a model using the following variables:
+%\begin{table}[h]
+%\begin{tabular}{ll}
+%\verb!BDI! & Beck depression index (high \verb!BDI! = high depression)\\
+%\verb!employment! &  \verb!employed, govt assistance, other,! or  \verb!parental support!\\
+%\verb!psisat! &  satisfaction with positive social interaction (high \verb!psisat! = high satisfaction) \\
+%\end{tabular}
+%\end{table}
 
-Unfortunately, the original code got deleted! The below is all you have:
+%Unfortunately, the original code got deleted! The below is all you have:
 
-{\small
-\begin{verbatim}
+%{\small
+%\begin{verbatim}
                            Estimate Std. Error
-(Intercept)                 32.2064     4.7728
-employmentgovt assistance    4.4003     2.5579
-employmentother             -3.9285     2.4804
-employmentparental support  -2.0387     2.2902
-psisat                      -1.7314     0.3727
-\end{verbatim}
-}
+%(Intercept)                 32.2064     4.7728
+%employmentgovt assistance    4.4003     2.5579
+%employmentother             -3.9285     2.4804
+%employmentparental support  -2.0387     2.2902
+%psisat                      -1.7314     0.3727
+%\end{verbatim}
+%}
 
-\begin{enumerate}[a)]
-	\item Write out the model formula associated to the above output.
-	\item Interpret the intercept term in a contextually meaningful way.
-	\item What is the reference level for \texttt{employment}? Justify your answer.
-	\item Does this model assume that the relationship between \texttt{employment} and \texttt{BDI} depends on \texttt{psisat}? Justify your answer.
-\end{enumerate}
+%\begin{enumerate}[a)]
+%	\item Write out the model formula associated to the above output.
+%	\item Interpret the intercept term in a contextually meaningful way.
+%	\item What is the reference level for \texttt{employment}? Justify your answer.
+%	\item Does this model assume that the relationship between \texttt{employment} and \texttt{BDI} depends on \texttt{psisat}? Justify your answer.
+%\end{enumerate}
 
 
 
 %-------------------------------------------------------------------------------
-\pagebreak
-\textbf{Question X}\
+%\pagebreak
+%\textbf{Question X}\
 
-\vspace{.15in}
-Consider the Galton data, which contains the following variables among others:
+%\vspace{.15in}
+%Consider the Galton data, which contains the following variables among others:
 
-\vspace{0.1in}
-~\hspace{1in} \texttt{heights} - The child's height as an adult (inches)
+%\vspace{0.1in}
+%~\hspace{1in} \texttt{heights} - The child's height as an adult (inches)
 
-\vspace{0.05in}
-~\hspace{1in} \texttt{mother} - The child's mother's height as an adult (inches)
+%\vspace{0.05in}
+%~\hspace{1in} \texttt{mother} - The child's mother's height as an adult (inches)
 
-\vspace{0.05in}
-~\hspace{1in} \texttt{sex} - The sex of the child (M or F) \\
+%\vspace{0.05in}
+%~\hspace{1in} \texttt{sex} - The sex of the child (M or F) \\
 
-Consider the following model:
+%Consider the following model:
 
-\vspace{0.1in}
-~\hspace{0.1in} \texttt{heights  =  43.15546 + 0.32655*mother + 1.96331*sexM + 0.05014*mother*sexM}
+%\vspace{0.1in}
+%~\hspace{0.1in} \texttt{heights  =  43.15546 + 0.32655*mother + 1.96331*sexM + 0.05014*mother*sexM}
 
-\begin{enumerate}[(a)]
-\item What is the reference level for this model? Justify your answer.
-\vspace{.1in}
-\item Use the above model to construct a model formula between one's height and mother's height for females. Show or justify all work.
-\vspace{.1in}
-\item Interpret the final coefficient in a contextually meaningful manner.
-\vspace{.1in}
-\item Based on what you know about the above model, would you choose to keep the model as is or build a different trivariate model? Note that if you were to change the model, you must still use all of the three given variables and no others. Justify your choice.
-\end{enumerate}
+%\begin{enumerate}[(a)]
+%\item What is the reference level for this model? Justify your answer.
+%\vspace{.1in}
+%\item Use the above model to construct a model formula between one's height and mother's height for females. Show or justify all work.
+%\vspace{.1in}
+%\item Interpret the final coefficient in a contextually meaningful manner.
+%\vspace{.1in}
+%\item Based on what you know about the above model, would you choose to keep the model as is or build a different trivariate model? Note that if you were to change the model, you must still use all of the three given variables and no others. Justify your choice.
+%\end{enumerate}
 
-\vspace{0.25in}
+%\vspace{0.25in}
 
 
 
@@ -900,7 +917,7 @@ gapminder2007 %>%
   sample_n(5) %>%
   kable()
 @
-
+\textbf{add Nambia and Italy here}
 \noindent \\
 
 We are interested in modeling the relationship between the outcome variable $y = $ life expectancy in years and the categorical explanatory variable $x = $ continent. You fit a following regression and obtain the following regression table rounded to the nearest integer:\\
@@ -912,29 +929,43 @@ lm(lifeExp ~ continent, data=gapminder2007) %>%
 
 \noindent \\
 
+\noindent \textbf{a)} What is the fitted value $\widehat{y}$ of life expectancy in years for the below countries? (Show all work to justify your steps.)
+
+\begin{enumerate}
+\item Togo
+\item Lestho
+\item Bulgaria
+\end{enumerate}
+
+Are you surprised by these results? Why or why not?
+
 \noindent \textbf{a)} What is the fitted value $\widehat{y}$ of life expectancy in years for any given country in:
 
 \begin{enumerate}
 \item Africa
-\item Asia
 \item Europe
 \end{enumerate}
 
-\noindent \textbf{b)} What is the residual for the following three countries?
+Show all work to justify your steps.
+
+\noindent \textbf{c)} What is the residual for the following three countries?
 
 \begin{enumerate}
 \item Nambia
-\item Iran
 \item Italy
 \end{enumerate}
 
-\noindent \textbf{c)} What is the mean life expectancy for countries in the following continents:
+Show all work to justify your steps.
+
+\noindent \textbf{d)} What is the mean life expectancy for countries in the following continents:
 
 \begin{enumerate}
 \item Africa
 \item Asia
 \item Europe
 \end{enumerate}
+
+Show all work to justify your steps.
 
 \end{enumerate}
 
