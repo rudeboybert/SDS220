@@ -281,7 +281,7 @@ specified to create this graphic. You do not need to specify the axes labels, th
 
 %\vspace{0.25cm}
 
-<<>>=
+<<eval=FALSE>>=
 prices <- c(-11, 12, 15, 20, 20,
             30, 30, 30, 30, 40,
             40, 40, 40, 41, 51)
@@ -296,7 +296,7 @@ matrix(prices, nrow = 15) %>%
 
 %\vspace{0.25cm}
 
-<<>>=
+<<eval=FALSE>>=
 tibble(prices = prices) %>%
   summarize(
     `1st quartile` = quantile(prices, probs=0.25, type = 2),
@@ -314,7 +314,7 @@ tibble(prices = prices) %>%
 
 %\noindent \textbf{c)} Draw the boxplot for this dataset. Be sure to mark all relevant numerical values:\\
 
-<<>>=
+<<eval=FALSE>>=
 tibble(prices = prices) %>%
   ggplot(aes(x = "", y = prices)) +
   geom_boxplot() +
@@ -394,7 +394,7 @@ Write out \textbf{in bullet point form} all the elements of the ``Grammar of Gra
 
 %\item In a statistics class with 140 students, the professor records how much money (in dollars) each student has in their possession during the first class of the semester. The histogram shown below represents the data they collected: \\
 
-<<echo=FALSE, fig.height=4>>=
+<<echo=FALSE, eval=FALSE, fig.height=4>>=
 money <- c(
   rep(5, times = 60),
   rep(15, times = 42),
@@ -541,7 +541,7 @@ babynames %>%
 
 %\vspace{0.5cm}
 
-<<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
+<<echo=FALSE, eval=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
 weather %>%
   select(origin, year, month, day, hour, temp, humid, wind_speed, precip, pressure, visib) %>%
   head() %>%
@@ -666,7 +666,7 @@ Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 &10 \\
 %\begin{enumerate}[(a)]
 %	\item Below we have a standard Normal $Z$-curve along with 5 vertical dashed lines at $z$ = -1.96, -1, 0, 1, and 1.96 cutting the $x$-axis into 6 segments. In the plot below, write down the 6 proportion of values under the $Z$-curve in each of the 6 segments. Hint: Your 6 proportions should sum to 100\%.\\
 
-<<>>=
+<<eval=FALSE>>=
 
 ggplot(tibble(x = c(qnorm(0.0001), qnorm(1-0.0001))), aes(x)) +
   stat_function(fun = dnorm, geom = "line") +
