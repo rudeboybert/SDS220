@@ -7,4 +7,6 @@ fluff/
 *_cache/
 .httr-oauth
 *.log
-BC1.tex
+Kim_Kinnaird_SDS_MTH_220_BC1_Spring_2020.tex
+*.synctex.gz
+*-concordance.tex
