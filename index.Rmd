@@ -122,7 +122,7 @@ categ_regression_ex <- tibble(
 * Minh Ly, the Associate Director for Assessment of [Smith Office of Institutional Research (IR)](https://www.smith.edu/about-smith/institutional-research){target="_blank"}, will be giving a talk this tonight at 7PM in Seelye 107:
 
 <center>
-![](static/events/minh_ly.png){ width=60% }
+![](static/events/minh_ly.png){ width=50% }
 </center>
 
 ## Recap
@@ -139,7 +139,7 @@ Today's outline:
     1. Figure 6.1: Visualization of interaction model
     1. Table 6.2: Regression table for interaction model
     1. Table 6.4: Intercepts and slopes of regression line for both genders (recorded as binary at time of study in 2005). 
-1. You will then read ModernDive 6.1.2
+1. You will then read ModernDive 6.1.2 on interaction models
 
 
 
