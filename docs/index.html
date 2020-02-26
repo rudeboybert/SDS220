@@ -460,7 +460,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</h4>
-<h4 class="date">Last updated on 2020-02-24</h4>
+<h4 class="date">Last updated on 2020-02-26</h4>
 
 </div>
 
@@ -499,17 +499,39 @@ h1{font-weight: 400;}
 <div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
-<li><code>NA</code></li>
+<li>Project: We’re going over first phase submissions as we speak. We’ll have first round of feedback and information for the next project phase on Friday.</li>
+<li>Badge Challenge 1:
+<ul>
+<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
+<li>In order to ensure fairness, all instructors, lab instructors, and Spinelli tutors will not answer questions during the badge challenge time window.</li>
+<li>We’ll post the cover page of the badge challenge on the webpage later today.</li>
+</ul></li>
+<li>Minh Ly, the Associate Director for Assessment of <a href="https://www.smith.edu/about-smith/institutional-research" target="_blank">Smith Office of Institutional Research (IR)</a>, will be giving a talk this tonight at 7PM in Seelye 107:</li>
 </ul>
-<!--
-Show example of timestamped cover page of exam
--->
+<center>
+<img src="static/events/minh_ly.png" style="width:60.0%" />
+</center>
 </div>
 <div id="recap-1" class="section level2">
 <h2>Recap</h2>
+<ul>
+<li>Indicator function from ModernDive 5.2.2 on regression with a categorical variable using <code>gapminder</code> data. What does <span class="math inline">\(\mathbb{1}_{\text{Amer}}(x)\)</span> do?</li>
+</ul>
 </div>
 <div id="chalk-talk-1" class="section level2">
 <h2>Chalk talk</h2>
+<p>Today’s outline:</p>
+<ol style="list-style-type: decimal">
+<li>Chalk talk part 1: Multiple regression for <span class="math inline">\(y\)</span> as a function of <span class="math inline">\(x_1\)</span> and <span class="math inline">\(x_2\)</span></li>
+<li>You will then read ModernDive from the beginning of Chapter 6 to the end of 6.1.1. Write down your interpretation of Figure 6.1.</li>
+<li>Chalk talk part 2: Tying together
+<ol style="list-style-type: decimal">
+<li>Figure 6.1: Visualization of interaction model</li>
+<li>Table 6.2: Regression table for interaction model</li>
+<li>Table 6.4: Intercepts and slopes of regression line for both genders (recorded as binary at time of study in 2005).</li>
+</ol></li>
+<li>You will then read ModernDive 6.1.2</li>
+</ol>
 <hr />
 </div>
 </div>
@@ -526,6 +548,9 @@ Show example of timestamped cover page of exam
 <li>Where: McConnell Hall 103</li>
 </ul></li>
 </ol>
+<center>
+<img src="static/events/hu.png" style="width:75.0%" />
+</center>
 </div>
 <div id="today" class="section level2">
 <h2>Today</h2>
@@ -605,6 +630,12 @@ Then write on board:
     + Florence: 10 + 2 = 12
     + Katie: 10 - 1 = 9
 1. Compute a few residuals and show they correspond to deviations/errors from the group means
+
+Note for future self: Make sure to talk about interpretation of the values in estimate column of table in context of example.
+
+Note for future self:
+- x numerical: for every slide of 1 in x, the slope is the expected/on average change in y (not necessarialy causal)
+- x categorical: for a hop between categories starting from the baseline
 -->
 <!--    
 If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean. Do this in  [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
