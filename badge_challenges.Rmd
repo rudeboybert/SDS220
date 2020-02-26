@@ -70,7 +70,7 @@ Sell it informally as:
 
 ## Administrative notes
 
-* Time window: **Friday 2/28 5pm through Monday 3/2 11pm**. In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during this time window.
+* Time window: **Friday 2/28 5pm through Monday 3/2 11pm**. In order to ensure fairness, all instructors, lab instructors, and Spinelli tutors will not answer questions about the badge challenge during this time window.
 * In preparation for badge challenge:
     + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand
     + Bring colored pencils/pens

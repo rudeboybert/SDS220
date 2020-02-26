@@ -114,7 +114,7 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-* `NA`
+* We're going over project data as we speak. We'll have first round of feedback and information for next phase on Friday.
 
 <!--
 Show example of timestamped cover page of exam
@@ -122,8 +122,12 @@ Show example of timestamped cover page of exam
 
 ## Recap
 
+* Indicator function
 
 ## Chalk talk
+
+* Mutiple regression models
+* Interaction models
 
 
 
@@ -142,7 +146,6 @@ Show example of timestamped cover page of exam
     + Where: McConnell Hall 103
 
 ## Today
-
 
 * Recap exercise on common R and RStudio coding issues (print-out given in class available [here](https://docs.google.com/document/d/1tvjDIZXlrQMaYKmv9omWkmIpi-2w3NPxGpNXlSktgNY/){target="_blank"})
 * Discussion on [Badge Challenge 1](badge_challenges.html#)

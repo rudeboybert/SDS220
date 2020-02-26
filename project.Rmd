@@ -50,25 +50,27 @@ In order to break down the task and minimize end-of-semester stress, you'll be w
 # 1. Project Data {#data} 
 
 <!--
-
 Notes to future self: 
 
-- Next time ABSOLUTELY SPLIT the "form groups" and "find data" phases into two
-parts. Assigning them at the same time causes the following problem: we don't
-know which individuals need a group until really late, leaving not much time to
-find data. Split the "form groups" into it's own phase, and do this early.
-- Instead of assigning groups at random to people who need them, IF you have the
-mental bandwidth, use a blocked randomization scheme. For ex: by major or some
-interest (sports team, hometown, etc). That way there will be less potential for
-disagreement over what dataset to use, which Adriana B. pointed out happened in
-her 192 mini-project 3.
-- Ensure numerical variable has at least 10 unique values. For example, class
-year, while numerical, could also be treated as categorical since there are only 
-4 values.
+* Forming groups
+    + ABSOLUTELY SPLIT the "form groups" and "find data" phases into two parts. 
+    Assigning them at the same time causes the following problem: we don't
+    know which individuals need a group until really late, leaving not much time to
+    find data. Split the "form groups" into it's own phase, and do this early.
+    + Stretch goal: Instead of assigning groups at random to people who need them,
+    IF you have the mental bandwidth, use a blocked randomization scheme. For ex: by
+    major or some interest (sports team, hometown, etc). That way there will be less
+    potential for disagreement over what dataset to use, which Adriana B. pointed
+    out happened in her 192 mini-project 3.
+* Finding data: Students have NO CLUE how to search for data and we suffer from curse of 
+knowledge. So next time
+    + Have the Data Counselor comes to a lab and live-demo finding data.
+    + As a problem set/lab, have students each find their own dataset with minimal
+    restrictions (which they can later bring to table for data collection phase).
+    Put it on a Google Sheet so that everyone finds a dataset. And add "why do you
+    think it's interesting"
+--> 
 
-
-
--->
 
 ## Form groups
 
