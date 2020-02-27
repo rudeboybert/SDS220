@@ -97,12 +97,24 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-* `NA`
+1. Project
+    1. Go over [general feedback](project.html#phase_I_feedback) for all groups
+    1. Discuss next project phase: project proposal
+1. Cover page of Badge Challenge I is now [posted](static/BC1_cover_page.pdf){target="_blank"}
 
 ## Recap
 
+1. Interaction models are one type of model for $x_1$ numerical and $x_2$ categorical (with $k$ levels/groups). They
+    1. Allow for different intercepts for all $k$ groups
+    1. Allow for different slopes for all $k$
+
 
 ## Chalk talk
+
+1. Parallel slopes models are another type of model for $x_1$ numerical and $x_2$ categorical (with $k$ levels/groups). They
+    1. Allow for different intercepts for all $k$ groups of the categorical variable $x_2$
+    1. Restrict all $k$ groups to have a common slope
+1. On Monday, we'll explore model selection
 
 
 
