@@ -50,7 +50,7 @@ _Include the code to load your data here. If your data is not confidential nor i
 
 ## Clean variable names
 
-_Piping your data frame into the `clean_names()` function from the `janitor` package will clean your variable names, making them easier to work with._
+_Pipe your data frame into the `clean_names()` function from the `janitor` package. This will clean your variable names, making them easier to work with. Be sure to save your variable name cleaning by overwriting the original data frame by using the `<-` assignement operator._ 
 
 ```{r}
 
@@ -75,7 +75,7 @@ glimpse()
 
 ## Identification variable
 
-_What is your identification (ID) variable (if you have one)?_
+_What is your identification (ID) variable (if you have one)? For more information on identification variables, read ModernDive Chapter 1.4.4_
 
 
 ## Outcome variable
