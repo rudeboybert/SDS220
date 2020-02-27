@@ -171,7 +171,7 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 
 ### Step 1
 
-Get a sense for the requirements of this project phase by reading the [project proposal](static/project/project_proposal_example.html){target="_blank"}. It is important not to interpret this example overly literally, as not all data proposals will look exactly like this, but rather will vary on a case-by-case basis. 
+Get a sense for the requirements of this project phase by reading the [project proposal](static/project/project_proposal_example.html){target="_blank"}. It is important not to interpret this example overly literally, as not all project proposals will look exactly like this, but rather will vary on a case-by-case basis. 
 
 ### Step 2
 
