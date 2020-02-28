@@ -252,11 +252,11 @@ lm(lifeExp ~ continent, data=gapminder2007) %>%
 
 \begin{enumerate}
 \item Portugal
-\item Iran
-\item Brazil
+\item Namibia
+\item Italy
 \end{enumerate}
 
-Are you surprised by these results? Why or why not?
+Briefly explain how country plays (or does not play) a explicit role in this computation.
 
 \item What is the fitted value $\widehat{y}$ of life expectancy in years for any given country in:
 
