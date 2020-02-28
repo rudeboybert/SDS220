@@ -223,6 +223,120 @@ Section (please circle): Kim 01 or Kinnaird 02
 
 
 %-------------------------------------------------------------------------------
+\newpage
+\textbf{Question 3}\
+
+\vspace{.15in}
+
+You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age.
+
+\begin{enumerate}[a)]
+\item Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following four scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
+
+\begin{itemize}
+\item by sex
+\item by sex and age
+\item by sex and class
+\item bt sex and age and class
+\end{itemize}
+
+\item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
+
+
+\textbf{Note}: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. On the next page, you will see what the {{\tt Titanic}} data looks like:\\
+
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
+data(Titanic)
+Titanic %>% tbl_df() %>% kable()
+@
+\end{enumerate}
+
+\newpage
+\textbf{Question 4}\
+
+\begin{enumerate}[a)]
+\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs and briefly explain your thinking
+
+\begin{itemize}
+\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
+\item Pair 2: ``Number of years at a job'' and ``Salary''
+\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
+\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
+\end{itemize}
+
+\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
+
+<<>>=
+gapminder_subset <- gapminder %>%
+  filter(year %in% c(1957, 2007))
+gapminder_subset
+@
+
+Using this data, we can create the following plot:\\
+
+<<>>=
+ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
+  geom_point() +
+  labs(
+    x = "GDP per capita", y = "Life expectancy",
+    color = "Continent", size = "Population"
+  ) +
+  facet_wrap(~year)
+@
+
+Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
+
+\begin{itemize}
+\item You do \textbf{not} need to write code, you only need to specify all components of the graphic.
+\item There is no need to specify the x and y axes labels.
+\end{itemize}
+
+\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
+
+
+\end{enumerate}
+
+\newpage
+\vspace{.05in}
+\textbf{Question 5}\
+
+\vspace{.15in}
+
+You are investigating if countries get a `bump' in their gold medal count when they host the Winter Olympics. Recalling that the 2010 Winter Olympics were in Vancouver Canada, you decide to use Canada as a first test case. You found the following Canadian gold medal tallies for the past 9 Winter Olympics:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Year & 1984 & 1988 & 1992 & 1994 & 1998 & 2002 & 2006 & 2010 & 2014 \\
+Canada's & & & & & & & & & \\
+Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 & 10 \\
+\hline
+\end{tabular}
+
+\end{center}
+\vspace{.1in}
+
+\begin{enumerate}[(a)]
+	\item What is the median number of gold medals that Team Canada have won over the past 9 Winter Olympics? Show all work.
+	\vspace{.1in}
+
+	\item You store your data as rows with \texttt{year} as the observation and the number of gold medals as a variable in a dataframe called \texttt{canada\_gold}. Using pseudocode, state how you would find the Inner Quartile Range in RStudio.
+
+	\vspace{.1 in}
+
+	\item You find that the 25$^{\textrm{th}}$-percentile is 2 gold medals and the 75$^{\textrm{th}}$-percentile is 7 gold medals. Based on the above table and results, do you think that Canada got a `bump' for being the host country? Justify your answer.
+
+	\vspace{.1 in}
+
+	\item You double check the table's data and notice that for the 2010 games, the listed number of medals is the total number and not the just the gold medals. The correct number of gold medals is actually 13 gold medals. Does the median number of gold medals that Team Canada has won over the past 9 Winter Olympics change? Does the mean change? Justify \textbf{\emph{both}} your answers \textbf{\emph{without}} doing any \textbf{\emph{additional}} computations.
+\end{enumerate}
+
+\end{document}
+
+
+
+
+%-------------------------------------------------------------------------------
 %
 % Badge 1: Understand the grammar of graphics: construct graphics based on a dataset, deconstruct graphics into a data set
 %
@@ -255,9 +369,54 @@ Section (please circle): Kim 01 or Kinnaird 02
 
 %-------------------------------------------------------------------------------
 \newpage
-\textbf{Question X}\
+\textbf{Question 4}\
 
 \vspace{.15in}
+
+
+\item
+
+\begin{itemize}
+\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
+
+\begin{itemize}
+\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
+\item Pair 2: ``Number of years at a job'' and ``Salary''
+\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
+\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
+\end{itemize}
+
+\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
+
+<<>>=
+gapminder_subset <- gapminder %>%
+  filter(year %in% c(1957, 2007))
+gapminder_subset
+@
+
+Using this data, we can create the following plot:\\
+
+<<>>=
+ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
+  geom_point() +
+  labs(
+    x = "GDP per capita", y = "Life expectancy",
+    color = "Continent", size = "Population"
+  ) +
+  facet_wrap(~year)
+@
+
+Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
+
+\begin{itemize}
+\item You don't need to write code, you only need to specify all components of the graphic.
+\item There is no need to specify the x and y axes labels.
+\end{itemize}
+
+\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
+
+
+\end{itemize}
 
 
 
@@ -272,10 +431,10 @@ Section (please circle): Kim 01 or Kinnaird 02
 
 %Write down in bullet point form what these 10 missing text segments labeled ``A'' though ``J' should read.
 
-\begin{enumerate}[(a)]
-\item Say you have a data frame named {\tt example} that has 4 variables and 4 rows of data:\\
+%\begin{enumerate}[(a)]
+%\item Say you have a data frame named {\tt example} that has 4 variables and 4 rows of data:\\
 
-<<>>=
+<<eval=FALSE>>=
 example <- tibble(
   type = c("D", "B", "A", "C"),
   fruit = c("apple", "apple", "orange", "orange"),
@@ -285,12 +444,12 @@ example <- tibble(
 example %>%
   kable()
 @
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\begin{itemize}
-\item Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
+%\begin{itemize}
+%\item Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
 
-<<>>=
+<<eval=FALSE>>=
 ggplot(data = example, mapping = aes(x = number)) +
   geom_histogram(binwidth = 2, boundary = 1.5, color = "white", fill = "white") +
   geom_vline(xintercept = c(-2.5, -0.5, 1.5, 3.5, 5.5), linetype = "dashed") +
@@ -303,15 +462,15 @@ ggplot(data = example, mapping = aes(x = number)) +
   labs(x = "Number")
 @
 
-\item List the elements of the ``Grammar of Graphics'' for a \textbf{generic} plot. In other words, what are the ingredients of \emph{any} visualization in \texttt{ggplot2}?
+%\item List the elements of the ``Grammar of Graphics'' for a \textbf{generic} plot. In other words, what are the ingredients of \emph{any} visualization in \texttt{ggplot2}?
 
-\item Write out pseudocode to create the histogram you created in the first part of this question. Specify where you use each element of the ``Grammar of Graphics.''
+%\item Write out pseudocode to create the histogram you created in the first part of this question. Specify where you use each element of the ``Grammar of Graphics.''
 
-\end{itemize}
+%\end{itemize}
 
-\item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
+%\item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
 
-<<>>=
+<<eval=FALSE>>=
 DD_vs_SB <- DD_vs_SB %>%
   mutate(shops_per_1000 = 1000*shops/population)
 ggplot(DD_vs_SB, aes(x=median_income, y=shops_per_1000)) +
@@ -323,12 +482,12 @@ ggplot(DD_vs_SB, aes(x=median_income, y=shops_per_1000)) +
   scale_color_manual(values=c("orange", "forestgreen"))
 @
 
-\begin{enumerate}
-\item Write out the elements of the ``Grammar of Graphics'' that need to be
-specified to create this graphic. You do not need to specify the axes labels, the plot title, nor the regression lines
-\item Assuming there are no missing data, how many rows are in the data frame that we input into the {{\tt ggplot()}} function?
-\item Does the presented visualization support or contradict the researcher's suspicion? Why?
-\end{enumerate}
+%\begin{enumerate}
+%\item Write out the elements of the ``Grammar of Graphics'' that need to be
+%specified to create this graphic. You do not need to specify the axes labels, the plot title, nor the regression lines
+%\item Assuming there are no missing data, how many rows are in the data frame that we input into the {{\tt ggplot()}} function?
+%\item Does the presented visualization support or contradict the researcher's suspicion? Why?
+%\end{enumerate}
 
 
 
@@ -404,49 +563,6 @@ tibble(prices = prices) %>%
 
 
 
-\item
-
-\begin{itemize}
-\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
-
-\begin{itemize}
-\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
-\item Pair 2: ``Number of years at a job'' and ``Salary''
-\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
-\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
-\end{itemize}
-
-\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
-
-<<>>=
-gapminder_subset <- gapminder %>%
-  filter(year %in% c(1957, 2007))
-gapminder_subset
-@
-
-Using this data, we can create the following plot:\\
-
-<<>>=
-ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
-  geom_point() +
-  labs(
-    x = "GDP per capita", y = "Life expectancy",
-    color = "Continent", size = "Population"
-  ) +
-  facet_wrap(~year)
-@
-
-Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
-
-\begin{itemize}
-\item You don't need to write code, you only need to specify all components of the graphic.
-\item There is no need to specify the x and y axes labels.
-\end{itemize}
-
-\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
-
-
-\end{itemize}
 
 %\item In a statistics class with 140 students, the professor records how much money (in dollars) each student has in their possession during the first class of the semester. The histogram shown below represents the data they collected: \\
 
@@ -614,9 +730,10 @@ weather %>%
 \item You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age. Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following three scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
 
 \begin{itemize}
-\item[a)] by sex
-\item[b)] by sex and age
-\item[c)] by sex and class
+\item by sex
+\item by sex and age
+\item by sex and class
+\item bt sex and age and class
 \end{itemize}
 \item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
 
