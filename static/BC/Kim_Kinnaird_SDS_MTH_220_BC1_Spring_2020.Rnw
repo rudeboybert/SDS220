@@ -63,7 +63,7 @@ Section (please circle): Kim 01 or Kinnaird 02
 % ------------------------------------------------------------------------------
 \item Honor code:
 \begin{enumerate}[a)]
-\item This is an open mind, closed stats notebook, closed textbook, and closed fellow statistician badge challenge. This badge challenge must be your own work entirely.
+\item This is an open mind, closed stats notebook, closed textbook, no calculator/computer and closed fellow statistician badge challenge. This badge challenge must be your own work entirely.
 \item The front page must have two timestamps on it. \textbf{Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.}
 \end{enumerate}
 % ------------------------------------------------------------------------------
@@ -110,7 +110,7 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 \Large{Badges}
 \end{center}
 
-This is the first of four opportunities to demonstrate your mastering of the first five badges for the course.\\
+This is the first of four opportunities to demonstrate your mastering of the \textbf{first five badges} for the course.\\
 
 <<eval = FALSE>>=
 # Copy the output of the code below and then edit it
@@ -227,11 +227,12 @@ gapminder2007 <- gapminder %>%
 @
 \vspace{.15in}
 
-Let's consider the {{\tt gapminder}} development data, but only for the year 2007. Let's look at a random sample of 5 out of the \Sexpr{nrow(gapminder2007)} rows of this dataset:\\
+Let's consider the {{\tt gapminder}} development data, but only for the year 2007. Let's look at a random sample of 5 out of the \Sexpr{nrow(gapminder2007)} countries of this dataset:\\
 
 <<echo=FALSE>>=
 set.seed(76)
 gapminder2007 %>%
+  filter(country %in% c("Namibia", "Portugal", "Iran", "Brazil", "Italy")) %>%
   sample_n(5) %>%
   kable()
 @
@@ -244,15 +245,15 @@ lm(lifeExp ~ continent, data=gapminder2007) %>%
   get_regression_table()
 @
 
-\emph{Note}: You do \textbf{not} need to do the arithmetic (adding, subtracting, multiplying, etc), but rather write down what you would enter into a calculator if you had one.
+\emph{Note}: For this question you do \textbf{not} need to do the arithmetic (adding, subtracting, multiplying, etc), but rather write down what you would enter into a calculator if you had one.
 
 \begin{enumerate}[a)]
 \item What is the fitted value $\widehat{y}$ of life expectancy in years for the below countries? (Show all work to justify your steps.)
 
 \begin{enumerate}
-\item Togo
-\item Lestho
-\item Bulgaria
+\item Portugal
+\item Iran
+\item Brazil
 \end{enumerate}
 
 Are you surprised by these results? Why or why not?
@@ -303,11 +304,11 @@ Consider the following hypothetical study. Say you collect two variables of info
 \end{itemize}
 
 \begin{enumerate}[a)]
-\item Interpret the coefficients $b_0$ and $b_1$ in contextually meaningful ways.
+\item Interpret the both coefficients $b_0$ and $b_1$ in a contextually meaningful way.
 
-\item Your friend Reginald Regression tells you that he made \$42,000. Reginald is now 27 and would like to know how old you think he will live to be. Show all work and interpret your result for him (recalling that he has not ever taken statistics.)
+\item Your friend Reginald Regression tells you that he made \$42,000 out of college. Reginald is now 27 and would like to know how old you think he will live to be. Show all work and interpret your result for him (recalling that he has not ever taken statistics.)
 
-\item In reaction to your statement of his expected life expectancy, he vows to eat more spinach. Should he take age from part b) as a guarantee of how long he will live? Explain why he should \textbf{or} should not rely on this model as a guarantee.
+\item In reaction to your statement of his expected life expectancy, he vows to eat more spinach. Should he take age from part b) as a guarantee of how long he will live \textit{exactly}? Explain why he should \textbf{or} should not rely on this model as a guarantee.
 
 \item Write down what the following two quantities would be if $x$ was not measured in units of thousands of dollars, but measured in units of dollars:
 
@@ -325,20 +326,19 @@ Consider the following hypothetical study. Say you collect two variables of info
 
 \vspace{.15in}
 
-You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age.
+You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which presents counts of {{\tt Survival}} (yes or no) for different class, sex, and age combinations (see next page).
 
 \begin{enumerate}[a)]
-\item Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following four scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
+\item Write down the \textit{pseudocode} of the commands that will output a table comparing survival versus death counts for the following four scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
 
-\begin{itemize}
-\item by sex
-\item by sex and age
-\item by sex and class
-\item by sex and age and class
-\end{itemize}
+\begin{enumerate}
+\item Split by sex
+\item Split by sex and age
+\item Split by sex and class
+\item Split by sex and age and class
+\end{enumerate}
 
 \item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
-
 
 \textbf{Note}: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. On the next page, you will see what the {{\tt Titanic}} data looks like:\\
 
@@ -352,14 +352,14 @@ Titanic %>% tbl_df() %>% kable()
 \textbf{Question 4}\
 
 \begin{enumerate}[a)]
-\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs and briefly explain your thinking
+\item For which of the following pairs of variables would you visualize with a scatterplot? For each pair briefly explain your thinking
 
-\begin{itemize}
+\begin{enumerate}
 \item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
 \item Pair 2: ``Number of years at a job'' and ``Salary''
 \item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
 \item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
-\end{itemize}
+\end{enumerate}
 
 \item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
 
@@ -381,14 +381,14 @@ ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size =
   facet_wrap(~year)
 @
 
-Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
+Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} to create this graphic. Note
 
 \begin{itemize}
 \item You do \textbf{not} need to write code, you only need to specify all components of the graphic.
 \item There is no need to specify the x and y axes labels.
 \end{itemize}
 
-\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
+\item Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} to create a side-by-side collection of boxplots of GDP per capita split by continent.
 
 
 \end{enumerate}
@@ -418,7 +418,7 @@ Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 & 10 \\
 	\item What is the median number of gold medals that Team Canada have won over the past 9 Winter Olympics? Show all work.
 	\vspace{.1in}
 
-	\item You store your data as rows with \texttt{year} as the observation and the number of gold medals as a variable in a dataframe called \texttt{canada\_gold}. Using pseudocode, state how you would find the Inner Quartile Range in RStudio.
+	\item Say this data is saved in R in a data frame called \texttt{canada\_gold} with 9 rows and 2 variables: the \texttt{year} of the observation and the `count` of the number of gold medals. Using pseudocode, state how you would output the Inter-Quartile Range.
 
 	\vspace{.1 in}
 
@@ -426,7 +426,12 @@ Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 & 10 \\
 
 	\vspace{.1 in}
 
-	\item You double check the table's data and notice that for the 2010 games, the listed number of medals is the total number and not the just the gold medals. The correct number of gold medals is actually 13 gold medals. Does the median number of gold medals that Team Canada has won over the past 9 Winter Olympics change? Does the mean change? Justify \textbf{\emph{both}} your answers \textbf{\emph{without}} doing any \textbf{\emph{additional}} computations.
+	\item You double check the table's data and notice that for the 2010 games, the listed number of medals is the total number and not the just the gold medals. The correct number of gold medals is actually 13 gold medals.
+	\begin{enumerate}
+	\item Does the median number of gold medals that Team Canada has won over the past 9 Winter Olympics change?
+	\item Does the mean change?
+	\end{enumerate}
+	Justify \textbf{\emph{both}} your answers \textbf{\emph{without}} doing any \textbf{\emph{additional}} math or computations.
 \end{enumerate}
 
 \end{document}
