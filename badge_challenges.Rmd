@@ -72,6 +72,7 @@ Sell it informally as:
 
 * Time window: **Friday 2/28 5pm through Monday 3/2 11pm**. In order to ensure fairness, all instructors, lab instructors, and Spinelli tutors will not answer questions about the badge challenge during this time window.
 * In preparation for badge challenge:
+    + Look at the [cover page](static/BC1_cover_page.pdf){target="_blank"}
     + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand
     + Bring colored pencils/pens
     + All Office of Disability Services forms must be submitted to instructor in print before the start of the time window

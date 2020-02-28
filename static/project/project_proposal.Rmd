@@ -31,7 +31,7 @@ set.seed(76)
 
 ## Load data into R
 
-_Include the code to load your data here. If your data is not confidential nor is it private in nature, consider publishing it as a `.csv` file on Google Sheets as in the code chunk below; instructions on how to do this are in Steps 1-6 [here](https://twitter.com/rudeboybert/status/1055821846539591680). If the data shouldn't be published online, then please submit the spreadsheet file on Moodle._
+_Include the code to load your data here. If your data is not confidential nor is it private in nature, consider publishing it as a `.csv` file on Google Sheets as in the code chunk below; instructions on how to do this are in Steps 1-6 [here](https://twitter.com/rudeboybert/status/1055821846539591680). If the data shouldn't be published online, then please submit the spreadsheet file on Moodle. For help on how to use the `read_csv()` function from the `readr` package, please read ModernDive Chapter 4.1 on importing data._
 
 ```{r, message=FALSE}
 
@@ -39,7 +39,7 @@ _Include the code to load your data here. If your data is not confidential nor i
 
 ## Clean variable names
 
-_Pipe your data frame into the `clean_names()` function from the `janitor` package. This will clean your variable names, making them easier to work with._
+_Pipe your data frame into the `clean_names()` function from the `janitor` package. This will clean your variable names, making them easier to work with. Be sure to save your variable name cleaning by overwriting the original data frame by using the `<-` assignement operator._ 
 
 ```{r}
 

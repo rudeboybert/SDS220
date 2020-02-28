@@ -31,7 +31,7 @@ set.seed(76)
 
 ## Load data into R
 
-_Include the code to load your data here. If your data is not confidential nor is it private in nature, consider publishing it as a `.csv` file on Google Sheets as in the code chunk below; instructions on how to do this are in Steps 1-6 [here](https://twitter.com/rudeboybert/status/1055821846539591680). If the data shouldn't be published online, then please submit the spreadsheet file on Moodle._
+_Include the code to load your data here. If your data is not confidential nor is it private in nature, consider publishing it as a `.csv` file on Google Sheets as in the code chunk below; instructions on how to do this are in Steps 1-6 [here](https://twitter.com/rudeboybert/status/1055821846539591680). If the data shouldn't be published online, then please submit the spreadsheet file on Moodle. For help on how to use the `read_csv()` function from the `readr` package, please read ModernDive Chapter 4.1 on importing data._
 
 ```{r, message=FALSE}
 ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyNqRVA950sdYa1QazAT-l0T7dl6pE5Ewvt7LkSm9LXmeVNbCbqEcrbygFmFyK4B6VQQGebuk9/pub?gid=1469057204&single=true&output=csv")
@@ -39,7 +39,7 @@ ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyN
 
 ## Clean variable names
 
-_Pipe your data frame into the `clean_names()` function from the `janitor` package. This will clean your variable names, making them easier to work with._
+_Pipe your data frame into the `clean_names()` function from the `janitor` package. This will clean your variable names, making them easier to work with. Be sure to save your variable name cleaning by overwriting the original data frame by using the `<-` assignement operator._ 
 
 ```{r}
 ma_schools <- ma_schools %>% 
@@ -129,7 +129,7 @@ _Let's do an little exploratory data analysis._
 
 _Address missing values._
 
-Using the trick in Jenny and Albert's "Become an R Data Ninja!" file, we get a sense of how many missing values we have in our data. 
+We get a sense of how many missing values we have in our data. 
 
 ```{r}
 colSums(is.na(ma_schools))

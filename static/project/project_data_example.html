@@ -1541,7 +1541,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220 Data Proposal Example</h1>
 <h4 class="author">Alexis Cohen, Andrianne Dao, Isabel Gomez, Jenny Smetzer, and Albert Y. Kim</h4>
-<h4 class="date">Last updated on 2020-02-12</h4>
+<h4 class="date">Last updated on 2020-02-27</h4>
 
 </div>
 
@@ -1579,7 +1579,7 @@ set.seed(76)</code></pre>
 </div>
 <div id="clean-variable-names" class="section level2">
 <h2>Clean variable names</h2>
-<p><em>Piping your data frame into the <code>clean_names()</code> function from the <code>janitor</code> package will clean your variable names, making them easier to work with.</em></p>
+<p><em>Pipe your data frame into the <code>clean_names()</code> function from the <code>janitor</code> package. This will clean your variable names, making them easier to work with. Be sure to save your variable name cleaning by overwriting the original data frame by using the <code>&lt;-</code> assignement operator.</em></p>
 <pre class="r"><code>ma_schools &lt;- ma_schools %&gt;% 
   clean_names()</code></pre>
 </div>
@@ -1594,8 +1594,8 @@ set.seed(76)</code></pre>
 <h1>Variables</h1>
 <div id="identification-variable" class="section level2">
 <h2>Identification variable</h2>
-<p><em>What is your identification (ID) variable (if you have one)?</em></p>
-<p>Our identification variable is <code>school_name</code>; it allows us to uniquely identify each school.</p>
+<p><em>What is your identification (ID) variable (if you have one)? For more information on identification variables, read ModernDive Chapter 1.4.4</em></p>
+<p>Our identification variable is <code>school_name</code>; it allows us to uniquely identify each school in each row.</p>
 </div>
 <div id="outcome-variable" class="section level2">
 <h2>Outcome variable</h2>
