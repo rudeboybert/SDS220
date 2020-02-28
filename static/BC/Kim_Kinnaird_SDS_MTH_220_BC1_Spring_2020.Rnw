@@ -218,9 +218,106 @@ Section (please circle): Kim 01 or Kinnaird 02
 
 \vspace{1in}
 
+\newpage
+\textbf{Question 1}\
+<<echo=FALSE>>=
+gapminder2007 <- gapminder %>%
+  filter(year == 2007) %>%
+  select(country, continent, lifeExp)
+@
+\vspace{.15in}
+
+Let's consider the {{\tt gapminder}} development data, but only for the year 2007. Let's look at a random sample of 5 out of the \Sexpr{nrow(gapminder2007)} rows of this dataset:\\
+
+<<echo=FALSE>>=
+set.seed(76)
+gapminder2007 %>%
+  sample_n(5) %>%
+  kable()
+@
+\noindent \\
+
+We are interested in modeling the relationship between the outcome variable $y = $ life expectancy in years and the categorical explanatory variable $x = $ continent. You fit a following regression and obtain the following regression table rounded to the nearest integer:\\
+
+<<echo=FALSE>>=
+lm(lifeExp ~ continent, data=gapminder2007) %>%
+  get_regression_table()
+@
+
+\emph{Note}: You do \textbf{not} need to do the arithmetic (adding, subtracting, multiplying, etc), but rather write down what you would enter into a calculator if you had one.
+
+\begin{enumerate}[a)]
+\item What is the fitted value $\widehat{y}$ of life expectancy in years for the below countries? (Show all work to justify your steps.)
+
+\begin{enumerate}
+\item Togo
+\item Lestho
+\item Bulgaria
+\end{enumerate}
+
+Are you surprised by these results? Why or why not?
+
+\item What is the fitted value $\widehat{y}$ of life expectancy in years for any given country in:
+
+\begin{enumerate}
+\item Africa
+\item Europe
+\end{enumerate}
+
+Show all work to justify your steps.
+
+\item What is the residual for the following three countries?
+
+\begin{enumerate}
+\item Namibia
+\item Italy
+\end{enumerate}
+
+Show all work to justify your steps.
+
+\item What is the mean life expectancy for countries in the following continents:
+
+\begin{enumerate}
+\item Africa
+\item Asia
+\item Europe
+\end{enumerate}
+
+Show all work to justify your steps.
+
+\end{enumerate}
+
+\vfill
+
+%-------------------------------------------------------------------------------
+%\newpage
+\textbf{Question 2}\
+
+\vspace{.15in}
+
+Consider the following hypothetical study. Say you collect two variables of information from a population of interest: $y = $ life expectancy and $x = $ annual income out of college measured in units of \emph{thousands of dollars}. You find that
+
+\begin{itemize}
+\item the correlation coefficient is 0.25
+\item the fitted regression line $\widehat{y} = 45 + 0.5 x$
+\end{itemize}
+
+\begin{enumerate}[a)]
+\item Interpret the coefficients $b_0$ and $b_1$ in contextually meaningful ways.
+
+\item Your friend Reginald Regression tells you that he made \$42,000. Reginald is now 27 and would like to know how old you think he will live to be. Show all work and interpret your result for him (recalling that he has not ever taken statistics.)
+
+\item In reaction to your statement of his expected life expectancy, he vows to eat more spinach. Should he take age from part b) as a guarantee of how long he will live? Explain why he should \textbf{or} should not rely on this model as a guarantee.
+
+\item Write down what the following two quantities would be if $x$ was not measured in units of thousands of dollars, but measured in units of dollars:
+
+  \begin{itemize}
+    \item the correlation coefficient
+    \item the fitted slope $b_1$ of the regression line $\widehat{y} = b_0 + b_1 x$
+  \end{itemize}
 
 
-
+\end{enumerate}
 
 %-------------------------------------------------------------------------------
 \newpage
@@ -237,7 +334,7 @@ You are presented with data on the Titanic disaster of 1912 in a data frame {{\t
 \item by sex
 \item by sex and age
 \item by sex and class
-\item bt sex and age and class
+\item by sex and age and class
 \end{itemize}
 
 \item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
@@ -308,6 +405,7 @@ You are investigating if countries get a `bump' in their gold medal count when t
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
 \hline
 Year & 1984 & 1988 & 1992 & 1994 & 1998 & 2002 & 2006 & 2010 & 2014 \\
+\hline
 Canada's & & & & & & & & & \\
 Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 & 10 \\
 \hline
@@ -1018,7 +1116,7 @@ model_points
 
 %{\small
 %\begin{verbatim}
-                           Estimate Std. Error
+%                           Estimate Std. Error
 %(Intercept)                 32.2064     4.7728
 %employmentgovt assistance    4.4003     2.5579
 %employmentother             -3.9285     2.4804
