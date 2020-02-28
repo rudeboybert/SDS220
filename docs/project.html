@@ -352,7 +352,7 @@ div.tocify {
   <a href="badge_challenges.html">Badge Challenges</a>
 </li>
 <li>
-  <a href="project.html#data">Project</a>
+  <a href="project.html#proposal">Project</a>
 </li>
 <li>
   <a href="syllabus.html">Syllabus</a>
@@ -433,7 +433,7 @@ knowledge. So next time
 <p><strong>This is the phase of the project that is the least straightforward. Thus, we recommend you start early and get help during the various 220 office hours posted on Moodle early and often.</strong></p>
 <div id="step-1" class="section level3">
 <h3>Step 1</h3>
-<p>Get a sense for the requirements of this project phase by reading the <a href="static/project/project_data_example.html" target="_blank">example data proposal</a>.</p>
+<p>Get a sense for the requirements of this project phase by reading the <a href="static/project/project_data_example.html" target="_blank">example data proposal</a>. It is important not to interpret this example overly literally, as not all data proposals will look exactly like this, but rather will vary on a case-by-case basis.</p>
 </div>
 <div id="step-2" class="section level3">
 <h3>Step 2</h3>
@@ -452,7 +452,7 @@ knowledge. So next time
 </div>
 <div id="step-3" class="section level3">
 <h3>Step 3</h3>
-<p>Download the following <a href="static/project/project_data.Rmd" download><code>project_data.Rmd</code></a> template R Markdown file and fill it in, using the example data proposal from Step 1 as your guide.</p>
+<p>Download the following <a href="static/project/project_data.Rmd" download><code>project_data.Rmd</code></a> template R Markdown file and fill it in.</p>
 </div>
 </div>
 <div id="what-to-submit-when" class="section level2">
@@ -463,6 +463,7 @@ knowledge. So next time
 <li>The <code>project_data.html</code> HTML report file</li>
 <li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets following <a href="https://twitter.com/rudeboybert/status/1055821833512071168" target="_blank">these steps</a>.</li>
 </ol>
+<p>If your submission is incomplete, it can lead to delays in feedback delivery.</p>
 </div>
 <div id="possible-sources-for-data" class="section level2">
 <h2>Possible sources for data</h2>
@@ -495,34 +496,64 @@ knowledge. So next time
 <li>Only minimal data wrangling using the <code>dplyr</code> package is expected at this time; you will be doing more for the “project proposal” phase coming up. That being said, feel free to experiment!</li>
 <li>Don’t forget to consult the office hours calendar posted on Moodle when you need help. Most of you will likely need it!</li>
 </ul>
+</div>
+<div id="phase_I_feedback" class="section level2">
+<h2>General feedback for all groups</h2>
+<ol style="list-style-type: decimal">
+<li>Disclaimer: Just because things seem good now doesn’t mean your project data is set for semester. Unforseen problems may crop up during the next phase on data wrangling, at which point you may need to revise your data. This is a reality of data collection in the real world!</li>
+<li>Do not include any <code>View()</code> statements in your <code>.Rmd</code> files as this may cause an error.</li>
+<li>Avoid “data dumps”. For example, showing the contents of all 1000 rows in a data frame. This will make your output document really large and unreadable.</li>
+</ol>
 <hr />
 </div>
-</div>
-<div id="important-note" class="section level1">
-<h1>Important note!!!</h1>
-<blockquote>
-<p>We have posted all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. <strong>Therefore we suggest that you do not start any upcoming phases of the project until you’ve been instructed to.</strong></p>
-</blockquote>
-<hr />
 </div>
 <div id="proposal" class="section level1">
 <h1>2. Project Proposal</h1>
 <p><strong>This phase may require revisions to your original choice of data and visits to the Spinelli tutoring center for help with data wrangling. </strong></p>
-<ul>
-<li>Read the example <a href="static/project/project_proposal_example.html" target="_blank">project proposal</a>. <!--You can also download the <a href="static/project/project_proposal.Rmd" download>`project_proposal_example.Rmd`</a> file that created Dr. Jenny Smetzer and Albert's example.--></li>
-<li>Download the following <a href="static/project/project_proposal.Rmd" download><code>project_proposal.Rmd</code></a> template R Markdown file. <!--
-TODO for Albert: Finish ModernDive 
-* For data wrangling tips, check out Dr. Jenny Smetzer and Albert's [Become an R Data Ninja](static/project/project_tips.html){target="_blank"} page! You don't need to read all the examples, just read the section headers to see if it addresses your data wrangling needs! You can also download the <a href="static/project/project_tips.Rmd" download>`project_tips.Rmd`</a> file.
---></li>
-</ul>
+<div id="build-a-project-proposal" class="section level2">
+<h2>Build a project proposal</h2>
+<div id="step-1-1" class="section level3">
+<h3>Step 1</h3>
+<p>Get a sense for the requirements of this project phase by reading the <a href="static/project/project_proposal_example.html" target="_blank">project proposal</a>. It is important not to interpret this example overly literally, as not all project proposals will look exactly like this, but rather will vary on a case-by-case basis.</p>
+</div>
+<div id="step-2-1" class="section level3">
+<h3>Step 2</h3>
+<p>Download the following <a href="static/project/project_proposal.Rmd" download><code>project_proposal.Rmd</code></a> template R Markdown file and start filling it in.</p>
+</div>
+<div id="step-3-1" class="section level3">
+<h3>Step 3</h3>
+<p>Your data may require some wrangling to get it in the appropriate format. Given that this is not a class where data wrangling is a central focus, we suggest you check out the following resources:</p>
 <ol style="list-style-type: decimal">
-<li>Only the group leader tasked for this project phase will submit the following files on Moodle on behalf of the whole group:
+<li>The Spinelli Center evening tutoring hours on Sun-Thurs 7-9pm. All student tutors there have taken <a href="https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2020&amp;dept=Statistical+and+Data+Sciences&amp;instr=&amp;credits=&amp;course_numb=192&amp;course_keywd=&amp;op=Submit&amp;form_build_id=form-wFN3QGp-YpOHvSETMIKm1Wzwq1snu0oWeSR1I3dUByQ&amp;form_id=campus_course_search_basic_search_form" target="_blank">SDS 192 Data Science</a> and can thus help you get the data into the appropriate format.</li>
+<li>Check out ModernDive Appendix C on <a href="https://moderndive-bert.netlify.com/c-appendixc" target="_blank">data wrangling “tips &amp; tricks”</a>, where you’ll find example code on:
+<ul>
+<li>C.1.1 Dealing with <code>NA</code> missing values</li>
+<li>C.1.3 Showing money on an axis in a plot</li>
+<li>C.1.4 Changing values inside cells</li>
+<li>C.1.5 Converting a numerical variable to a categorical one</li>
+<li>C.1.6 Computing proportions</li>
+<li>C.1.7 Dealing with <code>%</code>, commas, and <code>$</code> symbols in your data</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="what-to-submit-when-1" class="section level2">
+<h2>What to submit when?</h2>
+<p><strong>Due Mon 3/9 at 11pm.</strong> Only the group leader for this phase will make a single submission on behalf of the whole group. They will:</p>
 <ol style="list-style-type: decimal">
 <li>The <code>project_proposal.Rmd</code> R Markdown file</li>
 <li>The <code>project_proposal.html</code> HTML report file</li>
-<li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.</li>
-</ol></li>
+<li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets following <a href="https://twitter.com/rudeboybert/status/1055821833512071168" target="_blank">these steps</a>.</li>
 </ol>
+<p>If your submission is incomplete, it can lead to delays in feedback delivery.</p>
+<hr />
+</div>
+</div>
+<div id="important-note" class="section level1">
+<h1>Important note!</h1>
+<blockquote>
+<p>We have posted all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. <strong>Therefore we suggest that you do not start any upcoming phases of the project until you’ve been instructed to.</strong></p>
+</blockquote>
 <hr />
 </div>
 <div id="submission" class="section level1">

@@ -12,6 +12,7 @@
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{enumerate}
+\usepackage[normalem]{ulem}
 
 \headheight 15pt
 \textheight 9in
@@ -23,6 +24,21 @@
 \pagestyle{fancy}
 %\cfoot{(\thepage/\pageref{LastPage})}
 
+<<include=FALSE>>=
+library(tidyverse)
+library(nycflights13)
+library(moderndive)
+library(gapminder)
+library(babynames)
+library(knitr)
+library(kableExtra)
+
+# Set default code chunk options
+opts_chunk$set(
+  warning = FALSE, message = FALSE, echo = FALSE, fig.width = 16/2,
+  fig.height = 9/2
+)
+@
 
 
 \begin{document}
@@ -35,17 +51,37 @@
 \Large{SDS/MTH 220: Badge Challenge 1}
 \end{center}
 
+\vspace{.4in}
+Name: \uline{\hfill}
 
+\vspace{.4in}
+Section (please circle): Kim 01 or Kinnaird 02
 
-\vspace{.5in}
-Name: \underline{\hspace{4in}}
-
-\vspace*{.5in}
-\textbf{Instructions}
+\vspace*{.25in}
+\textbf{Instructions}:
 \begin{itemize}
-\item This badge challenge must be your own work entirely.
-\vspace{.1in}
-\item This is an open mind, closed stats notebook, closed textbook, and closed fellow statistician badge challenge.
+% ------------------------------------------------------------------------------
+\item Honor code:
+\begin{enumerate}[a)]
+\item This is an open mind, closed stats notebook, closed textbook, and closed fellow statistician badge challenge. This badge challenge must be your own work entirely.
+\item The front page must have two timestamps on it. \textbf{Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.}
+\end{enumerate}
+% ------------------------------------------------------------------------------
+\item What to do with these pages:
+\begin{enumerate}[a)]
+\item Use the provided blank sheets of paper to write your answers. You may also use these pages for your scratch work.
+\item Please write on \emph{\textbf{\underline{one side}} of the blank pages} and staple any pages you want graded to the badge challenge. Your \emph{answers should appear in \textbf{question order}}.
+\item Put your name on the top right corner of each page that you submit and do not write where the staple will go.
+\end{enumerate}
+% ------------------------------------------------------------------------------
+\item Taking this badge challenge:
+\begin{enumerate}[a)]
+\item All questions will be graded under the badge level grading system. On badge challenges, you must show \emph{\textbf{all}} work for computational answers and justify all claims for expository questions.
+\item Remember that you only have to do as many questions as you are ready for. Questions left unattempted will not receive a badge level. If a question has multiple parts, you must attempt all parts to earn above X (cannot be assessed).
+\item You do not have to perform any long computations. For example, if the answer is 18.5, you
+will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
+\item Keep your explanations contextually meaningful and concise!
+\end{enumerate}
 %\item You will upload two word documents to Moodle:
 %\begin{itemize}
 %\item Document 1: a document containing your answers to Section 1 (closed book).
@@ -62,43 +98,79 @@ Name: \underline{\hspace{4in}}
 %
 %\vspace{.1in}
 %\item Unless explicitly asked, you should not take the time to explain your answers to the True/False, multiple choice, or other short questions.  If you do, you will run out of time!
-
-\vspace{.1in}
-\item All questions will be graded under the badge level grading system. On badge challenges, you must show \emph{\textbf{all}} work for computational answers and justify all claims for expository questions.
-
-\vspace{.1in}
-\item Keep your explanations contextually meaningful and concise!
-
-\vspace{.1in}
-\item You do not have to perform any long computations. For example, if the answer is 18.5, you
-will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
-
-\vspace{.1in}
-\item Use the provided blank sheets of paper to write your answers. You may also use these pages for your scratch work.
-
-\vspace{.1in}
-\item {\large Please write on \emph{\textbf{\underline{one side}} of the blank pages} and staple any pages you want graded to the badge challenge. Your \emph{answers should appear in \textbf{question order}}}.
-
-\vspace{.1in}
-\item Put your name on the top right corner of each page that you submit and do not write where the staple will go.
-
-\vspace{.1in}
-
-\item The front page must have two timestamps on it. \textbf{Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.}
-
-
-\vspace{.1in}
-\item This is the first of four opportunities to demonstrate your current understanding of the first five badges for the course. You may complete as many badges as you would like. Questions left unattempted will not receive a badge level.
-
 \end{itemize}
 
-\pagebreak
-~~
+
+
+
+
+\newpage
 
 \begin{center}
-\Large{Name:} \underline{\hspace{4in}}
-
+\Large{Badges}
 \end{center}
+
+This is the first of four opportunities to demonstrate your mastering of the first five badges for the course.\\
+
+<<eval = FALSE>>=
+# Copy the output of the code below and then edit it
+"https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pub?gid=67598343&single=true&output=csv" %>%
+  read_csv() %>%
+  select(-c(`Badge challenges`, Lectures, Labs)) %>%
+  rename(Badge = `Badge number`) %>%
+  kable(
+    digits = 3,
+    format = "latex",
+    linesep = ""
+  )
+@
+
+\begin{center}
+\begin{tabular}{r|l}
+\hline
+& Topic\\
+\hline\hline
+1 & Understand the grammar of graphics: construct graphics based on a dataset,\\
+  & deconstruct graphics into a data set\\
+2 & Write pseudocode for basic data wrangling \& exploratory data analysis\\
+3 & Compute and interpret summary statistics: measures of centrality \& spread\\
+4 & Fit \& understand regression models with numerical explanatory variables\\
+5 & Fit \& understand regression models with categorical explanatory variables\\
+\hline\hline
+6 & Fit \& understand interaction \& parallel slopes models \& perform basic model \\
+  & selection\\
+7 & Master terminology, notation, \& definitions related to sampling: All terms in 7.3\\
+8 & Understand what determines center and spread of sampling distribution: \\
+  & Representative sampling, the role sampling variability plays in statistical inference\\
+  & and the role that sample size plays in this sampling variability.\\
+9 & Highlight all differences between sampling and resampling: Why would you \\
+  & resample? What is difference between sampling distribution \& bootstrap \\
+  & distribution.\\
+10 & Understand confidence intervals\\
+\hline\hline
+11 & Construct and interpret confidence intervals\\
+12 & Generalize all hypothesis tests to there is "There is only one test" framework: \\
+  & Fig 9.14 \& infer framework\\
+13 & Master terminology \& definitions related to hypothesis testing: All terms in 9.2\\
+  & and 9.4, in particular correctly articulate what a p-value is and how to interpret\\
+14 & Transfer previously developed knowledge of hypothesis tests \& confidence intervals \\
+  & to regression i.e. interpret ALL columns of a regression table\\
+15 & Verify the conditions that must be met for any inference for regression to be valid\\
+\hline\hline
+\end{tabular}
+\end{center}
+
+
+
+
+
+\newpage
+
+\vspace{.4in}
+Name: \uline{\hfill}
+
+\vspace{.4in}
+Section (please circle): Kim 01 or Kinnaird 02
 
 \vfill
 
@@ -146,22 +218,120 @@ will receive full credit for writing $2.5*(4+3.5)-(1/2)^2$.
 
 \vspace{1in}
 
-<<include=FALSE>>=
-library(tidyverse)
-library(nycflights13)
-library(moderndive)
-library(gapminder)
-library(babynames)
 
-# Set default code chunk options
-opts_chunk$set(
-  warning = FALSE, message = FALSE, echo = FALSE, fig.width = 16/2,
-  fig.height = 9/2
-)
+
+
+
+%-------------------------------------------------------------------------------
+\newpage
+\textbf{Question 3}\
+
+\vspace{.15in}
+
+You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age.
+
+\begin{enumerate}[a)]
+\item Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following four scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
+
+\begin{itemize}
+\item by sex
+\item by sex and age
+\item by sex and class
+\item bt sex and age and class
+\end{itemize}
+
+\item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
+
+
+\textbf{Note}: you don't need to calculate the output table, just write the pseudocode that would produce it where the more concise the pseudocode the better. On the next page, you will see what the {{\tt Titanic}} data looks like:\\
+
+<<echo=FALSE, warning=FALSE, message=FALSE, fig.width=8, fig.height=4.5>>=
+data(Titanic)
+Titanic %>% tbl_df() %>% kable()
+@
+\end{enumerate}
+
+\newpage
+\textbf{Question 4}\
+
+\begin{enumerate}[a)]
+\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs and briefly explain your thinking
+
+\begin{itemize}
+\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
+\item Pair 2: ``Number of years at a job'' and ``Salary''
+\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
+\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
+\end{itemize}
+
+\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
+
+<<>>=
+gapminder_subset <- gapminder %>%
+  filter(year %in% c(1957, 2007))
+gapminder_subset
 @
 
+Using this data, we can create the following plot:\\
+
+<<>>=
+ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
+  geom_point() +
+  labs(
+    x = "GDP per capita", y = "Life expectancy",
+    color = "Continent", size = "Population"
+  ) +
+  facet_wrap(~year)
+@
+
+Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
+
+\begin{itemize}
+\item You do \textbf{not} need to write code, you only need to specify all components of the graphic.
+\item There is no need to specify the x and y axes labels.
+\end{itemize}
+
+\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
 
 
+\end{enumerate}
+
+\newpage
+\vspace{.05in}
+\textbf{Question 5}\
+
+\vspace{.15in}
+
+You are investigating if countries get a `bump' in their gold medal count when they host the Winter Olympics. Recalling that the 2010 Winter Olympics were in Vancouver Canada, you decide to use Canada as a first test case. You found the following Canadian gold medal tallies for the past 9 Winter Olympics:
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+Year & 1984 & 1988 & 1992 & 1994 & 1998 & 2002 & 2006 & 2010 & 2014 \\
+Canada's & & & & & & & & & \\
+Gold Medals & 2 & 0 & 2 & 3 & 6 & 7 & 7 & 26 & 10 \\
+\hline
+\end{tabular}
+
+\end{center}
+\vspace{.1in}
+
+\begin{enumerate}[(a)]
+	\item What is the median number of gold medals that Team Canada have won over the past 9 Winter Olympics? Show all work.
+	\vspace{.1in}
+
+	\item You store your data as rows with \texttt{year} as the observation and the number of gold medals as a variable in a dataframe called \texttt{canada\_gold}. Using pseudocode, state how you would find the Inner Quartile Range in RStudio.
+
+	\vspace{.1 in}
+
+	\item You find that the 25$^{\textrm{th}}$-percentile is 2 gold medals and the 75$^{\textrm{th}}$-percentile is 7 gold medals. Based on the above table and results, do you think that Canada got a `bump' for being the host country? Justify your answer.
+
+	\vspace{.1 in}
+
+	\item You double check the table's data and notice that for the 2010 games, the listed number of medals is the total number and not the just the gold medals. The correct number of gold medals is actually 13 gold medals. Does the median number of gold medals that Team Canada has won over the past 9 Winter Olympics change? Does the mean change? Justify \textbf{\emph{both}} your answers \textbf{\emph{without}} doing any \textbf{\emph{additional}} computations.
+\end{enumerate}
+
+\end{document}
 
 
 
@@ -199,9 +369,54 @@ opts_chunk$set(
 
 %-------------------------------------------------------------------------------
 \newpage
-\textbf{Question X}\
+\textbf{Question 4}\
 
 \vspace{.15in}
+
+
+\item
+
+\begin{itemize}
+\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
+
+\begin{itemize}
+\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
+\item Pair 2: ``Number of years at a job'' and ``Salary''
+\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
+\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
+\end{itemize}
+
+\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
+
+<<>>=
+gapminder_subset <- gapminder %>%
+  filter(year %in% c(1957, 2007))
+gapminder_subset
+@
+
+Using this data, we can create the following plot:\\
+
+<<>>=
+ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
+  geom_point() +
+  labs(
+    x = "GDP per capita", y = "Life expectancy",
+    color = "Continent", size = "Population"
+  ) +
+  facet_wrap(~year)
+@
+
+Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
+
+\begin{itemize}
+\item You don't need to write code, you only need to specify all components of the graphic.
+\item There is no need to specify the x and y axes labels.
+\end{itemize}
+
+\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
+
+
+\end{itemize}
 
 
 
@@ -216,10 +431,10 @@ opts_chunk$set(
 
 %Write down in bullet point form what these 10 missing text segments labeled ``A'' though ``J' should read.
 
-\begin{enumerate}[(a)]
-\item Say you have a data frame named {\tt example} that has 4 variables and 4 rows of data:\\
+%\begin{enumerate}[(a)]
+%\item Say you have a data frame named {\tt example} that has 4 variables and 4 rows of data:\\
 
-<<>>=
+<<eval=FALSE>>=
 example <- tibble(
   type = c("D", "B", "A", "C"),
   fruit = c("apple", "apple", "orange", "orange"),
@@ -229,12 +444,12 @@ example <- tibble(
 example %>%
   kable()
 @
-\vspace{0.25cm}
+%\vspace{0.25cm}
 
-\begin{itemize}
-\item Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
+%\begin{itemize}
+%\item Draw the histogram for the variable {\tt number} using the bins indicated with the dashed vertical lines. Be sure to write down appropriate y-axis information.\\
 
-<<>>=
+<<eval=FALSE>>=
 ggplot(data = example, mapping = aes(x = number)) +
   geom_histogram(binwidth = 2, boundary = 1.5, color = "white", fill = "white") +
   geom_vline(xintercept = c(-2.5, -0.5, 1.5, 3.5, 5.5), linetype = "dashed") +
@@ -247,15 +462,15 @@ ggplot(data = example, mapping = aes(x = number)) +
   labs(x = "Number")
 @
 
-\item List the elements of the ``Grammar of Graphics'' for a \textbf{generic} plot. In other words, what are the ingredients of \emph{any} visualization in \texttt{ggplot2}?
+%\item List the elements of the ``Grammar of Graphics'' for a \textbf{generic} plot. In other words, what are the ingredients of \emph{any} visualization in \texttt{ggplot2}?
 
-\item Write out pseudocode to create the histogram you created in the first part of this question. Specify where you use each element of the ``Grammar of Graphics.''
+%\item Write out pseudocode to create the histogram you created in the first part of this question. Specify where you use each element of the ``Grammar of Graphics.''
 
-\end{itemize}
+%\end{itemize}
 
-\item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
+%\item A researcher from eastern Massachusetts is a big Starbucks fan. She has a suspicion that Starbucks tend to locate in richer neighborhoods, while this is not the case for Dunkin Donuts. She writes code to pull data from the internet about all 1024 census tracts (areas where decennial census data are collected) in Eastern Massachusetts. She summarizes her results in the following graphic:
 
-<<>>=
+<<eval=FALSE>>=
 DD_vs_SB <- DD_vs_SB %>%
   mutate(shops_per_1000 = 1000*shops/population)
 ggplot(DD_vs_SB, aes(x=median_income, y=shops_per_1000)) +
@@ -267,12 +482,12 @@ ggplot(DD_vs_SB, aes(x=median_income, y=shops_per_1000)) +
   scale_color_manual(values=c("orange", "forestgreen"))
 @
 
-\begin{enumerate}
-\item Write out the elements of the ``Grammar of Graphics'' that need to be
-specified to create this graphic. You do not need to specify the axes labels, the plot title, nor the regression lines
-\item Assuming there are no missing data, how many rows are in the data frame that we input into the {{\tt ggplot()}} function?
-\item Does the presented visualization support or contradict the researcher's suspicion? Why?
-\end{enumerate}
+%\begin{enumerate}
+%\item Write out the elements of the ``Grammar of Graphics'' that need to be
+%specified to create this graphic. You do not need to specify the axes labels, the plot title, nor the regression lines
+%\item Assuming there are no missing data, how many rows are in the data frame that we input into the {{\tt ggplot()}} function?
+%\item Does the presented visualization support or contradict the researcher's suspicion? Why?
+%\end{enumerate}
 
 
 
@@ -348,49 +563,6 @@ tibble(prices = prices) %>%
 
 
 
-\item
-
-\begin{itemize}
-\item For which of the following pairs of variables would you visualize with a scatterplot? Circle which pairs.
-
-\begin{itemize}
-\item Pair 1: ``Distance from school in miles'' and ``mode of transportation to school (bike, walking, bus)”
-\item Pair 2: ``Number of years at a job'' and ``Salary''
-\item Pair 3: ``Years experience playing an instrument'' and ``number of mistakes made playing a song''
-\item Pair 4: ``Number of years since a person retired'' and ``favorite sport''
-\end{itemize}
-
-\item Consider a subset of the {{\tt gapminder}} dataset we've seen numerous times in class:
-
-<<>>=
-gapminder_subset <- gapminder %>%
-  filter(year %in% c(1957, 2007))
-gapminder_subset
-@
-
-Using this data, we can create the following plot:\\
-
-<<>>=
-ggplot(gapminder_subset, aes(x = gdpPercap, y = lifeExp, col = continent, size = pop)) +
-  geom_point() +
-  labs(
-    x = "GDP per capita", y = "Life expectancy",
-    color = "Continent", size = "Population"
-  ) +
-  facet_wrap(~year)
-@
-
-Write out \textbf{in bullet point form} all the elements of the ``Grammar of Graphics'' that need to be specified in a {{\tt ggplot()}} function call to create this graphic. Note
-
-\begin{itemize}
-\item You don't need to write code, you only need to specify all components of the graphic.
-\item There is no need to specify the x and y axes labels.
-\end{itemize}
-
-\item Write out pseudocode to create a collection of boxplots of GDP per capita with one boxplot per continent. Specify where you use each element of the ``Grammar of Graphics.''
-
-
-\end{itemize}
 
 %\item In a statistics class with 140 students, the professor records how much money (in dollars) each student has in their possession during the first class of the semester. The histogram shown below represents the data they collected: \\
 
@@ -558,9 +730,10 @@ weather %>%
 \item You are presented with data on the Titanic disaster of 1912 in a data frame {{\tt Titanic}}, which cross-classifies survival vs death by class, sex, and age. Write down the \textit{pseudocode} of the commands that will output a table comparing survival vs death counts for the following three scenarios. For each scenario, under your pseudocode, draw what the output table would look like, but do \textbf{not} fill in the numbers in the table.
 
 \begin{itemize}
-\item[a)] by sex
-\item[b)] by sex and age
-\item[c)] by sex and class
+\item by sex
+\item by sex and age
+\item by sex and class
+\item bt sex and age and class
 \end{itemize}
 \item What would you use to address the question if the ``women and children''-first policy of the White Star Line Company (the company that ran the Titanic) held true or not.
 
