@@ -93,6 +93,50 @@ categ_regression_ex <- tibble(
 ***
 
 
+# Lec 18: Fri 3/6
+
+## Announcements
+
+1.
+
+## Recap
+
+1. 
+
+## Chalk Talk
+
+1. 
+
+
+
+***
+
+
+
+# Lec 17: Wed 3/4
+
+## Announcements
+
+<center>
+![](static/events/Catherine_D_Ignazio.jpg){ width=100% }
+</center>
+
+## Recap
+
+1. 
+
+
+
+## Chalk Talk
+
+1. 
+
+
+
+***
+
+
+
 # Lec 16: Mon 3/2
 
 ## Announcements
