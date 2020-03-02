@@ -93,6 +93,27 @@ categ_regression_ex <- tibble(
 ***
 
 
+# Lec 16: Mon 3/2
+
+## Announcements
+
+1. Badge challenge 1 is still going on. The honor code prohibits you from discussing it until the time window closes.
+
+
+## Chalk Talk
+
+1. Model selection using visualizations. In particular, choosing between the interaction and parallel slopes models by comparing
+    1. Figure 6.7 for UT Austin data
+    1. Figure 6.8 for Massachusetts high school data
+1. Model selection using $R^2$. In particular, choosing between the interaction and parallel slopes models by comparing $R^2$ values
+
+
+
+***
+
+
+
+
 # Lec 15: Fri 2/28
 
 ## Announcements
