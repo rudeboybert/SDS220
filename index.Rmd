@@ -89,6 +89,14 @@ categ_regression_ex <- tibble(
 -->
 
 
+<!--
+Notes to future self:
+
+- Every two weeks: a holistic, cummulative, synthesis that ties in more with 
+badge challenge than project. On paper, like the "debugging" exercise Lec13
+- 
+-->
+
 
 ***
 
@@ -97,7 +105,8 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-1.
+1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192) are available on Sunday and Monday 7-9pm. 
+1. 
 
 ## Recap
 
