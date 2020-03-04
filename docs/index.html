@@ -460,7 +460,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</h4>
-<h4 class="date">Last updated on 2020-03-02</h4>
+<h4 class="date">Last updated on 2020-03-04</h4>
 
 </div>
 
@@ -476,6 +476,13 @@ h1{font-weight: 400;}
 <!--
 {target="_blank"}
 -->
+<!--
+Notes to future self:
+
+- Every two weeks: a holistic, cummulative, synthesis that ties in more with 
+badge challenge than project. On paper, like the "debugging" exercise Lec13
+- 
+-->
 <hr />
 </div>
 <div id="lec-18-fri-36" class="section level1">
@@ -483,7 +490,7 @@ h1{font-weight: 400;}
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
-<li></li>
+<li>Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192) are available on Sunday and Monday 7-9pm in Sabin-Reed 301.</li>
 </ol>
 </div>
 <div id="recap" class="section level2">
@@ -494,9 +501,6 @@ h1{font-weight: 400;}
 </div>
 <div id="chalk-talk" class="section level2">
 <h2>Chalk Talk</h2>
-<ol style="list-style-type: decimal">
-<li></li>
-</ol>
 <hr />
 </div>
 </div>
@@ -517,8 +521,17 @@ h1{font-weight: 400;}
 <div id="chalk-talk-1" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
-<li></li>
+<li>In-class activity!</li>
+<li>Chalk talk only today (no coding)</li>
 </ol>
+<!--
+Private: detailed notes for this "random assignment for causal inference" lecture can be found
+
+1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
+1. In this [PDF](static/2020-03-04_Lec18_Notes_ Random_Assignment_for Causal_Inference.pdf)
+
+The code to create the boxplot can is here:
+-->
 <hr />
 </div>
 </div>
@@ -669,7 +682,7 @@ h1{font-weight: 400;}
 <li>A dashed line for Florence’s mean, which is <em>offset</em> from Bert’s mean by 12 - 10 = +2</li>
 <li>A dotted line for Katie’s mean, which is <em>offset</em> from Bert’s mean by 9 - 10 = -1</li>
 </ol>
-<p><img src="index_files/figure-html/unnamed-chunk-2-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 <p>Shout out to <a href="https://www.scsparkscience.org/fellow/jennifer-smetzer/" target="_blank">Dr. Jenny Smetzer</a> for this example.</p>
 </div>
 <div id="chalk-talk-5" class="section level2">
@@ -780,7 +793,7 @@ Then write on board:
 <p><strong>Solution</strong>:</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> categ_regression_ex, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x=</span>name,<span class="dt">y=</span>value)) <span class="op">+</span></a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>()</a></code></pre></div>
-<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 <!--
 Then draw the above plot on board and mark:
 
@@ -840,7 +853,7 @@ the "collapsing rows" nature of the operation.
 <li>Compute the sum of squared residuals for this line and compare to previous</li>
 </ol></li>
 </ol>
-<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
 <hr />
 </div>
 </div>
@@ -1057,13 +1070,13 @@ Then we did the google doc
 <div id="recap-11" class="section level2">
 <h2>Recap</h2>
 <p>First, let’s compare the boxplot you created in Lec04 with the original points. See how they align.</p>
-<p><img src="index_files/figure-html/unnamed-chunk-14-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" /></p>
 <p>Second, let’s compare two visualizations of the distribution of the numerical variable temperature <em>split by</em> month:</p>
 <ul>
 <li>Faceted histogram in ModernDive <a href="https://moderndive-bert.netlify.com/2-viz.html#facets" target="_blank">Figure 2.13</a></li>
 <li>Side-by-side boxplot in ModernDive <a href="https://moderndive-bert.netlify.com/2-viz.html#boxplots" target="_blank">Figure 2.18</a></li>
 </ul>
-<p><img src="index_files/figure-html/unnamed-chunk-15-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-15-2.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-16-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-16-2.png" width="768" /></p>
 <p>Which do you prefer?</p>
 <p>Third, the idea of “assigning AKA saving something in R” using the arrow <code>&lt;-</code>. Ex: <code>x &lt;- 5</code>. You do this so you can access it again later, either to</p>
 <ol style="list-style-type: decimal">

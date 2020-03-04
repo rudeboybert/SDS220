@@ -105,8 +105,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Announcements
 
-1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192) are available on Sunday and Monday 7-9pm. 
-1. 
+1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192) are available on Sunday and Monday 7-9pm in Sabin-Reed 301.
 
 ## Recap
 
@@ -114,7 +113,9 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Chalk Talk
 
-1. 
+
+
+
 
 
 
@@ -138,7 +139,60 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Chalk Talk
 
-1. 
+1. In-class activity! 
+1. Chalk talk only today (no coding)
+
+<!--
+Private: detailed notes for this "random assignment for causal inference" lecture can be found
+
+1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
+1. In this [PDF](static/2020-03-04_Lec18_Notes_ Random_Assignment_for Causal_Inference.pdf)
+
+The code to create the boxplot can is here:
+-->
+```{r, echo=FALSE, eval=FALSE}
+library(tidyverse)
+africa_data <- "static/africa_results.csv" %>% 
+  read_csv() %>% 
+  mutate(
+    # priming_number = if_else(priming_number == "Primed with 14 countries", "14 countries", "94 countries"),
+    been_to_africa = if_else(been_to_africa == "No", "Never been to Africa", "Been to Africa")
+  )
+
+stat_box_data <- function(y, upper_limit = max(africa_data$how_many_countries) * 1.15) {
+  return( 
+    data.frame(
+      y = 0.95 * upper_limit,
+      label = paste("n =", length(y))
+    )
+  )
+}
+
+plot <- ggplot(africa_data, aes(x = priming_number, y = how_many_countries)) +
+  geom_boxplot() +
+  labs(x = "Priming Group", y = "Number of countries in Africa guessed",
+       title = "Results from previous section of SDS 220") +
+  stat_summary(
+    fun.data = stat_box_data, 
+    geom = "text", 
+    hjust = 0.5,
+    vjust = 0.9
+  )
+ggsave("static/images/africa_results.png", width = 16/1.5, height = 9/1.5)
+
+
+ggplot(africa_data, aes(x = priming_number, y = how_many_countries)) +
+  geom_boxplot() +
+  labs(x = "Priming Group", y = "Number of countries guessed") +
+  facet_wrap(~been_to_africa) +
+  stat_summary(
+    fun.data = stat_box_data, 
+    geom = "text", 
+    hjust = 0.5,
+    vjust = 0.9
+  )
+ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, height = 9/1.5)
+```
 
 
 
@@ -163,7 +217,6 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 ***
-
 
 
 
