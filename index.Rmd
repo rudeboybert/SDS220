@@ -98,24 +98,25 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 -->
 
 
+
 ***
+
 
 
 # Lec 18: Fri 3/6
 
 ## Announcements
 
+1. FYI: You will not be penalized for missing class due to illness.
 1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192) are available on Sunday and Monday 7-9pm in Sabin-Reed 301.
 
 ## Recap
 
-1. 
+1. `NA`
 
 ## Chalk Talk
 
-
-
-
+1. In-class activity
 
 
 
@@ -133,7 +134,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Recap
 
-1. 
+1. `NA`
 
 
 
