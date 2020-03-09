@@ -101,6 +101,61 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ***
 
+# Lec 20: Wed 3/11
+
+## Announcements
+
+1. 
+
+
+## Recap
+
+1. Used 3 "virtual" shovels with different samples sizes: 25, 50, 100. For each shovel, we used it 1000 times then computed 1000 estimates of the proportion red.
+    1. Figure 7.12: Visually compare their distributions via a faceted histogram
+    1. Table 7.1: Numerically compare their spread/variation via their standard deviation
+1. What happens as sample size $n$ goes up?
+
+
+## Chalk Talk
+
+1. 
+
+
+
+***
+
+
+
+# Lec 19: Mon 3/9
+
+## Announcements
+
+1. Project proposal due today at 11pm. Spinelli tutors (who have all taken SDS 192 Introduction to Data Science) are available tonight 7-9pm in Sabin-Reed 301.
+
+
+## Recap
+
+1. Last time, we did "tactile" simulations with our hands using a shovel with $n$ = 50 slots to extract samples from the bowl.
+1. For each sample, you [generated estimates](https://docs.google.com/spreadsheets/d/14iWUKc-lBY8U_hs4Fng50oT43yGQZsgZjrVh7ZtF9VI/edit#gid=0){target="_blank"} of the proportion of the bowl's balls that are red.
+1. Note: In ModernDive 7.1, 33 groups of Amherst College students took samples from a bowl with slightly different contents.
+
+
+## Chalk Talk
+
+1. Chalk talk part I:
+    1. Mimic the "tactile sampling using a tactile shovel" from Lec18 on Friday with "virtual sampling using virtual shovel": the `rep_sample_n()` function, which uses your computer's [random number generator](https://en.wikipedia.org/wiki/Random_number_generation){target="_blank"}.
+    1. Example: `rep_sample_n(size = 50, rep = 33)`
+1. Reading part I
+    1. 7.2 up to the end of 7.2.2
+1. Chalk talk part II:
+    1. Break down the data wrangling needed to create the data frame visualized in Figure 7.10: Histogram of 1000 proportion reds
+1. Readings part II
+    1. 7.3 & 7.4. In particular, compare Figure 7.12 and Table 7.1
+    
+
+
+***
+
 
 
 # Lec 18: Fri 3/6
@@ -108,7 +163,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ## Announcements
 
 1. FYI: You will not be penalized for missing class due to illness.
-1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192) are available on Sunday and Monday 7-9pm in Sabin-Reed 301.
+1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192 Introduction to Data Science) are available on Sunday and Monday 7-9pm in Sabin-Reed 301.
 
 ## Recap
 
