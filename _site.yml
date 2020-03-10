@@ -20,6 +20,8 @@ navbar:
   - text: Moodle
     href: https://moodle.smith.edu/course/view.php?id=37125
   right:
+  - text: COVID-19
+    href: https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/
   - text: Badge Challenges
     href: badge_challenges.html
   - text: Project
