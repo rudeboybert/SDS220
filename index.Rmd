@@ -99,9 +99,9 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 
-***
+<!--
 
-# Lec 20: Wed 3/11
+# Lec 21: Fri 3/13
 
 ## Announcements
 
@@ -116,9 +116,44 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 1. What happens as sample size $n$ goes up?
 
 
-## Chalk Talk
+-->
 
-1. 
+
+
+***
+
+
+
+# Lec 21: Fri 3/13
+
+## Announcements
+
+1. Practice-run of Zoom lecture format
+
+
+
+***
+
+
+
+# Lec 20: Wed 3/11
+
+## Announcements
+
+1. Acknowledgement of situation
+1. Issue of communication
+1. Slack:
+    1. No more browser-based version, install Desktop App or Mobile App
+    1. Add `#remote_learning` channel: Post questions/comments specifically about remote learning technology here.
+    1. Setting notifications
+1. COVID-19 tab of webpage:
+    1. "Remote Learning Preparedness Survey"
+    1. Go over components of course
+1. Zoom
+    1. Login to meeting as practice run for lectures
+    1. Practice creating meetings in groups
+    1. Practice screensharing
+1. Questions (to be posted on COVID-19 tab of webpage)
 
 
 
