@@ -131,30 +131,34 @@ In-class example:
 
 ## Administrative notes
 
-* Time window: **Friday 4/3 5pm through Monday 4/6 11pm**.
+* Time window: **Friday 4/10 through Wednesday 4/15**. TODO: Exact times TBD.
 * In preparation for badge challenge:
-    + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand.
-    + Bring colored pencils/pens.
-    + All Office of Disability Services forms must be submitted to instructor in print before the start of the time window.
-* Printing the badge challenge: From a macOS computer in Seelye basement during the time window
-    + Access the link to print badge challenge on Moodle.
-    + Print badge challenge **in color**.
-    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
-* During badge challenge:
-    + In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during the badge challenge time window.
-    + Closed-book, no internet, and individually completed.
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
-    + You will be given 140 mins to complete it (including transit time to writing area). **Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.**
-* After badge challenge:
-    + You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.
+    + Designate a 3 hour window that you can dedicate to completing this badge challenge.
+    + Have the following ready: colored pencils/pens, blank sheets of paper, your laptop, and a mobile phone with a camera.
+    + If you haven't already, all Office of Disability Services forms must be submitted to instructor before the start of the time window.
+* "Printing the badge challenge":
+    + Instead of printing a timestamped copy of the badge challenge as you would in Seelye, you will click a link on Moodle to "start" the exam. We will use Moodle's internal timestamp logs to determine when you "started" your badge challenge
+    + You do not need to physically "print" the badge challenges.
+* "Completing the badge challenge":
+    + You will write you answers down on your blank sheets of paper.
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed).
+    + See example here TODO: post example
+* "Submitting the badge challenge":
+    + You will submit your badge challenge on Gradescope as you would for a problem set. We will use the Gradescope submission timestamp to determine when you "submitted" your badge challenge.
+    + TODO: Submit raw picture or have students use one of the "scanner" apps.
+* Honor code:
+    + Closed-book, no internet, and individually completed. You may only use your laptop to view the badge challenge
+    + You will be given (TODO: set number of minutes) mins to complete it. **Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating that more time than allowed was taken will be subject to an honor board case.**
+    + You are prohibited from discussing the badge challenge with your peers during the time window. 
+
 
 
 ## Badges 1-10
     
-* Badges: Lectures 1-24 & Labs 1-8.  In other words everything up to and including the resampling activity and confidence intervals.
+* Badges: Lectures 1-(TODO: set lecture number)  & Labs 1-(TODO: set lab number).  In other words everything up to and including the resampling activity and confidence intervals.
 * What to study:
-    + Badge Challenge 1!
-    Your hand-written course notes first: they are the "executive summaries" of topics.
+    + Badge challenge 1!
+    + Your hand-written course notes first: they are the "executive summaries" of topics.
     + The material on the course webpage chronologically, in particular the ModernDive readings.
     + Problem sets corresponding to labs.
 
@@ -168,30 +172,15 @@ In-class example:
 
 ## Administrative notes
 
-* Time window: **Friday 4/24 5pm through Monday 4/27 11pm**.
-* In preparation for badge challenge:
-    + Especially if you have never taken a Seelye Self-scheduled exam before, read the [instructions](http://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"} beforehand.
-    + Bring colored pencils/pens.
-    + All Office of Disability Services forms must be submitted to instructor in print before the start of the time window.
-* Printing the badge challenge: From a macOS computer in Seelye basement during the time window
-    + Access the link to print badge challenge on Moodle.
-    + Print badge challenge **in color**.
-    + At some point you'll need to wait 5-10 seconds for a "paper is held in queue" pop-up box to appear before you can print.
-* During badge challenge:
-    + In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during the badge challenge time window.
-    + Closed-book, no internet, and individually completed.
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
-    + You will be given 140 mins to complete it (including transit time to writing area). **Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.**
-* After badge challenge:
-    + You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.
-
+* Time window: **Friday 4/24 through Wednesday 4/29**. TODO: Exact times TBD.
+* 
 
 ## Badges 1-15
     
 * Badges: All Lectures 1-37 & all Labs.  In other words everything.
 * What to study:
-    + Badge Challenges 1, and 2!
-    Your hand-written course notes first: they are the "executive summaries" of topics.
+    + Badge challenges 1, and 2!
+    + Your hand-written course notes: they are the "executive summaries" of topics.
     + The material on the course webpage chronologically, in particular the ModernDive readings.
     + Problem sets corresponding to labs.
 
@@ -205,16 +194,16 @@ In-class example:
 
 ## Administrative notes
 
-* Time window: **Exam week**.
+* Time window: **Exam week: Monday 5/4 through Friday 5/8**. TODO: Exact times TBD.
 * More details to be posted later.
 
 
 ## Badges 1-15
     
-* Badges: All Lectures 1-37 & All Labs.  In other words everything.
+* Badges: All Lectures & all Labs.  In other words everything.
 * What to study:
-    + Badge Challenges 1, 2, and 3!
-    Your hand-written course notes first: they are the "executive summaries" of topics.
+    + Badge challenges 1, 2, and 3!
+    + Your hand-written course notes: they are the "executive summaries" of topics.
     + The material on the course webpage chronologically, in particular the ModernDive readings.
     + Problem sets corresponding to labs.
  
