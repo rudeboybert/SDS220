@@ -99,9 +99,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 
-<!--
-
-# Lec 21: Fri 3/13
+# Lec 22: Mon 3/30
 
 ## Announcements
 
@@ -116,9 +114,6 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 1. What happens as sample size $n$ goes up?
 
 
--->
-
-
 
 ***
 
@@ -129,6 +124,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ## Announcements
 
 1. Practice-run of Zoom lecture format
+1. Went over COVID-19 preparations
 
 
 
