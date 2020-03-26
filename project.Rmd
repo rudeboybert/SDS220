@@ -219,9 +219,47 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 
 
 
-# 3. Project Submission {#submission}
+# 3. Revised: Project Submission {#submission}
 
-## Action items
+
+
+
+
+
+***
+
+
+
+# 4. Revised: Project Resubmission {#resubmission}
+
+
+
+
+
+***
+
+
+
+# Grading Rubric
+
+TODO: determine grading rubric
+
+
+* You are only graded on your project resubmission.
+* Your project is worth 30% of your final grade. The 30% is distributed as follows:
+    1. 2.5%: Are all necessary files submitted and did you complete the "SDS/MTH 220 Exit Survey" Google Form?
+    1. 27.5%: Based on this rough [guideline criteria](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&single=true){target="_blank"}. 
+
+
+
+***
+
+# Original Phases 3 and 4
+
+For reference only, we are including the original instructions for Phase 3: Project Submission and Phase 4: Project Resubmission
+
+
+## Original Project Submission
 
 1. Read the following sections of the example [project resubmission](static/project/project_resubmission.html){target="_blank"}:
     + Section 1: Introduction
@@ -241,12 +279,7 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
     1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
 
 
-
-***
-
-
-
-# 4. Project Resubmission {#resubmission}
+## Original Project Resubmission
 
 1. Re-read the previous sections of the example [project resubmission](static/project/project_resubmission.html){target="_blank"} you read earlier. In addition, read the following sections you skipped previously:
     + Section 3 subsections 3.4, 3.5: Inference for multiple regression
@@ -263,17 +296,3 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
     1. Evaluating your peers' contributions for the project.
     1. Questions about you.
     1. General questions about the course.
-
-
-
-***
-
-
-
-# Grading Rubric
-
-* You are only graded on your project resubmission.
-* Your project is worth 30% of your final grade. The 30% is distributed as follows:
-    1. 2.5%: Are all necessary files submitted and did you complete the "SDS/MTH 220 Exit Survey" Google Form?
-    1. 27.5%: Based on this rough [guideline criteria](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&single=true){target="_blank"}. 
-
