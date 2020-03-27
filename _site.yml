@@ -13,8 +13,8 @@ output:
 navbar:
   title: SDS220
   left:
-  - icon: fa-slack fa-lg
-    href: https://sds-mth-220-2020-01.slack.com/
+#  - icon: fa-slack fa-lg
+#    href: https://sds-mth-220-2020-01.slack.com/
   - text: ModernDive
     href: https://moderndive-bert.netlify.com/
   - text: Moodle
