@@ -16,33 +16,28 @@ output:
 h1{font-weight: 400;}
 </style>
 
-# Basic information {#basicinfo}
+# Revised: Basic information {#basicinfo}
 
 * **Course title:** SDS/MTH 220: Introduction to Probability and Statistics
-* **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop app](https://slack.com/downloads/){target="_blank"}.
-* **Meeting locations/times:** 
-    + Sec01
-        + Lectures by Albert Y. Kim, MWF 10:50-12:05, Seelye 208
-        + Labs by David Rockoff
-            + L01: Tu 9:25-10:40, McConnell 102
-            + L02: Tu 1:20-2:35, Seelye 107
-    + Sec02
-        + Lectures by Katherine Kinnaird, MWF 9:25-10:40, Sabin-Reed 301
-        + Labs by Will Hopper
-            + L03: Th 9:25-10:40, Ainsworth S150
-            + L04: Th 1:20-2:35, Sabin-Reed 301
-* **Outside help**:
-    + The `#questions` channel on Slack.
-    + Spinelli Center for Quantitative Learning [Tutoring](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats){target="_blank"}: Sunday thru Thursday 7-9pm in Sabin-Reed 301. 
-    + Office hours posted on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}.
-    + Spinelli Center Data Counselor [Osman Keshawarz](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
-
+* **Communication**: All communication will take place via Slack.
+    + You must have the Slack Desktop or Mobile App installed; it's too easy to miss messages when using the browser version. You can download them [here](https://slack.com/downloads/){target="_blank"}.
+    + After you've installed Slack, add the sds-mth-220-2020-01.slack.com workspace.
+    + You are required to check Slack at least once daily.
+* **Lectures:**
+    + Monday lectures will be posted on the course webpage by Sunday night.
+    + Wednesday lectures will be posted on the course webpage by Tuesday night.
+    + Friday lectures will be posted on the course webpage by Thursday night.
+* **Getting help**:
+    + Ask questions in the `#questions` channel on Slack.
+    + Check the drop-in office hours [Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}
+    + Schedule one-on-one appointments with a Spinelli Tutor. Instructions will be posted here shortly.
+    + Schedule one-on-one appointments with the instructors or lab instructors. Instructions on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}. In the interest of keeping everyone in the loop, we ask as much as possible to limit these appointments to private/individual concerns.
 
 
 ## Instructor work-life balance
 
 * We will respond to Slack messages sent during the week within 24h. We will respond to Slack messages sent during the weekend at our own discretion.
-* If possible, please only Slack us with briefer and administrative questions; we prefer having more substantive conversations in person as it takes us less energy to understand where you are at.
+* If possible, please only Slack us with briefer and administrative questions; we prefer having more substantive conversations over Zoom as it takes us less energy to understand where you are at.
 * We will do our best to return all grading as promptly as possible.
 
 
@@ -61,7 +56,6 @@ Borrowing language from the 2019 Google J-term course here at Smith, when learni
 The material in this course challenges our understanding of statistics and probability. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the *stretch* zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be *stretching*, but not *straining*. 
 
 At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to office hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on. 
-
 
 The strain zone is never a fun place to be during a class. As you work to return to the stretch zone, you might consider the following questions: 
 
@@ -116,24 +110,18 @@ A rough topic schedule and corresponding readings are posted below on the [main 
     + Hardcopy. Available on [Amazon](https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&pd_rd_i=1500576697&pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&pd_rd_w=SqIFV&pd_rd_wg=mb7dk&pf_rd_i=desktop-dp-sims&pf_rd_m=ATVPDKIKX0DER&pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&pf_rd_r=83CCQTHW3KV5NTNHT22J&pf_rd_s=desktop-dp-sims&pf_rd_t=40701&psc=1&refRID=83CCQTHW3KV5NTNHT22J){target="_blank"}
     
 
-## Policies
-
-* Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.   
-* You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.
-* Attendance will not be explicitly taken and occasional absences are excused. However, extended absences should be mentioned to your instructor.
-* However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.
-
-
 
 ***  
 
 
 
-# Evaluation {#evaluation}
+# Revised: Evaluation {#evaluation}
 
 ## Weekly Problem Sets 15%
 
-* Total of 9 problem sets: assigned just after Monday's class at 11am, due the following week at 9am.
+*Revised: The only change for problem sets are the due dates. See the course schedule posted on the [main page](index.html) of this course webpage.*
+
+* Total of 9 problem sets.
 * Each full problem set is worth 100 pts and each "lite" problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of **600 pts**. In other words, you have a 750 - 600 = 150 point cushion.
 * This means that you can decide to not hand in at least one full problem set any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. *Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).* Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be "waved."
 * The problem sets in this class should be viewed as low-stakes opportunities to
@@ -142,9 +130,13 @@ practice, instead of evaluative tools used by the instructor to assign grades.
 
 ## Term Project 30% {#termproject}
 
+*Revised: The third and fourth phases of the term project have been revised significantly. See the [Term Project](term_project.html) page for more details.*
+
 See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
 
 ## Badge Challenges: 45%
+
+*Revised: While the mechanics of taking/submitting the badge challenges have changed since we no longer have access to Seelye self-scheduled exams, the philosophy and format of our badge challenges will remain the same. See the [Badge Challenges](badge_challenges.html) page for more details.*
 
 See [Badge Challenges](badge_challenges.html) page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge an opportunity to revise and improve your grade.
 
@@ -187,7 +179,7 @@ in your submissions.
 1. **Problem sets**:
     + No extensions will be granted without a dean's note.
     + To receive full credit, you must show your work and explain your reasoning in your solutions. 
-    + All written problem sets must be handed in by 9am on Mondays on Gradescope. No emailed submissions will be accepted.
+    + Revised: All written problem sets must be handed in ~~by 9am on Mondays~~ at the appropriate due time on Gradescope. No emailed submissions will be accepted.
 1. **Engagement**:
     + There are 4 reflective assignments for the course: 2 reflective writing assignments and the 2 self-evaluation forms. You should complete 3 of the four assignments. 
 1. **Badge Challenges**:
