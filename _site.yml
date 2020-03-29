@@ -13,8 +13,8 @@ output:
 navbar:
   title: SDS220
   left:
-  - icon: fa-slack fa-lg
-    href: https://sds-mth-220-2020-01.slack.com/
+#  - icon: fa-slack fa-lg
+#    href: https://sds-mth-220-2020-01.slack.com/
   - text: ModernDive
     href: https://moderndive-bert.netlify.com/
   - text: Moodle
@@ -23,9 +23,9 @@ navbar:
   - text: COVID-19
     href: https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/
   - text: Badge Challenges
-    href: badge_challenges.html
+    href: badge_challenges.html#challengeII
   - text: Project
-    href: project.html#proposal
+    href: project.html#revised-project-goals
   - text: Syllabus
     href: syllabus.html
 

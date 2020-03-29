@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -25,8 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -59,7 +57,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -73,18 +73,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -100,6 +95,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -119,43 +115,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -177,66 +136,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +190,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +225,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -305,16 +241,6 @@ div.tocify {
 }
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -341,12 +267,6 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="https://sds-mth-220-2020-01.slack.com/">
-    <span class="fa fa-slack fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://moderndive-bert.netlify.com/">ModernDive</a>
 </li>
 <li>
@@ -358,10 +278,10 @@ div.tocify {
   <a href="https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/">COVID-19</a>
 </li>
 <li>
-  <a href="badge_challenges.html">Badge Challenges</a>
+  <a href="badge_challenges.html#challengeII">Badge Challenges</a>
 </li>
 <li>
-  <a href="project.html#proposal">Project</a>
+  <a href="project.html#revised-project-goals">Project</a>
 </li>
 <li>
   <a href="syllabus.html">Syllabus</a>
@@ -395,13 +315,16 @@ h1{font-weight: 400;}
 <p>As you can see, the first badge challenge will have the first 5 badges available, the second will have the first 10, and the third and fourth badge challenge will have all 15 badges. During each badge challenge, you can attempt as many or as few of the available badges as you would like. <strong>Your goal, by the end of the semester, is to collect all 15 badges.</strong></p>
 <p>There are four levels for each badge: <em>G</em> – Gold, <em>S</em> – Silver, <em>B</em> – Bronze, and <em>X</em> – cannot be assessed. The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze. <strong>Thus, you do not need to (nor should you) attempt all badges on each challenge,</strong> but you do need to collect all 15 badges by the end of the term.</p>
 <p>At the end of the semester, your collected badges and badge levels will be converted into points for the 45% of your final grade assigned to badge challenges (see <a href="syllabus.html#evaluation">syllabus</a>):</p>
-<p><img src="figs/BadgeTable.png" /></p>
+<div class="figure">
+<img src="figs/BadgeTable.png" />
+
+</div>
 <p><strong>Why are we doing this?</strong></p>
 <ol style="list-style-type: decimal">
 <li>To remove the pressure, stress, and performance anxiety associated with conventional exams. The “badge challenge” system <em>guarantees</em> more than one chance to <strong>master</strong> each badge.</li>
 <li>The “badge challenge” system system allows for you to iteratively improve your statistical skills throughout the semester. Each badge challenge is an opportunity for you to practice the <em>only</em> the statistical skills that you are ready to demonstrate. For example, if you’ve already <strong>mastered</strong> a particular badge, you can focus your studying elsewhere in a targeted fashion.</li>
 <li>Since you are given the opportunity to <strong>master</strong> all 15 badges after the first three badge challenges, the fourth badge challenge during exam week becomes merely an opportunity to revise and improve your grade.</li>
-<li>The “badge challenge” system is aligned with the <strong>mastery</strong>-based learning pedagogical paradigm, which encourages a <a href="Mastery-based%20grading:%20from%20minimum%20mindset%20to%20a%20growth%20mindset" target="_blank">“growth mindset”</a> as opposed to a minimum/fixed mindset.</li>
+<li>The “badge challenge” system is aligned with the <strong>mastery</strong>-based learning pedagogical paradigm, which encourages a <a href="https://hapara.com/blog/mastery-based-grading/" target="_blank">“growth mindset”</a> as opposed to a minimum/fixed mindset.</li>
 </ol>
 <!--
 Sell it informally as:
@@ -434,7 +357,7 @@ Sell it informally as:
 <ul>
 <li>Closed-book, no internet, and individually completed</li>
 <li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
-<li>You will be given 140 mins to complete it (including transit time to writing area). <strong>Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.</strong></li>
+<li>You will be given 140 mins to complete it (including transit time to writing area). <strong>Timestamps will be strictly enforced. Any badge challenges with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.</strong></li>
 </ul></li>
 <li>After badge challenge:
 <ul>
@@ -446,7 +369,7 @@ Sell it informally as:
 <h2>Badges 1-5</h2>
 <div id="topics" class="section level3">
 <h3>Topics</h3>
-<p>Everything we have done so far in this class is mapped to Badges 1-5 in the above table of 15 badges. In other words, everything up to and including regresssion with a categorical explanatory variable. Just like with the Grammar of Graphics where you map variables to aesthetics attributes, map everything we’ve done in class so far to one of 5 badges. By “everything” we mean:</p>
+<p>Everything we have done so far in this class is mapped to Badges 1-5 in the above table of 15 badges. In other words, everything up to and including regression with a categorical explanatory variable. Just like with the Grammar of Graphics where you map variables to aesthetics attributes, map everything we’ve done in class so far to one of 5 badges. By “everything” we mean:</p>
 <ol style="list-style-type: decimal">
 <li>Lectures 1-12: Content on course webpage for each lecture along with in-class notes</li>
 <li>All the ModernDive readings in the course schedule along with learning checks (solutions are in Appendix-D of ModernDive)</li>
@@ -473,7 +396,7 @@ Sell it informally as:
 <li>Being specific enough that someone who reads it can walk through the steps unambiguously.</li>
 <li>Not being perfectly written code that necessarily works.</li>
 </ol>
-<p>Code without explanation provides a limited view into your understanding. Therefore it is important to demonstrate mastery of the “what” we are doing (the recipe, blue print, outline) versus the “how” we are goign to do it (actual functioning code).</p>
+<p>Code without explanation provides a limited view into your understanding. Therefore it is important to demonstrate mastery of the “what” we are doing (the recipe, blue print, outline) versus the “how” we are going to do it (actual functioning code).</p>
 <p>In-class example:</p>
 <hr />
 </div>
@@ -484,41 +407,41 @@ Sell it informally as:
 <div id="administrative-notes-1" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li>Time window: <strong>Friday 4/3 5pm through Monday 4/6 11pm</strong>.</li>
-<li>In preparation for badge challenge:
+<li>Time window: <strong>Friday 4/10 12:01am through Wednesday 4/15 11:59pm</strong>
 <ul>
-<li>Especially if you have never taken a Seelye Self-scheduled exam before, read the <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a> beforehand.</li>
-<li>Bring colored pencils/pens.</li>
-<li>All Office of Disability Services forms must be submitted to instructor in print before the start of the time window.</li>
+<li>You can start the badge challenge after Friday 4/10 12:01am Eastern Daylight Time</li>
+<li>You must submit your badge challenge before Wednesday 4/15 11:59pm Eastern Daylight Time</li>
 </ul></li>
-<li>Printing the badge challenge: From a macOS computer in Seelye basement during the time window
-<ul>
-<li>Access the link to print badge challenge on Moodle.</li>
-<li>Print badge challenge <strong>in color</strong>.</li>
-<li>At some point you’ll need to wait 5-10 seconds for a “paper is held in queue” pop-up box to appear before you can print.</li>
-</ul></li>
-<li>During badge challenge:
-<ul>
-<li>In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during the badge challenge time window.</li>
-<li>Closed-book, no internet, and individually completed.</li>
-<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
-<li>You will be given 140 mins to complete it (including transit time to writing area). <strong>Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.</strong></li>
-</ul></li>
-<li>After badge challenge:
-<ul>
-<li>You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.</li>
-</ul></li>
+<li>Format: We will post the format and submission method for this badge challenge at the same time as Lec24 on the evening of Thursday 4/2. <strong>We will decide on the format based on your responses to the survey posted in the “COVID-19” tab of the webpage above, which are due Tuesday 3/31 at 11pm Eastern Daylight Time.</strong></li>
 </ul>
+<!--    
+* In preparation for badge challenge:
+    + Designate a 3 hour window that you can dedicate to completing this badge challenge.
+    + Have the following ready: colored pencils/pens, blank sheets of paper, your laptop, and a mobile phone with a camera.
+    + If you haven't already, all Office of Disability Services forms must be submitted to instructor before the start of the time window.
+* "Printing the badge challenge":
+    + Instead of printing a timestamped copy of the badge challenge as you would in Seelye, you will click a link on Moodle to "start" the exam. We will use Moodle's internal timestamp logs to determine when you "started" your badge challenge
+    + You do not need to physically "print" the badge challenges.
+* "Completing the badge challenge":
+    + You will write you answers down on your blank sheets of paper.
+    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed).
+* "Submitting the badge challenge":
+    + You will submit your badge challenge on Gradescope as you would for a problem set. We will use the Gradescope submission timestamp to determine when you "submitted" your badge challenge.
+* Honor code:
+    + Closed-book, no internet, and individually completed. You may only use your laptop to view the badge challenge
+    + You will be given 3 hours to complete it. **Timestamps will be strictly enforced. Any badge challenges with pairs of timestamps indicating that more time than allowed was taken will be subject to an honor board case.**
+    + You are prohibited from discussing the badge challenge with your peers during the time window. 
+-->
 </div>
 <div id="badges-1-10" class="section level2">
 <h2>Badges 1-10</h2>
 <ul>
-<li>Badges: Lectures 1-24 &amp; Labs 1-8. In other words everything up to and including the resampling activity and confidence intervals.</li>
+<li>Badges: Lectures 1-24 &amp; problem sets 1-7. In other words everything up to resampling and not confidence intervals.</li>
 <li>What to study:
 <ul>
-<li>Badge Challenge 1! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>Badge challenge 1!</li>
+<li>Your hand-written course notes first: they are the “executive summaries” of topics.</li>
 <li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
-<li>Problem sets corresponding to labs.</li>
 </ul></li>
 </ul>
 <hr />
@@ -529,41 +452,24 @@ Sell it informally as:
 <div id="administrative-notes-2" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li>Time window: <strong>Friday 4/24 5pm through Monday 4/27 11pm</strong>.</li>
-<li>In preparation for badge challenge:
+<li>Time window: <strong>Friday 4/24 12:01am through Wednesday 4/29 11:59pm</strong>
 <ul>
-<li>Especially if you have never taken a Seelye Self-scheduled exam before, read the <a href="http://www.science.smith.edu/self-scheduled-exam-printing/" target="_blank">instructions</a> beforehand.</li>
-<li>Bring colored pencils/pens.</li>
-<li>All Office of Disability Services forms must be submitted to instructor in print before the start of the time window.</li>
+<li>You can start the badge challenge after Friday 4/24 12:01am Eastern Daylight Time</li>
+<li>You must submit your badge challenge before Wednesday 4/29 11:59pm Eastern Daylight Time</li>
 </ul></li>
-<li>Printing the badge challenge: From a macOS computer in Seelye basement during the time window
-<ul>
-<li>Access the link to print badge challenge on Moodle.</li>
-<li>Print badge challenge <strong>in color</strong>.</li>
-<li>At some point you’ll need to wait 5-10 seconds for a “paper is held in queue” pop-up box to appear before you can print.</li>
-</ul></li>
-<li>During badge challenge:
-<ul>
-<li>In order to ensure fairness, all instructors and lab instructors will not answer questions about the badge challenge during the badge challenge time window.</li>
-<li>Closed-book, no internet, and individually completed.</li>
-<li>Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you <strong>must</strong> attempt all parts to earn above <em>X</em> (cannot be assessed).</li>
-<li>You will be given 140 mins to complete it (including transit time to writing area). <strong>Timestamps will be strictly enforced. Any badge challengs with pairs of timestamps indicating than more than 140 minutes or missing timestamps are subject to an honor board case.</strong></li>
-</ul></li>
-<li>After badge challenge:
-<ul>
-<li>You are prohibited by the Honor Code from discussing the badge challenge until the end of the time window.</li>
-</ul></li>
+<li>Format: TBD</li>
+<li>We will have badge challenge III graded and returned to you by the evening of Saturday 5/2 so that you can study it for badge challenge IV.</li>
 </ul>
 </div>
 <div id="badges-1-15" class="section level2">
 <h2>Badges 1-15</h2>
 <ul>
-<li>Badges: All Lectures 1-37 &amp; all Labs. In other words everything.</li>
+<li>Badges: All Lectures 1-35 &amp; all problem sets 1-9. In other words everything.</li>
 <li>What to study:
 <ul>
-<li>Badge Challenges 1, and 2! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>Badge challenges 1 and 2!</li>
+<li>Your hand-written course notes: they are the “executive summaries” of topics.</li>
 <li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
-<li>Problem sets corresponding to labs.</li>
 </ul></li>
 </ul>
 <hr />
@@ -574,19 +480,23 @@ Sell it informally as:
 <div id="administrative-notes-3" class="section level2">
 <h2>Administrative notes</h2>
 <ul>
-<li>Time window: <strong>Exam week</strong>.</li>
-<li>More details to be posted later.</li>
+<li>Time window: <strong>Exam week: Monday 5/4 12:01am through Friday 5/8 11:59pm</strong>
+<ul>
+<li>You can start the badge challenge after Monday 5/4 12:01am Eastern Daylight Time</li>
+<li>You must submit your badge challenge before Friday 5/8 11:59pm Eastern Daylight Time</li>
+</ul></li>
+<li>Format: TBD</li>
 </ul>
 </div>
 <div id="badges-1-15-1" class="section level2">
 <h2>Badges 1-15</h2>
 <ul>
-<li>Badges: All Lectures 1-37 &amp; All Labs. In other words everything.</li>
+<li>Badges: All Lectures 1-35 &amp; all problem sets 1-9. In other words everything.</li>
 <li>What to study:
 <ul>
-<li>Badge Challenges 1, 2, and 3! Your hand-written course notes first: they are the “executive summaries” of topics.</li>
+<li>Badge challenges 1, 2, and 3!</li>
+<li>Your hand-written course notes: they are the “executive summaries” of topics.</li>
 <li>The material on the course webpage chronologically, in particular the ModernDive readings.</li>
-<li>Problem sets corresponding to labs.</li>
 </ul></li>
 </ul>
 </div>
@@ -610,49 +520,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

@@ -82,7 +82,7 @@ categ_regression_ex <- tibble(
 
 # Schedule 
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=346882447&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1015"></iframe>
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1148404917&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="925"></iframe>
 
 <!--
 {target="_blank"}
@@ -99,24 +99,17 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 
-<!--
+***
 
-# Lec 21: Fri 3/13
+
+
+# Lec 22: Mon 3/30
 
 ## Announcements
 
-1. 
-
-
-## Recap
-
-1. Used 3 "virtual" shovels with different samples sizes: 25, 50, 100. For each shovel, we used it 1000 times then computed 1000 estimates of the proportion red.
-    1. Figure 7.12: Visually compare their distributions via a faceted histogram
-    1. Table 7.1: Numerically compare their spread/variation via their standard deviation
-1. What happens as sample size $n$ goes up?
-
-
--->
+* Add the sds-mth-220-2020-01.slack.com workspace to your Desktop or Mobile version of Slack.
+* Please _carefully_ read the following updated tabs of the course webpage: "COVID-19" (if you haven't already read our update from Friday 3/27), "Badge Challenges", "Project", and "Syllabus". If anything isn't clear, please ask us in the `#questions` channel in Slack.
+* Please ensure you are doing the readings from the <https://moderndive-bert.netlify.com/> version of the book i.e. there should be a "-bert" in the link. For example, clicking the "ModernDive" tab of this webpage will take you to the correct version of the book.
 
 
 
@@ -129,6 +122,8 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ## Announcements
 
 1. Practice-run of Zoom lecture format
+1. Went over COVID-19 preparations
+
 
 
 
