@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -25,8 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -59,7 +57,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -73,18 +73,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -100,6 +95,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -119,43 +115,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -177,66 +136,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +190,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +225,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -299,16 +235,6 @@ div.tocify {
 
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -335,12 +261,6 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="https://sds-mth-220-2020-01.slack.com/">
-    <span class="fa fa-slack fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://moderndive-bert.netlify.com/">ModernDive</a>
 </li>
 <li>
@@ -352,10 +272,10 @@ div.tocify {
   <a href="https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/">COVID-19</a>
 </li>
 <li>
-  <a href="badge_challenges.html">Badge Challenges</a>
+  <a href="badge_challenges.html#challengeII">Badge Challenges</a>
 </li>
 <li>
-  <a href="project.html#proposal">Project</a>
+  <a href="project.html#revised-project-goals">Project</a>
 </li>
 <li>
   <a href="syllabus.html">Syllabus</a>
@@ -503,7 +423,7 @@ knowledge. So next time
 <div id="phase_I_feedback" class="section level2">
 <h2>General feedback for all groups</h2>
 <ol style="list-style-type: decimal">
-<li>Disclaimer: Just because things seem good now doesn’t mean your project data is set for semester. Unforseen problems may crop up during the next phase on data wrangling, at which point you may need to revise your data. This is a reality of data collection in the real world!</li>
+<li>Disclaimer: Just because things seem good now doesn’t mean your project data is set for semester. Unforeseen problems may crop up during the next phase on data wrangling, at which point you may need to revise your data. This is a reality of data collection in the real world!</li>
 <li>Do not include any <code>View()</code> statements in your <code>.Rmd</code> files as this may cause an error.</li>
 <li>Avoid “data dumps”. For example, showing the contents of all 1000 rows in a data frame. This will make your output document really large and unreadable.</li>
 </ol>
@@ -550,19 +470,70 @@ knowledge. So next time
 </ol>
 <p>If your submission is incomplete, it can lead to delays in feedback delivery.</p>
 <hr />
+<!--
+# Important note!
+
+
+> We have posted all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. **Therefore we suggest that you do not start any upcoming phases of the project until you've been instructed to.**
+
+
+
+***
+-->
 </div>
 </div>
-<div id="important-note" class="section level1">
-<h1>Important note!</h1>
-<blockquote>
-<p>We have posted all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. <strong>Therefore we suggest that you do not start any upcoming phases of the project until you’ve been instructed to.</strong></p>
-</blockquote>
+<div id="revised-project-goals" class="section level1">
+<h1>Revised: Project Goals</h1>
+<p>The 220 instructor team worked hard to distill this course down to the most important ideas of this class, regardless of the semester or the situation. In pursuit of that distillation, we re-examined each aspect of the course, in particular the project. Our original goals for the project were:</p>
+<ol style="list-style-type: decimal">
+<li>Expose students to the entire data/science pipeline as shown <a href="https://r4ds.had.co.nz/introduction.html" target="_blank">here</a>, in particular emphasizing exploratory data analysis (EDA) .</li>
+<li>Convince students that data collection &amp; wrangling are <strong>essential yet difficult tasks</strong> in statistics. In other words, the high-curated ready-to-go datasets (like those used in our textbook) are not the norm in statistics research.</li>
+<li>Consolidate the many many concepts needed to understand inference for multiple regression models into one assignment.</li>
+<li>Encourage students to develop a sense of ownership over their work, as compared to problem sets and badge challenges where we – the instructors – select the data, the question of interest, and the method for you.</li>
+</ol>
+<p>Because a remote learning model of education makes both (1) coordinating group work and (2) getting help with the coding aspects of the project particularly difficult, we’ve decided to revise the project. In this revision, we are balancing working in a learning community with removing the stress of group work. Like the original project, this revised version will have 4 phases. However, the last two phases will differ substantially from the original version:</p>
+<ol style="list-style-type: decimal">
+<li>Project Data (already completed)</li>
+<li>Project Proposal (already completed)</li>
+<li>Project Submission (revised)</li>
+<li>Project Resubmission (revised)</li>
+</ol>
 <hr />
 </div>
 <div id="submission" class="section level1">
-<h1>3. Project Submission</h1>
-<div id="action-items" class="section level2">
-<h2>Action items</h2>
+<h1>3. Revised: Project Submission</h1>
+<p>As stated above, we have four goals for this project, and at this point in the process (i.e. after phase two submission) we believe that each statistician in SDS/MTH 220 has explicit experience with at least one of the goals. So for the third “Project Submission” phase of the project <strong>each</strong> student will be submitting a 1000 and 1200 word reflection piece on your experience. Action items:</p>
+<ol style="list-style-type: decimal">
+<li>Begin by taking a few notes on your experience so far. A few things you might want to consider are:
+<ul>
+<li>What went really well so far?</li>
+<li>What were unexpected challenges for you and your team?</li>
+<li>What do you wish you had done differently so far?</li>
+</ul></li>
+<li>Then with these notes in mind, read the feedback from Phase 2 (to be delivered by Mon 4/6) and review the feedback from Phase 1. Does the feedback surprise you? Compare and contrast the feedback with your notes.</li>
+<li>Now is the time to loop in your group. Have a discussion over either Zoom or Slack about (1) the goals for the project and (2) the feedback. It’s completely normal if each of you resonate with a different goal. Even though you have worked in a group, you are a collection of individuals with different experiences.</li>
+<li>With all of this in mind, respond to the following prompt:</li>
+</ol>
+<blockquote>
+<p>This project has 4 original goals in mind. Select at least one of these goals and discuss how your work so far on the project has already accomplished this goal. Note that we are asking you to write authentically about your experience so far, not to tell us what you think we want to hear.</p>
+</blockquote>
+<p>There are a few logistics:</p>
+<ul>
+<li>You will write your paper following the instructions in this <a href="https://docs.google.com/document/d/1fMXLAWDMehHWaFp1cOtRcD-pf2aJEnmgQnkcAwQ6Syk/" target="_blank">template Google Doc</a>. It needs to be between 1000 and 1200 words.</li>
+<li>Your paper must be written by you, but in the footnote please note when you met with your group and one topic that your group discussed that was not included in your reflection piece.</li>
+</ul>
+<hr />
+</div>
+<div id="resubmission" class="section level1">
+<h1>4. Revised: Project Resubmission</h1>
+<p>Just as with the original incarnation of the project, there is a resubmission phase. After you have submitted the third phase, we will give you feedback on your submission. For the resubmission, you will submit a revision of your paper that addresses the feedback we’ve given you.</p>
+<hr />
+</div>
+<div id="original-phases-3-and-4" class="section level1">
+<h1>Original Phases 3 and 4</h1>
+<p>For reference only, we are including the original instructions for Phase 3: Project Submission and Phase 4: Project Resubmission</p>
+<div id="original-project-submission" class="section level2">
+<h2>Original Project Submission</h2>
 <ol style="list-style-type: decimal">
 <li>Read the following sections of the example <a href="static/project/project_resubmission.html" target="_blank">project resubmission</a>:
 <ul>
@@ -592,11 +563,9 @@ knowledge. So next time
 <li>Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.</li>
 </ol></li>
 </ol>
-<hr />
 </div>
-</div>
-<div id="resubmission" class="section level1">
-<h1>4. Project Resubmission</h1>
+<div id="original-project-resubmission" class="section level2">
+<h2>Original Project Resubmission</h2>
 <ol style="list-style-type: decimal">
 <li>Re-read the previous sections of the example <a href="static/project/project_resubmission.html" target="_blank">project resubmission</a> you read earlier. In addition, read the following sections you skipped previously:
 <ul>
@@ -622,18 +591,7 @@ knowledge. So next time
 <li>General questions about the course.</li>
 </ol></li>
 </ol>
-<hr />
 </div>
-<div id="grading-rubric" class="section level1">
-<h1>Grading Rubric</h1>
-<ul>
-<li>You are only graded on your project resubmission.</li>
-<li>Your project is worth 30% of your final grade. The 30% is distributed as follows:
-<ol style="list-style-type: decimal">
-<li>2.5%: Are all necessary files submitted and did you complete the “SDS/MTH 220 Exit Survey” Google Form?</li>
-<li>27.5%: Based on this rough <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&amp;single=true" target="_blank">guideline criteria</a>.</li>
-</ol></li>
-</ul>
 </div>
 
 
@@ -654,49 +612,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

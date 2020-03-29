@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -25,8 +25,6 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 
 
@@ -59,7 +57,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -73,18 +73,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -100,6 +95,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -119,43 +115,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -177,66 +136,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = false;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -250,12 +190,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -291,6 +225,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -305,16 +241,6 @@ div.tocify {
 }
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -341,12 +267,6 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="https://sds-mth-220-2020-01.slack.com/">
-    <span class="fa fa-slack fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="https://moderndive-bert.netlify.com/">ModernDive</a>
 </li>
 <li>
@@ -358,10 +278,10 @@ div.tocify {
   <a href="https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/">COVID-19</a>
 </li>
 <li>
-  <a href="badge_challenges.html">Badge Challenges</a>
+  <a href="badge_challenges.html#challengeII">Badge Challenges</a>
 </li>
 <li>
-  <a href="project.html#proposal">Project</a>
+  <a href="project.html#revised-project-goals">Project</a>
 </li>
 <li>
   <a href="syllabus.html">Syllabus</a>
@@ -387,44 +307,33 @@ div.tocify {
 h1{font-weight: 400;}
 </style>
 <div id="basicinfo" class="section level1">
-<h1>Basic information</h1>
+<h1>Revised: Basic information</h1>
 <ul>
 <li><strong>Course title:</strong> SDS/MTH 220: Introduction to Probability and Statistics</li>
-<li><strong><del>Email:</del> Slack team</strong>: Click hashtag icon in navbar for the browser interface or use the <a href="https://slack.com/downloads/" target="_blank">desktop app</a>.</li>
-<li><strong>Meeting locations/times:</strong>
+<li><strong>Communication</strong>: All communication will take place via Slack.
 <ul>
-<li>Sec01
-<ul>
-<li>Lectures by Albert Y. Kim, MWF 10:50-12:05, Seelye 208</li>
-<li>Labs by David Rockoff
-<ul>
-<li>L01: Tu 9:25-10:40, McConnell 102</li>
-<li>L02: Tu 1:20-2:35, Seelye 107</li>
+<li>You must have the Slack Desktop or Mobile App installed; it’s too easy to miss messages when using the browser version. You can download them <a href="https://slack.com/downloads/" target="_blank">here</a>.</li>
+<li>After you’ve installed Slack, add the sds-mth-220-2020-01.slack.com workspace.</li>
 </ul></li>
-</ul></li>
-<li>Sec02
+<li><strong>Lectures:</strong>
 <ul>
-<li>Lectures by Katherine Kinnaird, MWF 9:25-10:40, Sabin-Reed 301</li>
-<li>Labs by Will Hopper
+<li>Monday lectures will be posted on the course webpage by Sunday night.</li>
+<li>Wednesday lectures will be posted on the course webpage by Tuesday night.</li>
+<li>Friday lectures will be posted on the course webpage by Thursday night.</li>
+</ul></li>
+<li><strong>Getting help</strong>:
 <ul>
-<li>L03: Th 9:25-10:40, Ainsworth S150</li>
-<li>L04: Th 1:20-2:35, Sabin-Reed 301</li>
-</ul></li>
-</ul></li>
-</ul></li>
-<li><strong>Outside help</strong>:
-<ul>
-<li>The <code>#questions</code> channel on Slack.</li>
-<li>Spinelli Center for Quantitative Learning <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats" target="_blank">Tutoring</a>: Sunday thru Thursday 7-9pm in Sabin-Reed 301.</li>
-<li>Office hours posted on <a href="https://moodle.smith.edu/course/view.php?id=37125" target="_blank">Moodle</a>.</li>
-<li>Spinelli Center Data Counselor <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">Osman Keshawarz</a>.</li>
+<li>Ask questions in the <code>#questions</code> channel on Slack.</li>
+<li>Check the drop-in Zoom office hours <a href="https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">Google Calendar</a>.</li>
+<li>Schedule one-on-one appointments with a Spinelli Tutor. Instructions will be posted here shortly.</li>
+<li>Schedule one-on-one appointments with the instructors or lab instructors using the instructions on <a href="https://moodle.smith.edu/course/view.php?id=37125" target="_blank">Moodle</a>. In the interest of keeping everyone in the loop, we ask as much as possible to limit these appointments to private/individual concerns.</li>
 </ul></li>
 </ul>
 <div id="instructor-work-life-balance" class="section level2">
 <h2>Instructor work-life balance</h2>
 <ul>
 <li>We will respond to Slack messages sent during the week within 24h. We will respond to Slack messages sent during the weekend at our own discretion.</li>
-<li>If possible, please only Slack us with briefer and administrative questions; we prefer having more substantive conversations in person as it takes us less energy to understand where you are at.</li>
+<li>If possible, please only Slack us with briefer and administrative questions; we prefer having more substantive conversations over Zoom as it takes us less energy to understand where you are at.</li>
 <li>We will do our best to return all grading as promptly as possible.</li>
 </ul>
 <hr />
@@ -493,24 +402,15 @@ h1{font-weight: 400;}
 <li>Hardcopy. Available on <a href="https://www.amazon.com/Introductory-Statistics-Randomization-Simulation-David/dp/1500576697/ref=pd_sbs_14_2?_encoding=UTF8&amp;pd_rd_i=1500576697&amp;pd_rd_r=8a25adfe-b61a-11e8-8e51-357518f34f72&amp;pd_rd_w=SqIFV&amp;pd_rd_wg=mb7dk&amp;pf_rd_i=desktop-dp-sims&amp;pf_rd_m=ATVPDKIKX0DER&amp;pf_rd_p=53dead45-2b3d-4b73-bafb-fe26a7f14aac&amp;pf_rd_r=83CCQTHW3KV5NTNHT22J&amp;pf_rd_s=desktop-dp-sims&amp;pf_rd_t=40701&amp;psc=1&amp;refRID=83CCQTHW3KV5NTNHT22J" target="_blank">Amazon</a></li>
 </ul></li>
 </ol>
-<div id="policies" class="section level2">
-<h2>Policies</h2>
-<ul>
-<li>Bring your laptop, a set of headphones, colored pens/pencils, and your paper notebook to every lecture.<br />
-</li>
-<li>You are expected to stay until the end of lecture. If you need to leave before the end of lecture, please confirm with me first.</li>
-<li>Attendance will not be explicitly taken and occasional absences are excused. However, extended absences should be mentioned to your instructor.</li>
-<li>However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.</li>
-</ul>
 <hr />
 </div>
-</div>
 <div id="evaluation" class="section level1">
-<h1>Evaluation</h1>
+<h1>Revised: Evaluation</h1>
 <div id="weekly-problem-sets-15" class="section level2">
 <h2>Weekly Problem Sets 15%</h2>
+<p><em>Revised: The only change for problem sets are the due dates. See the course schedule posted on the <a href="index.html">main page</a> of this course webpage.</em></p>
 <ul>
-<li>Total of 9 problem sets: assigned just after Monday’s class at 11am, due the following week at 9am.</li>
+<li>Total of 9 problem sets.</li>
 <li>Each full problem set is worth 100 pts and each “lite” problem set is worth 50 pts. So there are total of 750 possible pts, however the final computation will be out of <strong>600 pts</strong>. In other words, you have a 750 - 600 = 150 point cushion.</li>
 <li>This means that you can decide to not hand in at least one full problem set any reason. It could be because you are ill, you forgot about the assignment, or you had too much work for your other courses. <em>Note that pre-planned “dropping” of labs should be used sparingly because we can not predict when life will happen (ie. illness, etc).</em> Alternatively, you could hand in all the problem sets and allow for smaller mistakes on each one to effectively be “waved.”</li>
 <li>The problem sets in this class should be viewed as low-stakes opportunities to practice, instead of evaluative tools used by the instructor to assign grades. <strong>Each problem set is worth less than 2% of your final grade</strong>.</li>
@@ -518,10 +418,12 @@ h1{font-weight: 400;}
 </div>
 <div id="termproject" class="section level2">
 <h2>Term Project 30%</h2>
-<p>See <a href="term_project.html">Term Project</a> page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see <a href="#engagement">Engagement</a> below.</p>
+<p><em>Revised: The third and fourth phases of the term project have been revised significantly. See the <a href="term_project.html">Term Project</a> page for more details.</em></p>
+<p>See <a href="term_project.html">Term Project</a> page. While your term project grade is only based on your final resubmission, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see <a href="#engagement">Engagement</a> below.</p>
 </div>
 <div id="badge-challenges-45" class="section level2">
 <h2>Badge Challenges: 45%</h2>
+<p><em>Revised: While the mechanics of taking/submitting the badge challenges have changed since we no longer have access to Seelye self-scheduled exams, the “mastery-based grading” philosophy of our badge challenges will remain the same. See the <a href="badge_challenges.html">Badge Challenges</a> page for more details.</em></p>
 <p>See <a href="badge_challenges.html">Badge Challenges</a> page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge an opportunity to revise and improve your grade.</p>
 </div>
 <div id="engagement" class="section level2">
@@ -530,7 +432,7 @@ h1{font-weight: 400;}
 <p>Participation can take many forms, including but not limited to: attending class meetings, being active on our course slack, participating in discussion in class, offering ideas and questions in class or on slack. Beyond attending class, our class as a community will generate a list of what we believe are ways to engage and participate in our course. Adding to this list one way that you are called to participate in this course. If you find yourself unwilling or resistant to adding to this list, examine this. <em>What is holding you back?</em> <em>What would help propel you to action?</em></p>
 <p>The engagement part of the course will be graded with student input. In the week before spring break and during the last week of classes, you will be asked to complete a self-evaluation of your class engagement in context of the class engagement list. Your self-evaluations will be a critical part of determining this section of your grade, but not the only determining factor.</p>
 </div>
-<div id="policies-1" class="section level2">
+<div id="policies" class="section level2">
 <h2>Policies</h2>
 <ol style="list-style-type: decimal">
 <li><strong>Collaboration</strong>: While we encourage you to work with your peers for problem sets and labs, you must submit your own answers and not simple rewordings of another’s work. Furthermore, all collaborations must be explicitly acknowledged in your submissions.</li>
@@ -538,7 +440,7 @@ h1{font-weight: 400;}
 <ul>
 <li>No extensions will be granted without a dean’s note.</li>
 <li>To receive full credit, you must show your work and explain your reasoning in your solutions.</li>
-<li>All written problem sets must be handed in by 9am on Mondays on Gradescope. No emailed submissions will be accepted.</li>
+<li>Revised: All written problem sets must be handed in <del>by 9am on Mondays</del> at the appropriate due time on Gradescope. No emailed submissions will be accepted.</li>
 </ul></li>
 <li><strong>Engagement</strong>:
 <ul>
@@ -615,49 +517,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
