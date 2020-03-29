@@ -112,6 +112,14 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 * Please ensure you are doing the readings from the <https://moderndive-bert.netlify.com/> version of the book i.e. there should be a "-bert" in the link. For example, clicking the "ModernDive" tab of this webpage will take you to the correct version of the book.
 
 
+## Chalk Talks
+1. Watch this [mini-lecture](https://www.showme.com/sh?h=nt6tx4K){target="_blank"} connecting Monday's class from before spring break to now. Then read sections 7.3 and 7.4 in our book.
+2. Watch this [bonus mini-lecture](https://www.showme.com/sh?h=qfDITQW){target="_blank"} on SampLING distributions. 
+
+## Discussion Sessions
+
+There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar! 
+
 
 ***
 
@@ -123,7 +131,6 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 1. Practice-run of Zoom lecture format
 1. Went over COVID-19 preparations
-
 
 
 
