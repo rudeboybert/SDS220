@@ -22,16 +22,15 @@ h1{font-weight: 400;}
 * **Communication**: All communication will take place via Slack.
     + You must have the Slack Desktop or Mobile App installed; it's too easy to miss messages when using the browser version. You can download them [here](https://slack.com/downloads/){target="_blank"}.
     + After you've installed Slack, add the sds-mth-220-2020-01.slack.com workspace.
-    + You are required to check Slack at least once daily.
 * **Lectures:**
     + Monday lectures will be posted on the course webpage by Sunday night.
     + Wednesday lectures will be posted on the course webpage by Tuesday night.
     + Friday lectures will be posted on the course webpage by Thursday night.
 * **Getting help**:
     + Ask questions in the `#questions` channel on Slack.
-    + Check the drop-in office hours [Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}
+    + Check the drop-in Zoom office hours [Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}.
     + Schedule one-on-one appointments with a Spinelli Tutor. Instructions will be posted here shortly.
-    + Schedule one-on-one appointments with the instructors or lab instructors. Instructions on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}. In the interest of keeping everyone in the loop, we ask as much as possible to limit these appointments to private/individual concerns.
+    + Schedule one-on-one appointments with the instructors or lab instructors using the instructions on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}. In the interest of keeping everyone in the loop, we ask as much as possible to limit these appointments to private/individual concerns.
 
 
 ## Instructor work-life balance
@@ -132,11 +131,11 @@ practice, instead of evaluative tools used by the instructor to assign grades.
 
 *Revised: The third and fourth phases of the term project have been revised significantly. See the [Term Project](term_project.html) page for more details.*
 
-See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission on the last day of class, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
+See [Term Project](term_project.html) page. While your term project grade is only based on your final resubmission, your level of contributions at all the intermediate steps (data, proposal, and initial submission) will affect your engagement grade; see [Engagement](#engagement) below.
 
 ## Badge Challenges: 45%
 
-*Revised: While the mechanics of taking/submitting the badge challenges have changed since we no longer have access to Seelye self-scheduled exams, the philosophy and format of our badge challenges will remain the same. See the [Badge Challenges](badge_challenges.html) page for more details.*
+*Revised: While the mechanics of taking/submitting the badge challenges have changed since we no longer have access to Seelye self-scheduled exams, the "mastery-based grading" philosophy of our badge challenges will remain the same. See the [Badge Challenges](badge_challenges.html) page for more details.*
 
 See [Badge Challenges](badge_challenges.html) page. Note that is possible to satisfy all 15 badges in the first three badge challenges, making the 4th badge challenge an opportunity to revise and improve your grade.
 

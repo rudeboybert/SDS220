@@ -150,7 +150,7 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 
 ## General feedback for all groups {#phase_I_feedback}
 
-1. Disclaimer: Just because things seem good now doesn't mean your project data is set for semester. Unforseen problems may crop up during the next phase on data wrangling, at which point you may need to revise your data. This is a reality of data collection in the real world!
+1. Disclaimer: Just because things seem good now doesn't mean your project data is set for semester. Unforeseen problems may crop up during the next phase on data wrangling, at which point you may need to revise your data. This is a reality of data collection in the real world!
 1. Do not include any `View()` statements in your `.Rmd` files as this may cause an error.
 1. Avoid "data dumps". For example, showing the contents of all 1000 rows in a data frame. This will make your output document really large and unreadable.
 
@@ -222,18 +222,14 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 
 # Revised: Project Goals {#revised-project-goals}
 
-The 220 instructor team is working on distilling this course down to the most important ideas of this class, regardless of the semester or the situation. In pursuit of that distillation, we are re-examining each aspect of the course, including the project. 
+The 220 instructor team worked hard to distill this course down to the most important ideas of this class, regardless of the semester or the situation. In pursuit of that distillation, we re-examined each aspect of the course, in particular the project. Our original goals for the project were: 
 
-Our original goals for the project were: 
+1. Expose students to the entire data/science pipeline as shown [here](https://r4ds.had.co.nz/introduction.html){target="_blank"}, in particular emphasizing exploratory data analysis (EDA) . 
+1. Convince students that data collection & wrangling are **essential yet difficult tasks** in statistics. In other words, the high-curated ready-to-go datasets (like those used in our textbook) are not the norm in statistics research.
+1. Consolidate the many many concepts needed to understand inference for multiple regression models into one assignment. 
+1. Encourage students to develop a sense of ownership over their work, as compared to problem sets and badge challenges where we -- the instructors -- select the data, the question of interest, and the method for you. 
 
-1. Exposing students to the entire data/science pipeline as shown [here](https://r4ds.had.co.nz/introduction.html){target="_blank"}, in particular emphasizing exploratory data analysis (or EDA) . 
-1. Convincing students that data collection & wrangling are **essential yet difficult tasks** in statistics. In other words, the high-curated ready-to-go datasets (like those used in our textbook) are not the norm in statistics research.
-1. Consolidating the many many concepts needed to understand inference for multiple regression models into one assignment. 
-1. Encouraging students to develop a sense of ownership over their work, as compared to problem sets and badge challenges where we -- the instructors -- select the data, the question of interest, and the method for you. 
-
-Because a remote learning model of education makes both (1) coordinating group work and (2) getting help with the coding aspects of the project particularly difficult, we’ve decided to revise the project.
-
-In this revision, we are balancing working in a learning community with removing the stress of group work. Like the original project, this revised version will have 4 phases, but in this revision, the last two phases will differ substantially from the original version:
+Because a remote learning model of education makes both (1) coordinating group work and (2) getting help with the coding aspects of the project particularly difficult, we've decided to revise the project. In this revision, we are balancing working in a learning community with removing the stress of group work. Like the original project, this revised version will have 4 phases. However, the last two phases will differ substantially from the original version:
 
 1. Project Data (already completed)
 1. Project Proposal (already completed)
@@ -248,22 +244,22 @@ In this revision, we are balancing working in a learning community with removing
 
 # 3. Revised: Project Submission {#submission}
 
-As stated above, we have four goals for this project, and at this point in the process (i.e. after phase two submission) we believe that each statistician in SDS/MTH 220 has explicit experience with at least one of the goals. So for the third phase “Project Submission” each student will be submitting a 3 to 5 page double spaced essay on your experience. Action Items:
+As stated above, we have four goals for this project, and at this point in the process (i.e. after phase two submission) we believe that each statistician in SDS/MTH 220 has explicit experience with at least one of the goals. So for the third “Project Submission”  phase of the project **each** student will be submitting a 1000 and 1200 word reflection piece on your experience. Action items:
 
 1. Begin by taking a few notes on your experience so far. A few things you might want to consider are:
     + What went really well so far?
     + What were unexpected challenges for you and your team?
     + What do you wish you had done differently so far? 
-1. Then with these notes in mind, read the feedback from Phase 2 and review the feedback from Phase 1. Does the feedback surprise you? Compare and contrast the feedback with your notes. 
-1. Now is the time to loop in your group. Have a discussion over either Zoom or Slack about (1) the goals for the project and (2) the feedback. It’s totally normal if each of you resonate with a different goal. Even though you have worked in a group, you are a collection of individuals with different experiences. 
+1. Then with these notes in mind, read the feedback from Phase 2 (to be delivered by Mon 4/6) and review the feedback from Phase 1. Does the feedback surprise you? Compare and contrast the feedback with your notes. 
+1. Now is the time to loop in your group. Have a discussion over either Zoom or Slack about (1) the goals for the project and (2) the feedback. It’s completely normal if each of you resonate with a different goal. Even though you have worked in a group, you are a collection of individuals with different experiences. 
 1. With all of this in mind, respond to the following prompt:
 
-> This project has 4 original goals in mind. Select at least one of these goals and discuss how your work so far on the project has already accomplished this goal. Note that we are asking you to write authentically about your experience, not to tell us what you think we want to hear about your work on the project so far. 
+> This project has 4 original goals in mind. Select at least one of these goals and discuss how your work so far on the project has already accomplished this goal. Note that we are asking you to write authentically about your experience so far, not to tell us what you think we want to hear. 
 
 There are a few logistics:
 
 * You will write your paper following the instructions in this [template Google Doc](https://docs.google.com/document/d/1fMXLAWDMehHWaFp1cOtRcD-pf2aJEnmgQnkcAwQ6Syk/){target="_blank"}. It needs to be between 1000 and 1200 words.
-* Your paper must be written by you, but in a footnote, endnote, or appendix, please note when you met with your group and one thing that your group discussed that was not included in your reflection.
+* Your paper must be written by you, but in the footnote please note when you met with your group and one topic that your group discussed that was not included in your reflection piece.
 
 
 
@@ -278,24 +274,6 @@ Just as with the original incarnation of the project, there is a resubmission ph
 
 
 ***
-
-
-
-<!--
-# Grading Rubric
-
-TODO: determine grading rubric
-
-
-* You are only graded on your project resubmission.
-* Your project is worth 30% of your final grade. The 30% is distributed as follows:
-    1. 2.5%: Are all necessary files submitted and did you complete the "SDS/MTH 220 Exit Survey" Google Form?
-    1. 27.5%: Based on this rough [guideline criteria](https://docs.google.com/spreadsheets/d/e/2PACX-1vRGs5tNHneQX7mKfQWEMEpxRm9iu79b63KBO0LnfB10KIphB0Igq_p2_yw-sRRjdhhB9Vck4LRU3vV3/pubhtml?gid=227075812&single=true){target="_blank"}. 
-
-
-
-***
--->
 
 
 
