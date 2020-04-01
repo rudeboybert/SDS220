@@ -97,14 +97,19 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 - 
 -->
 
+
+
 ***
+
+
 
 # Lec 23: Wed 4/1
 
 ## Announcements
-Please read the announcements from Mon 3/30
 
-## Chalk Talks
+1. Please read the announcements from Mon 3/30
+
+## Chalk Talk
 
 1. Watch this [mini-lecture](https://www.showme.com/sh?h=ZtNEJea){target="_blank"} connecting Monday's class to today's topic. 
 2. Then read sections 7.5 and 7.6 in our book.
@@ -113,6 +118,8 @@ Please read the announcements from Mon 3/30
 ## Discussion Sessions
 
 There are 4 discussion sessions between 4/1 and 4/2. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar! 
+
+
 
 ***
 
@@ -128,12 +135,14 @@ There are 4 discussion sessions between 4/1 and 4/2. They are listed on [this Go
 
 
 ## Chalk Talks
+
 1. Watch this [mini-lecture](https://www.showme.com/sh?h=nt6tx4K){target="_blank"} connecting Monday's class from before spring break to now. Then read sections 7.3 and 7.4 in our book.
 2. Watch this [bonus mini-lecture](https://www.showme.com/sh?h=qfDITQW){target="_blank"} on SampLING distributions. 
 
 ## Discussion Sessions
 
 There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar! 
+
 
 
 ***
