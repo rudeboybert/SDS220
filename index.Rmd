@@ -127,7 +127,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ## Discussion Sessions
 
 1. There are 4 Zoom discussion sessions between Fri 4/3 and Sun 4/5. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar!
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper's Fri 4/3 session is between 9:00am - 10:30am eastern.
+1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper's Fri 4/3 session is between 9:00am - 10:30am Eastern.
 
 
 ## Getting More Help
