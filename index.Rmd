@@ -114,8 +114,13 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Chalk Talk
 
-1. Today: We discuss resampling from a single sample.
-1. Watch this [mini-lecture](){target="_blank"}
+1. In preparation, have the following figures and tables ready in separate tabs in your browser:
+    1. ModernDive Figure 7.15 comparing three sampl-ING distributions of $\widehat{p}$ based on samples of size $n$ = 25, 50, and 100.
+    1. ModernDive Table 7.5 on difference scenarios for sampling for (statistical) inference
+1. Watch this mini-lecture. Note at 17m54s it is a little longer than you can expect this semester as I both recapped Ch7 on Sampling and was getting used to the tech.  
+<center>
+<iframe src="https://www.showme.com/sma/embed/?s=HxoE3cm" width="578" height="433" frameborder="0"></iframe>
+</center>
 1. Read from the beginning of Chapter 8 up to and including 8.2 in our book. Click the "ModernDive" tab above to ensure you're reading the right version of the book.
 
 
@@ -128,7 +133,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ## Getting More Help
 
 1. To schedule a one-on-one appointment with a Spinelli Tutor, visit their [self-scheduled appointment calendar](https://calendar.google.com/calendar/selfsched?sstoken=UUU0UTRmUnpvVmhIfGRlZmF1bHR8OTk2MWU3M2M2NmI1NjhiODdjMzhiZjVhM2Q1Yjg5NDc){target="_blank"}.
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Chichi's first Wed 4/1 appointment block is between 9:30am – 10:15am eastern.
+1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Chichi's first Fri 4/3 appointment block is between 9:30am – 10:15am eastern.
 
 
 
