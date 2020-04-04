@@ -138,6 +138,148 @@ In-class example:
 
 
 
+# Revised Format {#challenge-format}
+
+<!--
+https://docs.google.com/document/d/1tHFupDpC1ZeoTeJAOk4_D0uAatG9n19nmmUGkrH6y7w/edit
+-->
+
+In this new phase of the course, we are adjusting the badge challenges to follow a **self-graded** model. This model is used by certain members of Smith's Engineering Department and this semester is being expanded in some engineering classes to their exams. 
+
+## Motivation
+
+As stated on our COVID-19 Information document, our overarching theme for the rest of the semester is **Maximal Flexibility**. The world has changed, and your learning spaces and environments have changed drastically. We believe that employing a version of self-graded badge challenges provides  for 1) greater flexibility than trying to "proceed as normal" and 2) more equity across variations in living situations and learning environments. All this while still retaining the badge challenge system's core philosophy of "mastery-based learning."
+
+
+## Logistics
+
+First and foremost, yes, there are still badge challenges. But how they are deployed is now in a three stage process. Below lists how this will work: 
+
+* There are still badge challenge "windows", but they are longer than the Seelye self-scheduled window we had for badge challenge 1. 
+* The maximum number of badges that you can turn in at the end of the Phase 3 is 7. After describing the process, there is a FAQ section where we will justify the reasoning behind our decisions. 
+
+Phase 1 - Initial solutions for badge challenge questions
+
+* This phase resembles the "usual" model where you will have 3 hours from the time you download the badge challenge from Moodle and when you stop working. Note you have 3h instead of 2h20min.
+* You are not required to print the badge challenge. Rather, you only need to download it onto a device to view it. 
+* Just as with Badge Challenge 1, you are completing the badge challenge on paper without the aid of a computing device (except to view the badge challenge questions), your class notes, or the textbook. 
+* In this phase, each question should be on its own page. In other words, do not try to squeeze two questions or parts of two questions onto the same physical page. 
+* In this phase, only the questions that you attempt "move on" to Phase 2 . 
+
+Phase 2 - Checking your Phase 1
+
+* In this phase, you will upload your Phase 1 on Moodle and then automatically get access to the instructor-created solution guide. 
+* To create a PDF of all of your answers to submit, we recommend using either:
+    1. A scanner if you have access to one 
+    1. The CamScanner on a smartphone
+    1. Creating photos using your computer's camera and then converting these photos to PDF
+* Note that the time to scan and upload your file is NOT part of your 3 hour window in Phase 1. 
+* Once you have the solutions, you will correct your Phase 1 work in a different color ink.  Please choose colors that are radically different from each other so that we can easily distinguish work from different phases
+* There is no time-limit on this phase. 
+
+Phase 3 - Reflecting on and grading your current understanding
+
+* In Phase 2, you correct your original work. In this phase, you will assess at what level your mastery of the concept is. 
+* For each question, you will download and fill out a cover page that allows for you to reflect on your learning and allows you to assign a level for your current understanding. A preview of the cover page can be found [here](https://docs.google.com/document/d/1alQwvwQGEBrTF1COCxG1lQMRUyn1ouacSolwibAditk/){target="_blank"}; you will notice that it has:
+    + A reflection box
+    + A marking section on completion of the question
+    + A correction and grading section 
+    + A section about the honor code
+* For the questions that you would like to submit for final grading by the instructors, you will upload each one individually to Gradescope this time. Each question will be submitted as a PDF using the same method as in Phase 2, and will be a packet in the following order:
+    1. Cover page
+    1. Phase 1 attempt with visible corrections (in a radically different color)
+* Note that you can submit up to seven questions for final grading. 
+* Again, there is no time-limit on this phase. 
+
+Phase 4 Final Grading - This part is done by the instructor team, but we are adding it here so you know what happens after you submit everything. 
+
+* We will look over each solution as well as the corrections and reflections. We will comment on your overall work (including your assessment of your understanding). 
+* We then will either affirm your score or adjust if necessary. 
+
+
+## Logistical practicalities
+
+Here's a quick breakdown of what you need for each phase:
+
+* Phase 1 - 
+    + Your brain
+    + A laptop (or desktop) download the badge challenge questions onto
+    + Blank paper (lined or unlined)
+    + A pen or pencil and 2 colored pencils or pens for drawing
+    + A device to time your 3-hour window
+* Phase 2 - 
+    + A device to scan your badge challenge with: a scanner, the CamScanner app on your phone, or some device that can take pictures
+    + A laptop (or desktop) to upload your resulting PDF of Phase 1 answers to Moodle, like a computer or laptop
+    + A laptop (or desktop) to download the instructor created solutions
+    + A radically different colored pen to note your corrections. Note: A blue pen and a black pen are too close. Think blue/black pen vs. red/hot pink level of "radically different" color. 
+* Phase 3 - 
+    + A laptop (or desktop) to download and edit a cover page for each question
+    + The same device as in Phase 2 to scan your paper 
+    + A program to create a PDF of the cover page and corrected answer for each question. Depending on what you use, this may be automatically done above. 
+    + A laptop (or desktop) to upload each question to Gradescope
+
+
+## Honor code
+
+Like everything in our course, this new implementation of the badge challenges falls under the purview of Smith's Honor Code. In keeping with Provost Thurston's recommendation to be explicit about the Honor Code as it relates to anything related to assessments, we are listing a few details below:
+
+* You may only use your computer or other computing devices during Phase 1 to look at the list of questions (as if they were a printed copy). Using your computer or computing device for any other purpose during that initial 3-hour period is a violation of the Honor Code. 
+* Using any materials beyond blank paper, writing implements, and your own very talented brain is not permitted. Doing so is a violation of the honor code. 
+* Giving or receiving a copy of the instructor created solution guide to anyone in this course or anyone outside of this semester's course are violations of the Honor Code. Similarly, uploading anything other than your Phase 1 attempts to Moodle is also a violation of the Honor Code. 
+* In Phase 2, you are asked to use one radically different color to mark your corrections. Editing your Phase 1 answers in the same color is a violation of the Honor Code. 
+* Discussing the badge challenge with anyone during the window is a violation.
+
+This is a long list of details, and we want to assure you that we are only detailing this list to be clear about exactly how the Honor Code applies. We are seeking to be transparent with expectations under this new system, and we want to underline that we absolutely do trust you. 
+
+We love working at an Honor Code school because we get the privilege of trusting you to act with honor and integrity. Unlike many of our colleagues at other schools, we are not being instructed to use a proctoring service to "police"  students taking assessments at home. For this (among so many other things), we are very, very grateful.  
+
+## FAQ
+
+> Question 1:  I don't like this system. I want to just do the old system. Can I opt to do that?
+
+In short, no. This is the new system for both sections of the course. We understand that this is new and has additional steps for you, but we are doing this for several reasons:
+
+1. Iterative learning process - There is a wealth of education literature that points to the importance of iterating over concepts. You are iterating on the material four times in each self-graded badge challenge: when you (1) study for, (2) attempt, (3) correct, and (4) reflect on each badge challenge. This iteration will make it more likely that you learn the material deeply.
+Additionally, with self-corrections, you have nearly instantaneous feedback on your work and your learning. This means that your iterative learning process is quicker and more effective than under the old system. 
+1. Equity - We recognize that while education is inherently inequitable,this pandemic is only exacerbating such inequities. While some students have learning spaces where they can take a 3 hour badge challenge without interruption, we know that many are not in such a position. We believe that this system, by adding the correction and reflection phases, effectively downplays the importance of having a 3 hour quiet session. We would rather have an imperfect system that attempts to be more equitable, rather than a system that's only perfect for some.
+
+
+
+> Question 2: Under the old system there was no restriction on the number of questions that I could do each time. Why can't I do as many questions as I want? 
+
+Great question! Again, we have several reasons for this restriction:
+
+1. Prior Experience - In our prior experience, we have found that students who study for and attempt more than 7 questions tend to not be as successful in demonstrating their mastery of the concepts as they stretch themselves too thin. This may be in part that they are studying too many things and as such, can not deeply study each concept. It also could be due to the limited time during the actual sitting of the badge challenge. Regardless of the reason, we have noticed that in the case of badge challenges attempting more is generally less (in terms of scores). 
+1. Engaging the Badge Challenge System - Given our prior experience and that with the current remote learning set-up, we want to more plainly help you strategize for the badge challenges. By knowing in advance that seven is the most number of badges you can get "credit" for, we hope that you will more directly engage with the "chart your own learning journey" part of this system.
+1. Your well-being - Under this new implementation, you will be engaging with each question 4 times (by studying, attempting questions, marking corrections, and then reflecting). So in addition to guiding your educational journey, we want to help you guard your physical time as well as your well-being. Additionally,  this limit downplays the need for a perfectly quiet 3 hour badge challenge session. 
+
+
+> Question 3: Following up on the above question, what if I turn in 8 questions anyways? 
+
+We will only give you credit for the first seven that you hand in. 
+
+> Question 4: With this seven question restriction, how is it possible to be able to redo badges? 
+
+We have three more badge challenges, which means that if you do 7 badges each time that is 21 badge attempts, and that number does not include any of the badges that you did one the first one. This means that not including anything from the first badge challenge, you can attempt each one once and 6 of them twice. 
+
+> Question 5: I'm super worried about my grade under this model. 
+
+First, remember that this course (along with every course at Smith) is mandatory S/U. To earn a passing grade just for the badge challenges means earning 32/45 points for that section of your grade. That means doing at least 12 badges, earning 3 Golds, 5 Silvers, and 4 Bronzes. If this is your goal, not counting anything on your first badge challenge, you would need to do 4 badges on each of the remaining badge challenges. 
+
+> Question 6: How will my reflections be graded?
+
+Your reflections are part of the instructors' final assessment of your mastery. Below are a few examples: 
+
+1. If your reflection is "I'm awesome and got everything right on this question" but then we see that there is an important difference between your Phase 1 solution and the instructor-provided solutions , then we will note the difference and likely adjust your self-given grade. 
+1. Similarly, for example - If your reflection is "I wrote the same thing the instructors always say, so I know I've mastered this topic because", we will likely reflect back to you that your original wording is just repeating our wording and this is not in fact a demonstration of mastering a concept. In this case, we will also likely adjust your self-given grade. A more thorough reflection in this situation could include, for example, a reflection on how you identified the correct concepts to apply in your answer.
+1. In contrast to the two above, being overly harsh on your work in your reflection will also merit a comment. If we believe that you have clearly mastered a concept but your reflection does not seem to share that belief, we will comment on that discrepancy as well. 
+
+
+
+***
+
+
+
 # Badge Challenge II {#challengeII}
 
 ## Administrative notes
