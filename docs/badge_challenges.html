@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -57,9 +57,7 @@ h6 {
 </style>
 
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -73,13 +71,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -95,7 +98,6 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
-
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -115,6 +117,43 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -136,47 +175,66 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
-
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = false;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -190,6 +248,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -225,22 +289,24 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
   border-radius: 0px;
 }
 
-.tocify-subheader {
-  display: inline;
-}
-.tocify-subheader .tocify-item {
-  font-size: 0.95em;
-}
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -278,7 +344,7 @@ div.tocify {
   <a href="https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/">COVID-19</a>
 </li>
 <li>
-  <a href="badge_challenges.html#challengeII">Badge Challenges</a>
+  <a href="badge_challenges.html#challenge-format">Badge Challenges</a>
 </li>
 <li>
   <a href="project.html#revised-project-goals">Project</a>
@@ -315,10 +381,57 @@ h1{font-weight: 400;}
 <p>As you can see, the first badge challenge will have the first 5 badges available, the second will have the first 10, and the third and fourth badge challenge will have all 15 badges. During each badge challenge, you can attempt as many or as few of the available badges as you would like. <strong>Your goal, by the end of the semester, is to collect all 15 badges.</strong></p>
 <p>There are four levels for each badge: <em>G</em> – Gold, <em>S</em> – Silver, <em>B</em> – Bronze, and <em>X</em> – cannot be assessed. The most recent level for each badge is the recorded level. This means that if you earn a gold level for badge 1 on the first challenge, then you never have to attempt this badge again. But, if you earn silver for badge 4 on the first challenge and then a bronze for badge 4 on the second challenge, your current level for badge 4 is bronze. <strong>Thus, you do not need to (nor should you) attempt all badges on each challenge,</strong> but you do need to collect all 15 badges by the end of the term.</p>
 <p>At the end of the semester, your collected badges and badge levels will be converted into points for the 45% of your final grade assigned to badge challenges (see <a href="syllabus.html#evaluation">syllabus</a>):</p>
-<div class="figure">
-<img src="figs/BadgeTable.png" />
-
-</div>
+<!--
+Generated with: https://www.tablesgenerator.com/markdown_tables
+-->
+<table>
+<thead>
+<tr class="header">
+<th>Points</th>
+<th>G</th>
+<th>S</th>
+<th>B</th>
+<th>X</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>45 pts</td>
+<td>15</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr class="even">
+<td>40 pts</td>
+<td>11</td>
+<td>3</td>
+<td>1</td>
+<td>0</td>
+</tr>
+<tr class="odd">
+<td>36 pts</td>
+<td>7</td>
+<td>5</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>32 pts</td>
+<td>3</td>
+<td>5</td>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr class="odd">
+<td>27 pts</td>
+<td>1</td>
+<td>4</td>
+<td>5</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
 <p><strong>Why are we doing this?</strong></p>
 <ol style="list-style-type: decimal">
 <li>To remove the pressure, stress, and performance anxiety associated with conventional exams. The “badge challenge” system <em>guarantees</em> more than one chance to <strong>master</strong> each badge.</li>
@@ -333,6 +446,159 @@ Sell it informally as:
 * Pokemon: gotta catch them all
 -->
 <hr />
+</div>
+<div id="challenge-format" class="section level1">
+<h1>Revised: Badge Challenge Format</h1>
+<!--
+https://docs.google.com/document/d/1tHFupDpC1ZeoTeJAOk4_D0uAatG9n19nmmUGkrH6y7w/edit
+-->
+<p><em>Posted Saturday, April 4th, 2020</em> In this new phase of the course, we are adjusting the format for badge challenges II, III, and IV to follow a <strong>self-graded</strong> model. This model is used by certain members of Smith’s Engineering Department and this semester is being expanded in some engineering classes to their exams.</p>
+<div id="motivation" class="section level2">
+<h2>Motivation</h2>
+<p>As stated on our COVID-19 Information document, our overarching theme for the rest of the semester is both <strong>Maximal Flexibility</strong> and <strong>Equity</strong>. The world has changed, and your learning spaces and environments have changed drastically. We believe that employing a version of self-graded badge challenges provides for 1) greater flexibility than trying to “proceed as normal” and 2) more equity across variations in living situations and learning environments. All this while still retaining the badge challenge system’s core philosophy of “mastery-based learning.”</p>
+</div>
+<div id="process" class="section level2">
+<h2>Process</h2>
+<p>First and foremost, yes, there are still badge challenges.</p>
+<ul>
+<li>There are still badge challenge “windows”, but they are longer than the Seelye self-scheduled window we had for badge challenge 1.</li>
+<li>The maximum number of badges that you can turn in at the end of the Phase 3 is 7. After describing the process, there is a FAQ section where we will justify the reasoning behind our decisions.</li>
+</ul>
+<p>However, the steps you’ll follow to complete a badge challenge is now a new three stage process. Below lists how this will work:</p>
+<p><strong>Phase 1:</strong> Initial solutions for badge challenge questions</p>
+<ul>
+<li>This phase resembles the “usual” model where you will have 3h (instead of 2h20min) from the time you download the badge challenge from Moodle and when you stop working.</li>
+<li>You are not required to print the badge challenge. Rather, you only need to download it onto a device to view it.</li>
+<li>Just as with Badge Challenge 1, you are completing the badge challenge on paper without the aid of:
+<ol style="list-style-type: decimal">
+<li>A computing device, except to view the badge challenge questions</li>
+<li>Your class notes</li>
+<li>The textbook</li>
+</ol></li>
+<li>In this phase, each question should be written on its own page. In other words, do not try to squeeze two questions or parts of two questions onto the same physical page.</li>
+<li>In this phase, only the questions that you attempt “move on” to Phase 2 .</li>
+</ul>
+<p><strong>Phase 2:</strong> Checking your Phase 1 responses</p>
+<ul>
+<li>In this phase, you will upload a PDF your Phase 1 on <strong>Moodle</strong> and then automatically get access to the instructor-created solution guide.</li>
+<li>To create a PDF of all of your answers to submit, we recommend using either:
+<ol style="list-style-type: decimal">
+<li>A scanner if you have access to one</li>
+<li>The <a href="https://www.camscanner.com/user/download">CamScanner App</a> {target=&quot;_blank&quot;} on a smartphone</li>
+<li>Creating photos using some camera and then converting these photos to PDF</li>
+</ol></li>
+<li>Note that the time to scan and upload your file is NOT part of your 3h Phase 1 window.</li>
+<li>Once you have the instructor-created solutions, you will correct your Phase 1 work in a <strong>different color ink</strong>. Please choose colors that are radically different from each other so that we can easily distinguish work from different phases.</li>
+<li>There is no time-limit on this phase.</li>
+</ul>
+<p><strong>Phase 3:</strong> Reflecting on and grading your current understanding</p>
+<ul>
+<li>In Phase 2, you correct your original work. In this phase, you will assess at what level your mastery of each concept is.</li>
+<li>For each question, you will download and fill out a cover page that allows for you to reflect on your learning and allows you to assign a level for your current understanding. A preview of the cover page can be found <a href="https://docs.google.com/document/d/1alQwvwQGEBrTF1COCxG1lQMRUyn1ouacSolwibAditk/" target="_blank">here</a>; you will notice that it has:
+<ul>
+<li>A reflection box</li>
+<li>A marking section on completion of the question</li>
+<li>A correction and grading section</li>
+<li>A section about the honor code</li>
+</ul></li>
+<li>For the questions that you would like to submit for final grading by the instructors, you will upload each one individually to <strong>Gradescope</strong> this time. Each question will be submitted as a PDF created using the same method as in Phase 2, and will be a packet in the following order:
+<ol style="list-style-type: decimal">
+<li>Cover page</li>
+<li>Phase 1 attempt with visible corrections (in a radically different color)</li>
+</ol></li>
+<li>Note that you can submit up to <strong>seven</strong> questions for final grading.</li>
+<li>Again, there is no time-limit on this phase.</li>
+</ul>
+<p><strong>Final Grading:</strong> This part is done by the instructor team, but we are adding it here so you know what happens after you submit everything.</p>
+<ul>
+<li>We will look over each solution as well as the corrections and reflections. We will comment on your overall work, including your assessment of your understanding.</li>
+<li>We then will either affirm your score or adjust if necessary.</li>
+</ul>
+</div>
+<div id="logistics" class="section level2">
+<h2>Logistics</h2>
+<p>Here’s a quick breakdown of what you need for each phase:</p>
+<p><strong>Phase 1:</strong> Initial solutions for badge challenge questions</p>
+<ul>
+<li>Your brain</li>
+<li>A laptop (or desktop) to download the badge challenge questions onto</li>
+<li>Blank paper (lined or unlined)</li>
+<li>A pen or pencil and 2 colored pencils or pens for drawing</li>
+<li>A device to time your 3-hour window</li>
+</ul>
+<p><strong>Phase 2:</strong> Checking your Phase 1 responses</p>
+<ul>
+<li>A device to scan your badge challenge with: a scanner, the CamScanner app on your phone, or some device that can take pictures</li>
+<li>A laptop (or desktop) to both
+<ol style="list-style-type: decimal">
+<li>Upload your resulting PDF of Phase 1 answers to Moodle, like a computer or laptop</li>
+<li>Download the instructor-created solution guide</li>
+</ol></li>
+<li>A radically different colored pen to note your corrections. Note: A blue pen and a black pen are too close. Think blue/black pen vs. red/hot pink level of “radically different” color.</li>
+</ul>
+<p><strong>Phase 3:</strong> Reflecting on and grading your current understanding</p>
+<ul>
+<li>A laptop (or desktop) to download and edit a cover page for each question</li>
+<li>The same device as in Phase 2 to scan your paper</li>
+<li>A program to create a PDF of the cover page and corrected answers for each question. Depending on what you use, this may be automatically done above.</li>
+<li>A laptop (or desktop) to upload each question to Gradescope</li>
+</ul>
+</div>
+<div id="honor-code" class="section level2">
+<h2>Honor code</h2>
+<p>Like everything in our course, this new implementation of the badge challenges falls under the purview of Smith’s Honor Code. In keeping with Provost Thurston’s recommendation to be explicit about the Honor Code as it relates to anything related to assessments, we are listing a few details below:</p>
+<ul>
+<li>You may only use your computer or other computing devices during Phase 1 to look at the list of questions (as if they were a printed copy). Using your computer or computing device for any other purpose during that initial 3-hour period is a violation of the Honor Code.</li>
+<li>Using any materials beyond blank paper, writing implements, and your own very talented brain is not permitted. Doing so is a violation of the honor code.</li>
+<li>Giving or receiving a copy of the instructor created solution guide to anyone in this course or anyone outside of this semester’s course are violations of the Honor Code. Similarly, uploading anything other than your Phase 1 attempts to Moodle is also a violation of the Honor Code.</li>
+<li>In Phase 2, you are asked to use one radically different color to mark your corrections. Editing your Phase 1 answers in the same color is a violation of the Honor Code.</li>
+<li>Discussing the badge challenge with anyone during the window is a violation.</li>
+</ul>
+<p>This is a long list of details, and we want to assure you that we are only detailing this list to be clear about exactly how the Honor Code applies. We are seeking to be transparent with expectations under this new system, and we want to underline that we absolutely do trust you.</p>
+<p>We love working at an Honor Code school because we get the privilege of trusting you to act with honor and integrity. Unlike many of our colleagues at other schools, we are not being instructed to use a proctoring service to “police” students taking assessments at home. For this (among so many other things), we are very, very grateful.</p>
+</div>
+<div id="faq" class="section level2">
+<h2>FAQ</h2>
+<blockquote>
+<p>Question 1: I don’t like this system. I want to just do the old system. Can I opt to do that?</p>
+</blockquote>
+<p>In short, no. This is the new system for both sections of the course. We understand that this is new and has additional steps for you, but we are doing this for several reasons:</p>
+<ol style="list-style-type: decimal">
+<li><em>Iterative learning process</em>: There is a wealth of education literature that points to the importance of iterating over concepts. You are iterating on the material four times in each self-graded badge challenge: when you (1) study for, (2) attempt, (3) correct, and (4) reflect on each badge challenge. This iteration will make it more likely that you learn the material deeply. Additionally, with self-corrections, you have nearly instantaneous feedback on your work and your learning. This means that your iterative learning process is quicker and more effective than under the old system.</li>
+<li><em>Equity</em>: We recognize that while education is inherently inequitable,this pandemic is only exacerbating such inequities. While some students have learning spaces where they can take a 3 hour badge challenge without interruption, we know that many are not in such a position. We believe that this system, by adding the correction and reflection phases, effectively downplays the importance of having a 3 hour quiet session. We would rather have an imperfect system that attempts to be more equitable, rather than a system that’s only perfect for some.</li>
+</ol>
+<blockquote>
+<p>Question 2: Under the old system there was no restriction on the number of questions that I could do each time. Why can’t I do as many questions as I want?</p>
+</blockquote>
+<p>Great question! Again, we have several reasons for this restriction:</p>
+<ol style="list-style-type: decimal">
+<li><em>Prior Experience</em>: In our prior experience, we have found that students who study for and attempt more than 7 questions tend to not be as successful in demonstrating their mastery of the concepts as they stretch themselves too thin. This may be in part that they are studying too many things and as such, can not deeply study each concept. It also could be due to the limited time during the actual sitting of the badge challenge. Regardless of the reason, we have noticed that in the case of badge challenges attempting more is generally less (in terms of scores).</li>
+<li><em>Engaging the Badge Challenge System</em>: Given our prior experience and that with the current remote learning set-up, we want to more plainly help you strategize for the badge challenges. By knowing in advance that seven is the most number of badges you can get “credit” for, we hope that you will more directly engage with the “chart your own learning journey” part of this system.</li>
+<li><em>Your well-being</em>: Under this new implementation, you will be engaging with each question 4 times (by studying, attempting questions, marking corrections, and then reflecting). So in addition to guiding your educational journey, we want to help you guard your physical time as well as your well-being. Additionally, this limit downplays the need for a perfectly quiet 3 hour badge challenge session.</li>
+</ol>
+<blockquote>
+<p>Question 3: Following up on the above question, what if I turn in 8 questions anyways?</p>
+</blockquote>
+<p>We will only give you credit for the first seven that you hand in.</p>
+<blockquote>
+<p>Question 4: With this seven question restriction, how is it possible to be able to redo badges?</p>
+</blockquote>
+<p>We have three more badge challenges, which means that if you do 7 badges each time that is 21 badge attempts, and that number does not include any of the badges that you did one the first one. This means that not including anything from the first badge challenge, you can attempt each one once and 6 of them twice.</p>
+<blockquote>
+<p>Question 5: I’m super worried about my grade under this model.</p>
+</blockquote>
+<p>First, remember that this course (along with every course at Smith) is mandatory S/U. To earn a passing grade just for the badge challenges means earning 32/45 points for that section of your grade. That means doing at least 12 badges, earning 3 Golds, 5 Silvers, and 4 Bronzes. If this is your goal, not counting anything on your first badge challenge, you would need to do 4 badges on each of the remaining badge challenges.</p>
+<blockquote>
+<p>Question 6: How will my reflections be graded?</p>
+</blockquote>
+<p>Your reflections are part of the instructors’ final assessment of your mastery. Below are a few examples:</p>
+<ol style="list-style-type: decimal">
+<li>If your reflection is “I’m awesome and got everything right on this question” but then we see that there is an important difference between your Phase 1 solution and the instructor-provided solutions , then we will note the difference and likely adjust your self-given grade.</li>
+<li>Similarly, for example - If your reflection is “I wrote the same thing the instructors always say, so I know I’ve mastered this topic because”, we will likely reflect back to you that your original wording is just repeating our wording and this is not in fact a demonstration of mastering a concept. In this case, we will also likely adjust your self-given grade. A more thorough reflection in this situation could include, for example, a reflection on how you identified the correct concepts to apply in your answer.</li>
+<li>In contrast to the two above, being overly harsh on your work in your reflection will also merit a comment. If we believe that you have clearly mastered a concept but your reflection does not seem to share that belief, we will comment on that discrepancy as well.</li>
+</ol>
+<hr />
+</div>
 </div>
 <div id="challengeI" class="section level1">
 <h1>Badge Challenge I</h1>
@@ -412,26 +678,8 @@ Sell it informally as:
 <li>You can start the badge challenge after Friday 4/10 12:01am Eastern Daylight Time</li>
 <li>You must submit your badge challenge before Wednesday 4/15 11:59pm Eastern Daylight Time</li>
 </ul></li>
-<li>Format: We will post the format and submission method for this badge challenge at the same time as Lec24 on the evening of Thursday 4/2. <strong>We will decide on the format based on your responses to the survey posted in the “COVID-19” tab of the webpage above, which are due Tuesday 3/31 at 11pm Eastern Daylight Time.</strong></li>
+<li>Format: See the <a href="#challenge-format">Revised Format</a> section above.</li>
 </ul>
-<!--    
-* In preparation for badge challenge:
-    + Designate a 3 hour window that you can dedicate to completing this badge challenge.
-    + Have the following ready: colored pencils/pens, blank sheets of paper, your laptop, and a mobile phone with a camera.
-    + If you haven't already, all Office of Disability Services forms must be submitted to instructor before the start of the time window.
-* "Printing the badge challenge":
-    + Instead of printing a timestamped copy of the badge challenge as you would in Seelye, you will click a link on Moodle to "start" the exam. We will use Moodle's internal timestamp logs to determine when you "started" your badge challenge
-    + You do not need to physically "print" the badge challenges.
-* "Completing the badge challenge":
-    + You will write you answers down on your blank sheets of paper.
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed).
-* "Submitting the badge challenge":
-    + You will submit your badge challenge on Gradescope as you would for a problem set. We will use the Gradescope submission timestamp to determine when you "submitted" your badge challenge.
-* Honor code:
-    + Closed-book, no internet, and individually completed. You may only use your laptop to view the badge challenge
-    + You will be given 3 hours to complete it. **Timestamps will be strictly enforced. Any badge challenges with pairs of timestamps indicating that more time than allowed was taken will be subject to an honor board case.**
-    + You are prohibited from discussing the badge challenge with your peers during the time window. 
--->
 </div>
 <div id="badges-1-10" class="section level2">
 <h2>Badges 1-10</h2>
@@ -457,7 +705,7 @@ Sell it informally as:
 <li>You can start the badge challenge after Friday 4/24 12:01am Eastern Daylight Time</li>
 <li>You must submit your badge challenge before Wednesday 4/29 11:59pm Eastern Daylight Time</li>
 </ul></li>
-<li>Format: TBD</li>
+<li>Format: See the <a href="#challenge-format">Revised Format</a> section above.</li>
 <li>We will have badge challenge III graded and returned to you by the evening of Saturday 5/2 so that you can study it for badge challenge IV.</li>
 </ul>
 </div>
@@ -485,7 +733,7 @@ Sell it informally as:
 <li>You can start the badge challenge after Monday 5/4 12:01am Eastern Daylight Time</li>
 <li>You must submit your badge challenge before Friday 5/8 11:59pm Eastern Daylight Time</li>
 </ul></li>
-<li>Format: TBD</li>
+<li>Format: See the <a href="#challenge-format">Revised Format</a> section above.</li>
 </ul>
 </div>
 <div id="badges-1-15-1" class="section level2">
@@ -520,6 +768,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
