@@ -115,7 +115,7 @@ However, the steps you'll follow to complete a badge challenge is now a new thre
 * In this phase, you will upload a PDF your Phase 1 on **Moodle** and then automatically get access to the instructor-created solution guide. 
 * To create a PDF of all of your answers to submit, we recommend using either:
     1. A scanner if you have access to one 
-    1. The [CamScanner App](https://www.camscanner.com/user/download) {target="_blank"} on a smartphone
+    1. The [CamScanner App](https://www.camscanner.com/user/download){target="_blank"} on a smartphone
     1. Creating photos using some camera and then converting these photos to PDF
 * Note that the time to scan and upload your file is NOT part of your 3h Phase 1 window. 
 * Once you have the instructor-created solutions, you will correct your Phase 1 work in a **different color ink**.  Please choose colors that are radically different from each other so that we can easily distinguish work from different phases.
