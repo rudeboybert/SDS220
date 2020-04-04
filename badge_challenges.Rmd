@@ -46,7 +46,18 @@ There are four levels for each badge: *G* – Gold, *S* – Silver, *B* – Bron
 
 At the end of the semester, your collected badges and badge levels will be converted into points for the 45% of your final grade assigned to badge challenges (see [syllabus](syllabus.html#evaluation)):
 
-![](figs/BadgeTable.png)
+
+<!--
+Generated with: https://www.tablesgenerator.com/markdown_tables
+-->
+| Points | G  | S | B | X |
+|--------|----|---|---|---|
+| 45 pts | 15 | 0 | 0 | 0 |
+| 40 pts | 11 | 3 | 1 | 0 |
+| 36 pts | 7  | 5 | 2 | 1 |
+| 32 pts | 3  | 5 | 4 | 3 |
+| 27 pts | 1  | 4 | 5 | 5 |
+
 
 **Why are we doing this?**
 
