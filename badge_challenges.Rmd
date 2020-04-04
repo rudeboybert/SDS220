@@ -299,6 +299,9 @@ In-class example:
     + You can start the badge challenge after Friday 4/10 12:01am Eastern Daylight Time
     + You must submit your badge challenge before Wednesday 4/15 11:59pm Eastern Daylight Time
 * Format: See the [Revised Format](#challenge-format) section above.
+* Please note that Badges 9, 10, and 11 were rebalanced for clarity as follows:
+    + The current Badge 11 used to be two separate badges. We felt the distinction was unclear and hence merged them.
+    + We added the current Badge 9 on the Central Limit Theorem to emphasize its importance in statistical inference.
 
 
 ## Badges 1-10
