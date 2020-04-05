@@ -27,10 +27,10 @@ h1{font-weight: 400;}
     + Wednesday lectures will be posted on the course webpage by Tuesday night.
     + Friday lectures will be posted on the course webpage by Thursday night.
 * **Engaging with the Course:**
-    + The new model of the class follows a similar format to the first part of the semester: chalk talk, reading the book, PSets, Badge Challenges, and student hours. The big change is how we **engage** with the class.
-    + Instead of synchronous meetings, we have 4 in-person discussion sessions, spanning many time zones in the period between lectures being posted. These discussion sessions are *optional* and you do not have to stay the whole time. We **recommend** that you attend at least one for each lecture, but we understand that this may not be possible
-    + Additionally, each instructor has scheduled appointments which you can claim by following instructions on Moodle
-    + We also have the #questions channel on slack for chatting about the statistical concepts and questions from the course as well as PSet questions and more! 
+    + The new model of the class follows a similar format to the first part of the semester: chalk talk, reading the book, problem sets, Badge Challenges, and student hours. The big change is how we **engage** with the class.
+    + Instead of synchronous meetings, we have 4 in-person discussion sessions, spanning many time zones in the period between lectures being posted. These discussion sessions are *optional* and you do not have to stay the whole time. We **recommend** that you attend at least one for each lecture, but we understand that this may not always be possible.
+    + Additionally, you can schedule one-on-one appointments with each instructor: follow the instructions on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}.
+    + We also have the #questions channel on slack for chatting about the statistical concepts and questions from the course as well as problem set questions and more! 
     + We recommend that you plan time each week for engaging with the course. This could look many different ways and you need to find something that works for you. Note that your instructors can be a resource for helping you make this plan! 
 * **Getting help**:
     + Ask questions in the `#questions` channel on Slack.
