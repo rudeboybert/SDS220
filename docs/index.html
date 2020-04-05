@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
 
 <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 <meta name="author" content="Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper" />
@@ -30,90 +30,43 @@
 
 
 <style type="text/css">code{white-space: pre;}</style>
-<style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
-}
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  { background-color: #f8f8f8; }
-@media screen {
-a.sourceLine::before { text-decoration: underline; }
-}
-code span.al { color: #ef2929; } /* Alert */
-code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #c4a000; } /* Attribute */
-code span.bn { color: #0000cf; } /* BaseN */
-code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4e9a06; } /* Char */
-code span.cn { color: #000000; } /* Constant */
-code span.co { color: #8f5902; font-style: italic; } /* Comment */
-code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
-code span.dt { color: #204a87; } /* DataType */
-code span.dv { color: #0000cf; } /* DecVal */
-code span.er { color: #a40000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #0000cf; } /* Float */
-code span.fu { color: #000000; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
-code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
-code span.ot { color: #8f5902; } /* Other */
-code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
-code span.sc { color: #000000; } /* SpecialChar */
-code span.ss { color: #4e9a06; } /* SpecialString */
-code span.st { color: #4e9a06; } /* String */
-code span.va { color: #000000; } /* Variable */
-code span.vs { color: #4e9a06; } /* VerbatimString */
-code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
-
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; background-color: #f8f8f8; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+pre, code { background-color: #f8f8f8; }
+code > span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code > span.dt { color: #204a87; } /* DataType */
+code > span.dv { color: #0000cf; } /* DecVal */
+code > span.bn { color: #0000cf; } /* BaseN */
+code > span.fl { color: #0000cf; } /* Float */
+code > span.ch { color: #4e9a06; } /* Char */
+code > span.st { color: #4e9a06; } /* String */
+code > span.co { color: #8f5902; font-style: italic; } /* Comment */
+code > span.ot { color: #8f5902; } /* Other */
+code > span.al { color: #ef2929; } /* Alert */
+code > span.fu { color: #000000; } /* Function */
+code > span.er { color: #a40000; font-weight: bold; } /* Error */
+code > span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #000000; } /* Constant */
+code > span.sc { color: #000000; } /* SpecialChar */
+code > span.vs { color: #4e9a06; } /* VerbatimString */
+code > span.ss { color: #4e9a06; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #000000; } /* Variable */
+code > span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code > span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code > span.ex { } /* Extension */
+code > span.at { color: #c4a000; } /* Attribute */
+code > span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code > span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
 </style>
-<script>
-// apply pandoc div.sourceCode style to pre.sourceCode instead
-(function() {
-  var sheets = document.styleSheets;
-  for (var i = 0; i < sheets.length; i++) {
-    if (sheets[i].ownerNode.dataset["origin"] !== "pandoc") continue;
-    try { var rules = sheets[i].cssRules; } catch (e) { continue; }
-    for (var j = 0; j < rules.length; j++) {
-      var rule = rules[j];
-      // check if there is a div.sourceCode rule
-      if (rule.type !== rule.STYLE_RULE || rule.selectorText !== "div.sourceCode") continue;
-      var style = rule.style.cssText;
-      // check if color or background-color is set
-      if (rule.style.color === '' && rule.style.backgroundColor === '') continue;
-      // replace div.sourceCode by a pre.sourceCode rule
-      sheets[i].deleteRule(j);
-      sheets[i].insertRule('pre.sourceCode{' + style + '}', j);
-    }
-  }
-})();
-</script>
 <style type="text/css">
   pre:not([class]) {
     background-color: white;
@@ -149,7 +102,9 @@ h6 {
 </style>
 
 
+</head>
 
+<body>
 
 <style type = "text/css">
 .main-container {
@@ -163,18 +118,13 @@ code {
 }
 img {
   max-width:100%;
+  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
-.html-widget {
-  margin-bottom: 20px;
-}
 button.code-folding-btn:focus {
   outline: none;
-}
-summary {
-  display: list-item;
 }
 </style>
 
@@ -190,6 +140,7 @@ body {
   padding-top: 56px;
   margin-top: -56px;
 }
+
 .section h2 {
   padding-top: 56px;
   margin-top: -56px;
@@ -209,43 +160,6 @@ body {
 .section h6 {
   padding-top: 56px;
   margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -267,66 +181,47 @@ $(document).ready(function () {
 });
 </script>
 
+
+<div class="container-fluid main-container">
+
 <!-- tabsets -->
-
-<style type="text/css">
-.tabset-dropdown > .nav-tabs {
-  display: inline-table;
-  max-height: 500px;
-  min-height: 44px;
-  overflow-y: auto;
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
-  font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
-}
-
-.tabset-dropdown > .nav-tabs > li.active {
-  display: block;
-}
-
-.tabset-dropdown > .nav-tabs > li > a,
-.tabset-dropdown > .nav-tabs > li > a:focus,
-.tabset-dropdown > .nav-tabs > li > a:hover {
-  border: none;
-  display: inline-block;
-  border-radius: 4px;
-  background-color: transparent;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
-  display: block;
-  float: none;
-}
-
-.tabset-dropdown > .nav-tabs > li {
-  display: none;
-}
-</style>
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
 
 <!-- code folding -->
 
 
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <style type="text/css">
 
@@ -340,12 +235,6 @@ $(document).ready(function () {
 }
 }
 
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
 
 .toc-content {
   padding-left: 30px;
@@ -381,6 +270,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -389,16 +280,6 @@ div.tocify {
 
 
 </style>
-
-
-
-</head>
-
-<body>
-
-
-<div class="container-fluid main-container">
-
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -454,8 +335,8 @@ div.tocify {
 
 
 <h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
-<h4 class="author">Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</h4>
-<h4 class="date">Last updated on 2020-04-04</h4>
+<h4 class="author"><em>Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</em></h4>
+<h4 class="date"><em>Last updated on 2020-04-05</em></h4>
 
 </div>
 
@@ -480,16 +361,55 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 -->
 <hr />
 </div>
+<div id="lec-25-mon-46" class="section level1">
+<h1>Lec 25: Mon 4/6</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<ol style="list-style-type: decimal">
+<li>Please read the updated <a href="https://smithcollege-sds.github.io/SDS220/badge_challenges.html#challenge-format" target="_blank">implementation notes for the Badge Challenges</a> and ask questions on the #remote_learning slack channel</li>
+<li>Spinelli center tutoring is up and running! See the “Getting More Help” section below for more information.</li>
+</ol>
+</div>
+<div id="chalk-talk" class="section level2">
+<h2>Chalk Talk</h2>
+<ol style="list-style-type: decimal">
+<li>Watch this mini-lecture tying bootstrap distributions to the computations of Confidence Intervals</li>
+</ol>
+<center>
+<iframe src="https://www.showme.com/sh?h=Vg828zg" width="578" height="433" frameborder="0">
+</iframe>
+</center>
+<ol style="list-style-type: decimal">
+<li>Then read sections 8.3 and 8.4 in our book. Remember to carefully work the code pieces just as if you were in live class with us.</li>
+<li>A question to ponder (as you watch the video and read the sections) is how does the bootstrap distribution approximation of the sampLING distribution strengthen what your one sample can do?</li>
+</ol>
+</div>
+<div id="discussion-sessions" class="section level2">
+<h2>Discussion Sessions</h2>
+<ol style="list-style-type: decimal">
+<li>There are 4 Zoom discussion sessions between Mon 4/6 and Tues 4/7. They are listed on <a href="https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">this Google Calendar</a>. Please add this calendar to your own calendar!</li>
+<li>Be sure to set the “time zone” in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper’s Fri 4/3 session is between 9:00am - 10:30am Eastern.</li>
+</ol>
+</div>
+<div id="getting-more-help" class="section level2">
+<h2>Getting More Help</h2>
+<ol style="list-style-type: decimal">
+<li>To schedule a one-on-one appointment with a Spinelli Tutor, visit their <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUU0UTRmUnpvVmhIfGRlZmF1bHR8OTk2MWU3M2M2NmI1NjhiODdjMzhiZjVhM2Q1Yjg5NDc" target="_blank">self-scheduled appointment calendar</a>.</li>
+<li>Be sure to set the “time zone” in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Chichi’s first Mon 4/6 appointment block is between 9:30am – 10:15am eastern.</li>
+</ol>
+<hr />
+</div>
+</div>
 <div id="lec-24-fri-43" class="section level1">
 <h1>Lec 24: Fri 4/3</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>We have read all your survey responses. If anything changes about your living situation or learning environment, please be proactive and let us know ASAP!</li>
 <li>Spinelli center tutoring is up and running! See the “Getting More Help” section below for more information.</li>
 </ol>
 </div>
-<div id="chalk-talk" class="section level2">
+<div id="chalk-talk-1" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>In preparation, have the following figures and tables ready in separate tabs in your browser:
@@ -506,14 +426,14 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <li>Read from the beginning of Chapter 8 up to and including 8.2 in our book. Click the “ModernDive” tab above to ensure you’re reading the right version of the book.</li>
 </ol>
 </div>
-<div id="discussion-sessions" class="section level2">
+<div id="discussion-sessions-1" class="section level2">
 <h2>Discussion Sessions</h2>
 <ol style="list-style-type: decimal">
 <li>There are 4 Zoom discussion sessions between Fri 4/3 and Sun 4/5. They are listed on <a href="https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">this Google Calendar</a>. Please add this calendar to your own calendar!</li>
 <li>Be sure to set the “time zone” in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper’s Fri 4/3 session is between 9:00am - 10:30am Eastern.</li>
 </ol>
 </div>
-<div id="getting-more-help" class="section level2">
+<div id="getting-more-help-1" class="section level2">
 <h2>Getting More Help</h2>
 <ol style="list-style-type: decimal">
 <li>To schedule a one-on-one appointment with a Spinelli Tutor, visit their <a href="https://calendar.google.com/calendar/selfsched?sstoken=UUU0UTRmUnpvVmhIfGRlZmF1bHR8OTk2MWU3M2M2NmI1NjhiODdjMzhiZjVhM2Q1Yjg5NDc" target="_blank">self-scheduled appointment calendar</a>.</li>
@@ -524,13 +444,13 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-23-wed-41" class="section level1">
 <h1>Lec 23: Wed 4/1</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Please read the announcements from Mon 3/30</li>
 </ol>
 </div>
-<div id="chalk-talk-1" class="section level2">
+<div id="chalk-talk-2" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>Watch this <a href="https://www.showme.com/sh?h=ZtNEJea" target="_blank">mini-lecture</a> connecting Monday’s class to today’s topic.</li>
@@ -538,7 +458,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <li>Today’s big idea is the Central Limit Theorem!!!</li>
 </ol>
 </div>
-<div id="discussion-sessions-1" class="section level2">
+<div id="discussion-sessions-2" class="section level2">
 <h2>Discussion Sessions</h2>
 <p>There are 4 discussion sessions between 4/1 and 4/2. They are listed on <a href="https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">this Google Calendar</a>. Please add this calendar to your own calendar!</p>
 <hr />
@@ -546,7 +466,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-22-mon-330" class="section level1">
 <h1>Lec 22: Mon 3/30</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Add the sds-mth-220-2020-01.slack.com workspace to your Desktop or Mobile version of Slack.</li>
@@ -561,7 +481,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <li>Watch this <a href="https://www.showme.com/sh?h=qfDITQW" target="_blank">bonus mini-lecture</a> on SampLING distributions.</li>
 </ol>
 </div>
-<div id="discussion-sessions-2" class="section level2">
+<div id="discussion-sessions-3" class="section level2">
 <h2>Discussion Sessions</h2>
 <p>There are 4 discussion sessions between 3/30 and 3/31. They are listed on <a href="https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">this Google Calendar</a>. Please add this calendar to your own calendar!</p>
 <hr />
@@ -569,7 +489,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-21-fri-313" class="section level1">
 <h1>Lec 21: Fri 3/13</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Practice-run of Zoom lecture format</li>
@@ -580,7 +500,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-20-wed-311" class="section level1">
 <h1>Lec 20: Wed 3/11</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Acknowledgement of situation</li>
@@ -609,7 +529,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-19-mon-39" class="section level1">
 <h1>Lec 19: Mon 3/9</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Project proposal due today at 11pm. Spinelli tutors (who have all taken SDS 192 Introduction to Data Science) are available tonight 7-9pm in Sabin-Reed 301.</li>
@@ -623,7 +543,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <li>Note: In ModernDive 7.1, 33 groups of Amherst College students took samples from a bowl with slightly different contents.</li>
 </ol>
 </div>
-<div id="chalk-talk-2" class="section level2">
+<div id="chalk-talk-3" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>Chalk talk part I:
@@ -649,7 +569,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-18-fri-36" class="section level1">
 <h1>Lec 18: Fri 3/6</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>FYI: You will not be penalized for missing class due to illness.</li>
@@ -662,7 +582,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <li><code>NA</code></li>
 </ol>
 </div>
-<div id="chalk-talk-3" class="section level2">
+<div id="chalk-talk-4" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>In-class activity</li>
@@ -672,7 +592,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 </div>
 <div id="lec-17-wed-34" class="section level1">
 <h1>Lec 17: Wed 3/4</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <center>
 <img src="static/events/Catherine_D_Ignazio.jpg" style="width:100.0%" />
@@ -684,7 +604,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <li><code>NA</code></li>
 </ol>
 </div>
-<div id="chalk-talk-4" class="section level2">
+<div id="chalk-talk-5" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>In-class activity!</li>
@@ -703,13 +623,13 @@ The code to create the boxplot can is here:
 </div>
 <div id="lec-16-mon-32" class="section level1">
 <h1>Lec 16: Mon 3/2</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Badge challenge 1 is still going on. The honor code prohibits you from discussing it until the time window closes.</li>
 </ol>
 </div>
-<div id="chalk-talk-5" class="section level2">
+<div id="chalk-talk-6" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>Model selection using visualizations. In particular, choosing between the interaction and parallel slopes models by comparing
@@ -724,7 +644,7 @@ The code to create the boxplot can is here:
 </div>
 <div id="lec-15-fri-228" class="section level1">
 <h1>Lec 15: Fri 2/28</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Project
@@ -745,7 +665,7 @@ The code to create the boxplot can is here:
 </ol></li>
 </ol>
 </div>
-<div id="chalk-talk-6" class="section level2">
+<div id="chalk-talk-7" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Parallel slopes models are another type of model for <span class="math inline">\(x_1\)</span> numerical and <span class="math inline">\(x_2\)</span> categorical (with <span class="math inline">\(k\)</span> levels/groups). They
@@ -760,7 +680,7 @@ The code to create the boxplot can is here:
 </div>
 <div id="lec-14-wed-226" class="section level1">
 <h1>Lec 14: Wed 2/26</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Project: We’re going over first phase submissions as we speak. We’ll have first round of feedback and information for the next project phase on Friday.</li>
@@ -782,7 +702,7 @@ The code to create the boxplot can is here:
 <li>Indicator function from ModernDive 5.2.2 on regression with a categorical variable using <code>gapminder</code> data. What does <span class="math inline">\(\mathbb{1}_{\text{Amer}}(x)\)</span> do?</li>
 </ul>
 </div>
-<div id="chalk-talk-7" class="section level2">
+<div id="chalk-talk-8" class="section level2">
 <h2>Chalk talk</h2>
 <p>Today’s outline:</p>
 <ol style="list-style-type: decimal">
@@ -801,7 +721,7 @@ The code to create the boxplot can is here:
 </div>
 <div id="lec-13-mon-224" class="section level1">
 <h1>Lec 13: Mon 2/24</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li><a href="https://smithcollege-sds.github.io/sds-www/speaker_Hu.html#public_lecture:_generating_synthetic_family_income_for_the_consumer_expenditure_surveys" target="_blank">SDS talk this week</a> on balancing between “having useful data” and “maintinaing sufficient privacy protection”:
@@ -828,7 +748,7 @@ The code to create the boxplot can is here:
 </div>
 <div id="lec-12-fri-221" class="section level1">
 <h1>Lec 12: Fri 2/21</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><code>NA</code></li>
@@ -851,14 +771,14 @@ The code to create the boxplot can is here:
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" width="768" /></p>
 <p>Shout out to <a href="https://www.scsparkscience.org/fellow/jennifer-smetzer/" target="_blank">Dr. Jenny Smetzer</a> for this example.</p>
 </div>
-<div id="chalk-talk-8" class="section level2">
+<div id="chalk-talk-9" class="section level2">
 <h2>Chalk talk</h2>
 <p>Now let’s obtain the <em>regression table</em> using the <code>get_regression_table()</code> function in the <code>moderndive</code> package. Recall this is done in two steps:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># Step 1: Fit regression model</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> categ_regression_ex)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># Step 2: Get regression table</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">get_regression_table</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Step 1: Fit regression model</span>
+model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> categ_regression_ex)
+
+<span class="co"># Step 2: Get regression table</span>
+<span class="kw">get_regression_table</span>(model_ex)</code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"10","3":"0.577","4":"17.321","5":"0.000","6":"8.587","7":"11.413"},{"1":"nameFlorence","2":"2","3":"0.816","4":"2.449","5":"0.050","6":"0.002","7":"3.998"},{"1":"nameKatie","2":"-1","3":"0.816","4":"-1.225","5":"0.267","6":"-2.998","7":"0.998"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -879,8 +799,8 @@ today):
     + We need this notation in particular for multiple regression in Chapter 6
 -->
 <p>Let’s now get the fitted values and residuals using the <code>get_regression_points()</code> function on <code>model_ex</code> (where our model is saved):</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Step 2: Get regression points</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">get_regression_points</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Step 2: Get regression points</span>
+<span class="kw">get_regression_points</span>(model_ex)</code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["ID"],"name":[1],"type":["int"],"align":["right"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["value_hat"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["residual"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"9","3":"Bert","4":"10","5":"-1"},{"1":"2","2":"10","3":"Bert","4":"10","5":"0"},{"1":"3","2":"11","3":"Bert","4":"10","5":"1"},{"1":"4","2":"11","3":"Florence","4":"12","5":"-1"},{"1":"5","2":"12","3":"Florence","4":"12","5":"0"},{"1":"6","2":"13","3":"Florence","4":"12","5":"1"},{"1":"7","2":"8","3":"Katie","4":"9","5":"-1"},{"1":"8","2":"9","3":"Katie","4":"9","5":"0"},{"1":"9","2":"10","3":"Katie","4":"9","5":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -912,7 +832,7 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 </div>
 <div id="lec-11-wed-219" class="section level1">
 <h1>Lec 11: Wed 2/19</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><code>NA</code></li>
@@ -938,13 +858,13 @@ Then write on board:
 <li>A numerical outcome variable <span class="math inline">\(y\)</span> = <code>value</code></li>
 <li>An <em>categorical</em> explanatory variable <span class="math inline">\(x\)</span> = <code>name</code> with 3 levels: Bert, Florence, Katie.</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">categ_regression_ex &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>),</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">)</a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">categ_regression_ex</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(ggplot2)
+<span class="kw">library</span>(dplyr)
+categ_regression_ex &lt;-<span class="st"> </span><span class="kw">tibble</span>(
+  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>),
+  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>)
+)
+categ_regression_ex</code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bert","2":"9"},{"1":"Bert","2":"10"},{"1":"Bert","2":"11"},{"1":"Florence","2":"11"},{"1":"Florence","2":"12"},{"1":"Florence","2":"13"},{"1":"Katie","2":"8"},{"1":"Katie","2":"9"},{"1":"Katie","2":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -957,8 +877,8 @@ Then write on board:
 </ol>
 <p>Note this is slightly different that the scatterplots we’ve seen until now where the x variable was always numerical.</p>
 <p><strong>Solution</strong>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> categ_regression_ex, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x=</span>name,<span class="dt">y=</span>value)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>()</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">ggplot</span>(<span class="dt">data =</span> categ_regression_ex, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x=</span>name,<span class="dt">y=</span>value)) <span class="op">+</span>
+<span class="st">  </span><span class="kw">geom_point</span>()</code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 <!--
 Then draw the above plot on board and mark:
@@ -974,7 +894,7 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 </div>
 <div id="lec-10-mon-217" class="section level1">
 <h1>Lec 10: Mon 2/17</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>First phase of <a href="project.html">project</a> is due Mon 2/24 at 11pm. If you haven’t already, <strong>start now</strong>.</li>
@@ -992,7 +912,7 @@ Bert is going to another example of summarize, b/c students are confused about
 the "collapsing rows" nature of the operation.
 -->
 </div>
-<div id="chalk-talk-9" class="section level2">
+<div id="chalk-talk-10" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Correlation is not necessarily causation:
@@ -1025,7 +945,7 @@ the "collapsing rows" nature of the operation.
 </div>
 <div id="lec-09-fri-214" class="section level1">
 <h1>Lec 09: Fri 2/14</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>If you need a group for the project, please fill out the Google Form on Moodle ASAP! We’re going to start making groups this weekend.</li>
@@ -1037,7 +957,7 @@ the "collapsing rows" nature of the operation.
 <li><code>tidyverse</code> package is an umbrella package that loads <code>ggplot2</code>, <code>dplyr</code>, <code>readr</code>, and other useful packages for data science all at once. For more info, visit <a href="https://www.tidyverse.org/" target="_blank">tidyverse.org/</a></li>
 </ul>
 </div>
-<div id="chalk-talk-10" class="section level2">
+<div id="chalk-talk-11" class="section level2">
 <h2>Chalk talk</h2>
 Consider the following 3 points saved in a data frame called <code>simple_regression_ex</code>.
 <div data-pagedtable="false">
@@ -1047,11 +967,11 @@ Consider the following 3 points saved in a data frame called <code>simple_regres
 </div>
 <p>Let’s plot them along with the <em>regression line</em>.</p>
 <p>Now let’s obtain the <em>regression table</em>. This is done in two steps:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># Step 1: Fit regression model</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co"># Step 2: Get regression table</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="kw">get_regression_table</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co"># Step 1: Fit regression model</span>
+model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)
+
+<span class="co"># Step 2: Get regression table</span>
+<span class="kw">get_regression_table</span>(model_ex)</code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"1.5","3":"1.118","4":"1.342","5":"0.408","6":"-12.706","7":"15.706"},{"1":"x","2":"1.0","3":"1.732","4":"0.577","5":"0.667","6":"-21.008","7":"23.008"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1083,7 +1003,7 @@ rather averaged across all differences of unit in x
 </div>
 <div id="lec-08-wed-212" class="section level1">
 <h1>Lec 08: Wed 2/12</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>First phase of project unveiled: Project data (due Mon 2/24 at 11pm)</li>
@@ -1097,7 +1017,10 @@ rather averaged across all differences of unit in x
 </div>
 <div id="recap-9" class="section level2">
 <h2>Recap</h2>
-<p><img src="static/images/toolbox.jpeg" style="width:50.0%" /></p>
+<div class="figure">
+<img src="static/images/toolbox.jpeg" style="width:50.0%" />
+
+</div>
 <p>Our data wrangling toolbox, which you will use for your project and for the rest of this course:</p>
 <ol style="list-style-type: decimal">
 <li><code>filter()</code> rows</li>
@@ -1114,7 +1037,7 @@ former does not modify original rows, whereas the latter creates new ones that
 are based on summary statistics.
 -->
 </div>
-<div id="chalk-talk-11" class="section level2">
+<div id="chalk-talk-12" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Correlation coefficient:
@@ -1144,7 +1067,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 </div>
 <div id="lec-07-mon-210" class="section level1">
 <h1>Lec 07: Mon 2/10</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Today’s lecture is last of pink topics in calendar (data science). We start blue topics (regression) on Wednesday.</li>
@@ -1153,7 +1076,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 <div id="recap-10" class="section level2">
 <h2>Recap</h2>
 </div>
-<div id="chalk-talk-12" class="section level2">
+<div id="chalk-talk-13" class="section level2">
 <h2>Chalk talk</h2>
 <ul>
 <li>Using same fruit basket example from chalk talk in Lec 05:<br />
@@ -1161,7 +1084,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price in $"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-</script>
+  </script>
 </div>
 <ol style="list-style-type: decimal">
 <li><code>mutate()</code> new variables from existing variables: price in cents</li>
@@ -1174,7 +1097,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 </div>
 <div id="lec-06-fri-27" class="section level1">
 <h1>Lec 06: Fri 2/7</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><code>NA</code> <!--
@@ -1195,7 +1118,7 @@ Then we did the google doc
     + Computer programming use of "or" and "and"
 -->
 </div>
-<div id="chalk-talk-13" class="section level2">
+<div id="chalk-talk-14" class="section level2">
 <h2>Chalk talk</h2>
 <ul>
 <li>Using same fruit basket example from chalk talk in Lec 05:<br />
@@ -1203,7 +1126,7 @@ Then we did the google doc
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price in $"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-</script>
+  </script>
 </div>
 <ol style="list-style-type: decimal">
 <li>“Summary functions” are many-to-one functions to compute “summary statistics,” like <code>mean()</code> &amp; <code>median()</code></li>
@@ -1217,7 +1140,7 @@ Then we did the google doc
 </div>
 <div id="lec-05-wed-25" class="section level1">
 <h1>Lec 05: Wed 2/5</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Posted single calendar of all instructor and lab instructor office hours on Moodle.</li>
@@ -1250,7 +1173,7 @@ Then we did the google doc
 <li>Modify it’s contents: Type <code>x &lt;- x + 1</code> or RMarkdown. What is now saved in <code>x</code>?</li>
 </ol>
 </div>
-<div id="chalk-talk-14" class="section level2">
+<div id="chalk-talk-15" class="section level2">
 <h2>Chalk talk</h2>
 <p>We now start data wrangling! For our chalk talks, we’ll use the following “fruit basket” example:</p>
 <div data-pagedtable="false">
@@ -1269,13 +1192,13 @@ Then we did the google doc
 </div>
 <div id="lec-04-mon-23" class="section level1">
 <h1>Lec 04: Mon 2/3</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><code>NA</code></li>
 </ul>
 </div>
-<div id="chalk-talk-15" class="section level2">
+<div id="chalk-talk-16" class="section level2">
 <h2>Chalk talk</h2>
 <p>Boxplots! Powerful, but tricky!</p>
 <p>Say we want to study the distribution of the following 12 values which are pre-sorted:</p>
@@ -1322,10 +1245,10 @@ Then we did the google doc
 </div>
 <div id="lec-03-fri-131" class="section level1">
 <h1>Lec 03: Fri 1/31</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 </div>
-<div id="chalk-talk-16" class="section level2">
+<div id="chalk-talk-17" class="section level2">
 <h2>Chalk talk</h2>
 <ol style="list-style-type: decimal">
 <li>Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).</li>
@@ -1341,7 +1264,7 @@ Then we did the google doc
 </div>
 <div id="lec-02-wed-129" class="section level1">
 <h1>Lec 02: Wed 1/29</h1>
-<div id="announcements-22" class="section level2">
+<div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Fatima Keita is interested in organizing a group for students of color within SDS, called SDS coalition of color (SDSCC). She has also put together a survey to gather students of color’s experiences within SDS courses and the program more generally. If you identify as a student of color and you’ve taken at least one SDS course, please take a moment to complete Fatima’s <a href="https://www.surveymonkey.com/r/2YZ785Y" target="_blank">SDSCC Preliminary Interest Survey</a>. The idea is that these experiences would then be anonymously shared with the SDS faculty in hopes that we can work to improve inclusivity within the program and curriculum. If you are interested in joining, please email Fatima directly.</li>
@@ -1355,7 +1278,7 @@ Then we did the google doc
 </ul></li>
 </ol>
 </div>
-<div id="chalk-talk-17" class="section level2">
+<div id="chalk-talk-18" class="section level2">
 <h2>Chalk Talk</h2>
 <ol style="list-style-type: decimal">
 <li>Draw scatterplot by hand</li>
@@ -1368,7 +1291,7 @@ Then we did the google doc
 </div>
 <div id="lec-01-mon-127" class="section level1">
 <h1>Lec 01: Mon 1/27</h1>
-<div id="announcements-23" class="section level2">
+<div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li>Introductions</li>
@@ -1419,49 +1342,6 @@ $(document).ready(function () {
 });
 
 
-</script>
-
-<!-- tabsets -->
-
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
-<!-- code folding -->
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
