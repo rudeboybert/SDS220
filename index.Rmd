@@ -100,11 +100,14 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 ***
+
+
+
 # Lec 25: Mon 4/6
 
 ## Announcements
 
-1. Please read the updated [implementation notes for the Badge Challenges](https://smithcollege-sds.github.io/SDS220/badge_challenges.html#challenge-format){target="_blank"} and ask questions on the #remote_learning slack channel
+1. Please read the updated [implementation notes for the Badge Challenges](https://smithcollege-sds.github.io/SDS220/badge_challenges.html#challenge-format){target="_blank"} and ask questions on the #remote_learning Slack channel
 1. Spinelli center tutoring is up and running! See the "Getting More Help" section below for more information.
 
 
@@ -117,8 +120,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 <iframe src="https://www.showme.com/sh?h=Vg828zg" width="578" height="433" frameborder="0"></iframe>
 </center>
 1. Then read sections 8.3 and 8.4 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
-1. A question to ponder (as you watch the video and read the sections) is how does the bootstrap distribution approximation of the sampLING distribution strengthen what your one sample can do? 
-
+1. A question to ponder (as you watch the video and read the sections) is "How does the bootstrap distribution approximation of the sampLING distribution strengthen what your one sample can do?"
 
 ## Discussion Sessions
 
