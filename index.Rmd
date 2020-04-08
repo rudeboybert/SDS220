@@ -107,16 +107,22 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Announcements
 
-1. NA
+1. Lecture on Monday 4/13 is cancelled
+1. In case you missed it, please read the revised [Project](project.html#revised-project-goals). We have significally scaled back the amount of work necessary to complete the project for the semester. You now only to submit and revise/resubmit a reflection piece.
+1. We have posted two informational videos in the [Badge Challenges](badge_challenges.html#videos) tab of the webpage:
+    1. "How to Take Badge Challenge 2"
+    1. "How to Study for Badge Challenge 2"
 
 
 ## Chalk Talk
 
 1. Watch this mini-lecture on interpreting confidence intervals
 <center>
-<iframe src="https://www.showme.com/sh?h=Vg828zg" width="578" height="433" frameborder="0"></iframe>
+<iframe src="https://www.showme.com/sma/embed/?s=Ci9mrVQ" width="578" height="433" frameborder="0"></iframe>
 </center>
-1. Then read sections 8.5 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
+1. Then read section 8.5 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
+
+
 
 
 ## Discussion Sessions
@@ -148,8 +154,9 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 1. Watch this mini-lecture tying bootstrap distributions to the computations of Confidence Intervals 
 
 <center>
-<iframe src="https://www.showme.com/sh?h=Vg828zg" width="578" height="433" frameborder="0"></iframe>
+<iframe src="https://www.showme.com/sma/embed/?s=Vg828zg" width="578" height="433" frameborder="0"></iframe>
 </center>
+
 1. Then read sections 8.3 and 8.4 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
 1. A question to ponder (as you watch the video and read the sections) is "How does the bootstrap distribution approximation of the sampLING distribution strengthen what your one sample can do?"
 
