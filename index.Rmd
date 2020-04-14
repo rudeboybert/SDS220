@@ -103,6 +103,26 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 
+# Lec 27: Wed 4/15
+
+## Announcements
+
+* `NA`
+
+## Chalk Talk
+
+1. Watch this mini-lecture on "more on confidence intervals"
+<center>
+<iframe src="https://www.showme.com/sma/embed/?s=YgdZ0gy" width="578" height="433" frameborder="0"></iframe>
+</center>
+1. Then read sections 8.6 and 8.7 - 8.7.2 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
+
+
+
+***
+
+
+
 # Lec 26: Wed 4/8
 
 ## Announcements
