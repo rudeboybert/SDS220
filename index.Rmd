@@ -111,10 +111,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Chalk Talk
 
-1. Watch this mini-lecture on "more on confidence intervals"
-<center>
-<iframe src="https://www.showme.com/sma/embed/?s=YgdZ0gy" width="578" height="433" frameborder="0"></iframe>
-</center>
+1. Watch this mini-lecture on ["More on confidence intervals"](https://www.showme.com/sh/?h=YgdZ0gy){target="_blank"}
 1. Then read sections 8.6 and 8.7 - 8.7.2 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
 
 
@@ -136,10 +133,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Chalk Talk
 
-1. Watch this mini-lecture on interpreting confidence intervals
-<center>
-<iframe src="https://www.showme.com/sma/embed/?s=Ci9mrVQ" width="578" height="433" frameborder="0"></iframe>
-</center>
+1. Watch this mini-lecture on ["Interpreting confidence intervals"](https://www.showme.com/sh/?h=Ci9mrVQ){target="_blank"}
 1. Then read section 8.5 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
 
 
@@ -171,12 +165,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Chalk Talk
 
-1. Watch this mini-lecture tying bootstrap distributions to the computations of Confidence Intervals 
-
-<center>
-<iframe src="https://www.showme.com/sma/embed/?s=Vg828zg" width="578" height="433" frameborder="0"></iframe>
-</center>
-
+1. Watch this mini-lecture tying [bootstrap distributions to the computations of Confidence Intervals ](https://www.showme.com/sh/?h=Vg828zg){target="_blank"}
 1. Then read sections 8.3 and 8.4 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
 1. A question to ponder (as you watch the video and read the sections) is "How does the bootstrap distribution approximation of the sampLING distribution strengthen what your one sample can do?"
 
@@ -211,10 +200,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 1. In preparation, have the following figures and tables ready in separate tabs in your browser:
     1. ModernDive Figure 7.15 comparing three sampl-ING distributions of $\widehat{p}$ based on samples of size $n$ = 25, 50, and 100.
     1. ModernDive Table 7.5 on difference scenarios for sampling for (statistical) inference
-1. Watch this mini-lecture. Note at 17m54s it is a little longer than you can expect this semester as I both recapped Ch7 on Sampling and was getting used to the tech.  
-<center>
-<iframe src="https://www.showme.com/sma/embed/?s=HxoE3cm" width="578" height="433" frameborder="0"></iframe>
-</center>
+1. Watch this mini-lecture on [Boostrap Distributions](https://www.showme.com/sh/?h=HxoE3cm){target="_blank"}. Note at 17m54s it is a little longer than you can expect this semester as I both recapped Ch7 on Sampling and was getting used to the tech.  
 1. Read from the beginning of Chapter 8 up to and including 8.2 in our book. Click the "ModernDive" tab above to ensure you're reading the right version of the book.
 
 
