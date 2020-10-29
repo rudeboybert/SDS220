@@ -1,4 +1,4 @@
-# SDS/MTH 220
+# SDS/MTH 220 
 
 Homepage source code for 2018-09 Fall Smith College SDS/MATH 220: Intro to Probability and Statistics <https://rudeboybert.github.io/SDS220/>. Most of the content is in either:
 
