@@ -1,4 +1,4 @@
-# SDS/MTH 220
+# SDS/MTH 220 
 
 Homepage source code for 2020-01 Spring Smith College SDS/MATH 220: Intro to Probability and Statistics <https://smithcollege-sds.github.io/SDS220/>. Most of the content is in either:
 
