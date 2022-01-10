@@ -16,34 +16,37 @@ output:
 h1{font-weight: 400;}
 </style>
 
-# Revised: Basic information {#basicinfo}
+
+# Basic information {#basicinfo}
 
 * **Course title:** SDS 220: Introduction to Probability and Statistics
-* **Communication**: All communication will take place via Slack.
-    + You must have the Slack Desktop or Mobile App installed; it's too easy to miss messages when using the browser version. You can download them [here](https://slack.com/downloads/){target="_blank"}.
-    + After you've installed Slack, add the sds-mth-220-2020-01.slack.com workspace.
-* **Lectures:**
-    + Monday lectures will be posted on the course webpage by Sunday night.
-    + Wednesday lectures will be posted on the course webpage by Tuesday night.
-    + Friday lectures will be posted on the course webpage by Thursday night.
-* **Engaging with the Course:**
-    + The new model of the class follows a similar format to the first part of the semester: chalk talk, reading the book, problem sets, Badge Challenges, and student hours. The big change is how we **engage** with the class.
-    + Instead of synchronous meetings, we have 4 in-person discussion sessions, spanning many time zones in the period between lectures being posted. These discussion sessions are *optional* and you do not have to stay the whole time. We **recommend** that you attend at least one for each lecture, but we understand that this may not always be possible.
-    + Additionally, you can schedule one-on-one appointments with each instructor: follow the instructions on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}.
-    + We also have the #questions channel on slack for chatting about the statistical concepts and questions from the course as well as problem set questions and more! 
-    + We recommend that you plan time each week for engaging with the course. This could look many different ways and you need to find something that works for you. Note that your instructors can be a resource for helping you make this plan! 
+* **Instructors:**
+    + [Albert Y. Kim (he/him)](https://rudeboybert.rbind.io/){target="_blank"} - Assistant Professor of Statistical & Data Sciences. Please call me "Professor Kim"
+    + Beth Brown - Lab instructor
+* **Office location:** McConnell Hall 215 (accessible from stairwell closest to Bass Hall)
+* **~~Email:~~ Slack team**: Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}.
+* **Meeting locations/times:** 
+    + Lecture
+    + Lab01
+    + Lab02
 * **Getting help**:
-    + Ask questions in the `#questions` channel on Slack.
-    + Check the Zoom discussion sessions [Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}.
-    + Schedule one-on-one appointments with a Spinelli Tutor. Instructions will be posted here shortly.
-    + Schedule one-on-one appointments with the instructors or lab instructors using the instructions on [Moodle](https://moodle.smith.edu/course/view.php?id=37125){target="_blank"}. In the interest of keeping everyone in the loop, we ask as much as possible to limit these appointments to private/individual concerns.
+    + For non personal/sensitive questions, ask on the `#questions` channel on Slack. For personal/sensitive matters, Slack DM Professor Kim.
+    + Spinelli Center [SDS drop-in tutoring hours](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats.){target="_blank"}. In Sabin-Reed 301
+        + Sunday through Thursday 7-9pm
+        + Friday 2:35-3:30pm
+    + Office hours:
+        + Office hours times will change. The most up-to-date time and location (in-person or on Zoom) info will be posted in this [calendar](https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}; click on individual entries to get the location. Before coming to office hours, please have your question ready on your computer. 
+        + During virtual office hours, you can stay with your screen off and work or listen to other student's questions. During in-person office hours, you can work in the nearby SDS student lounge in McConnell 209.
+        + For personal/sensitive matters: Book an appointment here, where the location (Zoom or McConnell 215) is indicated in the calendar entry: [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. If none of the listed times work for you, please Slack me.
+    + [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
 
 
-## Instructor work-life balance
 
-* We will respond to Slack messages sent during the week within 24h. We will respond to Slack messages sent during the weekend at our own discretion.
-* If possible, please only Slack us with briefer and administrative questions; we prefer having more substantive conversations over Zoom as it takes us less energy to understand where you are at.
-* We will do our best to return all grading as promptly as possible.
+## Instructor work-life balance {#work-life-balance}
+
+* I will respond to Slack messages sent during the week within 24h. I will respond to Slack messages sent during the weekend at my own discretion.
+* If possible, please only Slack me with briefer and administrative questions; I prefer having more substantive conversations in person as it takes me less energy to understand where you are at.
+* I will do my best to return all grading as promptly as possible.
 
 
 
@@ -51,38 +54,21 @@ h1{font-weight: 400;}
 
 
 
-# How can I succeed in this class? {#succeed}
+# How can I succeed in this class?
 
-Borrowing language from the 2019 Google J-term course here at Smith, when learning in a classroom setting, at any moment, we exist in one of three zones: *safe, stretch,* or *strain.*    
-
-* A student in the *safe* zone is completely comfortable, and the course material is completely within what the student already knows.    
-* The *strain* zone is the complete opposite of the safe zone. A student in the *strain* zone feels completely overwhelmed with the material to the point where they can’t find any meaningful connections between the current material and what the student already knows. 
-
-The material in this course challenges our understanding of statistics and probability. Several of the topics are subtle and require iterative engagement. The goal for this course is to spend the vast majority of our time in the *stretch* zone. In this zone, the material is just beyond our current knowledge base and while we are a bit uncomfortable with the material, we can see possible paths to tie the new material into our existing knowledge. In other words, in this class, our brains should be *stretching*, but not *straining*. 
-
-At the end of each week, if you have not been surprised or challenged, or if you have no questions about the material, this could mean that you are in the safe or strain zones. If you find yourself exasperated or negative about the class, you may be in the strain zone. If you find yourself using words like “boring” or “easy”, you are likely in the safe zone. If you are in either zone, please come to office hours, make an appointment, or send us a slack. We want you to get the most out of this course, but we cannot help you if we do not have firsthand knowledge of what is going on. 
-
-The strain zone is never a fun place to be during a class. As you work to return to the stretch zone, you might consider the following questions: 
+Ask yourself:
 
 * **When I have questions or don't understand something:**
     + *"Am I asking questions in class?"*
-    + *"Am I asking questions on Slack in `#questions`?"* Even better: *"Am I answering my peers' questions on Slack?"*
-    + *"Having I been going to the Spinelli tutoring center?"*
+    + *"Am I asking questions on Slack in the `#questions` channel?"* Even better: *"Am I answering my peers' questions on Slack?"*
+    + *"Having I been going to the Spinelli tutoring center for help on R and the tidyverse?"*
     + *"Have I been coming to office hours?"*
-* **Lectures, labs, and readings:**
-    + *"Am I completing all the ModernDive readings/in-class activities for a given lecture before the start of the next lecture?"*
-    + *"Am I staying on top Slack notifications sent between lectures?"* If you need help developing a notification strategy that best suits your lifestyle, please speak to us. 
+* **Lectures and readings:**
+    + *"Am I staying on top Slack notifications sent between lectures?"* If you need help developing a notification strategy that best suits your lifestyle, please speak to me. 
     + *"Am I attending lectures consistently?"*
-    + *"Am I actually running the code and studying the outputs in R during in-class exercises, or am I just skimming the text?"*
-    + *"During in-class exercises and lab time, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
-* **Problem sets and coding:**
-    + *"Am I actually doing the problem sets?"*
-    + *"When learning to code, much like learning a language, have I been really pushing myself to practice, practice, practice?"*
-
-
-## A note on pre-requisites
-
-While the course does have a calculus pre-requisite, having experience with calculus and/or statistics does not guarantee you success in this course, nor does having no experience mean that you are not set-up to succeed in this course. Success in this course will be determined by a student’s willingness to ask questions, grapple with challenging concepts, and to persistently take small meaningful steps towards deeper understanding and facility with the concepts. 
+    + *"During in-class activities, am I actually running code line-by-line and studying the outputs, or am I just going through the motions?"*
+    + *"During in-class exercises, am I taking full advantage that I'm in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?"*
+    + *"Have I been doing the associated readings for each lecture?"*
 
 
 
