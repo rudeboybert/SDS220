@@ -17,8 +17,10 @@ navbar:
     href: https://smi-sds-220-01-202203.slack.com/
   - text: ModernDive
     href: https://moderndive.com
-#  - text: Moodle
-#    href: https://moodle.smith.edu/course/view.php?id=43385
+  - text: Moodle
+    href: https://moodle.smith.edu/course/view.php?id=43385
+  - text: Gradescope
+    href: https://www.gradescope.com/courses/351214
   right:
 #  - text: Badge Challenges
 #    href: badge_challenges.html#challenge-format
