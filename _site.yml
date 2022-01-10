@@ -14,18 +14,16 @@ navbar:
   title: SDS220
   left:
 #  - icon: fa-slack fa-lg
-#    href: https://sds-mth-220-2020-01.slack.com/
+#    href: https://smi-sds-220-01-202203.slack.com/
   - text: ModernDive
-    href: https://moderndive-bert.netlify.com/
-  - text: Moodle
-    href: https://moodle.smith.edu/course/view.php?id=37125
+    href: https://moderndive.com
+#  - text: Moodle
+#    href: https://moodle.smith.edu/course/view.php?id=43385
   right:
-  - text: COVID-19
-    href: https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/
-  - text: Badge Challenges
-    href: badge_challenges.html#challenge-format
-  - text: Project
-    href: project.html#revised-project-goals
+#  - text: Badge Challenges
+#    href: badge_challenges.html#challenge-format
+#  - text: Project
+#    href: project.html#revised-project-goals
   - text: Syllabus
     href: syllabus.html
 

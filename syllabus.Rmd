@@ -18,7 +18,7 @@ h1{font-weight: 400;}
 
 # Revised: Basic information {#basicinfo}
 
-* **Course title:** SDS/MTH 220: Introduction to Probability and Statistics
+* **Course title:** SDS 220: Introduction to Probability and Statistics
 * **Communication**: All communication will take place via Slack.
     + You must have the Slack Desktop or Mobile App installed; it's too easy to miss messages when using the browser version. You can download them [here](https://slack.com/downloads/){target="_blank"}.
     + After you've installed Slack, add the sds-mth-220-2020-01.slack.com workspace.

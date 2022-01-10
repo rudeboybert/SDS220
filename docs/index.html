@@ -9,10 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper" />
+<meta name="author" content="Albert Y. Kim &amp; Beth Brown" />
 
 
-<title>SDS/MTH 220: Intro to Probability and Statistics</title>
+<title>SDS 220: Intro to Probability and Statistics</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,20 +20,46 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link rel="shortcut icon" href="220.png">
 
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
 
-<style type="text/css">code{white-space: pre;}</style>
+
+<style type="text/css">
+  code {
+    white-space: pre;
+  }
+  .sourceCode {
+    overflow: visible;
+  }
+</style>
 <style type="text/css" data-origin="pandoc">
-a.sourceLine { display: inline-block; line-height: 1.25; }
-a.sourceLine { pointer-events: none; color: inherit; text-decoration: inherit; }
-a.sourceLine:empty { height: 1.2em; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
@@ -43,14 +69,16 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 code.sourceCode { white-space: pre-wrap; }
-a.sourceLine { text-indent: -1em; padding-left: 1em; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
-pre.numberSource a.sourceLine
-  { position: relative; left: -4em; }
-pre.numberSource a.sourceLine::before
-  { content: attr(data-line-number);
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
     position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; pointer-events: all; display: inline-block;
+    border: none; display: inline-block;
     -webkit-touch-callout: none; -webkit-user-select: none;
     -khtml-user-select: none; -moz-user-select: none;
     -ms-user-select: none; user-select: none;
@@ -59,9 +87,9 @@ pre.numberSource a.sourceLine::before
   }
 pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
 div.sourceCode
-  { background-color: #f8f8f8; }
+  {  background-color: #f8f8f8; }
 @media screen {
-a.sourceLine::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -114,39 +142,9 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
   }
 })();
 </script>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 
 
-<style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+
 
 
 
@@ -156,10 +154,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -176,40 +170,13 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -237,7 +204,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -249,7 +216,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -260,10 +227,23 @@ $(document).ready(function () {
   var menuAnchor = $('a[href="' + href + '"]');
 
   // mark it active
-  menuAnchor.parent().addClass('active');
+  menuAnchor.tab('show');
 
   // if it's got a parent navbar menu mark it active as well
   menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -275,7 +255,6 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
@@ -401,7 +380,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -425,23 +404,11 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="https://moderndive-bert.netlify.com/">ModernDive</a>
-</li>
-<li>
-  <a href="https://moodle.smith.edu/course/view.php?id=37125">Moodle</a>
+  <a href="https://moderndive.com">ModernDive</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://docs.google.com/document/d/13rAuNEtOAmfG1DwcPfiIOSCMoVemnuWc7SQaro7n8mA/">COVID-19</a>
-</li>
-<li>
-  <a href="badge_challenges.html#challenge-format">Badge Challenges</a>
-</li>
-<li>
-  <a href="project.html#revised-project-goals">Project</a>
-</li>
-<li>
   <a href="syllabus.html">Syllabus</a>
 </li>
       </ul>
@@ -449,13 +416,13 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
-<h1 class="title toc-ignore">SDS/MTH 220: Intro to Probability and Statistics</h1>
-<h4 class="author">Sec01: Albert Y. Kim &amp; David Rockoff. Sec02: Katherine Kinnaird &amp; Will Hopper</h4>
-<h4 class="date">Last updated on 2020-04-15</h4>
+<h1 class="title toc-ignore">SDS 220: Intro to Probability and Statistics</h1>
+<h4 class="author">Albert Y. Kim &amp; Beth Brown</h4>
+<h4 class="date">Last updated on 2022-01-10</h4>
 
 </div>
 
@@ -466,7 +433,7 @@ h1{font-weight: 400;}
 <hr />
 <div id="schedule" class="section level1">
 <h1>Schedule</h1>
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1148404917&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="775">
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1080602121&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1050">
 </iframe>
 <!--
 {target="_blank"}
@@ -937,14 +904,14 @@ The code to create the boxplot can is here:
 <div id="chalk-talk-11" class="section level2">
 <h2>Chalk talk</h2>
 <p>Now let’s obtain the <em>regression table</em> using the <code>get_regression_table()</code> function in the <code>moderndive</code> package. Recall this is done in two steps:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># Step 1: Fit regression model</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> categ_regression_ex)</a>
-<a class="sourceLine" id="cb1-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb1-4" data-line-number="4"><span class="co"># Step 2: Get regression table</span></a>
-<a class="sourceLine" id="cb1-5" data-line-number="5"><span class="kw">get_regression_table</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Step 1: Fit regression model</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a>model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> categ_regression_ex)</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># Step 2: Get regression table</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="kw">get_regression_table</span>(model_ex)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"10","3":"0.577","4":"17.321","5":"0.000","6":"8.587","7":"11.413"},{"1":"nameFlorence","2":"2","3":"0.816","4":"2.449","5":"0.050","6":"0.002","7":"3.998"},{"1":"nameKatie","2":"-1","3":"0.816","4":"-1.225","5":"0.267","6":"-2.998","7":"0.998"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+{"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"10","3":"0.577","4":"17.321","5":"0.000","6":"8.587","7":"11.413"},{"1":"name: Florence","2":"2","3":"0.816","4":"2.449","5":"0.050","6":"0.002","7":"3.998"},{"1":"name: Katie","2":"-1","3":"0.816","4":"-1.225","5":"0.267","6":"-2.998","7":"0.998"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
 <!--
@@ -962,8 +929,8 @@ today):
     + We need this notation in particular for multiple regression in Chapter 6
 -->
 <p>Let’s now get the fitted values and residuals using the <code>get_regression_points()</code> function on <code>model_ex</code> (where our model is saved):</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># Step 2: Get regression points</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2"><span class="kw">get_regression_points</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Step 2: Get regression points</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="kw">get_regression_points</span>(model_ex)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["ID"],"name":[1],"type":["int"],"align":["right"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["value_hat"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["residual"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"9","3":"Bert","4":"10","5":"-1"},{"1":"2","2":"10","3":"Bert","4":"10","5":"0"},{"1":"3","2":"11","3":"Bert","4":"10","5":"1"},{"1":"4","2":"11","3":"Florence","4":"12","5":"-1"},{"1":"5","2":"12","3":"Florence","4":"12","5":"0"},{"1":"6","2":"13","3":"Florence","4":"12","5":"1"},{"1":"7","2":"8","3":"Katie","4":"9","5":"-1"},{"1":"8","2":"9","3":"Katie","4":"9","5":"0"},{"1":"9","2":"10","3":"Katie","4":"9","5":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1021,13 +988,13 @@ Then write on board:
 <li>A numerical outcome variable <span class="math inline">\(y\)</span> = <code>value</code></li>
 <li>An <em>categorical</em> explanatory variable <span class="math inline">\(x\)</span> = <code>name</code> with 3 levels: Bert, Florence, Katie.</li>
 </ol>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(ggplot2)</a>
-<a class="sourceLine" id="cb3-2" data-line-number="2"><span class="kw">library</span>(dplyr)</a>
-<a class="sourceLine" id="cb3-3" data-line-number="3">categ_regression_ex &lt;-<span class="st"> </span><span class="kw">tibble</span>(</a>
-<a class="sourceLine" id="cb3-4" data-line-number="4">  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>),</a>
-<a class="sourceLine" id="cb3-5" data-line-number="5">  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>)</a>
-<a class="sourceLine" id="cb3-6" data-line-number="6">)</a>
-<a class="sourceLine" id="cb3-7" data-line-number="7">categ_regression_ex</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb3-3"><a href="#cb3-3"></a>categ_regression_ex &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Bert&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Florence&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>,<span class="st">&quot;Katie&quot;</span>),</span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>,<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>)</span>
+<span id="cb3-6"><a href="#cb3-6"></a>)</span>
+<span id="cb3-7"><a href="#cb3-7"></a>categ_regression_ex</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bert","2":"9"},{"1":"Bert","2":"10"},{"1":"Bert","2":"11"},{"1":"Florence","2":"11"},{"1":"Florence","2":"12"},{"1":"Florence","2":"13"},{"1":"Katie","2":"8"},{"1":"Katie","2":"9"},{"1":"Katie","2":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1040,8 +1007,8 @@ Then write on board:
 </ol>
 <p>Note this is slightly different that the scatterplots we’ve seen until now where the x variable was always numerical.</p>
 <p><strong>Solution</strong>:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="kw">ggplot</span>(<span class="dt">data =</span> categ_regression_ex, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x=</span>name,<span class="dt">y=</span>value)) <span class="op">+</span></a>
-<a class="sourceLine" id="cb4-2" data-line-number="2"><span class="st">  </span><span class="kw">geom_point</span>()</a></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> categ_regression_ex, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x=</span>name,<span class="dt">y=</span>value)) <span class="op">+</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a><span class="st">  </span><span class="kw">geom_point</span>()</span></code></pre></div>
 <p><img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" /></p>
 <!--
 Then draw the above plot on board and mark:
@@ -1130,11 +1097,11 @@ Consider the following 3 points saved in a data frame called <code>simple_regres
 </div>
 <p>Let’s plot them along with the <em>regression line</em>.</p>
 <p>Now let’s obtain the <em>regression table</em>. This is done in two steps:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># Step 1: Fit regression model</span></a>
-<a class="sourceLine" id="cb5-2" data-line-number="2">model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)</a>
-<a class="sourceLine" id="cb5-3" data-line-number="3"></a>
-<a class="sourceLine" id="cb5-4" data-line-number="4"><span class="co"># Step 2: Get regression table</span></a>
-<a class="sourceLine" id="cb5-5" data-line-number="5"><span class="kw">get_regression_table</span>(model_ex)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="co"># Step 1: Fit regression model</span></span>
+<span id="cb5-2"><a href="#cb5-2"></a>model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)</span>
+<span id="cb5-3"><a href="#cb5-3"></a></span>
+<span id="cb5-4"><a href="#cb5-4"></a><span class="co"># Step 2: Get regression table</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a><span class="kw">get_regression_table</span>(model_ex)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"1.5","3":"1.118","4":"1.342","5":"0.408","6":"-12.706","7":"15.706"},{"1":"x","2":"1.0","3":"1.732","4":"0.577","5":"0.667","6":"-21.008","7":"23.008"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1248,7 +1215,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 </div>
 <ol style="list-style-type: decimal">
 <li><code>mutate()</code> new variables from existing variables: price in cents</li>
-<li>Reorder i.e. <code>arrange()</code> rows of a data frame in alpha-numerical order of a variable: in order of price. Default is ascending order, need to specify <code>desc()</code></li>
+<li>Reorder i.e. <code>arrange()</code> rows of a data frame in alpha-numerical order of a variable: in order of price. Default is ascending order, need to specify <code>desc()</code></li>
 <li><code>select()</code> variables/columns. Analogous to <code>filter()</code> rows.</li>
 </ol></li>
 </ul>
@@ -1495,7 +1462,7 @@ Then we did the google doc
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -1513,7 +1480,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -1522,6 +1489,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -1534,7 +1504,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
