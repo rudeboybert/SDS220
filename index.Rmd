@@ -18,33 +18,38 @@ h1{font-weight: 400;}
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-  echo=TRUE, 
-  message=FALSE, 
-  warning=FALSE, 
-  eval=FALSE, 
-  fig.width=16/2, 
-  fig.height=9/2
+  echo = TRUE, message=FALSE, warning = FALSE, eval = TRUE, 
+  fig.width = 16/2, fig.height = 9/2
 )
-library(tidyverse)
-library(lubridate)
-library(stringr)
+
+
+# tidyverse R packages:
+library(ggplot2)
+library(dplyr)
+library(tibble)
+library(tidyr)
+library(readr)
+library(purrr)
 library(forcats)
-library(moderndive)
+library(stringr)
+library(lubridate)
+library(forcats)
 
-# Formating packages:
+
+# CRAN R packages:
 library(knitr)
-library(kableExtra)
-library(scales)
-
-# Data packages:
 library(fivethirtyeight)
 library(nycflights13)
 library(gapminder)
 library(babynames)
-
-# Etc
-library(here)
+library(scales)
+library(moderndive)
+library(leaflet)
+library(maps)
+library(mapproj)
 library(patchwork)
+library(kableExtra)
+library(here)
 
 # Set seed value of random number generator to get "replicable" random numbers.
 set.seed(76)
@@ -104,7 +109,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ***
 
 
-
+<!--
 # Lec 27: Wed 4/15
 
 ## Announcements
@@ -379,14 +384,14 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 1. In-class activity! 
 1. Chalk talk only today (no coding)
 
-<!--
+
 Private: detailed notes for this "random assignment for causal inference" lecture can be found
 
 1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
 1. In this [PDF](static/2020-03-04_Lec18_Notes_ Random_Assignment_for Causal_Inference.pdf)
 
-The code to create the boxplot can is here:
--->
+
+
 ```{r, echo=FALSE, eval=FALSE}
 library(tidyverse)
 africa_data <- "static/africa_results.csv" %>% 
@@ -593,7 +598,7 @@ get_regression_table(model_ex)
 ```
 
 
-<!--
+
 Then write on board (in order to bridge the gap between output of regression
 table & wacked out indicator function notation they'll read in Chapter 5.2.2
 today):
@@ -606,7 +611,7 @@ today):
     + Explain what indicator function is $1_{Florence}(x)$
     + $\widehat{y} = b_0 + b_{Florence}\cdot 1_{Florence}(x) + b_{Katie}\cdot 1_{Katie}(x)$
     + We need this notation in particular for multiple regression in Chapter 6
---> 
+
 
 Let's now get the fitted values and residuals using the `get_regression_points()` function on `model_ex` (where our model is saved):
 
@@ -615,7 +620,7 @@ Let's now get the fitted values and residuals using the `get_regression_points()
 get_regression_points(model_ex)
 ```
 
-<!--
+
 Then write on board:
 
 1. When x is categorical y-hat fitted values correspond to group means for each level:
@@ -629,18 +634,18 @@ Note for future self: Make sure to talk about interpretation of the values in es
 Note for future self:
 - x numerical: for every slide of 1 in x, the slope is the expected/on average change in y (not necessarialy causal)
 - x categorical: for a hop between categories starting from the baseline
--->
+
 
 
 
     
     
-<!--    
+   
 If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean. Do this in  [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
 
 * A jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline.
 * Insert in text right before "Let’s generalize this idea a bit".
--->
+
 
 
 
@@ -658,13 +663,13 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 
 * What are boxplots good for?
 
-<!--
+
 Then write on board:
 
 1. They allow you to compare the distribution of a numerical variable (on y-axis) split by a categorical variable (on x-axis)
 1. Remember: solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
 1. Example: Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might mean not be appropriate?
--->
+
 
 ## In-class exericse
 
@@ -703,7 +708,7 @@ ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
   geom_point()
 ```
 
-<!--
+
 Then draw the above plot on board and mark:
 
 1. mean for Bert with horizontal line. call this the baseline mean
@@ -711,7 +716,7 @@ Then draw the above plot on board and mark:
 1. both possible offsets
 
 Why is Bert baseline? For no other reason than it's first alphanumerically.
--->
+
 
 
 
@@ -730,10 +735,10 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 
 ## Recap
 
-<!--
+
 Bert is going to another example of summarize, b/c students are confused about 
 the "collapsing rows" nature of the operation.
--->
+
 
 ## Chalk talk
 
@@ -742,9 +747,9 @@ the "collapsing rows" nature of the operation.
     a) What are X = treatment, Y = response, and Z = confounding variables?
     a) What are causal graphs? 
     a) Simple example: Does "X = drinking gatorade/ginger ale" cause "Y = feel nauseous"? 
-    <!--Z = has the flu -->
+    Z = has the flu
     a) Famous example: [UC Berkeley gender bias](https://en.wikipedia.org/wiki/Simpson%27s_paradox#UC_Berkeley_gender_bias){target="_blank"}. Does "X = (binary) gender" cause "Y = decreased chance of admission to UC Berkeley in 1973"?
-    <!--Z = competitiveness of admissions to department. Women tended to apply to departments with less resources and thus were more competitive, like humanities, while men tended to apply to departments with more resources and thus were easier to get into, like engineering.--> 
+    Z = competitiveness of admissions to department. Women tended to apply to departments with less resources and thus were more competitive, like humanities, while men tended to apply to departments with more resources and thus were easier to get into, like engineering.
 1. Recall `simple_regression_ex` from Lec09.  
 ```{r, echo=FALSE, eval=TRUE}
 simple_regression_ex
@@ -805,14 +810,14 @@ get_regression_table(model_ex)
     + Create/fit the model using `lm()` and formula interface `y ~ x`
     + Ask for the table using `get_regression_table()` function from `moderndive` package
     
-<!--
+
 Notes on precise interpretation of fitted slope b1: For every increase of one
 unit in x, it is the associated average increase in y.
 
 * average b/c not all differences of one unit in x have exactly b1 increase in y,
 rather averaged across all differences of unit in x
 * associated b/c we don't want to assume a casual relationship
--->
+
 
 
 
@@ -844,11 +849,11 @@ Our data wrangling toolbox, which you will use for your project and for the rest
 1. `select()` variables/columns
 1. For more verbs, see `dplyr` cheatsheet: Go to RStudio menu bar -> Help -> Cheatsheets -> Data Transformation with `dplyr`.
 
-<!--
+
 Students get tripped up with difference between filter() and summarize(). The
 former does not modify original rows, whereas the latter creates new ones that
 are based on summary statistics.
--->
+
 
 
 
@@ -864,14 +869,14 @@ are based on summary statistics.
     1. Lung cancer and smoking
     1. Coffee and sleep
 
-<!--
+
 Next time 220 is taught: At this point in semester (Lec08-09) since students have a little context, consider doing a review of coding/computing concepts needed for this course:
 
 - R console vs R Markdown are two different environments. i.e. when you create a variable/load a package in one, it doesn't necessarily exist in the other.
 - Tackling error messages. Perhaps have a problem set where the students read error message and write down what the message is saying.
 - Paired programming exercise: One student only writes, the other only asks questions.
 - When getting help, steer students away from saying "This doesn't work" but rather "I did X. I got result Y. I think Z." That way we get what they're thinking better: building up to the idea of a minimally reproducible example. 
--->
+
 
 
 ***
@@ -906,22 +911,22 @@ fruit_basket
 ## Announcements
 
 * `NA`
-<!--
+
 * Bert only: Emphasize problem set policy. "Turn in what you have."
 * Bert only: Google doc exercise: https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit
 
 Write down 3 things you did for this class this week
 Turn to a neighbor, come up with a list of 5 things
 Then we did the google doc
--->
+
 
 ## Recap
 
-<!--
+
 * Bert only based on questions in his section: Distinguishing between
     + English use of "or" and "and" versus
     + Computer programming use of "or" and "and"
--->
+
 
 ## Chalk talk
 
@@ -952,9 +957,9 @@ fruit_basket
     + If not, at the very least, keep email notifications on.
 * How to approach in-class readings.
     
-<!--
+
 * Bert only: "not equals" and "bang equals"
--->
+
 
 ## Recap 
 
@@ -1132,3 +1137,10 @@ Today's topics:
 
 * Introduction to Slack: A brief demo
 * Introduction to R, RStudio, and R packages: ModernDive readings
+
+-->
+
+
+
+# Lec 01: Mon 1/24
+
