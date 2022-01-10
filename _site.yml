@@ -1,5 +1,7 @@
 name: sds220
 output_dir: docs
+# The website theme was chosen from
+# https://rmarkdown.rstudio.com/html_document_format#appearance_and_style
 output:
   html_document:
     toc: yes
@@ -13,6 +15,7 @@ output:
 navbar:
   title: SDS220
   left:
+  # All icons were obtained from https://fontawesome.com/icons?d=gallery
   - icon: fa-slack fa-lg
     href: https://smi-sds-220-01-202203.slack.com/
   - text: ModernDive
@@ -26,6 +29,8 @@ navbar:
 #    href: badge_challenges.html#challenge-format
 #  - text: Project
 #    href: project.html#revised-project-goals
+  - text: Learning goals
+    href: https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true
   - text: Syllabus
     href: syllabus.html
 
