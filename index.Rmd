@@ -1145,3 +1145,4 @@ Today's topics:
 # Lec 01: Mon 1/24
 
 * Go over TODO list posted on Moodle
+* [Lecture recording](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a3d65d3-f590-447e-be00-ae270119b888){target="_blank"} (started a little late, apologies)
