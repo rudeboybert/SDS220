@@ -1,0 +1,123 @@
+---
+title: "Getting to know RStudio"
+author: "Cosme Fulanito"
+date: "1/25/2022"
+output: html_document
+---
+
+## This is a header
+Text goes here in the white part
+
+## This is another header
+Below is a code chunk! Code goes in here:
+
+```{r}
+x <- 6
+```
+
+```{r}
+favorite_movie <- "Star_Wars"
+```
+
+```{r}
+v <- c(2, 4, 6)
+v*3
+```
+
+## Exercise 1
+
+```{r}
+y <- 7
+z <- x*y
+```
+
+## Exercise 2
+
+```{r}
+6+3
+```
+
+The answer appears in the console
+
+## Exercise 3
+
+```{r}
+a <- 6 + 3
+```
+
+The answer does not appear.
+
+The object a shows up in the Environment pane.
+
+```{r}
+a
+```
+
+The answer now appears in the console.
+
+
+## Exercise 4
+
+```{r}
+a^2
+```
+
+It raises the value of a to the power of two i.e. squares it. 
+
+
+## Exercise 5
+
+```{r}
+sum(a, x, y)
+```
+
+The sum function adds the values of numbers together
+
+
+
+## Exercise 6
+
+All the objects disappeared! They got deleted!
+
+
+
+## Exercise 7
+
+All the objects reappeared! We were able to recreate them!
+
+
+
+## Exercise 8
+
+```{r}
+v + 2
+```
+
+This code adds 2 to all the original values of v
+
+
+## Exercise 9
+
+```{r}
+music <- c("bluegrass", "funk", "folk")
+```
+
+In the Environment pane, second column, we see chr which is short for character. Also all the values of music are surrounded by quotation marks
+
+
+## Exercise 10
+
+*Italicize like this*
+
+**Bold like this**
+
+A superscript: R^2^
+
+## Exercise 11
+
+All the versions of R are named after Charlie Brown comics! For example, R version 4.0.3 released on 2020-10-10 is named "Bunny-Wunnies Freak Out" https://peanuts.fandom.com/wiki/Bunny_Wunny
+
+
+
+
+
