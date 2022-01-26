@@ -1159,7 +1159,7 @@ Today's topics:
 ### 1. Chalk talk
 
 * R vs RStudio
-* RStudio server vs RStudio Desktop (see note about Software Install Fair above)
+* RStudio server vs RStudio Desktop (see note about Software Install Fair this Friday above)
 * R packages
 
 
