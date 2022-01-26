@@ -1151,7 +1151,7 @@ Today's topics:
     + All problem sets will be due on Gradescope at ~~5pm~~ 9pm so that you can visit Spinelli drop-in tutoring hours one last time.
     + First problem set (Intro survey, syllabus quiz, practice tagging individual questions on Gradescope) is due tomorrow, Thu 1/27 at 9pm. 
 * The Smith College CS Department Liaisons will be holding a [Software Install Fair](static/events/software_install_fair.pdf){target="_blank"} on Fri Jan 28 2pm-4:30pm.
-* Lecture recording
+* [Lecture recording](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=386c9119-ddcb-49ce-8d3e-ae2901204192){target="_blank"}
 * [Lecture notes](static/2022-01-26-Lec02.pdf){target="_blank"}
 
 
