@@ -1140,6 +1140,35 @@ Today's topics:
 
 -->
 
+# Lec 02: Wed 1/26
+
+## Announcements
+
+* Waitlist: Fill out Google Form on Moodle by 1pm. I will start admitting people this afternoon.
+* Labs and problem sets:
+    + First lab with Beth Brown tomorrow using same Zoom link.
+    + All labs and problem sets are going to be posted on Moodle (not this webpage)
+    + All problem sets will be due on Gradescope at ~~5pm~~ 9pm so that you can visit Spinelli drop-in tutoring hours one last time.
+    + First problem set (Intro survey, syllabus quiz, practice tagging individual questions on Gradescope) is due tomorrow, Thu 1/27 at 9pm. 
+* The Smith College CS Department Liaisons will be holding a [Software Install Fair](static/events/software_install_fair.pdf){target="_blank"} on Fri Jan 28 2pm-4:30pm.
+* Lecture recording
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+* R vs RStudio
+* RStudio server vs RStudio Desktop (see note about Software Install Fair above)
+* R packages
+
+
+### 2. In-class exercise
+
+* Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+* You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
+
+
 
 
 # Lec 01: Mon 1/24

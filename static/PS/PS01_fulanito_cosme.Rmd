@@ -2,7 +2,9 @@
 title: "Getting to know RStudio"
 author: "Cosme Fulanito"
 date: "1/25/2022"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ## This is a header
