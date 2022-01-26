@@ -1152,6 +1152,7 @@ Today's topics:
     + First problem set (Intro survey, syllabus quiz, practice tagging individual questions on Gradescope) is due tomorrow, Thu 1/27 at 9pm. 
 * The Smith College CS Department Liaisons will be holding a [Software Install Fair](static/events/software_install_fair.pdf){target="_blank"} on Fri Jan 28 2pm-4:30pm.
 * Lecture recording
+* [Lecture notes](static/2022-01-26-Lec02.pdf){target="_blank"}
 
 
 ## Today's Topics/Activities
