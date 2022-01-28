@@ -1090,6 +1090,10 @@ Steps to constructing a boxplot:
 
 ## Announcements
 
+1. At the beginning of every lecture you should have the following open:
+    1. This webpage
+    1. ModernDive
+    1. Slack team for this course
 1. Show example of thread in `#questions` on Slack.
 1. The Smith College CS Department Liaisons' [Software Install Fair](static/events/software_install_fair.pdf){target="_blank"} is today 2pm-4:30pm, especially if you want help installing RStudio Desktop
     
