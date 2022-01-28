@@ -1094,9 +1094,34 @@ Steps to constructing a boxplot:
     1. This webpage
     1. ModernDive
     1. Slack team for this course
+    1. RStudio 
+    
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
+
+
+***
+
+
+# Lec 03: Fri 1/28
+
+## Announcements
+
 1. Show example of thread in `#questions` on Slack.
 1. The Smith College CS Department Liaisons' [Software Install Fair](static/events/software_install_fair.pdf){target="_blank"} is today 2pm-4:30pm, especially if you want help installing RStudio Desktop
-    
+1. Lecture recording:
+    + [Part 1](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a01490e-7369-4a3b-b841-ae2b011f33c0){target="_blank"}
+    + [Part 2](https://smith.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4ad4a3c9-6ada-42a9-8813-ae2b011f002c){target="_blank"}
+1. [Lecture notes](static/2022-01-28-Lec03.pdf){target="_blank"}    
     
 ## Today's Topics/Activities
 
@@ -1105,6 +1130,7 @@ Steps to constructing a boxplot:
 1. Draw scatterplot by hand
 1. Define the Grammar of Graphics
 1. Write example `ggplot()` code
+1. Setting up a `classnotes.Rmd` R Markdown file for the in-class exercises. This follows exactly what you did for Lab01 on Thu 1/27.
 
 
 ### 2. In-class exercise
@@ -1137,7 +1163,7 @@ Steps to constructing a boxplot:
 ### 1. Chalk talk
 
 1. R vs RStudio
-1. RStudio server vs RStudio Desktop (see note about Software Install Fair this Friday above)
+1. RStudio server [rstudio.smith.edu](https://rstudio.smith.edu/){target="_blank"} vs RStudio Desktop (see note about Software Install Fair this Friday above)
 1. R packages
 
 
