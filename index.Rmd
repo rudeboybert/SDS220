@@ -1028,7 +1028,7 @@ Topics:
 
 
 
-# Lec 04: Mon 2/3
+# Lec 06: Fri 2/4
 
 ## Announcements
 
@@ -1066,18 +1066,14 @@ Steps to constructing a boxplot:
 
 
 
-# Lec 03: Fri 1/31
+# Lec 05: Wed 2/2
 
 ## Announcements
 
 
 ## Chalk talk
 
-1. Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).
-1. Adjust the binning structure of the previous hand-drawn histogram two ways:
-    + Adjusting the binwidth
-    + Adjusting the number of bins
-1. Facets split one graphic by the values of another variable (that does not have too many unique values).
+
 
 
 
@@ -1086,7 +1082,7 @@ Steps to constructing a boxplot:
 -->
 
 
-# Lec 03: Fri 1/28
+# Lec 04: Mon 1/31
 
 ## Announcements
 
@@ -1100,7 +1096,12 @@ Steps to constructing a boxplot:
 
 ### 1. Chalk talk
 
-1. 
+1. Mega-mega fun times in-class activity
+1. Draw histogram by hand, emphasizing that bins correspond to intervals (right-edge inclusive).
+1. Adjust the binning structure of the previous hand-drawn histogram two ways:
+    + Adjusting the binwidth
+    + Adjusting the number of bins
+1. Facets split one graphic by the values of another variable (that does not have too many unique values).
 
 
 ### 2. In-class exercise
