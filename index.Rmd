@@ -946,7 +946,7 @@ fruit_basket
 
 
 
-# Lec 05: Wed 2/5
+# Lec 06: Fri 2/4
 
 ## Announcements
 
@@ -1028,10 +1028,11 @@ Topics:
 
 
 
-# Lec 06: Fri 2/4
+# Lec 05: Wed 2/2
 
 ## Announcements
 
+* Go over africa quiz vs experiment
 * `NA`
 
 ## Chalk talk
@@ -1064,20 +1065,6 @@ Steps to constructing a boxplot:
 
 ***
 
-
-
-# Lec 05: Wed 2/2
-
-## Announcements
-
-
-## Chalk talk
-
-
-
-
-
-***
 
 -->
 
