@@ -1026,16 +1026,75 @@ Topics:
 
 ***
 
+-->
 
 
 # Lec 05: Wed 2/2
 
 ## Announcements
 
-* Go over africa quiz vs experiment
-* `NA`
 
-## Chalk talk
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+```{r, echo=FALSE, eval=FALSE}
+library(readr)
+library(dplyr)
+library(googlesheets4)
+library(janitor)
+library(lubridate)
+library(ggplot2)
+
+
+# bit.ly/africa_quiz
+primed_with_94 <-
+  "https://docs.google.com/spreadsheets/d/12It45XNGLy2sTu9gTzBkaESZoiOgDxCJDnt5PvcDqpI/edit?resourcekey#gid=1670564414" %>% 
+  read_sheet() %>% 
+  clean_names() %>% 
+  filter(timestamp >= ymd("2022-01-30")) %>% 
+  mutate(group = "Primed with 94")
+
+# bit.ly/africa_experiment
+primed_with_14 <-
+  "https://docs.google.com/spreadsheets/d/1UY0C_kXnnfeE_EGKcsO33-UCpPf6pxTFU19FA7XiirY/edit?resourcekey&usp=forms_web_b#gid=350445613" %>% 
+  read_sheet() %>% 
+  clean_names() %>% 
+  filter(timestamp >= ymd("2022-01-30")) %>% 
+  mutate(group = "Primed with 14")
+
+africa <- bind_rows(
+  primed_with_94, primed_with_14
+) %>% 
+  select(
+    year, height = what_is_your_height, been_to_africa = have_you_been_to_africa_before, 
+    countries_in_africa = how_many_countries_are_there_in_africa_enter_only_a_single_number_and_no_text,
+    id_number = is_the_last_digit_of_your_id_number_even_or_odd, group
+  ) %>% 
+  mutate(
+    year = as.character(year),
+    height = as.numeric(height),
+    been_to_africa = ifelse(been_to_africa == "Yes", TRUE, FALSE)
+  )
+
+africa %>% 
+  write_csv("static/africa_results_2022.csv")
+
+library(readr)
+library(ggplot2)
+
+africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
+
+ggplot(africa, aes(x = group, y = countries_in_africa)) +
+  geom_boxplot() +
+  labs(x = "Priming group", y = "Number of countries in Africa guessed")
+
+```
+
+
+
+
+<!--
 
 Boxplots! Powerful, but tricky!
 
@@ -1061,12 +1120,16 @@ Steps to constructing a boxplot:
 1. Mark outliers
 1. Pull in the ends of both whiskers towards the box until an observed value is hit.
 
+-->
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
 
 
 ***
-
-
--->
 
 
 # Lec 04: Mon 1/31
