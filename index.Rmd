@@ -1075,20 +1075,53 @@ africa <- bind_rows(
     year = as.character(year),
     height = as.numeric(height),
     been_to_africa = ifelse(been_to_africa == "Yes", TRUE, FALSE)
-  )
+  ) %>% 
+  # remove outlier
+  filter(!(id_number == "Even" & group == "Primed with 94"))
 
 africa %>% 
   write_csv("static/africa_results_2022.csv")
 
-library(readr)
-library(ggplot2)
 
+
+
+library(googlesheets4)
+africa <- read_sheet("https://docs.google.com/spreadsheets/d/1qJsvYHFQq90fTZBP7M-xOGEsytmmrnKCm__v_uwL7Ks/edit#gid=145126610")
+
+
+library(readr)
 africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
+
+
+library(ggplot2)
+ggplot(africa, aes(x = group, y = countries_in_africa)) +
+  geom_boxplot() +
+  labs(
+    x = "Priming group", 
+    y = "Number of countries",
+    title = "Number of countries in Africa guessed"
+  )
 
 ggplot(africa, aes(x = group, y = countries_in_africa)) +
   geom_boxplot() +
-  labs(x = "Priming group", y = "Number of countries in Africa guessed")
+  labs(
+    x = "Priming group", 
+    y = "Number of countries",
+    title = "Number of countries in Africa guessed"
+  ) +
+  facet_wrap(~been_to_africa) +
+  geom_hline(yintercept = 54, col = "red")
 
+ggplot(africa, aes(x = height, y = countries_in_africa)) +
+  geom_point() +
+  labs(
+    x = "Height in inches", 
+    y = "Number of countries",
+    title = "Number of countries in Africa guessed"
+  )
+
+ggplot(africa, aes(x = height)) +
+  geom_histogram(binwidth = 2.5)
 ```
 
 
