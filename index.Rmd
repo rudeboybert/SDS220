@@ -1033,19 +1033,24 @@ Topics:
 
 ## Announcements
 
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
+1. At the beginning of every lecture you should have the following open:
+    1. This webpage
+    1. ModernDive
+    1. Slack team for this course
+    1. RStudio 
+1. Install the `readr` package
+1. Spinelli Center drop-in tutoring information posted in syllabus
+1. Recap of `classnotes.Rmd`: where you can save all code from all in-class exercises
+1. Recap in-class activity based on student ID numbers from last lecture
 
 ```{r, echo=FALSE, eval=FALSE}
+# Create spreadsheet of class results
 library(readr)
 library(dplyr)
 library(googlesheets4)
 library(janitor)
 library(lubridate)
 library(ggplot2)
-
 
 # bit.ly/africa_quiz
 primed_with_94 <-
@@ -1081,19 +1086,17 @@ africa <- bind_rows(
 
 africa %>% 
   write_csv("static/africa_results_2022.csv")
+```
 
-
-
-
+```{r, echo=FALSE, eval=FALSE}
 library(googlesheets4)
 africa <- read_sheet("https://docs.google.com/spreadsheets/d/1qJsvYHFQq90fTZBP7M-xOGEsytmmrnKCm__v_uwL7Ks/edit#gid=145126610")
 
-
 library(readr)
-africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
-
-
 library(ggplot2)
+africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
+View(africa)
+
 ggplot(africa, aes(x = group, y = countries_in_africa)) +
   geom_boxplot() +
   labs(
@@ -1124,42 +1127,33 @@ ggplot(africa, aes(x = height)) +
   geom_histogram(binwidth = 2.5)
 ```
 
+## Today's Topics/Activities
 
+### 1. Chalk talk
 
+```{r, eval=TRUE, echo=FALSE}
+library(ggplot2)
+library(dplyr)
+example <- tibble(
+  values = c(1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30)
+)
+```
 
-<!--
+We want to visualize the distribution of the following `r nrow(example)` values with a boxplot: `r example %>% pull(values)`. They have the following *summary statistics* (a single numerical value *summarizing* many values):
 
-Boxplots! Powerful, but tricky!
-
-Say we want to study the distribution of the following `r nrow(example)` values which are pre-sorted: 
-
-> `r example %>% pull(values)`
-
-They have the following *summary statistics*. A summary statistic is a single numerical value *summarizing* many values. Examples include the immediately obvious mean AKA average and median. Other less immediately obvious examples include:
-
-* Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data
-* Minimum & maximum
-* Interquartile-range (IQR): the distance between the 3rd and 1st quartiles
-
-Min. | 1st Quartile | Median = 2nd Quartile  | 3rd Quartile  |  Max. | IQR
----- | ------- | ------  |  ------- | --- | ---
-`r min(example$values)`  |  `r quantile(example$values, probs=0.25, type = 2)` |  `r median(example$values)`  |  `r quantile(example$values, probs=0.75, type=2)`  | `r max(example$values)` | 8 = 13.5 - 5.5
-
-
-Steps to constructing a boxplot:
-
-1. Draw box
-1. Throw out whiskers 1.5 x IQR from either end of box
-1. Mark outliers
-1. Pull in the ends of both whiskers towards the box until an observed value is hit.
-
--->
+1. Quartiles (1st, 2nd, and 3rd) that cut up the data into 4 parts, each containing roughly one quarter = 25% of the data:
+    a) 1st quartile: `r quantile(example$values, probs=0.25, type = 2)`
+    a) 2nd quartile = median: `r median(example$values)`
+    a) 3rd quartiles: `r quantile(example$values, probs=0.75, type=2)`
+1. Interquartile-range (IQR): the distance between the 3rd and 1st quartiles:
+    a) 8 = 13.5 - 5.5
 
 
 ### 2. In-class exercise
 
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
+1. At 11:55am: Continue Africa activity
 
 
 ***

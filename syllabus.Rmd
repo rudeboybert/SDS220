@@ -32,18 +32,27 @@ h1{font-weight: 400;}
 * **Meeting locations/times:** Check [course search](https://www.smith.edu/academics/academic-program/curriculum/course-search){target="_blank"}
 * **Asking questions**:
     + Best place: the `#questions` channel on Slack
-    + Spinelli Center [SDS drop-in tutoring hours](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats.){target="_blank"}. In Sabin-Reed 301, Sunday through Thursday 7-9pm
+    + Spinelli Center drop-in tutoring: See section below
     + Office hours:
         + Check [calendar](https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"} for most up-to-date information
         + Instructor and location (in-person or Zoom) are indicated in calendar entry 
         + Before coming to office hours, please have your question ready on your computer
-    + [Data Research and Statistics Counselor](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} Osman Keshawarz
 * **Personal or private discussions**:
     + For quick discussions: Slack DM Professor Kim
     + For longer discussions: Book an appointment at [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. Location (in-person or Zoom) is indicated in calendar entry 
     + Please do not book an appointment for non-personal or non-private discussions.
 
+## Spinelli Tutoring Center {#spinelli}
 
+The Spinelli Center for Quantitative Learning has several ways to connect you to academic support in the form of our peer tutors and professional tutors. 
+
+Our [webpage](https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats.){target="_blank"} contains most of the information you need in order to get help, and here is a summary:
+
+1. Evening drop-in hours are
+    a) Over [Zoom](https://smith.zoom.us/j/95638424644?pwd=ZUVVdW9KSGdPM0hHOHMxUXl3NEdGZz09){target="_blank"} (password Spinelli) during blue, red, and orange modes 
+    a) in Sabin-Reed 301 during yellow and green modes
+1. Request help by sending email to qlctutor@smith.edu -- include your course information, e.g. SDS192 (Kim), and the topic you'd like to address.
+1. Visit the Data Counselor, Osman, during his [drop-in hours](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"} or make [an appointment](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB2eFNiYVktcUVCfGRlZmF1bHR8Y2YzNjNlZmFkYzE3YTRkNjhhYmJiYWMwYmUxN2JiOTg){target="_blank"} with him. 
 
 ## Instructor work-life balance {#work-life-balance}
 
