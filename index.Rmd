@@ -950,6 +950,9 @@ fruit_basket
 
 ## Announcements
 
+* Width of the box = IQR = measure of spread
+
+
 * Posted single calendar of all instructor and lab instructor office hours on Moodle.
 * Posted [badge challenges](badge_challenges.html)
 * Managing Slack notifications:
@@ -958,7 +961,6 @@ fruit_basket
 * How to approach in-class readings.
     
 
-* Bert only: "not equals" and "bang equals"
 
 
 ## Recap 
