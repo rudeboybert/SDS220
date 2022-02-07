@@ -1159,7 +1159,8 @@ rather averaged across all differences of unit in x
 
 
 
-# Lec 08: Wed 2/12
+
+# Lec 09: Fri 2/11
 
 ## Announcements
 
@@ -1193,6 +1194,7 @@ are based on summary statistics.
 
 ## Chalk talk
 
+1. Normal distribution: One summary statistic of spread, standard deviation `sd()`, has a particular interpretation when distribution of a numerical variable follows a normal AKA bell curve
 1. Correlation coefficient:
     + Definition: It is a summary statistic quantifying the strength of linear assocation. 
     + Draw examples
@@ -1212,95 +1214,50 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 - When getting help, steer students away from saying "This doesn't work" but rather "I did X. I got result Y. I think Z." That way we get what they're thinking better: building up to the idea of a minimally reproducible example. 
 
 
-
 ***
-
-
-
-# Lec 09: Fri 2/11
-
-
-## Announcements
-
-* Today's lecture is last of pink topics in calendar (data science). We start blue topics (regression) on Wednesday.
-
-## Recap
-
-## Chalk talk
-
-* Using same fruit basket example from chalk talk in Lec 05:  
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-    1. `mutate()` new variables from existing variables: price in cents
-    1. Reorder i.e. `arrange()` rows of a data frame in alpha-numerical order of a variable: in order of price. Default is ascending order, need to specify `desc()`
-    1. `select()` variables/columns. Analogous to `filter()` rows.
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
-
-
-
-
-***
-
-
-# Lec 08: Wed 2/9
-
-
-## Announcements
-
-* Project groups
-
-
-## Recap
-
-
-* Bert only based on questions in his section: Distinguishing between
-    + English use of "or" and "and" versus
-    + Computer programming use of "or" and "and"
-## Chalk talk
-
-* Using same fruit basket example from chalk talk in Lec 05:  
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-    1. "Summary functions" are many-to-one functions to compute "summary statistics," like `mean()` & `median()`
-    1. Using summary functions to then `summarize()` rows
-    1. Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows. In other words, `group_by()` by itself does not change the "data", rather only the "meta-data"
-* Normal distribution: One summary statistic of spread, standard deviation `sd()`, has a particular interpretation when distribution of a numerical variable follows a normal AKA bell curve
-
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
-
-
-
-
-***
-
 
 -->
 </div>
+<div id="lec-08-wed-29" class="section level1">
+<h1>Lec 08: Wed 2/9</h1>
+<div id="announcements" class="section level2">
+<h2>Announcements</h2>
+<!--
+* Bert only based on questions in his section: Distinguishing between
+    + English use of "or" and "and" versus
+    + Computer programming use of "or" and "and"
+-->
+</div>
+<div id="todays-topicsactivities" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<p>Using same <code>fruit_basket</code> example from chalk talk in Lec 07:</p>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["type"],"name":[1],"type":["chr"],"align":["left"]},{"label":["price"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"mango","2":"2"},{"1":"kiwi","2":"3"},{"1":"mango","2":"1"},{"1":"grape","2":"3"},{"1":"grape","2":"1"},{"1":"mango","2":"3"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<ol style="list-style-type: decimal">
+<li>“Summary functions” are many-to-one functions to compute “summary statistics,” like <code>mean()</code> &amp; <code>median()</code></li>
+<li>Using summary functions to then <code>summarize()</code> rows</li>
+<li>Setting “group meta-data” of a data frame using <code>group_by()</code>, then <code>summarize()</code> rows. In other words, <code>group_by()</code> by itself does not change the “data”, rather only the “meta-data”</li>
+<li><code>mutate()</code> new variables from existing variables: price in cents</li>
+</ol>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<ol style="list-style-type: decimal">
+<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
 <div id="lec-07-mon-27" class="section level1">
 <h1>Lec 07: Mon 2/7</h1>
-<div id="announcements" class="section level2">
+<div id="announcements-1" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><p>Copy the following code in a new R code chunk in your <code>classnotes.Rmd</code> file</p>
@@ -1324,9 +1281,9 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 <span id="cb1-18"><a href="#cb1-18"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div></li>
 </ul>
 </div>
-<div id="todays-topicsactivities" class="section level2">
+<div id="todays-topicsactivities-1" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk" class="section level3">
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Finish data visualization
@@ -1340,7 +1297,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 <li>Define the “pipe operator” <code>%&gt;%</code>, pronounced <em>then</em></li>
 <li>Logical AKA boolean operators in computer programming</li>
 <li><code>filter()</code> rows that match a criteria</li>
-<li>Example data frame we’ll use</li>
+<li>Example data frame we’ll use is <code>fruit_basket</code></li>
 </ol></li>
 </ol>
 <div data-pagedtable="false">
@@ -1351,24 +1308,24 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 <!--
 First, let's compare the boxplot you created in Lec04 with the original points. See how they align.
 
-<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-16-1.png" width="768" />
 
 Second, let's compare two visualizations of the distribution of the numerical variable temperature *split by* month:
 
 * Faceted histogram in ModernDive [Figure 2.13](https://moderndive-bert.netlify.com/2-viz.html#facets){target="_blank"}
 * Side-by-side boxplot in ModernDive [Figure 2.18](https://moderndive-bert.netlify.com/2-viz.html#boxplots){target="_blank"}
 
-<img src="index_files/figure-html/unnamed-chunk-18-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-18-2.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-17-2.png" width="768" />
 
 Which do you prefer?
 
 -->
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
-<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
 </ol>
 <hr />
 </div>
@@ -1381,7 +1338,7 @@ Which do you prefer?
 </div>
 <div id="lec-05-wed-22" class="section level1">
 <h1>Lec 05: Wed 2/2</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>At the beginning of every lecture you should have the following open:
@@ -1397,9 +1354,9 @@ Which do you prefer?
 <li>Recap in-class activity based on student ID numbers from last lecture</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>We want to visualize the distribution of the following 12 values with a boxplot: 1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30. They have the following <em>summary statistics</em> (a single numerical value <em>summarizing</em> many values):</p>
 <ol style="list-style-type: decimal">
@@ -1415,7 +1372,7 @@ Which do you prefer?
 </ol></li>
 </ol>
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1428,7 +1385,7 @@ Which do you prefer?
 </div>
 <div id="lec-04-mon-131" class="section level1">
 <h1>Lec 04: Mon 1/31</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>At the beginning of every lecture you should have the following open:
@@ -1440,9 +1397,9 @@ Which do you prefer?
 </ol></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Mega-mega fun times in-class activity</li>
@@ -1455,7 +1412,7 @@ Which do you prefer?
 <li>Facets split one graphic by the values of another variable (that does not have too many unique values).</li>
 </ol>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1467,7 +1424,7 @@ Which do you prefer?
 </div>
 <div id="lec-03-fri-128" class="section level1">
 <h1>Lec 03: Fri 1/28</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Show example of thread in <code>#questions</code> on Slack.</li>
@@ -1480,9 +1437,9 @@ Which do you prefer?
 <li><a href="static/2022-01-28-Lec03.pdf" target="_blank">Lecture notes</a></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Draw scatterplot by hand</li>
@@ -1491,7 +1448,7 @@ Which do you prefer?
 <li>Setting up a <code>classnotes.Rmd</code> R Markdown file for the in-class exercises. This follows exactly what you did for Lab01 on Thu 1/27.</li>
 </ol>
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1504,7 +1461,7 @@ Which do you prefer?
 </div>
 <div id="lec-02-wed-126" class="section level1">
 <h1>Lec 02: Wed 1/26</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Waitlist: Fill out Google Form on Moodle by 1pm. I will start admitting people this afternoon.</li>
@@ -1520,9 +1477,9 @@ Which do you prefer?
 <li><a href="static/2022-01-26-Lec02.pdf" target="_blank">Lecture notes</a></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>R vs RStudio</li>
@@ -1530,7 +1487,7 @@ Which do you prefer?
 <li>R packages</li>
 </ol>
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
