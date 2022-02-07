@@ -7,7 +7,6 @@ output:
     toc: true
     toc_depth: 2
     toc_float: true
-    df_print: paged
     includes:
       in_header: "favicon.html"
 ---
@@ -62,7 +61,7 @@ example <- tibble(
 # fruit basket example for data wrangling
 fruit_basket <- tibble(
   type = c("mango", "kiwi", "mango", "grape", "grape", "mango"),
-  `price in $` = c(2, 3, 1, 3, 1, 3)
+  price = c(2, 3, 1, 3, 1, 3)
 )
 
 # simple regression example
@@ -883,7 +882,8 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 
 
 
-# Lec 07: Mon 2/10
+# Lec 09: Fri 2/11
+
 
 ## Announcements
 
@@ -901,23 +901,27 @@ fruit_basket
     1. Reorder i.e. `arrange()` rows of a data frame in alpha-numerical order of a variable: in order of price. Default is ascending order, need to specify `desc()`
     1. `select()` variables/columns. Analogous to `filter()` rows.
 
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
+
+
 
 
 ***
 
 
-# Lec 06: Fri 2/7
+# Lec 08: Wed 2/9
+
 
 ## Announcements
 
-* `NA`
-
-* Bert only: Emphasize problem set policy. "Turn in what you have."
-* Bert only: Google doc exercise: https://docs.google.com/document/d/14PBmTU_wBTEI8j1lqZWFqFI3ETAD6N5qao-2ADQRTTM/edit
-
-Write down 3 things you did for this class this week
-Turn to a neighbor, come up with a list of 5 things
-Then we did the google doc
+* Project groups
 
 
 ## Recap
@@ -926,8 +930,6 @@ Then we did the google doc
 * Bert only based on questions in his section: Distinguishing between
     + English use of "or" and "and" versus
     + Computer programming use of "or" and "and"
-
-
 ## Chalk talk
 
 * Using same fruit basket example from chalk talk in Lec 05:  
@@ -940,31 +942,75 @@ fruit_basket
 * Normal distribution: One summary statistic of spread, standard deviation `sd()`, has a particular interpretation when distribution of a numerical variable follows a normal AKA bell curve
 
 
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
+
+
+
 
 ***
 
 
+-->
 
 
-# Lec 06: Fri 2/4
+
+
+# Lec 07: Mon 2/7
 
 ## Announcements
 
-* Width of the box = IQR = measure of spread
-
-
-* Posted single calendar of all instructor and lab instructor office hours on Moodle.
-* Posted [badge challenges](badge_challenges.html)
-* Managing Slack notifications:
-    + We suggest but don't require installing Desktop App. 
-    + If not, at the very least, keep email notifications on.
-* How to approach in-class readings.
+* Copy the following code in a new R code chunk in your `classnotes.Rmd` file
+    ```{r, eval=FALSE}
+    library(readr)
+    library(ggplot2)
+    africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
     
+    # Look at variable types
+    glimpse(africa)
+    
+    # 1. Scatterplot
+    ggplot(data = africa, mapping = aes(x = height, y = countries_in_africa)) +
+      geom_point()
+    
+    # 2. Histogram
+    ggplot(data = africa, mapping = aes(x = height)) +
+      geom_histogram()
+    
+    # 3. Boxplot
+    ggplot(data = africa, mapping = aes(x = group, y = countries_in_africa)) +
+      geom_boxplot()
+    ```
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Finish data visualization
+    + Recap 3 data visualizations 
+    + Note about boxplots: width/height of the box = IQR = measure of spread
+    + How to add labels to a `ggplot()` with `labs()`
+1. Data wrangling
+    1. Define the "pipe operator" `%>%`, pronounced *then*
+    1. Logical AKA boolean operators in computer programming
+    1. `filter()` rows that match a criteria
+    1. Example data frame we'll use
+
+```{r, echo=FALSE, eval=TRUE}
+fruit_basket
+```
 
 
 
-## Recap 
 
+<!--
 First, let's compare the boxplot you created in Lec04 with the original points. See how they align.
 
 ```{r, echo=FALSE, eval=TRUE}
@@ -1003,32 +1049,25 @@ ggplot(data = weather, mapping = aes(x = factor(month), y = temp)) +
 
 Which do you prefer?
 
-Third, the idea of "assigning AKA saving something in R" using the arrow `<-`. Ex: `x <- 5`. You do this so you can access it again later, either to
-
-1. View its contents: Type `x` in the console or RMarkdown.
-1. Modify it's contents: Type `x <- x + 1` or RMarkdown. What is now saved in `x`?
+--> 
 
 
-## Chalk talk
+### 2. In-class exercise
 
-We now start data wrangling! For our chalk talks, we'll use the following "fruit basket" example:
-
-```{r, echo=FALSE, eval=TRUE}
-fruit_basket
-```
-
-<br/>
-Topics:
-
-1. Define the "pipe operator" `%>%`, pronounced *then*
-1. Logical AKA boolean operators in computer programming
-1. `filter()` rows that match a criteria
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive
 
 
 
 ***
 
--->
+
+# Lec 06: Fri 2/4
+
+Cancelled: Snow day
+
+
+***
 
 
 # Lec 05: Wed 2/2
