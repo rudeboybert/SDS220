@@ -889,12 +889,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 
 ## Announcements
 
-
-<!--
-* Bert only based on questions in his section: Distinguishing between
-    + English use of "or" and "and" versus
-    + Computer programming use of "or" and "and"
--->
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I wish biology undergrad curricula had more statistics. Every bio major should have 2 semesters of bioinformatics with applied statistics. Learning basic R before graduating would be stupidly powerful.</p>&mdash; Sebastian S. Cocioba🌷🛠 (@ATinyGreenCell) <a href="https://twitter.com/ATinyGreenCell/status/1490509237390352389?ref_src=twsrc%5Etfw">February 7, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ## Today's Topics/Activities
@@ -912,6 +907,37 @@ fruit_basket
 1. Setting "group meta-data" of a data frame using `group_by()`, then `summarize()` rows. In other words, `group_by()` by itself does not change the "data", rather only the "meta-data"
 1. `mutate()` new variables from existing variables: price in cents
 
+<!--
+**Posted after lecture**: In case you want to run the chalk talk example on your
+computer:
+
+```{r, eval = FALSE}
+# Create fruit_basket data frame from scratch
+# (we won't do this much in this class)
+library(tibble)
+fruit_basket <- tibble(
+  type = c("mango", "kiwi", "mango", "grape", "grape", "mango"),
+  price = c(2, 3, 1, 3, 1, 3)
+)
+
+# Calculate average cost of all fruit:
+library(dplyr)
+avg_price_all_fruit <- fruit_basket %>% 
+  summarize(mean_price = mean(price))
+avg_price_all_fruit
+
+# Calculate average cost of each fruit:
+avg_price_each_fruit <- fruit_basket %>% 
+  group_by(type) %>% 
+  summarize(mean_price = mean(price))
+avg_price_each_fruit
+
+# Calculate cost of each fruit in cents:
+fruit_basket_cents <- fruit_basket %>% 
+  mutate(price_cents = price * 100)
+fruit_basket_cents
+```
+--> 
 
 ### 2. In-class exercise
 
@@ -929,6 +955,7 @@ fruit_basket
 * Copy the following code in a new R code chunk in your `classnotes.Rmd` file
     ```{r, eval=FALSE}
     library(readr)
+    library(dplyr)
     library(ggplot2)
     africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
     
@@ -967,8 +994,26 @@ fruit_basket
 fruit_basket
 ```
 
+**Posted after lecture**: In case you want to run the chalk talk example on your
+computer:
 
+```{r, eval = FALSE}
+# Create fruit_basket data frame from scratch
+# (we won't do this much in this class)
+library(tibble)
+fruit_basket <- tibble(
+  type = c("mango", "kiwi", "mango", "grape", "grape", "mango"),
+  price = c(2, 3, 1, 3, 1, 3)
+)
 
+# Filter the basket only for grapes
+library(dplyr)
+grape_basket <- fruit_basket %>% 
+  filter(type == "grape")
+
+# View contents of grapes
+grape_basket
+```
 
 <!--
 First, let's compare the boxplot you created in Lec04 with the original points. See how they align.
