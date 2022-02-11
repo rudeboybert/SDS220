@@ -818,23 +818,46 @@ rather averaged across all differences of unit in x
 * associated b/c we don't want to assume a casual relationship
 
 
-
-
 ***
 
 
+-->
 
 
 # Lec 09: Fri 2/11
 
 ## Announcements
 
-* First phase of project unveiled: Project data (due Mon 2/24 at 11pm)
-* We move to Chapters 5 & 6 on data modeling with regressions
-* Keyboard shortcut for `%>%`:
+1. First phase of project released on Monday: Project proposal due Thu 2/24
+    + Choose groups of 2-3 students, ideally in same lab section
+    + Choose from a basket of datasets
+1. Keyboard shortcut for `%>%`:
     + macOS: Command + Shift + M
-    + Windows: Contrl + Shift + M
+    + Windows: Control + Shift + M
 
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. For ModernDive Ch5 you need to install some new packages, including the [`tidyverse`](https://www.tidyverse.org/packages/){target="_blank"} package
+1. Normal distribution
+1. Correlation coefficient:
+    + Definition
+    + Examples
+    + Play "guess the correlation" game
+1. Regression line:
+    + Outcome/response $y$ and explanatory/predictor variables $x$
+    + Teaching evaluations
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+<!--
 ## Recap
 
 ![](static/images/toolbox.jpeg){ width=50% }
@@ -855,34 +878,16 @@ former does not modify original rows, whereas the latter creates new ones that
 are based on summary statistics.
 
 
-
-
-## Chalk talk
-
-1. Normal distribution: One summary statistic of spread, standard deviation `sd()`, has a particular interpretation when distribution of a numerical variable follows a normal AKA bell curve
-1. Correlation coefficient:
-    + Definition: It is a summary statistic quantifying the strength of linear assocation. 
-    + Draw examples
-    + In ModernDive 5.4.1: Play "guessing the correlation game"
-1. Two types of variables: outcome/response $y$ and explanatory/predictor variables $x$. For the following pairs of variables, what would be $y$ and what would be $x$ in a model?
-    1. Temperature in fahrenheit vs temperature in celsius 
-    1. Job salary and number of years of education
-    1. Lung cancer and smoking
-    1. Coffee and sleep
-
-
 Next time 220 is taught: At this point in semester (Lec08-09) since students have a little context, consider doing a review of coding/computing concepts needed for this course:
 
 - R console vs R Markdown are two different environments. i.e. when you create a variable/load a package in one, it doesn't necessarily exist in the other.
 - Tackling error messages. Perhaps have a problem set where the students read error message and write down what the message is saying.
 - Paired programming exercise: One student only writes, the other only asks questions.
 - When getting help, steer students away from saying "This doesn't work" but rather "I did X. I got result Y. I think Z." That way we get what they're thinking better: building up to the idea of a minimally reproducible example. 
+-->
 
 
 ***
-
--->
-
 
 
 # Lec 08: Wed 2/9
