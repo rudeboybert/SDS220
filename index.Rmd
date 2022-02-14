@@ -652,15 +652,24 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 
 
 
-# Lec 11: Wed 2/19
+# Lec 12: Fri 2/18
 
 ## Announcements
 
-* `NA`
+1. 
 
-## Recap
 
-* What are boxplots good for?
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+
 
 
 Then write on board:
@@ -723,7 +732,28 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 
 
 
-# Lec 10: Mon 2/17
+# Lec 11: Wed 2/16
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+
+
+
+
+
 
 ## Announcements
 
@@ -771,28 +801,31 @@ ggplot(simple_regression_ex, aes(x = x, y = y)) +
 
 ***
 
+-->
 
 
-# Lec 09: Fri 2/14
+
+# Lec 10: Mon 2/14
 
 ## Announcements
 
-* If you need a group for the project, please fill out the Google Form on Moodle ASAP! We're going to start making groups this weekend.
+1. Slack announcement about SDSCC
+1. Revisit learning goals
+1. [Project proposal](project.html) posted
+1. Answer previous question
 
-## Recap
 
-* `tidyverse` package is an umbrella package that loads `ggplot2`, `dplyr`, `readr`, and other useful packages for data science all at once. For more info, visit [tidyverse.org/](https://www.tidyverse.org/){target="_blank"}
 
-## Chalk talk
+## Today's Topics/Activities
+
+### 1. Chalk talk
 
 Consider the following 3 points saved in a data frame called `simple_regression_ex`. 
 ```{r, echo=FALSE, eval=TRUE}
 simple_regression_ex
 ```
 
-Let's plot them along with the *regression line*.
-
-Now let's obtain the *regression table*. This is done in two steps:
+We display the *regression table*. This is done in two steps:
 ```{r, eval = TRUE}
 # Step 1: Fit regression model
 model_ex <- lm(y ~ x, data = simple_regression_ex)
@@ -801,6 +834,7 @@ model_ex <- lm(y ~ x, data = simple_regression_ex)
 get_regression_table(model_ex)
 ```
 
+<!--
 * Connection between regression line and values in `estimate` column of regression table.
 * Interpretation of:
     + Fitted intercept $b_0$: mathematical versus practical interpretations.
@@ -808,7 +842,6 @@ get_regression_table(model_ex)
 * Obtaining a regression table takes two steps:
     + Create/fit the model using `lm()` and formula interface `y ~ x`
     + Ask for the table using `get_regression_table()` function from `moderndive` package
-    
 
 Notes on precise interpretation of fitted slope b1: For every increase of one
 unit in x, it is the associated average increase in y.
@@ -816,12 +849,15 @@ unit in x, it is the associated average increase in y.
 * average b/c not all differences of one unit in x have exactly b1 increase in y,
 rather averaged across all differences of unit in x
 * associated b/c we don't want to assume a casual relationship
+-->
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
-
-
--->
 
 
 # Lec 09: Fri 2/11

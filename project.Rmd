@@ -20,10 +20,6 @@ library(patchwork)
 set.seed(76)
 ```
 
-Everything in this course builds up to the group project, where there is
-only one learning goal: *Engage in the data/science research pipeline in as
-faithful a manner as possible while maintaining a level suitable for novices.*
-
 <center>
 ![](static/images/pipeline.png){ width=600px }
 </center>
@@ -36,18 +32,18 @@ hint_2 <- "This phase may require revisions to your original choice of data and 
 ```
 
 
-In order to break down the task and minimize end-of-semester stress, you'll be working on the project in four phases:
+In order to break down the task and minimize end-of-semester stress, you'll be working on the project in four phases (see course schedule for due dates):
 
-1. Project data: Propose a data set for your project. `r hint_1`
-1. Project proposal: Ensure you can work with your data in R by performing an exploratory data analysis. `r hint_2`
-1. Project submission: Make an initial submission of your project. You will skip some of the sections for now and only complete them after we have covered inference for regression in class. After you submit your work, you will get instructor feedback.
-1. Project resubmission: Incorporate your instructor feedback from the project submission phase, complete the remaining sections, and resubmit your project. You will only be graded on your project resubmission.
+1. Project proposal: Propose a data set for your project.
+1. Project EDA: Perform an exploratory data analysis using visualizations and numerical summaries.
+1. Project initial submission: Make an initial submission of your project. You will skip some of the sections for now and only complete them after we have covered inference for regression in class. After you submit your work, you will get instructor feedback.
+1. Project resubmission: Incorporate your instructor feedback from the initial submission phase, complete the remaining sections, and resubmit your project. You will only be graded on your project resubmission. 
 
 
 ***
 
 
-# 1. Project Data {#data} 
+# 1. Project proposal {#data} 
 
 <!--
 Notes to future self: 
@@ -75,20 +71,37 @@ knowledge. So next time
 ## Form groups
 
 1. Form groups of 2-3 students.
-    + You **must** all be registered for the same lab section, because certain labs will be devoted to working on the project.
+    + Preferably all group members are in the same lab section.
     + All groups members are expected to contribute and you will all be held accountable for your contributions in peer evaluations.
-1. Choose a group name. 
-1. Assign a "team/group leader" role for each of the four phases of this project to everyone in your team at least once. The team/group leader will have extra administrative duties at each phase. Ex: making Moodle submissions, filling out Google Forms, etc.
-1. The team leader for this first "Project Data" phase will then:
-    + Create a Slack direct message (DM) that includes all 1) your group members, 2) your instructor, and 3) your lab instructor. Ask all questions relating to your specific project here. That way everyone is on the same page.
-    + Submit your group information using the "Project groups Google Form" on Moodle.
-1. If you are looking for a group to join, please fill out the "Project groups Google Form" on Moodle.
+    + If you need a group fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSedfpweiZMki1J9MVeer8P1WBwVdGLF39hsVrQ4LlEor-5S_A/viewform){target="_blank"} by **Wed 2/16 at 5pm**. I will assign you a group before lab
+1. Assign a group leader. The team/group leader will have a few extra administrative duties at each phase. Ex: making submissions, filling out Google Forms, etc.
+
+
+## Select a data set
+
+You have two options for your data set:
+
+1. Choose from these 10 vetted [datasets](https://docs.google.com/document/d/1RkDW6ngTVbvZt98E8PTQAb32U2uJt7vT4d9HjxLYwUw/edit){target="_blank"}. The variables fit the requirements for this project and the data require no additional data wrangling.
+1. If you would like to use your own data, it must have:
+    1. An [identification variable](https://moderndive.com/1-getting-started.html#identification-vs-measurement-variables){target="_blank"} that uniquely identifies each observation in each row. 
+    1. A numerical outcome variable $y$. Note: binary outcomes variables with 0/1 values are not technically numerical.
+    1. Two explanatory variables:
+        a) A numerical explanatory variable $x_1$. Note: this can be some notion of time.
+        a) A categorical explanatory variable $x_2$ that has between 3-5 levels. Note: If your data has more than 5 levels, they can be collapsed into 5 using data wrangling later.
+    1. At least 50 observations/rows.
+
+
+## What to submit
+
+By Thu 2/24 9pm:
+
+1. The group leader will create a Slack direct message (DM) that includes all 1) your group members, 2) your instructor, and 3) your lab instructor. Please ask all questions to myself and Beth here so everyone is on the same page. 
+1. Only the group leader: Fill out this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSd9P4jEhBzHQga-EX7_Vz0MOia2YgxlDu6wD96TzT0YSmYbCA/viewform){target="_blank"} with your group information
 
 
 
-## Find data
 
-**`r hint_1`**
+<!--
 
 ### Step 1
 
@@ -97,13 +110,6 @@ Get a sense for the requirements of this project phase by reading the [example d
 ### Step 2
 
 Find a data set that fits these specifications. Note your data may need a little wrangling from its original form.
-
-1. (If available) An [identification variable](https://moderndive-bert.netlify.com/1-getting-started.html#identification-vs-measurement-variables){target="_blank"} that uniquely identifies each observation in each row. 
-1. A numerical outcome variable $y$. Note: binary outcomes variables with 0/1 values are not technically numerical.
-1. Two explanatory variables:
-    + A numerical explanatory variable $x_1$. Note: this can be some notion of time.
-    + A categorical explanatory variable $x_2$ that has between 3-5 levels. Note: If your data has more than 5 levels, they can be collapsed into 5 using data wrangling later.
-1. At least 50 observations/rows.
 
 **Where is this heading?**: For the next project phase (project proposal), you will be making a visualization like this [one](static/project/project_proposal_example.html#coloredscatterplot){target="_blank"}. *If you can make a visualization like this one, then your data is set for the rest of the project.* 
 
@@ -155,13 +161,23 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 1. Avoid "data dumps". For example, showing the contents of all 1000 rows in a data frame. This will make your output document really large and unreadable.
 
 
+-->
+
+
+
+
+
+
 
 ***
 
 
 
 
-# 2. Project Proposal {#proposal}
+# 2. Project EDA {#proposal}
+
+
+<!--
 
 **`r hint_2`**
 
@@ -207,7 +223,7 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 *** 
 
 
-<!--
+
 # Important note!
 
 
@@ -216,7 +232,7 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 
 
 ***
--->
+
 
 
 
@@ -237,12 +253,17 @@ Because a remote learning model of education makes both (1) coordinating group w
 1. Project Resubmission (revised)
 
 
+-->
+
 
 ***
 
 
 
-# 3. Revised: Project Submission {#submission}
+# 3. Project initial submission {#submission}
+
+
+<!--
 
 As stated above, we have four goals for this project, and at this point in the process (i.e. after phase two submission) we believe that each statistician in SDS/MTH 220 has explicit experience with at least one of the goals. So for the third “Project Submission”  phase of the project **each** student will be submitting a 1000 and 1200 word reflection piece on your experience. Action items:
 
@@ -261,13 +282,19 @@ There are a few logistics:
 * You will write your paper following the instructions in this [template Google Doc](https://docs.google.com/document/d/1fMXLAWDMehHWaFp1cOtRcD-pf2aJEnmgQnkcAwQ6Syk/){target="_blank"}. It needs to be between 1000 and 1200 words.
 * Your paper must be written by you, but in the footnote please note when you met with your group and one topic that your group discussed that was not included in your reflection piece.
 
+-->
 
 
 ***
 
 
 
-# 4. Revised: Project Resubmission {#resubmission}
+# 4. Project resubmission {#resubmission}
+
+Here is a [rough example](static/project/project_resubmission_example.html){target="_blank"} (note project requirements have changed slightly). 
+
+
+<!--
 
 Just as with the original incarnation of the project, there is a resubmission phase. After you have submitted the third phase, we will give you feedback on your submission. For the resubmission, you will submit a revision of your paper that addresses the feedback we’ve given you. 
 
@@ -319,3 +346,4 @@ For reference only, we are including the original instructions for Phase 3: Proj
     1. Evaluating your peers' contributions for the project.
     1. Questions about you.
     1. General questions about the course.
+-->
