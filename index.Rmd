@@ -759,8 +759,6 @@ simple_regression_ex
     a) Draw the 3 *fitted values* $\widehat{y}$ using the equation for the regression line $\widehat{y} = b_0 + b_1\cdot x$
     a) Draw the 3 *residuals* $y - \widehat{y}$
     a) Compute the sum of squared residuals for this line.
-    a) Draw another arbitrarily chosen line with equation $\widehat{y} = 2 - 1\cdot x$ in green.
-    a) Compute the sum of squared residuals for this line and compare to previous
 
 ```{r, echo=FALSE, eval=TRUE}
 ggplot(simple_regression_ex, aes(x = x, y = y)) +
@@ -771,6 +769,7 @@ ggplot(simple_regression_ex, aes(x = x, y = y)) +
 
 ### 2. In-class exercise
 
+1. Repeat sum of squared errors calculation for dashed black line, show the value is "worse" i.e. bigger than the value for the blue regression line. 
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
