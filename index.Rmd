@@ -730,56 +730,28 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 
 ***
 
+-->
+
+
 
 
 # Lec 11: Wed 2/16
 
 ## Announcements
 
-1. 
+1. If you need a project group fill out the Google Form found on the [Project](project.html) page by 5pm today.
 
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
-
-
-
-
-
-
-
-
-## Announcements
-
-* First phase of [project](project.html) is due Mon 2/24 at 11pm. If you haven't already, **start now**. 
-* Will Hopper's Thursday PM lab is cancelled b/c of Rally Day. For this week only, you may attend the following labs (see [syllabus](syllabus.html) for time/place):
-    + David Rockoff's Tue PM lab
-    + Will Hopper's Thu AM lab
-
-## Recap
-
-
-Bert is going to another example of summarize, b/c students are confused about 
-the "collapsing rows" nature of the operation.
-
-
-## Chalk talk
-
+1. PS02 Q11: Skew
 1. Correlation is not necessarily causation:
     a) [Spurious correlations](http://www.tylervigen.com/spurious-correlations){target="_blank"}
     a) What are X = treatment, Y = response, and Z = confounding variables?
     a) What are causal graphs? 
-    a) Simple example: Does "X = drinking gatorade/ginger ale" cause "Y = feel nauseous"? 
-    Z = has the flu
-    a) Famous example: [UC Berkeley gender bias](https://en.wikipedia.org/wiki/Simpson%27s_paradox#UC_Berkeley_gender_bias){target="_blank"}. Does "X = (binary) gender" cause "Y = decreased chance of admission to UC Berkeley in 1973"?
-    Z = competitiveness of admissions to department. Women tended to apply to departments with less resources and thus were more competitive, like humanities, while men tended to apply to departments with more resources and thus were easier to get into, like engineering.
-1. Recall `simple_regression_ex` from Lec09.  
+1. Recall `simple_regression_ex`
 ```{r, echo=FALSE, eval=TRUE}
 simple_regression_ex
 ```
@@ -797,12 +769,13 @@ ggplot(simple_regression_ex, aes(x = x, y = y)) +
   geom_point(size = 2)
 ```
 
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
-
--->
-
 
 
 # Lec 10: Mon 2/14
