@@ -442,7 +442,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Albert Y. Kim &amp; Beth Brown</h4>
-<h4 class="date">Last updated on 2022-02-16</h4>
+<h4 class="date">Last updated on 2022-02-18</h4>
 
 </div>
 
@@ -975,106 +975,64 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 
 
 ***
-
-
-
-# Lec 12: Fri 2/18
-
-## Announcements
-
-1. 
-
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
-
-
-
-
-
-Then write on board:
-
-1. They allow you to compare the distribution of a numerical variable (on y-axis) split by a categorical variable (on x-axis)
-1. Remember: solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
-1. Example: Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might mean not be appropriate?
-
-
-## In-class exericse
-
-Consider the following 9 points saved in a data frame called `categ_regression_ex` where we have
-
-1. A numerical outcome variable $y$ = `value`
-1. An *categorical* explanatory variable $x$ = `name` with 3 levels: Bert, Florence, Katie.
-
-
-```r
-library(ggplot2)
-library(dplyr)
-categ_regression_ex <- tibble(
-  name = c("Bert","Bert","Bert","Florence","Florence","Florence","Katie","Katie","Katie"),
-  value = c(9,10,11,11,12,13,8,9,10)
-)
-categ_regression_ex
-```
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source type="application/json">
-{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bert","2":"9"},{"1":"Bert","2":"10"},{"1":"Bert","2":"11"},{"1":"Florence","2":"11"},{"1":"Florence","2":"12"},{"1":"Florence","2":"13"},{"1":"Katie","2":"8"},{"1":"Katie","2":"9"},{"1":"Katie","2":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-
-In groups: copy the above code and create a scatterplot with
-
-1. `value` (numerical) on the y-axis
-1. `name` (categorical) on the x-axis
-
-Note this is slightly different that the scatterplots we've seen until now where the x variable was always numerical.
-
-
-
-**Solution**:
-
-
-```r
-ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
-  geom_point()
-```
-
-<img src="index_files/figure-html/unnamed-chunk-8-1.png" width="768" />
-
-
-Then draw the above plot on board and mark:
-
-1. mean for Bert with horizontal line. call this the baseline mean
-1. mean for Florence and Katie with horizontal lines
-1. both possible offsets
-
-Why is Bert baseline? For no other reason than it's first alphanumerically.
-
-
-
-
-***
-
 -->
 </div>
-<div id="lec-11-wed-216" class="section level1">
-<h1>Lec 11: Wed 2/16</h1>
+<div id="lec-12-fri-218" class="section level1">
+<h1>Lec 12: Fri 2/18</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
-<li>If you need a project group fill out the Google Form found on the <a href="project.html">Project</a> page by 5pm today.</li>
+<li>See Slack <code>#general</code>: Newest SDS faculty Shiya Cao visit today</li>
+<li></li>
 </ol>
 </div>
 <div id="todays-topicsactivities" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ol style="list-style-type: decimal">
+<li>Lec 11 in-class exercise: sum of squared residuals computation of dashed black line</li>
+<li>Regression with a categorical predictor variable. Copy the following code into your <code>classnotes.Rmd</code> that creates a data frame called <code>categ_regression_ex</code> with 9 rows and 2 variables:
+<ol style="list-style-type: decimal">
+<li>A numerical outcome variable <span class="math inline">\(y\)</span> = <code>value</code></li>
+<li>An <em>categorical</em> explanatory variable <span class="math inline">\(x\)</span> = <code>name</code> with 3 levels: Bert, Flo, Ivy.</li>
+</ol></li>
+</ol>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moderndive)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>categ_regression_ex <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Ivy&quot;</span>, <span class="st">&quot;Ivy&quot;</span>, <span class="st">&quot;Ivy&quot;</span>),</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>categ_regression_ex</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bert","2":"9"},{"1":"Bert","2":"10"},{"1":"Bert","2":"11"},{"1":"Flo","2":"11"},{"1":"Flo","2":"12"},{"1":"Flo","2":"13"},{"1":"Ivy","2":"8"},{"1":"Ivy","2":"9"},{"1":"Ivy","2":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<ol style="list-style-type: decimal">
+<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
+<div id="lec-11-wed-216" class="section level1">
+<h1>Lec 11: Wed 2/16</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
+<ol style="list-style-type: decimal">
+<li>If you need a project group fill out the Google Form found on the <a href="project.html">Project</a> page by 5pm today.</li>
+</ol>
+</div>
+<div id="todays-topicsactivities-1" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk-1" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>PS02 Q11: Skew</li>
@@ -1097,9 +1055,9 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 <li>Compute the sum of squared residuals for this line.</li>
 </ol></li>
 </ol>
-<p><img src="index_files/figure-html/unnamed-chunk-10-1.png" width="768" /></p>
+<p><img src="index_files/figure-html/unnamed-chunk-9-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-1" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Repeat sum of squared errors calculation for dashed black line, show the value is “worse” i.e. bigger than the value for the blue regression line.</li>
@@ -1112,7 +1070,7 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 </div>
 <div id="lec-10-mon-214" class="section level1">
 <h1>Lec 10: Mon 2/14</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-2" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Slack announcement about SDSCC</li>
@@ -1121,9 +1079,9 @@ Why is Bert baseline? For no other reason than it's first alphanumerically.
 <li>Answer previous question</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-2" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 Consider the following 3 points saved in a data frame called <code>simple_regression_ex</code>.
 <div data-pagedtable="false">
@@ -1132,11 +1090,11 @@ Consider the following 3 points saved in a data frame called <code>simple_regres
   </script>
 </div>
 <p>We display the <em>regression table</em>. This is done in two steps:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Fit regression model</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>model_ex <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> simple_regression_ex)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Get regression table</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_regression_table</span>(model_ex)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Fit regression model</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>model_ex <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> simple_regression_ex)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Get regression table</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_regression_table</span>(model_ex)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"1.5","3":"1.118","4":"1.342","5":"0.408","6":"-12.706","7":"15.706"},{"1":"x","2":"1.0","3":"1.732","4":"0.577","5":"0.667","6":"-21.008","7":"23.008"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1159,7 +1117,7 @@ rather averaged across all differences of unit in x
 * associated b/c we don't want to assume a casual relationship
 -->
 </div>
-<div id="in-class-exercise-1" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1171,7 +1129,7 @@ rather averaged across all differences of unit in x
 </div>
 <div id="lec-09-fri-211" class="section level1">
 <h1>Lec 09: Fri 2/11</h1>
-<div id="announcements-2" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>First phase of project released on Monday: Project proposal due Thu 2/24
@@ -1186,9 +1144,9 @@ rather averaged across all differences of unit in x
 </ul></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-2" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-2" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>For ModernDive Ch5 you need to install some new packages, including the <a href="https://www.tidyverse.org/packages/" target="_blank"><code>tidyverse</code></a> package</li>
@@ -1206,7 +1164,7 @@ rather averaged across all differences of unit in x
 </ul></li>
 </ol>
 </div>
-<div id="in-class-exercise-2" class="section level3">
+<div id="in-class-exercise-3" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1246,7 +1204,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 </div>
 <div id="lec-08-wed-29" class="section level1">
 <h1>Lec 08: Wed 2/9</h1>
-<div id="announcements-3" class="section level2">
+<div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -1256,9 +1214,9 @@ I wish biology undergrad curricula had more statistics. Every bio major should h
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-3" class="section level2">
+<div id="todays-topicsactivities-4" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
+<div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>Using same <code>fruit_basket</code> example from chalk talk in Lec 07:</p>
 <div data-pagedtable="false">
@@ -1305,7 +1263,7 @@ fruit_basket_cents
 ```
 -->
 </div>
-<div id="in-class-exercise-3" class="section level3">
+<div id="in-class-exercise-4" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1317,34 +1275,34 @@ fruit_basket_cents
 </div>
 <div id="lec-07-mon-27" class="section level1">
 <h1>Lec 07: Mon 2/7</h1>
-<div id="announcements-4" class="section level2">
+<div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><p>Copy the following code in a new R code chunk in your <code>classnotes.Rmd</code> file</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>africa <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv&quot;</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at variable types</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(africa)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Scatterplot</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> countries_in_africa)) <span class="sc">+</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Histogram</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> height)) <span class="sc">+</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Boxplot</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> group, <span class="at">y =</span> countries_in_africa)) <span class="sc">+</span></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div></li>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>africa <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv&quot;</span>)</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at variable types</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(africa)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Scatterplot</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> countries_in_africa)) <span class="sc">+</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Histogram</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> height)) <span class="sc">+</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Boxplot</span></span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> group, <span class="at">y =</span> countries_in_africa)) <span class="sc">+</span></span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-4" class="section level2">
+<div id="todays-topicsactivities-5" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-4" class="section level3">
+<div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Finish data visualization
@@ -1367,38 +1325,38 @@ fruit_basket_cents
   </script>
 </div>
 <p><strong>Posted after lecture</strong>: In case you want to run the chalk talk example on your computer:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create fruit_basket data frame from scratch</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (we won&#39;t do this much in this class)</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>fruit_basket <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="fu">c</span>(<span class="st">&quot;mango&quot;</span>, <span class="st">&quot;kiwi&quot;</span>, <span class="st">&quot;mango&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;mango&quot;</span>),</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">price =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>)</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the basket only for grapes</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>grape_basket <span class="ot">&lt;-</span> fruit_basket <span class="sc">%&gt;%</span> </span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">&quot;grape&quot;</span>)</span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a><span class="co"># View contents of grapes</span></span>
-<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>grape_basket</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create fruit_basket data frame from scratch</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (we won&#39;t do this much in this class)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>fruit_basket <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="fu">c</span>(<span class="st">&quot;mango&quot;</span>, <span class="st">&quot;kiwi&quot;</span>, <span class="st">&quot;mango&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;mango&quot;</span>),</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">price =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the basket only for grapes</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>grape_basket <span class="ot">&lt;-</span> fruit_basket <span class="sc">%&gt;%</span> </span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">&quot;grape&quot;</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># View contents of grapes</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>grape_basket</span></code></pre></div>
 <!--
 First, let's compare the boxplot you created in Lec04 with the original points. See how they align.
 
-<img src="index_files/figure-html/unnamed-chunk-18-1.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-17-1.png" width="768" />
 
 Second, let's compare two visualizations of the distribution of the numerical variable temperature *split by* month:
 
 * Faceted histogram in ModernDive [Figure 2.13](https://moderndive-bert.netlify.com/2-viz.html#facets){target="_blank"}
 * Side-by-side boxplot in ModernDive [Figure 2.18](https://moderndive-bert.netlify.com/2-viz.html#boxplots){target="_blank"}
 
-<img src="index_files/figure-html/unnamed-chunk-19-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-19-2.png" width="768" />
+<img src="index_files/figure-html/unnamed-chunk-18-1.png" width="768" /><img src="index_files/figure-html/unnamed-chunk-18-2.png" width="768" />
 
 Which do you prefer?
 
 -->
 </div>
-<div id="in-class-exercise-4" class="section level3">
+<div id="in-class-exercise-5" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1415,7 +1373,7 @@ Which do you prefer?
 </div>
 <div id="lec-05-wed-22" class="section level1">
 <h1>Lec 05: Wed 2/2</h1>
-<div id="announcements-5" class="section level2">
+<div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>At the beginning of every lecture you should have the following open:
@@ -1431,9 +1389,9 @@ Which do you prefer?
 <li>Recap in-class activity based on student ID numbers from last lecture</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-5" class="section level2">
+<div id="todays-topicsactivities-6" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-5" class="section level3">
+<div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>We want to visualize the distribution of the following 12 values with a boxplot: 1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30. They have the following <em>summary statistics</em> (a single numerical value <em>summarizing</em> many values):</p>
 <ol style="list-style-type: decimal">
@@ -1449,7 +1407,7 @@ Which do you prefer?
 </ol></li>
 </ol>
 </div>
-<div id="in-class-exercise-5" class="section level3">
+<div id="in-class-exercise-6" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1462,7 +1420,7 @@ Which do you prefer?
 </div>
 <div id="lec-04-mon-131" class="section level1">
 <h1>Lec 04: Mon 1/31</h1>
-<div id="announcements-6" class="section level2">
+<div id="announcements-7" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>At the beginning of every lecture you should have the following open:
@@ -1474,9 +1432,9 @@ Which do you prefer?
 </ol></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-6" class="section level2">
+<div id="todays-topicsactivities-7" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-6" class="section level3">
+<div id="chalk-talk-7" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Mega-mega fun times in-class activity</li>
@@ -1489,7 +1447,7 @@ Which do you prefer?
 <li>Facets split one graphic by the values of another variable (that does not have too many unique values).</li>
 </ol>
 </div>
-<div id="in-class-exercise-6" class="section level3">
+<div id="in-class-exercise-7" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1501,7 +1459,7 @@ Which do you prefer?
 </div>
 <div id="lec-03-fri-128" class="section level1">
 <h1>Lec 03: Fri 1/28</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-8" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Show example of thread in <code>#questions</code> on Slack.</li>
@@ -1514,9 +1472,9 @@ Which do you prefer?
 <li><a href="static/2022-01-28-Lec03.pdf" target="_blank">Lecture notes</a></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-8" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-8" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Draw scatterplot by hand</li>
@@ -1525,7 +1483,7 @@ Which do you prefer?
 <li>Setting up a <code>classnotes.Rmd</code> R Markdown file for the in-class exercises. This follows exactly what you did for Lab01 on Thu 1/27.</li>
 </ol>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-8" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1538,7 +1496,7 @@ Which do you prefer?
 </div>
 <div id="lec-02-wed-126" class="section level1">
 <h1>Lec 02: Wed 1/26</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Waitlist: Fill out Google Form on Moodle by 1pm. I will start admitting people this afternoon.</li>
@@ -1554,9 +1512,9 @@ Which do you prefer?
 <li><a href="static/2022-01-26-Lec02.pdf" target="_blank">Lecture notes</a></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>R vs RStudio</li>
@@ -1564,7 +1522,7 @@ Which do you prefer?
 <li>R packages</li>
 </ol>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>

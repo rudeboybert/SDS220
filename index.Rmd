@@ -649,6 +649,9 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 
 
 ***
+-->
+
+
 
 
 
@@ -656,6 +659,7 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 
 ## Announcements
 
+1. See Slack `#general`: Newest SDS faculty Shiya Cao visit today
 1. 
 
 
@@ -663,76 +667,39 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 
 ### 1. Chalk talk
 
+1. Lec 11 in-class exercise: sum of squared residuals computation of dashed black line
+1. Regression with a categorical predictor variable. Copy the following code into your `classnotes.Rmd` that creates a data frame called `categ_regression_ex`
+with 9 rows and 2 variables:
+    1. A numerical outcome variable $y$ = `value`
+    1. An *categorical* explanatory variable $x$ = `name` with 3 levels: Bert, Flo, Ivy.
+
+```{r, eval=TRUE}
+library(ggplot2)
+library(dplyr)
+library(moderndive)
+categ_regression_ex <- tibble(
+  name = c("Bert", "Bert", "Bert", "Flo", "Flo", "Flo", "Ivy", "Ivy", "Ivy"),
+  value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
+)
+categ_regression_ex
+```
+
+
+```{r, eval=FALSE, echo=FALSE}
+# Two parts: fit and save the model
+model_categ_x <- lm(value ~ name, data = categ_regression_ex)
+# output a clean regression table
+get_regression_table(model_categ_x)
+```
+
+
 ### 2. In-class exercise
 
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
-
-
-
-Then write on board:
-
-1. They allow you to compare the distribution of a numerical variable (on y-axis) split by a categorical variable (on x-axis)
-1. Remember: solid line in middle is median, not mean. Both are measures of center, one is more sensitive to outliers.
-1. Example: Say a company has 5 employees with hourly salary: 10, 10, 10, 10, 1000. Mean hourly salary is $208. Why might mean not be appropriate?
-
-
-## In-class exericse
-
-Consider the following 9 points saved in a data frame called `categ_regression_ex` where we have
-
-1. A numerical outcome variable $y$ = `value`
-1. An *categorical* explanatory variable $x$ = `name` with 3 levels: Bert, Florence, Katie.
-
-```{r, eval=TRUE}
-library(ggplot2)
-library(dplyr)
-categ_regression_ex <- tibble(
-  name = c("Bert","Bert","Bert","Florence","Florence","Florence","Katie","Katie","Katie"),
-  value = c(9,10,11,11,12,13,8,9,10)
-)
-categ_regression_ex
-```
-
-In groups: copy the above code and create a scatterplot with
-
-1. `value` (numerical) on the y-axis
-1. `name` (categorical) on the x-axis
-
-Note this is slightly different that the scatterplots we've seen until now where the x variable was always numerical.
-
-```{r, echo=FALSE, eval=FALSE}
-# This code is hidden. Maybe a live coding demo?
-ggplot(categ_regression_ex, aes(x = name, y = value)) + 
-  geom_point()
-```
-
-**Solution**:
-
-```{r, eval=TRUE, echo=TRUE}
-ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
-  geom_point()
-```
-
-
-Then draw the above plot on board and mark:
-
-1. mean for Bert with horizontal line. call this the baseline mean
-1. mean for Florence and Katie with horizontal lines
-1. both possible offsets
-
-Why is Bert baseline? For no other reason than it's first alphanumerically.
-
-
-
-
 ***
-
--->
-
-
 
 
 # Lec 11: Wed 2/16
