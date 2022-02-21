@@ -575,10 +575,11 @@ Today's outline:
 
 ### 1. Chalk talk
 
-1. More on regression using a categorical explanatory/predictor variable $x$. Reusing `categ_regression_ex` example from Lec12:
-    1. Write out equation for fitted value $\hat{y}$ using indicator functions
-    1. Computing all fitted values and residuals by hand
-    1. Apply `get_regression_points()` function
+More on regression using a categorical explanatory/predictor variable $x$. Reusing `categ_regression_ex` code example from Lec12:
+
+1. Write out equation for fitted value $\hat{y}$ using indicator functions
+1. Computing all fitted values and residuals by hand
+1. Apply `get_regression_points()` function
 
 
 ### 2. In-class exercise
@@ -688,10 +689,11 @@ categ_model <- lm(value ~ name, data = categ_regression_ex)
 # Step 2: Output regression table
 get_regression_table(categ_model)
 
-# Code we typed during Lec13 to view information on all 9 points where:
+# Code we typed during Lec13 to view information on all 9 points
+# where:
 # value = y outcome variable
 # name = x explanatory variable (categorical)
-# value_yat = y_hat fitted values (which correspond to group/category means)
+# value_yat = y_hat fitted values (group/category means)
 # residual = y - y_hat errors
 get_regression_points(categ_model)
 ```
