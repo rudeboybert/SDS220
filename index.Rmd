@@ -504,16 +504,31 @@ ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, heig
 
 ***
 
+-->
+
+
 
 
 # Lec 14: Wed 2/23
 
 ## Announcements
 
+1. 
+
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
+1. Multiple regression for $y$ as a function of two explanatory/predictor variables:
+    1. $x_1$ numerical
+    1. $x_2$ categorical
+1. First type of multiple regression model: interaction model. What is an interaction effect?
+1. Using teaching `evals` data from Chapter 5 again:
+    1. Figure 6.1: EDA Visualization of interaction model
+    1. Table 6.2: Regression table of coefficients for interaction model
+    1. Equation for fitted values $\hat{y}$
+    1. Table 6.4: Intercepts and slopes of regression line for both genders (recorded as binary at time of study in 2005)
+    1. Interpretation of results
 
 ### 2. In-class exercise
 
@@ -521,47 +536,7 @@ ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, heig
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
-
-
-
-
-* Project: We're going over first phase submissions as we speak. We'll have first round of feedback and information for the next project phase on Friday.
-* Badge Challenge 1:
-    + Remember that you only have to do as many questions as you are ready for. If a question has multiple parts, you **must** attempt all parts to earn above *X* (cannot be assessed). 
-    + In order to ensure fairness, all instructors, lab instructors, and Spinelli tutors will not answer questions during the badge challenge time window.
-    + We'll post the cover page of the badge challenge on the webpage later today.
-* Minh Ly, the Associate Director for Assessment of [Smith Office of Institutional Research (IR)](https://www.smith.edu/about-smith/institutional-research){target="_blank"}, will be giving a talk this tonight at 7PM in Seelye 107:
-
-<center>
-![](static/events/minh_ly.png){ width=50% }
-</center>
-
-## Recap
-
-* Indicator function from ModernDive 5.2.2 on regression with a categorical variable using `gapminder` data. What does $\mathbb{1}_{\text{Amer}}(x)$ do?
-
-## Chalk talk
-
-Today's outline:
-
-1. Chalk talk part 1: Multiple regression for $y$ as a function of $x_1$ and $x_2$
-1. You will then read ModernDive from the beginning of Chapter 6 to the end of 6.1.1. Write down your interpretation of Figure 6.1.
-1. Chalk talk part 2: Tying together
-    1. Figure 6.1: Visualization of interaction model
-    1. Table 6.2: Regression table for interaction model
-    1. Table 6.4: Intercepts and slopes of regression line for both genders (recorded as binary at time of study in 2005). 
-1. You will then read ModernDive 6.1.2 on interaction models
-
-
-
 ***
-
-
-
-
-***
-
--->
 
 
 # Lec 13: Mon 2/21
