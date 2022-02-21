@@ -461,9 +461,25 @@ ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, heig
 
 
 
-# Lec 15: Fri 2/28
+# Lec 15: Fri 2/25
 
 ## Announcements
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+
+
+
+
 
 1. Project
     1. Go over [general feedback](project.html#phase_I_feedback) for all groups
@@ -490,9 +506,24 @@ ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, heig
 
 
 
-# Lec 14: Wed 2/26
+# Lec 14: Wed 2/23
 
 ## Announcements
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+
+
+
 
 * Project: We're going over first phase submissions as we speak. We'll have first round of feedback and information for the next project phase on Friday.
 * Badge Challenge 1:
@@ -527,39 +558,36 @@ Today's outline:
 
 
 
-# Lec 13: Mon 2/24
-
-## Announcements
-
-1. [SDS talk this week](https://smithcollege-sds.github.io/sds-www/speaker_Hu.html#public_lecture:_generating_synthetic_family_income_for_the_consumer_expenditure_surveys){target="_blank"} on balancing between "having useful data" and "maintinaing sufficient privacy protection":
-    + What: "Generating Synthetic Family Income for the Consumer Expenditure Surveys"
-    + Who: Prof. Jingchen (Monika) Hu, Vassar College
-    + When: Thursday Feb 27, 5pm
-    + Where: McConnell Hall 103
-
-<center>
-![](static/events/hu.png){ width=75% }
-</center>
-
-## Today
-
-* Recap exercise on common R and RStudio coding issues (print-out given in class available [here](https://docs.google.com/document/d/1tvjDIZXlrQMaYKmv9omWkmIpi-2w3NPxGpNXlSktgNY/){target="_blank"})
-* Discussion on [Badge Challenge 1](badge_challenges.html#)
-* Class time for projects
-
-
 
 ***
 
+-->
 
 
-# Lec 12: Fri 2/21
+# Lec 13: Mon 2/21
 
 ## Announcements
 
-* `NA`
+1. [Project proposal](project.html) due during lab on Thursday
 
-## Recap
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. More on regression using a categorical explanatory/predictor variable $x$. Reusing `categ_regression_ex` example from Lec12:
+    1. Write out equation for fitted value $\hat{y}$ using indicator functions
+    1. Computing all fitted values and residuals by hand
+    1. Apply `get_regression_points()` function
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+<!--
 
 Recall the `categ_regression_ex` data frame from from Lec11. Note that the explanatory variable $x$ = name is now categorical with 3 levels: Bert, Florence, Katie.
 
@@ -570,8 +598,8 @@ categ_regression_ex
 You then plotted the points. Let's also add three lines:
 
 1. A solid line for Bert's "baseline" mean ("Bert" is the baseline because it comes first alphanumerically)
-1. A dashed line for Florence's mean, which is *offset* from Bert's mean by 12 - 10 = +2
-1. A dotted line for Katie's mean, which is *offset* from Bert's mean by 9 - 10 = -1
+1. A dashed line for Flo's mean, which is *offset* from Bert's mean by 12 - 10 = +2
+1. A dotted line for Ivy's mean, which is *offset* from Bert's mean by 9 - 10 = -1
 
 ```{r, eval=TRUE, echo=FALSE}
 ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
@@ -580,23 +608,6 @@ ggplot(data = categ_regression_ex, mapping = aes(x=name,y=value)) +
   geom_hline(yintercept = 12, linetype = "longdash") +
   geom_hline(yintercept = 9, linetype = "dotted")
 ```
-
-Shout out to [Dr. Jenny Smetzer](https://www.scsparkscience.org/fellow/jennifer-smetzer/){target="_blank"} for this example.
-
-
-## Chalk talk
-
-Now let's obtain the *regression table* using the `get_regression_table()` function in the `moderndive` package. Recall this is done in two steps:
-
-```{r, eval = TRUE}
-# Step 1: Fit regression model
-model_ex <- lm(value ~ name, data = categ_regression_ex)
-
-# Step 2: Get regression table
-get_regression_table(model_ex)
-```
-
-
 
 Then write on board (in order to bridge the gap between output of regression
 table & wacked out indicator function notation they'll read in Chapter 5.2.2
@@ -614,11 +625,10 @@ today):
 
 Let's now get the fitted values and residuals using the `get_regression_points()` function on `model_ex` (where our model is saved):
 
-```{r, eval = TRUE}
+```{r, eval = FALSE, echo = FALSE}
 # Step 2: Get regression points
 get_regression_points(model_ex)
 ```
-
 
 Then write on board:
 
@@ -634,25 +644,15 @@ Note for future self:
 - x numerical: for every slide of 1 in x, the slope is the expected/on average change in y (not necessarialy causal)
 - x categorical: for a hop between categories starting from the baseline
 
-
-
-
-    
-    
-   
-If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean. Do this in  [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
+If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualization of what the terms in the regression table in Table 5.8 actually mean. Do this in [moderndive_book](https://github.com/moderndive/ModernDive_book/) repo -> `bert-dev` branch -> Open `05-regression.Rmd` and edit, commit, and push this file only. The book builds and deploys automatically using Netlify
 
 * A jitterplot of x = continent, y = lifeExp, mark baseline, mark means, show offsets of marked means vs baseline.
 * Insert in text right before "Let’s generalize this idea a bit".
 
-
-
-
-***
 -->
 
 
-
+***
 
 
 # Lec 12: Fri 2/18
@@ -660,7 +660,6 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 ## Announcements
 
 1. See Slack `#general`: Newest SDS faculty Shiya Cao visit today
-1. 
 
 
 ## Today's Topics/Activities
@@ -682,14 +681,13 @@ categ_regression_ex <- tibble(
   value = c(9, 10, 11, 11, 12, 13, 8, 9, 10)
 )
 categ_regression_ex
-```
 
-
-```{r, eval=FALSE, echo=FALSE}
-# Two parts: fit and save the model
-model_categ_x <- lm(value ~ name, data = categ_regression_ex)
-# output a clean regression table
-get_regression_table(model_categ_x)
+# Code we typed during lecture (which I shared on Slack)
+# to view regression table:
+# Step 1: Fit and save model
+categ_model <- lm(value ~ name, data = categ_regression_ex)
+# Step 2: Output regression table
+get_regression_table(categ_model)
 ```
 
 
