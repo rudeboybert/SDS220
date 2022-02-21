@@ -682,12 +682,18 @@ categ_regression_ex <- tibble(
 )
 categ_regression_ex
 
-# Code we typed during lecture (which I shared on Slack)
-# to view regression table:
+# Code we typed during Lec12 to view regression table:
 # Step 1: Fit and save model
 categ_model <- lm(value ~ name, data = categ_regression_ex)
 # Step 2: Output regression table
 get_regression_table(categ_model)
+
+# Code we typed during Lec13 to view information on all 9 points where:
+# value = y outcome variable
+# name = x explanatory variable (categorical)
+# value_yat = y_hat fitted values (which correspond to group/category means)
+# residual = y - y_hat errors
+get_regression_points(categ_model)
 ```
 
 
