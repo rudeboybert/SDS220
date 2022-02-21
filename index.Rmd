@@ -579,7 +579,7 @@ More on regression using a categorical explanatory/predictor variable $x$. Reusi
 
 1. Write out equation for fitted value $\hat{y}$ using indicator functions
 1. Computing all fitted values and residuals by hand
-1. Apply `get_regression_points()` function
+1. Re-using code example from Lec12, apply `get_regression_points()` function (additional code is posted below in Lec12)
 
 
 ### 2. In-class exercise
