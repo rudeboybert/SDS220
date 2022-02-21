@@ -14,8 +14,7 @@
 
 <title>SDS 220: Intro to Probability and Statistics</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -34,6 +33,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -59,19 +59,19 @@
   }
 </style>
 <style type="text/css" data-origin="pandoc">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -91,7 +91,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {  background-color: #f8f8f8; }
 @media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ef2929; } /* Alert */
 code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
@@ -966,36 +966,36 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 <li>An <em>categorical</em> explanatory variable <span class="math inline">\(x\)</span> = <code>name</code> with 3 levels: Bert, Flo, Ivy.</li>
 </ol></li>
 </ol>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(moderndive)</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>categ_regression_ex <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="fu">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Ivy&quot;</span>, <span class="st">&quot;Ivy&quot;</span>, <span class="st">&quot;Ivy&quot;</span>),</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">value =</span> <span class="fu">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>categ_regression_ex</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb1-3"><a href="#cb1-3"></a><span class="kw">library</span>(moderndive)</span>
+<span id="cb1-4"><a href="#cb1-4"></a>categ_regression_ex &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb1-5"><a href="#cb1-5"></a>  <span class="dt">name =</span> <span class="kw">c</span>(<span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Bert&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Flo&quot;</span>, <span class="st">&quot;Ivy&quot;</span>, <span class="st">&quot;Ivy&quot;</span>, <span class="st">&quot;Ivy&quot;</span>),</span>
+<span id="cb1-6"><a href="#cb1-6"></a>  <span class="dt">value =</span> <span class="kw">c</span>(<span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">11</span>, <span class="dv">11</span>, <span class="dv">12</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">9</span>, <span class="dv">10</span>)</span>
+<span id="cb1-7"><a href="#cb1-7"></a>)</span>
+<span id="cb1-8"><a href="#cb1-8"></a>categ_regression_ex</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]}],"data":[{"1":"Bert","2":"9"},{"1":"Bert","2":"10"},{"1":"Bert","2":"11"},{"1":"Flo","2":"11"},{"1":"Flo","2":"12"},{"1":"Flo","2":"13"},{"1":"Ivy","2":"8"},{"1":"Ivy","2":"9"},{"1":"Ivy","2":"10"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code we typed during Lec12 to view regression table:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Fit and save model</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>categ_model <span class="ot">&lt;-</span> <span class="fu">lm</span>(value <span class="sc">~</span> name, <span class="at">data =</span> categ_regression_ex)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Output regression table</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_regression_table</span>(categ_model)</span></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="co"># Code we typed during Lec12 to view regression table:</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co"># Step 1: Fit and save model</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>categ_model &lt;-<span class="st"> </span><span class="kw">lm</span>(value <span class="op">~</span><span class="st"> </span>name, <span class="dt">data =</span> categ_regression_ex)</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="co"># Step 2: Output regression table</span></span>
+<span id="cb2-5"><a href="#cb2-5"></a><span class="kw">get_regression_table</span>(categ_model)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"10","3":"0.577","4":"17.321","5":"0.000","6":"8.587","7":"11.413"},{"1":"name: Flo","2":"2","3":"0.816","4":"2.449","5":"0.050","6":"0.002","7":"3.998"},{"1":"name: Ivy","2":"-1","3":"0.816","4":"-1.225","5":"0.267","6":"-2.998","7":"0.998"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
   </script>
 </div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Code we typed during Lec13 to view information on all 9 points</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># where:</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="co"># value = y outcome variable</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># name = x explanatory variable (categorical)</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># value_yat = y_hat fitted values (group/category means)</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co"># residual = y - y_hat errors</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">get_regression_points</span>(categ_model)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="co"># Code we typed during Lec13 to view information on all 9 points</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a><span class="co"># where:</span></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="co"># value = y outcome variable</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="co"># name = x explanatory variable (categorical)</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="co"># value_yat = y_hat fitted values (group/category means)</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="co"># residual = y - y_hat errors</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="kw">get_regression_points</span>(categ_model)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["ID"],"name":[1],"type":["int"],"align":["right"]},{"label":["value"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["name"],"name":[3],"type":["chr"],"align":["left"]},{"label":["value_hat"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["residual"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"1","2":"9","3":"Bert","4":"10","5":"-1"},{"1":"2","2":"10","3":"Bert","4":"10","5":"0"},{"1":"3","2":"11","3":"Bert","4":"10","5":"1"},{"1":"4","2":"11","3":"Flo","4":"12","5":"-1"},{"1":"5","2":"12","3":"Flo","4":"12","5":"0"},{"1":"6","2":"13","3":"Flo","4":"12","5":"1"},{"1":"7","2":"8","3":"Ivy","4":"9","5":"-1"},{"1":"8","2":"9","3":"Ivy","4":"9","5":"0"},{"1":"9","2":"10","3":"Ivy","4":"9","5":"1"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1080,11 +1080,11 @@ Consider the following 3 points saved in a data frame called <code>simple_regres
   </script>
 </div>
 <p>We display the <em>regression table</em>. This is done in two steps:</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Fit regression model</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>model_ex <span class="ot">&lt;-</span> <span class="fu">lm</span>(y <span class="sc">~</span> x, <span class="at">data =</span> simple_regression_ex)</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 2: Get regression table</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">get_regression_table</span>(model_ex)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="co"># Step 1: Fit regression model</span></span>
+<span id="cb4-2"><a href="#cb4-2"></a>model_ex &lt;-<span class="st"> </span><span class="kw">lm</span>(y <span class="op">~</span><span class="st"> </span>x, <span class="dt">data =</span> simple_regression_ex)</span>
+<span id="cb4-3"><a href="#cb4-3"></a></span>
+<span id="cb4-4"><a href="#cb4-4"></a><span class="co"># Step 2: Get regression table</span></span>
+<span id="cb4-5"><a href="#cb4-5"></a><span class="kw">get_regression_table</span>(model_ex)</span></code></pre></div>
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["term"],"name":[1],"type":["chr"],"align":["left"]},{"label":["estimate"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["std_error"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["statistic"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["p_value"],"name":[5],"type":["dbl"],"align":["right"]},{"label":["lower_ci"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["upper_ci"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"intercept","2":"1.5","3":"1.118","4":"1.342","5":"0.408","6":"-12.706","7":"15.706"},{"1":"x","2":"1.0","3":"1.732","4":"0.577","5":"0.667","6":"-21.008","7":"23.008"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
@@ -1269,25 +1269,25 @@ fruit_basket_cents
 <h2>Announcements</h2>
 <ul>
 <li><p>Copy the following code in a new R code chunk in your <code>classnotes.Rmd</code> file</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>africa <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv&quot;</span>)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Look at variable types</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="fu">glimpse</span>(africa)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Scatterplot</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> height, <span class="at">y =</span> countries_in_africa)) <span class="sc">+</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Histogram</span></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> height)) <span class="sc">+</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>()</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Boxplot</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> africa, <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> group, <span class="at">y =</span> countries_in_africa)) <span class="sc">+</span></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>()</span></code></pre></div></li>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">library</span>(readr)</span>
+<span id="cb5-2"><a href="#cb5-2"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="kw">library</span>(ggplot2)</span>
+<span id="cb5-4"><a href="#cb5-4"></a>africa &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv&quot;</span>)</span>
+<span id="cb5-5"><a href="#cb5-5"></a></span>
+<span id="cb5-6"><a href="#cb5-6"></a><span class="co"># Look at variable types</span></span>
+<span id="cb5-7"><a href="#cb5-7"></a><span class="kw">glimpse</span>(africa)</span>
+<span id="cb5-8"><a href="#cb5-8"></a></span>
+<span id="cb5-9"><a href="#cb5-9"></a><span class="co"># 1. Scatterplot</span></span>
+<span id="cb5-10"><a href="#cb5-10"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> africa, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> height, <span class="dt">y =</span> countries_in_africa)) <span class="op">+</span></span>
+<span id="cb5-11"><a href="#cb5-11"></a><span class="st">  </span><span class="kw">geom_point</span>()</span>
+<span id="cb5-12"><a href="#cb5-12"></a></span>
+<span id="cb5-13"><a href="#cb5-13"></a><span class="co"># 2. Histogram</span></span>
+<span id="cb5-14"><a href="#cb5-14"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> africa, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> height)) <span class="op">+</span></span>
+<span id="cb5-15"><a href="#cb5-15"></a><span class="st">  </span><span class="kw">geom_histogram</span>()</span>
+<span id="cb5-16"><a href="#cb5-16"></a></span>
+<span id="cb5-17"><a href="#cb5-17"></a><span class="co"># 3. Boxplot</span></span>
+<span id="cb5-18"><a href="#cb5-18"></a><span class="kw">ggplot</span>(<span class="dt">data =</span> africa, <span class="dt">mapping =</span> <span class="kw">aes</span>(<span class="dt">x =</span> group, <span class="dt">y =</span> countries_in_africa)) <span class="op">+</span></span>
+<span id="cb5-19"><a href="#cb5-19"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div></li>
 </ul>
 </div>
 <div id="todays-topicsactivities-7" class="section level2">
@@ -1315,21 +1315,21 @@ fruit_basket_cents
   </script>
 </div>
 <p><strong>Posted after lecture</strong>: In case you want to run the chalk talk example on your computer:</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create fruit_basket data frame from scratch</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co"># (we won&#39;t do this much in this class)</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>fruit_basket <span class="ot">&lt;-</span> <span class="fu">tibble</span>(</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="fu">c</span>(<span class="st">&quot;mango&quot;</span>, <span class="st">&quot;kiwi&quot;</span>, <span class="st">&quot;mango&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;mango&quot;</span>),</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">price =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>)</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the basket only for grapes</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>grape_basket <span class="ot">&lt;-</span> fruit_basket <span class="sc">%&gt;%</span> </span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(type <span class="sc">==</span> <span class="st">&quot;grape&quot;</span>)</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co"># View contents of grapes</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>grape_basket</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Create fruit_basket data frame from scratch</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="co"># (we won&#39;t do this much in this class)</span></span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="kw">library</span>(tibble)</span>
+<span id="cb6-4"><a href="#cb6-4"></a>fruit_basket &lt;-<span class="st"> </span><span class="kw">tibble</span>(</span>
+<span id="cb6-5"><a href="#cb6-5"></a>  <span class="dt">type =</span> <span class="kw">c</span>(<span class="st">&quot;mango&quot;</span>, <span class="st">&quot;kiwi&quot;</span>, <span class="st">&quot;mango&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;grape&quot;</span>, <span class="st">&quot;mango&quot;</span>),</span>
+<span id="cb6-6"><a href="#cb6-6"></a>  <span class="dt">price =</span> <span class="kw">c</span>(<span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>, <span class="dv">1</span>, <span class="dv">3</span>)</span>
+<span id="cb6-7"><a href="#cb6-7"></a>)</span>
+<span id="cb6-8"><a href="#cb6-8"></a></span>
+<span id="cb6-9"><a href="#cb6-9"></a><span class="co"># Filter the basket only for grapes</span></span>
+<span id="cb6-10"><a href="#cb6-10"></a><span class="kw">library</span>(dplyr)</span>
+<span id="cb6-11"><a href="#cb6-11"></a>grape_basket &lt;-<span class="st"> </span>fruit_basket <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-12"><a href="#cb6-12"></a><span class="st">  </span><span class="kw">filter</span>(type <span class="op">==</span><span class="st"> &quot;grape&quot;</span>)</span>
+<span id="cb6-13"><a href="#cb6-13"></a></span>
+<span id="cb6-14"><a href="#cb6-14"></a><span class="co"># View contents of grapes</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>grape_basket</span></code></pre></div>
 <!--
 First, let's compare the boxplot you created in Lec04 with the original points. See how they align.
 
