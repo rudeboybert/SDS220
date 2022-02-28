@@ -1,5 +1,5 @@
 ---
-title: "Badge Challenges"
+title: "Midterms"
 output:
   html_document:
     toc: yes
@@ -72,8 +72,9 @@ library(patchwork)
 
 ## Administrative notes
 
-1. Friday 3/4 through Satuday 3/6. See times above
+1. Friday 3/4 through Sunday 3/6. See times above
 1. You will be given 120 mins to complete it (including transit time to writing areas), however I try to time it so that it will take much less than that. In other words, you should have plenty of time to complete it without rushing.
+1. TBD: Cheat sheets
 
 
 ## What to Study
