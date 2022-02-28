@@ -25,10 +25,10 @@ navbar:
   - text: Gradescope
     href: https://www.gradescope.com/courses/351214
   right:
-#  - text: Badge Challenges
-#    href: badge_challenges.html#challenge-format
   - text: Project
     href: project.html
+  - text: Midterms
+    href: midterms.html
   - text: Learning goals
     href: https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true
   - text: Syllabus

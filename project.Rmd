@@ -43,7 +43,7 @@ In order to break down the task and minimize end-of-semester stress, you'll be w
 ***
 
 
-# 1. Project proposal {#data} 
+# 1. Project proposal {#proposal} 
 
 <!--
 Notes to future self: 
@@ -174,7 +174,11 @@ If your submission is incomplete, it can lead to delays in feedback delivery.
 
 
 
-# 2. Project EDA {#proposal}
+# 2. Project EDA {#EDA}
+
+
+
+
 
 
 <!--
