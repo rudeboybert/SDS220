@@ -117,6 +117,10 @@ By Thu 2/24 9pm:
 
 ## To Do
 
+1. Asking questions:
+    1. For general project question: ask in `final_project` channel in Slack
+    1. For questions specific to your group: ask in group DM you created in project proposal phase.
+
 
 Tips:
 
