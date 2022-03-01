@@ -13,7 +13,6 @@
 
 <title>Project</title>
 
-<script src="site_libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -33,6 +32,7 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -327,7 +327,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="project.html">Project</a>
+  <a href="project.html#EDA">Project</a>
 </li>
 <li>
   <a href="midterms.html">Midterms</a>
@@ -427,91 +427,25 @@ knowledge. So next time
 <li>The group leader will create a Slack direct message (DM) that includes all 1) your group members, 2) your instructor, and 3) your lab instructor. Please ask all questions to myself and Beth here so everyone is on the same page.</li>
 <li>Only the group leader: Fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9P4jEhBzHQga-EX7_Vz0MOia2YgxlDu6wD96TzT0YSmYbCA/viewform" target="_blank">Google Form</a> with your group information</li>
 </ol>
-<!--
-
-### Step 1
-
-Get a sense for the requirements of this project phase by reading the [example data proposal](static/project/project_data_example.html){target="_blank"}. It is important not to interpret this example overly literally, as not all data proposals will look exactly like this, but rather will vary on a case-by-case basis. 
-
-### Step 2
-
-Find a data set that fits these specifications. Note your data may need a little wrangling from its original form.
-
-**Where is this heading?**: For the next project phase (project proposal), you will be making a visualization like this [one](static/project/project_proposal_example.html#coloredscatterplot){target="_blank"}. *If you can make a visualization like this one, then your data is set for the rest of the project.* 
-
-### Step 3
-
-Download the following <a href="static/project/project_data.Rmd" download>`project_data.Rmd`</a> template R Markdown file and fill it in. 
-
-
-
-## What to submit when?
-
-**Due Mon 2/24 at 11pm.** Only the group leader for this phase will make a single submission on behalf of the whole group. They will:
-
-1. The `project_data.Rmd` R Markdown file
-1. The `project_data.html` HTML report file
-1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets following [these steps](https://twitter.com/rudeboybert/status/1055821833512071168){target="_blank"}. 
-
-If your submission is incomplete, it can lead to delays in feedback delivery.
-
-
-
-## Possible sources for data
-
-* Best option: data from your own research or other courses. If you are interested in biology, check out Marney Pratt's [lab page](http://www.science.smith.edu/pratt/projects/){target="_blank"}.
-* Next best option: data for a topic you are interested in. For help on this, visit Spinelli Center Data Counselor [Osman Keshawarz](https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr){target="_blank"}.
-* Next best option: Online data repositories such as (but not limited to):
-    + [IPUMS survey & census data](https://ipums.org/){target="_blank"}
-    + [data.world](https://data.world/){target="_blank"}
-    + [Tableau](https://public.tableau.com/en-us/s/resources){target="_blank"}
-    + [Google Dataset Search](https://toolbox.google.com/datasetsearch){target="_blank"}
-    + [StatLib Datasets Archive](http://lib.stat.cmu.edu/datasets/)
-* You may not use the following data:
-    + Any datasets used in this class, either in ModernDive or in any of the examples.
-    + Any data from the data journalism website FiveThirtyEight.com
-
-## Hints
-
-* When you have questions:
-    + If possible, please ask questions that you think the entire class would like to know the answer to in the `project` channel in Slack.
-    + Ask more individual questions in the group DM that includes all group members + your instructor + your lab instructor.
-* Only minimal data wrangling using the `dplyr` package is expected at this time; you will be doing more for the "project proposal" phase coming up. That being said, feel free to experiment!
-* Don't forget to consult the office hours calendar posted on Moodle when you need help. Most of you will likely need it!
-
-
-## General feedback for all groups {#phase_I_feedback}
-
-1. Disclaimer: Just because things seem good now doesn't mean your project data is set for semester. Unforeseen problems may crop up during the next phase on data wrangling, at which point you may need to revise your data. This is a reality of data collection in the real world!
-1. Do not include any `View()` statements in your `.Rmd` files as this may cause an error.
-1. Avoid "data dumps". For example, showing the contents of all 1000 rows in a data frame. This will make your output document really large and unreadable.
-
-
--->
 <hr />
 </div>
 </div>
 <div id="EDA" class="section level1">
 <h1>2. Project EDA</h1>
 <!--
-
-**This phase may require revisions to your original choice of data and visits to the Spinelli tutoring center for help with data wrangling. **
-
+## Honor code
 
 
-## Build a project proposal
 
-### Step 1
 
-Get a sense for the requirements of this project phase by reading the [project proposal](static/project/project_proposal_example.html){target="_blank"}. It is important not to interpret this example overly literally, as not all project proposals will look exactly like this, but rather will vary on a case-by-case basis. 
 
-### Step 2
+## What to submit
 
-Download the following <a href="static/project/project_proposal.Rmd" download>`project_proposal.Rmd`</a> template R Markdown file and start filling it in. 
+By Thu 3/10 9pm ***only the group leader** will submit on Moodle:
 
-### Step 3
+1. The `project_proposal.Rmd` R Markdown file
+1. The `project_proposal.html` HTML output file
 
-Your data may require some wrangling to get it in the appropriate format. Given that this is not a class where data wrangling is a central focus, we suggest you check out the following resources:
 
 1. The Spinelli Center evening tutoring hours on Sun-Thurs 7-9pm. All student tutors there have taken [SDS 192 Data Science](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2020&dept=Statistical+and+Data+Sciences&instr=&credits=&course_numb=192&course_keywd=&op=Submit&form_build_id=form-wFN3QGp-YpOHvSETMIKm1Wzwq1snu0oWeSR1I3dUByQ&form_id=campus_course_search_basic_search_form){target="_blank"} and can thus help you get the data into the appropriate format. 
 1. Check out ModernDive Appendix C on [data wrangling "tips & tricks"](https://moderndive-bert.netlify.com/c-appendixc){target="_blank"}, where you'll find example code on:
@@ -521,53 +455,6 @@ Your data may require some wrangling to get it in the appropriate format. Given 
     + C.1.5 Converting a numerical variable to a categorical one
     + C.1.6 Computing proportions
     + C.1.7 Dealing with `%`, commas, and `$` symbols in your data
-
-
-## What to submit when?
-
-**Due Mon 3/9 at 11pm.** Only the group leader for this phase will make a single submission on behalf of the whole group. They will:
-
-1. The `project_proposal.Rmd` R Markdown file
-1. The `project_proposal.html` HTML report file
-1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets following [these steps](https://twitter.com/rudeboybert/status/1055821833512071168){target="_blank"}. 
-
-If your submission is incomplete, it can lead to delays in feedback delivery.
-
-
-
-
-*** 
-
-
-
-# Important note!
-
-
-> We have posted all four phases of the project at once to give you a sense of what to expect. However, the format and requirements of all four phases of the project will likely slightly change as the semester progresses. **Therefore we suggest that you do not start any upcoming phases of the project until you've been instructed to.**
-
-
-
-***
-
-
-
-
-# Revised: Project Goals {#revised-project-goals}
-
-The 220 instructor team worked hard to distill this course down to the most important ideas of this class, regardless of the semester or the situation. In pursuit of that distillation, we re-examined each aspect of the course, in particular the project. Our original goals for the project were: 
-
-1. Expose students to the entire data/science pipeline as shown [here](https://r4ds.had.co.nz/introduction.html){target="_blank"}, in particular emphasizing exploratory data analysis (EDA) . 
-1. Convince students that data collection & wrangling are **essential yet difficult tasks** in statistics. In other words, the high-curated ready-to-go datasets (like those used in our textbook) are not the norm in statistics research.
-1. Consolidate the many many concepts needed to understand inference for multiple regression models into one assignment. 
-1. Encourage students to develop a sense of ownership over their work, as compared to problem sets and badge challenges where we -- the instructors -- select the data, the question of interest, and the method for you. 
-
-Because a remote learning model of education makes both (1) coordinating group work and (2) getting help with the coding aspects of the project particularly difficult, we've decided to revise the project. In this revision, we are balancing working in a learning community with removing the stress of group work. Like the original project, this revised version will have 4 phases. However, the last two phases will differ substantially from the original version:
-
-1. Project Data (already completed)
-1. Project Proposal (already completed)
-1. Project Submission (revised)
-1. Project Resubmission (revised)
-
 
 -->
 <hr />
@@ -598,60 +485,7 @@ There are a few logistics:
 </div>
 <div id="resubmission" class="section level1">
 <h1>4. Project resubmission</h1>
-<p>Here is a <a href="static/project/project_resubmission_example.html" target="_blank">rough example</a> (note project requirements have changed slightly).</p>
-<!--
-
-Just as with the original incarnation of the project, there is a resubmission phase. After you have submitted the third phase, we will give you feedback on your submission. For the resubmission, you will submit a revision of your paper that addresses the feedback we’ve given you. 
-
-
-
-***
-
-
-
-# Original Phases 3 and 4
-
-For reference only, we are including the original instructions for Phase 3: Project Submission and Phase 4: Project Resubmission
-
-
-## Original Project Submission
-
-1. Read the following sections of the example [project resubmission](static/project/project_resubmission.html){target="_blank"}:
-    + Section 1: Introduction
-    + Section 2: Exploratory data analysis
-    + Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.    
-1. Download the following <a href="static/project/project_submission.Rmd" download>`project_submission.Rmd`</a> R Markdown file
-    + Complete the following sections:
-        + Section 1: Introduction
-        + Section 2: Exploratory data analysis
-        + Section 3 subsections 3.1, 3.2, and 3.3: Multiple linear regression: Methods, Model Results, Interpreting the regression table.
-    + Do not complete the following sections (you'll be doing this for at the resubmission phase):
-        + Section 3 subsections 3.4, 3.5: Inference for multiple regression
-        + Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
-1. Only the group leader tasked for this project phase will submit the following files on Moodle on behalf of the whole group:
-    1. The `project_submission.Rmd` R Markdown file with sections 1, 2, 3.1, 3.2, and 3.3 completed
-    1. The `project_submission.html` HTML report file.
-    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets. 
-
-
-## Original Project Resubmission
-
-1. Re-read the previous sections of the example [project resubmission](static/project/project_resubmission.html){target="_blank"} you read earlier. In addition, read the following sections you skipped previously:
-    + Section 3 subsections 3.4, 3.5: Inference for multiple regression
-    + Section 4: Discussion.
-1. Using the same `project_submission.Rmd` file you submitted for the project submission phase:
-    + Incorporate any feedback given to you from the project submission phase.
-    + Complete Sections 3.4 and 3.5: Inference for multiple regression
-    + Complete Section 4: Discussion. You will write this conclusion based on the results of sections 3.4 and 3.5.
-1. Only the group leader tasked for this project phase will submit the following files on Moodle on behalf of the whole group:
-    1. The updated `project_submission.Rmd` R Markdown file.
-    1. The updated `project_submission.html` HTML report file.
-    1. Only if your data is confidential or has private information, submit your Excel or CSV file as well. Otherwise your should publish your data on Google Sheets.
-1. Everyone must complete the exit survey Google Form (to be posted at the end of semester). There are four sections:
-    1. Evaluating your peers' contributions for the project.
-    1. Questions about you.
-    1. General questions about the course.
--->
+<p>Here is a <a href="static/project/final_project_example.html" target="_blank">rough example</a> (note project requirements have changed slightly). <!--The corresponding R Markdown file is <a href="static/project/final_project_example.Rmd" download>here</a>--></p>
 </div>
 
 

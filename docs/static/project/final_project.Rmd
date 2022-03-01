@@ -1,0 +1,192 @@
+
+---
+title: "ADD YOUR TITLE HERE"
+author: "ADD NAMES OF ALL GROUP MEMBERS HERE"
+date: "Last updated on `r Sys.Date()`"
+output:
+  html_document: 
+    fig_caption: yes
+    theme: lumen
+    toc: yes
+    toc_depth: 2
+    df_print: kable
+    toc_float:
+      collapsed: no
+    number_sections: yes
+---
+
+```{r, include=FALSE}
+# Do not edit this code block/chunk (unless you know what you're doing)
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE, fig.width = 16/2.5, fig.height = 9/2.5)
+```
+
+
+```{r}
+# Load all necessary packages here:
+library(ggplot2)
+library(dplyr)
+library(readr)
+library(moderndive)
+library(knitr)
+library(janitor)
+```
+
+<!--
+Change the URL here to point a relevant image:
+-->
+![](https://cms.nhl.bamgrid.com/images/photos/309842964/1200x630/cut.jpg){width=400px}
+
+***
+
+
+# Introduction 
+
+1. Introduce your research question
+1. Describe your data source and context
+1. Add anything else you think the reader should know
+
+This is an example of how to cite your sources so that it shows up in the Citations and References section:^[Crouch, Ian. [How the Left Won the War for Gritty, the New Mascot of the Philadelphia Flyers](https://www.newyorker.com/culture/culture-desk/how-the-left-won-the-war-for-gritty). The New Yorker. October 10, 2018.]
+
+
+
+***
+
+
+
+# Exploratory data analysis
+
+```{r}
+# Change this code to load your data from the web and do any data cleaning here:
+ma_traffic_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTM4fElimnYsn6uYW9yq6RcEJyD4gQPkU6u4HGuXfdDqoRnOWGKhsZbFdUyO9VTvfHrkGWotjxGrtI_/pub?output=csv") %>% 
+  # Select variables:
+  select(County, Community, Rural_Urban, Functional_Class, Avg_Speed, Total_Volume, Crashes) %>% 
+  # Drop rows with missing data for crashes
+  filter(!is.na(Crashes))
+```
+
+
+## Describe data
+
+Describe:
+
+1. What each observation in each row corresponds to:
+1. Sample size:
+1. Outcome variable $y$: 
+1. Numerical explanatory variable $x_1$: 
+1. Categorical explanatory variable $x_2$ and what the $k$ levels/categories are: 
+
+Here is a snapshot of five randomly chosen rows of data
+
+```{r}
+# Change this code to show a random sample of 5 rows of the data:
+ma_traffic_data %>% 
+  sample_n(5)
+```
+
+
+## Summary statistics
+
+```{r}
+# Insert code to output a table of summary statistics:
+
+```
+
+
+```{r}
+# Insert code to output a table of summary statistics, but this time
+# split by the different levels of the categorical variable:
+
+```
+
+
+## Data visualizations
+
+```{r, fig.cap = "Figure 1: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize the distribution of outcome variable:
+
+```
+
+Describe any key insight from Figure 1 here.
+
+
+```{r, fig.cap = "Figure 2: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize the relationship between outcome variable and numerical explanatory variable:
+
+```
+
+Describe any key insight from Figure 2 here.
+
+```{r, fig.cap = "Figure 3: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize the relationship between outcome variable and categorical explanatory variable:
+
+```
+
+Describe any key insight from Figure 3 here.
+
+```{r, fig.cap = "Figure 4: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize interaction model:
+
+```
+
+Describe any key insight from Figure 4 here.
+
+```{r, fig.cap = "Figure 5: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize parallel slopes model:
+
+```
+
+Describe any key insight from Figure 5 here.
+
+## Initial conclusions
+
+Write:
+
+- What insight you would tell your grandmother
+- Your initial model selection choice: interaction or parallel slopes model
+
+
+
+***
+
+
+
+# Multiple linear regression
+
+## Methods
+
+
+## Model Results
+
+
+## Interpreting the regression table
+
+
+## Inference for multiple regression
+
+
+## Residual Analysis
+
+
+
+***
+
+
+
+# Discussion 
+
+## Conclusions
+
+
+## Limitations
+
+
+## Further questions
+
+
+
+***
+
+
+
+# Citations and References
+

@@ -55,9 +55,7 @@ ma_schools <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWSNyN
 ```
 
 
-
 ***
-
 
 
 ![](https://i2.wp.com/www.markstivers.com/cartoons/Stivers%2011-9-02%20SAT%20waiter.gif?zoom=2_){ width=400px }

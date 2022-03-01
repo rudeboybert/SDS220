@@ -364,25 +364,22 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 
 
-# Lec 17: Wed 3/4
+# Lec 18: Fri 3/4
 
 ## Announcements
 
-<center>
-![](static/events/Catherine_D_Ignazio.jpg){ width=100% }
-</center>
+1. Show moderndive book cover to emphasize importance of sampling
 
-## Recap
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
 
 1. 
 
+### 2. In-class exercise
 
-
-## Chalk Talk
-
-1. Revisit Africa data
-1. In-class activity! 
-1. Chalk talk only today (no coding)
+1. 
 
 
 Private: detailed notes for this "random assignment for causal inference" lecture can be found
@@ -390,6 +387,33 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
 1. In this [PDF](static/2020-03-04_Lec18_Notes_ Random_Assignment_for Causal_Inference.pdf)
 
+
+
+
+***
+
+-->
+
+
+
+# Lec 17: Wed 3/2
+
+## Announcements
+
+1. Added cheat sheet policy to [midterm I](midterms.html#midtermI)
+1. Message in Slack `#general`: what are Shiny Apps?
+1. Discuss [project EDA](project.html#EDA) phase of final project 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Revisit Africa data: more code to put in `classnotes.Rmd`
+1. Model selection using visualizations. In particular, choosing between the interaction and parallel slopes models by comparing
+    1. Figure 6.7 for UT Austin data
+    1. Figure 6.8 for Massachusetts high school data
+1. Model selection using $R^2$. In particular, choosing between the interaction and parallel slopes models by comparing $R^2$ values
 
 
 ```{r, echo=FALSE, eval=FALSE}
@@ -438,37 +462,20 @@ ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, heig
 
 
 
-***
+### 2. In-class exercise
 
-
-
-# Lec 16: Mon 3/2
-
-## Announcements
-
-1. Badge challenge 1 is still going on. The honor code prohibits you from discussing it until the time window closes.
-
-
-## Chalk Talk
-
-1. Model selection using visualizations. In particular, choosing between the interaction and parallel slopes models by comparing
-    1. Figure 6.7 for UT Austin data
-    1. Figure 6.8 for Massachusetts high school data
-1. Model selection using $R^2$. In particular, choosing between the interaction and parallel slopes models by comparing $R^2$ values
-
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
-
--->
-
 
 
 # Lec 16: Mon 2/28
 
 ## Announcements
 
-1. Self-schedule Seelye Midterm I this weekend. See Midterms tab
+1. Self-schedule Seelye Midterm I this weekend. See [Midterms](midterms.html) tab
 1. Next phase of project "Project EDA" assigned on Wednesday
 
 
