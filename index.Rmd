@@ -362,14 +362,25 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ***
 
+-->
 
 
 # Lec 18: Fri 3/4
 
 ## Announcements
 
+<!--
+1. Tell people to do readings for Lec17 & Lec18
 1. Show moderndive book cover to emphasize importance of sampling
 
+Private: detailed notes for this "random assignment for causal inference" lecture can be found
+
+1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
+1. In this [PDF](static/2020-03-04_Lec18_Notes_ Random_Assignment_for Causal_Inference.pdf)
+
+-->
+
+1. 
 
 ## Today's Topics/Activities
 
@@ -379,21 +390,12 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ### 2. In-class exercise
 
-1. 
-
-
-Private: detailed notes for this "random assignment for causal inference" lecture can be found
-
-1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
-1. In this [PDF](static/2020-03-04_Lec18_Notes_ Random_Assignment_for Causal_Inference.pdf)
-
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 
 ***
-
--->
-
 
 
 # Lec 17: Wed 3/2
@@ -443,11 +445,6 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 1. Model selection using visualizations. In particular, choosing between the interaction and parallel slopes models by comparing
     1. Figure 6.7 for UT Austin data
     1. Figure 6.8 for Massachusetts high school data
-1. Model selection using $R^2$. In particular, choosing between the interaction and parallel slopes models by comparing $R^2$ values
-
-
-
-
 
 
 ### 2. In-class exercise
