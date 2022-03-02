@@ -201,7 +201,7 @@ Name all people who contributed in any way to this project (other than groupmate
 
 ## Code sources
 
-List any sources for coding matters you consulted in bullet point form (other than SDS 220 materials). For example, you can change the following list
+List any sources for coding matters you consulted in bullet point form (other than SDS 220 materials). For example, you can change the following list:
 
 1. [Labeling legends in ggplot2](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
 1. [Randomly sampling rows with dplyr](https://www.datasciencemadesimple.com/select-random-samples-r-dplyr-sample_n-sample_frac/#:~:text=Dplyr%20package%20in%20R%20is,the%20random%20N%25%20of%20rows.)
