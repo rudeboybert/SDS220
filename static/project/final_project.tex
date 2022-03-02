@@ -1,0 +1,211 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={ADD YOUR TITLE HERE},
+  pdfauthor={ADD NAMES OF ALL GROUP MEMBERS HERE},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifluatex
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{ADD YOUR TITLE HERE}
+\author{ADD NAMES OF ALL GROUP MEMBERS HERE}
+\date{Last updated on 2022-03-02}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+\includegraphics[width=1\linewidth]{https://cms.nhl.bamgrid.com/images/photos/309842964/1200x630/cut}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Introduce your research question
+\item
+  Describe your data source and context
+\item
+  Add anything else you think the reader should know
+\end{enumerate}
+
+This is an example of how to cite your sources so that it shows up in
+the Citations and References section:\footnote{Crouch, Ian.
+  \href{https://www.newyorker.com/culture/culture-desk/how-the-left-won-the-war-for-gritty}{How
+  the Left Won the War for Gritty, the New Mascot of the Philadelphia
+  Flyers}. The New Yorker. October 10, 2018.}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{exploratory-data-analysis}{%
+\section{Exploratory data analysis}\label{exploratory-data-analysis}}
+
+\hypertarget{describe-data}{%
+\subsection{Describe data}\label{describe-data}}
+
+Describe:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  What each observation in each row corresponds to:
+\item
+  Sample size:
+\item
+  Outcome variable \(y\):
+\item
+  Numerical explanatory variable \(x_1\):
+\item
+  Categorical explanatory variable \(x_2\) and what the \(k\)
+  levels/categories are:
+\end{enumerate}
+
+Here is a snapshot of five randomly chosen rows of data
+
+\begin{verbatim}
+## # A tibble: 5 x 7
+##   County  Community  Rural_Urban Functional_Class Avg_Speed Total_Volume Crashes
+##   <chr>   <chr>      <chr>       <chr>                <dbl>        <dbl>   <dbl>
+## 1 middle~ dunstable  U           Arterial              31.1        32912       1
+## 2 barnst~ falmouth   U           Freeway & Expre~      28.8         4100      13
+## 3 hampden agawam     U           Arterial              36.4        35311       1
+## 4 plymou~ pembroke   U           Local Road            30.1         2195       2
+## 5 berksh~ north ada~ U           Collector             24.5        10910       2
+\end{verbatim}
+
+\hypertarget{summary-statistics}{%
+\subsection{Summary statistics}\label{summary-statistics}}
+
+\hypertarget{data-visualizations}{%
+\subsection{Data visualizations}\label{data-visualizations}}
+
+Describe any key insight from Figure 1 here.
+
+Describe any key insight from Figure 2 here.
+
+Describe any key insight from Figure 3 here.
+
+Describe any key insight from Figure 4 here.
+
+Describe any key insight from Figure 5 here.
+
+\hypertarget{initial-conclusions}{%
+\subsection{Initial conclusions}\label{initial-conclusions}}
+
+Write:
+
+\begin{itemize}
+\tightlist
+\item
+  What insight you would tell your grandmother
+\item
+  Your initial model selection choice: interaction or parallel slopes
+  model
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{multiple-linear-regression}{%
+\section{Multiple linear regression}\label{multiple-linear-regression}}
+
+\hypertarget{methods}{%
+\subsection{Methods}\label{methods}}
+
+\hypertarget{model-results}{%
+\subsection{Model Results}\label{model-results}}
+
+\hypertarget{interpreting-the-regression-table}{%
+\subsection{Interpreting the regression
+table}\label{interpreting-the-regression-table}}
+
+\hypertarget{inference-for-multiple-regression}{%
+\subsection{Inference for multiple
+regression}\label{inference-for-multiple-regression}}
+
+\hypertarget{residual-analysis}{%
+\subsection{Residual Analysis}\label{residual-analysis}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\hypertarget{conclusions}{%
+\subsection{Conclusions}\label{conclusions}}
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+
+\hypertarget{further-questions}{%
+\subsection{Further questions}\label{further-questions}}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{citations-and-references}{%
+\section{Citations and References}\label{citations-and-references}}
+
+\end{document}

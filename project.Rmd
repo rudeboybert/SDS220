@@ -100,47 +100,43 @@ By Thu 2/24 9pm:
 
 
 
-
-
-
-
 ***
-
 
 
 
 # 2. Project EDA {#EDA}
 
-
-
-<!--
-
 ## To Do
 
-1. Asking questions:
-    1. For general project question: ask in `final_project` channel in Slack
-    1. For questions specific to your group: ask in group DM you created in project proposal phase.
-
-
-Tips:
-
-1. Knit early, knit often
-1. 
-
-
-## Honor code
-
-
+1. Work on the `final_project.Rmd`
+    1. Download file from Moodle
+    1. Knit to HTML (not PDF) and read over once
+    1. Complete Sections 1 (Introduction), 2 (EDA), and 5 (Honor Code) only. You will complete the other sections later.
+    1. Only group leader will make single submission on behalf of whole group (see below)
+1. Ask questions:
+    1. For general project questions that would apply to all groups: ask in `final_project` channel in Slack
+    1. For questions specific to your group: ask in group Slack DM you created in project proposal phase
+1. Be mindful of your group members
+    1. Life happens, especially this semester. If something comes up, let your partners know. Do not ghost on your partners.
+    1. If an issue arises, do not resort to passive aggressive electronic messages. Make a good faith attempt to say how you feel in person.
+    1. If the issue is still not resolved, Slack DM Prof. Kim.
+1. Tips:
+    1. Knit early, knit often
+    1. For tips on how to make your HTML document look professional, consult the R Markdown tips listed in RStudio Menu Bar -> Help -> Markdown Quick Reference
 
 
 
 ## What to submit
 
-By Thu 3/10 9pm ***only the group leader** will submit on Moodle:
+By Thu 3/10 9pm only the group leader will submit on Moodle:
 
-1. The `project_proposal.Rmd` R Markdown file. This file **must** knit
+1. The `project_proposal.Rmd` R Markdown file. This file **must** knit.
 1. The `project_proposal.html` HTML output file
 
+Extension requests count against all group members. For example, say Avon, Stringer, and Marlo are in a group. If Marlo fills out the extension request form requesting 2 days, then 2 days will deducted from all three members' 5 days extension request. 
+
+
+<!--
 
 1. The Spinelli Center evening tutoring hours on Sun-Thurs 7-9pm. All student tutors there have taken [SDS 192 Data Science](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2020&dept=Statistical+and+Data+Sciences&instr=&credits=&course_numb=192&course_keywd=&op=Submit&form_build_id=form-wFN3QGp-YpOHvSETMIKm1Wzwq1snu0oWeSR1I3dUByQ&form_id=campus_course_search_basic_search_form){target="_blank"} and can thus help you get the data into the appropriate format. 
 1. Check out ModernDive Appendix C on [data wrangling "tips & tricks"](https://moderndive-bert.netlify.com/c-appendixc){target="_blank"}, where you'll find example code on:

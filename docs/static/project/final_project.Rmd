@@ -4,7 +4,7 @@ title: "ADD YOUR TITLE HERE"
 author: "ADD NAMES OF ALL GROUP MEMBERS HERE"
 date: "Last updated on `r Sys.Date()`"
 output:
-  html_document: 
+  html_document:
     fig_caption: yes
     theme: lumen
     toc: yes
@@ -22,21 +22,27 @@ knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning = FALSE, fig.width = 
 
 
 ```{r}
-# Load all necessary packages here:
+# Make sure you have all these packages installed:
 library(ggplot2)
 library(dplyr)
 library(readr)
 library(moderndive)
 library(knitr)
-library(janitor)
+
+# Add any additionally needed packages here:
+
 ```
 
-<!--
-Change the URL here to point a relevant image:
--->
-![](https://cms.nhl.bamgrid.com/images/photos/309842964/1200x630/cut.jpg){width=400px}
+
+```{r, out.width="100%"}
+# Change the URL here to point a relevant image:
+include_graphics("https://cms.nhl.bamgrid.com/images/photos/309842964/1200x630/cut.jpg")
+```
+
+
 
 ***
+
 
 
 # Introduction 
@@ -56,9 +62,9 @@ This is an example of how to cite your sources so that it shows up in the Citati
 # Exploratory data analysis
 
 ```{r}
-# Change this code to load your data from the web and do any data cleaning here:
+# Change this code to load your CSV file from the web and do any data cleaning here:
 ma_traffic_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTM4fElimnYsn6uYW9yq6RcEJyD4gQPkU6u4HGuXfdDqoRnOWGKhsZbFdUyO9VTvfHrkGWotjxGrtI_/pub?output=csv") %>% 
-  # Select variables:
+  # Select only the needed variables:
   select(County, Community, Rural_Urban, Functional_Class, Avg_Speed, Total_Volume, Crashes) %>% 
   # Drop rows with missing data for crashes
   filter(!is.na(Crashes))
@@ -67,15 +73,14 @@ ma_traffic_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTM
 
 ## Describe data
 
-Describe:
+Give people a sense for your data by describing:
 
-1. What each observation in each row corresponds to:
-1. Sample size:
-1. Outcome variable $y$: 
-1. Numerical explanatory variable $x_1$: 
-1. Categorical explanatory variable $x_2$ and what the $k$ levels/categories are: 
-
-Here is a snapshot of five randomly chosen rows of data
+1. What each observation in each row corresponds to
+1. Sample size
+1. Outcome variable $y$
+1. Numerical explanatory variable $x_1$
+1. Categorical explanatory variable $x_2$ and what the $k$ levels/categories are
+1. Display a snapshot of five randomly chosen rows of data
 
 ```{r}
 # Change this code to show a random sample of 5 rows of the data:
@@ -142,7 +147,7 @@ Describe any key insight from Figure 5 here.
 Write:
 
 - What insight you would tell your grandmother
-- Your initial model selection choice: interaction or parallel slopes model
+- Your initial model selection choice, interaction or parallel slopes model, and why.
 
 
 
@@ -188,5 +193,19 @@ Write:
 
 
 
-# Citations and References
+# Honor code
 
+## Project peers
+
+Name all people who contributed in any way to this project (other than groupmates, Prof. Kim, and Beth Brown):
+
+## Code sources
+
+List any sources for coding matters you consulted in bullet point form (other than SDS 220 materials). For example, you can change the following list
+
+1. [Labeling legends in ggplot2](https://www.datanovia.com/en/blog/ggplot-legend-title-position-and-labels/)
+1. [Randomly sampling rows with dplyr](https://www.datasciencemadesimple.com/select-random-samples-r-dplyr-sample_n-sample_frac/#:~:text=Dplyr%20package%20in%20R%20is,the%20random%20N%25%20of%20rows.)
+
+## Citations and References
+
+Ensure all in-text citations (if any) show up here using RMarkdown footnotes as seen in the Introduction:

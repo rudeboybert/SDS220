@@ -400,8 +400,8 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 
 ## Announcements
 
-1. Added cheat sheet policy to [midterm I](midterms.html#midtermI)
-1. Message in Slack `#general`: what are Shiny Apps?
+1. Added cheat sheet policy to [Midterm I](midterms.html#midtermI)
+1. Message in Slack `#general`: What are Shiny Apps?
 1. Discuss [project EDA](project.html#EDA) phase of final project 
 
 
@@ -409,56 +409,42 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 
 ### 1. Chalk talk
 
-1. Revisit Africa data: more code to put in `classnotes.Rmd`
+1. Revisit Africa data in terms of learning goals for Midterm I: Put code in `classnotes.Rmd`
+    ```{r, eval=FALSE}
+    library(readr)
+    library(dplyr)
+    library(ggplot2)
+    library(moderndive)
+    africa <- read_csv("https://rudeboybert.github.io/SDS220/static/africa_results_2022.csv")
+    
+    # 1. Regression with one numerical x
+    # 1.a) EDA
+    ggplot(data = africa, mapping = aes(x = height, y = countries_in_africa)) +
+      geom_point() +
+      geom_smooth(method = "lm", se = FALSE) +
+      labs(x = "Height", y = "Number of countries guessed", title = "Africa survey")
+    
+    # 1.b) Fit model and get regression table
+    africa_model_num_x <- lm(countries_in_africa ~ height, data = africa)
+    get_regression_table(africa_model_num_x)
+    
+    # 2. Regression with one categorical x
+    # 2.a) EDA
+    ggplot(data = africa, mapping = aes(x = group, y = countries_in_africa)) +
+      geom_boxplot() +
+      labs(x = "Group", y = "Number of countries guessed", title = "Africa survey")
+    
+    # 2.b) Fit model and get regression table
+    africa_model_cat_x <- lm(countries_in_africa ~ group, data = africa)
+    get_regression_table(africa_model_cat_x)
+    ```
 1. Model selection using visualizations. In particular, choosing between the interaction and parallel slopes models by comparing
     1. Figure 6.7 for UT Austin data
     1. Figure 6.8 for Massachusetts high school data
 1. Model selection using $R^2$. In particular, choosing between the interaction and parallel slopes models by comparing $R^2$ values
 
 
-```{r, echo=FALSE, eval=FALSE}
-library(tidyverse)
-africa_data <- "static/africa_results.csv" %>% 
-  read_csv() %>% 
-  mutate(
-    # priming_number = if_else(priming_number == "Primed with 14 countries", "14 countries", "94 countries"),
-    been_to_africa = if_else(been_to_africa == "No", "Never been to Africa", "Been to Africa")
-  )
 
-stat_box_data <- function(y, upper_limit = max(africa_data$how_many_countries) * 1.15) {
-  return( 
-    data.frame(
-      y = 0.95 * upper_limit,
-      label = paste("n =", length(y))
-    )
-  )
-}
-
-plot <- ggplot(africa_data, aes(x = priming_number, y = how_many_countries)) +
-  geom_boxplot() +
-  labs(x = "Priming Group", y = "Number of countries in Africa guessed",
-       title = "Results from previous section of SDS 220") +
-  stat_summary(
-    fun.data = stat_box_data, 
-    geom = "text", 
-    hjust = 0.5,
-    vjust = 0.9
-  )
-ggsave("static/images/africa_results.png", width = 16/1.5, height = 9/1.5)
-
-
-ggplot(africa_data, aes(x = priming_number, y = how_many_countries)) +
-  geom_boxplot() +
-  labs(x = "Priming Group", y = "Number of countries guessed") +
-  facet_wrap(~been_to_africa) +
-  stat_summary(
-    fun.data = stat_box_data, 
-    geom = "text", 
-    hjust = 0.5,
-    vjust = 0.9
-  )
-ggsave("static/images/africa_results_with_confounders.png", width = 16/1.5, height = 9/1.5)
-```
 
 
 
