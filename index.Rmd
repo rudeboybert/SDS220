@@ -402,7 +402,9 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 
 1. Added cheat sheet policy to [Midterm I](midterms.html#midtermI)
 1. Message in Slack `#general`: What are Shiny Apps?
-1. Discuss [project EDA](project.html#EDA) phase of final project: Download `final_project.Rmd` from Moodle. 
+1. Discuss [project EDA](project.html#EDA) phase of final project:
+    1. Download `final_project.Rmd` from Moodle
+    1. Join the `#final_project` channel on Slack
 
 
 ## Today's Topics/Activities
