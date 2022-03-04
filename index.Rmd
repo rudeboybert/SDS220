@@ -369,10 +369,9 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ## Announcements
 
-<!--
-1. Tell people to do readings for Lec17 & Lec18
-1. Show moderndive book cover to emphasize importance of sampling
+1. Midterm discussion
 
+<!--
 Private: detailed notes for this "random assignment for causal inference" lecture can be found
 
 1. On [Google Docs](https://docs.google.com/document/d/1o761ogcEw7_T82Q84X3kHZFy1dzYxmmS34xG8rrcjpM/edit)
@@ -380,17 +379,15 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 
 -->
 
-1. 
-
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. 
+1. Random assignment for causal inference
 
 ### 2. In-class exercise
 
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. Do ModernDive readings for Lec17 on Wed 3/2.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
