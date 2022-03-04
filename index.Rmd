@@ -341,28 +341,31 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ***
 
+-->
 
 
-# Lec 18: Fri 3/6
+
+# Lec 19: Mon 3/7
 
 ## Announcements
 
-1. FYI: You will not be penalized for missing class due to illness.
-1. Project proposal due on Monday 11pm. Spinelli tutors (who have all taken SDS 192 Introduction to Data Science) are available on Sunday and Monday 7-9pm in Sabin-Reed 301.
+1. Extra Self Scheduled Exam window setup by science center this week only: Wed 3/9 4-9pm. Staff will be available to hand out printed exams during this window and quiet rooms will be setup. 
 
-## Recap
+## Today's Topics/Activities
 
-1. `NA`
+### 1. Chalk talk
 
-## Chalk Talk
+1. 
 
-1. In-class activity
+### 2. In-class exercise
+
+1. Do ModernDive readings for Lec17 on Wed 3/2 as well as today's
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 
 ***
 
--->
 
 
 # Lec 18: Fri 3/4
@@ -387,8 +390,7 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 
 ### 2. In-class exercise
 
-1. Do ModernDive readings for Lec17 on Wed 3/2.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+None
 
 
 
