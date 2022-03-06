@@ -268,75 +268,49 @@ There are 4 discussion sessions between 4/1 and 4/2. They are listed on [this Go
 There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar! 
 
 
-
 ***
 
 
 
-# Lec 21: Fri 3/13
+# Lec 21: Fri 3/11
 
 ## Announcements
 
-1. Practice-run of Zoom lecture format
-1. Went over COVID-19 preparations
+1. 
 
+## Today's Topics/Activities
 
+### 1. Chalk talk
 
-***
+1. Polls, CLT, 
+1. Watch bunny video
+1. Table 7.6.1:
 
+### 2. In-class exercise
 
-
-# Lec 20: Wed 3/11
-
-## Announcements
-
-1. Acknowledgement of situation
-1. Issue of communication
-1. Slack:
-    1. No more browser-based version, install Desktop App or Mobile App
-    1. Add `#remote_learning` channel: Post questions/comments specifically about remote learning technology here.
-    1. Setting notifications
-1. COVID-19 tab of webpage:
-    1. "Remote Learning Preparedness Survey"
-    1. Go over components of course
-1. Zoom
-    1. Login to meeting as practice run for lectures
-    1. Practice creating meetings in groups
-    1. Practice screensharing
-1. Questions (to be posted on COVID-19 tab of webpage)
-
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
 
 
-
-# Lec 19: Mon 3/9
+# Lec 20: Wed 3/9
 
 ## Announcements
 
-1. Project proposal due today at 11pm. Spinelli tutors (who have all taken SDS 192 Introduction to Data Science) are available tonight 7-9pm in Sabin-Reed 301.
+1. Project EDA due tomorrow 9pm
 
+## Today's Topics/Activities
 
-## Recap
+### 1. Chalk talk
 
-1. Last time, we did "tactile" simulations with our hands using a shovel with $n$ = 50 slots to extract samples from the bowl.
-1. For each sample, you [generated estimates](https://docs.google.com/spreadsheets/d/14iWUKc-lBY8U_hs4Fng50oT43yGQZsgZjrVh7ZtF9VI/edit#gid=0){target="_blank"} of the proportion of the bowl's balls that are red.
-1. Note: In ModernDive 7.1, 33 groups of Amherst College students took samples from a bowl with slightly different contents.
+1. Sampling framework: terminology, notations and definitions
 
+### 2. In-class exercise
 
-## Chalk Talk
-
-1. Chalk talk part I:
-    1. Mimic the "tactile sampling using a tactile shovel" from Lec18 on Friday with "virtual sampling using virtual shovel": the `rep_sample_n()` function, which uses your computer's [random number generator](https://en.wikipedia.org/wiki/Random_number_generation){target="_blank"}.
-    1. Example: `rep_sample_n(size = 50, rep = 33)`
-1. Reading part I
-    1. 7.2 up to the end of 7.2.2
-1. Chalk talk part II:
-    1. Break down the data wrangling needed to create the data frame visualized in Figure 7.10: Histogram of 1000 proportion reds
-1. Readings part II
-    1. 7.3 & 7.4. In particular, compare Figure 7.12 and Table 7.1
-    
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
@@ -349,17 +323,34 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ## Announcements
 
-1. Extra Self Scheduled Exam window setup by science center this week only: Wed 3/9 4-9pm. Staff will be available to hand out printed exams during this window and quiet rooms will be setup. 
+1. Midterm I: Extra Self Scheduled Exam window scheduled by Science Center this week only: Wed 3/9 4-9pm. Staff will be available to hand out printed exams during this window and quiet rooms will be setup. 
+1. SDS Presentation of the Major Tue 3/22 (after break). Undeclared majors and minors can attend in-person. If you'd like a grab-n-go lunch, please [register in advance](https://docs.google.com/forms/d/e/1FAIpQLSel3YWGLxjvr-UBweuwBL_d3U8lb_4E0rLeCrAAVh-Jam8ibw/viewform){target="_blank"}.
+
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. 
+1. In-class tactile (hands-on) activity
+1. Mimicking sampling virtually on computer
+
+```{r, echo = FALSE, eval = FALSE}
+library(tidyverse)
+library(googlesheets4)
+gs4_auth()
+
+sampling_data <- "https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0" %>%
+  read_sheet()
+
+sampling_data <- sampling_data %>% 
+  mutate(prop_red = number_of_red_balls/50)
+```
+
+
 
 ### 2. In-class exercise
 
-1. Do ModernDive readings for Lec17 on Wed 3/2 as well as today's
+1. Do ModernDive readings for Wed 2022/3/2 Lec 17 (model selection) as well as today's.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
