@@ -292,6 +292,10 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
+-->
+
+
+
 ***
 
 
@@ -299,15 +303,17 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ## Announcements
 
-1. Hump day
+1. What is "hump day"?
 1. Project EDA due tomorrow 9pm
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. Tips on understanding computer simulation code:
-1. Go over MD Fig 7.9 and MD Table 7.1
+1. Recap of Lec 19 readings, go over:
+    1. Code from Ch 7.2.1
+    1. Fig 7.9
+    1. Table 7.1
 1. Sampling framework: terminology, notations and definitions
 
 ### 2. In-class exercise
@@ -317,9 +323,6 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 
 ***
-
--->
-
 
 
 # Lec 19: Mon 3/7
