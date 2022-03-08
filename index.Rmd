@@ -306,6 +306,8 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 ### 1. Chalk talk
 
+1. Tips on understanding computer simulation code:
+1. Go over MD Fig 7.9 and MD Table 7.1
 1. Sampling framework: terminology, notations and definitions
 
 ### 2. In-class exercise
@@ -348,7 +350,7 @@ sampling_data <- sampling_data %>%
   mutate(prop_red = number_of_red_balls/50)
 
 ggplot(sampling_data, aes(x = prop_red)) +
-  geom_histogram() +
+  geom_histogram(binwidth = 0.04) +
   labs(x = "Proportion of balls that are red")
 ```
 

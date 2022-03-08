@@ -193,7 +193,9 @@ Write:
 
 
 
-# Honor code
+# Honor code requirements
+
+Complete the following three subsections
 
 ## Project peers
 
