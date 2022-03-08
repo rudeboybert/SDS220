@@ -311,10 +311,30 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 ### 1. Chalk talk
 
 1. Recap of Lec 19 readings, go over:
+    1. Code to load sampling exercise data
     1. Code from Ch 7.2.1
     1. Fig 7.9
     1. Table 7.1
 1. Sampling framework: terminology, notations and definitions
+
+```{r, echo = FALSE, eval = FALSE}
+# This form: https://docs.google.com/forms/d/1AIAm5Nb4FDYWJt3-xt8Pvh-Kin7eJoG_bkdqbrOK4aA/edit
+library(tidyverse)
+library(googlesheets4)
+gs4_auth()
+
+sampling_data <- "https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0" %>%
+  read_sheet()
+
+sampling_data <- sampling_data %>% 
+  mutate(prop_red = number_of_red_balls/50)
+
+ggplot(sampling_data, aes(x = prop_red)) +
+  geom_histogram(binwidth = 0.04) +
+  labs(x = "Proportion of balls that are red")
+```
+
+
 
 ### 2. In-class exercise
 
@@ -339,46 +359,6 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 
 1. In-class tactile (hands-on) activity
 1. Mimicking sampling virtually on computer
-
-```{r, echo = FALSE, eval = FALSE}
-# This form: https://docs.google.com/forms/d/1AIAm5Nb4FDYWJt3-xt8Pvh-Kin7eJoG_bkdqbrOK4aA/edit
-library(tidyverse)
-library(googlesheets4)
-gs4_auth()
-
-sampling_data <- "https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0" %>%
-  read_sheet()
-
-sampling_data <- sampling_data %>% 
-  mutate(prop_red = number_of_red_balls/50)
-
-ggplot(sampling_data, aes(x = prop_red)) +
-  geom_histogram(binwidth = 0.04) +
-  labs(x = "Proportion of balls that are red")
-```
-
-
-```{r, echo = FALSE, eval = FALSE}
-library(tidyverse)
-library(moderndive)
-
-# Virtual sampling bowl
-bowl
-
-# Take virtual sample of size n = 25, 41 times 
-virtual_samples_25  <- bowl %>% 
-  rep_sample_n(size = 25, reps = 41)
-virtual_samples_25
-
-virtual_prop_red_25 <- virtual_samples_25 %>% 
-  group_by(replicate) %>% 
-  summarize(prop_red = sum(color == "red")/25)
-virtual_prop_red_25
-
-ggplot(virtual_prop_red_25, aes(x = prop_red)) +
-  geom_histogram(binwidth = 0.05, color = "white") +
-  labs(x = "Proportion of 25 balls that were red") 
-```
 
 
 ### 2. In-class exercise
