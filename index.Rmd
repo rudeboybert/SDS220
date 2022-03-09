@@ -311,29 +311,40 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 ### 1. Chalk talk
 
 1. Recap of Lec 19 readings, go over:
-    1. Code to load sampling exercise data
-    1. Code from Ch 7.2.1
-    1. Fig 7.9
-    1. Table 7.1
+    a) Sampling exercise data on this [Google Sheet](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0){target="_blank"} can be loaded using code below. Copy to `classnotes.Rmd`:
+    ```{r, echo = TRUE, eval = FALSE}
+    library(tidyverse)
+    
+    sampling_data <- 
+      "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlmubr007CcPwa3j-w1CydqNAQkq_cqA-QNxnjpSFno7OjCi8lW0noTgVM1-Fn9mtZ29DYd7PaC32I/pub?gid=0&single=true&output=csv" %>%
+      read_csv()
+    
+    sampling_data <- sampling_data %>% 
+      mutate(prop_red = number_of_red_balls/50)
+    
+    ggplot(sampling_data, aes(x = prop_red)) +
+      geom_histogram(binwidth = 0.04) +
+      labs(x = "Proportion of balls that are red")
+    ```  
+    b) Code from Ch 7.2.1 (below Fig 7.8). Copy to `classnotes.Rmd`:
+    ```{r}
+    library(tidyverse)
+    library(moderndive)
+    
+    # Segment 1: sample size = 25 ------------------------------
+    # 1.a) Virtually use shovel 1000 times
+    virtual_samples_25 <- bowl %>% 
+      rep_sample_n(size = 25, reps = 1000)
+    
+    # 1.b) Compute resulting 1000 replicates of proportion red
+    virtual_prop_red_25 <- virtual_samples_25 %>% 
+      group_by(replicate) %>% 
+      summarize(red = sum(color == "red")) %>% 
+      mutate(prop_red = red / 25)
+    ```  
+    c) Fig 7.9
+    d) Table 7.1
 1. Sampling framework: terminology, notations and definitions
-
-```{r, echo = FALSE, eval = FALSE}
-# This form: https://docs.google.com/forms/d/1AIAm5Nb4FDYWJt3-xt8Pvh-Kin7eJoG_bkdqbrOK4aA/edit
-library(tidyverse)
-library(googlesheets4)
-gs4_auth()
-
-sampling_data <- "https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0" %>%
-  read_sheet()
-
-sampling_data <- sampling_data %>% 
-  mutate(prop_red = number_of_red_balls/50)
-
-ggplot(sampling_data, aes(x = prop_red)) +
-  geom_histogram(binwidth = 0.04) +
-  labs(x = "Proportion of balls that are red")
-```
-
 
 
 ### 2. In-class exercise
@@ -357,7 +368,9 @@ ggplot(sampling_data, aes(x = prop_red)) +
 
 ### 1. Chalk talk
 
-1. In-class tactile (hands-on) activity
+1. In-class tactile (hands-on) activity.
+    1. Guess the proportion of balls in the bowl that are red in this [Google Sheet](https://docs.google.com/forms/d/1AIAm5Nb4FDYWJt3-xt8Pvh-Kin7eJoG_bkdqbrOK4aA/edit){target="_blank"}
+    1. Enter the number of balls in your shovel that are red (out of 50) in this [Google Sheet](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0){target="_blank"}
 1. Mimicking sampling virtually on computer
 
 
