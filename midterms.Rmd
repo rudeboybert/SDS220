@@ -47,11 +47,11 @@ library(patchwork)
 # Midterm format
 
 1. Format is based on Marney Pratt's [BIO 131](https://docs.google.com/document/d/1_FB2EHtqTEpd1RJHb6SfyV19rgXlrjNKbsxhPh9UC6w/edit){target="_blank"}. In particular, note the table of possible  proficiencies for each learning goal:
-    1. 4: Excellent, exceeds standard
-    1. 3.5: Almost Excellent, only minor problems
-    1. 3: Proficient, meets standard (understand the idea generally, but some mistakes or get confused by subtleties)
-    1. 2: Approaching, doesn’t fully meet standard but is progressing (understand it somewhat but have misconceptions, gaps in knowledge, or make serious mistakes)
-    1. 1: Beginning, does not meet standard (know a little bit, but not enough to really use it for anything)
+    * 4: Excellent, exceeds standard
+    * 3.5: Almost Excellent, only minor problems
+    * 3: Proficient, meets standard (understand the idea generally, but some mistakes or get confused by subtleties)
+    * 2: Approaching, doesn’t fully meet standard but is progressing (understand it somewhat but have misconceptions, gaps in knowledge, or make serious mistakes)
+    * 1: Beginning, does not meet standard (know a little bit, but not enough to really use it for anything)
 1. Differences for SDS 220 from BIO 131 are:
     a) Replace Marney's table of 12 standards with our 15 [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true)
     a) Marney's weights for each standard at the end do not apply. In our case all 15 learning goals are weighted equally
