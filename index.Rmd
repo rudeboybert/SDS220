@@ -271,29 +271,29 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 ***
 
 
+-->
+
 
 # Lec 21: Fri 3/11
 
 ## Announcements
 
-1. 
+1. Revisit learning goals: the importance of chapter 7 on sampling
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. Polls, CLT, 
-1. Watch bunny video
-1. Table 7.6.1:
+1. Finish sampling framework from Lec 20: terminology, notations and definitions
+1. Statistical definitions: sampling distribution & standard error
+1. Polls in MD 7.4
+1. Central Limit Theorem: Watch bunny video
+1. Table 7.6.1 of all population parameters we're going to infer about
 
 ### 2. In-class exercise
 
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
-
-
--->
-
 
 
 ***
