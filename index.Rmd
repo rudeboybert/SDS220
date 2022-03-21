@@ -192,86 +192,76 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 
 
-# Lec 24: Fri 4/3
+# Lec 24: Wed 3/25
 
 ## Announcements
 
-1. We have read all your survey responses. If anything changes about your living situation or learning environment, please be proactive and let us know ASAP!
-1. Spinelli center tutoring is up and running! See the "Getting More Help" section below for more information.
+1. 
 
+## Today's Topics/Activities
 
+### 1. Chalk talk
 
-## Chalk Talk
+1. 
 
-1. In preparation, have the following figures and tables ready in separate tabs in your browser:
-    1. ModernDive Figure 7.15 comparing three sampl-ING distributions of $\widehat{p}$ based on samples of size $n$ = 25, 50, and 100.
-    1. ModernDive Table 7.5 on difference scenarios for sampling for (statistical) inference
-1. Watch this mini-lecture on [Boostrap Distributions](https://www.showme.com/sh/?h=HxoE3cm){target="_blank"}. Note at 17m54s it is a little longer than you can expect this semester as I both recapped Ch7 on Sampling and was getting used to the tech.  
-1. Read from the beginning of Chapter 8 up to and including 8.2 in our book. Click the "ModernDive" tab above to ensure you're reading the right version of the book.
+### 2. In-class exercise
 
-
-## Discussion Sessions
-
-1. There are 4 Zoom discussion sessions between Fri 4/3 and Sun 4/5. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar!
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper's Fri 4/3 session is between 9:00am - 10:30am Eastern.
-
-
-## Getting More Help
-
-1. To schedule a one-on-one appointment with a Spinelli Tutor, visit their [self-scheduled appointment calendar](https://calendar.google.com/calendar/selfsched?sstoken=UUU0UTRmUnpvVmhIfGRlZmF1bHR8OTk2MWU3M2M2NmI1NjhiODdjMzhiZjVhM2Q1Yjg5NDc){target="_blank"}.
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Chichi's first Fri 4/3 appointment block is between 9:30am – 10:15am eastern.
-
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
 
 
-
-# Lec 23: Wed 4/1
+# Lec 23: Wed 3/23
 
 ## Announcements
 
-1. Please read the announcements from Mon 3/30
+1. `set.seed()`
 
-## Chalk Talk
+## Today's Topics/Activities
 
-1. Watch this [mini-lecture](https://www.showme.com/sh?h=ZtNEJea){target="_blank"} connecting Monday's class to today's topic. 
-2. Then read sections 7.5 and 7.6 in our book.
-3. Today's big idea is the Central Limit Theorem!!!
+### 1. Chalk talk
 
-## Discussion Sessions
+1. 
 
-There are 4 discussion sessions between 4/1 and 4/2. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar! 
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
 
 
 
 ***
-
-
-
-# Lec 22: Mon 3/30
-
-## Announcements
-
-* Add the sds-mth-220-2020-01.slack.com workspace to your Desktop or Mobile version of Slack.
-* Please _carefully_ read the following updated tabs of the course webpage: "COVID-19" (if you haven't already read our update from Friday 3/27), "Badge Challenges", "Project", and "Syllabus". If anything isn't clear, please ask us in the `#questions` channel in Slack.
-* Please ensure you are doing the readings from the <https://moderndive-bert.netlify.com/> version of the book i.e. there should be a "-bert" in the link. For example, clicking the "ModernDive" tab of this webpage will take you to the correct version of the book.
-
-
-## Chalk Talks
-
-1. Watch this [mini-lecture](https://www.showme.com/sh?h=nt6tx4K){target="_blank"} connecting Monday's class from before spring break to now. Then read sections 7.3 and 7.4 in our book.
-2. Watch this [bonus mini-lecture](https://www.showme.com/sh?h=qfDITQW){target="_blank"} on SampLING distributions. 
-
-## Discussion Sessions
-
-There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar! 
-
-
-***
-
 
 -->
+
+
+
+# Lec 22: Mon 3/21
+
+## Announcements
+
+1. Hot tip from this [tweet](https://twitter.com/OscarBaruffa/status/1502255846465671170): You can `View()` contents of a data frame in RStudio by:
+    1. macOS: Command + Clicking the name of the data frame in your code
+    1. Windows: CTRL + Clicking the name of the data frame in your code
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Example of CLT working for non-normal population distributions
+1. Next tactile activity: re-sampling with replacement from a sample of $n=50$ pennies [(Google Sheet)](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=101369328){target="_blank"}
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
 
 
 # Lec 21: Fri 3/11
@@ -279,6 +269,7 @@ There are 4 discussion sessions between 3/30 and 3/31. They are listed on [this 
 ## Announcements
 
 1. Revisit learning goals: the importance of chapter 7 on sampling
+1. Midterm I discussion
 
 ## Today's Topics/Activities
 
