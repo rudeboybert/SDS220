@@ -243,15 +243,14 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ## Announcements
 
-1. Hot tip from this [tweet](https://twitter.com/OscarBaruffa/status/1502255846465671170): You can `View()` contents of a data frame in RStudio by:
-    1. macOS: Command + Clicking the name of the data frame in your code
-    1. Windows: CTRL + Clicking the name of the data frame in your code
+1. Re-visit learning goals
+
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. Example of CLT working for non-normal population distributions
+1. Example of CLT for non-normal population distributions [here](static/CLT.html){target="_blank"}
 1. Next tactile activity: re-sampling with replacement from a sample of $n=50$ pennies [(Google Sheet)](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=101369328){target="_blank"}
 
 
@@ -277,8 +276,8 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 1. Finish sampling framework from Lec 20: terminology, notations and definitions
 1. Statistical definitions: sampling distribution & standard error
-1. Polls in MD 7.4
-1. Central Limit Theorem: Watch bunny video
+1. Obama poll in MD 7.4
+1. Central Limit Theorem: Watch bunny and dragon video
 1. Table 7.6.1 of all population parameters we're going to infer about
 
 ### 2. In-class exercise

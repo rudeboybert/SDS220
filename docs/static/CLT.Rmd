@@ -1,0 +1,66 @@
+---
+title: "Central Limit Theorem Example"
+author: "Albert Y. Kim"
+date: "Last updated on `r Sys.Date()`"
+output:
+  html_document:
+    theme: cosmo
+    highlight: tango
+---
+
+
+# Terminology/Concept Refresher:
+
+* A _population distribution_ is the distribution from which individual observations originate. i.e. individual dragon wing spans
+* A _(random) sample of size $n$_ is a random sample of $n$ observations from the population distribution. i.e. a sample of $n$ dragons
+* A _sample statistic_ is a summary statistic based on the sample.  In our case, we'll be considering the sample mean dragon wing span
+* A _sampling distribution_ is the distribution from which sample statistics originate.  In our case, it is the distribution from which observed sample means originate
+* The _standard error_ is the standard deviation specifically associated with a sampling distribution.
+* The _Central Limit Theorem_ states as the sample size $n$ increases, the sampling distribution of the sample mean gets more normal and narrower. This happens even if the population distribution is not normal.
+
+
+
+# Central Limit Theorem example
+
+## Population distribution
+
+We demonstrate the Central Limit Theorem assuming that dragon wing spans from from the following right-skewed and non-normal population distribution. **i.e. Individual dragon wing spans follow this distribution.**
+
+```{r, fig.width=16/2, fig.height=9/2, echo=FALSE}
+n.plot.pts <- 10000
+domain <- seq(from=0, to=20, length=n.plot.pts)
+pdf.values <- dchisq(domain, df = 5)
+plot(domain, pdf.values, type='l', xlab="Dragon wing-span (m)", ylab= "", 
+     main="Population distribution of dragon wing spans")
+```
+
+## Sampling distributions
+
+Much as we did in class, we'll
+
+1. Take random samples of size $n$ from the population distribution
+1. Compute the sample mean of these $n$ wing-spans i.e. the average wing-span
+1. Simulate this procedure 1000 times
+1. Plot the distribution of 1000 resulting sample means
+
+This plots are the sampling distribution of the sample mean. **i.e. The average wing-spans of the samples of size n follow this distribution.** We do this for $n$ = 1, 2, 4, 6, 10, and 15:
+
+```{r, fig.width=16/1.5, fig.height=9/1.5, echo=FALSE}
+n.sim <- 1000
+n <- c(1, 2, 4, 6, 10, 15)
+
+par(mfrow=c(2,3))
+for(j in 1:length(n)) {
+  x.bar.vector <- rep(0, n.sim)
+  for(i in 1:n.sim){
+    sample <- rchisq(n[j], df=5)
+    x.bar.vector[i] <- mean(sample)
+  }
+  title <- paste("Sampling dist'n of 1000 sample means (n=", n[j], ")", sep = "")
+  hist(x.bar.vector, breaks=seq(0, 30, by = 0.5), xlab="Sample mean (m)", prob=TRUE,
+       main=title, xlim = c(0, 20))
+}
+```
+
+**Moral**: We just demonstrated the Central Limit Theorem. As the sample size increases, the sampling distribution of sample means and sample proportions gets more normal and more narrow. This happens irregardless of the shape of the population distribution.
+
