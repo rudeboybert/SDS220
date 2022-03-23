@@ -224,7 +224,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 1. You'll get project feedback by Monday
 1. Talk about Midterm I
 1. In Slack `#general`: Smithies in SDS Data Ethics event on 2022/4/14 5pm with [Dr. Emily Bender](https://en.wikipedia.org/wiki/Emily_M._Bender){target="_blank"}. Read more about her work [here](https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru){target="_blank"}.
-1. Copy code below into your `classnotes.Rmd`. It loads the data from the Google Sheet you filled in last lecture
+1. Copy code below into your `classnotes.Rmd`. It loads the data from the [Google Sheet](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=101369328){target="_blank"} you filled in last lecture
 
 ```{r, eval=FALSE}
 library(tidyverse)
