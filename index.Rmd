@@ -213,17 +213,62 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 ***
 
 
+
+-->
+
+
 # Lec 23: Wed 3/23
 
 ## Announcements
 
-1. `set.seed()`
+1. You'll get project feedback by Monday
+1. Talk about Midterm I
+1. In Slack `#general`: Smithies in SDS Data Ethics event on 2022/4/14 5pm with [Dr. Emily Bender](https://en.wikipedia.org/wiki/Emily_M._Bender){target="_blank"}. Read more about her work [here](https://www.technologyreview.com/2020/12/04/1013294/google-ai-ethics-research-paper-forced-out-timnit-gebru){target="_blank"}.
+1. Copy code below into your `classnotes.Rmd`. It loads the data from the Google Sheet you filled in last lecture
+
+```{r, eval=FALSE}
+library(tidyverse)
+
+# Load data and do minor data wrangling:
+pennies <- 
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlmubr007CcPwa3j-w1CydqNAQkq_cqA-QNxnjpSFno7OjCi8lW0noTgVM1-Fn9mtZ29DYd7PaC32I/pub?gid=101369328&single=true&output=csv" %>% 
+  read_csv() %>% 
+  select(group, group_average)
+
+# Each row does not represent an individually resampled penny, rather each group's
+# pre-summarized mean year:
+View(pennies)
+
+# Plot the bootstrap distribution:
+ggplot(pennies, aes(x=group_average)) +
+  geom_histogram(binwidth = 2) +
+  labs(
+    x = "Average year",
+    title = "Bootstrap distribution for 18 groups' 50 pennies resampled with replacement",
+    subtitle = "Vertical red line is sample mean of original sample of 50 pennies"
+  ) +
+  geom_vline(xintercept = 1995.44, col = "red")
+```
+
 
 ## Today's Topics/Activities
 
+```{r, echo=FALSE, fig.width=16/3, fig.cap="From Black Mirror S4E4 \"Hang the DJ\""}
+include_graphics("static/images/1000_simulations.jpg")
+```
+
+
 ### 1. Chalk talk
 
-1. 
+1. Goal for this chapter: Table 8.1
+1. Go over `classnotes.Rmd` Lec 23 code
+1. What in-class tactile exercises have we done so far?
+    1. Chapter 7: In-class we took 42 samples from bowl to create sampling distribution (See `classnotes.Rmd` Lec 19 code). IRL however you don't take many samples, you sample only once.
+    1. Chapter 8: In-class we only have 1 sample of 50 pennies from back. We can't create sampling distribution. Rather, we approximate with the bootstrap method. Copy code below into `classnotes.Rmd` Lec 23 code.
+1. Today we mimic the pennies exercise virtually with 1000 simulations to build Fig 8.14
+
+
+
 
 ### 2. In-class exercise
 
@@ -231,12 +276,7 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
-
-
 ***
-
--->
-
 
 
 # Lec 22: Mon 3/21
