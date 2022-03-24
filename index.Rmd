@@ -190,19 +190,25 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ***
 
+-->
 
 
-# Lec 24: Wed 3/25
+
+# Lec 24: Fri 3/25
 
 ## Announcements
 
-1. 
+1. Gradebook on Moodle updated with Learning Goal [proficiencies](midterms.html) from Midterm I. 
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. 
+1. Recap of Lec 23: MD Figure 8.14
+1. MD Ch 8.7.2 touches on Learning Goal 10: Comparing sampling vs bootstrap distributions
+1. The thinking behind confidence intervals (CI): Fig 8.15
+1. Revisit [Obama poll](https://www.npr.org/sections/itsallpolitics/2013/12/04/248793753/poll-support-for-obama-among-young-americans-eroding){target="_blank"} from Ch 7.4
+1. Two methods for constructing CI's
 
 ### 2. In-class exercise
 
@@ -212,9 +218,6 @@ badge challenge than project. On paper, like the "debugging" exercise Lec13
 
 ***
 
-
-
--->
 
 
 # Lec 23: Wed 3/23

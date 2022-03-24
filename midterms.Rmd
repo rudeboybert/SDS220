@@ -46,15 +46,29 @@ library(patchwork)
 
 # Midterm format
 
-1. Format is based on Marney Pratt's [BIO 131](https://docs.google.com/document/d/1_FB2EHtqTEpd1RJHb6SfyV19rgXlrjNKbsxhPh9UC6w/edit){target="_blank"}. In particular, note the table of possible  proficiencies for each learning goal:
-    * 4: Excellent, exceeds standard
-    * 3.5: Almost Excellent, only minor problems
-    * 3: Proficient, meets standard (understand the idea generally, but some mistakes or get confused by subtleties)
-    * 2: Approaching, doesn’t fully meet standard but is progressing (understand it somewhat but have misconceptions, gaps in knowledge, or make serious mistakes)
-    * 1: Beginning, does not meet standard (know a little bit, but not enough to really use it for anything)
-1. Differences for SDS 220 from BIO 131 are:
-    a) Replace Marney's table of 12 standards with our 15 [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true)
-    a) Marney's weights for each standard at the end do not apply. In our case all 15 learning goals are weighted equally
+The standards based grading format for the midterms in this course are based on Marney Pratt's [BIO 131](https://docs.google.com/document/d/1_FB2EHtqTEpd1RJHb6SfyV19rgXlrjNKbsxhPh9UC6w/edit){target="_blank"}. 
+
+## Grading
+
+For each learning goal question you attempt in each midterm, you will be assigned a proficiency which also translates to a numerical score:
+
+Proficiency | Score 
+:--- | :---
+Excellent, exceeds standard | 4
+Almost Excellent, only minor problems | 3.5
+Proficient, meets standard (understand the idea generally, but some mistakes or get confused by subtleties) | 3
+Approaching, doesn’t fully meet standard but is progressing (understand it somewhat but have misconceptions, gaps in knowledge, or make serious mistakes) | 2
+Beginning, does not meet standard (know a little bit, but not enough to really use it for anything) | 1
+No attempt made | 0
+
+The 4-point grading scale will be translated into letter grades as follows, where all [15 learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true) are weighted equally in an overall average:
+
+Score | 3.60-4.00 | 3.20-3.59 | 3.00-3.19 | 2.80-2.99 | 2.60-2.79 | 2.40-2.59 | 2.20-2.39 | 2.00-2.19 | 1.66-1.99 | 1.33-1.65 | 1.00-1.32 | 0-0.99
+:--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | 
+Letter Grade | A | A- | B+ | B | B- | C+ | C | C- | D+ | D | D- | E
+
+## Administrative notes
+
 1. The exam periods are in the McConnell Hall Foyer Friday 3:00-9:00 pm, Saturday 12:00-6:00 pm, and Sunday 12:00-6:00 pm.
 1. Read the "Basics" and "For Students" sections of the **new** [Spring 2022 Self Scheduled Exams instructions](https://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}
 1. You are all subject to the [Smith Honor Code](https://www.smith.edu/about-smith/offices/student-affairs/student-handbook/academic-honor-code-0#:~:text=Honor%20Code%20Statement&text=Smith%20College%20expects%20all%20students,of%20course%20work%20and%20examinations.){target="_blank"}
