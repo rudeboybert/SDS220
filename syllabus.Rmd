@@ -128,6 +128,7 @@ A rough topic schedule and corresponding readings are posted below on the [main 
     + You have an extension "budget" of a maximum of 5 days for the rest of the semester; it's up to you to keep track of your budget.
     + This five-day budget counts for both problem sets and project due dates.
     + Request must be made before due date/time.
+    + Requests will be processed within 24h, usually by the morning after the original due date.
     + [Google Form for 220](https://docs.google.com/forms/d/e/1FAIpQLSdoqwOZkOKtGhKuQU02to2DsetYcIyl3qjth5XQvBl_ddT1ig/viewform){target="_blank"}
 
 
