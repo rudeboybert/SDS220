@@ -79,9 +79,7 @@ categ_regression_ex <- tibble(
 ```
 
 
-
 ***
-
 
 
 # Schedule 
@@ -89,109 +87,76 @@ categ_regression_ex <- tibble(
 <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=1080602121&amp;single=true&amp;widget=true&amp;headers=false" width="100%" height="1050"></iframe>
 
 
-
-<!--
-{target="_blank"}
--->
+***
 
 
 <!--
-Notes to future self:
+# Lec 27: Fri 4/1
 
-- Every two weeks: a holistic, cummulative, synthesis that ties in more with 
-badge challenge than project. On paper, like the "debugging" exercise Lec13
-- 
--->
+## Announcements
 
+1. 
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
 
 
-<!--
-# Lec 27: Wed 4/15
+# Lec 26: Wed 3/30
 
 ## Announcements
 
-* `NA`
+1. 
 
-## Chalk Talk
+## Today's Topics/Activities
 
-1. Watch this mini-lecture on ["More on confidence intervals"](https://www.showme.com/sh/?h=YgdZ0gy){target="_blank"}
-1. Then read sections 8.6 and 8.7 - 8.7.2 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
+### 1. Chalk talk
 
+1. 
 
+### 2. In-class exercise
 
-***
-
-
-
-# Lec 26: Wed 4/8
-
-## Announcements
-
-1. Lecture on Monday 4/13 is cancelled
-1. In case you missed it, please read the revised [Project](project.html#revised-project-goals). We have significally scaled back the amount of work necessary to complete the project for the semester. You now only to submit and revise/resubmit a reflection piece.
-1. We have posted two informational videos in the [Badge Challenges](badge_challenges.html#videos) tab of the webpage:
-    1. "How to Take Badge Challenge 2"
-    1. "How to Study for Badge Challenge 2"
-
-
-## Chalk Talk
-
-1. Watch this mini-lecture on ["Interpreting confidence intervals"](https://www.showme.com/sh/?h=Ci9mrVQ){target="_blank"}
-1. Then read section 8.5 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
-
-
-
-
-## Discussion Sessions
-
-1. There are 4 Zoom discussion sessions between Wed 4/8 and Thurs 4/9. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar!
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper's Wed 4/8 session is between 9:00am - 10:30am Eastern.
-
-
-## Getting More Help
-
-1. Ask questions in the `#questions` channel on Slack!
-1. To schedule a one-on-one appointment with a Spinelli Tutor, visit their [self-scheduled appointment calendar](https://calendar.google.com/calendar/selfsched?sstoken=UUU0UTRmUnpvVmhIfGRlZmF1bHR8OTk2MWU3M2M2NmI1NjhiODdjMzhiZjVhM2Q1Yjg5NDc){target="_blank"}. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. 
-
-
-
-***
-
-
-# Lec 25: Mon 4/6
-
-## Announcements
-
-1. Please read the updated [implementation notes for the Badge Challenges](https://smithcollege-sds.github.io/SDS220/badge_challenges.html#challenge-format){target="_blank"} and ask questions on the #remote_learning Slack channel
-1. Spinelli center tutoring is up and running! See the "Getting More Help" section below for more information.
-
-
-## Chalk Talk
-
-1. Watch this mini-lecture tying [bootstrap distributions to the computations of Confidence Intervals ](https://www.showme.com/sh/?h=Vg828zg){target="_blank"}
-1. Then read sections 8.3 and 8.4 in our book. Remember to carefully work the code pieces just as if you were in live class with us. 
-1. A question to ponder (as you watch the video and read the sections) is "How does the bootstrap distribution approximation of the sampLING distribution strengthen what your one sample can do?"
-
-## Discussion Sessions
-
-1. There are 4 Zoom discussion sessions between Mon 4/6 and Tues 4/7. They are listed on [this Google Calendar](https://calendar.google.com/calendar/embed?src=smith.edu_qd5sufjufbms2430ielqeego24%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"}. Please add this calendar to your own calendar!
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Will Hopper's Fri 4/3 session is between 9:00am - 10:30am Eastern.
-
-
-## Getting More Help
-
-1. To schedule a one-on-one appointment with a Spinelli Tutor, visit their [self-scheduled appointment calendar](https://calendar.google.com/calendar/selfsched?sstoken=UUU0UTRmUnpvVmhIfGRlZmF1bHR8OTk2MWU3M2M2NmI1NjhiODdjMzhiZjVhM2Q1Yjg5NDc){target="_blank"}.
-1. Be sure to set the "time zone" in your own Google Calendar to match your location so that the appointment times appear correctly for you. For reference, Chichi's first Mon 4/6 appointment block is between 9:30am – 10:15am eastern.
-
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
 
 -->
 
+# Lec 25: Mon 3/28
+
+## Announcements
+
+1. Added new optional "Resource: Video lecture" column to Google Sheet schedule above: Video chalk talks from Spring 2020 pandemic semester. 
+1. Final project
+    1. EDA feedback
+    1. Learning Goal 06: Multiple regression via interaction and parralel slopes model
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Constructing confidence intervals using `infer` package (instead of `rep_sample_n()`)
+
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
 
 
 # Lec 24: Fri 3/25
