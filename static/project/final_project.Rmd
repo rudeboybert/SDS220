@@ -165,6 +165,10 @@ Write:
 
 ## Interpreting the regression table
 
+```{r}
+# Insert code to output the regression table for the model you selected
+
+```
 
 ## Inference for multiple regression
 

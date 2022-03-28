@@ -140,8 +140,9 @@ categ_regression_ex <- tibble(
 
 1. Added new optional "Resource: Video lecture" column to Google Sheet schedule above: Video chalk talks from Spring 2020 pandemic semester. 
 1. Final project
-    1. EDA feedback
-    1. Learning Goal 06: Multiple regression via interaction and parralel slopes model
+    1. Watch video EDA feedback
+    1. Instructions will be updated on [Project](project.html#submission) page by Wednesday
+    1. The last step of EDA phase ties into Learning Goal 06 on Midterm II: Multiple regression via interaction and parralel slopes model
 
 ## Today's Topics/Activities
 

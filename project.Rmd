@@ -130,8 +130,8 @@ By Thu 2/24 9pm:
 
 By Thu 3/10 9pm only the group leader will submit on Moodle:
 
-1. The `project_proposal.Rmd` R Markdown file. This file **must** knit.
-1. The `project_proposal.html` HTML output file
+1. The `final_project.Rmd` R Markdown file. This file **must** knit.
+1. The `final_project.html` HTML output file
 
 Extension requests count against all group members. For example, say Avon, Stringer, and Marlo are in a group. If Marlo fills out the extension request form requesting 2 days, then 2 days will deducted from all three members' 5 days extension request. 
 
@@ -158,27 +158,37 @@ Extension requests count against all group members. For example, say Avon, Strin
 
 # 3. Project initial submission {#submission}
 
+## To Do
+
+**To be finalized by Wed 3/30**
 
 <!--
-
-As stated above, we have four goals for this project, and at this point in the process (i.e. after phase two submission) we believe that each statistician in SDS/MTH 220 has explicit experience with at least one of the goals. So for the third “Project Submission”  phase of the project **each** student will be submitting a 1000 and 1200 word reflection piece on your experience. Action items:
-
-1. Begin by taking a few notes on your experience so far. A few things you might want to consider are:
-    + What went really well so far?
-    + What were unexpected challenges for you and your team?
-    + What do you wish you had done differently so far? 
-1. Then with these notes in mind, read the feedback from Phase 2 (to be delivered by Mon 4/6) and review the feedback from Phase 1. Does the feedback surprise you? Compare and contrast the feedback with your notes. 
-1. Now is the time to loop in your group. Have a discussion over either Zoom or Slack about (1) the goals for the project and (2) the feedback. It’s completely normal if each of you resonate with a different goal. Even though you have worked in a group, you are a collection of individuals with different experiences. 
-1. With all of this in mind, respond to the following prompt:
-
-> This project has 4 original goals in mind. Select at least one of these goals and discuss how your work so far on the project has already accomplished this goal. Note that we are asking you to write authentically about your experience so far, not to tell us what you think we want to hear. 
-
-There are a few logistics:
-
-* You will write your paper following the instructions in this [template Google Doc](https://docs.google.com/document/d/1fMXLAWDMehHWaFp1cOtRcD-pf2aJEnmgQnkcAwQ6Syk/){target="_blank"}. It needs to be between 1000 and 1200 words.
-* Your paper must be written by you, but in the footnote please note when you met with your group and one topic that your group discussed that was not included in your reflection piece.
-
+1. Replace the blank code for Section 3  Multiple linear regression:
+1. Update the `final_project.Rmd` you submitted last time
+    1. Make changes based on the video feedback you received. 
+    1. Complete Sections 3 through 3.3 i.e. up to and including "Interpreting the regression table" (you will complete Sections 3.4, 3.5, and 4 during the next submission stage)
+    1. Only group leader will make single submission on behalf of whole group (see below)
+1. Ask questions:
+    1. For general project questions that would apply to all groups: ask in `final_project` channel in Slack
+    1. For questions specific to your group: ask in group Slack DM you created in project proposal phase
+1. Be mindful of your group members
+    1. Life happens, especially this semester. If something comes up, let your partners know. Do not ghost on your partners.
+    1. If an issue arises, do not resort to passive aggressive electronic messages. Make a good faith attempt to say how you feel in person.
+    1. If the issue is still not resolved, Slack DM Prof. Kim.
+1. Tips:
+    1. Knit early, knit often
+    1. For tips on how to make your HTML document look professional, consult the R Markdown tips listed in RStudio Menu Bar -> Help -> Markdown Quick Reference
 -->
+
+
+## What to submit
+
+By Thu 4/7 9pm only the group leader will submit on Moodle:
+
+1. The updated `final_project.Rmd` R Markdown file. This file **must** knit not only for you, but also for other people trying to replicate your analysis. This is known as *reproducible research*.
+1. The updated `final_project.html` HTML output file
+
+Extension requests count against all group members. For example, say Bodie, Wallace, and Poot are in a group. If Marlo fills out the extension request form requesting 2 days, then 2 days will deducted from all three members' 5 days extension request. 
 
 
 ***

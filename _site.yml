@@ -26,7 +26,7 @@ navbar:
     href: https://www.gradescope.com/courses/351214
   right:
   - text: Project
-    href: project.html#EDA
+    href: project.html#submission
   - text: Midterms
     href: midterms.html
   - text: Learning goals

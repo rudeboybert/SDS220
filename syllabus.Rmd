@@ -30,13 +30,10 @@ h1{font-weight: 400;}
     + Please do not contact me or Beth by email
     + Click hashtag icon in navbar for the browser interface or use the [desktop/mobile app](https://slack.com/downloads/){target="_blank"}
 * **Meeting locations/times:** Check [course search](https://www.smith.edu/academics/academic-program/curriculum/course-search){target="_blank"}
-* **Asking questions**:
-    + Best place: the `#questions` channel on Slack
-    + Spinelli Center drop-in tutoring: See section below
-    + Office hours:
-        + Check [calendar](https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"} for most up-to-date information
-        + Instructor and location (in-person or Zoom) are indicated in calendar entry 
-        + Before coming to office hours, please have your question ready on your computer
+* **Office hours**:
+    + Check [calendar](https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&ctz=America%2FToronto){target="_blank"} for most up-to-date information
+    + Instructor and location (in-person or Zoom) are indicated in calendar entry 
+    + Before coming to office hours, please have your question ready on your computer
 * **Personal or private discussions**:
     + For quick discussions: Slack DM Professor Kim
     + For longer discussions: Book an appointment at [bit.ly/meet_with_albert](https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE){target="_blank"}. Location (in-person or Zoom) is indicated in calendar entry 
