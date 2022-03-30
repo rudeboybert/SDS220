@@ -120,7 +120,7 @@ categ_regression_ex <- tibble(
 ## Announcements
 
 1. Instructions for next (shorter) phase of [final project](project.html#submission) are posted.
-
+1. There are 13 midterms (450 students) this weekend. Self Scheduled Exams organizers expect a lot of traffic on Sunday afternoon.
 
 ## Today's Topics/Activities
 
