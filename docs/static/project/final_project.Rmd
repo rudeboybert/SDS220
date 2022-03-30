@@ -157,23 +157,80 @@ Write:
 
 # Multiple linear regression
 
-## Methods
+## Regression table
 
+Instructions:
 
-## Model Results
-
-
-## Interpreting the regression table
+- Indicate which model you selected: parallel slopes or interaction.
+- Fit your selected regression model and display the regression table in the code 
+block below
+- Modify the template formula below from ModernDive 6.1.2 to match your model (this formula is written in the LaTeX typesetting language for printing mathematical formulas)
 
 ```{r}
-# Insert code to output the regression table for the model you selected
+# Insert code to fit your regression model and show the regression table. 
 
 ```
 
+$$
+\widehat{y} = 
+4.883 
+- 0.018 \cdot \text{age}  
+- 0.446 \cdot \mathbb{1}_{\text{is male}}(x)
++ 0.014 \cdot \text{age} \cdot \mathbb{1}_{\text{is male}}(x)
+$$
+
+
+## Interpreting regression coefficients
+
+Interpret all regressions coefficients in the `estimate` column in the following list:
+
+1. Interpretation 1
+1. Interpretation 2
+1. ...
+
+
 ## Inference for multiple regression
 
+**You will complete the rest of Section 3 at the project resubmission phase due the last day of exams.**
 
-## Residual Analysis
+From the above regression table, interpret the confidence interval and p-value for at least two non-intercept terms:
+
+1. Interpretation 1
+1. Interpretation 2
+1. (optional) Interpretation 3
+1. (optional) ...
+
+
+## Conditions for inference for regression
+
+Verify the **LINE** conditions for inference for regression for all confidence intervals and p-values from
+your regression table to have valid interpretation
+
+### Linearity of relationship
+
+### Independence of residuals
+
+### Normality of residuals
+
+```{r, fig.cap = "Figure 6: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize the distribution of the residuals:
+
+```
+
+### Equality of variance
+
+```{r, fig.cap = "Figure 6: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize the relationship between the residuals and your
+# numerical explanatory/categorical variable:
+
+```
+
+
+```{r, fig.cap = "Figure 7: INSERT TITLE", fig.align = "center"}
+# Insert code to visualize the relationship between the residuals and your
+# categorical explanatory/categorical variable:
+
+```
 
 
 

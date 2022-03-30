@@ -111,18 +111,28 @@ categ_regression_ex <- tibble(
 
 ***
 
+-->
+
+
 
 # Lec 26: Wed 3/30
 
 ## Announcements
 
-1. 
+1. Instructions for next (shorter) phase of [final project](project.html#submission) are posted.
+
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. 
+1. Revisiting bowl sampling exercise (note bowl in book is from Amherst College)
+1. Comparing 95% to 80% confidence intervals Fig 8.27 vs Fig 8.28
+1. Correct interpretation of CI's
+1. Two factors that impact width of confidence interval i.e. size of net
+    1. Confidence level: Fig 8.29
+    1. Sample size: Fig 8.30
+
 
 ### 2. In-class exercise
 
@@ -132,7 +142,6 @@ categ_regression_ex <- tibble(
 
 ***
 
--->
 
 # Lec 25: Mon 3/28
 
@@ -187,7 +196,6 @@ categ_regression_ex <- tibble(
 ***
 
 
-
 # Lec 23: Wed 3/23
 
 ## Announcements
@@ -237,9 +245,6 @@ include_graphics("static/images/1000_simulations.jpg")
     1. Chapter 7: In-class we took 42 samples from bowl to create sampling distribution (See `classnotes.Rmd` Lec 19 code). IRL however you don't take many samples, you sample only once.
     1. Chapter 8: In-class we only have 1 sample of 50 pennies from back. We can't create sampling distribution. Rather, we approximate with the bootstrap method. Copy code below into `classnotes.Rmd` Lec 23 code.
 1. Today we mimic the pennies exercise virtually with 1000 simulations to build Fig 8.14
-
-
-
 
 ### 2. In-class exercise
 
