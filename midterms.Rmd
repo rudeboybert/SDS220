@@ -137,7 +137,7 @@ Think of pseudocode as a recipe, blue print, or algorithm outline that balances:
 
 1. On top of the Learning Goals for Midterm I, everything relating to [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true) 6-10:
     1. Lecture chalk talks
-    1. Labs/problem sets (PS05 solutions will be posted after all PS05's have been submitted)
+    1. Labs/problem sets (PS07 solutions will be posted after all PS07's have been submitted)
     1. Book readings
 1. Be sure to consult the "What to Study" section from Midterm I for discussion on Learning Goals 1-5
 
