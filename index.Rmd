@@ -91,16 +91,67 @@ categ_regression_ex <- tibble(
 
 
 <!--
-# Lec 27: Fri 4/1
+
+# Lec 30: Fri 4/8
 
 ## Announcements
 
 1. 
 
+
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 29: Wed 4/6
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 28: Mon 4/4
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Two factors that impact width of confidence interval i.e. size of net
+    1. Confidence level: Fig 8.29
+    1. Sample size: Fig 8.30
 1. 
 
 ### 2. In-class exercise
@@ -111,8 +162,35 @@ categ_regression_ex <- tibble(
 
 ***
 
--->
 
+--> 
+
+
+# Lec 27: Fri 4/1
+
+## Announcements
+
+1. Midterm II cover page posted on Slack in `#general`
+1. Roadmap of what we have left for final 4 weeks of class
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Re-visit Fig 8.27 from Lec 26: How to interpret 95% confidence intervals
+1. Moved to Lec 28 on Mon 4/4: ~~Two factors that impact width of confidence interval i.e. size of net~~
+    1. ~~Confidence level: Fig 8.29~~
+    1. ~~Sample size: Fig 8.30~~
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
 
 
 # Lec 26: Wed 3/30
@@ -129,10 +207,9 @@ categ_regression_ex <- tibble(
 1. Revisiting bowl sampling exercise (note bowl in book is from Amherst College)
 1. Comparing 95% to 80% confidence intervals Fig 8.27 vs Fig 8.28
 1. Correct interpretation of CI's
-1. Two factors that impact width of confidence interval i.e. size of net
-    1. Confidence level: Fig 8.29
-    1. Sample size: Fig 8.30
-
+1. Moved to Lec 28 on Mon 4/4: ~~Two factors that impact width of confidence interval i.e. size of net~~
+    1. ~~Confidence level: Fig 8.29~~
+    1. ~~Sample size: Fig 8.30~~
 
 ### 2. In-class exercise
 
