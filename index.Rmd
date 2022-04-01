@@ -170,7 +170,7 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-1. Midterm II cover page posted on Slack in `#general`
+1. Additional notes about [Midterm II](midterms.html#midtermIInotes)
 1. Roadmap of what we have left for final 4 weeks of class
 
 

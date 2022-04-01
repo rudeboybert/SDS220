@@ -99,7 +99,7 @@ Letter Grade | A | A- | B+ | B | B- | C+ | C | C- | D+ | D | D- | E
 
 ## What to Study
 
-1. Everything relating to [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true) 1-5:
+1. Everything relating to [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true){target="_blank"} 1-5:
     1. Lecture chalk talks
     1. Labs/problem sets (PS05 solutions will be posted after all PS05's have been submitted)
     1. Book readings
@@ -135,16 +135,22 @@ Think of pseudocode as a recipe, blue print, or algorithm outline that balances:
 
 ## What to Study
 
-1. On top of the Learning Goals for Midterm I, everything relating to [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true) 6-10:
+1. On top of the Learning Goals for Midterm I, everything relating to [learning goals](https://docs.google.com/spreadsheets/d/e/2PACX-1vQM-5FVt5BKJZsfElEV19NwD2MXGgSVUfGLB7dUoD0MbCU6Dkzqx66UMxbgqMaiS6H8CP8numV5Xaf-/pubhtml?gid=323806801&single=true){target="_blank"} 6-10:
     1. Lecture chalk talks
     1. Labs/problem sets (PS07 solutions will be posted after all PS07's have been submitted)
     1. Book readings
 1. Be sure to consult the "What to Study" section from Midterm I for discussion on Learning Goals 1-5
 
 
+## Additional notes {#midtermIInotes}
+
+1. Be sure to see the Midterm II cover page in Slack on `#general`.
+1. Remember: 450 students (18.75% of Smith student body) are taking their midterm this weekend!
+1. You can't take their exam "wherever." Specific rooms have been set aside for taking exams and that is where you should choose from. Available rooms will be posted at the exam pick up point in McConnell Foyer and kept up to date [here](https://www.science.smith.edu/self-scheduled-exam-printing/){target="_blank"}.
+1. If you have an accommodation and need a private room, you can book space for their accommodation through the [booking system](https://exams.scheduling.smith.edu/room){target="_blank"}. Please be in touch directly at this email address if you can't find a place and a time.
+
 
 ***
-
 
 
 <!--
