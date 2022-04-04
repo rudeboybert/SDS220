@@ -137,6 +137,8 @@ categ_regression_ex <- tibble(
 
 ***
 
+--> 
+
 
 # Lec 28: Mon 4/4
 
@@ -161,9 +163,6 @@ categ_regression_ex <- tibble(
 
 
 ***
-
-
---> 
 
 
 # Lec 27: Fri 4/1
