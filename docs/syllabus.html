@@ -13,7 +13,8 @@
 
 <title>Syllabus</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -46,6 +46,7 @@
   div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
   ul.task-list{list-style: none;}
     </style>
+
 
 
 
@@ -75,6 +76,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -306,7 +310,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -367,56 +371,93 @@ h1{font-weight: 400;}
 <div id="basicinfo" class="section level1">
 <h1>Basic information</h1>
 <ul>
-<li><strong>Course title:</strong> SDS 220: Introduction to Probability and Statistics</li>
+<li><strong>Course title:</strong> SDS 220: Introduction to Probability
+and Statistics</li>
 <li><strong>Instructors:</strong>
 <ul>
-<li><a href="https://rudeboybert.rbind.io/" target="_blank">Albert Y. Kim (he/him)</a> - Assistant Professor of Statistical &amp; Data Sciences. Please call me “Professor Kim”</li>
+<li><a href="https://rudeboybert.rbind.io/" target="_blank">Albert Y.
+Kim (he/him)</a> - Assistant Professor of Statistical &amp; Data
+Sciences. Please call me “Professor Kim”</li>
 <li>Beth Brown (she/her) - Lab instructor</li>
 </ul></li>
 <li><strong>Office locations:</strong>
 <ul>
-<li>Professor Kim: McConnell Hall 215 (accessible from stairwell closest to Bass Hall)</li>
+<li>Professor Kim: McConnell Hall 215 (accessible from stairwell closest
+to Bass Hall)</li>
 <li>Beth Brown: Sabin-Reed 351</li>
 </ul></li>
 <li><strong><del>Email:</del> Slack team</strong>:
 <ul>
 <li>Please do not contact me or Beth by email</li>
-<li>Click hashtag icon in navbar for the browser interface or use the <a href="https://slack.com/downloads/" target="_blank">desktop/mobile app</a></li>
+<li>Click hashtag icon in navbar for the browser interface or use the <a
+href="https://slack.com/downloads/" target="_blank">desktop/mobile
+app</a></li>
 </ul></li>
-<li><strong>Meeting locations/times:</strong> Check <a href="https://www.smith.edu/academics/academic-program/curriculum/course-search" target="_blank">course search</a></li>
+<li><strong>Meeting locations/times:</strong> Check <a
+href="https://www.smith.edu/academics/academic-program/curriculum/course-search"
+target="_blank">course search</a></li>
 <li><strong>Office hours</strong>:
 <ul>
-<li>Check <a href="https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank">calendar</a> for most up-to-date information</li>
-<li>Instructor and location (in-person or Zoom) are indicated in calendar entry</li>
-<li>Before coming to office hours, please have your question ready on your computer</li>
+<li>Check <a
+href="https://calendar.google.com/calendar/embed?src=c_hoe7p7ku3rhppoot8e38mponpo%40group.calendar.google.com&amp;ctz=America%2FToronto"
+target="_blank">calendar</a> for most up-to-date information</li>
+<li>Instructor and location (in-person or Zoom) are indicated in
+calendar entry</li>
+<li>Before coming to office hours, please have your question ready on
+your computer</li>
 </ul></li>
 <li><strong>Personal or private discussions</strong>:
 <ul>
 <li>For quick discussions: Slack DM Professor Kim</li>
-<li>For longer discussions: Book an appointment at <a href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE" target="_blank">bit.ly/meet_with_albert</a>. Location (in-person or Zoom) is indicated in calendar entry</li>
-<li>Please do not book an appointment for non-personal or non-private discussions.</li>
+<li>For longer discussions: Book an appointment at <a
+href="https://calendar.google.com/calendar/selfsched?sstoken=UVBidEVzZlJ3a2dYfGRlZmF1bHR8NmExNDk4OGM5ZWZiYWNmOWYxYWRkZDM0NmU3ZGRmMzE"
+target="_blank">bit.ly/meet_with_albert</a>. Location (in-person or
+Zoom) is indicated in calendar entry</li>
+<li>Please do not book an appointment for non-personal or non-private
+discussions.</li>
 </ul></li>
 </ul>
 <div id="spinelli" class="section level2">
 <h2>Spinelli Tutoring Center</h2>
-<p>The Spinelli Center for Quantitative Learning has several ways to connect you to academic support in the form of our peer tutors and professional tutors.</p>
-<p>Our <a href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats." target="_blank">webpage</a> contains most of the information you need in order to get help, and here is a summary:</p>
+<p>The Spinelli Center for Quantitative Learning has several ways to
+connect you to academic support in the form of our peer tutors and
+professional tutors.</p>
+<p>Our <a
+href="https://www.smith.edu/qlc/tutoring.html?colStats=open#PanelStats."
+target="_blank">webpage</a> contains most of the information you need in
+order to get help, and here is a summary:</p>
 <ol style="list-style-type: decimal">
 <li>Evening drop-in hours are
 <ol style="list-style-type: lower-alpha">
-<li>Over <a href="https://smith.zoom.us/j/95638424644?pwd=ZUVVdW9KSGdPM0hHOHMxUXl3NEdGZz09" target="_blank">Zoom</a> (password Spinelli) during blue, red, and orange modes</li>
+<li>Over <a
+href="https://smith.zoom.us/j/95638424644?pwd=ZUVVdW9KSGdPM0hHOHMxUXl3NEdGZz09"
+target="_blank">Zoom</a> (password Spinelli) during blue, red, and
+orange modes</li>
 <li>in Sabin-Reed 301 during yellow and green modes</li>
 </ol></li>
-<li>Request help by sending email to <a href="mailto:qlctutor@smith.edu" class="email">qlctutor@smith.edu</a> – include your course information, e.g. SDS192 (Kim), and the topic you’d like to address.</li>
-<li>Visit the Data Counselor, Osman, during his <a href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr" target="_blank">drop-in hours</a> or make <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB2eFNiYVktcUVCfGRlZmF1bHR8Y2YzNjNlZmFkYzE3YTRkNjhhYmJiYWMwYmUxN2JiOTg" target="_blank">an appointment</a> with him.</li>
+<li>Request help by sending email to <a href="mailto:qlctutor@smith.edu"
+class="email">qlctutor@smith.edu</a> – include your course information,
+e.g. SDS192 (Kim), and the topic you’d like to address.</li>
+<li>Visit the Data Counselor, Osman, during his <a
+href="https://www.smith.edu/qlc/tutoring.html?colDataCnslr=open#PanelDataCnslr"
+target="_blank">drop-in hours</a> or make <a
+href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UVB2eFNiYVktcUVCfGRlZmF1bHR8Y2YzNjNlZmFkYzE3YTRkNjhhYmJiYWMwYmUxN2JiOTg"
+target="_blank">an appointment</a> with him.</li>
 </ol>
 </div>
 <div id="work-life-balance" class="section level2">
 <h2>Instructor work-life balance</h2>
 <ul>
-<li>I will respond to all Slack messages within 24h, excluding weekends.</li>
-<li>Communication is hard, both on this webpage and on Slack. I will do my best to organize information in an understandable manner. That being said, if you ask me a question whose answer is on the syllabus or webpage or has already been answered on Slack in <code>#questions</code>, I will gently encourage you to check those sources.</li>
-<li>I will do my best to return all grading as promptly as possible.</li>
+<li>I will respond to all Slack messages within 24h, excluding
+weekends.</li>
+<li>Communication is hard, both on this webpage and on Slack. I will do
+my best to organize information in an understandable manner. That being
+said, if you ask me a question whose answer is on the syllabus or
+webpage or has already been answered on Slack in
+<code>#questions</code>, I will gently encourage you to check those
+sources.</li>
+<li>I will do my best to return all grading as promptly as
+possible.</li>
 </ul>
 <hr />
 </div>
@@ -425,20 +466,32 @@ h1{font-weight: 400;}
 <h1>How can I succeed in this class?</h1>
 <p>Ask yourself:</p>
 <ul>
-<li><strong>When I have questions or don’t understand something:</strong>
+<li><strong>When I have questions or don’t understand
+something:</strong>
 <ul>
 <li><em>“Am I asking questions in class?”</em></li>
-<li><em>“Am I asking questions on Slack in the <code>#questions</code> channel?”</em> Even better: <em>“Am I answering my peers’ questions on Slack?”</em></li>
-<li><em>“Having I been going to the Spinelli tutoring center for help on R and the tidyverse?”</em></li>
+<li><em>“Am I asking questions on Slack in the <code>#questions</code>
+channel?”</em> Even better: <em>“Am I answering my peers’ questions on
+Slack?”</em></li>
+<li><em>“Having I been going to the Spinelli tutoring center for help on
+R and the tidyverse?”</em></li>
 <li><em>“Have I been coming to office hours?”</em></li>
 </ul></li>
 <li><strong>Lectures and readings:</strong>
 <ul>
-<li><em>“Am I staying on top Slack notifications sent between lectures?”</em> If you need help developing a notification strategy that best suits your lifestyle, please speak to me.</li>
+<li><em>“Am I staying on top Slack notifications sent between
+lectures?”</em> If you need help developing a notification strategy that
+best suits your lifestyle, please speak to me.</li>
 <li><em>“Am I attending lectures consistently?”</em></li>
-<li><em>“During in-class activities, am I actually running code line-by-line and studying the outputs, or am I just going through the motions?”</em></li>
-<li><em>“During in-class exercises, am I taking full advantage that I’m in the same place at the same time with the instructor, the lab assistants, and most importantly your peers, or am I browsing the web/texting the whole time?”</em></li>
-<li><em>“Have I been doing the associated readings for each lecture?”</em></li>
+<li><em>“During in-class activities, am I actually running code
+line-by-line and studying the outputs, or am I just going through the
+motions?”</em></li>
+<li><em>“During in-class exercises, am I taking full advantage that I’m
+in the same place at the same time with the instructor, the lab
+assistants, and most importantly your peers, or am I browsing the
+web/texting the whole time?”</em></li>
+<li><em>“Have I been doing the associated readings for each
+lecture?”</em></li>
 </ul></li>
 </ul>
 <hr />
@@ -453,20 +506,34 @@ h1{font-weight: 400;}
 </div>
 <div id="topicschedule" class="section level2">
 <h2>Topic Schedule and Readings</h2>
-<p>A rough topic schedule and corresponding readings are posted below on the <a href="index.html">main page</a> of this course webpage. We will draw from the following sources:</p>
+<p>A rough topic schedule and corresponding readings are posted below on
+the <a href="index.html">main page</a> of this course webpage. We will
+draw from the following sources:</p>
 <ol style="list-style-type: decimal">
-<li>Main text: <a href="https://moderndive-bert.netlify.com/" target="_blank">Statistical Inference via Data Science: A moderndive into R and the tidyverse</a>. We’ll be using the development version; click link in menubar above.</li>
-<li>Back up reference: <a href="https://openintro-ims.netlify.app/" target="_blank">Introduction to Modern Statistics</a></li>
+<li>Main text: <a href="https://moderndive-bert.netlify.com/"
+target="_blank">Statistical Inference via Data Science: A moderndive
+into R and the tidyverse</a>. We’ll be using the development version;
+click link in menubar above.</li>
+<li>Back up reference: <a href="https://openintro-ims.netlify.app/"
+target="_blank">Introduction to Modern Statistics</a></li>
 </ol>
 </div>
 <div id="policies" class="section level2">
 <h2>Class norms</h2>
 <ul>
-<li>Bring your laptop, a set of headphones, colored pens/pencils with paper notebook (or tablet with stylus) to every lecture.</li>
-<li>You are expected to stay until class is dismissed. If you’ve completed the exercises/readings for the day, you may quietly work on other things.</li>
-<li>If you need to leave early, please confirm with me at the beginning of lecture and sit somewhere where your departure will be minimally disruptive.</li>
-<li>Attendance will not be explicitly taken and occasional absences are excused. However, extended absences should be mentioned to me.</li>
-<li>However, you are responsible for asking your peers for what you missed. For example, makeup lectures will not be held during office hours.</li>
+<li>Bring your laptop, a set of headphones, colored pens/pencils with
+paper notebook (or tablet with stylus) to every lecture.</li>
+<li>You are expected to stay until class is dismissed. If you’ve
+completed the exercises/readings for the day, you may quietly work on
+other things.</li>
+<li>If you need to leave early, please confirm with me at the beginning
+of lecture and sit somewhere where your departure will be minimally
+disruptive.</li>
+<li>Attendance will not be explicitly taken and occasional absences are
+excused. However, extended absences should be mentioned to me.</li>
+<li>However, you are responsible for asking your peers for what you
+missed. For example, makeup lectures will not be held during office
+hours.</li>
 </ul>
 <hr />
 </div>
@@ -476,14 +543,20 @@ h1{font-weight: 400;}
 <div id="problem-sets-10" class="section level2">
 <h2>Problem Sets 10%</h2>
 <ul>
-<li>Total of 9-10 problem sets with the lowest scored dropped from your final grade.</li>
+<li>Total of 9-10 problem sets with the lowest scored dropped from your
+final grade.</li>
 <li>Extension requests:
 <ul>
-<li>You have an extension “budget” of a maximum of 5 days for the rest of the semester; it’s up to you to keep track of your budget.</li>
-<li>This five-day budget counts for both problem sets and project due dates.</li>
+<li>You have an extension “budget” of a maximum of 5 days for the rest
+of the semester; it’s up to you to keep track of your budget.</li>
+<li>This five-day budget counts for both problem sets and project due
+dates.</li>
 <li>Request must be made before due date/time.</li>
-<li>Requests will be processed within 24h, usually by the morning after the original due date.</li>
-<li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdoqwOZkOKtGhKuQU02to2DsetYcIyl3qjth5XQvBl_ddT1ig/viewform" target="_blank">Google Form for 220</a></li>
+<li>Requests will be processed within 24h, usually by the morning after
+the original due date.</li>
+<li><a
+href="https://docs.google.com/forms/d/e/1FAIpQLSdoqwOZkOKtGhKuQU02to2DsetYcIyl3qjth5XQvBl_ddT1ig/viewform"
+target="_blank">Google Form for 220</a></li>
 </ul></li>
 </ul>
 </div>
@@ -500,14 +573,26 @@ See [Term Project](term_project.html) page. While your term project grade is onl
 <div id="exams-50" class="section level2">
 <h2>Exams: 50%</h2>
 <ul>
-<li>We will not be following a traditional exam paradigm for this course. Rather, we will be following mastery/standards based grading centered on the above 15 learning goals. Watch this <a href="https://www.youtube.com/watch?v=2kRHC2WF8JI&amp;feature=emb_title" target="_blank">video</a> to learn more.</li>
-<li>There are three midterms and an optional fourth midterm during exam week</li>
-<li>The midterm dates are in the course schedule. These can only be rescheduled in advance, in communication with your class dean, and only for exceptional circumstances e.g. illness, religious holidays. Please Slack DM me as early as possible.</li>
+<li>We will not be following a traditional exam paradigm for this
+course. Rather, we will be following mastery/standards based grading
+centered on the above 15 learning goals. Watch this <a
+href="https://www.youtube.com/watch?v=2kRHC2WF8JI&amp;feature=emb_title"
+target="_blank">video</a> to learn more.</li>
+<li>There are three midterms and an optional fourth midterm during exam
+week</li>
+<li>The midterm dates are in the course schedule. These can only be
+rescheduled in advance, in communication with your class dean, and only
+for exceptional circumstances e.g. illness, religious holidays. Please
+Slack DM me as early as possible.</li>
 </ul>
 </div>
 <div id="engagement" class="section level2">
 <h2>Engagement 10%</h2>
-<p>It is difficult to explicit quantify and codify what constitutes “an engaged student,” so instead I present the following rough principle I will follow: <em>you’ll only get out of this class as much as you put in</em>. That being said, here are multiple pathways for you to stay engaged in this class:</p>
+<p>It is difficult to explicit quantify and codify what constitutes “an
+engaged student,” so instead I present the following rough principle I
+will follow: <em>you’ll only get out of this class as much as you put
+in</em>. That being said, here are multiple pathways for you to stay
+engaged in this class:</p>
 <ul>
 <li>In particular: Peer evaluations for all projects.</li>
 <li>Asking and answering questions in class.</li>
@@ -519,8 +604,14 @@ See [Term Project](term_project.html) page. While your term project grade is onl
 <div id="policies-1" class="section level2">
 <h2>Policies</h2>
 <ol style="list-style-type: decimal">
-<li><strong>Collaboration</strong>: While I encourage you to work with your peers for problem sets, you must submit your own answers and not simple rewordings of another’s work. Furthermore, all collaborations must be explicitly acknowledged in your submissions.</li>
-<li><strong>Honor Code</strong>: All your work must follow the <a href="https://www.smith.edu/sao/handbook/socialconduct/honorcode.php" target="_blank">Smith College Academic Honor Code Statement</a>; in particular all external sources must be cited in your submissions. <!--
+<li><strong>Collaboration</strong>: While I encourage you to work with
+your peers for problem sets, you must submit your own answers and not
+simple rewordings of another’s work. Furthermore, all collaborations
+must be explicitly acknowledged in your submissions.</li>
+<li><strong>Honor Code</strong>: All your work must follow the <a
+href="https://www.smith.edu/sao/handbook/socialconduct/honorcode.php"
+target="_blank">Smith College Academic Honor Code Statement</a>; in
+particular all external sources must be cited in your submissions. <!--
 1. **Problem sets**:
     + No extensions on problem sets. However, only top 5 out of 7 scores count for your grade.
 1. **Mini-projects**:
@@ -529,22 +620,47 @@ See [Term Project](term_project.html) page. While your term project grade is onl
     + No make-up midterms will be allowed without a dean's note. 
     + Timestamps for all midterms will be strictly enforced.
 --></li>
-<li><strong>Grading</strong>: I reserve the right to not discuss any grading issues in class and instead direct you to office hours.</li>
+<li><strong>Grading</strong>: I reserve the right to not discuss any
+grading issues in class and instead direct you to office hours.</li>
 </ol>
 <hr />
 </div>
 </div>
 <div id="accommodations" class="section level1">
 <h1>Accommodations</h1>
-<p>Smith is committed to providing support services and reasonable accommodations to all students with disabilities. To request an accommodation, please register with the Disability Services Office at the beginning of the semester. To do so, call 413.585.2071 to arrange an appointment with Laura Rauscher, Director of Disability Services.</p>
+<p>Smith is committed to providing support services and reasonable
+accommodations to all students with disabilities. To request an
+accommodation, please register with the Disability Services Office at
+the beginning of the semester. To do so, call 413.585.2071 to arrange an
+appointment with Laura Rauscher, Director of Disability Services.</p>
 <hr />
 </div>
 <div id="codeofconduct" class="section level1">
 <h1>Code of Conduct</h1>
-<p>As the instructor and assistants for this course, we are committed to making participation in this course a harassment-free experience for everyone, regardless of level of experience, gender, gender identity and expression, sexual orientation, disability, personal appearance, body size, race, ethnicity, age, or religion. Examples of unacceptable behavior by participants in this course include the use of sexual language or imagery, derogatory comments or personal attacks, trolling, public or private harassment, insults, or other unprofessional conduct.</p>
-<p>As the instructor and assistants we have the right and responsibility to point out and stop behavior that is not aligned to this Code of Conduct. Participants who do not follow the Code of Conduct may be reprimanded for such behavior. Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the instructor.</p>
-<p><strong>All students, the instructor, the lab instructor, and all data assistants are expected to adhere to this Code of Conduct in all settings for this course: lectures, office hours, tutoring hours, and over Slack.</strong></p>
-<p>This Code of Conduct is adapted from the <a href="http://contributor-covenant.org" target="_blank">Contributor Covenant</a>, version 1.0.0, available <a href="http://contributor-covenant.org/version/1/0/0/" target="_blank">here</a>.</p>
+<p>As the instructor and assistants for this course, we are committed to
+making participation in this course a harassment-free experience for
+everyone, regardless of level of experience, gender, gender identity and
+expression, sexual orientation, disability, personal appearance, body
+size, race, ethnicity, age, or religion. Examples of unacceptable
+behavior by participants in this course include the use of sexual
+language or imagery, derogatory comments or personal attacks, trolling,
+public or private harassment, insults, or other unprofessional
+conduct.</p>
+<p>As the instructor and assistants we have the right and responsibility
+to point out and stop behavior that is not aligned to this Code of
+Conduct. Participants who do not follow the Code of Conduct may be
+reprimanded for such behavior. Instances of abusive, harassing, or
+otherwise unacceptable behavior may be reported by contacting the
+instructor.</p>
+<p><strong>All students, the instructor, the lab instructor, and all
+data assistants are expected to adhere to this Code of Conduct in all
+settings for this course: lectures, office hours, tutoring hours, and
+over Slack.</strong></p>
+<p>This Code of Conduct is adapted from the <a
+href="http://contributor-covenant.org" target="_blank">Contributor
+Covenant</a>, version 1.0.0, available <a
+href="http://contributor-covenant.org/version/1/0/0/"
+target="_blank">here</a>.</p>
 </div>
 
 

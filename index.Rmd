@@ -144,6 +144,7 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
+1. Some students still need to take Midterm II, so no discussing it please.
 1. 
 
 
@@ -154,7 +155,9 @@ categ_regression_ex <- tibble(
 1. Two factors that impact width of confidence interval i.e. size of net
     1. Confidence level: Fig 8.29
     1. Sample size: Fig 8.30
-1. 
+1. New sampling scenario in MD 8.6: Difference in population proportions $p_1 - p_2$ of two groups. Is yawning contagious? 
+1. Recap of `infer` workflow: Fig 8.21. We'll use this framework for Hypothesis Testing (which starts on Wednesday)
+
 
 ### 2. In-class exercise
 
