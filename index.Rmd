@@ -113,6 +113,8 @@ categ_regression_ex <- tibble(
 
 
 ***
+-->
+
 
 
 # Lec 29: Wed 4/6
@@ -126,7 +128,13 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. 
+1. In-class tactile activity for Chapter 9 on Hypothesis Testing:
+    1. Describe promotions at bank experiment
+    1. Observed numerical results
+    1. Are these results (statistically) significant i.e. there IS gender-based discrimination, or could it have been by chance?
+    1. In a "hypothetical universe" of no gender-based discrimination...
+    1. Permutations (shuffling) using a deck of cards (Fig 9.2): resampling **without** replacement (don't put cards back)
+1. Putting terminology and a framework describing what you just did
     
 
 ### 2. In-class exercise
@@ -134,10 +142,36 @@ categ_regression_ex <- tibble(
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
+```{r, echo=FALSE, eval=FALSE}
+# https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=1948991627
+
+library(tidyverse)
+library(janitor)
+
+# Load data and do minor data wrangling:
+resumes <- 
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlmubr007CcPwa3j-w1CydqNAQkq_cqA-QNxnjpSFno7OjCi8lW0noTgVM1-Fn9mtZ29DYd7PaC32I/pub?gid=1948991627&single=true&output=csv" %>% 
+  read_csv() %>% 
+  clean_names() 
+View(resumes)
+
+resumes <- resumes %>% 
+  slice(n()) %>% 
+  select(-c(id, decision, original_data)) %>% 
+  .[1, ]%>% 
+  as.numeric() %>% 
+  tibble(diff_m_minus_f = . )
+
+ggplot(resumes, aes(x = diff_m_minus_f)) +
+  geom_histogram(binwidth = 0.1) +
+  labs(x = "Difference in prop promoted: male - female") +
+  geom_vline(xintercept = 0.292, col = "red", size = 2)
+```
+
+
+
 
 ***
-
---> 
 
 
 # Lec 28: Mon 4/4
