@@ -157,7 +157,7 @@ View(resumes)
 
 resumes <- resumes %>% 
   slice(n()) %>% 
-  select(-c(id, decision, original_data)) %>% 
+  select(-c(person, decision, observed_gender)) %>% 
   .[1, ]%>% 
   as.numeric() %>% 
   tibble(diff_m_minus_f = . )
