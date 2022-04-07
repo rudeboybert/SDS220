@@ -92,7 +92,8 @@ categ_regression_ex <- tibble(
 
 <!--
 
-# Lec 30: Fri 4/8
+
+# Lec 33: Fri 4/15
 
 ## Announcements
 
@@ -113,8 +114,106 @@ categ_regression_ex <- tibble(
 
 
 ***
+
+
+# Lec 32: Wed 4/13
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 31: Mon 4/11
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
 -->
 
+
+
+
+# Lec 30: Fri 4/8
+
+## Announcements
+
+1. Copy code below into your `classnotes.Rmd`. It loads the data from the [Google Sheet](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=1948991627){target="_blank"} you filled in last lecture
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. Putting terminology and a framework describing what you just did
+1. Fig 9.9: `infer` package for hypothesis testing
+
+```{r, eval=FALSE}
+library(tidyverse)
+
+# Load data:
+resumes <- 
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlmubr007CcPwa3j-w1CydqNAQkq_cqA-QNxnjpSFno7OjCi8lW0noTgVM1-Fn9mtZ29DYd7PaC32I/pub?gid=1948991627&single=true&output=csv" %>% 
+  read_csv()
+# View(resumes)
+
+# You don't need to understand what this code is doing for this course:
+resumes <- resumes %>% 
+  slice(n()) %>% 
+  select(-c(person, decision, observed_gender)) %>% 
+  .[1, ]%>% 
+  as.numeric() %>% 
+  tibble(diff_m_minus_f = . )
+
+# Visualize distribution of male - female differences:
+ggplot(resumes, aes(x = diff_m_minus_f)) +
+  geom_histogram(binwidth = 0.1) +
+  labs(x = "Difference in prop promoted: male - female") +
+  geom_vline(xintercept = 0.292, col = "red", size = 2)
+```
+
+
+### 2. In-class exercise
+
+1. **Don't forget to do the readings for Lec 29.** 
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
 
 
 # Lec 29: Wed 4/6
@@ -134,41 +233,12 @@ categ_regression_ex <- tibble(
     1. Are these results (statistically) significant i.e. there IS gender-based discrimination, or could it have been by chance?
     1. In a "hypothetical universe" of no gender-based discrimination...
     1. Permutations (shuffling) using a deck of cards (Fig 9.2): resampling **without** replacement (don't put cards back)
-1. Putting terminology and a framework describing what you just did
     
 
 ### 2. In-class exercise
 
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
 1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
-
-```{r, echo=FALSE, eval=FALSE}
-# https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=1948991627
-
-library(tidyverse)
-library(janitor)
-
-# Load data and do minor data wrangling:
-resumes <- 
-  "https://docs.google.com/spreadsheets/d/e/2PACX-1vTlmubr007CcPwa3j-w1CydqNAQkq_cqA-QNxnjpSFno7OjCi8lW0noTgVM1-Fn9mtZ29DYd7PaC32I/pub?gid=1948991627&single=true&output=csv" %>% 
-  read_csv() %>% 
-  clean_names() 
-View(resumes)
-
-resumes <- resumes %>% 
-  slice(n()) %>% 
-  select(-c(person, decision, observed_gender)) %>% 
-  .[1, ]%>% 
-  as.numeric() %>% 
-  tibble(diff_m_minus_f = . )
-
-ggplot(resumes, aes(x = diff_m_minus_f)) +
-  geom_histogram(binwidth = 0.1) +
-  labs(x = "Difference in prop promoted: male - female") +
-  geom_vline(xintercept = 0.292, col = "red", size = 2)
-```
-
-
 
 
 ***
