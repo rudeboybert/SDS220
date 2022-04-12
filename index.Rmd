@@ -93,6 +93,144 @@ categ_regression_ex <- tibble(
 <!--
 
 
+# Lec 39: Fri 4/29
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 38: Wed 4/27
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 37: Mon 4/25
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 36: Fri 4/22
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 35: Wed 4/20
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
+# Lec 34: Mon 4/18
+
+## Announcements
+
+1. 
+
+
+## Today's Topics/Activities
+
+### 1. Chalk talk
+
+1. 
+    
+
+### 2. In-class exercise
+
+1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
+1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+
+
+***
+
+
 # Lec 33: Fri 4/15
 
 ## Announcements
