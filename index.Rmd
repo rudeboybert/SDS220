@@ -122,7 +122,7 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-1. 
+1. SDS will be having a focus group on Diversity, Equity, and Inclusion (DEI) in SDS on Wednesday, 4/20 at 12:15 PM in McConnell 103. This event will also be cosponsored by Smithies in SDS and SDSCC. Anyone who in an SDS major/minor or has taken a class is welcome to join, and the first half will be moderated by faculty, while SSDS and SDSCC student liaisons will take over the rest.
 
 
 ## Today's Topics/Activities
