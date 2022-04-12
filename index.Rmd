@@ -115,6 +115,8 @@ categ_regression_ex <- tibble(
 
 ***
 
+-->
+
 
 # Lec 32: Wed 4/13
 
@@ -127,7 +129,7 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. 
+1. Example relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision in the statistical sense, representativeness in the statistical sense, sampling methodology
     
 
 ### 2. In-class exercise
@@ -150,7 +152,8 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. 
+1. Discussion on Midterm II
+1. Conducting hypothesis testing with the `infer` package
     
 
 ### 2. In-class exercise
@@ -160,11 +163,6 @@ categ_regression_ex <- tibble(
 
 
 ***
-
-
--->
-
-
 
 
 # Lec 30: Fri 4/8
