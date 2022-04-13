@@ -188,6 +188,9 @@ Interpret all regressions coefficients in the `estimate` column in the following
 1. Interpretation 2
 1. ...
 
+TODO NEXT TIME: Rather than interpret individual baseline values and offsets, have students write out equations of regression lines for each level of categorical variable, and comment on only 1-2 differences in slopes
+
+
 
 ## Inference for multiple regression
 

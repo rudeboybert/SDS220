@@ -267,7 +267,16 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. Example relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision in the statistical sense, representativeness in the statistical sense, sampling methodology
+
+1. **Originally skipped in Lec28**: MD 8.7.2 (LG 11)
+    1. Theory-based method for computing standard errors (instead of simulations)
+    1. Theory-based method for constructing confidence intervals (instead of simulations)
+1. **Only handout for the semester**: [Example](static/sampling_bias/Lec02_handout.pdf){target="_blank"} relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision and representativeness in the statistical sense, sampling methodology, bias
+1. Interpreting hypothesis tests:
+    1. Pre-determined $\alpha$-significance level: false positive rate you're willing to tolerate
+    1. Two possible outcomes of HT
+    1. Two types of incorrect decisions. Analogous to COVID test
+    1. How do we choose $\alpha$
     
 
 ### 2. In-class exercise
