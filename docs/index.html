@@ -445,7 +445,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">SDS 220: Intro to Probability and Statistics</h1>
 <h4 class="author">Albert Y. Kim &amp; Beth Brown</h4>
-<h4 class="date">Last updated on 2022-04-07</h4>
+<h4 class="date">Last updated on 2022-04-12</h4>
 
 </div>
 
@@ -484,66 +484,72 @@ h1{font-weight: 400;}
 
 ***
 
-
-# Lec 32: Wed 4/13
-
-## Announcements
-
-1. 
-
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-1. 
-    
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
-
-
-***
-
-
-# Lec 31: Mon 4/11
-
-## Announcements
-
-1. 
-
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-1. 
-    
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
-
-
-***
-
-
 -->
 </div>
-<div id="lec-30-fri-48" class="section level1">
-<h1>Lec 30: Fri 4/8</h1>
+<div id="lec-32-wed-413" class="section level1">
+<h1>Lec 32: Wed 4/13</h1>
 <div id="announcements" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
-<li>Copy code below into your <code>classnotes.Rmd</code>. It loads the data from the <a href="https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=1948991627" target="_blank">Google Sheet</a> you filled in last lecture</li>
+<li>SDS will be having a focus group on Diversity, Equity, and Inclusion (DEI) in SDS on Wednesday, 4/20 at 12:15 PM in McConnell 103. This event will also be cosponsored by Smithies in SDS and SDSCC. Anyone who in an SDS major/minor or has taken a class is welcome to join, and the first half will be moderated by faculty, while SSDS and SDSCC student liaisons will take over the rest.</li>
 </ol>
 </div>
 <div id="todays-topicsactivities" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div id="chalk-talk" class="section level3">
+<h3>1. Chalk talk</h3>
+<ol style="list-style-type: decimal">
+<li>Example relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision in the statistical sense, representativeness in the statistical sense, sampling methodology</li>
+</ol>
+</div>
+<div id="in-class-exercise" class="section level3">
+<h3>2. In-class exercise</h3>
+<ol style="list-style-type: decimal">
+<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
+<div id="lec-31-mon-411" class="section level1">
+<h1>Lec 31: Mon 4/11</h1>
+<div id="announcements-1" class="section level2">
+<h2>Announcements</h2>
+<ol style="list-style-type: decimal">
+<li></li>
+</ol>
+</div>
+<div id="todays-topicsactivities-1" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk-1" class="section level3">
+<h3>1. Chalk talk</h3>
+<ol style="list-style-type: decimal">
+<li>Discussion on Midterm II</li>
+<li>Conducting hypothesis testing with the <code>infer</code> package</li>
+</ol>
+</div>
+<div id="in-class-exercise-1" class="section level3">
+<h3>2. In-class exercise</h3>
+<ol style="list-style-type: decimal">
+<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
+<div id="lec-30-fri-48" class="section level1">
+<h1>Lec 30: Fri 4/8</h1>
+<div id="announcements-2" class="section level2">
+<h2>Announcements</h2>
+<ol style="list-style-type: decimal">
+<li>Copy code below into your <code>classnotes.Rmd</code>. It loads the data from the <a href="https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=1948991627" target="_blank">Google Sheet</a> you filled in last lecture</li>
+</ol>
+</div>
+<div id="todays-topicsactivities-2" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk-2" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Putting terminology and a framework describing what you just did</li>
@@ -571,7 +577,7 @@ h1{font-weight: 400;}
 <span id="cb1-20"><a href="#cb1-20"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;Difference in prop promoted: male - female&quot;</span>) <span class="op">+</span></span>
 <span id="cb1-21"><a href="#cb1-21"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="fl">0.292</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>, <span class="dt">size =</span> <span class="dv">2</span>)</span></code></pre></div>
 </div>
-<div id="in-class-exercise" class="section level3">
+<div id="in-class-exercise-2" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li><strong>Don’t forget to do the readings for Lec 29.</strong></li>
@@ -584,15 +590,15 @@ h1{font-weight: 400;}
 </div>
 <div id="lec-29-wed-46" class="section level1">
 <h1>Lec 29: Wed 4/6</h1>
-<div id="announcements-1" class="section level2">
+<div id="announcements-3" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-1" class="section level2">
+<div id="todays-topicsactivities-3" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-1" class="section level3">
+<div id="chalk-talk-3" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>In-class tactile activity for Chapter 9 on Hypothesis Testing:
@@ -602,71 +608,6 @@ h1{font-weight: 400;}
 <li>Are these results (statistically) significant i.e. there IS gender-based discrimination, or could it have been by chance?</li>
 <li>In a “hypothetical universe” of no gender-based discrimination…</li>
 <li>Permutations (shuffling) using a deck of cards (Fig 9.2): resampling <strong>without</strong> replacement (don’t put cards back)</li>
-</ol></li>
-</ol>
-</div>
-<div id="in-class-exercise-1" class="section level3">
-<h3>2. In-class exercise</h3>
-<ol style="list-style-type: decimal">
-<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
-<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
-</ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-28-mon-44" class="section level1">
-<h1>Lec 28: Mon 4/4</h1>
-<div id="announcements-2" class="section level2">
-<h2>Announcements</h2>
-<ol style="list-style-type: decimal">
-<li>Some students still need to take Midterm II, so no discussing it please.</li>
-<li></li>
-</ol>
-</div>
-<div id="todays-topicsactivities-2" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-2" class="section level3">
-<h3>1. Chalk talk</h3>
-<ol style="list-style-type: decimal">
-<li>Two factors that impact width of confidence interval i.e. size of net
-<ol style="list-style-type: decimal">
-<li>Confidence level: Fig 8.29</li>
-<li>Sample size: Fig 8.30</li>
-</ol></li>
-<li>New sampling scenario in MD 8.6: Difference in population proportions <span class="math inline">\(p_1 - p_2\)</span> of two groups. Is yawning contagious?</li>
-<li>Recap of <code>infer</code> workflow: Fig 8.21. We’ll use this framework for Hypothesis Testing (which starts on Wednesday)</li>
-</ol>
-</div>
-<div id="in-class-exercise-2" class="section level3">
-<h3>2. In-class exercise</h3>
-<ol style="list-style-type: decimal">
-<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
-<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
-</ol>
-<hr />
-</div>
-</div>
-</div>
-<div id="lec-27-fri-41" class="section level1">
-<h1>Lec 27: Fri 4/1</h1>
-<div id="announcements-3" class="section level2">
-<h2>Announcements</h2>
-<ol style="list-style-type: decimal">
-<li>Additional notes about <a href="midterms.html#midtermIInotes">Midterm II</a></li>
-<li>Roadmap of what we have left for final 4 weeks of class</li>
-</ol>
-</div>
-<div id="todays-topicsactivities-3" class="section level2">
-<h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-3" class="section level3">
-<h3>1. Chalk talk</h3>
-<ol style="list-style-type: decimal">
-<li>Re-visit Fig 8.27 from Lec 26: How to interpret 95% confidence intervals</li>
-<li>Moved to Lec 28 on Mon 4/4: <del>Two factors that impact width of confidence interval i.e. size of net</del>
-<ol style="list-style-type: decimal">
-<li><del>Confidence level: Fig 8.29</del></li>
-<li><del>Sample size: Fig 8.30</del></li>
 </ol></li>
 </ol>
 </div>
@@ -680,13 +621,13 @@ h1{font-weight: 400;}
 </div>
 </div>
 </div>
-<div id="lec-26-wed-330" class="section level1">
-<h1>Lec 26: Wed 3/30</h1>
+<div id="lec-28-mon-44" class="section level1">
+<h1>Lec 28: Mon 4/4</h1>
 <div id="announcements-4" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
-<li>Instructions for next (shorter) phase of <a href="project.html#submission">final project</a> are posted.</li>
-<li>There are 13 midterms (450 students) this weekend. Self Scheduled Exams organizers expect a lot of traffic on Sunday afternoon.</li>
+<li>Some students still need to take Midterm II, so no discussing it please.</li>
+<li></li>
 </ol>
 </div>
 <div id="todays-topicsactivities-4" class="section level2">
@@ -694,14 +635,13 @@ h1{font-weight: 400;}
 <div id="chalk-talk-4" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
-<li>Revisiting bowl sampling exercise (note bowl in book is from Amherst College)</li>
-<li>Comparing 95% to 80% confidence intervals Fig 8.27 vs Fig 8.28</li>
-<li>Correct interpretation of CI’s</li>
-<li>Moved to Lec 28 on Mon 4/4: <del>Two factors that impact width of confidence interval i.e. size of net</del>
+<li>Two factors that impact width of confidence interval i.e. size of net
 <ol style="list-style-type: decimal">
-<li><del>Confidence level: Fig 8.29</del></li>
-<li><del>Sample size: Fig 8.30</del></li>
+<li>Confidence level: Fig 8.29</li>
+<li>Sample size: Fig 8.30</li>
 </ol></li>
+<li>New sampling scenario in MD 8.6: Difference in population proportions <span class="math inline">\(p_1 - p_2\)</span> of two groups. Is yawning contagious?</li>
+<li>Recap of <code>infer</code> workflow: Fig 8.21. We’ll use this framework for Hypothesis Testing (which starts on Wednesday)</li>
 </ol>
 </div>
 <div id="in-class-exercise-4" class="section level3">
@@ -714,18 +654,13 @@ h1{font-weight: 400;}
 </div>
 </div>
 </div>
-<div id="lec-25-mon-328" class="section level1">
-<h1>Lec 25: Mon 3/28</h1>
+<div id="lec-27-fri-41" class="section level1">
+<h1>Lec 27: Fri 4/1</h1>
 <div id="announcements-5" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
-<li>Added new optional “Resource: Video lecture” column to Google Sheet schedule above: Video chalk talks from Spring 2020 pandemic semester.</li>
-<li>Final project
-<ol style="list-style-type: decimal">
-<li>Watch video EDA feedback</li>
-<li>Instructions will be updated on <a href="project.html#submission">Project</a> page by Wednesday</li>
-<li>The last step of EDA phase ties into Learning Goal 06 on Midterm II: Multiple regression via interaction and parralel slopes model</li>
-</ol></li>
+<li>Additional notes about <a href="midterms.html#midtermIInotes">Midterm II</a></li>
+<li>Roadmap of what we have left for final 4 weeks of class</li>
 </ol>
 </div>
 <div id="todays-topicsactivities-5" class="section level2">
@@ -733,7 +668,12 @@ h1{font-weight: 400;}
 <div id="chalk-talk-5" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
-<li>Constructing confidence intervals using <code>infer</code> package (instead of <code>rep_sample_n()</code>)</li>
+<li>Re-visit Fig 8.27 from Lec 26: How to interpret 95% confidence intervals</li>
+<li>Moved to Lec 28 on Mon 4/4: <del>Two factors that impact width of confidence interval i.e. size of net</del>
+<ol style="list-style-type: decimal">
+<li><del>Confidence level: Fig 8.29</del></li>
+<li><del>Sample size: Fig 8.30</del></li>
+</ol></li>
 </ol>
 </div>
 <div id="in-class-exercise-5" class="section level3">
@@ -746,13 +686,13 @@ h1{font-weight: 400;}
 </div>
 </div>
 </div>
-<div id="lec-24-fri-325" class="section level1">
-<h1>Lec 24: Fri 3/25</h1>
+<div id="lec-26-wed-330" class="section level1">
+<h1>Lec 26: Wed 3/30</h1>
 <div id="announcements-6" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
-<li>Gradebook on Moodle updated with Learning Goal <a href="midterms.html">proficiencies</a> from Midterm I.</li>
-<li>Extension requests will be processed within 24h, usually by the morning after the original due date.</li>
+<li>Instructions for next (shorter) phase of <a href="project.html#submission">final project</a> are posted.</li>
+<li>There are 13 midterms (450 students) this weekend. Self Scheduled Exams organizers expect a lot of traffic on Sunday afternoon.</li>
 </ol>
 </div>
 <div id="todays-topicsactivities-6" class="section level2">
@@ -760,11 +700,14 @@ h1{font-weight: 400;}
 <div id="chalk-talk-6" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
-<li>Recap of Lec 23: MD Figure 8.14</li>
-<li>MD Ch 8.7.2 touches on Learning Goal 10: Comparing sampling vs bootstrap distributions</li>
-<li>The thinking behind confidence intervals (CI): Fig 8.15</li>
-<li>Revisit <a href="https://www.npr.org/sections/itsallpolitics/2013/12/04/248793753/poll-support-for-obama-among-young-americans-eroding" target="_blank">Obama poll</a> from Ch 7.4</li>
-<li>Two methods for constructing CI’s</li>
+<li>Revisiting bowl sampling exercise (note bowl in book is from Amherst College)</li>
+<li>Comparing 95% to 80% confidence intervals Fig 8.27 vs Fig 8.28</li>
+<li>Correct interpretation of CI’s</li>
+<li>Moved to Lec 28 on Mon 4/4: <del>Two factors that impact width of confidence interval i.e. size of net</del>
+<ol style="list-style-type: decimal">
+<li><del>Confidence level: Fig 8.29</del></li>
+<li><del>Sample size: Fig 8.30</del></li>
+</ol></li>
 </ol>
 </div>
 <div id="in-class-exercise-6" class="section level3">
@@ -777,9 +720,72 @@ h1{font-weight: 400;}
 </div>
 </div>
 </div>
+<div id="lec-25-mon-328" class="section level1">
+<h1>Lec 25: Mon 3/28</h1>
+<div id="announcements-7" class="section level2">
+<h2>Announcements</h2>
+<ol style="list-style-type: decimal">
+<li>Added new optional “Resource: Video lecture” column to Google Sheet schedule above: Video chalk talks from Spring 2020 pandemic semester.</li>
+<li>Final project
+<ol style="list-style-type: decimal">
+<li>Watch video EDA feedback</li>
+<li>Instructions will be updated on <a href="project.html#submission">Project</a> page by Wednesday</li>
+<li>The last step of EDA phase ties into Learning Goal 06 on Midterm II: Multiple regression via interaction and parralel slopes model</li>
+</ol></li>
+</ol>
+</div>
+<div id="todays-topicsactivities-7" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk-7" class="section level3">
+<h3>1. Chalk talk</h3>
+<ol style="list-style-type: decimal">
+<li>Constructing confidence intervals using <code>infer</code> package (instead of <code>rep_sample_n()</code>)</li>
+</ol>
+</div>
+<div id="in-class-exercise-7" class="section level3">
+<h3>2. In-class exercise</h3>
+<ol style="list-style-type: decimal">
+<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
+<div id="lec-24-fri-325" class="section level1">
+<h1>Lec 24: Fri 3/25</h1>
+<div id="announcements-8" class="section level2">
+<h2>Announcements</h2>
+<ol style="list-style-type: decimal">
+<li>Gradebook on Moodle updated with Learning Goal <a href="midterms.html">proficiencies</a> from Midterm I.</li>
+<li>Extension requests will be processed within 24h, usually by the morning after the original due date.</li>
+</ol>
+</div>
+<div id="todays-topicsactivities-8" class="section level2">
+<h2>Today’s Topics/Activities</h2>
+<div id="chalk-talk-8" class="section level3">
+<h3>1. Chalk talk</h3>
+<ol style="list-style-type: decimal">
+<li>Recap of Lec 23: MD Figure 8.14</li>
+<li>MD Ch 8.7.2 touches on Learning Goal 10: Comparing sampling vs bootstrap distributions</li>
+<li>The thinking behind confidence intervals (CI): Fig 8.15</li>
+<li>Revisit <a href="https://www.npr.org/sections/itsallpolitics/2013/12/04/248793753/poll-support-for-obama-among-young-americans-eroding" target="_blank">Obama poll</a> from Ch 7.4</li>
+<li>Two methods for constructing CI’s</li>
+</ol>
+</div>
+<div id="in-class-exercise-8" class="section level3">
+<h3>2. In-class exercise</h3>
+<ol style="list-style-type: decimal">
+<li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
+<li>You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.</li>
+</ol>
+<hr />
+</div>
+</div>
+</div>
 <div id="lec-23-wed-323" class="section level1">
 <h1>Lec 23: Wed 3/23</h1>
-<div id="announcements-7" class="section level2">
+<div id="announcements-9" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>You’ll get project feedback by Monday</li>
@@ -809,7 +815,7 @@ h1{font-weight: 400;}
 <span id="cb2-20"><a href="#cb2-20"></a>  ) <span class="op">+</span></span>
 <span id="cb2-21"><a href="#cb2-21"></a><span class="st">  </span><span class="kw">geom_vline</span>(<span class="dt">xintercept =</span> <span class="fl">1995.44</span>, <span class="dt">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
 </div>
-<div id="todays-topicsactivities-7" class="section level2">
+<div id="todays-topicsactivities-9" class="section level2">
 <h2>Today’s Topics/Activities</h2>
 <div class="figure">
 <img src="static/images/1000_simulations.jpg" alt="From Black Mirror S4E4 &quot;Hang the DJ&quot;" width="722" />
@@ -817,7 +823,7 @@ h1{font-weight: 400;}
 From Black Mirror S4E4 “Hang the DJ”
 </p>
 </div>
-<div id="chalk-talk-7" class="section level3">
+<div id="chalk-talk-9" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Goal for this chapter: Table 8.1</li>
@@ -830,7 +836,7 @@ From Black Mirror S4E4 “Hang the DJ”
 <li>Today we mimic the pennies exercise virtually with 1000 simulations to build Fig 8.14</li>
 </ol>
 </div>
-<div id="in-class-exercise-7" class="section level3">
+<div id="in-class-exercise-9" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -842,22 +848,22 @@ From Black Mirror S4E4 “Hang the DJ”
 </div>
 <div id="lec-22-mon-321" class="section level1">
 <h1>Lec 22: Mon 3/21</h1>
-<div id="announcements-8" class="section level2">
+<div id="announcements-10" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Re-visit learning goals</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-8" class="section level2">
+<div id="todays-topicsactivities-10" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-8" class="section level3">
+<div id="chalk-talk-10" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Example of CLT for non-normal population distributions <a href="static/CLT.html" target="_blank">here</a></li>
 <li>Next tactile activity: re-sampling with replacement from a sample of <span class="math inline">\(n=50\)</span> pennies <a href="https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=101369328" target="_blank">(Google Sheet)</a></li>
 </ol>
 </div>
-<div id="in-class-exercise-8" class="section level3">
+<div id="in-class-exercise-10" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -869,16 +875,16 @@ From Black Mirror S4E4 “Hang the DJ”
 </div>
 <div id="lec-21-fri-311" class="section level1">
 <h1>Lec 21: Fri 3/11</h1>
-<div id="announcements-9" class="section level2">
+<div id="announcements-11" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Revisit learning goals: the importance of chapter 7 on sampling</li>
 <li>Midterm I discussion</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-9" class="section level2">
+<div id="todays-topicsactivities-11" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-9" class="section level3">
+<div id="chalk-talk-11" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Finish sampling framework from Lec 20: terminology, notations and definitions</li>
@@ -888,7 +894,7 @@ From Black Mirror S4E4 “Hang the DJ”
 <li>Table 7.6.1 of all population parameters we’re going to infer about</li>
 </ol>
 </div>
-<div id="in-class-exercise-9" class="section level3">
+<div id="in-class-exercise-11" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -900,16 +906,16 @@ From Black Mirror S4E4 “Hang the DJ”
 </div>
 <div id="lec-20-wed-39" class="section level1">
 <h1>Lec 20: Wed 3/9</h1>
-<div id="announcements-10" class="section level2">
+<div id="announcements-12" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>What is “hump day”?</li>
 <li>Project EDA due tomorrow 9pm</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-10" class="section level2">
+<div id="todays-topicsactivities-12" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-10" class="section level3">
+<div id="chalk-talk-12" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Recap of Lec 19 readings, go over:
@@ -951,7 +957,7 @@ From Black Mirror S4E4 “Hang the DJ”
 <li>Sampling framework: terminology, notations and definitions</li>
 </ol>
 </div>
-<div id="in-class-exercise-10" class="section level3">
+<div id="in-class-exercise-12" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -963,16 +969,16 @@ From Black Mirror S4E4 “Hang the DJ”
 </div>
 <div id="lec-19-mon-37" class="section level1">
 <h1>Lec 19: Mon 3/7</h1>
-<div id="announcements-11" class="section level2">
+<div id="announcements-13" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Midterm I: Extra Self Scheduled Exam window scheduled by Science Center this week only: Wed 3/9 4-9pm. Staff will be available to hand out printed exams during this window and quiet rooms will be setup.</li>
 <li>SDS Presentation of the Major Tue 3/22 (after break). Undeclared majors and minors can attend in-person. If you’d like a grab-n-go lunch, please <a href="https://docs.google.com/forms/d/e/1FAIpQLSel3YWGLxjvr-UBweuwBL_d3U8lb_4E0rLeCrAAVh-Jam8ibw/viewform" target="_blank">register in advance</a>.</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-11" class="section level2">
+<div id="todays-topicsactivities-13" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-11" class="section level3">
+<div id="chalk-talk-13" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>In-class tactile (hands-on) activity.
@@ -983,7 +989,7 @@ From Black Mirror S4E4 “Hang the DJ”
 <li>Mimicking sampling virtually on computer</li>
 </ol>
 </div>
-<div id="in-class-exercise-11" class="section level3">
+<div id="in-class-exercise-13" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Do ModernDive readings for Wed 2022/3/2 Lec 17 (model selection) as well as today’s.</li>
@@ -995,7 +1001,7 @@ From Black Mirror S4E4 “Hang the DJ”
 </div>
 <div id="lec-18-fri-34" class="section level1">
 <h1>Lec 18: Fri 3/4</h1>
-<div id="announcements-12" class="section level2">
+<div id="announcements-14" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Midterm discussion</li>
@@ -1008,15 +1014,15 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 
 -->
 </div>
-<div id="todays-topicsactivities-12" class="section level2">
+<div id="todays-topicsactivities-14" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-12" class="section level3">
+<div id="chalk-talk-14" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Random assignment for causal inference</li>
 </ol>
 </div>
-<div id="in-class-exercise-12" class="section level3">
+<div id="in-class-exercise-14" class="section level3">
 <h3>2. In-class exercise</h3>
 <p>None</p>
 <hr />
@@ -1025,7 +1031,7 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </div>
 <div id="lec-17-wed-32" class="section level1">
 <h1>Lec 17: Wed 3/2</h1>
-<div id="announcements-13" class="section level2">
+<div id="announcements-15" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Added cheat sheet policy to <a href="midterms.html#midtermI">Midterm I</a></li>
@@ -1037,9 +1043,9 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </ol></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-13" class="section level2">
+<div id="todays-topicsactivities-15" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-13" class="section level3">
+<div id="chalk-talk-15" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li><p>Revisit Africa data in terms of learning goals for Midterm I: Put code in <code>classnotes.Rmd</code></p>
@@ -1076,7 +1082,7 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </ol></li>
 </ol>
 </div>
-<div id="in-class-exercise-13" class="section level3">
+<div id="in-class-exercise-15" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1088,23 +1094,23 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </div>
 <div id="lec-16-mon-228" class="section level1">
 <h1>Lec 16: Mon 2/28</h1>
-<div id="announcements-14" class="section level2">
+<div id="announcements-16" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Self-schedule Seelye Midterm I this weekend. See <a href="midterms.html">Midterms</a> tab</li>
 <li>Next phase of project “Project EDA” assigned on Wednesday</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-14" class="section level2">
+<div id="todays-topicsactivities-16" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-14" class="section level3">
+<div id="chalk-talk-16" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Recap of Lec 15: Interaction models are one type of multiple regression model for <span class="math inline">\(x_1\)</span> numerical and <span class="math inline">\(x_2\)</span> categorical (with <span class="math inline">\(k\)</span> levels/groups).</li>
 <li>Parallel slopes models are another type of model.</li>
 </ol>
 </div>
-<div id="in-class-exercise-14" class="section level3">
+<div id="in-class-exercise-16" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1121,15 +1127,15 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </div>
 <div id="lec-14-wed-223" class="section level1">
 <h1>Lec 14: Wed 2/23</h1>
-<div id="announcements-15" class="section level2">
+<div id="announcements-17" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-15" class="section level2">
+<div id="todays-topicsactivities-17" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-15" class="section level3">
+<div id="chalk-talk-17" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Multiple regression for <span class="math inline">\(y\)</span> as a function of two explanatory/predictor variables:
@@ -1148,7 +1154,7 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </ol></li>
 </ol>
 </div>
-<div id="in-class-exercise-15" class="section level3">
+<div id="in-class-exercise-17" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1160,15 +1166,15 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 </div>
 <div id="lec-13-mon-221" class="section level1">
 <h1>Lec 13: Mon 2/21</h1>
-<div id="announcements-16" class="section level2">
+<div id="announcements-18" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li><a href="project.html">Project proposal</a> due during lab on Thursday</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-16" class="section level2">
+<div id="todays-topicsactivities-18" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-16" class="section level3">
+<div id="chalk-talk-18" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>More on regression using a categorical explanatory/predictor variable <span class="math inline">\(x\)</span>. Reusing <code>categ_regression_ex</code> code example from Lec12:</p>
 <ol style="list-style-type: decimal">
@@ -1177,7 +1183,7 @@ Private: detailed notes for this "random assignment for causal inference" lectur
 <li>Re-using code example from Lec12, apply <code>get_regression_points()</code> function (additional code is posted below in Lec12)</li>
 </ol>
 </div>
-<div id="in-class-exercise-16" class="section level3">
+<div id="in-class-exercise-18" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1245,15 +1251,15 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 </div>
 <div id="lec-12-fri-218" class="section level1">
 <h1>Lec 12: Fri 2/18</h1>
-<div id="announcements-17" class="section level2">
+<div id="announcements-19" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>See Slack <code>#general</code>: Newest SDS faculty Shiya Cao visit today</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-17" class="section level2">
+<div id="todays-topicsactivities-19" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-17" class="section level3">
+<div id="chalk-talk-19" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Lec 11 in-class exercise: sum of squared residuals computation of dashed black line</li>
@@ -1299,7 +1305,7 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
   </script>
 </div>
 </div>
-<div id="in-class-exercise-17" class="section level3">
+<div id="in-class-exercise-19" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1311,15 +1317,15 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 </div>
 <div id="lec-11-wed-216" class="section level1">
 <h1>Lec 11: Wed 2/16</h1>
-<div id="announcements-18" class="section level2">
+<div id="announcements-20" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>If you need a project group fill out the Google Form found on the <a href="project.html">Project</a> page by 5pm today.</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-18" class="section level2">
+<div id="todays-topicsactivities-20" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-18" class="section level3">
+<div id="chalk-talk-20" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>PS02 Q11: Skew</li>
@@ -1344,7 +1350,7 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 </ol>
 <p><img src="index_files/figure-html/unnamed-chunk-12-1.png" width="768" /></p>
 </div>
-<div id="in-class-exercise-18" class="section level3">
+<div id="in-class-exercise-20" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Repeat sum of squared errors calculation for dashed black line, show the value is “worse” i.e. bigger than the value for the blue regression line.</li>
@@ -1357,7 +1363,7 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 </div>
 <div id="lec-10-mon-214" class="section level1">
 <h1>Lec 10: Mon 2/14</h1>
-<div id="announcements-19" class="section level2">
+<div id="announcements-21" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Slack announcement about SDSCC</li>
@@ -1366,9 +1372,9 @@ If mental bandwidth exists, add to ModernDive -> Chapter 5.2.2 -> a visualizatio
 <li>Answer previous question</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-19" class="section level2">
+<div id="todays-topicsactivities-21" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-19" class="section level3">
+<div id="chalk-talk-21" class="section level3">
 <h3>1. Chalk talk</h3>
 Consider the following 3 points saved in a data frame called <code>simple_regression_ex</code>.
 <div data-pagedtable="false">
@@ -1404,7 +1410,7 @@ rather averaged across all differences of unit in x
 * associated b/c we don't want to assume a casual relationship
 -->
 </div>
-<div id="in-class-exercise-19" class="section level3">
+<div id="in-class-exercise-21" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1416,7 +1422,7 @@ rather averaged across all differences of unit in x
 </div>
 <div id="lec-09-fri-211" class="section level1">
 <h1>Lec 09: Fri 2/11</h1>
-<div id="announcements-20" class="section level2">
+<div id="announcements-22" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>First phase of project released on Monday: Project proposal due Thu 2/24
@@ -1431,9 +1437,9 @@ rather averaged across all differences of unit in x
 </ul></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-20" class="section level2">
+<div id="todays-topicsactivities-22" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-20" class="section level3">
+<div id="chalk-talk-22" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>For ModernDive Ch5 you need to install some new packages, including the <a href="https://www.tidyverse.org/packages/" target="_blank"><code>tidyverse</code></a> package</li>
@@ -1451,7 +1457,7 @@ rather averaged across all differences of unit in x
 </ul></li>
 </ol>
 </div>
-<div id="in-class-exercise-20" class="section level3">
+<div id="in-class-exercise-22" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1491,7 +1497,7 @@ Next time 220 is taught: At this point in semester (Lec08-09) since students hav
 </div>
 <div id="lec-08-wed-29" class="section level1">
 <h1>Lec 08: Wed 2/9</h1>
-<div id="announcements-21" class="section level2">
+<div id="announcements-23" class="section level2">
 <h2>Announcements</h2>
 <blockquote class="twitter-tweet">
 <p lang="en" dir="ltr">
@@ -1501,9 +1507,9 @@ I wish biology undergrad curricula had more statistics. Every bio major should h
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
-<div id="todays-topicsactivities-21" class="section level2">
+<div id="todays-topicsactivities-23" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-21" class="section level3">
+<div id="chalk-talk-23" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>Using same <code>fruit_basket</code> example from chalk talk in Lec 07:</p>
 <div data-pagedtable="false">
@@ -1550,7 +1556,7 @@ fruit_basket_cents
 ```
 -->
 </div>
-<div id="in-class-exercise-21" class="section level3">
+<div id="in-class-exercise-23" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1562,7 +1568,7 @@ fruit_basket_cents
 </div>
 <div id="lec-07-mon-27" class="section level1">
 <h1>Lec 07: Mon 2/7</h1>
-<div id="announcements-22" class="section level2">
+<div id="announcements-24" class="section level2">
 <h2>Announcements</h2>
 <ul>
 <li><p>Copy the following code in a new R code chunk in your <code>classnotes.Rmd</code> file</p>
@@ -1587,9 +1593,9 @@ fruit_basket_cents
 <span id="cb10-19"><a href="#cb10-19"></a><span class="st">  </span><span class="kw">geom_boxplot</span>()</span></code></pre></div></li>
 </ul>
 </div>
-<div id="todays-topicsactivities-22" class="section level2">
+<div id="todays-topicsactivities-24" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-22" class="section level3">
+<div id="chalk-talk-24" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Finish data visualization
@@ -1643,7 +1649,7 @@ Which do you prefer?
 
 -->
 </div>
-<div id="in-class-exercise-22" class="section level3">
+<div id="in-class-exercise-24" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1660,7 +1666,7 @@ Which do you prefer?
 </div>
 <div id="lec-05-wed-22" class="section level1">
 <h1>Lec 05: Wed 2/2</h1>
-<div id="announcements-23" class="section level2">
+<div id="announcements-25" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>At the beginning of every lecture you should have the following open:
@@ -1676,9 +1682,9 @@ Which do you prefer?
 <li>Recap in-class activity based on student ID numbers from last lecture</li>
 </ol>
 </div>
-<div id="todays-topicsactivities-23" class="section level2">
+<div id="todays-topicsactivities-25" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-23" class="section level3">
+<div id="chalk-talk-25" class="section level3">
 <h3>1. Chalk talk</h3>
 <p>We want to visualize the distribution of the following 12 values with a boxplot: 1, 3, 5, 6, 7, 8, 9, 12, 13, 14, 15, 30. They have the following <em>summary statistics</em> (a single numerical value <em>summarizing</em> many values):</p>
 <ol style="list-style-type: decimal">
@@ -1694,7 +1700,7 @@ Which do you prefer?
 </ol></li>
 </ol>
 </div>
-<div id="in-class-exercise-23" class="section level3">
+<div id="in-class-exercise-25" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1707,7 +1713,7 @@ Which do you prefer?
 </div>
 <div id="lec-04-mon-131" class="section level1">
 <h1>Lec 04: Mon 1/31</h1>
-<div id="announcements-24" class="section level2">
+<div id="announcements-26" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>At the beginning of every lecture you should have the following open:
@@ -1719,9 +1725,9 @@ Which do you prefer?
 </ol></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-24" class="section level2">
+<div id="todays-topicsactivities-26" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-24" class="section level3">
+<div id="chalk-talk-26" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Mega-mega fun times in-class activity</li>
@@ -1734,7 +1740,7 @@ Which do you prefer?
 <li>Facets split one graphic by the values of another variable (that does not have too many unique values).</li>
 </ol>
 </div>
-<div id="in-class-exercise-24" class="section level3">
+<div id="in-class-exercise-26" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1746,7 +1752,7 @@ Which do you prefer?
 </div>
 <div id="lec-03-fri-128" class="section level1">
 <h1>Lec 03: Fri 1/28</h1>
-<div id="announcements-25" class="section level2">
+<div id="announcements-27" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Show example of thread in <code>#questions</code> on Slack.</li>
@@ -1759,9 +1765,9 @@ Which do you prefer?
 <li><a href="static/2022-01-28-Lec03.pdf" target="_blank">Lecture notes</a></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-25" class="section level2">
+<div id="todays-topicsactivities-27" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-25" class="section level3">
+<div id="chalk-talk-27" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>Draw scatterplot by hand</li>
@@ -1770,7 +1776,7 @@ Which do you prefer?
 <li>Setting up a <code>classnotes.Rmd</code> R Markdown file for the in-class exercises. This follows exactly what you did for Lab01 on Thu 1/27.</li>
 </ol>
 </div>
-<div id="in-class-exercise-25" class="section level3">
+<div id="in-class-exercise-27" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
@@ -1783,7 +1789,7 @@ Which do you prefer?
 </div>
 <div id="lec-02-wed-126" class="section level1">
 <h1>Lec 02: Wed 1/26</h1>
-<div id="announcements-26" class="section level2">
+<div id="announcements-28" class="section level2">
 <h2>Announcements</h2>
 <ol style="list-style-type: decimal">
 <li>Waitlist: Fill out Google Form on Moodle by 1pm. I will start admitting people this afternoon.</li>
@@ -1799,9 +1805,9 @@ Which do you prefer?
 <li><a href="static/2022-01-26-Lec02.pdf" target="_blank">Lecture notes</a></li>
 </ol>
 </div>
-<div id="todays-topicsactivities-26" class="section level2">
+<div id="todays-topicsactivities-28" class="section level2">
 <h2>Today’s Topics/Activities</h2>
-<div id="chalk-talk-26" class="section level3">
+<div id="chalk-talk-28" class="section level3">
 <h3>1. Chalk talk</h3>
 <ol style="list-style-type: decimal">
 <li>R vs RStudio</li>
@@ -1809,7 +1815,7 @@ Which do you prefer?
 <li>R packages</li>
 </ol>
 </div>
-<div id="in-class-exercise-26" class="section level3">
+<div id="in-class-exercise-28" class="section level3">
 <h3>2. In-class exercise</h3>
 <ol style="list-style-type: decimal">
 <li>Go over ModernDive reading in schedule above, which you need to complete before next lecture.</li>
