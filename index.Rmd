@@ -269,8 +269,8 @@ categ_regression_ex <- tibble(
 
 
 1. **Originally skipped in Lec28**: MD 8.7.2 (LG 11)
-    1. Theory-based method for computing standard errors (instead of simulations)
-    1. Theory-based method for constructing confidence intervals (instead of simulations)
+    1. Theory-based method for computing standard errors (instead of simulations): PS07 Q10 table
+    1. Theory-based method for constructing confidence intervals (instead of simulations): Assuming normality
 1. **Only handout for the semester**: [Example](static/sampling_bias/Lec02_handout.pdf){target="_blank"} relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision and representativeness in the statistical sense, sampling methodology, bias
 1. Interpreting hypothesis tests:
     1. Pre-determined $\alpha$-significance level: false positive rate you're willing to tolerate
