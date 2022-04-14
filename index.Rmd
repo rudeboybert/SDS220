@@ -230,11 +230,15 @@ categ_regression_ex <- tibble(
 
 ***
 
+-->
+
+
 
 # Lec 33: Fri 4/15
 
 ## Announcements
 
+1. SDSCC announcement in Slack `#random`: Alumni speed networking
 1. 
 
 
@@ -242,9 +246,12 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. 
+1. Interpreting hypothesis tests:
+    1. Pre-determined $\alpha$-significance level: false positive rate you're willing to tolerate
+    1. Two possible outcomes of HT
+    1. Two types of incorrect decisions. Analogous to COVID test
+    1. How do we choose $\alpha$
     
-
 ### 2. In-class exercise
 
 1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
@@ -252,8 +259,6 @@ categ_regression_ex <- tibble(
 
 
 ***
-
--->
 
 
 # Lec 32: Wed 4/13
@@ -267,22 +272,11 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-
 1. **Originally skipped in Lec28**: MD 8.7.2 (LG 11)
     1. Theory-based method for computing standard errors (instead of simulations): PS07 Q10 table
     1. Theory-based method for constructing confidence intervals (instead of simulations): Assuming normality
 1. **Only handout for the semester**: [Example](static/sampling_bias/Lec02_handout.pdf){target="_blank"} relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision and representativeness in the statistical sense, sampling methodology, bias
-1. Interpreting hypothesis tests:
-    1. Pre-determined $\alpha$-significance level: false positive rate you're willing to tolerate
-    1. Two possible outcomes of HT
-    1. Two types of incorrect decisions. Analogous to COVID test
-    1. How do we choose $\alpha$
     
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
 
 
 ***
@@ -643,6 +637,14 @@ include_graphics("static/images/1000_simulations.jpg")
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
+
+
+<!--
+
+NEXT TIME: Move Lecture 32 on representative sampling here. 
+i.e. give students handout in static/sampling_bias/ today
+
+-->
 
 1. Recap of Lec 19 readings, go over:
     a) Sampling exercise data on this [Google Sheet](https://docs.google.com/spreadsheets/d/16S11oIT4FfitSA-cStKtN9oVFGG12QFDjCI1y35vEvk/edit#gid=0){target="_blank"} can be loaded using code below. Copy to `classnotes.Rmd`:
