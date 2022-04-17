@@ -214,15 +214,27 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-```{r, echo=FALSE, out.width="50%"}
-include_graphics("static/events/2022-04-20-SDS-focusgroup-flyer.png")
-```
+1. Discussion about Midterm III [posted](midterms.html#midtermIII)
+1. By Wednesday:
+    1. Instructions for final phase of [final project](project.html#resubmission) posted
+    1. Feedback delivered
+1. Repeat announcement: SDS Focus Group  
+    ```{r, echo=FALSE, out.width="50%"}
+    include_graphics("static/events/2022-04-20-SDS-focusgroup-flyer.png")
+    ```
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. 
+1. Sampling scenario 4: Difference in population means $\mu_1 - \mu_2$
+1. Theory-based hypothesis tests
+    1. t-tests
+    1. Fig 9.22 compares theory-based approach and simulation-based approach
+1. Controversy around p-values
+1. Starting ModernDive Chapter 10: Inference for regression (Learning Goals 14 & 15 in blue)
+    1. Refresher of simple linear regression: Fig 10.1 and Table 10.1
+    1. Sampling scenario 5: Population regression slope $\beta_1$
     
 
 ### 2. In-class exercise
