@@ -207,13 +207,16 @@ categ_regression_ex <- tibble(
 
 ***
 
+-->
+
 
 # Lec 34: Mon 4/18
 
 ## Announcements
 
-1. 
-
+```{r, echo=FALSE, out.width="50%"}
+include_graphics("static/events/2022-04-20-SDS-focusgroup-flyer.png")
+```
 
 ## Today's Topics/Activities
 
@@ -229,9 +232,6 @@ categ_regression_ex <- tibble(
 
 
 ***
-
--->
-
 
 
 # Lec 33: Fri 4/15
