@@ -161,11 +161,14 @@ categ_regression_ex <- tibble(
 
 ***
 
+-->
+
 
 # Lec 36: Fri 4/22
 
 ## Announcements
 
+1. Discussion on what we'll cover next week
 1. 
 
 
@@ -173,8 +176,12 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. 
-    
+1. (If anything remains from Lec 35) LINE conditions required for theory/formula-based regression SE, HT, and CI to be valid:
+    1. Linearity of relationship between variables
+    1. Independence of the residuals
+    1. Normality of the residuals
+    1. Equality of variance of the residuals
+1. Simulation-based inference for population regression slope $\beta_1$ with `infer` framework (as opposed to R's regression tables which are based on theory/formula-based approach)
 
 ### 2. In-class exercise
 
@@ -189,14 +196,24 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-1. 
+1. Anecdote about Harvard and UC Berkeley
+1. Don't forget about video lectures recorded during pandemic for select topics! In far-right column in schedule above. 
+1. Resubmission phase of final project
+    1. [Instructions](project.html#resubmission) posted by Wed 10:50am
+    1. From initial submission phase: interpretation of all intercept/slope coefficients
 
 
 ## Today's Topics/Activities
 
 ### 1. Chalk talk
 
-1. 
+1. Interpreting remaining columns of a regression table: standard error, (test) statistic, p-value, (95%) confidence interval
+1. How are values in table computed? Not via simulations (like with `infer`) but using theory/formula-based approach.
+1. (As much as we can get done today) LINE conditions required for theory/formula-based regression SE, HT, and CI to be valid:
+    1. Linearity of relationship between variables
+    1. Independence of the residuals
+    1. Normality of the residuals
+    1. Equality of variance of the residuals
     
 
 ### 2. In-class exercise
@@ -206,8 +223,6 @@ categ_regression_ex <- tibble(
 
 
 ***
-
--->
 
 
 # Lec 34: Mon 4/18
@@ -284,7 +299,7 @@ categ_regression_ex <- tibble(
 
 ### 1. Chalk talk
 
-1. **Originally skipped in Lec28**: MD 8.7.2 (LG 11)
+1. **Originally skipped in Lec 28**: MD 8.7.2 (LG 11)
     1. Theory-based method for computing standard errors (instead of simulations): PS07 Q10 table
     1. Theory-based method for constructing confidence intervals (instead of simulations): Assuming normality
 1. **Only handout for the semester**: [Example](static/sampling_bias/Lec02_handout.pdf){target="_blank"} relevant to LG7, LG8, and LG9 on sampling: accuracy vs precision and representativeness in the statistical sense, sampling methodology, bias
