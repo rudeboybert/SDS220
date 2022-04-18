@@ -89,21 +89,6 @@ ma_traffic_data %>%
 ```
 
 
-## Summary statistics
-
-```{r}
-# Insert code to output a table of summary statistics:
-
-```
-
-
-```{r}
-# Insert code to output a table of summary statistics, but this time
-# split by the different levels of the categorical variable:
-
-```
-
-
 ## Data visualizations
 
 ```{r, fig.cap = "Figure 1: INSERT TITLE", fig.align = "center"}
@@ -164,12 +149,14 @@ Instructions:
 - Indicate which model you selected: parallel slopes or interaction.
 - Fit your selected regression model and display the regression table in the code 
 block below
-- Modify the template formula below from ModernDive 6.1.2 to match your model (this formula is written in the LaTeX typesetting language for printing mathematical formulas)
+- Write the general regression model equation by modifying the template formula below from ModernDive 6.1.2 (this formula is written in the LaTeX typesetting language for printing mathematical formulas)
 
 ```{r}
-# Insert code to fit your regression model and show the regression table. 
+# Insert code to BOTH fit your regression model and display the regression table. 
 
 ```
+
+General model equation:
 
 $$
 \widehat{y} = 
@@ -182,13 +169,16 @@ $$
 
 ## Interpreting regression coefficients
 
-Interpret all regressions coefficients in the `estimate` column in the following list:
+Instructions:
 
-1. Interpretation 1
-1. Interpretation 2
+- For each level of your categorical variable, write down the equation for the regression line in the numbered list below. You can re-use the template formula above, but in the end all your regression equations should not have the indicator function $\mathbb{1}_{\text{is male}}(x)$ in them 
+- Of the regression equations above, pick which you think has the most interesting/insightful regression equation and state why you find it interesting. 
+- Interpret the regression equation for the level of the categorical variable that you found most interesting.
+
+1. Regression equation for first level of categorical variable
+1. Regression equation for second level of categorical variable
 1. ...
 
-TODO NEXT TIME: Rather than interpret individual baseline values and offsets, have students write out equations of regression lines for each level of categorical variable, and comment on only 1-2 differences in slopes
 
 
 
@@ -250,6 +240,16 @@ your regression table to have valid interpretation
 
 
 ## Further questions
+
+
+
+***
+
+
+
+# Appendix
+
+Add anything you think is relevant or interesting but not directly required for the project here. 
 
 
 
