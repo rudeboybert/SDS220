@@ -201,7 +201,7 @@ categ_regression_ex <- tibble(
 1. Midterm IV during finals week information posted
 1. Resubmission phase of final project
     1. [Instructions](project.html#resubmission) posted
-    1. From initial submission phase: interpretation of all intercept/slope coefficients
+    1. Basic principle: minimize ink to information ratio
 
 
 ## Today's Topics/Activities
