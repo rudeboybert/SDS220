@@ -199,7 +199,7 @@ categ_regression_ex <- tibble(
 1. Anecdote about Harvard and UC Berkeley
 1. Don't forget about video lectures recorded during pandemic for select topics! In far-right column in schedule above. 
 1. Resubmission phase of final project
-    1. [Instructions](project.html#resubmission) posted by Wed 10:50am
+    1. [Instructions](project.html#resubmission) posted
     1. From initial submission phase: interpretation of all intercept/slope coefficients
 
 

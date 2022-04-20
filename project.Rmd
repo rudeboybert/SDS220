@@ -40,7 +40,9 @@ In order to break down the task and minimize end-of-semester stress, you'll be w
 1. Project resubmission: Incorporate your instructor feedback from the initial submission phase, complete the remaining sections, and resubmit your project. You will only be graded on your project resubmission. 
 
 
+
 ***
+
 
 
 # 1. Project proposal {#proposal} 
@@ -150,9 +152,8 @@ Extension requests count against all group members. For example, say Avon, Strin
 -->
 
 
+
 ***
-
-
 
 
 
@@ -182,7 +183,8 @@ By Thu 4/7 9pm only the group leader will submit on Moodle:
 1. The updated `final_project.Rmd` R Markdown file. This file **must** knit not only for you, but also for other people trying to replicate your analysis. This is known as *reproducible research*.
 1. The updated `final_project.html` HTML output file
 
-Extension requests count against all group members. For example, say Bodie, Wallace, and Poot are in a group. If Marlo fills out the extension request form requesting 2 days, then 2 days will deducted from all three members' 5 days extension request. 
+Extension requests count against all group members. For example, say Bodie, Wallace, and Poot are in a group. If Wallace fills out the extension request form requesting 2 days, then 2 days will deducted from all three members' 5 days extension request. 
+
 
 
 ***
@@ -191,5 +193,29 @@ Extension requests count against all group members. For example, say Bodie, Wall
 
 # 4. Project resubmission {#resubmission}
 
-Here is a [rough example](static/project/final_project_example.html){target="_blank"} (note project requirements have changed slightly). <!--The corresponding R Markdown file is <a href="static/project/final_project_example.Rmd" download>here</a>-->
+Here is a [rough example](static/project/final_project_example.html){target="_blank"} (note project requirements have changed slightly).
+
+## To Do
+
+1. Update the `final_project.Rmd` you submitted last time
+    1. Make changes based on the video feedback you received. 
+    1. Complete all remaining sections of the project: 3.3 until the end.
+    1. Only group leader will make single submission on behalf of whole group
+1. Ask questions:
+    1. For general project questions that would apply to all groups: ask in `final_project` channel in Slack
+    1. For questions specific to your group: ask in group Slack DM you created in project proposal phase
+1. Tips:
+    1. Knit early, knit often
+    1. For tips on how to make your HTML document look professional, consult the R Markdown tips listed in RStudio Menu Bar -> Help -> Markdown Quick Reference
+
+## What to submit
+
+By Fri 5/6 2pm, do the following two things. Since college rules state no work can be accepted after this time, there are no extensions. 
+
+1. Only the group leader will submit on Moodle:
+    1. The updated `final_project.Rmd` R Markdown file. This file must knit not only for you, but also for other people trying to replicate your analysis. This is known as *reproducible research*.
+    1. The updated `final_project.html` HTML output file
+1. All group members must complete the following Exit Survey and Peer Evaluation [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfgQk0Fq-Ft5id9XEqXKFlRd8Yf_1OazoaMjyCrw2oLA8ZkmA/viewform){target="_blank"}
+
+
 

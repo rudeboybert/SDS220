@@ -13,6 +13,7 @@
 
 <title>Project</title>
 
+<script src="site_libs/header-attrs-2.13/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -32,7 +33,6 @@
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
@@ -363,12 +363,20 @@ h1{font-weight: 400;}
 <img src="static/images/pipeline.png" width="600" />
 </center>
 <p></br></p>
-<p>In order to break down the task and minimize end-of-semester stress, you’ll be working on the project in four phases (see course schedule for due dates):</p>
+<p>In order to break down the task and minimize end-of-semester stress,
+you’ll be working on the project in four phases (see course schedule for
+due dates):</p>
 <ol style="list-style-type: decimal">
 <li>Project proposal: Propose a data set for your project.</li>
-<li>Project EDA: Perform an exploratory data analysis using visualizations and numerical summaries.</li>
-<li>Project initial submission: Make an initial submission of your project. You will skip some of the sections for now and only complete them after we have covered inference for regression in class. After you submit your work, you will get instructor feedback.</li>
-<li>Project resubmission: Incorporate your instructor feedback from the initial submission phase, complete the remaining sections, and resubmit your project. You will only be graded on your project resubmission.</li>
+<li>Project EDA: Perform an exploratory data analysis using
+visualizations and numerical summaries.</li>
+<li>Project initial submission: Make an initial submission of your
+project. You will skip some of the sections for now and only complete
+them after we have covered inference for regression in class. After you
+submit your work, you will get instructor feedback.</li>
+<li>Project resubmission: Incorporate your instructor feedback from the
+initial submission phase, complete the remaining sections, and resubmit
+your project. You will only be graded on your project resubmission.</li>
 </ol>
 <hr />
 <div id="proposal" class="section level1">
@@ -400,25 +408,44 @@ knowledge. So next time
 <li>Form groups of 2-3 students.
 <ul>
 <li>Preferably all group members are in the same lab section.</li>
-<li>All groups members are expected to contribute and you will all be held accountable for your contributions in peer evaluations.</li>
-<li>If you need a group fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSedfpweiZMki1J9MVeer8P1WBwVdGLF39hsVrQ4LlEor-5S_A/viewform" target="_blank">Google Form</a> by <strong>Wed 2/16 at 5pm</strong>. I will assign you a group before lab</li>
+<li>All groups members are expected to contribute and you will all be
+held accountable for your contributions in peer evaluations.</li>
+<li>If you need a group fill out this <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSedfpweiZMki1J9MVeer8P1WBwVdGLF39hsVrQ4LlEor-5S_A/viewform"
+target="_blank">Google Form</a> by <strong>Wed 2/16 at 5pm</strong>. I
+will assign you a group before lab</li>
 </ul></li>
-<li>Assign a group leader. The team/group leader will have a few extra administrative duties at each phase. Ex: making submissions, filling out Google Forms, etc.</li>
+<li>Assign a group leader. The team/group leader will have a few extra
+administrative duties at each phase. Ex: making submissions, filling out
+Google Forms, etc.</li>
 </ol>
 </div>
 <div id="select-a-data-set" class="section level2">
 <h2>Select a data set</h2>
 <p>You have two options for your data set:</p>
 <ol style="list-style-type: decimal">
-<li>Choose from these 10 vetted <a href="https://docs.google.com/document/d/1RkDW6ngTVbvZt98E8PTQAb32U2uJt7vT4d9HjxLYwUw/edit" target="_blank">datasets</a>. The variables fit the requirements for this project and the data require no additional data wrangling.</li>
+<li>Choose from these 10 vetted <a
+href="https://docs.google.com/document/d/1RkDW6ngTVbvZt98E8PTQAb32U2uJt7vT4d9HjxLYwUw/edit"
+target="_blank">datasets</a>. The variables fit the requirements for
+this project and the data require no additional data wrangling.</li>
 <li>If you would like to use your own data, it must have:
 <ol style="list-style-type: decimal">
-<li>An <a href="https://moderndive.com/1-getting-started.html#identification-vs-measurement-variables" target="_blank">identification variable</a> that uniquely identifies each observation in each row.</li>
-<li>A numerical outcome variable <span class="math inline">\(y\)</span>. Note: binary outcomes variables with 0/1 values are not technically numerical.</li>
+<li>An <a
+href="https://moderndive.com/1-getting-started.html#identification-vs-measurement-variables"
+target="_blank">identification variable</a> that uniquely identifies
+each observation in each row.</li>
+<li>A numerical outcome variable <span class="math inline">\(y\)</span>.
+Note: binary outcomes variables with 0/1 values are not technically
+numerical.</li>
 <li>Two explanatory variables:
 <ol style="list-style-type: lower-alpha">
-<li>A numerical explanatory variable <span class="math inline">\(x_1\)</span>. Note: this can be some notion of time.</li>
-<li>A categorical explanatory variable <span class="math inline">\(x_2\)</span> that has between 3-5 levels. Note: If your data has more than 5 levels, they can be collapsed into 5 using data wrangling later.</li>
+<li>A numerical explanatory variable <span
+class="math inline">\(x_1\)</span>. Note: this can be some notion of
+time.</li>
+<li>A categorical explanatory variable <span
+class="math inline">\(x_2\)</span> that has between 3-5 levels. Note: If
+your data has more than 5 levels, they can be collapsed into 5 using
+data wrangling later.</li>
 </ol></li>
 <li>At least 50 observations/rows.</li>
 </ol></li>
@@ -428,8 +455,13 @@ knowledge. So next time
 <h2>What to submit</h2>
 <p>By Thu 2/24 9pm:</p>
 <ol style="list-style-type: decimal">
-<li>The group leader will create a Slack direct message (DM) that includes all 1) your group members, 2) your instructor, and 3) your lab instructor. Please ask all questions to myself and Beth here so everyone is on the same page.</li>
-<li>Only the group leader: Fill out this <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9P4jEhBzHQga-EX7_Vz0MOia2YgxlDu6wD96TzT0YSmYbCA/viewform" target="_blank">Google Form</a> with your group information</li>
+<li>The group leader will create a Slack direct message (DM) that
+includes all 1) your group members, 2) your instructor, and 3) your lab
+instructor. Please ask all questions to myself and Beth here so everyone
+is on the same page.</li>
+<li>Only the group leader: Fill out this <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSd9P4jEhBzHQga-EX7_Vz0MOia2YgxlDu6wD96TzT0YSmYbCA/viewform"
+target="_blank">Google Form</a> with your group information</li>
 </ol>
 <hr />
 </div>
@@ -443,24 +475,32 @@ knowledge. So next time
 <ol style="list-style-type: decimal">
 <li>Download file from Moodle</li>
 <li>Knit to HTML (not PDF) and read over once</li>
-<li>Complete Sections 1 (Introduction), 2 (EDA), and 5 (Honor Code) only. You will complete the other sections later.</li>
-<li>Only group leader will make single submission on behalf of whole group (see below)</li>
+<li>Complete Sections 1 (Introduction), 2 (EDA), and 5 (Honor Code)
+only. You will complete the other sections later.</li>
+<li>Only group leader will make single submission on behalf of whole
+group (see below)</li>
 </ol></li>
 <li>Ask questions:
 <ol style="list-style-type: decimal">
-<li>For general project questions that would apply to all groups: ask in <code>final_project</code> channel in Slack</li>
-<li>For questions specific to your group: ask in group Slack DM you created in project proposal phase</li>
+<li>For general project questions that would apply to all groups: ask in
+<code>final_project</code> channel in Slack</li>
+<li>For questions specific to your group: ask in group Slack DM you
+created in project proposal phase</li>
 </ol></li>
 <li>Be mindful of your group members
 <ol style="list-style-type: decimal">
-<li>Life happens, especially this semester. If something comes up, let your partners know. Do not ghost on your partners.</li>
-<li>If an issue arises, do not resort to passive aggressive electronic messages. Make a good faith attempt to say how you feel in person.</li>
+<li>Life happens, especially this semester. If something comes up, let
+your partners know. Do not ghost on your partners.</li>
+<li>If an issue arises, do not resort to passive aggressive electronic
+messages. Make a good faith attempt to say how you feel in person.</li>
 <li>If the issue is still not resolved, Slack DM Prof. Kim.</li>
 </ol></li>
 <li>Tips:
 <ol style="list-style-type: decimal">
 <li>Knit early, knit often</li>
-<li>For tips on how to make your HTML document look professional, consult the R Markdown tips listed in RStudio Menu Bar -&gt; Help -&gt; Markdown Quick Reference</li>
+<li>For tips on how to make your HTML document look professional,
+consult the R Markdown tips listed in RStudio Menu Bar -&gt; Help -&gt;
+Markdown Quick Reference</li>
 </ol></li>
 </ol>
 </div>
@@ -468,10 +508,14 @@ knowledge. So next time
 <h2>What to submit</h2>
 <p>By Thu 3/10 9pm only the group leader will submit on Moodle:</p>
 <ol style="list-style-type: decimal">
-<li>The <code>final_project.Rmd</code> R Markdown file. This file <strong>must</strong> knit.</li>
+<li>The <code>final_project.Rmd</code> R Markdown file. This file
+<strong>must</strong> knit.</li>
 <li>The <code>final_project.html</code> HTML output file</li>
 </ol>
-<p>Extension requests count against all group members. For example, say Avon, Stringer, and Marlo are in a group. If Marlo fills out the extension request form requesting 2 days, then 2 days will deducted from all three members’ 5 days extension request.</p>
+<p>Extension requests count against all group members. For example, say
+Avon, Stringer, and Marlo are in a group. If Marlo fills out the
+extension request form requesting 2 days, then 2 days will deducted from
+all three members’ 5 days extension request.</p>
 <!--
 
 1. The Spinelli Center evening tutoring hours on Sun-Thurs 7-9pm. All student tutors there have taken [SDS 192 Data Science](https://www.smith.edu/academics/academic-program/curriculum/course-search?term=Spring+2020&dept=Statistical+and+Data+Sciences&instr=&credits=&course_numb=192&course_keywd=&op=Submit&form_build_id=form-wFN3QGp-YpOHvSETMIKm1Wzwq1snu0oWeSR1I3dUByQ&form_id=campus_course_search_basic_search_form){target="_blank"} and can thus help you get the data into the appropriate format. 
@@ -494,21 +538,31 @@ knowledge. So next time
 <ol style="list-style-type: decimal">
 <li>Update the <code>final_project.Rmd</code> you submitted last time
 <ol style="list-style-type: decimal">
-<li>Update the template code for the Multiple Regression section with the template code below. i.e. Delete all lines starting with <code># Multiple linear regression</code> up to the line before <code># Discussion</code> and replace it with the code below.<br />
+<li>Update the template code for the Multiple Regression section with
+the template code below. i.e. Delete all lines starting with
+<code># Multiple linear regression</code> up to the line before
+<code># Discussion</code> and replace it with the code below.<br />
 </li>
 <li>Make changes based on the video feedback you received.</li>
-<li>Complete Sections 3 through 3.2 i.e. up to and including “Interpreting regression coefficients.” You will complete Sections 3.3, 3.4, and 4 during the next submission stage.</li>
-<li>Only group leader will make single submission on behalf of whole group</li>
+<li>Complete Sections 3 through 3.2 i.e. up to and including
+“Interpreting regression coefficients.” You will complete Sections 3.3,
+3.4, and 4 during the next submission stage.</li>
+<li>Only group leader will make single submission on behalf of whole
+group</li>
 </ol></li>
 <li>Ask questions:
 <ol style="list-style-type: decimal">
-<li>For general project questions that would apply to all groups: ask in <code>final_project</code> channel in Slack</li>
-<li>For questions specific to your group: ask in group Slack DM you created in project proposal phase</li>
+<li>For general project questions that would apply to all groups: ask in
+<code>final_project</code> channel in Slack</li>
+<li>For questions specific to your group: ask in group Slack DM you
+created in project proposal phase</li>
 </ol></li>
 <li>Tips:
 <ol style="list-style-type: decimal">
 <li>Knit early, knit often</li>
-<li>For tips on how to make your HTML document look professional, consult the R Markdown tips listed in RStudio Menu Bar -&gt; Help -&gt; Markdown Quick Reference</li>
+<li>For tips on how to make your HTML document look professional,
+consult the R Markdown tips listed in RStudio Menu Bar -&gt; Help -&gt;
+Markdown Quick Reference</li>
 </ol></li>
 </ol>
 <script src="https://gist.github.com/rudeboybert/e7fe2f686e50fbd087c7049b2afac26f.js"></script>
@@ -517,16 +571,71 @@ knowledge. So next time
 <h2>What to submit</h2>
 <p>By Thu 4/7 9pm only the group leader will submit on Moodle:</p>
 <ol style="list-style-type: decimal">
-<li>The updated <code>final_project.Rmd</code> R Markdown file. This file <strong>must</strong> knit not only for you, but also for other people trying to replicate your analysis. This is known as <em>reproducible research</em>.</li>
+<li>The updated <code>final_project.Rmd</code> R Markdown file. This
+file <strong>must</strong> knit not only for you, but also for other
+people trying to replicate your analysis. This is known as
+<em>reproducible research</em>.</li>
 <li>The updated <code>final_project.html</code> HTML output file</li>
 </ol>
-<p>Extension requests count against all group members. For example, say Bodie, Wallace, and Poot are in a group. If Marlo fills out the extension request form requesting 2 days, then 2 days will deducted from all three members’ 5 days extension request.</p>
+<p>Extension requests count against all group members. For example, say
+Bodie, Wallace, and Poot are in a group. If Wallace fills out the
+extension request form requesting 2 days, then 2 days will deducted from
+all three members’ 5 days extension request.</p>
 <hr />
 </div>
 </div>
 <div id="resubmission" class="section level1">
 <h1>4. Project resubmission</h1>
-<p>Here is a <a href="static/project/final_project_example.html" target="_blank">rough example</a> (note project requirements have changed slightly). <!--The corresponding R Markdown file is <a href="static/project/final_project_example.Rmd" download>here</a>--></p>
+<p>Here is a <a href="static/project/final_project_example.html"
+target="_blank">rough example</a> (note project requirements have
+changed slightly).</p>
+<div id="to-do-2" class="section level2">
+<h2>To Do</h2>
+<ol style="list-style-type: decimal">
+<li>Update the <code>final_project.Rmd</code> you submitted last time
+<ol style="list-style-type: decimal">
+<li>Make changes based on the video feedback you received.</li>
+<li>Complete all remaining sections of the project: 3.3 until the
+end.</li>
+<li>Only group leader will make single submission on behalf of whole
+group</li>
+</ol></li>
+<li>Ask questions:
+<ol style="list-style-type: decimal">
+<li>For general project questions that would apply to all groups: ask in
+<code>final_project</code> channel in Slack</li>
+<li>For questions specific to your group: ask in group Slack DM you
+created in project proposal phase</li>
+</ol></li>
+<li>Tips:
+<ol style="list-style-type: decimal">
+<li>Knit early, knit often</li>
+<li>For tips on how to make your HTML document look professional,
+consult the R Markdown tips listed in RStudio Menu Bar -&gt; Help -&gt;
+Markdown Quick Reference</li>
+</ol></li>
+</ol>
+</div>
+<div id="what-to-submit-3" class="section level2">
+<h2>What to submit</h2>
+<p>By Fri 5/6 2pm, do the following two things. Since college rules
+state no work can be accepted after this time, there are no
+extensions.</p>
+<ol style="list-style-type: decimal">
+<li>Only the group leader will submit on Moodle:
+<ol style="list-style-type: decimal">
+<li>The updated <code>final_project.Rmd</code> R Markdown file. This
+file must knit not only for you, but also for other people trying to
+replicate your analysis. This is known as <em>reproducible
+research</em>.</li>
+<li>The updated <code>final_project.html</code> HTML output file</li>
+</ol></li>
+<li>All group members must complete the following Exit Survey and Peer
+Evaluation <a
+href="https://docs.google.com/forms/d/e/1FAIpQLSfgQk0Fq-Ft5id9XEqXKFlRd8Yf_1OazoaMjyCrw2oLA8ZkmA/viewform"
+target="_blank">Google Form</a></li>
+</ol>
+</div>
 </div>
 
 
