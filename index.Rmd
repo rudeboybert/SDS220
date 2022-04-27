@@ -90,27 +90,10 @@ categ_regression_ex <- tibble(
 ***
 
 
-<!--
-
 
 # Lec 39: Fri 4/29
 
-## Announcements
-
-1. 
-
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-1. 
-    
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+No lecture: Online office hours instead
 
 
 ***
@@ -120,20 +103,23 @@ categ_regression_ex <- tibble(
 
 ## Announcements
 
-1. 
+1. Midterms
+    1. Go over Midterm III
+    1. Be sure to read [Midterm IV info](midterms.html#midtermIV)
+    1. Be sure to check that all your proficiency scores on Moodle under Grades are correct
+1. Office hours
+    1. Online: Friday during lecture time
+    1. Exam week office hours posted on calendar in Syllabus
+1. Unlike textbooks that students often sell at the end of the semester, ModernDive will always be available at [moderndive.com](https://moderndive.com/){target="_blank"}
 
 
-## Today's Topics/Activities
+## Closing notes
 
-### 1. Chalk talk
-
-1. 
-    
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+1. See Slack `#general`
+1. Reflection on standards-based grading
+1. Thank you to Beth Brown and all Spinelli Tutors
+1. Congrats to all seniors
+1. Time for course evals
 
 
 ***
@@ -141,27 +127,10 @@ categ_regression_ex <- tibble(
 
 # Lec 37: Mon 4/25
 
-## Announcements
-
-1. 
-
-
-## Today's Topics/Activities
-
-### 1. Chalk talk
-
-1. 
-    
-
-### 2. In-class exercise
-
-1. Go over ModernDive reading in schedule above, which you need to complete before next lecture.
-1. You do not need to submit the answers of all Learning Checks; they are meant for your practice. The solutions to all Learning Checks can be found in Appendix D of ModernDive.
+No lecture
 
 
 ***
-
--->
 
 
 # Lec 36: Fri 4/22

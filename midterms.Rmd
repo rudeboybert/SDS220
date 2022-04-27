@@ -186,7 +186,6 @@ Think of pseudocode as a recipe, blue print, or algorithm outline that balances:
 
 ## Administrative notes
 
-1. Your Midterm III will be returned no later than lecture on Friday 4/29
 1. Format:
     1. Take it anytime between Tue 5/3 8:30am and Friday 5/6 2pm (must be submitted by 2pm).
     1. Print it **single-sided** from Moodle. Do not click the Moodle link until you are ready to start your exam.
@@ -195,7 +194,7 @@ Think of pseudocode as a recipe, blue print, or algorithm outline that balances:
 1. You will be given 260 mins to complete it (including transit time to writing areas).
     1. The 260 minutes starts when you click on the link on Moodle. 
     1. The 260 minutes ends when you timestamp in the McConnell Hall foyer. 
-1. You are allowed a **double-sided hand-written** 8 by 11 piece of paper as a cheat sheet (you can reuse your Midterm III cheatsheet). You do not need to submit it.
+1. You are allowed a **double-sided hand-written** 8 by 11 piece of paper as a cheat sheet (you can reuse your Midterm III cheatsheet). **Please don't submit it.**
 1. You need a calculator for this midterm. Graphing calculators and smart phone calculators are allowed.
 
 
