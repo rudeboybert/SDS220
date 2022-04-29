@@ -73,7 +73,7 @@ ma_traffic_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTM
 
 ## Describe data
 
-Give people a sense for your data by describing:
+Give people a sense for your data by describing (in a list form):
 
 1. What each observation in each row corresponds to
 1. Sample size
@@ -186,18 +186,16 @@ Instructions:
 
 **You will complete the rest of Section 3 at the project resubmission phase due the last day of exams.**
 
-From the above regression table, interpret the confidence interval and p-value for at least two non-intercept terms:
+From the above regression table, interpret the confidence interval and p-value for: 1) the slope parameter if you chose a parallel slopes model or 2) the slope parameter and one offset in slope parameter if you chose an interaction model (pick which ever offset you think is more interesting).
 
 1. Interpretation 1
 1. Interpretation 2
-1. (optional) Interpretation 3
-1. (optional) ...
 
 
 ## Conditions for inference for regression
 
 Verify the **LINE** conditions for inference for regression for all confidence intervals and p-values from
-your regression table to have valid interpretation
+your regression table to have valid interpretation. Comment on whether the conditions are met or not.
 
 ### Linearity of relationship
 
@@ -214,14 +212,14 @@ your regression table to have valid interpretation
 
 ```{r, fig.cap = "Figure 6: INSERT TITLE", fig.align = "center"}
 # Insert code to visualize the relationship between the residuals and your
-# numerical explanatory/categorical variable:
+# numerical explanatory/predictor variable:
 
 ```
 
 
 ```{r, fig.cap = "Figure 7: INSERT TITLE", fig.align = "center"}
 # Insert code to visualize the relationship between the residuals and your
-# categorical explanatory/categorical variable:
+# categorical explanatory/predictor variable:
 
 ```
 
@@ -235,11 +233,16 @@ your regression table to have valid interpretation
 
 ## Conclusions
 
+* Write down an executive summary of your conclusions and findings. Often people will read a paper's abstract, introduction, and conclusion, look at the figures, and only then decide whether to read the entirely of your paper. So think of this as an exercise in marketing. 
 
 ## Limitations
 
+* Write down all limitations in your conclusions here
 
-## Further questions
+
+## Further work
+
+* Write down all possible avenues for further work and questions here
 
 
 

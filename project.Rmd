@@ -193,7 +193,13 @@ Extension requests count against all group members. For example, say Bodie, Wall
 
 # 4. Project resubmission {#resubmission}
 
-Here is a [rough example](static/project/final_project_example.html){target="_blank"} (note project requirements have changed slightly).
+<!--
+
+REMOVE THIS NEXT TIME STUDENTS ARE TAKING THIS EXAMPLE WAY TOO LITERALLY
+
+-->
+
+Here is a [rough example](static/project/final_project_example.html){target="_blank"} (project requirements have changed **so do not interpret this example too literally**).
 
 ## To Do
 
