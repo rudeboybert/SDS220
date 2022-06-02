@@ -10,6 +10,11 @@ output:
 
 <!--
 {target="_blank"}
+
+Note for next time from Spring 2022:
+
+- Consider fewer than 15 LG. Some, like CLT, lacked protein
+
 -->
 
 <style>
