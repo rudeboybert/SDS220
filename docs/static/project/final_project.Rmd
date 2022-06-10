@@ -73,7 +73,7 @@ ma_traffic_data <- read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTM
 
 ## Describe data
 
-Give people a sense for your data by describing:
+Give people a sense for your data by describing (in a list form):
 
 1. What each observation in each row corresponds to
 1. Sample size
