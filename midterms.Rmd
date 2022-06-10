@@ -44,7 +44,7 @@ library(patchwork)
 
 
 
-# Midterm format
+# Standards based grading midterm format
 
 The standards based grading format for the midterms in this course are based on Marney Pratt's [BIO 131](https://docs.google.com/document/d/1_FB2EHtqTEpd1RJHb6SfyV19rgXlrjNKbsxhPh9UC6w/edit){target="_blank"}. 
 
